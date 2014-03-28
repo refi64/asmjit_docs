@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>VarBits &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="VarData" href="VarData.html" />
+    <link rel="prev" title="VMem" href="VMem.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="VarData.html" title="VarData"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="VMem.html" title="VMem"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="varbits">
+<h1>VarBits<a class="headerlink" href="#varbits" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1VarBits">
+<div class="line"><em>struct</em> <strong>asmjit::VarBits</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Bit-array used by variable-liveness analysis. </p>
+<p></p>
+<em>Public Type</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VarBits_1ab9b1911f01613c0c27a78dc8d42b1778"></span><strong>Anonymous enum</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">kEntitySize</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">static_cast&lt;int&gt;(sizeof(uintptr_t))</span></tt> - </li>
+<li><tt class="first docutils literal"><span class="pre">kEntityBits</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">kEntitySize</span> <span class="pre">*</span> <span class="pre">8</span></tt> - </li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a16e687b877f8e4bf7c80c311e2a7794f"></span><div class="line-block">
+<div class="line">uintptr_t <strong>getBit</strong>(uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1ab8a92bd9d70d8759323414dd4e5cf180"></span><div class="line-block">
+<div class="line">void <strong>setBit</strong>(uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a92f107023ab7c8892d0234cf8583c60d"></span><div class="line-block">
+<div class="line">void <strong>delBit</strong>(uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a5fcfb1f6e3bca7f12a088e3736106862"></span><div class="line-block">
+<div class="line">bool <strong>copyBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s0, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a9c4e8bb72bac913b5623f6bb60ccaca0"></span><div class="line-block">
+<div class="line">bool <strong>addBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s0, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a3fe1d27c01e753b3418f8c785e3a3456"></span><div class="line-block">
+<div class="line">bool <strong>addBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s0, const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a1470800bdf7cb714b8494bd845e4704d"></span><div class="line-block">
+<div class="line">bool <strong>andBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1aec03defe814feca9f55db5810fb7a530"></span><div class="line-block">
+<div class="line">bool <strong>andBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s0, const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a1b750fe3658d6c74cac521a542a8f964"></span><div class="line-block">
+<div class="line">bool <strong>delBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a7e3c3c8f9e7a88b56fbebd746fb60f3f"></span><div class="line-block">
+<div class="line">bool <strong>delBits</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s0, const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a353d6a5b2a0d050fafd35573d22f52ed"></span><div class="line-block">
+<div class="line">bool <strong>_addBitsDelSource</strong>(<a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a4020fc510bb3a7f2cae26fed313a9070"></span><div class="line-block">
+<div class="line">bool <strong>_addBitsDelSource</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s0, <a class="reference internal" href="#asmjitstructasmjit_1_1VarBits"><em>VarBits</em></a>  * s1, uint32_t len)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VarBits_1a66762417f0cd543a237a0eae8f2c2e65"></span>uintptr_t <strong>data</strong>[1]</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="VMem.html"
+                        title="previous chapter">VMem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="VarData.html"
+                        title="next chapter">VarData</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/VarBits.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="VarData.html" title="VarData"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="VMem.html" title="VMem"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

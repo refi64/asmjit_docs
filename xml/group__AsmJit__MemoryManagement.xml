@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__AsmJit__MemoryManagement" kind="group">
+    <compoundname>AsmJit_MemoryManagement</compoundname>
+    <title>Virtual memory management.</title>
+    <innerclass refid="structasmjit_1_1MemoryManager" prot="public">asmjit::MemoryManager</innerclass>
+    <innerclass refid="structasmjit_1_1VirtualMemoryManager" prot="public">asmjit::VirtualMemoryManager</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__AsmJit__MemoryManagement_1ga28da4e2b9dd838b9b24f27e58be0c9fa" prot="public" static="no">
+        <name>kVirtualAlloc</name>
+        <enumvalue id="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faafe9d48b799d531f551009a277ecc88ba" prot="public">
+          <name>kVirtualAllocFreeable</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Normal memory allocation, allocated memory can be free by calling asmjit::MemoryManager::free() method. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faa720d8f60dc080ab027d72e3a8aa70e04" prot="public">
+          <name>kVirtualAllocPermanent</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Allocate permanent memory that will be never freed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of virtual memory allocation, see <computeroutput><ref refid="structasmjit_1_1MemoryManager_1aaec761f463f2956d2722c2da1695215d" kindref="member">asmjit::MemoryManager::alloc()</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="27" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" bodystart="27" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Using <computeroutput>asmjit::Assembler</computeroutput> or <computeroutput>asmjit::Compiler</computeroutput> to generate machine code is not final step. Each generated code needs to run in memory that is not protected against code execution. To alloc this code it&apos;s needed to use operating system functions provided to enable execution code in specified memory block or to allocate memory that is not protected. The solution is always to use <computeroutput>See</computeroutput> asmjit::Assembler::make() and <computeroutput>asmjit::Compiler::make()</computeroutput> functions that can allocate memory and relocate code for you. But AsmJit also contains classes for manual memory management thats internally used by AsmJit but can be used by programmers too.</para><para>Memory management contains low level and high level classes related to allocating and freeing virtual memory. Low level class is <computeroutput><ref refid="structasmjit_1_1VMem" kindref="compound">asmjit::VMem</ref></computeroutput> that can allocate and free full pages of virtual memory provided by operating system. Higher level class is <computeroutput><ref refid="structasmjit_1_1MemoryManager" kindref="compound">asmjit::MemoryManager</ref></computeroutput> that is able to manage complete allocation and free mechanism. It internally uses larger chunks of memory to make allocation fast and effective.</para><para>Using <computeroutput><ref refid="structasmjit_1_1VMem_1aaf08965d4c0b29f1f79061273bda7f8b" kindref="member">asmjit::VMem::alloc()</ref></computeroutput> is cross-platform way how to allocate this kind of memory without worrying about operating system and it&apos;s API. Each memory block that is no longer needed should be released by <ref refid="structasmjit_1_1VMem_1a388c4ed369967910f5797dd9a2477de3" kindref="member">asmjit::VMem::release()</ref> method. Higher-level interface for virtual memory allocation can be found at <ref refid="structasmjit_1_1MemoryManager" kindref="compound">asmjit::MemoryManager</ref> class.</para><para><simplesect kind="see"><para><computeroutput><ref refid="structasmjit_1_1VMem" kindref="compound">asmjit::VMem</ref></computeroutput>, @ <ref refid="structasmjit_1_1MemoryManager" kindref="compound">asmjit::MemoryManager</ref>. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1856 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionasmjit_1_1Vec256Data" kind="union" prot="public">
+    <compoundname>asmjit::Vec256Data</compoundname>
+    <includes local="no">vectypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1a3bef3390b610fe254d2b59491faf39af" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t asmjit::Vec256Data::sb[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>sb</name>
+        <briefdescription>
+<para>Array of thirty two signed 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1218" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1a55f1d12fbdc8f16242590bcac4d99e57" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Vec256Data::ub[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ub</name>
+        <briefdescription>
+<para>Array of thirty two unsigned 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1220" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1a18a716fe50efbef5ff213f47439fcb16" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t asmjit::Vec256Data::sw[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>sw</name>
+        <briefdescription>
+<para>Array of sixteen signed 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1222" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1a83a3aa9df257c1a1fd76130a052dd9a2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::Vec256Data::uw[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>uw</name>
+        <briefdescription>
+<para>Array of sixteen unsigned 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1224" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1a6d4b40703e4127270ce09e184facdfb1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::Vec256Data::sd[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>sd</name>
+        <briefdescription>
+<para>Array of eight signed 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1226" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1abec24dc18291e14f03a24a0740e41b8a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Vec256Data::ud[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ud</name>
+        <briefdescription>
+<para>Array of eight unsigned 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1228" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1aa454cf2a0dfefb944ee0696991aaada5" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t asmjit::Vec256Data::sq[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>sq</name>
+        <briefdescription>
+<para>Array of four signed 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1230" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1ae29868871389108cfb36bac3ecc5d289" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t asmjit::Vec256Data::uq[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>uq</name>
+        <briefdescription>
+<para>Array of four unsigned 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1232" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1af423d13e5ae8ef60d2b0cfccc6184b98" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float asmjit::Vec256Data::sf[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>sf</name>
+        <briefdescription>
+<para>Array of eight 32-bit single precision floating points. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1235" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1Vec256Data_1a4badb9fa812759d11cdeb626f5ebb129" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double asmjit::Vec256Data::df[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>df</name>
+        <briefdescription>
+<para>Array of four 64-bit double precision floating points. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1237" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a588939f4bc24ae4584193129b77d97a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSb</definition>
+        <argsstring>(int8_t x0, int8_t x1, int8_t x2, int8_t x3, int8_t x4, int8_t x5, int8_t x6, int8_t x7, int8_t x8, int8_t x9, int8_t x10, int8_t x11, int8_t x12, int8_t x13, int8_t x14, int8_t x15, int8_t x16, int8_t x17, int8_t x18, int8_t x19, int8_t x20, int8_t x21, int8_t x22, int8_t x23, int8_t x24, int8_t x25, int8_t x26, int8_t x27, int8_t x28, int8_t x29, int8_t x30, int8_t x31)</argsstring>
+        <name>fromSb</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x15</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x16</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x17</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x18</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x19</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x20</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x21</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x22</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x23</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x24</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x25</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x26</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x27</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x28</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x29</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x30</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x31</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two signed 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="783" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="774" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1aa871f1f5858d8a7d7686a192120f0908" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSb</definition>
+        <argsstring>(int8_t x0)</argsstring>
+        <name>fromSb</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two signed 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="794" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="792" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a5881f529e231c20f304110a45c660b4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUb</definition>
+        <argsstring>(uint8_t x0, uint8_t x1, uint8_t x2, uint8_t x3, uint8_t x4, uint8_t x5, uint8_t x6, uint8_t x7, uint8_t x8, uint8_t x9, uint8_t x10, uint8_t x11, uint8_t x12, uint8_t x13, uint8_t x14, uint8_t x15, uint8_t x16, uint8_t x17, uint8_t x18, uint8_t x19, uint8_t x20, uint8_t x21, uint8_t x22, uint8_t x23, uint8_t x24, uint8_t x25, uint8_t x26, uint8_t x27, uint8_t x28, uint8_t x29, uint8_t x30, uint8_t x31)</argsstring>
+        <name>fromUb</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x15</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x16</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x17</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x18</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x19</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x20</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x21</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x22</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x23</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x24</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x25</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x26</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x27</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x28</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x29</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x30</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x31</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two unsigned 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="810" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="801" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1acf38deaf76b674c99921dffa0c504743" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUb</definition>
+        <argsstring>(uint8_t x0)</argsstring>
+        <name>fromUb</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two unsigned 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="821" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="819" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1ad71d6fa849d3627341a682bef8428f3a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSw</definition>
+        <argsstring>(int16_t x0, int16_t x1, int16_t x2, int16_t x3, int16_t x4, int16_t x5, int16_t x6, int16_t x7, int16_t x8, int16_t x9, int16_t x10, int16_t x11, int16_t x12, int16_t x13, int16_t x14, int16_t x15)</argsstring>
+        <name>fromSw</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x15</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen signed 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="831" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="828" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1ae28ced9e8d48369aa4e50ea7b9573f2d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSw</definition>
+        <argsstring>(int16_t x0)</argsstring>
+        <name>fromSw</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen signed 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="840" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="838" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1ab1fa678cfb94f7a8bbec0fa993bbaf64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUw</definition>
+        <argsstring>(uint16_t x0, uint16_t x1, uint16_t x2, uint16_t x3, uint16_t x4, uint16_t x5, uint16_t x6, uint16_t x7, uint16_t x8, uint16_t x9, uint16_t x10, uint16_t x11, uint16_t x12, uint16_t x13, uint16_t x14, uint16_t x15)</argsstring>
+        <name>fromUw</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x15</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen unsigned 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="850" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="847" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a5ccfbdaed14729b85fd2dd374897c767" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUw</definition>
+        <argsstring>(uint16_t x0)</argsstring>
+        <name>fromUw</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen unsigned 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="859" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="857" bodyend="863"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a34f3082b965849d049f53ff4d1856412" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSd</definition>
+        <argsstring>(int32_t x0, int32_t x1, int32_t x2, int32_t x3, int32_t x4, int32_t x5, int32_t x6, int32_t x7)</argsstring>
+        <name>fromSd</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight signed 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="869" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="866" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a50e06aeda54847adf48400a9d37f266d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSd</definition>
+        <argsstring>(int32_t x0)</argsstring>
+        <name>fromSd</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight signed 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="878" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="876" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a5bc55c473e662c209111a345d7bb00be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUd</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5, uint32_t x6, uint32_t x7)</argsstring>
+        <name>fromUd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight unsigned 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="888" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="885" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a3ba6f989098b1ed70966618169cf9bbd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUd</definition>
+        <argsstring>(uint32_t x0)</argsstring>
+        <name>fromUd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight unsigned 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="897" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="895" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a313076fa5359e1b5ab8439c65606b5f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSq</definition>
+        <argsstring>(int64_t x0, int64_t x1, int64_t x2, int64_t x3)</argsstring>
+        <name>fromSq</name>
+        <param>
+          <type>int64_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+<para>Set all four signed 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="906" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="904" bodyend="910"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1af06a09fefbb87f1ef303e444de9b9ed5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSq</definition>
+        <argsstring>(int64_t x0)</argsstring>
+        <name>fromSq</name>
+        <param>
+          <type>int64_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all four signed 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="915" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="913" bodyend="919"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1af8d2eb9c2625354fd4e0b71f04b87208" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUq</definition>
+        <argsstring>(uint64_t x0, uint64_t x1, uint64_t x2, uint64_t x3)</argsstring>
+        <name>fromUq</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+<para>Set all four unsigned 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="924" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="922" bodyend="928"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a1822104d6e4af6b726f155e7a8b06102" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromUq</definition>
+        <argsstring>(uint64_t x0)</argsstring>
+        <name>fromUq</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all four unsigned 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="933" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="931" bodyend="937"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a3aba29302eefefe207f25b6f1b99c0d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSf</definition>
+        <argsstring>(float x0, float x1, float x2, float x3, float x4, float x5, float x6, float x7)</argsstring>
+        <name>fromSf</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight SP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="943" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="940" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a4be04393c63c0a9f89f2e08433b427a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromSf</definition>
+        <argsstring>(float x0)</argsstring>
+        <name>fromSf</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight SP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="952" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="950" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a30c86b2f17d095e4dc3a92f894ff8e19" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromDf</definition>
+        <argsstring>(double x0, double x1, double x2, double x3)</argsstring>
+        <name>fromDf</name>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+<para>Set all four DP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="961" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="959" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a04af7a9044b63063be0b8bfbf854c73f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="unionasmjit_1_1Vec256Data" kindref="compound">Vec256Data</ref></type>
+        <definition>static Vec256Data asmjit::Vec256Data::fromDf</definition>
+        <argsstring>(double x0)</argsstring>
+        <name>fromDf</name>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all four DP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="970" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="968" bodyend="974"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a72aa9d8714aa91548d590b43bf7a5c06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSb</definition>
+        <argsstring>(int8_t x0, int8_t x1, int8_t x2, int8_t x3, int8_t x4, int8_t x5, int8_t x6, int8_t x7, int8_t x8, int8_t x9, int8_t x10, int8_t x11, int8_t x12, int8_t x13, int8_t x14, int8_t x15, int8_t x16, int8_t x17, int8_t x18, int8_t x19, int8_t x20, int8_t x21, int8_t x22, int8_t x23, int8_t x24, int8_t x25, int8_t x26, int8_t x27, int8_t x28, int8_t x29, int8_t x30, int8_t x31)</argsstring>
+        <name>setSb</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x15</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x16</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x17</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x18</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x19</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x20</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x21</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x22</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x23</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x24</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x25</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x26</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x27</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x28</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x29</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x30</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>x31</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two signed 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="990" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="981" bodyend="999"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a4806ced1e7ec4c13025c5af931efceec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSb</definition>
+        <argsstring>(int8_t x0)</argsstring>
+        <name>setSb</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two signed 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1004" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1002" bodyend="1006"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a028cc13305efc3c8f22b853b869d4246" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUb</definition>
+        <argsstring>(uint8_t x0, uint8_t x1, uint8_t x2, uint8_t x3, uint8_t x4, uint8_t x5, uint8_t x6, uint8_t x7, uint8_t x8, uint8_t x9, uint8_t x10, uint8_t x11, uint8_t x12, uint8_t x13, uint8_t x14, uint8_t x15, uint8_t x16, uint8_t x17, uint8_t x18, uint8_t x19, uint8_t x20, uint8_t x21, uint8_t x22, uint8_t x23, uint8_t x24, uint8_t x25, uint8_t x26, uint8_t x27, uint8_t x28, uint8_t x29, uint8_t x30, uint8_t x31)</argsstring>
+        <name>setUb</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x15</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x16</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x17</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x18</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x19</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x20</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x21</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x22</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x23</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x24</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x25</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x26</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x27</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x28</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x29</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x30</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x31</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two unsigned 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1018" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1009" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1affd18bb934dd8ca03cf591ee4f4fa95d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUb</definition>
+        <argsstring>(uint8_t x0)</argsstring>
+        <name>setUb</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all thirty two unsigned 8-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1032" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1030" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1add202c328d775208e1eb1dc7b86057c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSw</definition>
+        <argsstring>(int16_t x0, int16_t x1, int16_t x2, int16_t x3, int16_t x4, int16_t x5, int16_t x6, int16_t x7, int16_t x8, int16_t x9, int16_t x10, int16_t x11, int16_t x12, int16_t x13, int16_t x14, int16_t x15)</argsstring>
+        <name>setSw</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x15</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen signed 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1057" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1054" bodyend="1062"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1adcf27a2e9b57d07b6316ed3b5b6b284d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSw</definition>
+        <argsstring>(int16_t x0)</argsstring>
+        <name>setSw</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen signed 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1067" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1065" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a3b4004f5788a6bb166e343ffd233c263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUw</definition>
+        <argsstring>(uint16_t x0, uint16_t x1, uint16_t x2, uint16_t x3, uint16_t x4, uint16_t x5, uint16_t x6, uint16_t x7, uint16_t x8, uint16_t x9, uint16_t x10, uint16_t x11, uint16_t x12, uint16_t x13, uint16_t x14, uint16_t x15)</argsstring>
+        <name>setUw</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x9</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x10</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x11</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x12</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x13</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x14</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x15</declname>
+        </param>
+        <briefdescription>
+<para>Set all sixteen unsigned 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1075" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1072" bodyend="1080"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a88242ce773454574c5a14ddc934fb22e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUw</definition>
+        <argsstring>(uint16_t x0)</argsstring>
+        <name>setUw</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight unsigned 16-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1085" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1083" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1ab0a2b70dd38a8f9ee99dd7315c20196a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSd</definition>
+        <argsstring>(int32_t x0, int32_t x1, int32_t x2, int32_t x3, int32_t x4, int32_t x5, int32_t x6, int32_t x7)</argsstring>
+        <name>setSd</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight signed 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1110" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1107" bodyend="1113"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a19ea1760676a2cdf0895b1cfe678640e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSd</definition>
+        <argsstring>(int32_t x0)</argsstring>
+        <name>setSd</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight signed 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1118" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1116" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a27da6df6746ecd60885a1fe71bf4c10a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUd</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5, uint32_t x6, uint32_t x7)</argsstring>
+        <name>setUd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight unsigned 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1126" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1123" bodyend="1129"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a2604a166c1ab11737f4c57fe20fa7c95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUd</definition>
+        <argsstring>(uint32_t x0)</argsstring>
+        <name>setUd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight unsigned 32-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1134" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1132" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a2e69d8b7aa65b17d219e4111c5d12343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSq</definition>
+        <argsstring>(int64_t x0, int64_t x1, int64_t x2, int64_t x3)</argsstring>
+        <name>setSq</name>
+        <param>
+          <type>int64_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+<para>Set all four signed 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1157" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1155" bodyend="1159"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a2fa124af45f3725e8012346241d6c6ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSq</definition>
+        <argsstring>(int64_t x0)</argsstring>
+        <name>setSq</name>
+        <param>
+          <type>int64_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all four signed 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1164" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1162" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1aca0ef2dbbf21857d9bb0be8c385c2707" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUq</definition>
+        <argsstring>(uint64_t x0, uint64_t x1, uint64_t x2, uint64_t x3)</argsstring>
+        <name>setUq</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+<para>Set all four unsigned 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1171" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1169" bodyend="1173"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1af085898edc15e3ec0a12a7ce6b2bb203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setUq</definition>
+        <argsstring>(uint64_t x0)</argsstring>
+        <name>setUq</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all four unsigned 64-bit integers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1178" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1176" bodyend="1180"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a807e95bdb6bb9e87a689fdb10ebfc96a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSf</definition>
+        <argsstring>(float x0, float x1, float x2, float x3, float x4, float x5, float x6, float x7)</argsstring>
+        <name>setSf</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight SP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1186" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1183" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a69b619b5e9f9f5404ed20b758ccdaa6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setSf</definition>
+        <argsstring>(float x0)</argsstring>
+        <name>setSf</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all eight SP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1194" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1192" bodyend="1197"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1aea72c69a060299541699b6d22b7dab2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setDf</definition>
+        <argsstring>(double x0, double x1, double x2, double x3)</argsstring>
+        <name>setDf</name>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+<para>Set all four DP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1202" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1200" bodyend="1204"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1Vec256Data_1a0627914dff0114747a2838f273976e97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::Vec256Data::setDf</definition>
+        <argsstring>(double x0)</argsstring>
+        <name>setDf</name>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <briefdescription>
+<para>Set all four DP-FP floats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="1209" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="1207" bodyend="1211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>256-bit vector register data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/vectypes.h" line="768" bodyfile="/home/ryan/asmjit/src/asmjit/base/vectypes.h" bodystart="768" bodyend="1238"/>
+    <listofallmembers>
+      <member refid="unionasmjit_1_1Vec256Data_1a4badb9fa812759d11cdeb626f5ebb129" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>df</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a30c86b2f17d095e4dc3a92f894ff8e19" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromDf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a04af7a9044b63063be0b8bfbf854c73f" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromDf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a588939f4bc24ae4584193129b77d97a2" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1aa871f1f5858d8a7d7686a192120f0908" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a34f3082b965849d049f53ff4d1856412" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a50e06aeda54847adf48400a9d37f266d" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a3aba29302eefefe207f25b6f1b99c0d2" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a4be04393c63c0a9f89f2e08433b427a7" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a313076fa5359e1b5ab8439c65606b5f5" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1af06a09fefbb87f1ef303e444de9b9ed5" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1ad71d6fa849d3627341a682bef8428f3a" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1ae28ced9e8d48369aa4e50ea7b9573f2d" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromSw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a5881f529e231c20f304110a45c660b4f" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1acf38deaf76b674c99921dffa0c504743" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a5bc55c473e662c209111a345d7bb00be" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a3ba6f989098b1ed70966618169cf9bbd" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1af8d2eb9c2625354fd4e0b71f04b87208" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a1822104d6e4af6b726f155e7a8b06102" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1ab1fa678cfb94f7a8bbec0fa993bbaf64" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a5ccfbdaed14729b85fd2dd374897c767" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>fromUw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a3bef3390b610fe254d2b59491faf39af" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>sb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a6d4b40703e4127270ce09e184facdfb1" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>sd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1aea72c69a060299541699b6d22b7dab2e" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setDf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a0627914dff0114747a2838f273976e97" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setDf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a72aa9d8714aa91548d590b43bf7a5c06" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a4806ced1e7ec4c13025c5af931efceec" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1ab0a2b70dd38a8f9ee99dd7315c20196a" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a19ea1760676a2cdf0895b1cfe678640e" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a807e95bdb6bb9e87a689fdb10ebfc96a" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a69b619b5e9f9f5404ed20b758ccdaa6e" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a2e69d8b7aa65b17d219e4111c5d12343" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a2fa124af45f3725e8012346241d6c6ad" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1add202c328d775208e1eb1dc7b86057c5" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1adcf27a2e9b57d07b6316ed3b5b6b284d" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setSw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a028cc13305efc3c8f22b853b869d4246" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1affd18bb934dd8ca03cf591ee4f4fa95d" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUb</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a27da6df6746ecd60885a1fe71bf4c10a" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a2604a166c1ab11737f4c57fe20fa7c95" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUd</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1aca0ef2dbbf21857d9bb0be8c385c2707" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1af085898edc15e3ec0a12a7ce6b2bb203" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a3b4004f5788a6bb166e343ffd233c263" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a88242ce773454574c5a14ddc934fb22e" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>setUw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1af423d13e5ae8ef60d2b0cfccc6184b98" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>sf</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1aa454cf2a0dfefb944ee0696991aaada5" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>sq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a18a716fe50efbef5ff213f47439fcb16" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>sw</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a55f1d12fbdc8f16242590bcac4d99e57" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>ub</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1abec24dc18291e14f03a24a0740e41b8a" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>ud</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1ae29868871389108cfb36bac3ecc5d289" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>uq</name></member>
+      <member refid="unionasmjit_1_1Vec256Data_1a83a3aa9df257c1a1fd76130a052dd9a2" prot="public" virt="non-virtual"><scope>asmjit::Vec256Data</scope><name>uw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

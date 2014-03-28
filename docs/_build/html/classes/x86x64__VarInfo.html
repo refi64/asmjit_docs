@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::VarInfo &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::VarState" href="x86x64__VarState.html" />
+    <link rel="prev" title="x86x64::SegReg" href="x86x64__SegReg.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__VarState.html" title="x86x64::VarState"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__SegReg.html" title="x86x64::SegReg"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-varinfo">
+<h1>x86x64::VarInfo<a class="headerlink" href="#x86x64-varinfo" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::VarInfo</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86 variable information. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1afec997af33bdf1f0cfe8f70c88ad658e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getReg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get register type, see kRegType. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1afcec061cf7244cc94749cf9c790c1542"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get register size in bytes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1a6dd256c61848d49c6a6c1f5c922c288b"></span><div class="line-block">
+<div class="line">uint32_t <strong>getClass</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable class, see kRegClass. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1a0eef68d000250f2412625ea6870039a4"></span><div class="line-block">
+<div class="line">uint32_t <strong>getDesc</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable description, see kVarDesc. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1a36c5cac0597cde862204e9a54cb79ac5"></span><div class="line-block">
+<div class="line">const char * <strong>getName</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable type name. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1a14455772ddba7fc4289b13811467f204"></span>uint8_t <strong>_reg</strong></p>
+<blockquote>
+<div><p>Register type, see kRegType. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1a2329c2f3ee23064fd571582d15c12334"></span>uint8_t <strong>_size</strong></p>
+<blockquote>
+<div><p>Register size in bytes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1ad7903158aa295f72ffe9e999c8af3d5b"></span>uint8_t <strong>_class</strong></p>
+<blockquote>
+<div><p>Register class, see kRegClass. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1af3d9db58cbc6b7070e857c45cb759937"></span>uint8_t <strong>_desc</strong></p>
+<blockquote>
+<div><p>Variable flags, see kVarDesc. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarInfo_1a70f1a141cf726966c994b5085759c62f"></span>char <strong>_name</strong>[4]</p>
+<blockquote>
+<div><p>Variable type name. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__SegReg.html"
+                        title="previous chapter">x86x64::SegReg</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__VarState.html"
+                        title="next chapter">x86x64::VarState</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__VarInfo.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__VarState.html" title="x86x64::VarState"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__SegReg.html" title="x86x64::SegReg"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

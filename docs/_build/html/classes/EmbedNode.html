@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>EmbedNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="EndNode" href="EndNode.html" />
+    <link rel="prev" title="CommentNode" href="CommentNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="EndNode.html" title="EndNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="CommentNode.html" title="CommentNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="embednode">
+<h1>EmbedNode<a class="headerlink" href="#embednode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1EmbedNode">
+<div class="line"><em>struct</em> <strong>asmjit::EmbedNode</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Embed node. </p>
+<p>Embed node is used to embed data into final assembler stream. The data is considered to be RAW; No analysis is performed on RAW data. </p>
+<em>Public Type</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1ad97368c0e7f7a1ed2beddda1506bf5c1"></span><strong>Anonymous enum</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">kInlineBufferSize</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">8</span></tt> - </li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1ac2266db226d9b28ff7631e9fbe45764f"></span><div class="line-block">
+<div class="line"> <strong>EmbedNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler, void * data, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="#asmjitstructasmjit_1_1EmbedNode"><em>EmbedNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1afe1403eb7175f3e6ed05ad1d7dd5e5fe"></span><div class="line-block">
+<div class="line"> <strong>~EmbedNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1EmbedNode"><em>EmbedNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1a0f47d924b52f25e56818f3eb7467e139"></span><div class="line-block">
+<div class="line">uint8_t * <strong>getData</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get pointer to data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1adfdab6b1fb4b3bc6dd667bd996c35525"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get size of data. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1ae51d5b0568672c64c99e5764c9f205cf"></span>uint32_t <strong>_size</strong></p>
+<blockquote>
+<div><p>Size of the embedded data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1a2d9a35a0bcfd4fd7a334762a51c51ff9"></span>uint8_t <strong>buf</strong>[kInlineBufferSize]</p>
+<blockquote>
+<div><p>data buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1ae07dc3ac638bef55e619265851b6bcd4"></span>uint8_t * <strong>ptr</strong></p>
+<blockquote>
+<div><p>Data buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1ab6d90daef658ed0b8524ddf42ea2fc37"></span>union asmjit::EmbedNode::&#64;14 <strong>_data</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1a267ec9b7fcf5e9837bc05242e225235f"></span><div class="line-block">
+<div class="line"> <strong>EmbedNode</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1EmbedNode"><em>EmbedNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1EmbedNode_1a49e7ba67e7f5d2a6ba9f4a97b381f2ed"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1EmbedNode"><em>EmbedNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1EmbedNode"><em>EmbedNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="CommentNode.html"
+                        title="previous chapter">CommentNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="EndNode.html"
+                        title="next chapter">EndNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/EmbedNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="EndNode.html" title="EndNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="CommentNode.html" title="CommentNode"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

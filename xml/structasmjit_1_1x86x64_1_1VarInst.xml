@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1VarInst" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::VarInst</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseVarInst" prot="public" virt="non-virtual">asmjit::BaseVarInst</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1aa4b952aaba7c3935b6ca064bf8d97edd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInst::_vaCount</definition>
+        <argsstring></argsstring>
+        <name>_vaCount</name>
+        <briefdescription>
+<para>Variables count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="298" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1a58aa9379f0efab54b51b02fc5b766a85" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::VarInst::_inRegs</definition>
+        <argsstring></argsstring>
+        <name>_inRegs</name>
+        <briefdescription>
+<para>Special registers on input. </para>        </briefdescription>
+        <detaileddescription>
+<para>Special register(s) restricted to one or more physical register. If there is more than one special register it means that we have to duplicate the variable content to all of them (it means that the same varible was used by two or more operands). We forget about duplicates after the register allocation finishes and marks all duplicates as non-assigned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="307" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1a7516df34cce5fe136f182dff7d9b663d" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::VarInst::_outRegs</definition>
+        <argsstring></argsstring>
+        <name>_outRegs</name>
+        <briefdescription>
+<para>Special registers on output. </para>        </briefdescription>
+        <detaileddescription>
+<para>Special register(s) used on output. Each variable can have only one special register on the output, &apos;VarInst&apos; contains all registers from all &apos;VarAttr&apos;s. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="314" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1abf45b28aacacad31e020974bdd04c357" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::VarInst::_clobberedRegs</definition>
+        <argsstring></argsstring>
+        <name>_clobberedRegs</name>
+        <briefdescription>
+<para>Clobbered registers (by a function call). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="317" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1a5fe8d5bc839214a003efe65637fd7025" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegCount" kindref="compound">RegCount</ref></type>
+        <definition>RegCount asmjit::x86x64::VarInst::_start</definition>
+        <argsstring></argsstring>
+        <name>_start</name>
+        <briefdescription>
+<para>Start indexes of variables per register class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="320" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1ad3267a2c8579be212c3842404bb62649" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegCount" kindref="compound">RegCount</ref></type>
+        <definition>RegCount asmjit::x86x64::VarInst::_count</definition>
+        <argsstring></argsstring>
+        <name>_count</name>
+        <briefdescription>
+<para>Count of variables per register class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="322" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInst_1abd0fd58e0a26f8d223f17287a1cbd4fe" prot="public" static="no" mutable="no">
+        <type>VarAttr</type>
+        <definition>VarAttr asmjit::x86x64::VarInst::_list[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>_list</name>
+        <briefdescription>
+<para>VarAttr list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="325" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1a3a179438262bc9359441743a625bd20f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::x86x64::VarInst::getVaList</definition>
+        <argsstring>() const </argsstring>
+        <name>getVaList</name>
+        <briefdescription>
+<para>Get variable-attributes list as VarAttr data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="229" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1a54eed0b406c3e9d4f36affdbaa1a415c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::x86x64::VarInst::getVaListByClass</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>getVaListByClass</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get variable-attributes list as VarAttr data (by class). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="234" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="234" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1a2c517e151a022214d86f0a2186b0d083" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInst::getVaStart</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>getVaStart</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get position of variables (by class). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="239" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="239" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1abe7b1a1236f91815d2c1363784d568f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInst::getVaCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getVaCount</name>
+        <briefdescription>
+<para>Get count of variables (all). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="244" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="244" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1ac100f437dac4daa78b79afdfb6a34745" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInst::getVaCountByClass</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>getVaCountByClass</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get count of variables (by class). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="249" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1afb026568ea0979dd9020d240a6f76297" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::x86x64::VarInst::getVa</definition>
+        <argsstring>(uint32_t index) const </argsstring>
+        <name>getVa</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get VarAttr at <emphasis>index</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="254" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1a3eead9711cafbb98010f60523abd4d41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::x86x64::VarInst::getVaByClass</definition>
+        <argsstring>(uint32_t c, uint32_t index) const </argsstring>
+        <name>getVaByClass</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get VarAttr of <emphasis>c</emphasis> class at <emphasis>index</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="260" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1a254425ecb2839645b4516667d05a9c6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::x86x64::VarInst::findVa</definition>
+        <argsstring>(VarData *vd) const </argsstring>
+        <name>findVa</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+<para>Find VarAttr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="270" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="270" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInst_1a1dc9f433a4212c798c5272cd98000388" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::x86x64::VarInst::findVaByClass</definition>
+        <argsstring>(uint32_t c, VarData *vd) const </argsstring>
+        <name>findVaByClass</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+<para>Find VarAttr (by class). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="282" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="282" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1199">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="1198">
+        <label>asmjit::x86x64::VarInst</label>
+        <childnode refid="1199" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1202">
+        <label>asmjit::x86x64::RegCount</label>
+        <link refid="structasmjit_1_1x86x64_1_1RegCount"/>
+      </node>
+      <node id="1203">
+        <label>asmjit::x86x64::RegMask</label>
+        <link refid="structasmjit_1_1x86x64_1_1RegMask"/>
+      </node>
+      <node id="1201">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="1200">
+        <label>asmjit::x86x64::VarInst</label>
+        <childnode refid="1201" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1202" relation="usage">
+          <edgelabel>_start</edgelabel>
+          <edgelabel>_count</edgelabel>
+        </childnode>
+        <childnode refid="1203" relation="usage">
+          <edgelabel>_outRegs</edgelabel>
+          <edgelabel>_clobberedRegs</edgelabel>
+          <edgelabel>_inRegs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="223" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="223" bodyend="326"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1abf45b28aacacad31e020974bdd04c357" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_clobberedRegs</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1ad3267a2c8579be212c3842404bb62649" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_count</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a58aa9379f0efab54b51b02fc5b766a85" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_inRegs</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1abd0fd58e0a26f8d223f17287a1cbd4fe" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_list</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a7516df34cce5fe136f182dff7d9b663d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_outRegs</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a5fe8d5bc839214a003efe65637fd7025" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_start</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1aa4b952aaba7c3935b6ca064bf8d97edd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>_vaCount</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a254425ecb2839645b4516667d05a9c6e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>findVa</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a1dc9f433a4212c798c5272cd98000388" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>findVaByClass</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1afb026568ea0979dd9020d240a6f76297" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVa</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a3eead9711cafbb98010f60523abd4d41" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVaByClass</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1abe7b1a1236f91815d2c1363784d568f7" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVaCount</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1ac100f437dac4daa78b79afdfb6a34745" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVaCountByClass</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a3a179438262bc9359441743a625bd20f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVaList</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a54eed0b406c3e9d4f36affdbaa1a415c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVaListByClass</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInst_1a2c517e151a022214d86f0a2186b0d083" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInst</scope><name>getVaStart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

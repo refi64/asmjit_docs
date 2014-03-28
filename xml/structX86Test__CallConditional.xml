@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__CallConditional" kind="struct" prot="public">
+    <compoundname>X86Test_CallConditional</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__CallConditional_1a076bad92922a6239a4025fe560e3f6ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_CallConditional::X86Test_CallConditional</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_CallConditional</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2048" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2048" bodyend="2048"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallConditional_1a086e48673a2cb36ef541ef4c73fc6a92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_CallConditional::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2054" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2054" bodyend="2098"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallConditional_1a4b1ebf9bc6c7b94fb260c4633a7ea078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_CallConditional::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2100" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2100" bodyend="2117"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__CallConditional_1a5ee41b787dbe027368e1611304de8f2d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_CallConditional::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2050" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2050" bodyend="2052"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallConditional_1a4bbed87e5587b506db79f0f08de3d12b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int X86Test_CallConditional::calledFuncAdd</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>calledFuncAdd</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2119" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2119" bodyend="2119"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallConditional_1a967251ff3c470bc7aca0972489b9f3b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int X86Test_CallConditional::calledFuncMul</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>calledFuncMul</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2120" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2120" bodyend="2120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2047" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2047" bodyend="2121"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>_name</name></member>
+      <member refid="structX86Test__CallConditional_1a5ee41b787dbe027368e1611304de8f2d" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>add</name></member>
+      <member refid="structX86Test__CallConditional_1a4bbed87e5587b506db79f0f08de3d12b" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>calledFuncAdd</name></member>
+      <member refid="structX86Test__CallConditional_1a967251ff3c470bc7aca0972489b9f3b4" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>calledFuncMul</name></member>
+      <member refid="structX86Test__CallConditional_1a086e48673a2cb36ef541ef4c73fc6a92" prot="public" virt="virtual"><scope>X86Test_CallConditional</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>getName</name></member>
+      <member refid="structX86Test__CallConditional_1a4b1ebf9bc6c7b94fb260c4633a7ea078" prot="public" virt="virtual"><scope>X86Test_CallConditional</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>X86Test</name></member>
+      <member refid="structX86Test__CallConditional_1a076bad92922a6239a4025fe560e3f6ba" prot="public" virt="non-virtual"><scope>X86Test_CallConditional</scope><name>X86Test_CallConditional</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_CallConditional</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__Dummy" kind="struct" prot="public">
+    <compoundname>X86Test_Dummy</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__Dummy_1aaf32c742c02ad52fc710d5f7e4cd7f74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_Dummy::X86Test_Dummy</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_Dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2253" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2253" bodyend="2253"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__Dummy_1ab1d39a5ee0b162923aa531bc2c95a331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_Dummy::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2259" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2259" bodyend="2281"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__Dummy_1ac72400be9ea57305909e3a01dd1f92a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_Dummy::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2283" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2283" bodyend="2288"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__Dummy_1a3abbb25126d0bc50bb3da7c951ac0415" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_Dummy::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2255" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2255" bodyend="2257"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2252" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2252" bodyend="2289"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_Dummy</scope><name>_name</name></member>
+      <member refid="structX86Test__Dummy_1a3abbb25126d0bc50bb3da7c951ac0415" prot="public" virt="non-virtual"><scope>X86Test_Dummy</scope><name>add</name></member>
+      <member refid="structX86Test__Dummy_1ab1d39a5ee0b162923aa531bc2c95a331" prot="public" virt="virtual"><scope>X86Test_Dummy</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_Dummy</scope><name>getName</name></member>
+      <member refid="structX86Test__Dummy_1ac72400be9ea57305909e3a01dd1f92a4" prot="public" virt="virtual"><scope>X86Test_Dummy</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_Dummy</scope><name>X86Test</name></member>
+      <member refid="structX86Test__Dummy_1aaf32c742c02ad52fc710d5f7e4cd7f74" prot="public" virt="non-virtual"><scope>X86Test_Dummy</scope><name>X86Test_Dummy</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_Dummy</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

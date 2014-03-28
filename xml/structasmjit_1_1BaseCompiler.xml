@@ -1,0 +1,1630 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseCompiler" kind="struct" prot="public">
+    <compoundname>asmjit::BaseCompiler</compoundname>
+    <basecompoundref refid="structasmjit_1_1CodeGen" prot="public" virt="non-virtual">asmjit::CodeGen</basecompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1X86X64Compiler" prot="public" virt="non-virtual">asmjit::x86x64::X86X64Compiler</derivedcompoundref>
+    <includes local="no">compiler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a9928c755a7d0cfe65fbb928efef40977" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseCompiler::_nodeFlowId</definition>
+        <argsstring></argsstring>
+        <name>_nodeFlowId</name>
+        <briefdescription>
+<para>Flow id added to each node created (used only by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1924" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1924" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1ae7811102fca26efd20d13628125ca9db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseCompiler::_nodeFlags</definition>
+        <argsstring></argsstring>
+        <name>_nodeFlags</name>
+        <briefdescription>
+<para>Flags added to each node created (used only by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1926" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1926" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1af1693974a88dc5f515a77efbfa3576db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseCompiler::_maxLookAhead</definition>
+        <argsstring></argsstring>
+        <name>_maxLookAhead</name>
+        <briefdescription>
+<para>Maximum count of nodes to look ahead when allocating/spilling registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1929" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1929" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a628212c11a148a6d4e63f2828f78a1cc" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* asmjit::BaseCompiler::_targetVarMapping</definition>
+        <argsstring></argsstring>
+        <name>_targetVarMapping</name>
+        <briefdescription>
+<para>Variable mapping (translates incoming kVarType into target). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1932" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a277d26b04a7c77b681b2aa4bb3153259" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseCompiler::_firstNode</definition>
+        <argsstring></argsstring>
+        <name>_firstNode</name>
+        <briefdescription>
+<para>First node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1935" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1935" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a4fdfaf23e3ebb405a6fce1fa80c1c4c6" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseCompiler::_lastNode</definition>
+        <argsstring></argsstring>
+        <name>_lastNode</name>
+        <briefdescription>
+<para>Last node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1937" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1937" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a6cb1a30025c1ba27490c5a9af56d9db4" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseCompiler::_cursor</definition>
+        <argsstring></argsstring>
+        <name>_cursor</name>
+        <briefdescription>
+<para>Current node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1940" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1940" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1afa054f0e028aa072a6b54a38e182812a" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1FuncNode" kindref="compound">FuncNode</ref> *</type>
+        <definition>FuncNode* asmjit::BaseCompiler::_func</definition>
+        <argsstring></argsstring>
+        <name>_func</name>
+        <briefdescription>
+<para>Current function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1942" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1942" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a4d491c8178d555cded21ef092455122c" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref></type>
+        <definition>Zone asmjit::BaseCompiler::_varAllocator</definition>
+        <argsstring></argsstring>
+        <name>_varAllocator</name>
+        <briefdescription>
+<para>Variable allocator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1945" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1945" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a72e0dd87a5728952e65969dca03bb7a6" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref></type>
+        <definition>Zone asmjit::BaseCompiler::_stringAllocator</definition>
+        <argsstring></argsstring>
+        <name>_stringAllocator</name>
+        <briefdescription>
+<para>String/data allocator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1947" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1947" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1ab1e68c5e9b3194a92f874f6f702b4128" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> * &gt;</type>
+        <definition>PodVector&lt;TargetNode*&gt; asmjit::BaseCompiler::_targets</definition>
+        <argsstring></argsstring>
+        <name>_targets</name>
+        <briefdescription>
+<para>Targets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1950" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseCompiler_1a88ee18bc8626c78793233d684ba8eaef" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> * &gt;</type>
+        <definition>PodVector&lt;VarData*&gt; asmjit::BaseCompiler::_vars</definition>
+        <argsstring></argsstring>
+        <name>_vars</name>
+        <briefdescription>
+<para>Variables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1952" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1952" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a18a979e158be32fe3bcd121fb0a0db47" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseCompiler::BaseCompiler</definition>
+        <argsstring>(const BaseCompiler &amp;other)</argsstring>
+        <name>BaseCompiler</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1639"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1aef629012b8e93af00a809b9067224720" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> &amp;</type>
+        <definition>BaseCompiler&amp; asmjit::BaseCompiler::operator=</definition>
+        <argsstring>(const BaseCompiler &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1639"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a7405f38e199666f295043fa1197e8c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseCompiler::BaseCompiler</definition>
+        <argsstring>(BaseRuntime *runtime)</argsstring>
+        <name>BaseCompiler</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> *</type>
+          <declname>runtime</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1646" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="37" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1ad4e9cfa5d09e28246268e82d3b34eebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseCompiler::~BaseCompiler</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseCompiler</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1648" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a4be1b2c2b911122b2f50967c820340a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseCompiler::getMaxLookAhead</definition>
+        <argsstring>() const </argsstring>
+        <name>getMaxLookAhead</name>
+        <briefdescription>
+<para>Get maximum look ahead. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1655" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1655" bodyend="1655"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1abf82cd552edd42804ab616b89a2bee93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseCompiler::setMaxLookAhead</definition>
+        <argsstring>(uint32_t val)</argsstring>
+        <name>setMaxLookAhead</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set maximum look ahead to <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1657" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1657" bodyend="1657"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1afff080faca3b4a0ef878392ef8406efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear everything, but keep buffers allocated. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This method will destroy your code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1666" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a66ebed2ec94250d109a0cea4d9cb7cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Clear everything and reset all buffers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This method will destroy your code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1670" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="62" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9bb0e088212274bee8c2fe7fa5279d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::_purge</definition>
+        <argsstring>()</argsstring>
+        <name>_purge</name>
+        <reimplements refid="structasmjit_1_1CodeGen_1a9729e7a624ee41d357c69a0e1866483b">_purge</reimplements>
+        <briefdescription>
+<para>Called by <ref refid="structasmjit_1_1BaseCompiler_1afff080faca3b4a0ef878392ef8406efe" kindref="member">clear()</ref> and <ref refid="structasmjit_1_1BaseCompiler_1a66ebed2ec94250d109a0cea4d9cb7cbc" kindref="member">reset()</ref> to clear all data related to derived class implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1673" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="73" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a62471319c38f63bc7efc349ba01e336f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* asmjit::BaseCompiler::newNode</definition>
+        <argsstring>()</argsstring>
+        <name>newNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1680" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1680" bodyend="1683"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1afc83e461ed18d27c9c8236c86fe52a7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename P0</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* asmjit::BaseCompiler::newNode</definition>
+        <argsstring>(P0 p0)</argsstring>
+        <name>newNode</name>
+        <param>
+          <type>P0</type>
+          <declname>p0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1686" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1686" bodyend="1689"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a15669375b4db699aeed1a0b2724efe94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename P0</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* asmjit::BaseCompiler::newNode</definition>
+        <argsstring>(P0 p0, P1 p1)</argsstring>
+        <name>newNode</name>
+        <param>
+          <type>P0</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1692" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1692" bodyend="1695"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1aec9219a5131baaa97366bd89b0d26fc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename P0</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* asmjit::BaseCompiler::newNode</definition>
+        <argsstring>(P0 p0, P1 p1, P2 p2)</argsstring>
+        <name>newNode</name>
+        <param>
+          <type>P0</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1698" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1698" bodyend="1701"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a691ca99350207a8a9ed20b2851c8e010" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseCompiler::getFirstNode</definition>
+        <argsstring>() const </argsstring>
+        <name>getFirstNode</name>
+        <briefdescription>
+<para>Get first node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1704" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1704" bodyend="1704"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9461d4f3a68f11e07a22d5d0181ae0d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseCompiler::getLastNode</definition>
+        <argsstring>() const </argsstring>
+        <name>getLastNode</name>
+        <briefdescription>
+<para>Get last node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1706" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1706" bodyend="1706"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1ac895c34efb7f107ef1cc34fb277aa77a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseCompiler::getCursor</definition>
+        <argsstring>() const </argsstring>
+        <name>getCursor</name>
+        <briefdescription>
+<para>Get current node. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If this method returns <computeroutput>NULL</computeroutput> it means that nothing has been emitted yet. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1712" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1712" bodyend="1712"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9424cec63c505e47aae9e376d9f8a752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseCompiler::_setCursor</definition>
+        <argsstring>(BaseNode *node)</argsstring>
+        <name>_setCursor</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Set the current node without returning the previous node (private). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1714" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1714" bodyend="1714"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1ab258d8bb815f7c9e3368bdbab6fd6256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode * asmjit::BaseCompiler::setCursor</definition>
+        <argsstring>(BaseNode *node)</argsstring>
+        <name>setCursor</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Set the current node to <emphasis>node</emphasis> and return the previous one. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1716" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a3e3feac0cab656ceb360cdb6498393ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode * asmjit::BaseCompiler::addNode</definition>
+        <argsstring>(BaseNode *node)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Add node <emphasis>node</emphasis> after current and set current to <emphasis>node</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1719" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="103" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a0cb4ee83c430e485d57f6c18b6857b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode * asmjit::BaseCompiler::addNodeBefore</definition>
+        <argsstring>(BaseNode *node, BaseNode *ref)</argsstring>
+        <name>addNodeBefore</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para>Add node before <emphasis>ref</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1721" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="137" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1aa4d5d57d89518fd8d3224bebb8e9ae4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode * asmjit::BaseCompiler::addNodeAfter</definition>
+        <argsstring>(BaseNode *node, BaseNode *ref)</argsstring>
+        <name>addNodeAfter</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para>Add node after <emphasis>ref</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1723" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="158" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1aeca9652a56df1842c3342bfcd774a3b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode * asmjit::BaseCompiler::removeNode</definition>
+        <argsstring>(BaseNode *node)</argsstring>
+        <name>removeNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Remove node <emphasis>node</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1725" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="205" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1ae87563494bc6261b12d22fdfd094500f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::removeNodes</definition>
+        <argsstring>(BaseNode *first, BaseNode *last)</argsstring>
+        <name>removeNodes</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Remove multiple nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1727" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="229" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9869bf24be59d50354a36c2d1a04877a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1FuncNode" kindref="compound">FuncNode</ref> *</type>
+        <definition>FuncNode* asmjit::BaseCompiler::getFunc</definition>
+        <argsstring>() const </argsstring>
+        <name>getFunc</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Compiler_1a9419277c77af58ddd9d4c813f847cc0f">getFunc</reimplementedby>
+        <briefdescription>
+<para>Get current function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1734" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1734" bodyend="1734"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a463c4a6d099d52ea479a9650e696544a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1AlignNode" kindref="compound">AlignNode</ref> *</type>
+        <definition>AlignNode * asmjit::BaseCompiler::newAlign</definition>
+        <argsstring>(uint32_t m)</argsstring>
+        <name>newAlign</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1AlignNode" kindref="compound">AlignNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1741" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="270" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1af69209313ac46fdbac3de52a613f44ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1AlignNode" kindref="compound">AlignNode</ref> *</type>
+        <definition>AlignNode * asmjit::BaseCompiler::addAlign</definition>
+        <argsstring>(uint32_t m)</argsstring>
+        <name>addAlign</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Add a new <ref refid="structasmjit_1_1AlignNode" kindref="compound">AlignNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1743" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="281" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1aee491d0c270a38b9e3154e74be9ddd4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1AlignNode" kindref="compound">AlignNode</ref> *</type>
+        <definition>AlignNode* asmjit::BaseCompiler::align</definition>
+        <argsstring>(uint32_t m)</argsstring>
+        <name>align</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Align target buffer to <emphasis>m</emphasis> bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Typical usage of this is to align labels at start of the inner loops.</para><para>Inserts <computeroutput>nop()</computeroutput> instructions or CPU optimized NOPs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1750" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1750" bodyend="1750"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a90c68e8beae42497baf524842a472154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> *</type>
+        <definition>TargetNode * asmjit::BaseCompiler::newTarget</definition>
+        <argsstring>()</argsstring>
+        <name>newTarget</name>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1757" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="292" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a8e765ab9c84303bbc7cd50cd48978f74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> *</type>
+        <definition>TargetNode * asmjit::BaseCompiler::addTarget</definition>
+        <argsstring>()</argsstring>
+        <name>addTarget</name>
+        <briefdescription>
+<para>Add a new <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1759" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="305" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1afda181597fca17f0b3ea3864820431e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> *</type>
+        <definition>TargetNode* asmjit::BaseCompiler::getTargetById</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>getTargetById</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> by <emphasis>id</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1762" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1762" bodyend="1767"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9b6ebe8c5a3a53f755186ca84fa8a975" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> *</type>
+        <definition>TargetNode* asmjit::BaseCompiler::getTarget</definition>
+        <argsstring>(const Label &amp;label)</argsstring>
+        <name>getTarget</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref> by <emphasis>label</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1770" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1770" bodyend="1772"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a864ab9b2610cb527070455f3e5e893f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseCompiler::getLabelsCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getLabelsCount</name>
+        <briefdescription>
+<para>Get count of created labels. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1780" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1779" bodyend="1780"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a731cc8cf46fa9456d9da537338975308" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseCompiler::isLabelCreated</definition>
+        <argsstring>(const Label &amp;label) const </argsstring>
+        <name>isLabelCreated</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Get whether <emphasis>label</emphasis> is created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1784" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1783" bodyend="1784"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1acd732ff3666fedb2a09d2cd127a9d942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseCompiler::_newLabel</definition>
+        <argsstring>(Label *dst)</argsstring>
+        <name>_newLabel</name>
+        <param>
+          <type><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1789" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="316" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a5eef24a0d411d3eb54677ef5a53957b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref></type>
+        <definition>Label asmjit::BaseCompiler::newLabel</definition>
+        <argsstring>()</argsstring>
+        <name>newLabel</name>
+        <briefdescription>
+<para>Create and return new label. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1792" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1792" bodyend="1796"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a79453ba71cbe71378808768bd51a4326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::bind</definition>
+        <argsstring>(const Label &amp;label)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Bind label to the current offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> can be bound only once! </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1801" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="331" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a869d5617c72c2728059a49a14bbe0362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> *</type>
+        <definition>EmbedNode * asmjit::BaseCompiler::newEmbed</definition>
+        <argsstring>(const void *data, uint32_t size)</argsstring>
+        <name>newEmbed</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1808" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="342" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1ad99bcb737fa3489e3d3d120f979b1793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> *</type>
+        <definition>EmbedNode * asmjit::BaseCompiler::addEmbed</definition>
+        <argsstring>(const void *data, uint32_t size)</argsstring>
+        <name>addEmbed</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Add a new <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1810" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="364" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a505588623f233dbf5c227fcbed17155a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> *</type>
+        <definition>EmbedNode* asmjit::BaseCompiler::embed</definition>
+        <argsstring>(const void *data, uint32_t size)</argsstring>
+        <name>embed</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Embed data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1813" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1813" bodyend="1813"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9a246926cd01ea668fbba41741dff72d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> *</type>
+        <definition>CommentNode * asmjit::BaseCompiler::newComment</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>newComment</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1820" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="375" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a722b06b738b08acdfeb3559796fd4f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> *</type>
+        <definition>CommentNode * asmjit::BaseCompiler::addComment</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>addComment</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Add a new <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1822" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="394" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1af501c8ac8635d94c0fa28dbfa2c9701f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> *</type>
+        <definition>CommentNode * asmjit::BaseCompiler::comment</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>comment</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Emit a single comment line. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1825" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="401" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a0d67198e55d11240e7b71a9d9e5e252e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1HintNode" kindref="compound">HintNode</ref> *</type>
+        <definition>HintNode * asmjit::BaseCompiler::newHint</definition>
+        <argsstring>(BaseVar &amp;var, uint32_t hint, uint32_t value)</argsstring>
+        <name>newHint</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1HintNode" kindref="compound">HintNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1832" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="425" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1abbd6d4c4b95647520ba3c798e67f67f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1HintNode" kindref="compound">HintNode</ref> *</type>
+        <definition>HintNode * asmjit::BaseCompiler::addHint</definition>
+        <argsstring>(BaseVar &amp;var, uint32_t hint, uint32_t value)</argsstring>
+        <name>addHint</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a new <ref refid="structasmjit_1_1HintNode" kindref="compound">HintNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1834" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="440" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a47d45c3cb329b30627222ecbbb033490" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseCompiler::isVarCreated</definition>
+        <argsstring>(const BaseVar &amp;var) const </argsstring>
+        <name>isVarCreated</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Get whether variable <emphasis>var</emphasis> is created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1841" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1841" bodyend="1843"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a3468dca5f11839752d82a0fe2cbe25a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::BaseCompiler::getVd</definition>
+        <argsstring>(const BaseVar &amp;var) const </argsstring>
+        <name>getVd</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1848" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1848" bodyend="1850"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a31224d17544cd4932d003e310473ae01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::BaseCompiler::getVdById</definition>
+        <argsstring>(uint32_t id) const </argsstring>
+        <name>getVdById</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1855" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1855" bodyend="1860"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a19910ee3377191fbe806433bd057215c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> **</type>
+        <definition>VarData** asmjit::BaseCompiler::_getVdArray</definition>
+        <argsstring>() const </argsstring>
+        <name>_getVdArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1865" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1865" bodyend="1867"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1acdb52f3841097c7f335c15ac6c221402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData * asmjit::BaseCompiler::_newVd</definition>
+        <argsstring>(uint32_t type, uint32_t size, uint32_t c, const char *name)</argsstring>
+        <name>_newVd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1872" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="454" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a0a0d78ffb95c9b74d4c6fd0205519b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseCompiler::_newVar</definition>
+        <argsstring>(BaseVar *var, uint32_t type, const char *name)=0</argsstring>
+        <name>_newVar</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Compiler_1a0962b154aaa99a436acbc67f29d0ac12">_newVar</reimplementedby>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1875"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a9887abcaf860aff3620f790071659a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::alloc</definition>
+        <argsstring>(BaseVar &amp;var)</argsstring>
+        <name>alloc</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Alloc variable <emphasis>var</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1878" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="503" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a798bd50e7faac48769efd933fa7746d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::alloc</definition>
+        <argsstring>(BaseVar &amp;var, uint32_t regIndex)</argsstring>
+        <name>alloc</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>regIndex</declname>
+        </param>
+        <briefdescription>
+<para>Alloc variable <emphasis>var</emphasis> using <emphasis>regIndex</emphasis> as a register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1880" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="507" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a3c08591c6376c4d9f042183cd5c3fb61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::alloc</definition>
+        <argsstring>(BaseVar &amp;var, const BaseReg &amp;reg)</argsstring>
+        <name>alloc</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseReg" kindref="compound">BaseReg</ref> &amp;</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Alloc variable <emphasis>var</emphasis> using <emphasis>reg</emphasis> as a demanded register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1882" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="511" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1ab816e5a2afbf8fd59c119b820f4c5954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::spill</definition>
+        <argsstring>(BaseVar &amp;var)</argsstring>
+        <name>spill</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Spill variable <emphasis>var</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1884" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="519" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1aa387c6a473cd28b3a7271d964d4864ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::save</definition>
+        <argsstring>(BaseVar &amp;var)</argsstring>
+        <name>save</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Save variable <emphasis>var</emphasis> if modified. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1886" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="515" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a5d9021937d9570df4d89abe454bfcee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::unuse</definition>
+        <argsstring>(BaseVar &amp;var)</argsstring>
+        <name>unuse</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Unuse variable <emphasis>var</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1888" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="523" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a5a9364098d19d82b88c1a60e964369e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API uint32_t</type>
+        <definition>uint32_t asmjit::BaseCompiler::getPriority</definition>
+        <argsstring>(BaseVar &amp;var) const </argsstring>
+        <name>getPriority</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Get priority of variable <emphasis>var</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1891" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="527" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1af4d8526178948d9b59c533f5a07e599e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::setPriority</definition>
+        <argsstring>(BaseVar &amp;var, uint32_t priority)</argsstring>
+        <name>setPriority</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Set priority of variable <emphasis>var</emphasis> to <emphasis>priority</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1893" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="535" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a36d1e8d735fb1e7151ee5ccf6ef2bbe4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::BaseCompiler::getSaveOnUnuse</definition>
+        <argsstring>(BaseVar &amp;var) const </argsstring>
+        <name>getSaveOnUnuse</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Get save-on-unuse <emphasis>var</emphasis> property. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1896" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="546" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a317bae3f4011066c5efc7781cb4bc30e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::setSaveOnUnuse</definition>
+        <argsstring>(BaseVar &amp;var, bool value)</argsstring>
+        <name>setSaveOnUnuse</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set save-on-unuse <emphasis>var</emphasis> property to <emphasis>value</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1898" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="554" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a81286497909c2862d4ad440b47be7990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseCompiler::rename</definition>
+        <argsstring>(BaseVar &amp;var, const char *name)</argsstring>
+        <name>rename</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Rename variable <emphasis>var</emphasis> to <emphasis>name</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only new name will appear in the logger. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1903" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="562" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a93a3e24196bf66d1268338da451548e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseCompiler::_newStack</definition>
+        <argsstring>(BaseMem *mem, uint32_t size, uint32_t alignment, const char *name)=0</argsstring>
+        <name>_newStack</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Compiler_1a2d9fb7b8d7cb33e3b327bad6c28202b5">_newStack</reimplementedby>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1910"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseCompiler_1a32fb90970a7d2603987e062daf6d0dae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseCompiler::serialize</definition>
+        <argsstring>(BaseAssembler &amp;assembler)=0</argsstring>
+        <name>serialize</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Compiler_1a930f6d27a016a7ddcd5ffa06f198056e">serialize</reimplementedby>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> &amp;</type>
+          <declname>assembler</declname>
+        </param>
+        <briefdescription>
+<para>Send assembled code to <emphasis>assembler</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1917"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base compiler. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="624">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+      </node>
+      <node id="623">
+        <label>asmjit::BaseCompiler</label>
+        <link refid="structasmjit_1_1BaseCompiler"/>
+        <childnode refid="624" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="625">
+        <label>asmjit::x86x64::X86X64Compiler</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64Compiler"/>
+        <childnode refid="623" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="628">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="629">
+        <label>asmjit::Zone</label>
+        <link refid="structasmjit_1_1Zone"/>
+      </node>
+      <node id="630">
+        <label>asmjit::BaseRuntime</label>
+        <link refid="structasmjit_1_1BaseRuntime"/>
+      </node>
+      <node id="634">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="627">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+        <childnode refid="628" relation="usage">
+          <edgelabel>_logger</edgelabel>
+        </childnode>
+        <childnode refid="629" relation="usage">
+          <edgelabel>_zoneAllocator</edgelabel>
+        </childnode>
+        <childnode refid="630" relation="usage">
+          <edgelabel>_runtime</edgelabel>
+        </childnode>
+      </node>
+      <node id="633">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="634" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="635" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="633" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="636" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="626">
+        <label>asmjit::BaseCompiler</label>
+        <link refid="structasmjit_1_1BaseCompiler"/>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+        <childnode refid="631" relation="usage">
+          <edgelabel>_vars</edgelabel>
+        </childnode>
+        <childnode refid="632" relation="usage">
+          <edgelabel>_targets</edgelabel>
+        </childnode>
+        <childnode refid="629" relation="usage">
+          <edgelabel>_varAllocator</edgelabel>
+          <edgelabel>_stringAllocator</edgelabel>
+        </childnode>
+        <childnode refid="633" relation="usage">
+          <edgelabel>_lastNode</edgelabel>
+          <edgelabel>_cursor</edgelabel>
+          <edgelabel>_firstNode</edgelabel>
+        </childnode>
+        <childnode refid="637" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="639">
+        <label>asmjit::JumpNode</label>
+        <link refid="structasmjit_1_1JumpNode"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+        <childnode refid="639" relation="usage">
+          <edgelabel>_jumpNext</edgelabel>
+        </childnode>
+        <childnode refid="638" relation="usage">
+          <edgelabel>_target</edgelabel>
+        </childnode>
+      </node>
+      <node id="637">
+        <label>asmjit::FuncNode</label>
+        <link refid="structasmjit_1_1FuncNode"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="638" relation="usage">
+          <edgelabel>_exitNode</edgelabel>
+          <edgelabel>_entryNode</edgelabel>
+        </childnode>
+        <childnode refid="642" relation="usage">
+          <edgelabel>_end</edgelabel>
+        </childnode>
+        <childnode refid="643" relation="usage">
+          <edgelabel>_decl</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="642">
+        <label>asmjit::EndNode</label>
+        <link refid="structasmjit_1_1EndNode"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="635">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="644">
+        <label>asmjit::FuncInOut</label>
+        <link refid="structasmjit_1_1FuncInOut"/>
+      </node>
+      <node id="641">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="645">
+        <label>asmjit::VarData</label>
+        <link refid="structasmjit_1_1VarData"/>
+      </node>
+      <node id="640">
+        <label>asmjit::InstNode</label>
+        <link refid="structasmjit_1_1InstNode"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="641" relation="usage">
+          <edgelabel>_opList</edgelabel>
+        </childnode>
+      </node>
+      <node id="632">
+        <label>asmjit::PodVector&lt; TargetNode * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="643">
+        <label>asmjit::FuncDecl</label>
+        <link refid="structasmjit_1_1FuncDecl"/>
+        <childnode refid="644" relation="usage">
+          <edgelabel>_retList</edgelabel>
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="631">
+        <label>asmjit::PodVector&lt; VarData * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="636">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="638">
+        <label>asmjit::TargetNode</label>
+        <link refid="structasmjit_1_1TargetNode"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="639" relation="usage">
+          <edgelabel>_from</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1638" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1638" bodyend="1953"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1CodeGen_1a26c78e4494d88ab9805496e023d3baa0" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_arch</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a6cb1a30025c1ba27490c5a9af56d9db4" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_cursor</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_error</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_errorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_features</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a277d26b04a7c77b681b2aa4bb3153259" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_firstNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1afa054f0e028aa072a6b54a38e182812a" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_func</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a19910ee3377191fbe806433bd057215c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_getVdArray</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a4fdfaf23e3ebb405a6fce1fa80c1c4c6" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_lastNode</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_logger</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1af1693974a88dc5f515a77efbfa3576db" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_maxLookAhead</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1acd732ff3666fedb2a09d2cd127a9d942" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_newLabel</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a93a3e24196bf66d1268338da451548e7" prot="public" virt="pure-virtual"><scope>asmjit::BaseCompiler</scope><name>_newStack</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a0a0d78ffb95c9b74d4c6fd0205519b62" prot="public" virt="pure-virtual"><scope>asmjit::BaseCompiler</scope><name>_newVar</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1acdb52f3841097c7f335c15ac6c221402" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_newVd</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ae7811102fca26efd20d13628125ca9db" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_nodeFlags</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9928c755a7d0cfe65fbb928efef40977" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_nodeFlowId</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a4fb02f71d3669ae2345645490a4b1539" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_options</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9bb0e088212274bee8c2fe7fa5279d6d" prot="public" virt="virtual"><scope>asmjit::BaseCompiler</scope><name>_purge</name></member>
+      <member refid="structasmjit_1_1CodeGen_1acbfa512e3ec91bff2364d868d2da3280" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_regSize</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a64fd203c2592221acd076eb8800acfea" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_runtime</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9424cec63c505e47aae9e376d9f8a752" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_setCursor</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a72e0dd87a5728952e65969dca03bb7a6" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_stringAllocator</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ab1e68c5e9b3194a92f874f6f702b4128" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_targets</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a628212c11a148a6d4e63f2828f78a1cc" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_targetVarMapping</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a4d491c8178d555cded21ef092455122c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_varAllocator</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a88ee18bc8626c78793233d684ba8eaef" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_vars</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>_zoneAllocator</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1af69209313ac46fdbac3de52a613f44ca" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addAlign</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a722b06b738b08acdfeb3559796fd4f7c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addComment</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ad99bcb737fa3489e3d3d120f979b1793" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addEmbed</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1abbd6d4c4b95647520ba3c798e67f67f4" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addHint</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a3e3feac0cab656ceb360cdb6498393ff" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1aa4d5d57d89518fd8d3224bebb8e9ae4f" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addNodeAfter</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a0cb4ee83c430e485d57f6c18b6857b9f" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addNodeBefore</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a8e765ab9c84303bbc7cd50cd48978f74" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>addTarget</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1aee491d0c270a38b9e3154e74be9ddd4c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>align</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9887abcaf860aff3620f790071659a47" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>alloc</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a798bd50e7faac48769efd933fa7746d2" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>alloc</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a3c08591c6376c4d9f042183cd5c3fb61" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>alloc</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a18a979e158be32fe3bcd121fb0a0db47" prot="private" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>BaseCompiler</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a7405f38e199666f295043fa1197e8c60" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>BaseCompiler</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a79453ba71cbe71378808768bd51a4326" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>bind</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1afff080faca3b4a0ef878392ef8406efe" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>clear</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a20674b359509b562f6079bfef6342692" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>clearError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a0f1f14151bf464a31a3bb1a7f69e9bfe" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>clearErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a3e5282956457ed71030395c96b753225" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>CodeGen</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1af501c8ac8635d94c0fa28dbfa2c9701f" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>comment</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a505588623f233dbf5c227fcbed17155a" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>embed</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af0de6375faa88373299618dc893c6e02" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getArch</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ac895c34efb7f107ef1cc34fb277aa77a" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getCursor</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1acefc96c0ac363fcf81625d232ed3d34b" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getErrorHandler</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a691ca99350207a8a9ed20b2851c8e010" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getFirstNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9869bf24be59d50354a36c2d1a04877a" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getFunc</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a864ab9b2610cb527070455f3e5e893f8" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getLabelsCount</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9461d4f3a68f11e07a22d5d0181ae0d1" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getLastNode</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a74d11332a9175e011875b1fc63599f8e" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getLogger</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a4be1b2c2b911122b2f50967c820340a1" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getMaxLookAhead</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af8f725cbd3aa4c226ea0fc7175d0a92c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getOptions</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aab3bc0b503327c62bc7d952d41365705" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getOptionsAndClear</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a5a9364098d19d82b88c1a60e964369e5" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getPriority</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a25290524d42466e7f341f0c41790ab34" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getRegSize</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a3d7daab958f99527363d5d97a0d32a0d" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getRuntime</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a36d1e8d735fb1e7151ee5ccf6ef2bbe4" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getSaveOnUnuse</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9b6ebe8c5a3a53f755186ca84fa8a975" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getTarget</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1afda181597fca17f0b3ea3864820431e7" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getTargetById</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a3468dca5f11839752d82a0fe2cbe25a6" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getVd</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a31224d17544cd4932d003e310473ae01" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>getVdById</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>hasFeature</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ae747a5b9778251fd11943d0f8a00bedd" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>hasLogger</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a731cc8cf46fa9456d9da537338975308" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>isLabelCreated</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a47d45c3cb329b30627222ecbbb033490" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>isVarCreated</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22" prot="public" virt="pure-virtual"><scope>asmjit::BaseCompiler</scope><name>make</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a463c4a6d099d52ea479a9650e696544a" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newAlign</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a9a246926cd01ea668fbba41741dff72d" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newComment</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a869d5617c72c2728059a49a14bbe0362" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newEmbed</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a0d67198e55d11240e7b71a9d9e5e252e" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newHint</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a5eef24a0d411d3eb54677ef5a53957b3" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newLabel</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a62471319c38f63bc7efc349ba01e336f" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1afc83e461ed18d27c9c8236c86fe52a7c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a15669375b4db699aeed1a0b2724efe94" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1aec9219a5131baaa97366bd89b0d26fc9" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a90c68e8beae42497baf524842a472154" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>newTarget</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1aef629012b8e93af00a809b9067224720" prot="private" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1aeca9652a56df1842c3342bfcd774a3b9" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>removeNode</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ae87563494bc6261b12d22fdfd094500f" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>removeNodes</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a81286497909c2862d4ad440b47be7990" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>rename</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a66ebed2ec94250d109a0cea4d9cb7cbc" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1aa387c6a473cd28b3a7271d964d4864ba" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>save</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a32fb90970a7d2603987e062daf6d0dae" prot="public" virt="pure-virtual"><scope>asmjit::BaseCompiler</scope><name>serialize</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ab258d8bb815f7c9e3368bdbab6fd6256" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setCursor</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setFeature</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setLogger</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1abf82cd552edd42804ab616b89a2bee93" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setMaxLookAhead</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a06a916b4813dc544d7991f06093bdfc0" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setOptions</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1af4d8526178948d9b59c533f5a07e599e" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setPriority</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a317bae3f4011066c5efc7781cb4bc30e" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>setSaveOnUnuse</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ab816e5a2afbf8fd59c119b820f4c5954" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>spill</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1a5d9021937d9570df4d89abe454bfcee6" prot="public" virt="non-virtual"><scope>asmjit::BaseCompiler</scope><name>unuse</name></member>
+      <member refid="structasmjit_1_1BaseCompiler_1ad4e9cfa5d09e28246268e82d3b34eebe" prot="public" virt="virtual"><scope>asmjit::BaseCompiler</scope><name>~BaseCompiler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6" prot="public" virt="virtual"><scope>asmjit::BaseCompiler</scope><name>~CodeGen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

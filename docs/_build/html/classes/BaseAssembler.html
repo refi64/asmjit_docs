@@ -1,0 +1,663 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>BaseAssembler &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="BaseCompiler" href="BaseCompiler.html" />
+    <link rel="prev" title="AutoLock" href="AutoLock.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="BaseCompiler.html" title="BaseCompiler"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="AutoLock.html" title="AutoLock"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="baseassembler">
+<h1>BaseAssembler<a class="headerlink" href="#baseassembler" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1BaseAssembler">
+<div class="line"><em>struct</em> <strong>asmjit::BaseAssembler</strong></div>
+<div class="line"><em>#include &lt;assembler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base assembler. </p>
+<p><p>This class implements core setialization API only. The platform specific methods and intrinsics is implemented by derived classes.</p>
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>. </dd>
+</dl>
+</p>
+</p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a17bd49b8739839e750bcafd840329471"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>BaseAssembler</strong>(<a class="reference internal" href="BaseRuntime.html#asmjitstructasmjit_1_1BaseRuntime"><em>BaseRuntime</em></a>  * runtime)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a04edcae62e921dd125c9c67d4d042d8e"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~BaseAssembler</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>clear</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear everything, but not deallocate buffers. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset everything (means also to free all buffers). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>_purge</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Called by <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b"><em>clear()</em></a> and <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99"><em>reset()</em></a> to clear all data related to derived class implementation. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a014dad0a0895bc1180cc8dea1bdcbac9"></span><div class="line-block">
+<div class="line">size_t <strong>getCapacity</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get capacity of the code buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1abdaca957b0afeb3188d4f67a4f4bab8c"></span><div class="line-block">
+<div class="line">size_t <strong>getRemainingSpace</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get the number of remaining bytes (space between cursor and the end of the buffer). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1afd7f176edcad814fa49cf1b8f73cff50"></span><div class="line-block">
+<div class="line">uint8_t * <strong>getBuffer</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a70fc306a275e245593310256eda49e9b"></span><div class="line-block">
+<div class="line">uint8_t * <strong>getEnd</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get the end of the buffer (points to the first byte that is outside). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a68d96442996aead68a55393b6fa21703"></span><div class="line-block">
+<div class="line">uint8_t * <strong>getCursor</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get the current position in the buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1abad761abd9733070f7fc6085082ebdeb"></span><div class="line-block">
+<div class="line">void <strong>setCursor</strong>(uint8_t * cursor)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set the current position in the buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3"></span><div class="line-block">
+<div class="line">size_t <strong>getOffset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get the current offset in the buffer (<tt class="docutils literal"><span class="pre">_cursor</span> <span class="pre">-</span> <span class="pre">_buffer</span></tt>). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1accf0e32f66a2a9f6ad01c0a037c84950"></span><div class="line-block">
+<div class="line">size_t <strong>setOffset</strong>(size_t offset)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set the current offset in the buffer to <em>offset</em> and get the previous offset value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a927cad7e8b3831394b39c870a4c04ad0"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>_grow</strong>(size_t n)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Grow the internal buffer. </p>
+<p>The internal buffer will grow at least by <em>n</em> bytes so <em>n</em> bytes can be added to it. If <em>n</em> is zero or <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3"><em><span class="pre">getOffset()</span></em></a> <span class="pre">+</span> <span class="pre">n</span></tt> is not greater than the current capacity of the buffer this function won&#8217;t do anything. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a5c0f2e4a9e73a9738b8703ad5b0f67b1"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>_reserve</strong>(size_t n)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reserve the internal buffer to at least <em>n</em> bytes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a7a36a0a0a374d2bd504d4f2b76eaac3b"></span><div class="line-block">
+<div class="line">uint8_t <strong>getByteAt</strong>(size_t pos)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set byte at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aa7d786dfbbf2e2ccc88b9185014d7101"></span><div class="line-block">
+<div class="line">uint16_t <strong>getWordAt</strong>(size_t pos)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set word at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ac424a1e029f09a6557914970cdebbad7"></span><div class="line-block">
+<div class="line">uint32_t <strong>getDWordAt</strong>(size_t pos)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set dword at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a02181697b851e272e0d50f7171580614"></span><div class="line-block">
+<div class="line">uint64_t <strong>getQWordAt</strong>(size_t pos)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set qword at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a353f3e0228cb6c544ecd0a05e07cc077"></span><div class="line-block">
+<div class="line">int32_t <strong>getInt32At</strong>(size_t pos)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set int32_t at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1adcd890caadc41802d19ef1e430136f94"></span><div class="line-block">
+<div class="line">uint32_t <strong>getUInt32At</strong>(size_t pos)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set uint32_t at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a519af6a96788ff18e0f07739f8ff2f82"></span><div class="line-block">
+<div class="line">void <strong>setByteAt</strong>(size_t pos, uint8_t x)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set byte at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a87539f4f474e101ae2bbc7e7b814ef48"></span><div class="line-block">
+<div class="line">void <strong>setWordAt</strong>(size_t pos, uint16_t x)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set word at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ac582f476927910ba8f35d1a2a3be4d9d"></span><div class="line-block">
+<div class="line">void <strong>setDWordAt</strong>(size_t pos, uint32_t x)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set dword at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ac21727fcd69969a4995c05841c7a1375"></span><div class="line-block">
+<div class="line">void <strong>setQWordAt</strong>(size_t pos, uint64_t x)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set qword at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aa4f6f950c09dfe97306c4370279093cb"></span><div class="line-block">
+<div class="line">void <strong>setInt32At</strong>(size_t pos, int32_t x)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set int32_t at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a07c171719b88c0e4a9afd7dd0b1bcad4"></span><div class="line-block">
+<div class="line">void <strong>setUInt32At</strong>(size_t pos, uint32_t x)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set uint32_t at position <em>pos</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1acea24f6a20a4abb52af3d0cdfb2b3d9d"></span><div class="line-block">
+<div class="line">size_t <strong>getCodeSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get current offset in buffer (same as <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3"><em><span class="pre">getOffset()</span></em></a> <span class="pre">+</span> <span class="pre">getTramplineSize()</span></tt>). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aa3140d2eaa3c02f1bb2759b0ec85c2e6"></span><div class="line-block">
+<div class="line">size_t <strong>getTrampolineSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get size of all possible trampolines needed to successfuly generate relative jumps to absolute addresses. This value is only non-zero if jmp of call instructions were used with immediate operand (this means jumping or calling an absolute address directly). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a1f798b95035873c7395546c6f21e764f"></span><div class="line-block">
+<div class="line">size_t <strong>getLabelsCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get count of labels created. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a2e915489f3e3d70912ec69aebc405479"></span><div class="line-block">
+<div class="line">bool <strong>isLabelCreated</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether <em>label</em> is created. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1abcf7f78c1326311f391f61250aebe0a0"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1LabelData"><em>LabelData</em></a>  * <strong>getLabelData</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a865046fd5f6e6ec4fc587cef604210f2"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1LabelData"><em>LabelData</em></a>  * <strong>getLabelDataById</strong>(uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a0ef5f74f771ca1b86cf71f7b767cb095"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>_registerIndexedLabels</strong>(size_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a7cadbee55a9420a3a0e46244a2aabc0d"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>_newLabel</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  * dst)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a8d3c75f208cdbf8e531cf42adb744ba8"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1LabelLink"><em>LabelLink</em></a>  * <strong>_newLabelLink</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ac4ff0a9995f59f13d62c015acae7ac89"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> <strong>newLabel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create and return new label. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ad3a5c64efbaa7dca4166a45630f304f7"></span><div class="line-block">
+<div class="line">void <strong>_bind</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Bind label to the current offset (virtual). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aa84ba41d616921d8ca7f3087023afce1"></span><div class="line-block">
+<div class="line">void <strong>bind</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Bind label to the current offset (virtual). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> can be bound only once! </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a2bfa219dec130116f562581fce67c05b"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>embed</strong>(const void * data, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Embed data into the code buffer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a7834000ab163eeb416824504c728655e"></span><div class="line-block">
+<div class="line">Error <strong>align</strong>(uint32_t m)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Align target buffer to <em>m</em> bytes. </p>
+<p><p>Typical usage of this is to align labels at start of the inner loops.</p>
+<p>Inserts <tt class="docutils literal"><span class="pre">nop()</span></tt> instructions or CPU optimized NOPs. </p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aceb100955bcb01645a1975369cd8ab3d"></span><div class="line-block">
+<div class="line">Error <strong>_align</strong>(uint32_t m)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Align target buffer to <em>m</em> bytes (virtual). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95"></span><div class="line-block">
+<div class="line">size_t <strong>relocCode</strong>(void * dst)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Simplifed version of <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95"><em><span class="pre">relocCode()</span></em></a></tt> method designed for JIT. </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a24f2b63ad71b926c53b267e56582c0fb"></span><div class="line-block">
+<div class="line">size_t <strong>relocCode</strong>(void * dst, <a class="reference internal" href="../modules/base.html#asmjitgroup__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186"><em>Ptr</em></a> base)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Relocate code to a given address <em>dst</em>. </p>
+<p>
+A given buffer will be overwritten, to get number of bytes required use <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1acea24f6a20a4abb52af3d0cdfb2b3d9d"><em><span class="pre">getCodeSize()</span></em></a></tt>. <dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">dst</span></tt> - <p>Where the relocated code should me stored. The pointer can be address returned by virtual memory allocator or your own address if you want only to store the code for later reuse (or load, etc...). </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">addressBase</span></tt> - <p>Base address used for relocation. When using JIT code generation, this will be the same as <em>dst</em>, only casted to system integer type. But when generating code for remote process then the value can be different.</p>
+</li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">The</span></tt> - <p>bytes used. Code-generator can create trampolines which are used when calling other functions inside the JIT code. However, these trampolines can be unused so the <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95"><em>relocCode()</em></a> returns the exact size needed for the function.</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aa05de560f2701e803832407978d63194"></span><div class="line-block">
+<div class="line">size_t <strong>_relocCode</strong>(void * dst, <a class="reference internal" href="../modules/base.html#asmjitgroup__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186"><em>Ptr</em></a> base)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reloc code (virtual). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e"></span><div class="line-block">
+<div class="line">ASMJIT_API void * <strong>make</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Make is a convenience method to make and relocate the current code into the associated runtime. </p>
+<p>What is needed is only to cast the returned pointer to your function type and then use it. If there was an error during <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e"><em>make()</em></a> <tt class="docutils literal"><span class="pre">NULL</span></tt> is returned and the last error code can be obtained by calling <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d"><em>getError()</em></a>. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Emit an instruction. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a80b671098d535dddfb870ad23e6566fa"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ac7d3486553f0d1095f56007847752e8e"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o1)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ae3c9c97b17af0014a11c8ba964212515"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o1, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o2)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1aba3894dfb3dc0297a897d0388a4c7fe9"></span><div class="line-block">
+<div class="line">Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o1, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o2, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o3)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a62b2481ecc60d97da13d56c06c5092db"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, int o0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Emit an instruction with integer immediate operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1adb0cc4072ca42441b6fb9ebc9f7eae8d"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, int o1)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a13d0f4273ae6afeb8e6078a8609ba9f6"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o1, int o2)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a30b017c05a83ddc84467df318a443a03"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o1, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o2, int o3)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9"></span><div class="line-block">
+<div class="line">Error <strong>_emit</strong>(uint32_t code, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o0, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o1, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o2, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; o3)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Emit an instruction (virtual). </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4"></span>uint8_t * <strong>_buffer</strong></p>
+<blockquote>
+<div><p>Buffer where the code is emitted (either live or temporary). </p>
+<p>This is actually the base pointer of the buffer, to get the current position (cursor) look at the <tt class="docutils literal"><span class="pre">_cursor</span></tt> member. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1afa99ede2f1e862ef77cbe5e8e34fafd4"></span>uint8_t * <strong>_end</strong></p>
+<blockquote>
+<div><p>The end of the buffer (points to the first invalid byte). </p>
+<p>The end of the buffer is calculated as <tt class="docutils literal"><span class="pre">_buffer</span> <span class="pre">+</span> <span class="pre">size</span></tt>. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ad9d44d8890ff85a6d2a8a4703c4294c5"></span>uint8_t * <strong>_cursor</strong></p>
+<blockquote>
+<div><p>The current position in code <tt class="docutils literal"><span class="pre">_buffer</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1abf44fdf0fdc0436b8fc7aa2b5bbbff7a"></span>uint32_t <strong>_trampolineSize</strong></p>
+<blockquote>
+<div><p>Size of possible trampolines. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a7e1d16799822fbe74887cbe830046af5"></span>const char * <strong>_comment</strong></p>
+<blockquote>
+<div><p>Inline comment that will be logged by the next instruction and set to NULL. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1acd0096db6e6bcef8bb582bbe716db1f3"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1LabelLink"><em>LabelLink</em></a>  * <strong>_unusedLinks</strong></p>
+<blockquote>
+<div><p>Linked list of unused links (<tt class="docutils literal"><span class="pre">LabelLink*</span></tt> structures) </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1PodVector"><em>PodVector</em></a> &lt;  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1LabelData"><em>LabelData</em></a>  &gt; <strong>_labels</strong></p>
+<blockquote>
+<div><p>Labels data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1affeabe44cabed328b9dcc6a0096e97d5"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1PodVector"><em>PodVector</em></a> &lt;  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1RelocData"><em>RelocData</em></a>  &gt; <strong>_relocData</strong></p>
+<blockquote>
+<div><p>Relocations data. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1ab48bc207dd5dbdae299da48042e3e1ae"></span><div class="line-block">
+<div class="line"> <strong>BaseAssembler</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseAssembler_1a5110cc416b4bf86641d16c0d277f1118"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="AutoLock.html"
+                        title="previous chapter">AutoLock</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="BaseCompiler.html"
+                        title="next chapter">BaseCompiler</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/BaseAssembler.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="BaseCompiler.html" title="BaseCompiler"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="AutoLock.html" title="AutoLock"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

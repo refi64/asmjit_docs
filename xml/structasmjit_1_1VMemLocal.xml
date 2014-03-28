@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1VMemLocal" kind="struct" prot="public">
+    <compoundname>asmjit::VMemLocal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1VMemLocal_1a83e52b7dd8bda523acaad731689fef7d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::VMemLocal::alignment</definition>
+        <argsstring></argsstring>
+        <name>alignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" line="107" bodyfile="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VMemLocal_1a4f2131a8e638b2c73f1d4a2269fd5878" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::VMemLocal::pageSize</definition>
+        <argsstring></argsstring>
+        <name>pageSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" line="108" bodyfile="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1VMemLocal_1ad67983c291e277639324fe49d61e24df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::VMemLocal::VMemLocal</definition>
+        <argsstring>()</argsstring>
+        <name>VMemLocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" line="103" bodyfile="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" line="102" bodyfile="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" bodystart="102" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1VMemLocal_1a83e52b7dd8bda523acaad731689fef7d" prot="public" virt="non-virtual"><scope>asmjit::VMemLocal</scope><name>alignment</name></member>
+      <member refid="structasmjit_1_1VMemLocal_1a4f2131a8e638b2c73f1d4a2269fd5878" prot="public" virt="non-virtual"><scope>asmjit::VMemLocal</scope><name>pageSize</name></member>
+      <member refid="structasmjit_1_1VMemLocal_1ad67983c291e277639324fe49d61e24df" prot="public" virt="non-virtual"><scope>asmjit::VMemLocal</scope><name>VMemLocal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

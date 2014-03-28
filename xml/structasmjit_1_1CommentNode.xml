@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1CommentNode" kind="struct" prot="public">
+    <compoundname>asmjit::CommentNode</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseNode" prot="public" virt="non-virtual">asmjit::BaseNode</basecompoundref>
+    <includes local="no">compiler.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1CommentNode_1acdf0c8e51f7337e8287388a2037803a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::CommentNode::CommentNode</definition>
+        <argsstring>(const CommentNode &amp;other)</argsstring>
+        <name>CommentNode</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="942"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CommentNode_1a27077223ab0383e50a6cab31ff658567" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> &amp;</type>
+        <definition>CommentNode&amp; asmjit::CommentNode::operator=</definition>
+        <argsstring>(const CommentNode &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="942"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1CommentNode_1a7bd77d755f81fa732eea777712e2fc2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::CommentNode::CommentNode</definition>
+        <argsstring>(BaseCompiler *compiler, const char *comment)</argsstring>
+        <name>CommentNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>compiler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="949" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="949" bodyend="951"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CommentNode_1a49304f1e2801b1d8eaf766d8776e9680" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::CommentNode::~CommentNode</definition>
+        <argsstring>()</argsstring>
+        <name>~CommentNode</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="954" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="954" bodyend="954"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Comment node. </para>    </briefdescription>
+    <detaileddescription>
+<para>Comments allows to comment your assembler stream for better debugging and visualization. Comments are usually ignored in release builds unless the logger is present. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="747">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+      </node>
+      <node id="746">
+        <label>asmjit::CommentNode</label>
+        <link refid="structasmjit_1_1CommentNode"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="750">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="749">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="750" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="751" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="749" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="752" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="751">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="752">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="748">
+        <label>asmjit::CommentNode</label>
+        <link refid="structasmjit_1_1CommentNode"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="941" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="941" bodyend="955"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseNode_1aa1270ef124c6809ca7fd3388fc7cb01e" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_comment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3990c435857ff94bbd74935638a84ac0" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aae00a71a49da71c80fce40654dfedf81" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_flowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0cefc47a244741a68c66ebd64217973c" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_liveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af79d69cd8ec0c96295bef01b73f6f3cd" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f640dcb57f9c977efcd066cfa34bbd4" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_opCount</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ae46a8e6aca8fe70226eeb6386d06ff60" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_prev</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a6006b732dec81463a1508cfad8cb018b" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a41bc5e21cfb77d1a69f6eba49b944b8b" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_type</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7f38e1bbbd868cc74fce0a7d01d5cbf" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>_varInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba3954cf5ced25ede2fcc471b2fd6390" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>addFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a63c80a6e716812a701c6bec2e2be5007" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>BaseNode</name></member>
+      <member refid="structasmjit_1_1CommentNode_1acdf0c8e51f7337e8287388a2037803a7" prot="private" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>CommentNode</name></member>
+      <member refid="structasmjit_1_1CommentNode_1a7bd77d755f81fa732eea777712e2fc2c" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>CommentNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a7078ba8794a49cf97942d1bef1a043d6" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>delFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a52eb758170158aba2b06378313e5748d" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getComment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a8f41870fbc15450690d92a977e7dea83" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7e1afde9f9b4282247e4b8867d80895" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a601eb54343857a5be1d054876888acc8" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3db24572d64989296c96d4049d0545b8" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getNext</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa28ded7ba5b0741ae57e021c411399a2" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getPrev</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3381bd2fc97d49d392fe7a4ad92cb890" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4b059f3ff2598f406c654833aee1fcbc" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1adca7163f7abc9f6d6a5ac011254a48e4" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getType</name></member>
+      <member refid="structasmjit_1_1BaseNode_1acae8b89a5f312913e64c83caebdc52d2" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a324f00ff430ae18518368f9ef66398e0" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0a4159dd16b9c208acaaeea6daa164d8" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>hasFlag</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4efc44156485164602dc216614995fc5" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>hasLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a73cb9aaabf953b031116981688a8411f" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>hasVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a9e6bd7baceb3622c23ff751152bc44d3" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isFetched</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ac27332d4205dc1effe008e6a168a1435" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a88d7b4ef3d5f1c1ac7c1621678d1c063" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af1afe72717997793b3a7e2d987329e41" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isJmp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a27455b36f9a081b3d6b43ad3707fc180" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isJmpOrJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a511b4075627e8bb484d6e7ad20c1fae0" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba6d60c76d4dcb82b4521b0d0a0c33c2" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isSpecial</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aafb1c845517d89dd84a7140b9a4b9886" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>isTranslated</name></member>
+      <member refid="structasmjit_1_1CommentNode_1a27077223ab0383e50a6cab31ff658567" prot="private" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ad6f66454cabfc61f1d29fb6ecb6bf18f" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>setComment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a97cb2b2d64b539c1c4c4811344139e42" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>setFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a47ecc2ce0220e63fbc69aca57b4a728f" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>setFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3c55bbb4f84d3ee94123e65e3f212a46" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>setLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a841540382e62b6f80f699259ee59587b" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>setState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f1542bdcd6503fe2ee5a0e847f55215" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>setVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab8d1dfe217c72d01c253687b8c31f64c" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>~BaseNode</name></member>
+      <member refid="structasmjit_1_1CommentNode_1a49304f1e2801b1d8eaf766d8776e9680" prot="public" virt="non-virtual"><scope>asmjit::CommentNode</scope><name>~CommentNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

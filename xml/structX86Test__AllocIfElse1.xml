@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__AllocIfElse1" kind="struct" prot="public">
+    <compoundname>X86Test_AllocIfElse1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__AllocIfElse1_1a3d9dcd48bee829b0ca9bc2be11395bb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_AllocIfElse1::X86Test_AllocIfElse1</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_AllocIfElse1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="947" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="947" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocIfElse1_1a0142aca931d9e56aaf385383d3f8936d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_AllocIfElse1::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="953" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="953" bodyend="977"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocIfElse1_1a76da9ce523931838108f8b96306bb8e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_AllocIfElse1::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="979" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="979" bodyend="990"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__AllocIfElse1_1a1c2beeb27e0bac909d57cf121e8aee35" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_AllocIfElse1::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="949" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="949" bodyend="951"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="946" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="946" bodyend="991"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_AllocIfElse1</scope><name>_name</name></member>
+      <member refid="structX86Test__AllocIfElse1_1a1c2beeb27e0bac909d57cf121e8aee35" prot="public" virt="non-virtual"><scope>X86Test_AllocIfElse1</scope><name>add</name></member>
+      <member refid="structX86Test__AllocIfElse1_1a0142aca931d9e56aaf385383d3f8936d" prot="public" virt="virtual"><scope>X86Test_AllocIfElse1</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_AllocIfElse1</scope><name>getName</name></member>
+      <member refid="structX86Test__AllocIfElse1_1a76da9ce523931838108f8b96306bb8e9" prot="public" virt="virtual"><scope>X86Test_AllocIfElse1</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_AllocIfElse1</scope><name>X86Test</name></member>
+      <member refid="structX86Test__AllocIfElse1_1a3d9dcd48bee829b0ca9bc2be11395bb4" prot="public" virt="non-virtual"><scope>X86Test_AllocIfElse1</scope><name>X86Test_AllocIfElse1</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_AllocIfElse1</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

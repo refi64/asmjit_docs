@@ -1,0 +1,5 @@
+BaseNode
+========
+
+.. doxygenstruct:: asmjit::BaseNode
+   :project: asmjit

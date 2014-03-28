@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CodeGen &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="CommentNode" href="CommentNode.html" />
+    <link rel="prev" title="CallNode" href="CallNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="CommentNode.html" title="CommentNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="CallNode.html" title="CallNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="codegen">
+<h1>CodeGen<a class="headerlink" href="#codegen" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1CodeGen">
+<div class="line"><em>struct</em> <strong>asmjit::CodeGen</strong></div>
+<div class="line"><em>#include &lt;codegen.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Abstract class inherited by Assembler and Compiler. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a3e5282956457ed71030395c96b753225"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>CodeGen</strong>(<a class="reference internal" href="BaseRuntime.html#asmjitstructasmjit_1_1BaseRuntime"><em>BaseRuntime</em></a>  * runtime)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen"><em>CodeGen</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~CodeGen</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen"><em>CodeGen</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a3d7daab958f99527363d5d97a0d32a0d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="BaseRuntime.html#asmjitstructasmjit_1_1BaseRuntime"><em>BaseRuntime</em></a>  * <strong>getRuntime</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get runtime. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1ae747a5b9778251fd11943d0f8a00bedd"></span><div class="line-block">
+<div class="line">bool <strong>hasLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the code generator has a logger. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a74d11332a9175e011875b1fc63599f8e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a>  * <strong>getLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get logger. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>setLogger</strong>(<a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a>  * logger)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set logger to <em>logger</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1af0de6375faa88373299618dc893c6e02"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArch</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get target architecture. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a25290524d42466e7f341f0c41790ab34"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get default register size (4 or 8 bytes). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d"></span><div class="line-block">
+<div class="line">Error <strong>getError</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get last error code. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>setError</strong>(Error error, const char * message = NULL)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set last error code and propagate it through the error handler. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a20674b359509b562f6079bfef6342692"></span><div class="line-block">
+<div class="line">void <strong>clearError</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear the last error code. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1acefc96c0ac363fcf81625d232ed3d34b"></span><div class="line-block">
+<div class="line">ErrorHandler * <strong>getErrorHandler</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get error handler. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>setErrorHandler</strong>(ErrorHandler * handler)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set error handler. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a0f1f14151bf464a31a3bb1a7f69e9bfe"></span><div class="line-block">
+<div class="line">Error <strong>clearErrorHandler</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear error handler. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65"></span><div class="line-block">
+<div class="line">ASMJIT_API bool <strong>hasFeature</strong>(uint32_t feature)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get code-generator <em>feature</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>setFeature</strong>(uint32_t feature, bool value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set code-generator <em>feature</em> to <em>value</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1af8f725cbd3aa4c226ea0fc7175d0a92c"></span><div class="line-block">
+<div class="line">uint32_t <strong>getOptions</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a06a916b4813dc544d7991f06093bdfc0"></span><div class="line-block">
+<div class="line">void <strong>setOptions</strong>(uint32_t options)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1aab3bc0b503327c62bc7d952d41365705"></span><div class="line-block">
+<div class="line">uint32_t <strong>getOptionsAndClear</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get options and clear them. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a9729e7a624ee41d357c69a0e1866483b"></span><div class="line-block">
+<div class="line">void <strong>_purge</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Called by clear() and reset() to clear all data used by the code generator. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22"></span><div class="line-block">
+<div class="line">void * <strong>make</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Make is a convenience method to make and relocate the current code into the associated runtime. </p>
+<p>What is needed is only to cast the returned pointer to your function type and then use it. If there was an error during <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22"><em>make()</em></a> <tt class="docutils literal"><span class="pre">NULL</span></tt> is returned and the last error code can be obtained by calling <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d"><em>getError()</em></a>. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a64fd203c2592221acd076eb8800acfea"></span><a class="reference internal" href="BaseRuntime.html#asmjitstructasmjit_1_1BaseRuntime"><em>BaseRuntime</em></a>  * <strong>_runtime</strong></p>
+<blockquote>
+<div><p>Runtime. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b"></span><a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a>  * <strong>_logger</strong></p>
+<blockquote>
+<div><p>Logger. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f"></span>ErrorHandler * <strong>_errorHandler</strong></p>
+<blockquote>
+<div><p>Error handler, called by <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346"><em>setError()</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a26c78e4494d88ab9805496e023d3baa0"></span>uint8_t <strong>_arch</strong></p>
+<blockquote>
+<div><p>Target architecture. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1acbfa512e3ec91bff2364d868d2da3280"></span>uint8_t <strong>_regSize</strong></p>
+<blockquote>
+<div><p>Get the default register size of the architecture (4 or 8 bytes). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594"></span>uint8_t <strong>_error</strong></p>
+<blockquote>
+<div><p>Last error code. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28"></span>uint8_t <strong>_features</strong></p>
+<blockquote>
+<div><p>Target features. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a4fb02f71d3669ae2345645490a4b1539"></span>uint32_t <strong>_options</strong></p>
+<blockquote>
+<div><p>Options for the next generated instruction (only 8-bits used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em>Zone</em></a> <strong>_zoneAllocator</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em>Zone</em></a> memory allocator. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1a6c88588cf06aadc9c2215cc62ee77161"></span><div class="line-block">
+<div class="line"> <strong>CodeGen</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen"><em>CodeGen</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CodeGen_1aa242ec8a9f743d54e59115f7c8e92dd5"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen"><em>CodeGen</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1CodeGen"><em>CodeGen</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="CallNode.html"
+                        title="previous chapter">CallNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="CommentNode.html"
+                        title="next chapter">CommentNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/CodeGen.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="CommentNode.html" title="CommentNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="CallNode.html" title="CallNode"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

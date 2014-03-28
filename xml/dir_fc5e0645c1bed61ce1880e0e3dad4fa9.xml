@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_fc5e0645c1bed61ce1880e0e3dad4fa9" kind="dir">
+    <compoundname>/home/ryan/asmjit/src/asmjit/x86/</compoundname>
+    <innerfile refid="x86assembler_8cpp">x86assembler.cpp</innerfile>
+    <innerfile refid="x86assembler_8h">x86assembler.h</innerfile>
+    <innerfile refid="x86compiler_8cpp">x86compiler.cpp</innerfile>
+    <innerfile refid="x86compiler_8h">x86compiler.h</innerfile>
+    <innerfile refid="x86context_8cpp">x86context.cpp</innerfile>
+    <innerfile refid="x86context__p_8h">x86context_p.h</innerfile>
+    <innerfile refid="x86cpu_8cpp">x86cpu.cpp</innerfile>
+    <innerfile refid="x86cpu_8h">x86cpu.h</innerfile>
+    <innerfile refid="x86defs_8cpp">x86defs.cpp</innerfile>
+    <innerfile refid="x86defs_8h">x86defs.h</innerfile>
+    <innerfile refid="x86func_8cpp">x86func.cpp</innerfile>
+    <innerfile refid="x86func_8h">x86func.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/"/>
+  </compounddef>
+</doxygen>

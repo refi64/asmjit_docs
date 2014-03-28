@@ -1,0 +1,2 @@
+-e https://github.com/michaeljones/breathe.git@doxygengroup#egg=breathe
+

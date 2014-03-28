@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>TargetNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="VMem" href="VMem.html" />
+    <link rel="prev" title="StringUtil" href="StringUtil.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="VMem.html" title="VMem"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="StringUtil.html" title="StringUtil"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="targetnode">
+<h1>TargetNode<a class="headerlink" href="#targetnode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1TargetNode">
+<div class="line"><em>struct</em> <strong>asmjit::TargetNode</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>label node. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a3df58f64c9c935da2f3270c075fd561b"></span><div class="line-block">
+<div class="line"> <strong>TargetNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler, uint32_t labelId)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a14a108a12499e3b15e864ad13978fa8a"></span><div class="line-block">
+<div class="line"> <strong>~TargetNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a971651d9f52019f5eb82d89a13fa825f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> <strong>getLabel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get target label. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a5023478b496a8a7122d075d1a282e756"></span><div class="line-block">
+<div class="line">uint32_t <strong>getLabelId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get target label id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a4810fdb9a82353f215e0bb3325651783"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="JumpNode.html#asmjitstructasmjit_1_1JumpNode"><em>JumpNode</em></a>  * <strong>getFrom</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get first jmp instruction. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a2c2b4418b1dd39ec8f2cefbb158f97ec"></span><div class="line-block">
+<div class="line">bool <strong>hasState</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the node has assigned state. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a30e20cf2807d752a8173a8e283d19fcc"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="BaseVarState.html#asmjitstructasmjit_1_1BaseVarState"><em>BaseVarState</em></a>  * <strong>getState</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get state for this target. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1ad659ad207f3703ef8d460303eb0b3a42"></span><div class="line-block">
+<div class="line">void <strong>setState</strong>(<a class="reference internal" href="BaseVarState.html#asmjitstructasmjit_1_1BaseVarState"><em>BaseVarState</em></a>  * state)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set state for this target. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a23b1c7a10347154e0c11e065b99ccaa2"></span><div class="line-block">
+<div class="line">uint32_t <strong>getNumRefs</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get number of jumps to this target. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a9cfeda06bc71b633af4de7448aade2c4"></span><div class="line-block">
+<div class="line">void <strong>setNumRefs</strong>(uint32_t i)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set number of jumps to this target. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1aac2170e7f566c8df6127da236689864e"></span><div class="line-block">
+<div class="line">void <strong>addNumRefs</strong>(uint32_t i = 1)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add number of jumps to this target. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a80f8543c46cdbcb181f8ea61cc9fabff"></span><div class="line-block">
+<div class="line">void <strong>subNumRefs</strong>(uint32_t i = 1)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Subtract number of jumps to this target. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a57c72d22cc4fc89b6335986425b6b573"></span>uint32_t <strong>_id</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a7da6e45c60893e4f9e2474109f1ced2c"></span>uint32_t <strong>_numRefs</strong></p>
+<blockquote>
+<div><p>Count of jumps here. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a2d5bb92b1cb771d1991d4abf7de57cf6"></span><a class="reference internal" href="JumpNode.html#asmjitstructasmjit_1_1JumpNode"><em>JumpNode</em></a>  * <strong>_from</strong></p>
+<blockquote>
+<div><p>First jump instruction that points to this target (label). </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a52365c6e4683bf59516e936addc9d696"></span><div class="line-block">
+<div class="line"> <strong>TargetNode</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1TargetNode_1a030104f41d68ea0b97e6d3e07eae146e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="StringUtil.html"
+                        title="previous chapter">StringUtil</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="VMem.html"
+                        title="next chapter">VMem</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/TargetNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="VMem.html" title="VMem"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="StringUtil.html" title="StringUtil"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

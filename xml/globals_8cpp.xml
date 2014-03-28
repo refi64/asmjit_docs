@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="globals_8cpp" kind="file">
+    <compoundname>globals.cpp</compoundname>
+    <includes refid="globals_8h" local="yes">../base/globals.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <incdepgraph>
+      <node id="1089">
+        <label>../base/globals.h</label>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1099">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1101">
+        <label>stdint.h</label>
+      </node>
+      <node id="1093">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1088">
+        <label>globals.cpp</label>
+        <link refid="globals.cpp"/>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>../base/defs.h</label>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>limits.h</label>
+      </node>
+      <node id="1100">
+        <label>new</label>
+      </node>
+      <node id="1091">
+        <label>config.h</label>
+      </node>
+      <node id="1096">
+        <label>../base/intutil.h</label>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>../build.h</label>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>stdio.h</label>
+      </node>
+      <node id="1094">
+        <label>string.h</label>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="globals_8cpp_1a4885b81a3643f489bcb59697d21cb21d" prot="public" static="no">
+        <name>ASMJIT_EXPORTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.cpp" line="8" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Export]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASMJIT_EXPORTS</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/globals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::Assert]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="group__asmjit__base_1ga14c6796911b413c3fe1ad198e186901f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1ga14c6796911b413c3fe1ad198e186901f" kindref="member" tooltip="Called in debug build on assertion failure.">assertionFailed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>exp,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>::fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Assertion<sp/>failed:<sp/>%s\n,<sp/>file<sp/>%s,<sp/>line<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>exp,<sp/>file,<sp/>line);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>::abort();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/globals.cpp"/>
+  </compounddef>
+</doxygen>

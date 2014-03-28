@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Operand_1_1LabelOp" kind="struct" prot="public">
+    <compoundname>asmjit::Operand::LabelOp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1LabelOp_1a747e545a7fb8ac6fcd0733ce52ae2921" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::LabelOp::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>Type of operand, <computeroutput>kOperandTypeLabel</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="383" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1LabelOp_1ab61e85f469c88b3419e79a7a9a94b34b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::LabelOp::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Reserved (not used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="385" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1LabelOp_1a995b44c1c41a1c6ae01152a02df97021" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::LabelOp::reserved0</definition>
+        <argsstring></argsstring>
+        <name>reserved0</name>
+        <briefdescription>
+<para>Reserved (not used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="387" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1LabelOp_1a6aa3fb3fdb4003e1bcf2248e9a38d673" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::LabelOp::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <briefdescription>
+<para>Reserved (not used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="389" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1LabelOp_1a6e3e0a54c0c6759b9ebdd46a7f5faf87" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Operand::LabelOp::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="392" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="381" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="381" bodyend="393"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1_1LabelOp_1a6e3e0a54c0c6759b9ebdd46a7f5faf87" prot="public" virt="non-virtual"><scope>asmjit::Operand::LabelOp</scope><name>id</name></member>
+      <member refid="structasmjit_1_1Operand_1_1LabelOp_1a747e545a7fb8ac6fcd0733ce52ae2921" prot="public" virt="non-virtual"><scope>asmjit::Operand::LabelOp</scope><name>op</name></member>
+      <member refid="structasmjit_1_1Operand_1_1LabelOp_1a995b44c1c41a1c6ae01152a02df97021" prot="public" virt="non-virtual"><scope>asmjit::Operand::LabelOp</scope><name>reserved0</name></member>
+      <member refid="structasmjit_1_1Operand_1_1LabelOp_1a6aa3fb3fdb4003e1bcf2248e9a38d673" prot="public" virt="non-virtual"><scope>asmjit::Operand::LabelOp</scope><name>reserved1</name></member>
+      <member refid="structasmjit_1_1Operand_1_1LabelOp_1ab61e85f469c88b3419e79a7a9a94b34b" prot="public" virt="non-virtual"><scope>asmjit::Operand::LabelOp</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

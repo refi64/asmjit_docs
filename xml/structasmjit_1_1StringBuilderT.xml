@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1StringBuilderT" kind="struct" prot="public">
+    <compoundname>asmjit::StringBuilderT</compoundname>
+    <basecompoundref refid="structasmjit_1_1StringBuilder" prot="public" virt="non-virtual">asmjit::StringBuilder</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1StringBuilderT_1ac2060c96f66d3adf10976930861b34f0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char asmjit::StringBuilderT&lt; N &gt;::_embeddedData[static_cast&lt; size_t &gt;(N+1+sizeof(intptr_t))&amp;~static_cast&lt; size_t &gt;(sizeof(intptr_t)-1)]</definition>
+        <argsstring>[static_cast&lt; size_t &gt;(N+1+sizeof(intptr_t))&amp;~static_cast&lt; size_t &gt;(sizeof(intptr_t)-1)]</argsstring>
+        <name>_embeddedData</name>
+        <briefdescription>
+<para>Embedded data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="340" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1StringBuilderT_1ae5a522f047f158d7c51dcc4f8a3eb9ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::StringBuilderT&lt; N &gt;::StringBuilderT</definition>
+        <argsstring>(const StringBuilderT&lt; N &gt; &amp;other)</argsstring>
+        <name>StringBuilderT</name>
+        <param>
+          <type>const StringBuilderT&lt; N &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="320"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilderT_1a260fa12bc7c21a8f7b57b15e6e7bb310" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>StringBuilderT&lt; N &gt; &amp;</type>
+        <definition>StringBuilderT&lt;N&gt;&amp; asmjit::StringBuilderT&lt; N &gt;::operator=</definition>
+        <argsstring>(const StringBuilderT&lt; N &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const StringBuilderT&lt; N &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="320"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1StringBuilderT_1a787750e821c1ddb0d1f8b2085a66c97c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::StringBuilderT&lt; N &gt;::StringBuilderT</definition>
+        <argsstring>()</argsstring>
+        <name>StringBuilderT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="326" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="326" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1029">
+        <label>asmjit::StringBuilder</label>
+        <link refid="structasmjit_1_1StringBuilder"/>
+      </node>
+      <node id="1028">
+        <label>asmjit::StringBuilderT&lt; N &gt;</label>
+        <childnode refid="1029" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1031">
+        <label>asmjit::StringBuilder</label>
+        <link refid="structasmjit_1_1StringBuilder"/>
+      </node>
+      <node id="1030">
+        <label>asmjit::StringBuilderT&lt; N &gt;</label>
+        <childnode refid="1031" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="319" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="319" bodyend="341"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1StringBuilder_1aadb7d86533983f9de684c94da2ffa736" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_appendChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a7a39318fca7df9ec5a020d6c1442427f" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_appendChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa3d9301cbc884371ec37cc8f360dbae6" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_appendString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ac125807dd3af29bcb18c0e01e49f55fa" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_appendUInt32</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ab5873a6052a802258e5fc6f6a4756a6e" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_canFree</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_capacity</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_data</name></member>
+      <member refid="structasmjit_1_1StringBuilderT_1ac2060c96f66d3adf10976930861b34f0" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_embeddedData</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_length</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a9e1d595e6407cd4ebe4924f6492cc4ef" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_opChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a4e7db05203fb4d60cd0cc86f4451aaf6" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_opChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1abc5a5b0140573f83c5debd6b68e87266" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_opHex</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1acf4116c229b189790216f6855bdebf20" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_opNumber</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa2d70933577766b2922d826280b81376" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_opString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a8c91cf6e3395f5ba55dc2526c04f7189" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>_opVFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a46f791ba953f93638c3242206096e810" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a5c795b5473b6a1314303ccf1bec1bb28" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a1720590630efa6f5db1b6d80530a7473" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a9b3cbba26cb256d57d8fd65455011954" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendHex</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a46592ee4d175684adc93ce38188a95e0" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a58df9e95858b77a01f189efd15334739" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a57e53ef8e8d0f661a52616eb02129643" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendUInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ad9c74cbd121e0201215956ec7c65f72a" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>appendVFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a34ccb1e62f925a7db8ee5f01f9d5d4ff" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>clear</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>eq</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a5c64b416ac6b64c0153cc99311a8adae" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>eq</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a06f3700123e226087920968b53b4f318" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>getCapacity</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a587fa3ea24629b7335f3dace53417387" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ae0217a979589b91048bad6bc9d31d25b" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ad018d3216282b4b1d09db50964857ab4" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>getLength</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a524cf42c27912be3a855c6159dff3d6b" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a70c11602752a9a8a9fab75d724134fe9" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1StringBuilderT_1a260fa12bc7c21a8f7b57b15e6e7bb310" prot="private" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a184c000337a234663e2a861f6a6fa41c" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a692a1c3f8cdb0d5cb7f778d6d22bcd83" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a86a7ec36bbfb80a9da9371c4a2e6fee6" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>prepare</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a5a8d4aa39b12be1074c8a7e7ec1b4354" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>reserve</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a02d51c9ab37727998a1032f0f89d74a4" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa45e75a067da7341f416725ebc76ca45" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a2fa63044872125a52bce359fbd5c6ce1" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a6994ecccb1f03406391e559bed4bb976" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setHex</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa8834e6e8c019393ea5d34b6b2e804af" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a21c626aefd9d2ecfea90bba9fa0ff050" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a475b7cc7efd5376dad3719ae4d0d48fe" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setUInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a4543c62de899c58006664ebee289c472" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>setVFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a6594bb921c7f0357f08499608d72548b" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>StringBuilder</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a1fe61e7afb6f4de500c2b2b44848b1f2" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>StringBuilder</name></member>
+      <member refid="structasmjit_1_1StringBuilderT_1ae5a522f047f158d7c51dcc4f8a3eb9ee" prot="private" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>StringBuilderT</name></member>
+      <member refid="structasmjit_1_1StringBuilderT_1a787750e821c1ddb0d1f8b2085a66c97c" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>StringBuilderT</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a18fb7577a31635768cc730e970428ccc" prot="public" virt="non-virtual"><scope>asmjit::StringBuilderT</scope><name>~StringBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

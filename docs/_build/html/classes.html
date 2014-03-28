@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Classes &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="index.html" />
+    <link rel="next" title="AlignNode" href="classes/AlignNode.html" />
+    <link rel="prev" title="Asmjit_x86x64" href="modules/x86x64.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="classes/AlignNode.html" title="AlignNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules/x86x64.html" title="Asmjit_x86x64"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">AsmJit 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classes/AlignNode.html">AlignNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/AutoLock.html">AutoLock</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseAssembler.html">BaseAssembler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseCompiler.html">BaseCompiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseCpu.html">BaseCpu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseLogger.html">BaseLogger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseMem.html">BaseMem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseNode.html">BaseNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseReg.html">BaseReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseRuntime.html">BaseRuntime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseVar.html">BaseVar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseVarInst.html">BaseVarInst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/BaseVarState.html">BaseVarState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/CallNode.html">CallNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/CodeGen.html">CodeGen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/CommentNode.html">CommentNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/EmbedNode.html">EmbedNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/EndNode.html">EndNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FileLogger.html">FileLogger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnDouble.html">FnDouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnFloat.html">FnFloat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnInt16.html">FnInt16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnInt32.html">FnInt32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnInt64.html">FnInt64</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnInt8.html">FnInt8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnIntPtr.html">FnIntPtr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnUInt16.html">FnUInt16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnUInt32.html">FnUInt32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnUInt64.html">FnUInt64</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnUInt8.html">FnUInt8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnUIntPtr.html">FnUIntPtr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FnVoid.html">FnVoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder0.html">FuncBuilder0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder1.html">FuncBuilder1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder10.html">FuncBuilder10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder2.html">FuncBuilder2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder3.html">FuncBuilder3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder4.html">FuncBuilder4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder5.html">FuncBuilder5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder6.html">FuncBuilder6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder7.html">FuncBuilder7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder8.html">FuncBuilder8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilder9.html">FuncBuilder9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncBuilderX.html">FuncBuilderX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncDecl.html">FuncDecl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncInOut.html">FuncInOut</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncNode.html">FuncNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/FuncPrototype.html">FuncPrototype</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/HintNode.html">HintNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/Imm.html">Imm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/InstNode.html">InstNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/JumpNode.html">JumpNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/Label.html">Label</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/LabelData.html">LabelData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/LabelLink.html">LabelLink</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/Lock.html">Lock</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/MemoryManager.html">MemoryManager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/Operand.html">Operand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/OperandUtilPodVector.html">OperandUtilPodVector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/RelocData.html">RelocData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/RetNode.html">RetNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/SArgNode.html">SArgNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/StringBuilder.html">StringBuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/StringLogger.html">StringLogger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/StringUtil.html">StringUtil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/TargetNode.html">TargetNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/VMem.html">VMem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/VarBits.html">VarBits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/VarData.html">VarData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/VirtualMemoryManager.html">VirtualMemoryManager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/Zone.html">Zone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__FpReg.html">x86x64::FpReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__FpVar.html">x86x64::FpVar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__GpReg.html">x86x64::GpReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__GpVar.html">x86x64::GpVar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__InstInfo.html">x86x64::InstInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__JitRuntime.html">x86x64::JitRuntime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__Mem.html">x86x64::Mem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__MmReg.html">x86x64::MmReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__MmVar.html">x86x64::MmVar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__RegCount.html">x86x64::RegCount</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__RegMask.html">x86x64::RegMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__SegReg.html">x86x64::SegReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__VarInfo.html">x86x64::VarInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__VarState.html">x86x64::VarState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86Reg.html">x86x64::X86Reg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86Var.html">x86x64::X86Var</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86X64Assembler.html">x86x64::X86X64Assembler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86X64CallNode.html">x86x64::X86X64CallNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86X64Compiler.html">x86x64::X86X64Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86X64FuncDecl.html">x86x64::X86X64FuncDecl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__X86X64FuncNode.html">x86x64::X86X64FuncNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__XmmReg.html">x86x64::XmmReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__XmmVar.html">x86x64::XmmVar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__YmmReg.html">x86x64::YmmReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes/x86x64__YmmVar.html">x86x64::YmmVar</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules/x86x64.html"
+                        title="previous chapter">Asmjit_x86x64</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="classes/AlignNode.html"
+                        title="next chapter">AlignNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/classes.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="classes/AlignNode.html" title="AlignNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules/x86x64.html" title="Asmjit_x86x64"
+             >previous</a> |</li>
+        <li><a href="index.html">AsmJit 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

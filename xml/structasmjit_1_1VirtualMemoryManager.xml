@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1VirtualMemoryManager" kind="struct" prot="public">
+    <compoundname>asmjit::VirtualMemoryManager</compoundname>
+    <basecompoundref refid="structasmjit_1_1MemoryManager" prot="public" virt="non-virtual">asmjit::MemoryManager</basecompoundref>
+    <includes local="no">memorymanager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1VirtualMemoryManager_1a4514732600c92bdf7fb587b6e10afc90" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* asmjit::VirtualMemoryManager::_d</definition>
+        <argsstring></argsstring>
+        <name>_d</name>
+        <briefdescription>
+<para>Pointer to private data hidden out of the public API. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="159" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1ae497c2c983f209dad1bf491423459946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::VirtualMemoryManager::VirtualMemoryManager</definition>
+        <argsstring>()</argsstring>
+        <name>VirtualMemoryManager</name>
+        <briefdescription>
+<para>Create a <computeroutput><ref refid="structasmjit_1_1VirtualMemoryManager" kindref="compound">VirtualMemoryManager</ref></computeroutput> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="103" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="977" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1accf4a76bf2c806bb325bcc3e18c2daa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::VirtualMemoryManager::~VirtualMemoryManager</definition>
+        <argsstring>()</argsstring>
+        <name>~VirtualMemoryManager</name>
+        <briefdescription>
+<para>Destroy the <computeroutput><ref refid="structasmjit_1_1VirtualMemoryManager" kindref="compound">VirtualMemoryManager</ref></computeroutput> instance, this means also to free all blocks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="115" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="993" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1a12d89cd2ac18a5ec8c088ccc04bb50f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::VirtualMemoryManager::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplements refid="structasmjit_1_1MemoryManager_1afa7f746c4b81f624cacd624299166f4d">reset</reimplements>
+        <briefdescription>
+<para>Free all allocated memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="121" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="998" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1a30bc5b73aad2dc18195bbbd8c7950f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void *</type>
+        <definition>void * asmjit::VirtualMemoryManager::alloc</definition>
+        <argsstring>(size_t size, uint32_t type=kVirtualAllocFreeable)</argsstring>
+        <name>alloc</name>
+        <reimplements refid="structasmjit_1_1MemoryManager_1aaec761f463f2956d2722c2da1695215d">alloc</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+          <defval>kVirtualAllocFreeable</defval>
+        </param>
+        <briefdescription>
+<para>Allocate a <emphasis>size</emphasis> bytes of virtual memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that if you are implementing your own virtual memory manager then you can quitly ignore type of allocation. This is mainly for AsmJit to memory manager that allocated memory will be never freed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1005" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1a171194cee9961813fd4fb511ce7004ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::VirtualMemoryManager::release</definition>
+        <argsstring>(void *address)</argsstring>
+        <name>release</name>
+        <reimplements refid="structasmjit_1_1MemoryManager_1a0b4ac246abb5c7ecfe20f258244d509b">release</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Free previously allocated memory at a given <emphasis>address</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="124" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1014" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1aeeaa5a7943a95dee142b892bb52f7f37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::VirtualMemoryManager::shrink</definition>
+        <argsstring>(void *address, size_t used)</argsstring>
+        <name>shrink</name>
+        <reimplements refid="structasmjit_1_1MemoryManager_1a37c77e1e0949b235d374d00c5c84e6e0">shrink</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>used</declname>
+        </param>
+        <briefdescription>
+<para>Free some tail memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="125" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1019" bodyend="1022"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1ae9ffbec3e3dbcb0a81b15a359c92cc86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API size_t</type>
+        <definition>size_t asmjit::VirtualMemoryManager::getUsedBytes</definition>
+        <argsstring>()</argsstring>
+        <name>getUsedBytes</name>
+        <reimplements refid="structasmjit_1_1MemoryManager_1a3c857e73f5851f36cfec68be2a87403f">getUsedBytes</reimplements>
+        <briefdescription>
+<para>Get how many bytes are currently used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="127" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1024" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1a54a456f8b24801ab1ba61af88f21ab5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API size_t</type>
+        <definition>size_t asmjit::VirtualMemoryManager::getAllocatedBytes</definition>
+        <argsstring>()</argsstring>
+        <name>getAllocatedBytes</name>
+        <reimplements refid="structasmjit_1_1MemoryManager_1a32d762ee420d3863e8931b14b9658a4f">getAllocatedBytes</reimplements>
+        <briefdescription>
+<para>Get how many bytes are currently allocated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="128" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1029" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1a0deea325428a8f964b7504dc4ce90d9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::VirtualMemoryManager::getKeepVirtualMemory</definition>
+        <argsstring>() const </argsstring>
+        <name>getKeepVirtualMemory</name>
+        <briefdescription>
+<para>Get whether to keep allocated memory after memory manager is destroyed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><computeroutput><ref refid="structasmjit_1_1VirtualMemoryManager_1a9e893fc5acc518f4295e747f838319a4" kindref="member">setKeepVirtualMemory()</ref></computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="138" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1034" bodyend="1037"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VirtualMemoryManager_1a9e893fc5acc518f4295e747f838319a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::VirtualMemoryManager::setKeepVirtualMemory</definition>
+        <argsstring>(bool keepVirtualMemory)</argsstring>
+        <name>setKeepVirtualMemory</name>
+        <param>
+          <type>bool</type>
+          <declname>keepVirtualMemory</declname>
+        </param>
+        <briefdescription>
+<para>Set whether to keep allocated memory after memory manager is destroyed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is usable when patching code of remote process. You need to allocate process memory, store generated assembler into it and patch the method you want to redirect (into your code). This method affects only <ref refid="structasmjit_1_1VirtualMemoryManager" kindref="compound">VirtualMemoryManager</ref> destructor. After destruction all internal structures are freed, only the process virtual memory remains.</para><para><simplesect kind="note"><para>Memory allocated with kVirtualAllocPermanent is always kept.</para></simplesect>
+<simplesect kind="see"><para><computeroutput><ref refid="structasmjit_1_1VirtualMemoryManager_1a0deea325428a8f964b7504dc4ce90d9f" kindref="member">getKeepVirtualMemory()</ref></computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="152" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="1039" bodyend="1042"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reference implementation of memory manager that uses <ref refid="structasmjit_1_1VMem" kindref="compound">asmjit::VMem</ref> class to allocate chunks of virtual memory and bit arrays to manage it. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1113">
+        <label>asmjit::MemoryManager</label>
+        <link refid="structasmjit_1_1MemoryManager"/>
+      </node>
+      <node id="1112">
+        <label>asmjit::VirtualMemoryManager</label>
+        <link refid="structasmjit_1_1VirtualMemoryManager"/>
+        <childnode refid="1113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1115">
+        <label>asmjit::MemoryManager</label>
+        <link refid="structasmjit_1_1MemoryManager"/>
+      </node>
+      <node id="1114">
+        <label>asmjit::VirtualMemoryManager</label>
+        <link refid="structasmjit_1_1VirtualMemoryManager"/>
+        <childnode refid="1115" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="97" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" bodystart="97" bodyend="160"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a4514732600c92bdf7fb587b6e10afc90" prot="public" virt="non-virtual"><scope>asmjit::VirtualMemoryManager</scope><name>_d</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a30bc5b73aad2dc18195bbbd8c7950f53" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>alloc</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a54a456f8b24801ab1ba61af88f21ab5b" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>getAllocatedBytes</name></member>
+      <member refid="structasmjit_1_1MemoryManager_1a9f49c72d7c2fac093dd76a5ff800f0fe" prot="public" virt="non-virtual"><scope>asmjit::VirtualMemoryManager</scope><name>getGlobal</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a0deea325428a8f964b7504dc4ce90d9f" prot="public" virt="non-virtual"><scope>asmjit::VirtualMemoryManager</scope><name>getKeepVirtualMemory</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1ae9ffbec3e3dbcb0a81b15a359c92cc86" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>getUsedBytes</name></member>
+      <member refid="structasmjit_1_1MemoryManager_1a1767b2460024d173c340ab7e23c524e9" prot="public" virt="non-virtual"><scope>asmjit::VirtualMemoryManager</scope><name>MemoryManager</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a171194cee9961813fd4fb511ce7004ff" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>release</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a12d89cd2ac18a5ec8c088ccc04bb50f4" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1a9e893fc5acc518f4295e747f838319a4" prot="public" virt="non-virtual"><scope>asmjit::VirtualMemoryManager</scope><name>setKeepVirtualMemory</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1aeeaa5a7943a95dee142b892bb52f7f37" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>shrink</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1ae497c2c983f209dad1bf491423459946" prot="public" virt="non-virtual"><scope>asmjit::VirtualMemoryManager</scope><name>VirtualMemoryManager</name></member>
+      <member refid="structasmjit_1_1MemoryManager_1a5604eeddf4c051be946a30396ffc86dc" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>~MemoryManager</name></member>
+      <member refid="structasmjit_1_1VirtualMemoryManager_1accf4a76bf2c806bb325bcc3e18c2daa9" prot="public" virt="virtual"><scope>asmjit::VirtualMemoryManager</scope><name>~VirtualMemoryManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title></title>
+    <detaileddescription>
+<para>AsmJit is a complete x86/x64 JIT Assembler for C++ language. It supports FPU, MMX, 3dNow, SSE, SSE2, SSE3 and SSE4 intrinsics, powerful compiler that helps to write portable functions for 32-bit (x86) and 64-bit (x64) architectures. AsmJit can be used to create functions at runtime that can be called from existing (but also generated) C/C++ code.</para><para>AsmJit is a cross-platform library that supports various compilers and operating systems. Currently only limitation is x86 (32-bit) or x64 (64-bit) processor. Currently tested operating systems are Windows (32-bit and 64-bit), Linux (32-bit and 64-bit) and MacOSX (32-bit and 64-bit).</para><sect1 id="index_1AsmJit_Main_Introduction">
+<title>Introduction</title>
+<para>AsmJit library contains two main classes for code generation with different goals. First main code generation class is called <computeroutput>asmjit::Assembler</computeroutput> and contains low level API that can be used to generate JIT binary code. It directly emits binary stream that represents encoded x86/x64 assembler opcodes. Together with operands and labels it can be used to generate complete code. For details look to <ref refid="group__asmjit__base" kindref="compound">Platform neutral API, abstract classes and operands.</ref> and <ref refid="group__asmjit__compiler" kindref="compound">Compiler (high-level code generation).</ref> sections.</para><para>There is also class named <computeroutput><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">asmjit::BaseCompiler</ref></computeroutput> that allows to develop cross-platform assembler code without worring about function calling conventions and registers allocation. It can be also used to write 32-bit and 64-bit portable code. Compiler is a recommended concept to use for code generation.</para><para>Everything in AsmJit library is in <computeroutput>asmjit</computeroutput> namespace.</para></sect1>
+<sect1 id="index_1AsmJit_Main_CodeGeneration">
+<title>Code Generation</title>
+<para><itemizedlist>
+<listitem><para><ref refid="group__asmjit__base" kindref="compound">Assembler core</ref> - Operands, intrinsics and low-level assembler.</para></listitem><listitem><para><ref refid="group__asmjit__compiler" kindref="compound">Compiler</ref> - High level code generation.</para></listitem><listitem><para><ref refid="group__asmjit__cpuinfo" kindref="compound">Cpu Information</ref> - Get information about host processor.</para></listitem><listitem><para><ref refid="group__asmjit__logging" kindref="compound">Logging</ref> - Logging and error handling.</para></listitem><listitem><para><ref refid="group__AsmJit__MemoryManagement" kindref="compound">Memory Management</ref> - Virtual memory management.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1AsmJit_Main_Configuration">
+<title>Configuration, Definitions and Utilities</title>
+<para><itemizedlist>
+<listitem><para><ref refid="group__asmjit__config" kindref="compound">Configuration</ref> - Macros used to configure AsmJit.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1AsmJit_Main_HomePage">
+<title>AsmJit Homepage</title>
+<para><itemizedlist>
+<listitem><para><ulink url="http://code.google.com/p/asmjit/">http://code.google.com/p/asmjit/</ulink></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1AsmJit_Main_ResourcesX86">
+<title>External X86/X64 Assembler Resources</title>
+<para><itemizedlist>
+<listitem><para><ulink url="http://www.agner.org/optimize/">http://www.agner.org/optimize/</ulink></para></listitem><listitem><para><ulink url="http://www.mark.masmcode.com/">http://www.mark.masmcode.com/</ulink> (Assembler Tips)</para></listitem><listitem><para><ulink url="http://avisynth.org/mediawiki/Filter_SDK/Assembler_optimizing">http://avisynth.org/mediawiki/Filter_SDK/Assembler_optimizing</ulink> (Optimizing)</para></listitem><listitem><para><ulink url="http://www.ragestorm.net/distorm/">http://www.ragestorm.net/distorm/</ulink> (Disassembling)</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1AsmJit_Main_Terminology">
+<title>Terminology</title>
+<para><itemizedlist>
+<listitem><para><bold>Non-volatile (preserved) register</bold> - Register that can&apos;t be changed by callee (callee must save and restore it if it want to use it inside).</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>Volatile (non-preserved) register</bold> - The opossite. Register that can be freely used by callee. The caller must free all registers before calling other function. </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

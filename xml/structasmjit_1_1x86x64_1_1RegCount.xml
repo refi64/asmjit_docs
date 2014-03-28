@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1RegCount" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::RegCount</compoundname>
+    <includes local="no">x86defs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1a57173cf0614feffc197812243fd87e49" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::RegCount::_gp</definition>
+        <argsstring></argsstring>
+        <name>_gp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2107" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1a192ab8fa8ee27317d1da400956d2c072" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::RegCount::_fp</definition>
+        <argsstring></argsstring>
+        <name>_fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2108" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1a8525195c7e186c5cdab7f3250dd29ae6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::RegCount::_mm</definition>
+        <argsstring></argsstring>
+        <name>_mm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2109" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1a420ca438b04db528f2b43a9c8ed103f4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::RegCount::_xy</definition>
+        <argsstring></argsstring>
+        <name>_xy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2110" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1a0c509981603456820699c3c64e72e924" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::RegCount::_regs[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>_regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2113" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1a53ba91bde45e75fd244bef79c215f0e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::RegCount::_packed</definition>
+        <argsstring></argsstring>
+        <name>_packed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2114" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegCount_1ac0d863b778a2fe133e8260a8e3c8442a" prot="public" static="no" mutable="no">
+        <type>union asmjit::x86x64::RegCount::@65</type>
+        <definition>union asmjit::x86x64::RegCount::@65 asmjit::x86x64::RegCount::@66</definition>
+        <argsstring></argsstring>
+        <name>@66</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegCount_1a67448b4177b4a7300a5bb2e7e24259c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegCount::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2051" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2051" bodyend="2053"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegCount_1a51ce122465ec73dce239905f204af4e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::RegCount::get</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>get</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2059" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2059" bodyend="2063"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegCount_1a4e7dc6fbdfcb6d9aa7e22f5fcdace408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegCount::set</definition>
+        <argsstring>(uint32_t c, uint32_t n)</argsstring>
+        <name>set</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2069" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2069" bodyend="2074"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegCount_1a4800d4c456cc9636b61740c624fd2ba3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegCount::add</definition>
+        <argsstring>(uint32_t c, uint32_t n=1)</argsstring>
+        <name>add</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>n</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2080" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2080" bodyend="2085"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegCount_1aaf8797465f7a72e8e68ecb76248a58a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegCount::makeIndex</definition>
+        <argsstring>(const RegCount &amp;count)</argsstring>
+        <name>makeIndex</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1RegCount" kindref="compound">RegCount</ref> &amp;</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2091" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2091" bodyend="2099"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86/X64 registers count (Gp, Fp, Mm, Xmm). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2046" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2046" bodyend="2116"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a192ab8fa8ee27317d1da400956d2c072" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>_fp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a57173cf0614feffc197812243fd87e49" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>_gp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a8525195c7e186c5cdab7f3250dd29ae6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>_mm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a53ba91bde45e75fd244bef79c215f0e0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a0c509981603456820699c3c64e72e924" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>_regs</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a420ca438b04db528f2b43a9c8ed103f4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>_xy</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a4800d4c456cc9636b61740c624fd2ba3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>add</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a51ce122465ec73dce239905f204af4e1" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>get</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1aaf8797465f7a72e8e68ecb76248a58a3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>makeIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a67448b4177b4a7300a5bb2e7e24259c0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegCount_1a4e7dc6fbdfcb6d9aa7e22f5fcdace408" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegCount</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

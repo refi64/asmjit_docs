@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1VarAttr" kind="struct" prot="public">
+    <compoundname>asmjit::VarAttr</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1a3ad20130d31d245ca1bb01ea085a6752" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::VarAttr::_vd</definition>
+        <argsstring></argsstring>
+        <name>_vd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="637" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1a5b2639d6dc86c01a95977d3f99e8456c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::_flags</definition>
+        <argsstring></argsstring>
+        <name>_flags</name>
+        <briefdescription>
+<para>Flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="639" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1ab8fc87f8ecffd38865dfd10ba2581876" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarAttr::_varCount</definition>
+        <argsstring></argsstring>
+        <name>_varCount</name>
+        <briefdescription>
+<para>How many times the variable is used by the instruction/node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="644" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1a7eb756d03e8171d8d5f5698217c6bbea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarAttr::_inRegIndex</definition>
+        <argsstring></argsstring>
+        <name>_inRegIndex</name>
+        <briefdescription>
+<para>Input register index or kInvalidReg if it&apos;s not given. </para>        </briefdescription>
+        <detaileddescription>
+<para>Even if the input register index is not given (i.e. it may by any register), register allocator should assign an index that will be used to persist a variable into this specific index. It&apos;s helpful in situations where one variable has to be allocated in multiple registers to determine the register which will be persistent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="652" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1adf11d7061549b509a89e21a0693b6264" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarAttr::_outRegIndex</definition>
+        <argsstring></argsstring>
+        <name>_outRegIndex</name>
+        <briefdescription>
+<para>Output register index or kInvalidReg if it&apos;s not given. </para>        </briefdescription>
+        <detaileddescription>
+<para>Typically kInvalidReg if variable is only used on input. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="656" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1a740dc1334998f180930e3a93862fe654" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarAttr::_reserved</definition>
+        <argsstring></argsstring>
+        <name>_reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="658" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1aeb40feef5cd1d8ec4b2934d203c6ddf5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::_packed</definition>
+        <argsstring></argsstring>
+        <name>_packed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="664" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1a18f4ba43bb12005a9553570b27ed3588" prot="public" static="no" mutable="no">
+        <type>union asmjit::VarAttr::@9</type>
+        <definition>union asmjit::VarAttr::@9 asmjit::VarAttr::@10</definition>
+        <argsstring></argsstring>
+        <name>@10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="665"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1a9e833d10dd39615182342f1b79b53d5c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::_inRegs</definition>
+        <argsstring></argsstring>
+        <name>_inRegs</name>
+        <briefdescription>
+<para>Mandatory input registers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Mandatory input registers are required by the instruction even if there are duplicates. This schema allows us to allocate one variable in one or more register when needed. Required mostly by instructions that have implicit register operands (imul, cpuid, ...) and function call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="674" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarAttr_1ae2477ca98d9d1b2b991e4e3bbff72f97" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::_allocableRegs</definition>
+        <argsstring></argsstring>
+        <name>_allocableRegs</name>
+        <briefdescription>
+<para>Allocable input registers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Optional input registers is a mask of all allocable registers for a given variable where we have to pick one of them. This mask is usually not used when _inRegs is set. If both masks are used then the register allocator tries first to find an intersection between these and allocates an extra slot if not found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="683" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a234eb2623a3375e4dde1ad4d12e3e1ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setup</definition>
+        <argsstring>(VarData *vd, uint32_t flags=0, uint32_t inRegs=0, uint32_t allocableRegs=0)</argsstring>
+        <name>setup</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>inRegs</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>allocableRegs</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="541" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="541" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ad389f5c108e71ffa5fc3434c29321ccd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::VarAttr::getVd</definition>
+        <argsstring>() const </argsstring>
+        <name>getVd</name>
+        <briefdescription>
+<para>Get <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="557" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="557" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a3d82df34b2c2e492b7a4128270a6f132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setVd</definition>
+        <argsstring>(VarData *vd)</argsstring>
+        <name>setVd</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="559" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="559" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a270ef3da85be149dcd8a399d43b0fb4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::getFlags</definition>
+        <argsstring>() const </argsstring>
+        <name>getFlags</name>
+        <briefdescription>
+<para>Get flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="562" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="562" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ac847605382e344a2586f36d9620c270b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setFlags</definition>
+        <argsstring>(uint32_t flags)</argsstring>
+        <name>setFlags</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Set flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="564" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="564" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a237964007bca5d38631aa35ba68565b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarAttr::hasFlag</definition>
+        <argsstring>(uint32_t flag)</argsstring>
+        <name>hasFlag</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Get whether <emphasis>flag</emphasis> is on. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="567" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="567" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1aec6c138d5c0413295eef3d104caa400f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::addFlags</definition>
+        <argsstring>(uint32_t flags)</argsstring>
+        <name>addFlags</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Add <emphasis>flags</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="569" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="569" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a9f51da5f4d73af77e9021181585367cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::andFlags</definition>
+        <argsstring>(uint32_t flags)</argsstring>
+        <name>andFlags</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Mask <emphasis>flags</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="571" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="571" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a0ecd3205b02f3f61012bf6d95c918f58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::delFlags</definition>
+        <argsstring>(uint32_t flags)</argsstring>
+        <name>delFlags</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Clear <emphasis>flags</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="573" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="573" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ae694a20c49584b65a70933a9a73a57b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::getVarCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getVarCount</name>
+        <briefdescription>
+<para>Get how many times the variable is used by the instruction/node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="576" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="576" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ad14c96016ac92e5c96691145ac1dadcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setVarCount</definition>
+        <argsstring>(uint32_t count)</argsstring>
+        <name>setVarCount</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Set how many times the variable is used by the instruction/node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="578" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="578" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ab375e9461d5b8e6b66553d4f7f17b741" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::addVarCount</definition>
+        <argsstring>(uint32_t count=1)</argsstring>
+        <name>addVarCount</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Add how many times the variable is used by the instruction/node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="580" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="580" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a75e8f515d07549811f4a07217250b3ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::hasInRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>hasInRegIndex</name>
+        <briefdescription>
+<para>Get whether the variable has to be allocated in a specific input register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="583" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="583" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a0047d67c8448e1aad0f5f3435db77ce7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::getInRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getInRegIndex</name>
+        <briefdescription>
+<para>Get the input register index or kInvalidReg. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="585" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="585" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1aaff5a39a1347c78b084769ce8eeaba34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setInRegIndex</definition>
+        <argsstring>(uint32_t index)</argsstring>
+        <name>setInRegIndex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Set the input register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="587" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="587" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a3a53e456cba73102cb7a4cffe848b4ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::resetInRegIndex</definition>
+        <argsstring>()</argsstring>
+        <name>resetInRegIndex</name>
+        <briefdescription>
+<para>Reset the input register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="589" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="589" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a894139038e907af2748b6093737972d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::hasOutRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>hasOutRegIndex</name>
+        <briefdescription>
+<para>Get whether the variable has to be allocated in a specific output register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="592" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="592" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a0139e8985476331e61f2c4236329ecf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::getOutRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getOutRegIndex</name>
+        <briefdescription>
+<para>Get the output register index or kInvalidReg. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="594" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="594" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ac5d3399345726a7541fc2486be5fbe9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setOutRegIndex</definition>
+        <argsstring>(uint32_t index)</argsstring>
+        <name>setOutRegIndex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Set the output register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="596" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="596" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1adbf343679c14f0143d813d3ec1bf4f97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::resetOutRegIndex</definition>
+        <argsstring>()</argsstring>
+        <name>resetOutRegIndex</name>
+        <briefdescription>
+<para>Reset the output register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="598" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="598" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1afed1053b60d334df2cb620af79047672" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarAttr::hasInRegs</definition>
+        <argsstring>() const </argsstring>
+        <name>hasInRegs</name>
+        <briefdescription>
+<para>Get whether the mandatory input registers are in used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="601" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="601" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1aee427385b0a9229068f5453b1bca438d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::getInRegs</definition>
+        <argsstring>() const </argsstring>
+        <name>getInRegs</name>
+        <briefdescription>
+<para>Get mandatory input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="603" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="603" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a1b955a9982be7c46725a96f9b8e82e46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setInRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>setInRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Set mandatory input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="605" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="605" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1aeb795f1266d08f5d4cd7e82ac21099e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::addInRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>addInRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Add mandatory input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="607" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="607" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a908b1d3c56acbff45b8e5aad4a9e250a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::andInRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>andInRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>And mandatory input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="609" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="609" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a0706064966bc8b046be1ee23985b9b3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::delInRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>delInRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Clear mandatory input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="611" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="611" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a650795993dae5c626427196dd739142e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarAttr::getAllocableRegs</definition>
+        <argsstring>() const </argsstring>
+        <name>getAllocableRegs</name>
+        <briefdescription>
+<para>Get allocable input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="614" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="614" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ad1cf18ee951cff8d112d8d8b7aff17d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::setAllocableRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>setAllocableRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Set allocable input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="616" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="616" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a068b4706f199aa8b16ce470ba69e19ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::addAllocableRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>addAllocableRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Add allocable input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="618" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="618" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ac90718e9fa6f08e0473746f6b3444388" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::andAllocableRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>andAllocableRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>And allocable input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="620" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="620" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1ac592f317421e454ddf1ba6c8f46abb83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarAttr::delAllocableRegs</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>delAllocableRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Clear allocable input registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="622" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="622" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarAttr_1a24e777a71ce796ce72394a69540a9ef2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr &amp;</type>
+        <definition>VarAttr&amp; asmjit::VarAttr::operator=</definition>
+        <argsstring>(const VarAttr &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const VarAttr &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="628" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="628" bodyend="631"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1101">
+        <label>asmjit::VarData</label>
+        <link refid="structasmjit_1_1VarData"/>
+      </node>
+      <node id="1100">
+        <label>asmjit::VarAttr</label>
+        <childnode refid="1101" relation="usage">
+          <edgelabel>_vd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="536" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="536" bodyend="684"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1VarAttr_1ae2477ca98d9d1b2b991e4e3bbff72f97" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_allocableRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a5b2639d6dc86c01a95977d3f99e8456c" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a7eb756d03e8171d8d5f5698217c6bbea" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_inRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a9e833d10dd39615182342f1b79b53d5c" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_inRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1adf11d7061549b509a89e21a0693b6264" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_outRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1aeb40feef5cd1d8ec4b2934d203c6ddf5" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a740dc1334998f180930e3a93862fe654" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_reserved</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ab8fc87f8ecffd38865dfd10ba2581876" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_varCount</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a3ad20130d31d245ca1bb01ea085a6752" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>_vd</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a068b4706f199aa8b16ce470ba69e19ff" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>addAllocableRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1aec6c138d5c0413295eef3d104caa400f" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>addFlags</name></member>
+      <member refid="structasmjit_1_1VarAttr_1aeb795f1266d08f5d4cd7e82ac21099e6" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>addInRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ab375e9461d5b8e6b66553d4f7f17b741" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>addVarCount</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ac90718e9fa6f08e0473746f6b3444388" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>andAllocableRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a9f51da5f4d73af77e9021181585367cd" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>andFlags</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a908b1d3c56acbff45b8e5aad4a9e250a" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>andInRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ac592f317421e454ddf1ba6c8f46abb83" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>delAllocableRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a0ecd3205b02f3f61012bf6d95c918f58" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>delFlags</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a0706064966bc8b046be1ee23985b9b3b" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>delInRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a650795993dae5c626427196dd739142e" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getAllocableRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a270ef3da85be149dcd8a399d43b0fb4c" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a0047d67c8448e1aad0f5f3435db77ce7" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getInRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1aee427385b0a9229068f5453b1bca438d" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getInRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a0139e8985476331e61f2c4236329ecf2" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getOutRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ae694a20c49584b65a70933a9a73a57b3" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getVarCount</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ad389f5c108e71ffa5fc3434c29321ccd" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>getVd</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a237964007bca5d38631aa35ba68565b7" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>hasFlag</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a75e8f515d07549811f4a07217250b3ee" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>hasInRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1afed1053b60d334df2cb620af79047672" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>hasInRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a894139038e907af2748b6093737972d2" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>hasOutRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a24e777a71ce796ce72394a69540a9ef2" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a3a53e456cba73102cb7a4cffe848b4ed" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>resetInRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1adbf343679c14f0143d813d3ec1bf4f97" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>resetOutRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ad1cf18ee951cff8d112d8d8b7aff17d6" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setAllocableRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ac847605382e344a2586f36d9620c270b" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setFlags</name></member>
+      <member refid="structasmjit_1_1VarAttr_1aaff5a39a1347c78b084769ce8eeaba34" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setInRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a1b955a9982be7c46725a96f9b8e82e46" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setInRegs</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ac5d3399345726a7541fc2486be5fbe9a" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setOutRegIndex</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a234eb2623a3375e4dde1ad4d12e3e1ba" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setup</name></member>
+      <member refid="structasmjit_1_1VarAttr_1ad14c96016ac92e5c96691145ac1dadcc" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setVarCount</name></member>
+      <member refid="structasmjit_1_1VarAttr_1a3d82df34b2c2e492b7a4128270a6f132" prot="public" virt="non-virtual"><scope>asmjit::VarAttr</scope><name>setVd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

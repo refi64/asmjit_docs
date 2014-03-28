@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="cpu_8h" kind="file">
+    <compoundname>cpu.h</compoundname>
+    <includes refid="globals_8h" local="yes">../base/globals.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="compiler_8cpp" local="yes">compiler.cpp</includedby>
+    <includedby refid="cpu_8cpp" local="yes">cpu.cpp</includedby>
+    <includedby refid="runtime_8cpp" local="yes">runtime.cpp</includedby>
+    <includedby refid="x86cpu_8h" local="yes">x86cpu.h</includedby>
+    <incdepgraph>
+      <node id="756">
+        <label>../base/globals.h</label>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="766">
+        <label>stdarg.h</label>
+      </node>
+      <node id="768">
+        <label>stdint.h</label>
+      </node>
+      <node id="760">
+        <label>stdlib.h</label>
+      </node>
+      <node id="764">
+        <label>../base/apibegin.h</label>
+        <childnode refid="757" relation="include">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>../base/defs.h</label>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>limits.h</label>
+      </node>
+      <node id="767">
+        <label>new</label>
+      </node>
+      <node id="755">
+        <label>cpu.h</label>
+        <link refid="cpu.h"/>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="758">
+        <label>config.h</label>
+      </node>
+      <node id="763">
+        <label>../base/intutil.h</label>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>../build.h</label>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>stdio.h</label>
+      </node>
+      <node id="761">
+        <label>string.h</label>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="778">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="789">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="773">
+        <label>asmjit.h</label>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+      </node>
+      <node id="780">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="786">
+        <label>x86.h</label>
+      </node>
+      <node id="787">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="772">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="771">
+        <label>base.h</label>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>winremoteruntime.h</label>
+        <childnode refid="785" relation="include">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="770">
+        <label>cpu.h</label>
+        <link refid="cpu.h"/>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>x86cpu.h</label>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>genopcode.h</label>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>genblend.h</label>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="781">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="782">
+        <label>host.h</label>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>cpu.cpp</label>
+      </node>
+      <node id="785">
+        <label>contrib.h</label>
+      </node>
+      <node id="774">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="779">
+        <label>testcpu.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1BaseCpu" prot="public">asmjit::BaseCpu</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_CPU_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_CPU_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/globals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_base</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kCpuVendor]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">//!<sp/>@brief<sp/>Cpu<sp/>vendor<sp/>IDs.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">//!<sp/>Cpu<sp/>vendor<sp/>IDs<sp/>are<sp/>specific<sp/>for<sp/>AsmJit<sp/>library.<sp/>Vendor<sp/>ID<sp/>is<sp/>not<sp/>directly</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">//!<sp/>read<sp/>from<sp/>cpuid<sp/>result,<sp/>instead<sp/>it&apos;s<sp/>based<sp/>on<sp/>CPU<sp/>vendor<sp/>string.</highlight></codeline>
+<codeline lineno="30" refid="group__asmjit__base_1gaf99557bc959d675f99a7413c43b18491" refkind="member"><highlight class="comment"></highlight><highlight class="normal">ASMJIT_ENUM(<ref refid="group__asmjit__base_1gaf99557bc959d675f99a7413c43b18491" kindref="member" tooltip="Cpu vendor IDs.">kCpuVendor</ref>)<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Unknown<sp/>CPU<sp/>vendor.</highlight></codeline>
+<codeline lineno="32" refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a373fc1ee653533046adad518101c2a2b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a373fc1ee653533046adad518101c2a2b" kindref="member" tooltip="Unknown CPU vendor.">kCpuVendorUnknown</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Intel<sp/>CPU<sp/>vendor.</highlight></codeline>
+<codeline lineno="35" refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a3e4d75ca28030952346e1228e0e135d1" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a3e4d75ca28030952346e1228e0e135d1" kindref="member" tooltip="Intel CPU vendor.">kCpuVendorIntel</ref><sp/>=<sp/>1,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>AMD<sp/>CPU<sp/>vendor.</highlight></codeline>
+<codeline lineno="37" refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a6a2f3432bac2f693af105f463d13db02" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a6a2f3432bac2f693af105f463d13db02" kindref="member" tooltip="AMD CPU vendor.">kCpuVendorAmd</ref><sp/>=<sp/>2,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>National<sp/>Semiconductor<sp/>CPU<sp/>vendor<sp/>(applies<sp/>also<sp/>to<sp/>Cyrix<sp/>processors).</highlight></codeline>
+<codeline lineno="39" refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a84fcc958361f8be6594bacd4efbf3fac" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a84fcc958361f8be6594bacd4efbf3fac" kindref="member" tooltip="National Semiconductor CPU vendor (applies also to Cyrix processors).">kCpuVendorNSM</ref><sp/>=<sp/>3,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Transmeta<sp/>CPU<sp/>vendor.</highlight></codeline>
+<codeline lineno="41" refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a3ce730dbe74d5cc9274aca654b2212c4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a3ce730dbe74d5cc9274aca654b2212c4" kindref="member" tooltip="Transmeta CPU vendor.">kCpuVendorTransmeta</ref><sp/>=<sp/>4,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>VIA<sp/>CPU<sp/>vendor.</highlight></codeline>
+<codeline lineno="43" refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a608f861dd08c9029e7992419a82e13d9" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a608f861dd08c9029e7992419a82e13d9" kindref="member" tooltip="VIA CPU vendor.">kCpuVendorVia</ref><sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseCpu]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment">//!<sp/>@brief<sp/>Base<sp/>cpu<sp/>information.</highlight></codeline>
+<codeline lineno="51" refid="structasmjit_1_1BaseCpu" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/>kFeaturesPerUInt32<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint32_t))<sp/>*<sp/>8<sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/><ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>(uint32_t<sp/>size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>))<sp/>:<sp/><ref refid="structasmjit_1_1BaseCpu_1a63b1391eaf5c68084b6fe16d7c0354f5" kindref="member" tooltip="Size of the structure in bytes.">_size</ref>(size)<sp/>{}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Accessors]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>vendor<sp/>string.</highlight></codeline>
+<codeline lineno="67" refid="structasmjit_1_1BaseCpu_1a1596633d850aed49f001d4be35e20384" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1BaseCpu_1a1596633d850aed49f001d4be35e20384" kindref="member" tooltip="Get CPU vendor string.">getVendorString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a2242090cf8293bd1993836c88f644b0e" kindref="member" tooltip="Cpu short vendor string.">_vendorString</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>brand<sp/>string.</highlight></codeline>
+<codeline lineno="69" refid="structasmjit_1_1BaseCpu_1a8eb2dec2c8374dd40c7f590d4e724677" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1BaseCpu_1a8eb2dec2c8374dd40c7f590d4e724677" kindref="member" tooltip="Get CPU brand string.">getBrandString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a6a8a82c2fe9c901f9699d2d7763664b9" kindref="member" tooltip="Cpu long vendor string (brand).">_brandString</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>vendor<sp/>ID.</highlight></codeline>
+<codeline lineno="72" refid="structasmjit_1_1BaseCpu_1a27f71127d565689bbb7c2c8677fe89b5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a27f71127d565689bbb7c2c8677fe89b5" kindref="member" tooltip="Get CPU vendor ID.">getVendorId</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a495231592fbc008595461fbb2045b3d3" kindref="member" tooltip="Cpu vendor id (see asmjit::kCpuVendor enum).">_vendorId</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>family<sp/>ID.</highlight></codeline>
+<codeline lineno="74" refid="structasmjit_1_1BaseCpu_1a86ee66b3bf7e8c623f140fa614262272" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a86ee66b3bf7e8c623f140fa614262272" kindref="member" tooltip="Get CPU family ID.">getFamily</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1aae7f103029b2104b1e41f7371ae9ff55" kindref="member" tooltip="Cpu family ID.">_family</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>model<sp/>ID.</highlight></codeline>
+<codeline lineno="76" refid="structasmjit_1_1BaseCpu_1ad3ed12c12bce38a12d1b42dc410c372d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1ad3ed12c12bce38a12d1b42dc410c372d" kindref="member" tooltip="Get CPU model ID.">getModel</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a6b765b4c329d863af47baad664c4d1e6" kindref="member" tooltip="Cpu model ID.">_model</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>stepping.</highlight></codeline>
+<codeline lineno="78" refid="structasmjit_1_1BaseCpu_1ae711d5fa18f161c7d2bad598af180190" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1ae711d5fa18f161c7d2bad598af180190" kindref="member" tooltip="Get CPU stepping.">getStepping</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a6bd94261fb02212d1cffd0f5c1d88baf" kindref="member" tooltip="Cpu stepping.">_stepping</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>cores<sp/>count<sp/>(or<sp/>sum<sp/>of<sp/>all<sp/>cores<sp/>of<sp/>all<sp/>procesors).</highlight></codeline>
+<codeline lineno="80" refid="structasmjit_1_1BaseCpu_1a2aac6d6744a3cd6bf4a5ca9ea38ef0fd" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a2aac6d6744a3cd6bf4a5ca9ea38ef0fd" kindref="member" tooltip="Get CPU cores count (or sum of all cores of all procesors).">getCoresCount</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a7a6d6d546880dd57a75074c45c17d868" kindref="member" tooltip="Cpu cores count (or sum of all CPU cores of all processors).">_coresCount</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>whether<sp/>CPU<sp/>has<sp/>a<sp/>@a<sp/>feature.</highlight></codeline>
+<codeline lineno="83" refid="structasmjit_1_1BaseCpu_1a7d362d56d07ee7e70be5288445943f19" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a7d362d56d07ee7e70be5288445943f19" kindref="member" tooltip="Get whether CPU has a feature.">hasFeature</ref>(uint32_t<sp/>feature)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(feature<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" kindref="member" tooltip="Cpu features bitfield.">_features</ref>)<sp/>*<sp/>8);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" kindref="member" tooltip="Cpu features bitfield.">_features</ref>[feature<sp/>/<sp/>kFeaturesPerUInt32]<sp/>&gt;&gt;<sp/>(feature<sp/>%<sp/>kFeaturesPerUInt32))<sp/>&amp;<sp/>0x1);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Add<sp/>CPU<sp/>@a<sp/>feature.</highlight></codeline>
+<codeline lineno="91" refid="structasmjit_1_1BaseCpu_1a79624b1c6b519d788be7063ab9d60179" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseCpu&amp;<sp/><ref refid="structasmjit_1_1BaseCpu_1a79624b1c6b519d788be7063ab9d60179" kindref="member" tooltip="Add CPU feature.">addFeature</ref>(uint32_t<sp/>feature)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(feature<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" kindref="member" tooltip="Cpu features bitfield.">_features</ref>)<sp/>*<sp/>8);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" kindref="member" tooltip="Cpu features bitfield.">_features</ref>[feature<sp/>/<sp/>kFeaturesPerUInt32]<sp/>|=<sp/>(1U<sp/>&lt;&lt;<sp/>(feature<sp/>%<sp/>kFeaturesPerUInt32));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Statics]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Detect<sp/>number<sp/>of<sp/>cores<sp/>(or<sp/>sum<sp/>of<sp/>all<sp/>cores<sp/>of<sp/>all<sp/>processors).</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a3f3bf31b69395a2874364a63b75e9ca6" kindref="member" tooltip="Detect number of cores (or sum of all cores of all processors).">detectNumberOfCores</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>host<sp/>cpu.</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BaseCpu*<sp/><ref refid="structasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff" kindref="member" tooltip="Get host cpu.">getHost</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Size<sp/>of<sp/>the<sp/>structure<sp/>in<sp/>bytes.</highlight></codeline>
+<codeline lineno="113" refid="structasmjit_1_1BaseCpu_1a63b1391eaf5c68084b6fe16d7c0354f5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a63b1391eaf5c68084b6fe16d7c0354f5" kindref="member" tooltip="Size of the structure in bytes.">_size</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>short<sp/>vendor<sp/>string.</highlight></codeline>
+<codeline lineno="116" refid="structasmjit_1_1BaseCpu_1a2242090cf8293bd1993836c88f644b0e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a2242090cf8293bd1993836c88f644b0e" kindref="member" tooltip="Cpu short vendor string.">_vendorString</ref>[16];</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>long<sp/>vendor<sp/>string<sp/>(brand).</highlight></codeline>
+<codeline lineno="118" refid="structasmjit_1_1BaseCpu_1a6a8a82c2fe9c901f9699d2d7763664b9" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu_1a6a8a82c2fe9c901f9699d2d7763664b9" kindref="member" tooltip="Cpu long vendor string (brand).">_brandString</ref>[64];</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>vendor<sp/>id<sp/>(see<sp/>@c<sp/>asmjit::kCpuVendor<sp/>enum).</highlight></codeline>
+<codeline lineno="121" refid="structasmjit_1_1BaseCpu_1a495231592fbc008595461fbb2045b3d3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a495231592fbc008595461fbb2045b3d3" kindref="member" tooltip="Cpu vendor id (see asmjit::kCpuVendor enum).">_vendorId</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>family<sp/>ID.</highlight></codeline>
+<codeline lineno="123" refid="structasmjit_1_1BaseCpu_1aae7f103029b2104b1e41f7371ae9ff55" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1aae7f103029b2104b1e41f7371ae9ff55" kindref="member" tooltip="Cpu family ID.">_family</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>model<sp/>ID.</highlight></codeline>
+<codeline lineno="125" refid="structasmjit_1_1BaseCpu_1a6b765b4c329d863af47baad664c4d1e6" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a6b765b4c329d863af47baad664c4d1e6" kindref="member" tooltip="Cpu model ID.">_model</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>stepping.</highlight></codeline>
+<codeline lineno="127" refid="structasmjit_1_1BaseCpu_1a6bd94261fb02212d1cffd0f5c1d88baf" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a6bd94261fb02212d1cffd0f5c1d88baf" kindref="member" tooltip="Cpu stepping.">_stepping</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>cores<sp/>count<sp/>(or<sp/>sum<sp/>of<sp/>all<sp/>CPU<sp/>cores<sp/>of<sp/>all<sp/>processors).</highlight></codeline>
+<codeline lineno="129" refid="structasmjit_1_1BaseCpu_1a7a6d6d546880dd57a75074c45c17d868" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a7a6d6d546880dd57a75074c45c17d868" kindref="member" tooltip="Cpu cores count (or sum of all CPU cores of all processors).">_coresCount</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Cpu<sp/>features<sp/>bitfield.</highlight></codeline>
+<codeline lineno="132" refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" kindref="member" tooltip="Cpu features bitfield.">_features</ref>[4];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_CPU_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/cpu.h"/>
+  </compounddef>
+</doxygen>

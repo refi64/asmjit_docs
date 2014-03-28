@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::X86Var &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::X86X64Assembler" href="x86x64__X86X64Assembler.html" />
+    <link rel="prev" title="x86x64::X86Reg" href="x86x64__X86Reg.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86X64Assembler.html" title="x86x64::X86X64Assembler"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__X86Reg.html" title="x86x64::X86Reg"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-x86var">
+<h1>x86x64::X86Var<a class="headerlink" href="#x86x64-x86var" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1X86Var">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::X86Var</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base class for all variables. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a1235dc7ad9abb01cbe36339117ca8148"></span><div class="line-block">
+<div class="line"> <strong>X86Var</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a4d0c9d492673e9641a2c75725bdea48e"></span><div class="line-block">
+<div class="line"> <strong>X86Var</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a18faac2e1ba9654d7764d67e62d7cb42"></span><div class="line-block">
+<div class="line"> <strong>X86Var</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a5189d025ab5e430a5ce14a5fd83e5ea2"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a320895f2833c51d30db23c784df9c4bd"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a564ee183fb502fb9746044c80875353f"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a9629099839b985b95a87a81a55837d4c"></span><div class="line-block">
+<div class="line">uint32_t <strong>getVarType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a065a74b4694f5f69f54ef0efd74e070d"></span><div class="line-block">
+<div class="line">bool <strong>isGp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpb register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1aa72147fe07f80a419d5462bfc66b7f0c"></span><div class="line-block">
+<div class="line">bool <strong>isGpb</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpb register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1aff460abf8c73aa9b4a61af4c31abe858"></span><div class="line-block">
+<div class="line">bool <strong>isGpbLo</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpb-lo register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a30335b7293d8e81b9919449270730f95"></span><div class="line-block">
+<div class="line">bool <strong>isGpbHi</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpb-hi register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a61c3806ce11605d7a39a4aa76c8b0695"></span><div class="line-block">
+<div class="line">bool <strong>isGpw</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpw register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a20dd90c3152e0bee3c85850b19b34851"></span><div class="line-block">
+<div class="line">bool <strong>isGpd</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpd register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a61137a857dd7f088fc8fa0d9997bf898"></span><div class="line-block">
+<div class="line">bool <strong>isGpq</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Gpq register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1aa481d56af8c9358ef1ddf2640ee02a95"></span><div class="line-block">
+<div class="line">bool <strong>isFp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Fp register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a7967f865b83fb758f35e406abc58cd3c"></span><div class="line-block">
+<div class="line">bool <strong>isMm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Mm type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a40558c213b9676d52fdcfcb99346c2f6"></span><div class="line-block">
+<div class="line">bool <strong>isXmm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Xmm type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a9baf6d51294ba04d06eb8cc3c692f3b2"></span><div class="line-block">
+<div class="line">bool <strong>isYmm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is Ymm type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a6d69361f562704d45752d5405d91cbbf"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to memory operand. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Size of operand depends on native variable type, you can use other variants if you want specific one. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a536f7424deb550b0da44ac00b3e6b567"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a6be5cf52a69b05c1752cd1dd4b29bfbf"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m8</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 8-bit memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1aa54c204b47ebe1040834a0e4a6b5298e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m8</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a815466a18a45464e7cef63ac3e57bd71"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m16</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 16-bit memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a06abd400cfc173f9fd556008a2bd7682"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m16</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a4c84d867803e2b28dfbdd3c5166c889d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m32</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 32-bit memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1ad941a21008425f4d127aa1568cab01d4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m32</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a83527cece402b22c2d8ebaed47b5fb37"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m64</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 64-bit memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1ad137572ad9f3a3e9e30a8a3f714b3e60"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m64</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1afe71570f0ab49573df81ed33d8802638"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m80</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 80-bit memory operand (long double). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1ab59acb1c2324fbd020d2bda92aedd5df"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m80</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a59bb1eac4ce572017fbba924461180fe"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m128</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 128-bit memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a8d252edf6b13d756830ab7505012593d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m128</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1ad089710406b1e7451adf5a9194f19fe3"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m256</strong>(int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 256-bit memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a7464d60078f4b820a60c0ba4e2ec7d70"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>m256</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift = 0, int32_t disp = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a01d40d4e50b243ceaacd9b8b4ed086cd"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a0cc27cba4831b497b72d5fd49348ace4"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a6f294d66300809125e51035e70831ccf"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Protected Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Var_1a838e01340b480fb03041ddc47f85dc09"></span><div class="line-block">
+<div class="line"> <strong>X86Var</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; other, uint32_t reg, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__X86Reg.html"
+                        title="previous chapter">x86x64::X86Reg</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__X86X64Assembler.html"
+                        title="next chapter">x86x64::X86X64Assembler</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__X86Var.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86X64Assembler.html" title="x86x64::X86X64Assembler"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__X86Reg.html" title="x86x64::X86Reg"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::VarState &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::X86Reg" href="x86x64__X86Reg.html" />
+    <link rel="prev" title="x86x64::VarInfo" href="x86x64__VarInfo.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86Reg.html" title="x86x64::X86Reg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__VarInfo.html" title="x86x64::VarInfo"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-varstate">
+<h1>x86x64::VarState<a class="headerlink" href="#x86x64-varstate" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1VarState">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::VarState</strong></div>
+<div class="line"><em>#include &lt;x86compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86/X64 state. </p>
+<p></p>
+<em>Public Type</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331"></span><strong>Anonymous enum</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">kGpIndex</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">0</span></tt> - <p>Base index for Gp registers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kGpCount</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">16</span></tt> - <p>Count of Gp registers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kMmIndex</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">kGpIndex</span> <span class="pre">+</span> <span class="pre">kGpCount</span></tt> - <p>Base index for Mm registers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kMmCount</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">8</span></tt> - <p>Count of Mm registers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kXmmIndex</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">kMmIndex</span> <span class="pre">+</span> <span class="pre">kMmCount</span></tt> - <p>Base index for Xmm registers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kXmmCount</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">16</span></tt> - <p>Count of Xmm registers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kAllCount</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">kXmmIndex</span> <span class="pre">+</span> <span class="pre">kXmmCount</span></tt> - <p>Count of all registers in <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1VarState"><em>VarState</em></a>. </p>
+</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a700ef130ea5c00c3a78cdeddd61ac902"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  ** <strong>getList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1aa7505b91e7b749cc4fc7bdb0202a073c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  ** <strong>getListByClass</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1abe9cf92954c41dc12e3b8f1acd7cc520"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>(size_t numCells)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1aaec2eb8171a02087dafd4c13b3d4b3e3"></span><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>_list</strong>[kAllCount]</p>
+<blockquote>
+<div><p>List of all allocated variables in one array. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a6eebf6592104a7f3e5a3e656f656786c"></span><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>_listGp</strong>[kGpCount]</p>
+<blockquote>
+<div><p>Allocated Gp registers. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a0ff4a04fbc4243bd30909b3f2883c72a"></span><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>_listMm</strong>[kMmCount]</p>
+<blockquote>
+<div><p>Allocated Mm registers. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a548638ebf6f2f8c02100f4e297131e89"></span><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>_listXmm</strong>[kXmmCount]</p>
+<blockquote>
+<div><p>Allocated Xmm registers. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a5919ae3832e08eead1c5da5e5ab09133"></span>union asmjit::x86x64::VarState::&#64;59 <strong>&#64;60</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1aea05ab174ed599dc1f885a1c062e3631"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a> <strong>_occupied</strong></p>
+<blockquote>
+<div><p>Occupied registers (mask). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a8bc35997dd227198cf5ba50a7581f020"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a> <strong>_modified</strong></p>
+<blockquote>
+<div><p>Modified registers (mask). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1VarState_1a0d89d9d4c8b4d092b032d39d5e570365"></span><a class="reference internal" href="../modules/x86x64.html#asmjitunionasmjit_1_1x86x64_1_1StateCell"><em>StateCell</em></a> <strong>_cells</strong>[1]</p>
+<blockquote>
+<div><p>Variables data (count of variables is stored in Context). </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__VarInfo.html"
+                        title="previous chapter">x86x64::VarInfo</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__X86Reg.html"
+                        title="next chapter">x86x64::X86Reg</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__VarState.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86Reg.html" title="x86x64::X86Reg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__VarInfo.html" title="x86x64::VarInfo"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

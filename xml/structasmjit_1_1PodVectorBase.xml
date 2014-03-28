@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1PodVectorBase" kind="struct" prot="public">
+    <compoundname>asmjit::PodVectorBase</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1PodVector" prot="public" virt="non-virtual">asmjit::PodVector&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1PodVector" prot="public" virt="non-virtual">asmjit::PodVector&lt; LabelData &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1PodVector" prot="public" virt="non-virtual">asmjit::PodVector&lt; RelocData &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1PodVector" prot="public" virt="non-virtual">asmjit::PodVector&lt; TargetNode * &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1PodVector" prot="public" virt="non-virtual">asmjit::PodVector&lt; VarData * &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1PodVector" prot="public" virt="non-virtual">asmjit::PodVector&lt; X86Test * &gt;</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1PodVectorBase_1a625b0e9de099d440e775a6eb74f2e43b" prot="public" static="yes" mutable="no">
+        <type>ASMJIT_API const PodVectorData</type>
+        <definition>const PodVectorData asmjit::PodVectorBase::_nullData</definition>
+        <argsstring></argsstring>
+        <name>_nullData</name>
+        <initializer> { 0, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="43" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1PodVectorBase_1a0059c622747dbf3e31cc79a1512148e1" prot="public" static="no" mutable="no">
+        <type>PodVectorData *</type>
+        <definition>PodVectorData* asmjit::PodVectorBase::_d</definition>
+        <argsstring></argsstring>
+        <name>_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="72" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1PodVectorBase_1a4bef36336809b13d41cb2217c1a931a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::PodVectorBase::PodVectorBase</definition>
+        <argsstring>()</argsstring>
+        <name>PodVectorBase</name>
+        <briefdescription>
+<para>Create a new instance of PodVectorBase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="51" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="50" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1PodVectorBase_1a70efc42e92ac20acec27f57030c81371" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::PodVectorBase::~PodVectorBase</definition>
+        <argsstring>()</argsstring>
+        <name>~PodVectorBase</name>
+        <briefdescription>
+<para>Destroy the PodVectorBase and data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="54" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structasmjit_1_1PodVectorBase_1af422629cc4fb6ce7c68cc23955ce7e8b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::PodVectorBase::_grow</definition>
+        <argsstring>(size_t n, size_t sizeOfT)</argsstring>
+        <name>_grow</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeOfT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="64" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.cpp" bodystart="29" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1PodVectorBase_1a1ddef2216f6bc6edd72d15dd31576f29" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::PodVectorBase::_reserve</definition>
+        <argsstring>(size_t n, size_t sizeOfT)</argsstring>
+        <name>_reserve</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeOfT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="65" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.cpp" bodystart="65" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="998">
+        <label>asmjit::PodVector&lt; X86Test * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+        <childnode refid="992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="992">
+        <label>asmjit::PodVectorBase</label>
+      </node>
+      <node id="996">
+        <label>asmjit::PodVector&lt; TargetNode * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+        <childnode refid="992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="994">
+        <label>asmjit::PodVector&lt; LabelData &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+        <childnode refid="992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="997">
+        <label>asmjit::PodVector&lt; VarData * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+        <childnode refid="992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="993">
+        <label>asmjit::PodVector&lt; T &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+        <childnode refid="992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="995">
+        <label>asmjit::PodVector&lt; RelocData &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+        <childnode refid="992" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="42" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="42" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1PodVectorBase_1a0059c622747dbf3e31cc79a1512148e1" prot="public" virt="non-virtual"><scope>asmjit::PodVectorBase</scope><name>_d</name></member>
+      <member refid="structasmjit_1_1PodVectorBase_1af422629cc4fb6ce7c68cc23955ce7e8b" prot="protected" virt="non-virtual"><scope>asmjit::PodVectorBase</scope><name>_grow</name></member>
+      <member refid="structasmjit_1_1PodVectorBase_1a625b0e9de099d440e775a6eb74f2e43b" prot="public" virt="non-virtual"><scope>asmjit::PodVectorBase</scope><name>_nullData</name></member>
+      <member refid="structasmjit_1_1PodVectorBase_1a1ddef2216f6bc6edd72d15dd31576f29" prot="protected" virt="non-virtual"><scope>asmjit::PodVectorBase</scope><name>_reserve</name></member>
+      <member refid="structasmjit_1_1PodVectorBase_1a4bef36336809b13d41cb2217c1a931a7" prot="public" virt="non-virtual"><scope>asmjit::PodVectorBase</scope><name>PodVectorBase</name></member>
+      <member refid="structasmjit_1_1PodVectorBase_1a70efc42e92ac20acec27f57030c81371" prot="public" virt="non-virtual"><scope>asmjit::PodVectorBase</scope><name>~PodVectorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

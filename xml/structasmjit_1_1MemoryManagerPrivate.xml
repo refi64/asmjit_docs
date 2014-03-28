@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1MemoryManagerPrivate" kind="struct" prot="public">
+    <compoundname>asmjit::MemoryManagerPrivate</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a626f7e1a8966a73cc6ba2291433cc02c" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Lock" kindref="compound">Lock</ref></type>
+        <definition>Lock asmjit::MemoryManagerPrivate::_lock</definition>
+        <argsstring></argsstring>
+        <name>_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="238" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1af026e120f1450b27944885fb021d0071" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemoryManagerPrivate::_newChunkSize</definition>
+        <argsstring></argsstring>
+        <name>_newChunkSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="240" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a4e70c4444a512b445a2c318405edeb4c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemoryManagerPrivate::_newChunkDensity</definition>
+        <argsstring></argsstring>
+        <name>_newChunkDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="241" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1ad75d08ea16eb3fddac8626a045066208" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemoryManagerPrivate::_allocated</definition>
+        <argsstring></argsstring>
+        <name>_allocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="242" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a07cc43eec70aa51379d2f47173af0070" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemoryManagerPrivate::_used</definition>
+        <argsstring></argsstring>
+        <name>_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="243" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a87be147ade1efb5f08f810905b6bc68f" prot="public" static="no" mutable="no">
+        <type>MemNode *</type>
+        <definition>MemNode* asmjit::MemoryManagerPrivate::_first</definition>
+        <argsstring></argsstring>
+        <name>_first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="246" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a06d974004a752ae888dd031c8646bb4c" prot="public" static="no" mutable="no">
+        <type>MemNode *</type>
+        <definition>MemNode* asmjit::MemoryManagerPrivate::_last</definition>
+        <argsstring></argsstring>
+        <name>_last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="247" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a9b664c51d9c32b9190611d571c76bd4e" prot="public" static="no" mutable="no">
+        <type>MemNode *</type>
+        <definition>MemNode* asmjit::MemoryManagerPrivate::_optimal</definition>
+        <argsstring></argsstring>
+        <name>_optimal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="248" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a8300aedac87b708df0bc74256efd9ef0" prot="public" static="no" mutable="no">
+        <type>MemNode *</type>
+        <definition>MemNode* asmjit::MemoryManagerPrivate::_root</definition>
+        <argsstring></argsstring>
+        <name>_root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="251" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1ace993c529593e02fcdd69ef3d7788f43" prot="public" static="no" mutable="no">
+        <type>PermanentNode *</type>
+        <definition>PermanentNode* asmjit::MemoryManagerPrivate::_permanent</definition>
+        <argsstring></argsstring>
+        <name>_permanent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="254" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemoryManagerPrivate_1a74a7b2f9213615f932a8cee45d137468" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool asmjit::MemoryManagerPrivate::_keepVirtualMemory</definition>
+        <argsstring></argsstring>
+        <name>_keepVirtualMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="257" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a2d9aac56cc66e9775806bdf03c5bcfac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::MemoryManagerPrivate::MemoryManagerPrivate</definition>
+        <argsstring>()</argsstring>
+        <name>MemoryManagerPrivate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="185" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="265" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1ad43814532927ef04059ccb43fe5cd6e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::MemoryManagerPrivate::~MemoryManagerPrivate</definition>
+        <argsstring>()</argsstring>
+        <name>~MemoryManagerPrivate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="189" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="281" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1ade619778b96ad49b8be84e5fc353addf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemNode *</type>
+        <definition>MemNode * asmjit::MemoryManagerPrivate::createNode</definition>
+        <argsstring>(size_t size, size_t density)</argsstring>
+        <name>createNode</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>density</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="195" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="301" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1ade1afd329ae7c6828bf63591ba1fabde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemoryManagerPrivate::reset</definition>
+        <argsstring>(bool keepVirtualMemory)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>bool</type>
+          <declname>keepVirtualMemory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="197" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="345" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1aa4a613e8b2b2f8b8b51700e4d9b43826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * asmjit::MemoryManagerPrivate::allocPermanent</definition>
+        <argsstring>(size_t vsize)</argsstring>
+        <name>allocPermanent</name>
+        <param>
+          <type>size_t</type>
+          <declname>vsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="199" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="369" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a0a2c2eda6ed09714d866aa0f42855429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * asmjit::MemoryManagerPrivate::allocFreeable</definition>
+        <argsstring>(size_t vsize)</argsstring>
+        <name>allocFreeable</name>
+        <param>
+          <type>size_t</type>
+          <declname>vsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="200" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="423" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a6ecbfb324277c4fc470b72431383408e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::MemoryManagerPrivate::release</definition>
+        <argsstring>(void *address)</argsstring>
+        <name>release</name>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="201" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="536" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a7677c18428e8067d0b4c73907425e0b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::MemoryManagerPrivate::shrink</definition>
+        <argsstring>(void *address, size_t used)</argsstring>
+        <name>shrink</name>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>used</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="202" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="623" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a3fbf8c24070434e0956dba6bd99d3095" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::MemoryManagerPrivate::allocVirtualMemory</definition>
+        <argsstring>(size_t size, size_t *vsize)</argsstring>
+        <name>allocVirtualMemory</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>vsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="205" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a0bd3b31f2bfe65943a17d81fba4bb9d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemoryManagerPrivate::freeVirtualMemory</definition>
+        <argsstring>(void *vmem, size_t vsize)</argsstring>
+        <name>freeVirtualMemory</name>
+        <param>
+          <type>void *</type>
+          <declname>vmem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>vsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="213" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="213" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1adb4261781b2eb4dc0270f09bdd0b7cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::MemoryManagerPrivate::checkTree</definition>
+        <argsstring>()</argsstring>
+        <name>checkTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="225" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="753" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1a7637987a5c25334b63ce7d4ee842ce35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemoryManagerPrivate::insertNode</definition>
+        <argsstring>(MemNode *node)</argsstring>
+        <name>insertNode</name>
+        <param>
+          <type>MemNode *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="227" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="757" bodyend="832"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1aab0766fd3b7b7a4e311684bcc9f044d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemNode *</type>
+        <definition>MemNode * asmjit::MemoryManagerPrivate::removeNode</definition>
+        <argsstring>(MemNode *node)</argsstring>
+        <name>removeNode</name>
+        <param>
+          <type>MemNode *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="228" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="834" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemoryManagerPrivate_1ad45975787ed66d42e429907c2fa8d093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemNode *</type>
+        <definition>MemNode * asmjit::MemoryManagerPrivate::findPtr</definition>
+        <argsstring>(uint8_t *mem)</argsstring>
+        <name>findPtr</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="229" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="934" bodyend="958"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="950">
+        <label>asmjit::Lock</label>
+        <link refid="structasmjit_1_1Lock"/>
+      </node>
+      <node id="949">
+        <label>asmjit::MemoryManagerPrivate</label>
+        <childnode refid="950" relation="usage">
+          <edgelabel>_lock</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="179" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="179" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1ad75d08ea16eb3fddac8626a045066208" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_allocated</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a87be147ade1efb5f08f810905b6bc68f" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_first</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a74a7b2f9213615f932a8cee45d137468" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_keepVirtualMemory</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a06d974004a752ae888dd031c8646bb4c" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_last</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a626f7e1a8966a73cc6ba2291433cc02c" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_lock</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a4e70c4444a512b445a2c318405edeb4c" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_newChunkDensity</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1af026e120f1450b27944885fb021d0071" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_newChunkSize</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a9b664c51d9c32b9190611d571c76bd4e" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_optimal</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1ace993c529593e02fcdd69ef3d7788f43" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_permanent</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a8300aedac87b708df0bc74256efd9ef0" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_root</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a07cc43eec70aa51379d2f47173af0070" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>_used</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a0a2c2eda6ed09714d866aa0f42855429" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>allocFreeable</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1aa4a613e8b2b2f8b8b51700e4d9b43826" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>allocPermanent</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a3fbf8c24070434e0956dba6bd99d3095" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>allocVirtualMemory</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1adb4261781b2eb4dc0270f09bdd0b7cb1" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>checkTree</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1ade619778b96ad49b8be84e5fc353addf" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>createNode</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1ad45975787ed66d42e429907c2fa8d093" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>findPtr</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a0bd3b31f2bfe65943a17d81fba4bb9d7" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>freeVirtualMemory</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a7637987a5c25334b63ce7d4ee842ce35" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>insertNode</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a2d9aac56cc66e9775806bdf03c5bcfac" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>MemoryManagerPrivate</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a6ecbfb324277c4fc470b72431383408e" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>release</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1aab0766fd3b7b7a4e311684bcc9f044d0" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>removeNode</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1ade1afd329ae7c6828bf63591ba1fabde" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1a7677c18428e8067d0b4c73907425e0b0" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>shrink</name></member>
+      <member refid="structasmjit_1_1MemoryManagerPrivate_1ad43814532927ef04059ccb43fe5cd6e3" prot="public" virt="non-virtual"><scope>asmjit::MemoryManagerPrivate</scope><name>~MemoryManagerPrivate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CPU information &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Modules" href="../modules.html" />
+    <link rel="next" title="Logging and error handling" href="logging.html" />
+    <link rel="prev" title="Configuration" href="config.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="logging.html" title="Logging and error handling"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="config.html" title="Configuration"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../modules.html" accesskey="U">Modules</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="cpu-information">
+<h1>CPU information<a class="headerlink" href="#cpu-information" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitgroup__asmjit__cpuinfo">
+<div class="line"><em>group</em> <strong>asmjit_cpuinfo</strong></div>
+</div>
+<blockquote>
+<div><p></p>
+<p><p>X86 or x64 cpuid instruction allows to get information about processor vendor and it&#8217;s features. It&#8217;s always used to detect features like MMX, SSE and other newer ones.</p>
+<p>AsmJit library supports low level cpuid call implemented internally as C++ function using inline assembler or intrinsics and also higher level CPU features detection. The low level function (also used by higher level one) is <tt class="docutils literal"><span class="pre">asmjit::cpuid()</span></tt>.</p>
+<p>AsmJit library also contains higher level function <tt class="docutils literal"><span class="pre">asmjit::getCpu()</span></tt> that returns features detected by the library. The detection process is done only once and the returned object is always the same. <tt class="docutils literal"><a class="reference internal" href="base.html#asmjitstructasmjit_1_1BaseCpu"><em><span class="pre">asmjit::BaseCpu</span></em></a></tt> structure not contains only information through <tt class="docutils literal"><span class="pre">asmjit::cpuid()</span></tt>, but there is also small multiplatform code to detect number of processors (or cores) through operating system API.</p>
+<p>It&#8217;s recommended to use <tt class="docutils literal"><span class="pre">asmjit::cpuInfo</span></tt> to detect and check for host processor features.</p>
+<p>Example how to use asmjit::cpuid():</p>
+<p><pre class="literal-block">
+ // All functions and structures are in asmjit namesapce.
+ using namespace asmjit;
+
+ // Here will be retrieved result of cpuid call.
+ CpuId out;
+
+ // Use cpuid function to do the job.
+ cpuid(0 /* eax */, &amp;out /* eax, ebx, ecx, edx */);
+
+ // If eax argument to cpuid is 0, ebx, ecx and edx registers
+ // are filled with cpu vendor.
+ char vendor[13];
+ memcpy(i-&gt;vendor, &amp;out.ebx, 4);
+ memcpy(i-&gt;vendor + 4, &amp;out.edx, 4);
+ memcpy(i-&gt;vendor + 8, &amp;out.ecx, 4);
+ vendor[12] = '\0';
+
+ // Print vendor
+ puts(vendor);
+</pre>
+</p>
+<p>If the high-level interface of <a class="reference internal" href="base.html#asmjitstructasmjit_1_1BaseCpu"><em>asmjit::BaseCpu</em></a> is not enough, you can use low-level asmjit::cpuid() when running on x86/x64 host, but please read processor manuals provided by Intel, AMD or other manufacturer for cpuid details.</p>
+<p>Example of using <tt class="docutils literal"><a class="reference internal" href="base.html#asmjitstructasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff"><em><span class="pre">asmjit::BaseCpu::getHost()</span></em></a></tt>:</p>
+<p><pre class="literal-block">
+ // All functions and structures are in asmjit namesapce.
+ using namespace asmjit;
+
+ // Call to cpuInfo return BaseCpu structure that shouldn't be modified.
+ // Make it const by default.
+ const <a class="reference internal" href="base.html#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a>* cpu = <a class="reference internal" href="base.html#asmjitstructasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff"><em>BaseCpu::getHost</em></a>();
+
+ // Now you are able to get specific features.
+
+ // Processor has SSE2
+ if (cpu-&gt;features &amp; kCpuFeatureSse2) {
+   // your code...
+ }
+ // Processor has MMX
+ else if (cpu-&gt;features &amp; kCpuFeature_MMX) {
+   // your code...
+ }
+ // Processor is old, no SSE2 or MMX support.
+ else {
+   // your code...
+ }
+</pre>
+</p>
+<p>Better example is in app/test/testcpu.cpp file. </p>
+</p>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="config.html"
+                        title="previous chapter">Configuration</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="logging.html"
+                        title="next chapter">Logging and error handling</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/modules/cpu_info.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="logging.html" title="Logging and error handling"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="config.html" title="Configuration"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../modules.html" >Modules</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

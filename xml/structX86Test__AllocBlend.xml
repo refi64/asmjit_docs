@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__AllocBlend" kind="struct" prot="public">
+    <compoundname>X86Test_AllocBlend</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structX86Test__AllocBlend_1abf3ab9837e8e730b4940d9ce6705da44" prot="public" static="no">
+        <name>@4</name>
+        <enumvalue id="structX86Test__AllocBlend_1abf3ab9837e8e730b4940d9ce6705da44ac9cd206046bbbd8fa8eef93af76e2919" prot="public">
+          <name>kCount</name>
+          <initializer> 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1579" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1579" bodyend="1579"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__AllocBlend_1acbb9a471bf60a90a7b9b8f354a32b1d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_AllocBlend::X86Test_AllocBlend</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_AllocBlend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1577" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1577" bodyend="1577"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocBlend_1a9cca25037bcb25e4ba9a0664c7271721" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_AllocBlend::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1600" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1600" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocBlend_1aa45e67250b314912d726b0b49d96a95d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_AllocBlend::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1604" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1604" bodyend="1637"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__AllocBlend_1a2771fbba7174e1ddc49e359890644242" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_AllocBlend::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1581" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1581" bodyend="1583"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocBlend_1a925088a5994f5793466c489e8df78740" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t X86Test_AllocBlend::blendSrcOver</definition>
+        <argsstring>(uint32_t d, uint32_t s)</argsstring>
+        <name>blendSrcOver</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1585" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1585" bodyend="1598"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1576" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1576" bodyend="1638"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>_name</name></member>
+      <member refid="structX86Test__AllocBlend_1a2771fbba7174e1ddc49e359890644242" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>add</name></member>
+      <member refid="structX86Test__AllocBlend_1a925088a5994f5793466c489e8df78740" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>blendSrcOver</name></member>
+      <member refid="structX86Test__AllocBlend_1a9cca25037bcb25e4ba9a0664c7271721" prot="public" virt="virtual"><scope>X86Test_AllocBlend</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>getName</name></member>
+      <member refid="structX86Test__AllocBlend_1abf3ab9837e8e730b4940d9ce6705da44ac9cd206046bbbd8fa8eef93af76e2919" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>kCount</name></member>
+      <member refid="structX86Test__AllocBlend_1aa45e67250b314912d726b0b49d96a95d" prot="public" virt="virtual"><scope>X86Test_AllocBlend</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>X86Test</name></member>
+      <member refid="structX86Test__AllocBlend_1acbb9a471bf60a90a7b9b8f354a32b1d4" prot="public" virt="non-virtual"><scope>X86Test_AllocBlend</scope><name>X86Test_AllocBlend</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_AllocBlend</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

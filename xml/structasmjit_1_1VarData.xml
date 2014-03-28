@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1VarData" kind="struct" prot="public">
+    <compoundname>asmjit::VarData</compoundname>
+    <includes local="no">compiler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1abd206220e39b7864268c977d35cfc26d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* asmjit::VarData::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Variable name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="451" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1af1a8a994d16ae69eb389a009944f1b13" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+<para>Variable id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="454" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a604d23a483c678cb9102a094665b14ed" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::_contextId</definition>
+        <argsstring></argsstring>
+        <name>_contextId</name>
+        <briefdescription>
+<para>Context variable id (used by Context only, initially set to <computeroutput>kInvalidValue</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="457" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a66408044910637b2977deb7408738efc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+<para>Variable type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="460" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1ad11b9474002c5584729c81ac288a4b2e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_class</definition>
+        <argsstring></argsstring>
+        <name>_class</name>
+        <briefdescription>
+<para>Variable class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="462" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1afc4a03c6d63d731d75c5ee0d87b5d3f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_flags</definition>
+        <argsstring></argsstring>
+        <name>_flags</name>
+        <briefdescription>
+<para>Variable flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="464" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a0825dd09123aad0a55c213448089ab26" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_priority</definition>
+        <argsstring></argsstring>
+        <name>_priority</name>
+        <briefdescription>
+<para>Variable priority. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="466" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a0d0c7c3e46740060a644baed771809da" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+<para>Variable state (connected with actual <ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="469" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a8e2dd1821323dce7c5fb0e6e1f3a311e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_regIndex</definition>
+        <argsstring></argsstring>
+        <name>_regIndex</name>
+        <briefdescription>
+<para>Actual register index (only used by Context), during translate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="471" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a932ffa440b7237eb45d8fe2d8fc6c612" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_isStack</definition>
+        <argsstring></argsstring>
+        <name>_isStack</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Whether the variable is only used as memory allocated on the stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="474" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1aedd308a0934f4ff9c4374b3618516857" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_isMemArg</definition>
+        <argsstring></argsstring>
+        <name>_isMemArg</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Whether the variable is a function argument passed through memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="476" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a4d63061334343ea9a222a87e17a28eba" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_isCalculated</definition>
+        <argsstring></argsstring>
+        <name>_isCalculated</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Whether variable content can be calculated by a simple instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used mainly by MMX and SSE2 code. This flag indicates that register allocator should never reserve memory for this variable, because the content can be generated by a single instruction (for example PXOR). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="482" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a479f07d8219049f22533163cffe7980b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_saveOnUnuse</definition>
+        <argsstring></argsstring>
+        <name>_saveOnUnuse</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Save on unuse (at end of the variable scope). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="484" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a7b992af1a2835eca8a56c1e6ebd0b1d5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_modified</definition>
+        <argsstring></argsstring>
+        <name>_modified</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Whether variable was changed (connected with actual <ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="486" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a496cde73a7d6855076c37746965e36d7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="488" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a76922ee86badaeb0b869404432ccff34" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::VarData::_alignment</definition>
+        <argsstring></argsstring>
+        <name>_alignment</name>
+        <briefdescription>
+<para>Varialbe natural alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="490" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1aa6bdac1f459bd79e0c0ff700c152f6be" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+<para>Variable size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="493" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a532c225c5dd3a47b412012e2e1bd19d0" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::VarData::_memOffset</definition>
+        <argsstring></argsstring>
+        <name>_memOffset</name>
+        <briefdescription>
+<para>Home memory offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="496" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a088702cfdcc9556a61893d8d4e0241a2" prot="public" static="no" mutable="no">
+        <type>MemCell *</type>
+        <definition>MemCell* asmjit::VarData::_memCell</definition>
+        <argsstring></argsstring>
+        <name>_memCell</name>
+        <briefdescription>
+<para>Home memory cell, used by <computeroutput>Context</computeroutput> (initially NULL). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="498" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a2115f81379b916b125c86533f63f287c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::rReadCount</definition>
+        <argsstring></argsstring>
+        <name>rReadCount</name>
+        <briefdescription>
+<para>Register read access statistics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="501" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1ab68c535f834061e11edc9866e534b6f3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::rWriteCount</definition>
+        <argsstring></argsstring>
+        <name>rWriteCount</name>
+        <briefdescription>
+<para>Register write access statistics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="503" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a0bae731ad14f36323953933545c4e284" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::mReadCount</definition>
+        <argsstring></argsstring>
+        <name>mReadCount</name>
+        <briefdescription>
+<para>Memory read statistics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="506" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a6ef42095624282230f061f4c5f14cf0c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::mWriteCount</definition>
+        <argsstring></argsstring>
+        <name>mWriteCount</name>
+        <briefdescription>
+<para>Memory write statistics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="508" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a67d619cbc09377832ec49721b80ccc87" prot="public" static="no" mutable="no">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::VarData::_va</definition>
+        <argsstring></argsstring>
+        <name>_va</name>
+        <briefdescription>
+<para>Temporary link to VarAttr* used by the Context used in various phases, but always set back to NULL when finished. </para>        </briefdescription>
+        <detaileddescription>
+<para>This temporary data is designed to be used by algorithms that need to store some data into variables themselves during compilation. But it&apos;s expected that after variable is compiled &amp; translated the data is set back to zero/null. Initial value is NULL. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="525" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a6ca795ad90711fbc2b03d59bac887063" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t asmjit::VarData::_vaUInt</definition>
+        <argsstring></argsstring>
+        <name>_vaUInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="528" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1VarData_1a7cfc042ede12c71f9b856448a8596dca" prot="public" static="no" mutable="no">
+        <type>union asmjit::VarData::@7</type>
+        <definition>union asmjit::VarData::@7 asmjit::VarData::@8</definition>
+        <argsstring></argsstring>
+        <name>@8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="529"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1VarData_1ae44efa412b13db7c5e4b70e0f31119e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* asmjit::VarData::getName</definition>
+        <argsstring>() const </argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get variable name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="369" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="369" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a5d839f4a14e8e3fd2dc833f82ed1445b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getId</definition>
+        <argsstring>() const </argsstring>
+        <name>getId</name>
+        <briefdescription>
+<para>Get variable id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="371" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="371" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1afd2432372510e253956cd49a3d2960e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarData::hasContextId</definition>
+        <argsstring>() const </argsstring>
+        <name>hasContextId</name>
+        <briefdescription>
+<para>Get whether the variable has context id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="374" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="374" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a49aeaf843d92319bcfd68576b33110ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getContextId</definition>
+        <argsstring>() const </argsstring>
+        <name>getContextId</name>
+        <briefdescription>
+<para>Get context variable id (used only by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="376" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="376" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a56b004d1322da9abb32009d8a8848c08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setContextId</definition>
+        <argsstring>(uint32_t contextId)</argsstring>
+        <name>setContextId</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>contextId</declname>
+        </param>
+        <briefdescription>
+<para>Set context variable id (used only by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="378" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="378" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1ae7e16f8083219ca55974bfec66142633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::resetContextId</definition>
+        <argsstring>()</argsstring>
+        <name>resetContextId</name>
+        <briefdescription>
+<para>Reset context variable id (used only by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="380" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="380" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a4782b25d0670d39cd2fc8df836cb08d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getType</definition>
+        <argsstring>() const </argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Get variable type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="383" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="383" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a386140fdd6c53c4f21e4aa60840902e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getClass</definition>
+        <argsstring>() const </argsstring>
+        <name>getClass</name>
+        <briefdescription>
+<para>Get variable class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="385" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="385" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1aa7d53f2bec2a84b692eb347e7ba56587" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getFlags</definition>
+        <argsstring>() const </argsstring>
+        <name>getFlags</name>
+        <briefdescription>
+<para>Get variable flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="387" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="387" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a66dbd989b502a5dfe51bad41c1a02610" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getPriority</definition>
+        <argsstring>() const </argsstring>
+        <name>getPriority</name>
+        <briefdescription>
+<para>Get variable priority. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="390" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="390" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1af553c865ef80d7eb4bb32534f3625cd3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getState</definition>
+        <argsstring>() const </argsstring>
+        <name>getState</name>
+        <briefdescription>
+<para>Get variable state (only used by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="393" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="393" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a0fc11e4290386322f1c26ebd83171169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setState</definition>
+        <argsstring>(uint32_t state)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Set variable state (only used by Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="395" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="395" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a3b956d9940c540d3fed5d51f9e932ecf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegIndex</name>
+        <briefdescription>
+<para>Get register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="398" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="398" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a514d9b2d6ed1cbd89a0fa7c63bfc4561" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setRegIndex</definition>
+        <argsstring>(uint32_t regIndex)</argsstring>
+        <name>setRegIndex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>regIndex</declname>
+        </param>
+        <briefdescription>
+<para>Set register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="400" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="400" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1aefbe1c9839a9245072d00c143f12f7e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::resetRegIndex</definition>
+        <argsstring>()</argsstring>
+        <name>resetRegIndex</name>
+        <briefdescription>
+<para>Reset register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="402" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="402" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a0709ba5eac2d90824aa83b05ed5df211" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarData::isStack</definition>
+        <argsstring>() const </argsstring>
+        <name>isStack</name>
+        <briefdescription>
+<para>Get whether the <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> is only memory allocated on the stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="405" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="405" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1aefe159ce984521abfbf815d6c16c34d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarData::isMemArg</definition>
+        <argsstring>() const </argsstring>
+        <name>isMemArg</name>
+        <briefdescription>
+<para>Get whether the variable is a function argument passed through memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="408" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="408" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a04fead919e4d4e4b1d512c62e426c719" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarData::isCalculated</definition>
+        <argsstring>() const </argsstring>
+        <name>isCalculated</name>
+        <briefdescription>
+<para>Get variable content can be calculated by a simple instruction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="411" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="411" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1aa7e9d4c5d6eaeea77b25d525467f3004" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarData::saveOnUnuse</definition>
+        <argsstring>() const </argsstring>
+        <name>saveOnUnuse</name>
+        <briefdescription>
+<para>Get whether to save variable when it&apos;s unused (spill). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="413" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="413" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1abdde0badc8a797eedf92dffef9c01e8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarData::isModified</definition>
+        <argsstring>() const </argsstring>
+        <name>isModified</name>
+        <briefdescription>
+<para>Get whether the variable was changed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="416" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="416" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1add924a968e2abd51fb5b5dea47b3d1c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setModified</definition>
+        <argsstring>(bool modified)</argsstring>
+        <name>setModified</name>
+        <param>
+          <type>bool</type>
+          <declname>modified</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the variable was changed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="418" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="418" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a2081674a98787c4395baa3758004ef30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getAlignment</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlignment</name>
+        <briefdescription>
+<para>Get variable alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="421" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="421" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1accd6f24965f4d7477834d6035713c5e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::VarData::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get variable size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="423" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="423" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a504c158befceb46a60b9e36c69078aa8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::VarData::getMemOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>getMemOffset</name>
+        <briefdescription>
+<para>Get home memory offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="426" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="426" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a4d53249fb0edc4221b1fdb96e6800b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setMemOffset</definition>
+        <argsstring>(int32_t offset)</argsstring>
+        <name>setMemOffset</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Set home memory offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="428" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1afdfc419087cafd6948f67da5e5c4fa7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MemCell *</type>
+        <definition>MemCell* asmjit::VarData::getMemCell</definition>
+        <argsstring>() const </argsstring>
+        <name>getMemCell</name>
+        <briefdescription>
+<para>Get home memory cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="431" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="431" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a690bf400be2757a823e65dba5357aa93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setMemCell</definition>
+        <argsstring>(MemCell *cell)</argsstring>
+        <name>setMemCell</name>
+        <param>
+          <type>MemCell *</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+<para>Set home memory cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="433" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="433" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1af6996e30d380fec6a505f230c50f6f76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VarAttr *</type>
+        <definition>VarAttr* asmjit::VarData::getVa</definition>
+        <argsstring>() const </argsstring>
+        <name>getVa</name>
+        <briefdescription>
+<para>Get temporary VarAttr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="440" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="440" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a71f904f1074f9f0fdf64ce398c3e4940" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::setVa</definition>
+        <argsstring>(VarAttr *va)</argsstring>
+        <name>setVa</name>
+        <param>
+          <type>VarAttr *</type>
+          <declname>va</declname>
+        </param>
+        <briefdescription>
+<para>Set temporary VarAttr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="442" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="442" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarData_1a0c78fcbbdefd343c947afa17948ccaa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarData::resetVa</definition>
+        <argsstring>()</argsstring>
+        <name>resetVa</name>
+        <briefdescription>
+<para>Reset temporary VarAttr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="444" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="444" bodyend="444"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base variable data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="363" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="363" bodyend="530"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1VarData_1a76922ee86badaeb0b869404432ccff34" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_alignment</name></member>
+      <member refid="structasmjit_1_1VarData_1ad11b9474002c5584729c81ac288a4b2e" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_class</name></member>
+      <member refid="structasmjit_1_1VarData_1a604d23a483c678cb9102a094665b14ed" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_contextId</name></member>
+      <member refid="structasmjit_1_1VarData_1afc4a03c6d63d731d75c5ee0d87b5d3f8" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1VarData_1af1a8a994d16ae69eb389a009944f1b13" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_id</name></member>
+      <member refid="structasmjit_1_1VarData_1a4d63061334343ea9a222a87e17a28eba" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_isCalculated</name></member>
+      <member refid="structasmjit_1_1VarData_1aedd308a0934f4ff9c4374b3618516857" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_isMemArg</name></member>
+      <member refid="structasmjit_1_1VarData_1a932ffa440b7237eb45d8fe2d8fc6c612" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_isStack</name></member>
+      <member refid="structasmjit_1_1VarData_1a088702cfdcc9556a61893d8d4e0241a2" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_memCell</name></member>
+      <member refid="structasmjit_1_1VarData_1a532c225c5dd3a47b412012e2e1bd19d0" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_memOffset</name></member>
+      <member refid="structasmjit_1_1VarData_1a7b992af1a2835eca8a56c1e6ebd0b1d5" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_modified</name></member>
+      <member refid="structasmjit_1_1VarData_1abd206220e39b7864268c977d35cfc26d" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_name</name></member>
+      <member refid="structasmjit_1_1VarData_1a0825dd09123aad0a55c213448089ab26" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_priority</name></member>
+      <member refid="structasmjit_1_1VarData_1a8e2dd1821323dce7c5fb0e6e1f3a311e" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_regIndex</name></member>
+      <member refid="structasmjit_1_1VarData_1a496cde73a7d6855076c37746965e36d7" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_reserved0</name></member>
+      <member refid="structasmjit_1_1VarData_1a479f07d8219049f22533163cffe7980b" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_saveOnUnuse</name></member>
+      <member refid="structasmjit_1_1VarData_1aa6bdac1f459bd79e0c0ff700c152f6be" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_size</name></member>
+      <member refid="structasmjit_1_1VarData_1a0d0c7c3e46740060a644baed771809da" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1VarData_1a66408044910637b2977deb7408738efc" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_type</name></member>
+      <member refid="structasmjit_1_1VarData_1a67d619cbc09377832ec49721b80ccc87" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_va</name></member>
+      <member refid="structasmjit_1_1VarData_1a6ca795ad90711fbc2b03d59bac887063" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>_vaUInt</name></member>
+      <member refid="structasmjit_1_1VarData_1a2081674a98787c4395baa3758004ef30" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getAlignment</name></member>
+      <member refid="structasmjit_1_1VarData_1a386140fdd6c53c4f21e4aa60840902e1" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getClass</name></member>
+      <member refid="structasmjit_1_1VarData_1a49aeaf843d92319bcfd68576b33110ba" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getContextId</name></member>
+      <member refid="structasmjit_1_1VarData_1aa7d53f2bec2a84b692eb347e7ba56587" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1VarData_1a5d839f4a14e8e3fd2dc833f82ed1445b" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getId</name></member>
+      <member refid="structasmjit_1_1VarData_1afdfc419087cafd6948f67da5e5c4fa7c" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getMemCell</name></member>
+      <member refid="structasmjit_1_1VarData_1a504c158befceb46a60b9e36c69078aa8" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getMemOffset</name></member>
+      <member refid="structasmjit_1_1VarData_1ae44efa412b13db7c5e4b70e0f31119e6" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getName</name></member>
+      <member refid="structasmjit_1_1VarData_1a66dbd989b502a5dfe51bad41c1a02610" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getPriority</name></member>
+      <member refid="structasmjit_1_1VarData_1a3b956d9940c540d3fed5d51f9e932ecf" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getRegIndex</name></member>
+      <member refid="structasmjit_1_1VarData_1accd6f24965f4d7477834d6035713c5e3" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1VarData_1af553c865ef80d7eb4bb32534f3625cd3" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1VarData_1a4782b25d0670d39cd2fc8df836cb08d5" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getType</name></member>
+      <member refid="structasmjit_1_1VarData_1af6996e30d380fec6a505f230c50f6f76" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>getVa</name></member>
+      <member refid="structasmjit_1_1VarData_1afd2432372510e253956cd49a3d2960e1" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>hasContextId</name></member>
+      <member refid="structasmjit_1_1VarData_1a04fead919e4d4e4b1d512c62e426c719" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>isCalculated</name></member>
+      <member refid="structasmjit_1_1VarData_1aefe159ce984521abfbf815d6c16c34d8" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>isMemArg</name></member>
+      <member refid="structasmjit_1_1VarData_1abdde0badc8a797eedf92dffef9c01e8f" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>isModified</name></member>
+      <member refid="structasmjit_1_1VarData_1a0709ba5eac2d90824aa83b05ed5df211" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>isStack</name></member>
+      <member refid="structasmjit_1_1VarData_1a0bae731ad14f36323953933545c4e284" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>mReadCount</name></member>
+      <member refid="structasmjit_1_1VarData_1a6ef42095624282230f061f4c5f14cf0c" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>mWriteCount</name></member>
+      <member refid="structasmjit_1_1VarData_1ae7e16f8083219ca55974bfec66142633" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>resetContextId</name></member>
+      <member refid="structasmjit_1_1VarData_1aefbe1c9839a9245072d00c143f12f7e0" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>resetRegIndex</name></member>
+      <member refid="structasmjit_1_1VarData_1a0c78fcbbdefd343c947afa17948ccaa8" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>resetVa</name></member>
+      <member refid="structasmjit_1_1VarData_1a2115f81379b916b125c86533f63f287c" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>rReadCount</name></member>
+      <member refid="structasmjit_1_1VarData_1ab68c535f834061e11edc9866e534b6f3" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>rWriteCount</name></member>
+      <member refid="structasmjit_1_1VarData_1aa7e9d4c5d6eaeea77b25d525467f3004" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>saveOnUnuse</name></member>
+      <member refid="structasmjit_1_1VarData_1a56b004d1322da9abb32009d8a8848c08" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setContextId</name></member>
+      <member refid="structasmjit_1_1VarData_1a690bf400be2757a823e65dba5357aa93" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setMemCell</name></member>
+      <member refid="structasmjit_1_1VarData_1a4d53249fb0edc4221b1fdb96e6800b8b" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setMemOffset</name></member>
+      <member refid="structasmjit_1_1VarData_1add924a968e2abd51fb5b5dea47b3d1c5" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setModified</name></member>
+      <member refid="structasmjit_1_1VarData_1a514d9b2d6ed1cbd89a0fa7c63bfc4561" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setRegIndex</name></member>
+      <member refid="structasmjit_1_1VarData_1a0fc11e4290386322f1c26ebd83171169" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setState</name></member>
+      <member refid="structasmjit_1_1VarData_1a71f904f1074f9f0fdf64ce398c3e4940" prot="public" virt="non-virtual"><scope>asmjit::VarData</scope><name>setVa</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Operand_1_1BaseOp" kind="struct" prot="public">
+    <compoundname>asmjit::Operand::BaseOp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1BaseOp_1ad86861fc7dfb1a5022ae763e5c91c7e7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::BaseOp::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>Type of operand, see <computeroutput>kOperandType</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="256" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1BaseOp_1a32123dc14ba854a72570fe3dff34a400" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::BaseOp::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of operand (register, address, immediate, or variable). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="258" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1BaseOp_1afd7d42a4e4c591f6d412feb980720e95" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::BaseOp::reserved0</definition>
+        <argsstring></argsstring>
+        <name>reserved0</name>
+        <briefdescription>
+<para>Flags, each operand uses this byte for something else. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="260" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1BaseOp_1a4360f895fb7c2b947fab2a9079938727" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::BaseOp::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <briefdescription>
+<para>Reserved (not used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="262" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1BaseOp_1ab3ca4a832b555952ee09515e025e622b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Operand::BaseOp::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> id (private variable for <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> and <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> classes). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Uninitialized operand has always set id to kInvalidValue. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="268" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="254" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="254" bodyend="269"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1_1BaseOp_1ab3ca4a832b555952ee09515e025e622b" prot="public" virt="non-virtual"><scope>asmjit::Operand::BaseOp</scope><name>id</name></member>
+      <member refid="structasmjit_1_1Operand_1_1BaseOp_1ad86861fc7dfb1a5022ae763e5c91c7e7" prot="public" virt="non-virtual"><scope>asmjit::Operand::BaseOp</scope><name>op</name></member>
+      <member refid="structasmjit_1_1Operand_1_1BaseOp_1afd7d42a4e4c591f6d412feb980720e95" prot="public" virt="non-virtual"><scope>asmjit::Operand::BaseOp</scope><name>reserved0</name></member>
+      <member refid="structasmjit_1_1Operand_1_1BaseOp_1a4360f895fb7c2b947fab2a9079938727" prot="public" virt="non-virtual"><scope>asmjit::Operand::BaseOp</scope><name>reserved1</name></member>
+      <member refid="structasmjit_1_1Operand_1_1BaseOp_1a32123dc14ba854a72570fe3dff34a400" prot="public" virt="non-virtual"><scope>asmjit::Operand::BaseOp</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

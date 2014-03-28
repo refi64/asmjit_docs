@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1RelocData" kind="struct" prot="public">
+    <compoundname>asmjit::RelocData</compoundname>
+    <includes local="no">assembler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1RelocData_1afbce897c4d90417dc696484b31e49680" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::RelocData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of relocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="72" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1RelocData_1aed928308840f333cb6f0b9832bc2a19a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::RelocData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of relocation (4 or 8 bytes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="74" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1RelocData_1affb24f7e31034cb5e5dbe1c0a004e64d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186" kindref="member">Ptr</ref></type>
+        <definition>Ptr asmjit::RelocData::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+<para>Offset from code begin address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="77" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1RelocData_1a43f882f9050e3c6ac797de4918ca0361" prot="public" static="no" mutable="no">
+        <type><ref refid="group__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186" kindref="member">Ptr</ref></type>
+        <definition>Ptr asmjit::RelocData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Relative displacement from code begin address (not to <computeroutput>offset</computeroutput>) or absolute address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="81" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Code relocation data (relative vs absolute addresses). </para>    </briefdescription>
+    <detaileddescription>
+<para>X86/X64:</para><para>X86 architecture uses 32-bit absolute addressing model by memory operands, but 64-bit mode uses relative addressing model (RIP + displacement). In code we are always using relative addressing model for referencing labels and embedded data. In 32-bit mode we must patch all references to absolute address before we can call generated function. </para>    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="70" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="70" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1RelocData_1a43f882f9050e3c6ac797de4918ca0361" prot="public" virt="non-virtual"><scope>asmjit::RelocData</scope><name>data</name></member>
+      <member refid="structasmjit_1_1RelocData_1affb24f7e31034cb5e5dbe1c0a004e64d" prot="public" virt="non-virtual"><scope>asmjit::RelocData</scope><name>from</name></member>
+      <member refid="structasmjit_1_1RelocData_1aed928308840f333cb6f0b9832bc2a19a" prot="public" virt="non-virtual"><scope>asmjit::RelocData</scope><name>size</name></member>
+      <member refid="structasmjit_1_1RelocData_1afbce897c4d90417dc696484b31e49680" prot="public" virt="non-virtual"><scope>asmjit::RelocData</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

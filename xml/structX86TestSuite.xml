@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86TestSuite" kind="struct" prot="public">
+    <compoundname>X86TestSuite</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structX86TestSuite_1aceb0ec037d4e07682e8b894b61711c15" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt;</type>
+        <definition>PodVector&lt;X86Test*&gt; X86TestSuite::tests</definition>
+        <argsstring></argsstring>
+        <name>tests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2313" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86TestSuite_1a2c9b90d911201ff9f9e5a93e991719e7" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref></type>
+        <definition>StringBuilder X86TestSuite::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2314" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86TestSuite_1a1ab3ab1bac7556c2a41ad512c671fc76" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int X86TestSuite::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2316" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86TestSuite_1a08e566ef0c3aef7191921d20644d2a8b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int X86TestSuite::binSize</definition>
+        <argsstring></argsstring>
+        <name>binSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2317" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86TestSuite_1a3260ca8476ef9f013476dd370c6c86c8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool X86TestSuite::alwaysPrintLog</definition>
+        <argsstring></argsstring>
+        <name>alwaysPrintLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2318" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2318" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86TestSuite_1a299e5d3f23070ee8fb7f62360df1befd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>X86TestSuite::X86TestSuite</definition>
+        <argsstring>()</argsstring>
+        <name>X86TestSuite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2300" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2324" bodyend="2375"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86TestSuite_1a7ac9ce729b27d270dab9a90bb7883ad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>X86TestSuite::~X86TestSuite</definition>
+        <argsstring>()</argsstring>
+        <name>~X86TestSuite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2301" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2377" bodyend="2385"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86TestSuite_1a78191199d6f0550e673a1791496ef316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int X86TestSuite::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2307" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2387" bodyend="2461"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1443">
+        <label>asmjit::PodVector&lt; X86Test * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="1444">
+        <label>asmjit::StringBuilder</label>
+        <link refid="structasmjit_1_1StringBuilder"/>
+      </node>
+      <node id="1442">
+        <label>X86TestSuite</label>
+        <childnode refid="1443" relation="usage">
+          <edgelabel>tests</edgelabel>
+        </childnode>
+        <childnode refid="1444" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2295" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2295" bodyend="2319"/>
+    <listofallmembers>
+      <member refid="structX86TestSuite_1a3260ca8476ef9f013476dd370c6c86c8" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>alwaysPrintLog</name></member>
+      <member refid="structX86TestSuite_1a08e566ef0c3aef7191921d20644d2a8b" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>binSize</name></member>
+      <member refid="structX86TestSuite_1a2c9b90d911201ff9f9e5a93e991719e7" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>output</name></member>
+      <member refid="structX86TestSuite_1a1ab3ab1bac7556c2a41ad512c671fc76" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>result</name></member>
+      <member refid="structX86TestSuite_1a78191199d6f0550e673a1791496ef316" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>run</name></member>
+      <member refid="structX86TestSuite_1aceb0ec037d4e07682e8b894b61711c15" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>tests</name></member>
+      <member refid="structX86TestSuite_1a299e5d3f23070ee8fb7f62360df1befd" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>X86TestSuite</name></member>
+      <member refid="structX86TestSuite_1a7ac9ce729b27d270dab9a90bb7883ad5" prot="public" virt="non-virtual"><scope>X86TestSuite</scope><name>~X86TestSuite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

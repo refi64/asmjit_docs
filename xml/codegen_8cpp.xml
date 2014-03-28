@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="codegen_8cpp" kind="file">
+    <compoundname>codegen.cpp</compoundname>
+    <includes refid="codegen_8h" local="yes">../base/codegen.h</includes>
+    <includes refid="intutil_8h" local="yes">../base/intutil.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <incdepgraph>
+      <node id="433">
+        <label>../base/globals.h</label>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="439">
+        <label>stdarg.h</label>
+      </node>
+      <node id="430">
+        <label>../base/codegen.h</label>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>stdint.h</label>
+      </node>
+      <node id="437">
+        <label>stdlib.h</label>
+      </node>
+      <node id="445">
+        <label>../base/error.h</label>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>../base/zone.h</label>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>../base/apibegin.h</label>
+        <childnode refid="434" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>../base/logger.h</label>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>../base/defs.h</label>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>limits.h</label>
+      </node>
+      <node id="442">
+        <label>new</label>
+      </node>
+      <node id="435">
+        <label>config.h</label>
+      </node>
+      <node id="432">
+        <label>../base/intutil.h</label>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>../base/runtime.h</label>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>codegen.cpp</label>
+        <link refid="codegen.cpp"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>../build.h</label>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>stdio.h</label>
+      </node>
+      <node id="438">
+        <label>string.h</label>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="codegen_8cpp_1a4885b81a3643f489bcb59697d21cb21d" prot="public" static="no">
+        <name>ASMJIT_EXPORTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" line="8" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Export]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASMJIT_EXPORTS</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/codegen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/intutil.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::CodeGen<sp/>-<sp/>Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structasmjit_1_1CodeGen_1a3e5282956457ed71030395c96b753225" refkind="member"><highlight class="normal">CodeGen::CodeGen(<ref refid="structasmjit_1_1BaseRuntime" kindref="compound" tooltip="Base runtime.">BaseRuntime</ref>*<sp/>runtime)<sp/>:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>_runtime(runtime),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>_logger(NULL),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>_errorHandler(NULL),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>_arch(<ref refid="group__asmjit__base_1gga2360fa86fd003572056ea5b790630e98a6fa38f2eb4a35299c100501c9111540e" kindref="member" tooltip="No/Unknown architecture.">kArchNone</ref>),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>_regSize(0),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>_error(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>_features(IntUtil::mask(<ref refid="group__asmjit__base_1gga1e5786823de989baf3528c6d8033cbc9af84c8f14d20066c430419110d14c0ced" kindref="member" tooltip="Emit optimized code-alignment sequences.">kCodeGenOptimizedAlign</ref>)),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>_options(0),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>_zoneAllocator(16384<sp/>-<sp/>sizeof(<ref refid="structasmjit_1_1Zone" kindref="compound" tooltip="Fast incremental memory allocator.">Zone</ref>::Chunk)<sp/>-<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" kindref="member" tooltip="Host memory allocator overhead.">kMemAllocOverhead</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6" refkind="member"><highlight class="normal"><ref refid="structasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6" kindref="member" tooltip="Destroy the CodeGen instance.">CodeGen::~CodeGen</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" kindref="member" tooltip="Error handler, called by setError().">_errorHandler</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" kindref="member" tooltip="Error handler, called by setError().">_errorHandler</ref>-&gt;release();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::CodeGen<sp/>-<sp/>Logging]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a" kindref="member" tooltip="Set logger to logger.">CodeGen::setLogger</ref>(<ref refid="structasmjit_1_1BaseLogger" kindref="compound" tooltip="Abstract logging class.">BaseLogger</ref>*<sp/>logger)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" kindref="member" tooltip="Logger.">_logger</ref><sp/>=<sp/>logger;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::CodeGen<sp/>-<sp/>Error]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">CodeGen::setError</ref>(Error<sp/>error,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error<sp/>==<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" kindref="member" tooltip="Last error code.">_error</ref><sp/>=<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>=<sp/>ErrorUtil::asString(error);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Error<sp/>handler<sp/>is<sp/>called<sp/>before<sp/>logger<sp/>so<sp/>logging<sp/>can<sp/>be<sp/>skipped<sp/>if<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>has<sp/>been<sp/>handled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>ErrorHandler*<sp/>handler<sp/>=<sp/><ref refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" kindref="member" tooltip="Error handler, called by setError().">_errorHandler</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handler<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>handler-&gt;handleError(error,<sp/>message))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseLogger" kindref="compound" tooltip="Abstract logging class.">BaseLogger</ref>*<sp/>logger<sp/>=<sp/><ref refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" kindref="member" tooltip="Logger.">_logger</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(logger<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>logger-&gt;<ref refid="structasmjit_1_1BaseLogger_1a5132eea60f42e361267fe9ae2a25f9d0" kindref="member" tooltip="Log formatter message (like sprintf) sending output to logString() method.">logFormat</ref>(kLoggerStyleComment,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;***<sp/>ERROR:<sp/>%s<sp/>(%u).\n&quot;</highlight><highlight class="normal">,<sp/>message,<sp/>static_cast&lt;unsigned<sp/>int&gt;(error));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>handler-&gt;handleError()<sp/>function<sp/>may<sp/>throw<sp/>an<sp/>exception<sp/>or<sp/>longjmp()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>terminate<sp/>the<sp/>execution<sp/>of<sp/>setError().<sp/>This<sp/>is<sp/>the<sp/>reason<sp/>why<sp/>we<sp/>have</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>delayed<sp/>changing<sp/>the<sp/>_error<sp/>member<sp/>until<sp/>now.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" kindref="member" tooltip="Last error code.">_error</ref><sp/>=<sp/>error;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="structasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c" kindref="member" tooltip="Set error handler.">CodeGen::setErrorHandler</ref>(ErrorHandler*<sp/>handler)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>ErrorHandler*<sp/>oldHandler<sp/>=<sp/><ref refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" kindref="member" tooltip="Error handler, called by setError().">_errorHandler</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(oldHandler<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>oldHandler-&gt;release();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handler<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>handler<sp/>=<sp/>handler-&gt;addRef();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" kindref="member" tooltip="Error handler, called by setError().">_errorHandler</ref><sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::CodeGen<sp/>-<sp/>Features]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65" kindref="member" tooltip="Get code-generator feature.">CodeGen::hasFeature</ref>(uint32_t<sp/>feature)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(feature<sp/>&gt;=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" kindref="member" tooltip="Target features.">_features</ref>)<sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>feature<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>feature;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" kindref="member" tooltip="Target features.">_features</ref><sp/>&amp;<sp/>feature)<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="structasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6" kindref="member" tooltip="Set code-generator feature to value.">CodeGen::setFeature</ref>(uint32_t<sp/>feature,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(feature<sp/>&gt;=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" kindref="member" tooltip="Target features.">_features</ref>)<sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf36f8ebff7fdd3f8cff8688b86d399e" kindref="member" tooltip="Invalid argument.">kErrorInvalidArgument</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>feature<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value)<sp/>&lt;&lt;<sp/>feature;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" kindref="member" tooltip="Target features.">_features</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">((</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" kindref="member" tooltip="Target features.">_features</ref>)<sp/>&amp;<sp/>~feature)<sp/>|<sp/>feature);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/codegen.cpp"/>
+  </compounddef>
+</doxygen>

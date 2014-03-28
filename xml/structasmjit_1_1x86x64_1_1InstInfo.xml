@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1InstInfo" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::InstInfo</compoundname>
+    <includes local="no">x86defs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1InstInfo_1a7b1f83af3648e84916ad807345c18e5e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::InstInfo::_nameIndex</definition>
+        <argsstring></argsstring>
+        <name>_nameIndex</name>
+        <briefdescription>
+<para>Instruction name index in _instName[] array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1991" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1InstInfo_1a7434e17d8bbe8d87d662ac07563d0740" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::InstInfo::_flags</definition>
+        <argsstring></argsstring>
+        <name>_flags</name>
+        <briefdescription>
+<para>Instruction flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1993" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1InstInfo_1ad2f06d22689c26bbde9ba22fe4273007" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::InstInfo::_group</definition>
+        <argsstring></argsstring>
+        <name>_group</name>
+        <briefdescription>
+<para>Instruction group, used also by <computeroutput>Compiler</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1995" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1InstInfo_1ae9c6067766d4164e8a576a036e1261e6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::InstInfo::_reserved[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>_reserved</name>
+        <briefdescription>
+<para>Reserved for future use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1997" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1InstInfo_1a3097ac16cd2c97d8e903959cf9088eec" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::InstInfo::_opFlags[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>_opFlags</name>
+        <briefdescription>
+<para>Operands&apos; flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1999" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1InstInfo_1a4c7addf2df6b9673d5f489b29bdd41e7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::InstInfo::_opCode[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_opCode</name>
+        <briefdescription>
+<para>Primary and secondary opcodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2001" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2001" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1a0cc62ede78ecae0e7b34c4d2c33906f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* asmjit::x86x64::InstInfo::getName</definition>
+        <argsstring>() const </argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get instruction name string (null terminated string). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1937" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1937" bodyend="1937"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1ad6077b73f67625d56b3b6e1c5ecca58b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::InstInfo::_getNameIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>_getNameIndex</name>
+        <briefdescription>
+<para>Get instruction name index (index to _instName array). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1939" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1939" bodyend="1939"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1aab95b7afa47fa1e634a72a10a64b3aab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::InstInfo::getGroup</definition>
+        <argsstring>() const </argsstring>
+        <name>getGroup</name>
+        <briefdescription>
+<para>Get instruction group, see kInstGroup. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1942" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1942" bodyend="1942"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1ae204acb0871cb7346b88d5e5debf68d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::InstInfo::getFlags</definition>
+        <argsstring>() const </argsstring>
+        <name>getFlags</name>
+        <briefdescription>
+<para>Get instruction flags, see kInstFlags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1949" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1949" bodyend="1949"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1a1f72e7c30fca39b57c3e83c8d1c64af9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isFlow</definition>
+        <argsstring>() const </argsstring>
+        <name>isFlow</name>
+        <briefdescription>
+<para>Get whether the instruction is a control-flow intruction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Control flow instruction is instruction that modifies instruction pointer, typically jmp, jcc, call, or ret. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1955" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1955" bodyend="1955"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1a776abb27d18ab6d6674e6dbc001231da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isTest</definition>
+        <argsstring>() const </argsstring>
+        <name>isTest</name>
+        <briefdescription>
+<para>Get whether the instruction is a compare/test like intruction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1958" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1958" bodyend="1958"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1af52d13b8612aa6fb858548b213877fd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isMove</definition>
+        <argsstring>() const </argsstring>
+        <name>isMove</name>
+        <briefdescription>
+<para>Get whether the instruction is a typical Move instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Move instructions typically overwrite the first operand, so it&apos;s an useful hint for Compiler. Applies also to multimedia instruction - MMX, SSE, SSE2 and AVX moves). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1965" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1965" bodyend="1965"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1ac257f3fe1fdf9a4e3d4194163bcfc716" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isXchg</definition>
+        <argsstring>() const </argsstring>
+        <name>isXchg</name>
+        <briefdescription>
+<para>Get whether the instruction is a typical Exchange instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Exchange instructios are &apos;xchg&apos; and &apos;xadd&apos;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1970" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1970" bodyend="1970"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1aaab680aba65c2820993368c2ab84c0d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isFp</definition>
+        <argsstring>() const </argsstring>
+        <name>isFp</name>
+        <briefdescription>
+<para>Get whether the instruction accesses Fp register(s). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1973" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1973" bodyend="1973"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1a6a04eaca12afe25152fc1b0809e9ccdd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isLockable</definition>
+        <argsstring>() const </argsstring>
+        <name>isLockable</name>
+        <briefdescription>
+<para>Get whether the instruction can be prefixed by LOCK prefix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1976" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1976" bodyend="1976"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1a872ece974575f350e3eb41fff9a0008f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isSpecial</definition>
+        <argsstring>() const </argsstring>
+        <name>isSpecial</name>
+        <briefdescription>
+<para>Get whether the instruction is special type (this is used by <computeroutput>Compiler</computeroutput> to manage additional variables or functionality). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1980" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1980" bodyend="1980"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1InstInfo_1a8647a17ea50c3a5909da41cc1b9168c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::InstInfo::isSpecialMem</definition>
+        <argsstring>() const </argsstring>
+        <name>isSpecialMem</name>
+        <briefdescription>
+<para>Get whether the instruction is special type and it performs memory access. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1984" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1984" bodyend="1984"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86 instruction information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="1931" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="1931" bodyend="2002"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a7434e17d8bbe8d87d662ac07563d0740" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1ad6077b73f67625d56b3b6e1c5ecca58b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_getNameIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1ad2f06d22689c26bbde9ba22fe4273007" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_group</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a7b1f83af3648e84916ad807345c18e5e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_nameIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a4c7addf2df6b9673d5f489b29bdd41e7" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_opCode</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a3097ac16cd2c97d8e903959cf9088eec" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_opFlags</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1ae9c6067766d4164e8a576a036e1261e6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>_reserved</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1ae204acb0871cb7346b88d5e5debf68d0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1aab95b7afa47fa1e634a72a10a64b3aab" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>getGroup</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a0cc62ede78ecae0e7b34c4d2c33906f9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>getName</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a1f72e7c30fca39b57c3e83c8d1c64af9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isFlow</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1aaab680aba65c2820993368c2ab84c0d3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a6a04eaca12afe25152fc1b0809e9ccdd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isLockable</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1af52d13b8612aa6fb858548b213877fd9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isMove</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a872ece974575f350e3eb41fff9a0008f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isSpecial</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a8647a17ea50c3a5909da41cc1b9168c2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isSpecialMem</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1a776abb27d18ab6d6674e6dbc001231da" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isTest</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1InstInfo_1ac257f3fe1fdf9a4e3d4194163bcfc716" prot="public" virt="non-virtual"><scope>asmjit::x86x64::InstInfo</scope><name>isXchg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

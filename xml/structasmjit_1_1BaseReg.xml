@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseReg" kind="struct" prot="public">
+    <compoundname>asmjit::BaseReg</compoundname>
+    <basecompoundref refid="structasmjit_1_1Operand" prot="public" virt="non-virtual">asmjit::Operand</basecompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1X86Reg" prot="public" virt="non-virtual">asmjit::x86x64::X86Reg</derivedcompoundref>
+    <includes local="no">defs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1aeb3b2a856b508640dc374d6b96361dc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseReg::BaseReg</definition>
+        <argsstring>()</argsstring>
+        <name>BaseReg</name>
+        <briefdescription>
+<para>Create a dummy base register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="610" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="609" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1ac61d7924a3f74a39c30915b363978d18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseReg::BaseReg</definition>
+        <argsstring>(uint32_t type, uint32_t index, uint32_t size)</argsstring>
+        <name>BaseReg</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Create a new base register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="614" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="613" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a9871744c4d5a9d69aa6b488d42f451d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseReg::BaseReg</definition>
+        <argsstring>(const BaseReg &amp;other)</argsstring>
+        <name>BaseReg</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseReg" kindref="compound">BaseReg</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Create a new reference to <emphasis>other</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="617" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="617" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a59510261b1c7675318cb844df25f2b93" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseReg::BaseReg</definition>
+        <argsstring>(const _NoInit &amp;)</argsstring>
+        <name>BaseReg</name>
+        <param>
+          <type>const _NoInit &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="619" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="619" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a94eaba0f0c5e61e39601f9146d0e3ae4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseReg" kindref="compound">BaseReg</ref></type>
+        <definition>BaseReg asmjit::BaseReg::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structasmjit_1_1Operand_1a985b4db41884dae41b27d2d880c7e86f">clone</reimplements>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86Reg_1a3720aa6d0b7b1d4228c2e106a4560325">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1GpReg_1af16fd7eef7632c10ff6d46cfd91c986e">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1FpReg_1a21e51a60aa1e7774d8dc8bad9c26531d">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1MmReg_1a1d4045e5e2ee20940ecb3b347adbf703">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1XmmReg_1a95e7ed6e5a9cb44d86ab6ed356ff0058">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1YmmReg_1a0abdd301ba8314c1c34494d47247634a">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1SegReg_1ab2562d6aa38d7f722a34ed83cef29d11">clone</reimplementedby>
+        <briefdescription>
+<para>Clone <ref refid="structasmjit_1_1BaseReg" kindref="compound">BaseReg</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="626" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="626" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1ae7e080222bc00435ab847fbd85b97477" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseReg::isRegType</definition>
+        <argsstring>(uint32_t type) const </argsstring>
+        <name>isRegType</name>
+        <reimplements refid="structasmjit_1_1Operand_1a5dd129c65aac0057afdd4f844785437a">isRegType</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get whether register code is equal to <emphasis>type</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="631" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="631" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a455492c42efd02a1623d8618b4a70bf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseReg::isRegCode</definition>
+        <argsstring>(uint32_t code) const </argsstring>
+        <name>isRegCode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Get whether register code is equal to <emphasis>type</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="636" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="636" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a347038655e77ca9cb894c824a295dd36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseReg::isRegCode</definition>
+        <argsstring>(uint32_t type, uint32_t index) const </argsstring>
+        <name>isRegCode</name>
+        <reimplements refid="structasmjit_1_1Operand_1a1cd13703d63d231c97cf76c020e2b605">isRegCode</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get whether register code is equal to <emphasis>type</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="641" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="641" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a929fbbb73d8b17add8adb01189a73801" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseReg::getRegCode</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegCode</name>
+        <briefdescription>
+<para>Get register code that equals to &apos;(type &lt;&lt; 8) + index&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="646" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="646" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a11479e7cffd15ed8f7f997f5f537ac93" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseReg::getRegType</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegType</name>
+        <briefdescription>
+<para>Get register type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="651" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="651" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseReg_1a8d7aff5d8ba0646939e86a43afec750e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseReg::getRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegIndex</name>
+        <briefdescription>
+<para>Get register index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="656" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="656" bodyend="658"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all register operands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="704">
+        <label>asmjit::x86x64::SegReg</label>
+        <link refid="structasmjit_1_1x86x64_1_1SegReg"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>asmjit::x86x64::XmmReg</label>
+        <link refid="structasmjit_1_1x86x64_1_1XmmReg"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="700">
+        <label>asmjit::x86x64::X86Reg</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86Reg"/>
+        <childnode refid="698" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="698">
+        <label>asmjit::BaseReg</label>
+        <link refid="structasmjit_1_1BaseReg"/>
+        <childnode refid="699" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>asmjit::x86x64::GpReg</label>
+        <link refid="structasmjit_1_1x86x64_1_1GpReg"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>asmjit::x86x64::FpReg</label>
+        <link refid="structasmjit_1_1x86x64_1_1FpReg"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>asmjit::x86x64::MmReg</label>
+        <link refid="structasmjit_1_1x86x64_1_1MmReg"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>asmjit::x86x64::YmmReg</label>
+        <link refid="structasmjit_1_1x86x64_1_1YmmReg"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="708">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="707">
+        <label>asmjit::BaseReg</label>
+        <link refid="structasmjit_1_1BaseReg"/>
+        <childnode refid="708" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="603" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="603" bodyend="700"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1ab65e9aa7a15edd48cba687f03cb7347c" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_base</name></member>
+      <member refid="structasmjit_1_1Operand_1ac155d3e43ef0cf0ea24e98b1fe906d36" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_copy</name></member>
+      <member refid="structasmjit_1_1Operand_1a307e2e7b752000b12da59dad23e0ca90" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_imm</name></member>
+      <member refid="structasmjit_1_1Operand_1a52353c7164e54d235314b175a9b05a6c" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_init</name></member>
+      <member refid="structasmjit_1_1Operand_1a2d8b4647e75a71e854ad939e1cb4c2ed" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_init_packed_d0_d1</name></member>
+      <member refid="structasmjit_1_1Operand_1a8cee9df3008f5956e37f876cc9026f45" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_init_packed_d2_d3</name></member>
+      <member refid="structasmjit_1_1Operand_1a289c6ab4602acf459e248d3f3f724b8a" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_init_packed_op_sz_b0_b1_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a7b9c87fee92df184dea2c10fb30ea467" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_init_packed_op_sz_w0_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a706538f838a8416a7e8e7cc4fa6f1db8" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_label</name></member>
+      <member refid="structasmjit_1_1Operand_1a1e918a093397232131e706fd436c1085" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1Operand_1aae280895b95e1b083799a43306dd7e15" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_vmem</name></member>
+      <member refid="structasmjit_1_1Operand_1a24f921b98561dea1f19faad624b9a147" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>_vreg</name></member>
+      <member refid="structasmjit_1_1BaseReg_1aeb3b2a856b508640dc374d6b96361dc4" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>BaseReg</name></member>
+      <member refid="structasmjit_1_1BaseReg_1ac61d7924a3f74a39c30915b363978d18" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>BaseReg</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a9871744c4d5a9d69aa6b488d42f451d0" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>BaseReg</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a59510261b1c7675318cb844df25f2b93" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>BaseReg</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a94eaba0f0c5e61e39601f9146d0e3ae4" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>clone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae043c994eaddfe587c1d248812b3d16c" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a9871ba5815361a896771418b9d443935" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a005389a2368b711612feda323d63766f" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getId</name></member>
+      <member refid="structasmjit_1_1Operand_1a2ea181bfeeae6d5467f7343dfddcb57c" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getOp</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a929fbbb73d8b17add8adb01189a73801" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getRegCode</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a8d7aff5d8ba0646939e86a43afec750e" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getRegIndex</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a11479e7cffd15ed8f7f997f5f537ac93" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getRegType</name></member>
+      <member refid="structasmjit_1_1Operand_1ae5bb07ef28e2c29ebf9b762ea8f36b7e" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1Operand_1ab85a3b5c7354a38ca52e78fea1739759" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isImm</name></member>
+      <member refid="structasmjit_1_1Operand_1a2a77f09fc4951c9e58fccd18a6eaf1b3" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isLabel</name></member>
+      <member refid="structasmjit_1_1Operand_1afb9863bc270de49d257dce8593e79cb4" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad09b5fd91f3d8c754980f98a2019be7b" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isNone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae0ce4d16beb59e0934942cba222054af" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isReg</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a455492c42efd02a1623d8618b4a70bf1" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isRegCode</name></member>
+      <member refid="structasmjit_1_1BaseReg_1a347038655e77ca9cb894c824a295dd36" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isRegCode</name></member>
+      <member refid="structasmjit_1_1Operand_1aea0d545eea3526cfb1ae0adb8871de78" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isRegOrMem</name></member>
+      <member refid="structasmjit_1_1BaseReg_1ae7e080222bc00435ab847fbd85b97477" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isRegType</name></member>
+      <member refid="structasmjit_1_1Operand_1a809703f677ab89fb8d619ad717c59a02" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isVar</name></member>
+      <member refid="structasmjit_1_1Operand_1ae65f6fcaacdf3a299256f909fcda5576" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>isVarOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad67efdbe93039d4ae3f77f84fcae6331" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a55218d0096d0f0352484ecd0b7e3ef53" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a50c0bde3edb955a4001a20a7d01bbf96" prot="public" virt="non-virtual"><scope>asmjit::BaseReg</scope><name>Operand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

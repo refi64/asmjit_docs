@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::X86X64FuncDecl &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::X86X64FuncNode" href="x86x64__X86X64FuncNode.html" />
+    <link rel="prev" title="x86x64::X86X64Compiler" href="x86x64__X86X64Compiler.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86X64FuncNode.html" title="x86x64::X86X64FuncNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__X86X64Compiler.html" title="x86x64::X86X64Compiler"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-x86x64funcdecl">
+<h1>x86x64::X86X64FuncDecl<a class="headerlink" href="#x86x64-x86x64funcdecl" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::X86X64FuncDecl</strong></div>
+<div class="line"><em>#include &lt;x86func.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86 function, including calling convention, arguments and their register indices or stack positions. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a183658bcb279d5fb8e5d1114ce0932d1"></span><div class="line-block">
+<div class="line"> <strong>X86X64FuncDecl</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl"><em>X86X64FuncDecl</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9146b67b0c55570b25ff4c820b4c6d19"></span><div class="line-block">
+<div class="line">uint32_t <strong>getUsed</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get used registers (mask). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>The result depends on the function calling convention AND the function prototype. Returned mask contains only registers actually used to pass function arguments. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1af3b4eb44920de03d579bbc99565e12a2"></span><div class="line-block">
+<div class="line">uint32_t <strong>getPassed</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get passed registers (mask). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>The result depends on the function calling convention used; the prototype of the function doesn&#8217;t affect the mask returned. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a89c122c4b7aa0ae5c75fa8328384781c"></span><div class="line-block">
+<div class="line">uint32_t <strong>getPreserved</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get preserved registers (mask). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>The result depends on the function calling convention used; the prototype of the function doesn&#8217;t affect the mask returned. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1af50fa5badee216b6d448ac658aa21b4c"></span><div class="line-block">
+<div class="line">const uint8_t * <strong>getPassedOrderGp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get ther order of passed registers (Gp). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>The result depends on the function calling convention used; the prototype of the function doesn&#8217;t affect the mask returned. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9826dd8f4585ba04971b0bf9fddf38e4"></span><div class="line-block">
+<div class="line">const uint8_t * <strong>getPassedOrderXmm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get ther order of passed registers (Xmm). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>The result depends on the function calling convention used; the prototype of the function doesn&#8217;t affect the mask returned. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1acd36f14135ae05941744899d5f08b7d7"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>setPrototype</strong>(uint32_t conv, const  <a class="reference internal" href="FuncPrototype.html#asmjitstructasmjit_1_1FuncPrototype"><em>FuncPrototype</em></a>  &amp; p)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set function prototype. </p>
+<p><p>This will set function calling convention and setup arguments variables.</p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>This function will allocate variables, it can be called only once. </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9c5f59d8752db5fe7387fbbabc4a119b"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a797876f9f4b25b5e77dae0655fbf6e3b"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a> <strong>_used</strong></p>
+<blockquote>
+<div><p>Used registers . </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1ab3db2e0b41b6102046d199a97aecf23a"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a> <strong>_passed</strong></p>
+<blockquote>
+<div><p>Passed registers (defined by the calling convention). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a365c29d4d4828f6bb6ac06ba30d46f4a"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a> <strong>_preserved</strong></p>
+<blockquote>
+<div><p>Preserved registers (defined by the calling convention). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a1cdfbec4850670bf589fad5d3bf711b9"></span>uint8_t <strong>_passedOrderGp</strong>[kFuncArgCount]</p>
+<blockquote>
+<div><p>Order of registers defined to pass function arguments (Gp). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl_1a98314f872dfed04924b16462e70645ca"></span>uint8_t <strong>_passedOrderXmm</strong>[kFuncArgCount]</p>
+<blockquote>
+<div><p>Order of registers defined to pass function arguments (Xmm). </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__X86X64Compiler.html"
+                        title="previous chapter">x86x64::X86X64Compiler</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__X86X64FuncNode.html"
+                        title="next chapter">x86x64::X86X64FuncNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__X86X64FuncDecl.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86X64FuncNode.html" title="x86x64::X86X64FuncNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__X86X64Compiler.html" title="x86x64::X86X64Compiler"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

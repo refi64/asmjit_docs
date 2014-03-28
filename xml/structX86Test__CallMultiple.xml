@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__CallMultiple" kind="struct" prot="public">
+    <compoundname>X86Test_CallMultiple</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__CallMultiple_1a21a4e7e5c980cb2b712af612d8ebdff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_CallMultiple::X86Test_CallMultiple</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_CallMultiple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2128" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2128" bodyend="2128"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallMultiple_1a8bd6420ca594953c2e6bb518abd96a6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_CallMultiple::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2138" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2138" bodyend="2181"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallMultiple_1a08046e36e6d22bb9fd57788089f54c2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_CallMultiple::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2183" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2183" bodyend="2196"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__CallMultiple_1a66a7c7bdc36e14f68fd4f128d2cb8744" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_CallMultiple::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2130" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2130" bodyend="2132"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallMultiple_1ab539603d4527bb85cfc37d6804a4ca95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int ASMJIT_FASTCALL</type>
+        <definition>static int ASMJIT_FASTCALL X86Test_CallMultiple::calledFunc</definition>
+        <argsstring>(int *pInt, int index)</argsstring>
+        <name>calledFunc</name>
+        <param>
+          <type>int *</type>
+          <declname>pInt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2134" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2134" bodyend="2136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2127" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2127" bodyend="2197"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_CallMultiple</scope><name>_name</name></member>
+      <member refid="structX86Test__CallMultiple_1a66a7c7bdc36e14f68fd4f128d2cb8744" prot="public" virt="non-virtual"><scope>X86Test_CallMultiple</scope><name>add</name></member>
+      <member refid="structX86Test__CallMultiple_1ab539603d4527bb85cfc37d6804a4ca95" prot="public" virt="non-virtual"><scope>X86Test_CallMultiple</scope><name>calledFunc</name></member>
+      <member refid="structX86Test__CallMultiple_1a8bd6420ca594953c2e6bb518abd96a6a" prot="public" virt="virtual"><scope>X86Test_CallMultiple</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_CallMultiple</scope><name>getName</name></member>
+      <member refid="structX86Test__CallMultiple_1a08046e36e6d22bb9fd57788089f54c2a" prot="public" virt="virtual"><scope>X86Test_CallMultiple</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_CallMultiple</scope><name>X86Test</name></member>
+      <member refid="structX86Test__CallMultiple_1a21a4e7e5c980cb2b712af612d8ebdff0" prot="public" virt="non-virtual"><scope>X86Test_CallMultiple</scope><name>X86Test_CallMultiple</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_CallMultiple</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

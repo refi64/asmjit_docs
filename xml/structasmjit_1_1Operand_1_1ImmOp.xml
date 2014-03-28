@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Operand_1_1ImmOp" kind="struct" prot="public">
+    <compoundname>asmjit::Operand::ImmOp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1ad2726f587dba478b71dad4947134282c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::ImmOp::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>Type of operand, kOperandTypeImm. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="339" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a5bb2089e73d5f2da46fe35ef3acebf9c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::ImmOp::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of immediate (or 0 to autodetect). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="341" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a55263e2260e3bda0e89a6e79643461bd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::ImmOp::reserved0</definition>
+        <argsstring></argsstring>
+        <name>reserved0</name>
+        <briefdescription>
+<para>Reserved (not used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="343" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a92e58e76ed14b3a9063d98a5e967f664" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::ImmOp::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <briefdescription>
+<para>Reserved (not used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="345" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1aceb3c1ff1387265d836bef57a85c01d9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Operand::ImmOp::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> id (kInvalidValue). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="348" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a5368ef349d6828471ddb8a865343b7c0" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t asmjit::Operand::ImmOp::_i8[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>_i8</name>
+        <briefdescription>
+<para>8x signed 8-bit immediate values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="352" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a0eade5b75578770962f80f6732c820bb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::ImmOp::_u8[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>_u8</name>
+        <briefdescription>
+<para>8x unsigned 8-bit immediate values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="354" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1ab0316e3313834f263b8e0eeb24cb28e1" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t asmjit::Operand::ImmOp::_i16[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>_i16</name>
+        <briefdescription>
+<para>4x signed 16-bit immediate values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="357" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1afad95a334404c61bdca7f1b361f454f9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::Operand::ImmOp::_u16[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>_u16</name>
+        <briefdescription>
+<para>4x unsigned 16-bit immediate values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="359" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1af29da1e1391d8e6d0abc9d8dea5fff6d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::Operand::ImmOp::_i32[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_i32</name>
+        <briefdescription>
+<para>2x signed 32-bit immediate values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="362" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1aec2c6007d5c81182df9100d89006d82a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Operand::ImmOp::_u32[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_u32</name>
+        <briefdescription>
+<para>2x unsigned 32-bit immediate values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="364" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a999af7b9c2ab66bf91b466f40d09755e" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t asmjit::Operand::ImmOp::_i64[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>_i64</name>
+        <briefdescription>
+<para>1x signed 64-bit immediate value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="367" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a35564334ea579eb3cc324509e87a3dac" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t asmjit::Operand::ImmOp::_u64[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>_u64</name>
+        <briefdescription>
+<para>1x unsigned 64-bit immediate value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="369" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a1cfd98bfa11839b3f4bd418779f313aa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float asmjit::Operand::ImmOp::_f32[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_f32</name>
+        <briefdescription>
+<para>2x SP-FP values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="372" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1ae7cfef5dd23ed61c3ca8714d39ff1a34" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double asmjit::Operand::ImmOp::_f64[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>_f64</name>
+        <briefdescription>
+<para>1x DP-FP value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="374" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1ImmOp_1a5ed8b5c27ebe7578c8e6d0f6cb384715" prot="public" static="no" mutable="no">
+        <type>union asmjit::Operand::ImmOp::@22</type>
+        <definition>union asmjit::Operand::ImmOp::@22  asmjit::Operand::ImmOp::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="375"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="337" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="337" bodyend="376"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a1cfd98bfa11839b3f4bd418779f313aa" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_f32</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1ae7cfef5dd23ed61c3ca8714d39ff1a34" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_f64</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1ab0316e3313834f263b8e0eeb24cb28e1" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_i16</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1af29da1e1391d8e6d0abc9d8dea5fff6d" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_i32</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a999af7b9c2ab66bf91b466f40d09755e" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_i64</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a5368ef349d6828471ddb8a865343b7c0" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_i8</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1afad95a334404c61bdca7f1b361f454f9" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_u16</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1aec2c6007d5c81182df9100d89006d82a" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_u32</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a35564334ea579eb3cc324509e87a3dac" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_u64</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a0eade5b75578770962f80f6732c820bb" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>_u8</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1aceb3c1ff1387265d836bef57a85c01d9" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>id</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1ad2726f587dba478b71dad4947134282c" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>op</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a55263e2260e3bda0e89a6e79643461bd" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>reserved0</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a92e58e76ed14b3a9063d98a5e967f664" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>reserved1</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a5bb2089e73d5f2da46fe35ef3acebf9c" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>size</name></member>
+      <member refid="structasmjit_1_1Operand_1_1ImmOp_1a5ed8b5c27ebe7578c8e6d0f6cb384715" prot="public" virt="non-virtual"><scope>asmjit::Operand::ImmOp</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

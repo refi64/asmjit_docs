@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structPerformance" kind="struct" prot="public">
+    <compoundname>Performance</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPerformance_1a598bb377e1dbc8885e09dafc4f70df1a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Performance::tick</definition>
+        <argsstring></argsstring>
+        <name>tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="52" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPerformance_1a87f63b66d3ae40d0a9194fd4d94e03b5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Performance::best</definition>
+        <argsstring></argsstring>
+        <name>best</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="53" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structPerformance_1aae01e84dfb6951bfa376978505e6f87e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t Performance::now</definition>
+        <argsstring>()</argsstring>
+        <name>now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="24" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structPerformance_1a957b26b945656f8574aed0bac02fb391" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Performance::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="32" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="structPerformance_1a6658fdfbd2938c64a626af3e951636c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Performance::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="37" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structPerformance_1a16144441e6ff35dacc88ef835d1277c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Performance::diff</definition>
+        <argsstring>() const </argsstring>
+        <name>diff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="41" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structPerformance_1ab3d0152081c9c55c981f21a44f8dd7be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Performance::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="45" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/benchx86.cpp" line="23" bodyfile="/home/ryan/asmjit/src/app/test/benchx86.cpp" bodystart="23" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structPerformance_1a87f63b66d3ae40d0a9194fd4d94e03b5" prot="public" virt="non-virtual"><scope>Performance</scope><name>best</name></member>
+      <member refid="structPerformance_1a16144441e6ff35dacc88ef835d1277c3" prot="public" virt="non-virtual"><scope>Performance</scope><name>diff</name></member>
+      <member refid="structPerformance_1ab3d0152081c9c55c981f21a44f8dd7be" prot="public" virt="non-virtual"><scope>Performance</scope><name>end</name></member>
+      <member refid="structPerformance_1aae01e84dfb6951bfa376978505e6f87e" prot="public" virt="non-virtual"><scope>Performance</scope><name>now</name></member>
+      <member refid="structPerformance_1a957b26b945656f8574aed0bac02fb391" prot="public" virt="non-virtual"><scope>Performance</scope><name>reset</name></member>
+      <member refid="structPerformance_1a6658fdfbd2938c64a626af3e951636c6" prot="public" virt="non-virtual"><scope>Performance</scope><name>start</name></member>
+      <member refid="structPerformance_1a598bb377e1dbc8885e09dafc4f70df1a" prot="public" virt="non-virtual"><scope>Performance</scope><name>tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

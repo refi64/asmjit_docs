@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__AllocRetFloat" kind="struct" prot="public">
+    <compoundname>X86Test_AllocRetFloat</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__AllocRetFloat_1a9b32f141445a20458ccb6e7e311f74c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_AllocRetFloat::X86Test_AllocRetFloat</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_AllocRetFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1350" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1350" bodyend="1350"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocRetFloat_1ad8a6849114910e2e95a4a136b3555b2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_AllocRetFloat::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1356" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1356" bodyend="1369"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocRetFloat_1abefba54095f08019028994a85f7f45b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_AllocRetFloat::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1371" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1371" bodyend="1382"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__AllocRetFloat_1aa000d09be9a8ebf9651fd15aa9fca3d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_AllocRetFloat::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1352" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1352" bodyend="1354"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1349" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1349" bodyend="1383"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_AllocRetFloat</scope><name>_name</name></member>
+      <member refid="structX86Test__AllocRetFloat_1aa000d09be9a8ebf9651fd15aa9fca3d7" prot="public" virt="non-virtual"><scope>X86Test_AllocRetFloat</scope><name>add</name></member>
+      <member refid="structX86Test__AllocRetFloat_1ad8a6849114910e2e95a4a136b3555b2d" prot="public" virt="virtual"><scope>X86Test_AllocRetFloat</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_AllocRetFloat</scope><name>getName</name></member>
+      <member refid="structX86Test__AllocRetFloat_1abefba54095f08019028994a85f7f45b2" prot="public" virt="virtual"><scope>X86Test_AllocRetFloat</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_AllocRetFloat</scope><name>X86Test</name></member>
+      <member refid="structX86Test__AllocRetFloat_1a9b32f141445a20458ccb6e7e311f74c5" prot="public" virt="non-virtual"><scope>X86Test_AllocRetFloat</scope><name>X86Test_AllocRetFloat</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_AllocRetFloat</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

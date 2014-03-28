@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__AlignBase" kind="struct" prot="public">
+    <compoundname>X86Test_AlignBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structX86Test__AlignBase_1ad5a757a56d8cc0b39963c4941c11b1ce" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int X86Test_AlignBase::_argCount</definition>
+        <argsstring></argsstring>
+        <name>_argCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="185" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86Test__AlignBase_1a3326c07601d90a8bd0d487d0e5b7b20f" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int X86Test_AlignBase::_varCount</definition>
+        <argsstring></argsstring>
+        <name>_varCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="186" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86Test__AlignBase_1a7f65e15698e32d872b6de716b37ca453" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool X86Test_AlignBase::_naked</definition>
+        <argsstring></argsstring>
+        <name>_naked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="188" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structX86Test__AlignBase_1a194059b6023502386e0389b75ac86199" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool X86Test_AlignBase::_pushPop</definition>
+        <argsstring></argsstring>
+        <name>_pushPop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="189" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__AlignBase_1a63dca844ab2a68ba3fe1c5757df0f603" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_AlignBase::X86Test_AlignBase</definition>
+        <argsstring>(uint32_t argCount, uint32_t varCount, bool naked, bool pushPop)</argsstring>
+        <name>X86Test_AlignBase</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>argCount</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>varCount</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>naked</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pushPop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="47" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="43" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AlignBase_1a73ff8fbbbe78604b3a5b4b1290463cdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_AlignBase::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="67" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="67" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AlignBase_1a9dbce348038fe208c43ae13f3d71d0fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_AlignBase::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="136" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="136" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__AlignBase_1af7d0b27a094d5fe7ee9f0c931c129650" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_AlignBase::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="56" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="42" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="42" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structX86Test__AlignBase_1ad5a757a56d8cc0b39963c4941c11b1ce" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>_argCount</name></member>
+      <member refid="structX86Test__AlignBase_1a7f65e15698e32d872b6de716b37ca453" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>_naked</name></member>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>_name</name></member>
+      <member refid="structX86Test__AlignBase_1a194059b6023502386e0389b75ac86199" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>_pushPop</name></member>
+      <member refid="structX86Test__AlignBase_1a3326c07601d90a8bd0d487d0e5b7b20f" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>_varCount</name></member>
+      <member refid="structX86Test__AlignBase_1af7d0b27a094d5fe7ee9f0c931c129650" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>add</name></member>
+      <member refid="structX86Test__AlignBase_1a73ff8fbbbe78604b3a5b4b1290463cdc" prot="public" virt="virtual"><scope>X86Test_AlignBase</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>getName</name></member>
+      <member refid="structX86Test__AlignBase_1a9dbce348038fe208c43ae13f3d71d0fe" prot="public" virt="virtual"><scope>X86Test_AlignBase</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>X86Test</name></member>
+      <member refid="structX86Test__AlignBase_1a63dca844ab2a68ba3fe1c5757df0f603" prot="public" virt="non-virtual"><scope>X86Test_AlignBase</scope><name>X86Test_AlignBase</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_AlignBase</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="testcpu_8cpp" kind="file">
+    <compoundname>testcpu.cpp</compoundname>
+    <includes refid="asmjit_8h" local="no">asmjit/asmjit.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="string_8h" local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1747">
+        <label>../base/globals.h</label>
+        <childnode refid="1740" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1750">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1755">
+        <label>../base/codegen.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1765">
+        <label>base/lock.h</label>
+        <childnode refid="1740" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1767">
+        <label>base/memorymanager.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1752">
+        <label>stdint.h</label>
+      </node>
+      <node id="1743">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1756">
+        <label>../base/error.h</label>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1738">
+        <label>asmjit/asmjit.h</label>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1759">
+        <label>../base/zone.h</label>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1740" relation="include">
+        </childnode>
+      </node>
+      <node id="1757">
+        <label>../base/logger.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1754">
+        <label>base/assembler.h</label>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1745">
+        <label>../base/defs.h</label>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1753">
+        <label>limits.h</label>
+      </node>
+      <node id="1760">
+        <label>../base/podlist.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1766">
+        <label>pthread.h</label>
+      </node>
+      <node id="1761">
+        <label>../base/podvector.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1739">
+        <label>base.h</label>
+        <childnode refid="1740" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1769" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+      </node>
+      <node id="1751">
+        <label>new</label>
+      </node>
+      <node id="1769">
+        <label>base/vmem.h</label>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1764">
+        <label>base/cpu.h</label>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1741">
+        <label>config.h</label>
+      </node>
+      <node id="1768">
+        <label>base/vectypes.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1746">
+        <label>../base/intutil.h</label>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1758">
+        <label>../base/runtime.h</label>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1770">
+        <label>host.h</label>
+        <childnode refid="1739" relation="include">
+        </childnode>
+      </node>
+      <node id="1740">
+        <label>build.h</label>
+        <childnode refid="1741" relation="include">
+        </childnode>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+      </node>
+      <node id="1742">
+        <label>stdio.h</label>
+      </node>
+      <node id="1737">
+        <label>testcpu.cpp</label>
+        <link refid="testcpu.cpp"/>
+        <childnode refid="1738" relation="include">
+        </childnode>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+      </node>
+      <node id="1744">
+        <label>string.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1763">
+        <label>../base/func.h</label>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+      <node id="1762">
+        <label>base/compiler.h</label>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structCpuFeature" prot="public">CpuFeature</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testcpu_8cpp_1a16ad08b3fd084d29786d4bb49e56a3b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void printFeatures</definition>
+        <argsstring>(const char *prefix, const BaseCpu *cpu, const CpuFeature *data)</argsstring>
+        <name>printFeatures</name>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseCpu" kindref="compound">BaseCpu</ref> *</type>
+          <declname>cpu</declname>
+        </param>
+        <param>
+          <type>const CpuFeature *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testcpu.cpp" line="70" bodyfile="/home/ryan/asmjit/src/app/test/testcpu.cpp" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="testcpu_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testcpu.cpp" line="78" bodyfile="/home/ryan/asmjit/src/app/test/testcpu.cpp" bodystart="78" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;asmjit/asmjit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>C]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">CpuFeature<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>uint32_t<sp/>feature;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>description;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_HOST_X86)<sp/>||<sp/>defined(ASMJIT_HOST_X64)</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CpuFeature<sp/>x86x64Features[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a559604d4b1c5d8b11200b2c519d44709" kindref="member" tooltip="Cpu has multithreading.">x86x64::kCpuFeatureMultithreading</ref><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Multithreading&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12aed06d2dddd46606ef756dbafd87d8ed7" kindref="member" tooltip="Cpu has execute disable bit.">x86x64::kCpuFeatureExecuteDisableBit</ref><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Execute-Disable<sp/>Bit&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a939385734116895b4c56cfa0fd0f9e3d" kindref="member" tooltip="Cpu has RDTSC.">x86x64::kCpuFeatureRdtsc</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Rdtsc&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a6cc7ea12d6268cdafd23b22f17e0778f" kindref="member" tooltip="Cpu has RDTSCP.">x86x64::kCpuFeatureRdtscp</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Rdtscp&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a77ae1355d75ab52e7613935c14dd846c" kindref="member" tooltip="Cpu has CMOV.">x86x64::kCpuFeatureCmov</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Cmov&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a4b863841c3c70b7ea119715177c4ecb7" kindref="member" tooltip="Cpu has CMPXCHG8B.">x86x64::kCpuFeatureCmpXchg8B</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Cmpxchg8b&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a84cfd9e8a465268571b75e7f06fb6e0f" kindref="member" tooltip="Cpu has CMPXCHG16B (x64).">x86x64::kCpuFeatureCmpXchg16B</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Cmpxchg16b&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a0b40eb8b23adae4cb74a59bd65f7eb19" kindref="member" tooltip="Cpu has CLFUSH.">x86x64::kCpuFeatureClflush</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Clflush&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12ab0e9efe2d38eeb553269d2de80726027" kindref="member" tooltip="Cpu has PREFETCH.">x86x64::kCpuFeaturePrefetch</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Prefetch&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a4a77822c89742d567d38e4ba19f4a11d" kindref="member" tooltip="Cpu has LAHF/SAHF.">x86x64::kCpuFeatureLahfSahf</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Lahf/Sahf&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a0b0b6dc58adb4dd649b3aca6e217b0d1" kindref="member" tooltip="Cpu has FXSAVE/FXRSTOR.">x86x64::kCpuFeatureFxsr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Fxsave/Fxrstor&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a609f1466700f4c644c5aa4f0327f54f8" kindref="member" tooltip="Cpu has FXSAVE/FXRSTOR optimizations.">x86x64::kCpuFeatureFfxsr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Fxsave/Fxrstor<sp/>Opt.&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a8b2a2d2e4729619c2403abcd8da48a5b" kindref="member" tooltip="Cpu has MMX.">x86x64::kCpuFeatureMmx</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Mmx&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a87debfa17ac513a932ff94f7953bdfc4" kindref="member" tooltip="Cpu has extended MMX.">x86x64::kCpuFeatureMmxExt</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;MmxExt&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a1a287b89b7e835d3e719e2f8bf8d2520" kindref="member" tooltip="Cpu has 3dNow!">x86x64::kCpuFeature3dNow</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;3dnow&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a6e9ecae9decb57390735cc1ad2a4b160" kindref="member" tooltip="Cpu has enchanced 3dNow!">x86x64::kCpuFeature3dNowExt</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;3dnowExt&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12aad2120f83453b6d51a33bea935cdcdcc" kindref="member" tooltip="Cpu has SSE.">x86x64::kCpuFeatureSse</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Sse&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a9d090d4fc00bb41bed251a57033c81b8" kindref="member" tooltip="Cpu has SSE2.">x86x64::kCpuFeatureSse2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Sse2&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a4bf8f84a96633e79f91864797078cc28" kindref="member" tooltip="Cpu has SSE3.">x86x64::kCpuFeatureSse3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Sse3&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a282de73f5cbdca0102ed347d9e9b8442" kindref="member" tooltip="Cpu has Supplemental SSE3 (SSSE3).">x86x64::kCpuFeatureSsse3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Ssse3&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12ae8d1530bfe7455cdeb4c76d888248b69" kindref="member" tooltip="Cpu has SSE4.A.">x86x64::kCpuFeatureSse4A</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Sse4a&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a50fd175be091a46cd26859d3aca3dd78" kindref="member" tooltip="Cpu has SSE4.1.">x86x64::kCpuFeatureSse41</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Sse4.1&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12aec78414fcf3f3376ac00db79d1bc5051" kindref="member" tooltip="Cpu has SSE4.2.">x86x64::kCpuFeatureSse42</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Sse4.2&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12ac786ef180be789e6dda8304dc7e13c29" kindref="member" tooltip="Cpu has Misaligned SSE (MSSE).">x86x64::kCpuFeatureMsse</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Misaligned<sp/>SSE&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a68583b5d689f9cec52926a3923725e5f" kindref="member" tooltip="Cpu has MONITOR and MWAIT.">x86x64::kCpuFeatureMonitorMWait</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Monitor/MWait&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a442cfd4864f19970a008b60850b90b12" kindref="member" tooltip="Cpu has MOVBE.">x86x64::kCpuFeatureMovbe</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Movbe&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a7d3f3baeab17b7715a28f775bbd24e5b" kindref="member" tooltip="Cpu has POPCNT.">x86x64::kCpuFeaturePopcnt</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Popcnt&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a7a71c5fed1747f386b86e51a75701f25" kindref="member" tooltip="Cpu has LZCNT.">x86x64::kCpuFeatureLzcnt</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Lzcnt&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12ac8b5be5dc60103a6f0c4916f7675f49e" kindref="member" tooltip="Cpu has AESNI.">x86x64::kCpuFeatureAesni</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;AesNI&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a0ac548e4bb98069d810d6797472c45cf" kindref="member" tooltip="Cpu has PCLMULQDQ.">x86x64::kCpuFeaturePclmulqdq</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Pclmulqdq&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a4c5d259ea54da844d5116429a63b4576" kindref="member" tooltip="Cpu has RDRAND.">x86x64::kCpuFeatureRdrand</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Rdrand&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a0984092714c3e456c48b75678cc8cf3d" kindref="member" tooltip="Cpu has AVX.">x86x64::kCpuFeatureAvx</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Avx&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a20471fce5a2688bca84aa58d6d8d63f4" kindref="member" tooltip="Cpu has AVX2.">x86x64::kCpuFeatureAvx2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Avx2&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a9f25e33d3e522ea3651313a3c7e67daa" kindref="member" tooltip="Cpu has F16C.">x86x64::kCpuFeatureF16C</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;F16C&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a11f57658cf3e0a328693d84a4985011c" kindref="member" tooltip="Cpu has FMA3.">x86x64::kCpuFeatureFma3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Fma3&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a8c959115cf213cec414ec206f078a0bb" kindref="member" tooltip="Cpu has FMA4.">x86x64::kCpuFeatureFma4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Fma4&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12ab01c4287d37bd5fc1931d9e36eb5421e" kindref="member" tooltip="Cpu has XOP.">x86x64::kCpuFeatureXop</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Xop&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a2d091365c412a2178719762bda183084" kindref="member" tooltip="Cpu has BMI.">x86x64::kCpuFeatureBmi</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Bmi&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a05da42f7c43a8e00a7ea03266d1b6c64" kindref="member" tooltip="Cpu has BMI2.">x86x64::kCpuFeatureBmi2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Bmi2&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a87c5d98ffb05fc3822f28784f0725d32" kindref="member" tooltip="Cpu has HLE.">x86x64::kCpuFeatureHle</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Hle&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a20360639916f2bc5f47fa80e896106aa" kindref="member" tooltip="Cpu has RTM.">x86x64::kCpuFeatureRtm</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;Rtm&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12aeb1e7c642d4d6f292be34e036a7b3816" kindref="member" tooltip="Cpu has FSGSBASE.">x86x64::kCpuFeatureFsGsBase</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;FsGsBase&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12ab270032aca7f1e49d3f1c5721ec3cafb" kindref="member" tooltip="Cpu has enhanced REP MOVSB/STOSB.">x86x64::kCpuFeatureRepMovsbStosbExt</ref><sp/><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;RepMovsbStosbExt&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_HOST<sp/>||<sp/>ASMJIT_HOST_X64</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printFeatures(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>prefix,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>*<sp/>cpu,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CpuFeature*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ASMJIT_ARRAY_SIZE(x86x64Features);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cpu-&gt;<ref refid="structasmjit_1_1BaseCpu_1a7d362d56d07ee7e70be5288445943f19" kindref="member" tooltip="Get whether CPU has a feature.">hasFeature</ref>(data[i].feature))<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s%s\n&quot;</highlight><highlight class="normal">,<sp/>prefix,<sp/>data[i].description);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>*<sp/>cpu_<sp/>=<sp/><ref refid="structasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff" kindref="member" tooltip="Get host cpu.">BaseCpu::getHost</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Core<sp/>Features]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Host<sp/>CPU\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;========\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nBasic<sp/>info\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Vendor<sp/>string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>cpu_-&gt;<ref refid="structasmjit_1_1BaseCpu_1a1596633d850aed49f001d4be35e20384" kindref="member" tooltip="Get CPU vendor string.">getVendorString</ref>());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Brand<sp/>string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>cpu_-&gt;<ref refid="structasmjit_1_1BaseCpu_1a8eb2dec2c8374dd40c7f590d4e724677" kindref="member" tooltip="Get CPU brand string.">getBrandString</ref>());</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Family<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu_-&gt;<ref refid="structasmjit_1_1BaseCpu_1a86ee66b3bf7e8c623f140fa614262272" kindref="member" tooltip="Get CPU family ID.">getFamily</ref>());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Model<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu_-&gt;<ref refid="structasmjit_1_1BaseCpu_1ad3ed12c12bce38a12d1b42dc410c372d" kindref="member" tooltip="Get CPU model ID.">getModel</ref>());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Stepping<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu_-&gt;<ref refid="structasmjit_1_1BaseCpu_1ae711d5fa18f161c7d2bad598af180190" kindref="member" tooltip="Get CPU stepping.">getStepping</ref>());</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Cores<sp/>Count<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu_-&gt;<ref refid="structasmjit_1_1BaseCpu_1a2aac6d6744a3cd6bf4a5ca9ea38ef0fd" kindref="member" tooltip="Get CPU cores count (or sum of all cores of all procesors).">getCoresCount</ref>());</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[X86<sp/>Features]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_HOST_X86)<sp/>||<sp/>defined(ASMJIT_HOST_X64)</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>x86x64::Cpu*<sp/>cpu<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">x86x64::Cpu*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cpu_);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nX86/X64<sp/>Extended<sp/>Info:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Processor<sp/>Type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu-&gt;getProcessorType());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Brand<sp/>Index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu-&gt;getBrandIndex());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>CL<sp/>Flush<sp/>Cache<sp/>Line<sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu-&gt;getFlushCacheLineSize());</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Max<sp/>logical<sp/>Processors:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>cpu-&gt;getMaxLogicalProcessors());</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nX86/X64<sp/>Features:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>printFeatures(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>cpu,<sp/>x86x64Features);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_HOST<sp/>||<sp/>ASMJIT_HOST_X64</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/app/test/testcpu.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceasmjit" kind="namespace">
+    <compoundname>asmjit</compoundname>
+    <innerclass refid="structasmjit_1_1LabelLink" prot="public">asmjit::LabelLink</innerclass>
+    <innerclass refid="structasmjit_1_1LabelData" prot="public">asmjit::LabelData</innerclass>
+    <innerclass refid="structasmjit_1_1RelocData" prot="public">asmjit::RelocData</innerclass>
+    <innerclass refid="structasmjit_1_1BaseAssembler" prot="public">asmjit::BaseAssembler</innerclass>
+    <innerclass refid="structasmjit_1_1CodeGen" prot="public">asmjit::CodeGen</innerclass>
+    <innerclass refid="structasmjit_1_1MemCell" prot="public">asmjit::MemCell</innerclass>
+    <innerclass refid="structasmjit_1_1VarBits" prot="public">asmjit::VarBits</innerclass>
+    <innerclass refid="structasmjit_1_1VarData" prot="public">asmjit::VarData</innerclass>
+    <innerclass refid="structasmjit_1_1VarAttr" prot="public">asmjit::VarAttr</innerclass>
+    <innerclass refid="structasmjit_1_1BaseVarInst" prot="public">asmjit::BaseVarInst</innerclass>
+    <innerclass refid="structasmjit_1_1BaseVarState" prot="public">asmjit::BaseVarState</innerclass>
+    <innerclass refid="structasmjit_1_1BaseNode" prot="public">asmjit::BaseNode</innerclass>
+    <innerclass refid="structasmjit_1_1AlignNode" prot="public">asmjit::AlignNode</innerclass>
+    <innerclass refid="structasmjit_1_1EmbedNode" prot="public">asmjit::EmbedNode</innerclass>
+    <innerclass refid="structasmjit_1_1CommentNode" prot="public">asmjit::CommentNode</innerclass>
+    <innerclass refid="structasmjit_1_1HintNode" prot="public">asmjit::HintNode</innerclass>
+    <innerclass refid="structasmjit_1_1TargetNode" prot="public">asmjit::TargetNode</innerclass>
+    <innerclass refid="structasmjit_1_1InstNode" prot="public">asmjit::InstNode</innerclass>
+    <innerclass refid="structasmjit_1_1JumpNode" prot="public">asmjit::JumpNode</innerclass>
+    <innerclass refid="structasmjit_1_1FuncNode" prot="public">asmjit::FuncNode</innerclass>
+    <innerclass refid="structasmjit_1_1EndNode" prot="public">asmjit::EndNode</innerclass>
+    <innerclass refid="structasmjit_1_1RetNode" prot="public">asmjit::RetNode</innerclass>
+    <innerclass refid="structasmjit_1_1CallNode" prot="public">asmjit::CallNode</innerclass>
+    <innerclass refid="structasmjit_1_1SArgNode" prot="public">asmjit::SArgNode</innerclass>
+    <innerclass refid="structasmjit_1_1BaseCompiler" prot="public">asmjit::BaseCompiler</innerclass>
+    <innerclass refid="structasmjit_1_1BaseContext" prot="public">asmjit::BaseContext</innerclass>
+    <innerclass refid="structasmjit_1_1BaseCpu" prot="public">asmjit::BaseCpu</innerclass>
+    <innerclass refid="structasmjit_1_1Operand" prot="public">asmjit::Operand</innerclass>
+    <innerclass refid="structasmjit_1_1OperandUtil" prot="public">asmjit::OperandUtil</innerclass>
+    <innerclass refid="structasmjit_1_1BaseReg" prot="public">asmjit::BaseReg</innerclass>
+    <innerclass refid="structasmjit_1_1BaseMem" prot="public">asmjit::BaseMem</innerclass>
+    <innerclass refid="structasmjit_1_1BaseVar" prot="public">asmjit::BaseVar</innerclass>
+    <innerclass refid="structasmjit_1_1Imm" prot="public">asmjit::Imm</innerclass>
+    <innerclass refid="structasmjit_1_1Label" prot="public">asmjit::Label</innerclass>
+    <innerclass refid="structasmjit_1_1ErrorHandler" prot="public">asmjit::ErrorHandler</innerclass>
+    <innerclass refid="structasmjit_1_1ErrorUtil" prot="public">asmjit::ErrorUtil</innerclass>
+    <innerclass refid="structasmjit_1_1FnVoid" prot="public">asmjit::FnVoid</innerclass>
+    <innerclass refid="structasmjit_1_1FnInt8" prot="public">asmjit::FnInt8</innerclass>
+    <innerclass refid="structasmjit_1_1FnUInt8" prot="public">asmjit::FnUInt8</innerclass>
+    <innerclass refid="structasmjit_1_1FnInt16" prot="public">asmjit::FnInt16</innerclass>
+    <innerclass refid="structasmjit_1_1FnUInt16" prot="public">asmjit::FnUInt16</innerclass>
+    <innerclass refid="structasmjit_1_1FnInt32" prot="public">asmjit::FnInt32</innerclass>
+    <innerclass refid="structasmjit_1_1FnUInt32" prot="public">asmjit::FnUInt32</innerclass>
+    <innerclass refid="structasmjit_1_1FnInt64" prot="public">asmjit::FnInt64</innerclass>
+    <innerclass refid="structasmjit_1_1FnUInt64" prot="public">asmjit::FnUInt64</innerclass>
+    <innerclass refid="structasmjit_1_1FnIntPtr" prot="public">asmjit::FnIntPtr</innerclass>
+    <innerclass refid="structasmjit_1_1FnUIntPtr" prot="public">asmjit::FnUIntPtr</innerclass>
+    <innerclass refid="structasmjit_1_1FnFloat" prot="public">asmjit::FnFloat</innerclass>
+    <innerclass refid="structasmjit_1_1FnDouble" prot="public">asmjit::FnDouble</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId" prot="public">asmjit::TypeId</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01T_01_5_01_4" prot="public">asmjit::TypeId&lt; T * &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01void_01_4" prot="public">asmjit::TypeId&lt; void &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnVoid_01_4" prot="public">asmjit::TypeId&lt; FnVoid &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01int8__t_01_4" prot="public">asmjit::TypeId&lt; int8_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnInt8_01_4" prot="public">asmjit::TypeId&lt; FnInt8 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01uint8__t_01_4" prot="public">asmjit::TypeId&lt; uint8_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnUInt8_01_4" prot="public">asmjit::TypeId&lt; FnUInt8 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01int16__t_01_4" prot="public">asmjit::TypeId&lt; int16_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnInt16_01_4" prot="public">asmjit::TypeId&lt; FnInt16 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01uint16__t_01_4" prot="public">asmjit::TypeId&lt; uint16_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnUInt16_01_4" prot="public">asmjit::TypeId&lt; FnUInt16 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01int32__t_01_4" prot="public">asmjit::TypeId&lt; int32_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnInt32_01_4" prot="public">asmjit::TypeId&lt; FnInt32 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01uint32__t_01_4" prot="public">asmjit::TypeId&lt; uint32_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnUInt32_01_4" prot="public">asmjit::TypeId&lt; FnUInt32 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01int64__t_01_4" prot="public">asmjit::TypeId&lt; int64_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnInt64_01_4" prot="public">asmjit::TypeId&lt; FnInt64 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01uint64__t_01_4" prot="public">asmjit::TypeId&lt; uint64_t &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnUInt64_01_4" prot="public">asmjit::TypeId&lt; FnUInt64 &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01float_01_4" prot="public">asmjit::TypeId&lt; float &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnFloat_01_4" prot="public">asmjit::TypeId&lt; FnFloat &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01double_01_4" prot="public">asmjit::TypeId&lt; double &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1TypeId_3_01FnDouble_01_4" prot="public">asmjit::TypeId&lt; FnDouble &gt;</innerclass>
+    <innerclass refid="structasmjit_1_1FuncInOut" prot="public">asmjit::FuncInOut</innerclass>
+    <innerclass refid="structasmjit_1_1FuncPrototype" prot="public">asmjit::FuncPrototype</innerclass>
+    <innerclass refid="structasmjit_1_1FuncDecl" prot="public">asmjit::FuncDecl</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilderX" prot="public">asmjit::FuncBuilderX</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder0" prot="public">asmjit::FuncBuilder0</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder1" prot="public">asmjit::FuncBuilder1</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder2" prot="public">asmjit::FuncBuilder2</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder3" prot="public">asmjit::FuncBuilder3</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder4" prot="public">asmjit::FuncBuilder4</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder5" prot="public">asmjit::FuncBuilder5</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder6" prot="public">asmjit::FuncBuilder6</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder7" prot="public">asmjit::FuncBuilder7</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder8" prot="public">asmjit::FuncBuilder8</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder9" prot="public">asmjit::FuncBuilder9</innerclass>
+    <innerclass refid="structasmjit_1_1FuncBuilder10" prot="public">asmjit::FuncBuilder10</innerclass>
+    <innerclass refid="structasmjit_1_1__Init" prot="public">asmjit::_Init</innerclass>
+    <innerclass refid="structasmjit_1_1__NoInit" prot="public">asmjit::_NoInit</innerclass>
+    <innerclass refid="structasmjit_1_1IntTraits" prot="public">asmjit::IntTraits</innerclass>
+    <innerclass refid="structasmjit_1_1IntUtil" prot="public">asmjit::IntUtil</innerclass>
+    <innerclass refid="unionasmjit_1_1UInt64" prot="public">asmjit::UInt64</innerclass>
+    <innerclass refid="structasmjit_1_1Lock" prot="public">asmjit::Lock</innerclass>
+    <innerclass refid="structasmjit_1_1AutoLock" prot="public">asmjit::AutoLock</innerclass>
+    <innerclass refid="structasmjit_1_1BaseLogger" prot="public">asmjit::BaseLogger</innerclass>
+    <innerclass refid="structasmjit_1_1FileLogger" prot="public">asmjit::FileLogger</innerclass>
+    <innerclass refid="structasmjit_1_1StringLogger" prot="public">asmjit::StringLogger</innerclass>
+    <innerclass refid="structasmjit_1_1RbNode" prot="public">asmjit::RbNode</innerclass>
+    <innerclass refid="structasmjit_1_1MemNode" prot="public">asmjit::MemNode</innerclass>
+    <innerclass refid="structasmjit_1_1PermanentNode" prot="public">asmjit::PermanentNode</innerclass>
+    <innerclass refid="structasmjit_1_1MemoryManagerPrivate" prot="public">asmjit::MemoryManagerPrivate</innerclass>
+    <innerclass refid="structasmjit_1_1MemoryManager" prot="public">asmjit::MemoryManager</innerclass>
+    <innerclass refid="structasmjit_1_1VirtualMemoryManager" prot="public">asmjit::VirtualMemoryManager</innerclass>
+    <innerclass refid="structasmjit_1_1PodList" prot="public">asmjit::PodList</innerclass>
+    <innerclass refid="structasmjit_1_1PodVectorData" prot="public">asmjit::PodVectorData</innerclass>
+    <innerclass refid="structasmjit_1_1PodVectorBase" prot="public">asmjit::PodVectorBase</innerclass>
+    <innerclass refid="structasmjit_1_1PodVector" prot="public">asmjit::PodVector</innerclass>
+    <innerclass refid="structasmjit_1_1BaseRuntime" prot="public">asmjit::BaseRuntime</innerclass>
+    <innerclass refid="structasmjit_1_1JitRuntime" prot="public">asmjit::JitRuntime</innerclass>
+    <innerclass refid="structasmjit_1_1StringUtil" prot="public">asmjit::StringUtil</innerclass>
+    <innerclass refid="structasmjit_1_1StringBuilder" prot="public">asmjit::StringBuilder</innerclass>
+    <innerclass refid="structasmjit_1_1StringBuilderT" prot="public">asmjit::StringBuilderT</innerclass>
+    <innerclass refid="unionasmjit_1_1Vec64Data" prot="public">asmjit::Vec64Data</innerclass>
+    <innerclass refid="unionasmjit_1_1Vec128Data" prot="public">asmjit::Vec128Data</innerclass>
+    <innerclass refid="unionasmjit_1_1Vec256Data" prot="public">asmjit::Vec256Data</innerclass>
+    <innerclass refid="structasmjit_1_1VMemLocal" prot="public">asmjit::VMemLocal</innerclass>
+    <innerclass refid="structasmjit_1_1VMem" prot="public">asmjit::VMem</innerclass>
+    <innerclass refid="structasmjit_1_1Zone" prot="public">asmjit::Zone</innerclass>
+    <innernamespace refid="namespaceasmjit_1_1x86x64">asmjit::x86x64</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__asmjit__base_1ga1e5786823de989baf3528c6d8033cbc9" prot="public" static="no">
+        <name>kCodeGen</name>
+        <enumvalue id="group__asmjit__base_1gga1e5786823de989baf3528c6d8033cbc9af84c8f14d20066c430419110d14c0ced" prot="public">
+          <name>kCodeGenOptimizedAlign</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Emit optimized code-alignment sequences. </para>          </briefdescription>
+          <detaileddescription>
+<para>X86/X64:</para><para>Default align sequence used by X86/X64 architecture is one-byte 0x90 opcode that is mostly shown by disassemblers as nop. However there are more optimized align sequences for 2-11 bytes that may execute faster. If this feature is enabled asmjit will generate specialized sequences for alignment between 1 to 11 bytes. Also when x86x64::Compiler is used, it may add rex prefixes into the code to make some instructions larger so no alignment sequences are needed.</para><para>true. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga1e5786823de989baf3528c6d8033cbc9a6e46cdab2550ee673837adc632451037" prot="public">
+          <name>kCodeGenPredictedJumps</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Emit jump-prediction hints. </para>          </briefdescription>
+          <detaileddescription>
+<para>X86/X64:</para><para>Jump prediction is usually based on the direction of the jump. If the jump is backward it is usually predicted as taken; and if the jump is forward it is usually predicted as not-taken. The reason is that loops generally use backward jumps and conditions usually use forward jumps. However this behavior can be overridden by using instruction prefixes. If this option is enabled these hints will be emitted.</para><para>true. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1CodeGen" kindref="compound">CodeGen</ref> features. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="31" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1abe9dc55e53c38585ded137821274ae2c" prot="public" static="no">
+        <name>@5</name>
+        <enumvalue id="namespaceasmjit_1abe9dc55e53c38585ded137821274ae2ca6a2f8ece4c86f896f9063b2ff89afded" prot="public">
+          <name>kBaseCompilerDefaultLookAhead</name>
+          <initializer> 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8" prot="public" static="no">
+        <name>kVarAttrFlags</name>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a8d57c1cc7b6009295d245242774f845f" prot="public">
+          <name>kVarAttrInReg</name>
+          <initializer> 0x00000001</initializer>
+          <briefdescription>
+<para>Variable is accessed through register on input. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a13472b217aaa3d010bf8ec95d4c5ac24" prot="public">
+          <name>kVarAttrOutReg</name>
+          <initializer> 0x00000002</initializer>
+          <briefdescription>
+<para>Variable is accessed through register on output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8ac39c67106d981d4b46bc6c598c0f6b16" prot="public">
+          <name>kVarAttrInOutReg</name>
+          <initializer> 0x00000003</initializer>
+          <briefdescription>
+<para>Variable is accessed through register on input &amp; output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8aeba533d241a272e27e500fbd60d62442" prot="public">
+          <name>kVarAttrInMem</name>
+          <initializer> 0x00000004</initializer>
+          <briefdescription>
+<para>Variable is accessed through memory on input. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a9ca84c5277e850bc6fd3fe51903fbdba" prot="public">
+          <name>kVarAttrOutMem</name>
+          <initializer> 0x00000008</initializer>
+          <briefdescription>
+<para>Variable is accessed through memory on output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a8f83434a9a16f64c28949d87b3cf4900" prot="public">
+          <name>kVarAttrInOutMem</name>
+          <initializer> 0x0000000C</initializer>
+          <briefdescription>
+<para>Variable is accessed through memory on input &amp; output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8ae4ed6c8f121d7cbb0614cfda823944f0" prot="public">
+          <name>kVarAttrInDecide</name>
+          <initializer> 0x00000010</initializer>
+          <briefdescription>
+<para>It can be decided whether it&apos;s better to alloc variable to register or memory on the input. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8ae55f912792b126f1b5457eabb2b598c1" prot="public">
+          <name>kVarAttrOutDecide</name>
+          <initializer> 0x00000020</initializer>
+          <briefdescription>
+<para>It can be decided whether it&apos;s better to alloc variable to register or memory on the output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a70f307ec5e2e56bbf7bbaa0eb4db694b" prot="public">
+          <name>kVarAttrInOutDecide</name>
+          <initializer> 0x00000030</initializer>
+          <briefdescription>
+<para>It can be decided whether it&apos;s better to alloc variable to register or memory on the input &amp; output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8adcdc55fe22b54c66adac44b184508157" prot="public">
+          <name>kVarAttrInConv</name>
+          <initializer> 0x00000040</initializer>
+          <briefdescription>
+<para>Variable is converted to other type/class on the input. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a3989b753ed67c5664ea01446239f8803" prot="public">
+          <name>kVarAttrOutConv</name>
+          <initializer> 0x00000080</initializer>
+          <briefdescription>
+<para>Variable is converted from other type/class on the output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a0632820d4937868b681cd6f7950ff944" prot="public">
+          <name>kVarAttrInOutConv</name>
+          <initializer> 0x000000C0</initializer>
+          <briefdescription>
+<para>Combination of kVarAttrInConv and kVarAttrOutConv. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a70cd86570fa74b49e6dc92e2c59fe5a1" prot="public">
+          <name>kVarAttrInCall</name>
+          <initializer> 0x00000100</initializer>
+          <briefdescription>
+<para>Variable is a function call operand. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a47ac56a8be9730dd5f66f484173997bc" prot="public">
+          <name>kVarAttrInArg</name>
+          <initializer> 0x00000200</initializer>
+          <briefdescription>
+<para>Variable is a function argument passed in register. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8adb20c1d12511535f1a65063c916ce6d6" prot="public">
+          <name>kVarAttrOutRet</name>
+          <initializer> 0x00000400</initializer>
+          <briefdescription>
+<para>Variable is a function return value passed in register. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a87d8f7c979b53dd05fea67681ce156de" prot="public">
+          <name>kVarAttrUnuse</name>
+          <initializer> 0x00000800</initializer>
+          <briefdescription>
+<para>Variable should be unused at the end of the instruction/node. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8aa818affce39cf536556fea4d7d25d485" prot="public">
+          <name>kVarAttrInAll</name>
+          <initializer> kVarAttrInReg | kVarAttrInMem | kVarAttrInDecide | kVarAttrInCall | kVarAttrInArg</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8aae463dfad8aeb973bc6225066d56ceed" prot="public">
+          <name>kVarAttrOutAll</name>
+          <initializer> kVarAttrOutReg | kVarAttrOutMem | kVarAttrOutDecide | kVarAttrOutRet</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8a56f4bc2902852c4491f3ade7888f49af" prot="public">
+          <name>kVarAttrAllocInDone</name>
+          <initializer> 0x00400000</initializer>
+          <briefdescription>
+<para>Variable is already allocated on the input. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a21f9e3a09fa457f434c5a37233a572c8abbcd573810f0cd35a0a844be19de768c" prot="public">
+          <name>kVarAttrAllocOutDone</name>
+          <initializer> 0x00800000</initializer>
+          <briefdescription>
+<para>Variable is already allocated on the output. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Variable attribute flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="48" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="48" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1aa5c760e126fa2b3784b839870daaf6e1" prot="public" static="no">
+        <name>kVarHint</name>
+        <enumvalue id="namespaceasmjit_1aa5c760e126fa2b3784b839870daaf6e1a3132beec8b46503af6a5a24f3685eac9" prot="public">
+          <name>kVarHintAlloc</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Alloc variable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1aa5c760e126fa2b3784b839870daaf6e1af251080bcf0345c87e12e2e6ab548f21" prot="public">
+          <name>kVarHintSpill</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Spill variable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1aa5c760e126fa2b3784b839870daaf6e1a42e928af7c8b46645809a48623b1c18d" prot="public">
+          <name>kVarHintSave</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Save variable if modified. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1aa5c760e126fa2b3784b839870daaf6e1a4bc6f4f0ff5040ade7dd9a7f8fe4ed12" prot="public">
+          <name>kVarHintSaveAndUnuse</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Save variable if modified and mark it as unused. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1aa5c760e126fa2b3784b839870daaf6e1a23c46660c5cb236b5c76fe7c3fd824c0" prot="public">
+          <name>kVarHintUnuse</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>Mark variable as unused. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Variable hint (used by <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref>). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="106" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="106" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a3ca77418fa1d552b3bc02600e769b3e0" prot="public" static="no">
+        <name>kVarState</name>
+        <enumvalue id="namespaceasmjit_1a3ca77418fa1d552b3bc02600e769b3e0a60880df3a32bc925804e75df7a6896af" prot="public">
+          <name>kVarStateUnused</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Variable is currently not used. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a3ca77418fa1d552b3bc02600e769b3e0a65f7683718efc7e8e665573abf91bc21" prot="public">
+          <name>kVarStateReg</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Variable is in register. </para>          </briefdescription>
+          <detaileddescription>
+<para>Variable is currently allocated in register. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a3ca77418fa1d552b3bc02600e769b3e0ae209ef323626e77b2b4003686ab407e4" prot="public">
+          <name>kVarStateMem</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Variable is in memory location or spilled. </para>          </briefdescription>
+          <detaileddescription>
+<para>Variable was spilled from register to memory or variable is used for memory only storage. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State of variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>State of variable is used only during make process and it&apos;s not visible to the developer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="127" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="127" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3" prot="public" static="no">
+        <name>kNodeType</name>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a1842134927288ec0ab43747f6ee9ac50" prot="public">
+          <name>kNodeTypeNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Invalid node (internal, can&apos;t be used). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3ae41ed522d62b5caae65101570b7186ed" prot="public">
+          <name>kNodeTypeAlign</name>
+          <briefdescription>
+<para>Node is an .align directive, see <ref refid="structasmjit_1_1AlignNode" kindref="compound">AlignNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a0ef5534136768ffa200df9f7345f0fac" prot="public">
+          <name>kNodeTypeEmbed</name>
+          <briefdescription>
+<para>Node is an embedded data, see <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a1c70c2a3187b1926a7c720ae4f482fb5" prot="public">
+          <name>kNodeTypeComment</name>
+          <briefdescription>
+<para>Node is a comment, see <ref refid="structasmjit_1_1CommentNode" kindref="compound">CommentNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3ac463d49c0eb7b956cb433b9f1ad7ecf9" prot="public">
+          <name>kNodeTypeHint</name>
+          <briefdescription>
+<para>Node is a variable hint (alloc, spill, use, unuse), see <ref refid="structasmjit_1_1HintNode" kindref="compound">HintNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a87368cd97b50901c4b46086bf60295df" prot="public">
+          <name>kNodeTypeTarget</name>
+          <briefdescription>
+<para>Node is a label, see <ref refid="structasmjit_1_1TargetNode" kindref="compound">TargetNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a9f20b46d8c2acfebf60d21535e733b12" prot="public">
+          <name>kNodeTypeInst</name>
+          <briefdescription>
+<para>Node is an instruction, see <ref refid="structasmjit_1_1InstNode" kindref="compound">InstNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a4893bb89265c1746d9ed71ae2db208e9" prot="public">
+          <name>kNodeTypeFunc</name>
+          <briefdescription>
+<para>Node is a function declaration, see <ref refid="structasmjit_1_1FuncNode" kindref="compound">FuncNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a2be3674dc117d51162e3cfba445f2e00" prot="public">
+          <name>kNodeTypeEnd</name>
+          <briefdescription>
+<para>Node is an end of the function, see <ref refid="structasmjit_1_1EndNode" kindref="compound">EndNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a62bb5a57a5b892a3e1d5b310da5ab153" prot="public">
+          <name>kNodeTypeRet</name>
+          <briefdescription>
+<para>Node is a return, see <ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3afea9f1b11623394196ca370495c53f26" prot="public">
+          <name>kNodeTypeCall</name>
+          <briefdescription>
+<para>Node is a function call, see <ref refid="structasmjit_1_1CallNode" kindref="compound">CallNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1acf9ae1ed3b31d44be780019ac2aeefe3a10e2ab91958327e573911926102974b4" prot="public">
+          <name>kNodeTypeSArg</name>
+          <briefdescription>
+<para>Node is a function call argument moved on stack, see <ref refid="structasmjit_1_1SArgNode" kindref="compound">SArgNode</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of node (see <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="148" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="148" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503" prot="public" static="no">
+        <name>kNodeFlag</name>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503a88567a3c5f88c4045aa6310964fcfcbe" prot="public">
+          <name>kNodeFlagIsTranslated</name>
+          <initializer> 0x0001</initializer>
+          <briefdescription>
+<para>Whether the node was translated by BaseContext. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503a94ce814a0d5d2188c744740a5c8830cb" prot="public">
+          <name>kNodeFlagIsJmp</name>
+          <initializer> 0x0002</initializer>
+          <briefdescription>
+<para>Whether the <ref refid="structasmjit_1_1InstNode" kindref="compound">InstNode</ref> is a jump. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503ad15ca77f9a50cfdcf0b342cc3ddee8db" prot="public">
+          <name>kNodeFlagIsJcc</name>
+          <initializer> 0x0004</initializer>
+          <briefdescription>
+<para>Whether the <ref refid="structasmjit_1_1InstNode" kindref="compound">InstNode</ref> is a conditional jump. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503a74a37db6114ddca0ac2c70f9fed36a3e" prot="public">
+          <name>kNodeFlagIsTaken</name>
+          <initializer> 0x0008</initializer>
+          <briefdescription>
+<para>Whether the <ref refid="structasmjit_1_1InstNode" kindref="compound">InstNode</ref> is an unconditinal jump or conditional jump that is likely to be taken. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503ada072fdd76fab53bcdde0f3c3630c96c" prot="public">
+          <name>kNodeFlagIsRet</name>
+          <initializer> 0x0010</initializer>
+          <briefdescription>
+<para>Whether the Node will return from a function. </para>          </briefdescription>
+          <detaileddescription>
+<para>This flag is used by both <ref refid="structasmjit_1_1EndNode" kindref="compound">EndNode</ref> and <ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref>. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503a96ecde5dff63fdad25c3a899d51d6d30" prot="public">
+          <name>kNodeFlagIsSpecial</name>
+          <initializer> 0x0020</initializer>
+          <briefdescription>
+<para>Whether the instruction is special. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a9c8553f22a6ff59f37a67a15d9e3a503a49c650028de10fc36f0afeb3a3cdf383" prot="public">
+          <name>kNodeFlagIsFp</name>
+          <initializer> 0x0040</initializer>
+          <briefdescription>
+<para>Whether the instruction is an FPU instruction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="179" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="179" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1gaf99557bc959d675f99a7413c43b18491" prot="public" static="no">
+        <name>kCpuVendor</name>
+        <enumvalue id="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a373fc1ee653533046adad518101c2a2b" prot="public">
+          <name>kCpuVendorUnknown</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Unknown CPU vendor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a3e4d75ca28030952346e1228e0e135d1" prot="public">
+          <name>kCpuVendorIntel</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Intel CPU vendor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a6a2f3432bac2f693af105f463d13db02" prot="public">
+          <name>kCpuVendorAmd</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>AMD CPU vendor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a84fcc958361f8be6594bacd4efbf3fac" prot="public">
+          <name>kCpuVendorNSM</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>National Semiconductor CPU vendor (applies also to Cyrix processors). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a3ce730dbe74d5cc9274aca654b2212c4" prot="public">
+          <name>kCpuVendorTransmeta</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>Transmeta CPU vendor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf99557bc959d675f99a7413c43b18491a608f861dd08c9029e7992419a82e13d9" prot="public">
+          <name>kCpuVendorVia</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+<para>VIA CPU vendor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Cpu vendor IDs. </para>        </briefdescription>
+        <detaileddescription>
+<para>Cpu vendor IDs are specific for AsmJit library. Vendor ID is not directly read from cpuid result, instead it&apos;s based on CPU vendor string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/cpu.h" line="30" bodyfile="/home/ryan/asmjit/src/asmjit/base/cpu.h" bodystart="30" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga12e36dc942976d5794c1e88619b5e8cb" prot="public" static="no">
+        <name>kOperandType</name>
+        <enumvalue id="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cba5606bb706ba515b597456bed0abe8b03" prot="public">
+          <name>kOperandTypeNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Invalid operand, used only internally (not initialized <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref>). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cba8742403556c7e635e7531c58252de1ea" prot="public">
+          <name>kOperandTypeReg</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> is a register. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cbad24fc6aeac580335e62f8a11e8a2043f" prot="public">
+          <name>kOperandTypeVar</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> is a variable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cba3d620e7f3b9d9eb43a8be405dd5a565c" prot="public">
+          <name>kOperandTypeMem</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> is a memory. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cba1d91cd01cea7a2b5067aa24907d1372b" prot="public">
+          <name>kOperandTypeImm</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> is an immediate value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cba2dcaa04fd5ea217510587264bb4ecac8" prot="public">
+          <name>kOperandTypeLabel</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> is a label. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> types that can be encoded in <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="34" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga1941577d59c9d0f61a4bcde8c19ec9c5" prot="public" static="no">
+        <name>kOperandId</name>
+        <enumvalue id="group__asmjit__base_1gga1941577d59c9d0f61a4bcde8c19ec9c5a295c08b8f3024d78e730ef790265d632" prot="public">
+          <name>kOperandIdVar</name>
+          <initializer> 0x80000000U</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> id refers to <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga1941577d59c9d0f61a4bcde8c19ec9c5a57978d4fcf92c565ed3798a59dfd3eda" prot="public">
+          <name>kOperandIdNum</name>
+          <initializer> 0x7FFFFFFFU</initializer>
+          <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> id to real index mask. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> id masks used to determine the operand type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="54" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga99bcebf1cfe0e5748810ea481c0191e7" prot="public" static="no">
+        <name>kRegClass</name>
+        <enumvalue id="group__asmjit__base_1gga99bcebf1cfe0e5748810ea481c0191e7a4092691aba7dfe7861ea2853b6791517" prot="public">
+          <name>kRegClassGp</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Gp register class (any architecture). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga99bcebf1cfe0e5748810ea481c0191e7a9ee1beb9a4b48c08d666811d3776ed65" prot="public">
+          <name>kRegClassInvalid</name>
+          <initializer> 0xFF</initializer>
+          <briefdescription>
+<para>Invalid register class. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Register class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="66" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1gac34fc57ca3f35b031f715fded4fb35f3" prot="public" static="no">
+        <name>kInstCode</name>
+        <enumvalue id="group__asmjit__base_1ggac34fc57ca3f35b031f715fded4fb35f3a40322f3634e1579cf825c83e286dc39b" prot="public">
+          <name>kInstNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>No instruction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Instruction codes (stub). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="79" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga1a4feb7204b0ca222114af10730305bc" prot="public" static="no">
+        <name>kInstOptions</name>
+        <enumvalue id="group__asmjit__base_1gga1a4feb7204b0ca222114af10730305bcaba5334994b8849b668e2fce1bed61cea" prot="public">
+          <name>kInstOptionNone</name>
+          <initializer> 0x00</initializer>
+          <briefdescription>
+<para>No instruction options. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga1a4feb7204b0ca222114af10730305bca3f497bb7cd655089b1e5470867cbc187" prot="public">
+          <name>kInstOptionShortForm</name>
+          <initializer> 0x01</initializer>
+          <briefdescription>
+<para>Emit short form of the instruction. </para>          </briefdescription>
+          <detaileddescription>
+<para>X86/X64:</para><para>Short form is mostly related to jmp and jcc instructions, but can be used by other instructions supporting 8-bit or 32-bit immediates. This option can be dangerous if the short jmp/jcc is required, but not encodable due to large displacement, in such case an error happens and the whole assembler/compiler stream is unusable. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga1a4feb7204b0ca222114af10730305bca0914ab67e09d24f2e0c0d512b70c7f08" prot="public">
+          <name>kInstOptionLongForm</name>
+          <initializer> 0x02</initializer>
+          <briefdescription>
+<para>Emit long form of the instruction. </para>          </briefdescription>
+          <detaileddescription>
+<para>X86/X64:</para><para>Long form is mosrlt related to jmp and jcc instructions, but like the kInstOptionShortForm option it can be used by other instructions supporting both 8-bit and 32-bit immediates. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga1a4feb7204b0ca222114af10730305bca4df01d78f89add2e942ec79ad211a4f5" prot="public">
+          <name>kInstOptionTaken</name>
+          <initializer> 0x04</initializer>
+          <briefdescription>
+<para>Condition is likely to be taken (instruction). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga1a4feb7204b0ca222114af10730305bca4c436f33ba83c4df5948e49e01a5ef67" prot="public">
+          <name>kInstOptionNotTaken</name>
+          <initializer> 0x08</initializer>
+          <briefdescription>
+<para>Condition is unlikely to be taken (instruction). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Instruction options (stub). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="89" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="89" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1gaf2740675f6f8b14a3aea317cd6c75ade" prot="public" static="no">
+        <name>kSize</name>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adeae3505415188fa8375d1c27b2feefd50b" prot="public">
+          <name>kSizeByte</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>1 byte size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adeaebdde480fd98fcf031c32ff8ca9c4543" prot="public">
+          <name>kSizeWord</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>2 bytes size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adea04194d85cd5ea237e4bfe2a2a772a06d" prot="public">
+          <name>kSizeDWord</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>4 bytes size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adea0ad65ff2feec4c11b32a22afd6d931f9" prot="public">
+          <name>kSizeQWord</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+<para>8 bytes size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adea18c9dc743897b1d3028cb10495312442" prot="public">
+          <name>kSizeTWord</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+<para>10 bytes size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adea85a2e0f1378aff0bd536bb7161f08203" prot="public">
+          <name>kSizeOWord</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+<para>16 bytes size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggaf2740675f6f8b14a3aea317cd6c75adea939978c7a022820a3b19bf13ade6c533" prot="public">
+          <name>kSizeYWord</name>
+          <initializer> 32</initializer>
+          <briefdescription>
+<para>32 bytes size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Common size of registers and pointers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="124" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="124" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga2c246b178fd6ed7e28cf318e9432af7c" prot="public" static="no">
+        <name>kMemType</name>
+        <enumvalue id="group__asmjit__base_1gga2c246b178fd6ed7e28cf318e9432af7ca16a9e6a8396089c64e6a1f73bebcd519" prot="public">
+          <name>kMemTypeBaseIndex</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Memory operand is a combination of base register, optional index register and optional displacement. </para>          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>The Assembler interprets kMemTypeBaseIndex and kMemTypeStackIndex types the same way, but Compiler interprets kMemTypeBaseIndex as [base + index] and kMemTypeStackIndex as [stack(base) + index]. </para></simplesect>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2c246b178fd6ed7e28cf318e9432af7caae883eff3882c91f1d85a2d7ff41662d" prot="public">
+          <name>kMemTypeStackIndex</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Memory operand is a combination of variable&apos;s memory location, optional index register and displacement. </para>          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>The Assembler interprets kMemTypeBaseIndex and kMemTypeStackIndex types in the same way, but Compiler interprets kMemTypeBaseIndex as [base + index] and kMemTypeStackIndex as [stack(base) + index]. </para></simplesect>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2c246b178fd6ed7e28cf318e9432af7cae82bd56fa0b87db8b547e91bd69ac096" prot="public">
+          <name>kMemTypeLabel</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Memory operand refers to the memory location specified by a label. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2c246b178fd6ed7e28cf318e9432af7ca1af22cea9780418b75dcac75808743ac" prot="public">
+          <name>kMemTypeAbsolute</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Memory operand is an absolute memory location. </para>          </briefdescription>
+          <detaileddescription>
+<para>Supported mostly by x86, truncated to a 32-bit value when running in 64-bit mode (x64). </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="146" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="146" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga9ca66fe5934ea03c67056886d4738059" prot="public" static="no">
+        <name>kVarType</name>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059acf10d6f2844598b50613d23b7faa00a7" prot="public">
+          <name>kVarTypeInt8</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Variable is signed 8-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a3ee9a32193d3de6737306b4ebdd46396" prot="public">
+          <name>kVarTypeUInt8</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Variable is unsigned 8-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059ade60befa7efc6bcd6cc0f631a4222240" prot="public">
+          <name>kVarTypeInt16</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Variable is signed 16-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a2b91e6694d291f3939a362d8abce65b0" prot="public">
+          <name>kVarTypeUInt16</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Variable is unsigned 16-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a22b8e16a218e7eb130f00c175ef8da30" prot="public">
+          <name>kVarTypeInt32</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>Variable is signed 32-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a2b5b4e7542d65fcc1459555feab4cd60" prot="public">
+          <name>kVarTypeUInt32</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+<para>Variable is unsigned 32-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a121fd4fcfa17aac9f0b850e0e34e2b25" prot="public">
+          <name>kVarTypeInt64</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+<para>Variable is signed 64-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a6f1417491d08df1d61a7573caea99008" prot="public">
+          <name>kVarTypeUInt64</name>
+          <initializer> 7</initializer>
+          <briefdescription>
+<para>Variable is unsigned 64-bit integer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a773337143d44de47e460e5e280661e3e" prot="public">
+          <name>kVarTypeIntPtr</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+<para>Variable is target <computeroutput>intptr_t</computeroutput> (not compatible with host <computeroutput>intptr_t</computeroutput>). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a68a9e960e4b15136ae863da48d59f8cd" prot="public">
+          <name>kVarTypeUIntPtr</name>
+          <initializer> 9</initializer>
+          <briefdescription>
+<para>Variable is target <computeroutput>uintptr_t</computeroutput> (not compatible with host <computeroutput>uintptr_t</computeroutput>). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059aac768ea9e4bfff5bb8f798527b29b774" prot="public">
+          <name>kVarTypeFp32</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+<para>Variable is 32-bit floating point (single precision). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a2f7af65dffd6124bc00383fa686070f5" prot="public">
+          <name>kVarTypeFp64</name>
+          <initializer> 11</initializer>
+          <briefdescription>
+<para>Variable is 64-bit floating point (double precision). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a1e19eaa393e8cb9865b1acd0d728d7bb" prot="public">
+          <name>kVarTypeInvalid</name>
+          <initializer> 0xFF</initializer>
+          <briefdescription>
+<para>Invalid variable type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059afd88f50df8c216dd3e476e99799de86c" prot="public">
+          <name>_kVarTypeIntStart</name>
+          <initializer> kVarTypeInt8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a03ee1e22b305010e570ade684a7cd94a" prot="public">
+          <name>_kVarTypeIntEnd</name>
+          <initializer> kVarTypeUIntPtr</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a7ed02f3acbd4599096af4f47372068a4" prot="public">
+          <name>_kVarTypeFpStart</name>
+          <initializer> kVarTypeFp32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059aa25f57a01011b697e3adad93df386cd9" prot="public">
+          <name>_kVarTypeFpEnd</name>
+          <initializer> kVarTypeFp64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="178" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="178" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga2af0fdb24baf154053f9c66acd758768" prot="public" static="no">
+        <name>kRelocMode</name>
+        <enumvalue id="group__asmjit__base_1gga2af0fdb24baf154053f9c66acd758768a0a158a0afd9ed0973269b36204c680df" prot="public">
+          <name>kRelocAbsToAbs</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2af0fdb24baf154053f9c66acd758768a75488012e611e93764a75e06053073c2" prot="public">
+          <name>kRelocRelToAbs</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2af0fdb24baf154053f9c66acd758768a968339673812ca61cc335f0432389a43" prot="public">
+          <name>kRelocAbsToRel</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2af0fdb24baf154053f9c66acd758768ae654c4a1c549633eee83b1ac32878977" prot="public">
+          <name>kRelocTrampoline</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="224" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="224" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga4d80121b99d57fc3e7269801bc1e98af" prot="public" static="no">
+        <name>kError</name>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" prot="public">
+          <name>kErrorOk</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>No error (success). </para>          </briefdescription>
+          <detaileddescription>
+<para>This is default state and state you want. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" prot="public">
+          <name>kErrorNoHeapMemory</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Heap memory allocation failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa1f04b9953660ab89255e8be134f5d621" prot="public">
+          <name>kErrorNoVirtualMemory</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Virtual memory allocation failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf36f8ebff7fdd3f8cff8688b86d399e" prot="public">
+          <name>kErrorInvalidArgument</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Invalid argument. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa78799e101ad4020abb524d7ebef96902" prot="public">
+          <name>kErrorInvalidState</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>Invalid state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf3902dc2b1981434c3d586c38f939aa" prot="public">
+          <name>kErrorAssemblerUnknownInst</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+<para>Unknown instruction. This happens only if instruction code is out of bounds. Shouldn&apos;t happen. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa346fdaab81454d309e04e9e42ec45191" prot="public">
+          <name>kErrorAssemblerIllegalInst</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+<para>Illegal instruction, usually generated by asmjit::Assembler class when emitting instruction opcode. If this error is generated the target buffer is not affected by this invalid instruction. </para>          </briefdescription>
+          <detaileddescription>
+<para>You can also get this status code if you are under x64 (64-bit x86) and you tried to decode instruction using AH, BH, CH or DH register with REX prefix. These registers can&apos;t be accessed if REX prefix is used and AsmJit didn&apos;t check for this situation in intrinsics (<computeroutput>Compiler</computeroutput> takes care of this and rearrange registers if needed).</para><para>Examples that will raise <computeroutput>kErrorAssemblerIllegalInst</computeroutput> error (a is <computeroutput>Assembler</computeroutput> instance):</para><para><programlisting><codeline><highlight class="normal"><sp/>a.mov(<ref refid="group__asmjit__x86x64_1gacb3da80de191d540f364469338809f30" kindref="member" tooltip="Create a dword pointer operand.">dword_ptr</ref>(<ref refid="group__asmjit__x86x64_1ga26df91f0fa40947bb620b176472bf3d3" kindref="member" tooltip="Gpd register.">eax</ref>),<sp/><ref refid="group__asmjit__x86x64_1ga79b2845f7cab7fb453e202877e02d069" kindref="member" tooltip="Gpb-lo register.">al</ref>);<sp/></highlight><highlight class="comment">//<sp/>Invalid<sp/>address<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>a.mov(<ref refid="group__asmjit__x86x64_1ga63ec6f038e14f638db2711d0ba762e29" kindref="member" tooltip="Create a byte pointer operand.">byte_ptr</ref>(r10),<sp/><ref refid="group__asmjit__x86x64_1gad3d48dab9109c26546c94766a3b33825" kindref="member" tooltip="Gpb-hi register.">ah</ref>);<sp/><sp/></highlight><highlight class="comment">//<sp/>Undecodable<sp/>instruction<sp/>(AH<sp/>used<sp/>with<sp/>r10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>can<sp/>be<sp/>encoded<sp/>by<sp/>using<sp/>REX<sp/>prefix<sp/>only)</highlight></codeline>
+</programlisting></para><para><simplesect kind="note"><para>In debug mode you get assertion failure instead of setting error code. </para></simplesect>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa708a3224cc77d587a93504eec23b1971" prot="public">
+          <name>kErrorAssemblerIllegalAddr</name>
+          <initializer> 7</initializer>
+          <briefdescription>
+<para>Illegal addressing used (unencodable). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa735bf5ee691bb952bd2fd59247751e45" prot="public">
+          <name>kErrorAssemblerIllegalShortJump</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+<para>Short jump instruction used, but displacement is out of bounds. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa1dcaa20750234e63b2bd9e96ac3b42ed" prot="public">
+          <name>kErrorCompilerNoFunc</name>
+          <initializer> 9</initializer>
+          <briefdescription>
+<para>No function defined. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa2c8eab5f276914a2333a0623ae75fc92" prot="public">
+          <name>kErrorCompilerIncompleteFunc</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+<para>Function generation is not finished by using <computeroutput>Compiler::endFunc()</computeroutput> or something bad happened during generation related to function. This can be missing compiler node, etc... </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afae9cd29c4aecbbf8c96e5800dc01b7f37" prot="public">
+          <name>kErrorCompilerOverlappedArgs</name>
+          <initializer> 11</initializer>
+          <briefdescription>
+<para>Tried to generate a function with overlapped arguments. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa0f3a9d1e584ee324e5f5769a941c996f" prot="public">
+          <name>kErrorCompilerNoRegs</name>
+          <initializer> 12</initializer>
+          <briefdescription>
+<para>Compiler can&apos;t allocate registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa456d136cd9336cb9f516a2f8d5458ac2" prot="public">
+          <name>kErrorCompilerOverlappedRegs</name>
+          <initializer> 13</initializer>
+          <briefdescription>
+<para>Compiler can&apos;t allocate registers, because they overlap. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa582fa84c94ce8e85375183eb1f82aae7" prot="public">
+          <name>kErrorCompilerIncompatibleArg</name>
+          <initializer> 14</initializer>
+          <briefdescription>
+<para>Tried to call function with an incompatible argument. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa6c59c4c25cc85605baf7e981c49994ac" prot="public">
+          <name>kErrorCompilerIncompatibleRet</name>
+          <initializer> 15</initializer>
+          <briefdescription>
+<para>Incompatible return value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afaef398e9d771bed55744ed34798650fe8" prot="public">
+          <name>kErrorCount</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+<para>Count of AsmJit status codes. Can grow in future. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AsmJit error codes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="24" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.h" bodystart="24" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a1a608359402929f5f44145000baea8af" prot="public" static="no">
+        <name>kFuncConv</name>
+        <enumvalue id="namespaceasmjit_1a1a608359402929f5f44145000baea8afa6b4cbfb119c293e3c7c4d4584f4d103f" prot="public">
+          <name>kFuncConvNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Calling convention is invalid (can&apos;t be used). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a946d19d438ab4c70df55f76f97c6bc17" prot="public" static="no">
+        <name>kFuncHint</name>
+        <enumvalue id="namespaceasmjit_1a946d19d438ab4c70df55f76f97c6bc17ab5c7c0d157341eb2dd98b87102bb2abb" prot="public">
+          <name>kFuncHintNaked</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Make a naked function (default true). </para>          </briefdescription>
+          <detaileddescription>
+<para>Naked function is function without using standard prolog/epilog sequence).</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a946d19d438ab4c70df55f76f97c6bc17a92964e492819e1b7517b23d2d1feb972" prot="public">
+          <name>kFuncHintCompact</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Generate compact function prolog/epilog if possible. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Function hints. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="41" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="41" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a0e247c39b088ca53dc0ec3030263c1c7" prot="public" static="no">
+        <name>kFuncFlags</name>
+        <enumvalue id="namespaceasmjit_1a0e247c39b088ca53dc0ec3030263c1c7aea247eea2d4a3a01a09aad09248fad57" prot="public">
+          <name>kFuncFlagIsNaked</name>
+          <initializer> 0x00000001</initializer>
+          <briefdescription>
+<para>Whether the function is using naked (minimal) prolog / epilog. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a0e247c39b088ca53dc0ec3030263c1c7aa572bd08465f15adec6d3a67141f1bcf" prot="public">
+          <name>kFuncFlagIsCaller</name>
+          <initializer> 0x00000002</initializer>
+          <briefdescription>
+<para>Whether an another function is called from this function. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a0e247c39b088ca53dc0ec3030263c1c7ada87a68a1a53bf8fab07682f82162e60" prot="public">
+          <name>kFuncFlagIsStackMisaligned</name>
+          <initializer> 0x00000004</initializer>
+          <briefdescription>
+<para>Whether the stack is not aligned to the required stack alignment, thus it has to be aligned manually. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a0e247c39b088ca53dc0ec3030263c1c7a641159aa57052ce7e6002b8198c4b2f4" prot="public">
+          <name>kFuncFlagIsStackAdjusted</name>
+          <initializer> 0x00000008</initializer>
+          <briefdescription>
+<para>Whether the stack pointer is adjusted by the stack size needed to save registers and function variables. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a0e247c39b088ca53dc0ec3030263c1c7a1b2f6e8c8824f0983de82296f102338d" prot="public">
+          <name>kFuncFlagIsFinished</name>
+          <initializer> 0x80000000</initializer>
+          <briefdescription>
+<para>Whether the function is finished using <computeroutput>Compiler::endFunc()</computeroutput>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Function flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="88" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="88" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a64862f98b9f11b677af34db7afa00e19" prot="public" static="no">
+        <name>kFuncDir</name>
+        <enumvalue id="namespaceasmjit_1a64862f98b9f11b677af34db7afa00e19af79ac7d03f6308a2b007ac102ee7a699" prot="public">
+          <name>kFuncDirLtr</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Arguments are passed left to right. </para>          </briefdescription>
+          <detaileddescription>
+<para>This arguments direction is unusual to C programming, it&apos;s used by pascal compilers and in some calling conventions by Borland compiler). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a64862f98b9f11b677af34db7afa00e19add07f6258aed03eb3410a873c9249d65" prot="public">
+          <name>kFuncDirRtl</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Arguments are passed right ro left. </para>          </briefdescription>
+          <detaileddescription>
+<para>This is default argument direction in C programming. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Function arguments direction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="119" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="119" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1ad18a523d981ce3a6ae55ede096b48367" prot="public" static="no">
+        <name>@23</name>
+        <enumvalue id="namespaceasmjit_1ad18a523d981ce3a6ae55ede096b48367a295e1ce221444776b820fde357dbf48a" prot="public">
+          <name>kFuncStackInvalid</name>
+          <initializer> -1</initializer>
+          <briefdescription>
+<para>Invalid stack offset in function or function parameter. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="135" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a211de2007e08e60b42b5acef7f9929a8" prot="public" static="no">
+        <name>kFuncArg</name>
+        <enumvalue id="namespaceasmjit_1a211de2007e08e60b42b5acef7f9929a8a0053d40679b5dd15796d7460d59c33f6" prot="public">
+          <name>kFuncArgCount</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+<para>Maxumum number of function arguments supported by AsmJit. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a211de2007e08e60b42b5acef7f9929a8a44e758c81603680c2da7ca9a36f525ac" prot="public">
+          <name>kFuncArgCountLoHi</name>
+          <initializer> kFuncArgCount * 2</initializer>
+          <briefdescription>
+<para>Extended maximum number of arguments (used internally). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a211de2007e08e60b42b5acef7f9929a8ab7aa45920871c3a2e2e98c65acf77b65" prot="public">
+          <name>kFuncArgLo</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Index to the LO part of function argument (default). </para>          </briefdescription>
+          <detaileddescription>
+<para>This value is typically omitted and added only if there is HI argument accessed. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1a211de2007e08e60b42b5acef7f9929a8afb350a837f8d975339e78a44a95dd068" prot="public">
+          <name>kFuncArgHi</name>
+          <initializer> kFuncArgCount</initializer>
+          <briefdescription>
+<para>Index to the HI part of function argument. </para>          </briefdescription>
+          <detaileddescription>
+<para>HI part of function argument depends on target architecture. On x86 it&apos;s typically used to transfer 64-bit integers (they form a pair of 32-bit integers). </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Function argument (lo/hi) specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="145" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="145" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1ae480e296c97262c1a04c8506d5d4a06c" prot="public" static="no">
+        <name>kFuncRet</name>
+        <enumvalue id="namespaceasmjit_1ae480e296c97262c1a04c8506d5d4a06ca1b21cc4d1a1733d7f65d3e6075e7db35" prot="public">
+          <name>kFuncRetLo</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Index to the LO part of function return value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceasmjit_1ae480e296c97262c1a04c8506d5d4a06ca37c33f182db70ffc6b2387c4fe37c973" prot="public">
+          <name>kFuncRetHi</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Index to the HI part of function return value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Function return value (lo/hi) specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="169" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="169" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga0e7868a21bae2d1653ab275d6020e4de" prot="public" static="no">
+        <name>kGlobals</name>
+        <enumvalue id="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea4439703abd648103096349a5066d87fa" prot="public">
+          <name>kInvalidValue</name>
+          <initializer> 0xFFFFFFFF</initializer>
+          <briefdescription>
+<para>Invalid value or operand id. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea3a3f6193c6ec722bcbb41009493e6bc8" prot="public">
+          <name>kInvalidReg</name>
+          <initializer> 0xFF</initializer>
+          <briefdescription>
+<para>Invalid register index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea2af85491aa499ddf71e1d5541f0f6990" prot="public">
+          <name>kBufferGrow</name>
+          <initializer> 32U</initializer>
+          <briefdescription>
+<para>Minimum reserved bytes in Buffer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea9ddef91955d2ced375c90287feda24a2" prot="public">
+          <name>kMemAllocMinimum</name>
+          <initializer> 4096</initializer>
+          <briefdescription>
+<para>Minimum size of assembler/compiler code buffer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4deaf57f10b0f67dc1de5f70188fc8b35dd6" prot="public">
+          <name>kMemAllocGrowMax</name>
+          <initializer> 8192 * 1024</initializer>
+          <briefdescription>
+<para>Memory grow threshold. </para>          </briefdescription>
+          <detaileddescription>
+<para>After the grow threshold is reached the capacity won&apos;t be doubled anymore. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" prot="public">
+          <name>kMemAllocOverhead</name>
+          <initializer> sizeof(intptr_t) * 4</initializer>
+          <briefdescription>
+<para>Host memory allocator overhead. </para>          </briefdescription>
+          <detaileddescription>
+<para>We decrement the overhead from our pools so the host operating system doesn&apos;t need allocate an extra virtual page to put the data it needs to manage the requested memory block (for example if a single virtual page is 4096 and we require the same memory size we decrease our requirement by kMemAllocOverhead). </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="28" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="28" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1ga2360fa86fd003572056ea5b790630e98" prot="public" static="no">
+        <name>kArch</name>
+        <enumvalue id="group__asmjit__base_1gga2360fa86fd003572056ea5b790630e98a6fa38f2eb4a35299c100501c9111540e" prot="public">
+          <name>kArchNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>No/Unknown architecture. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2360fa86fd003572056ea5b790630e98a96351e645e40ec7757426b780d3dc9cc" prot="public">
+          <name>kArchX86</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>X86 architecture. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2360fa86fd003572056ea5b790630e98ac570137deb519c20e131c51ed65d2426" prot="public">
+          <name>kArchX64</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>X64 architecture, also called AMD64. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1gga2360fa86fd003572056ea5b790630e98a7352aeb10a9e020bcb42538a9480598f" prot="public">
+          <name>kArchArm</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>Arm architecture. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Architecture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="62" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="62" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__logging_1ga007dd7cdb93192608722cc9df95c5fe9" prot="public" static="no">
+        <name>kLoggerOption</name>
+        <enumvalue id="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7ff6a6f61c2aef639a74af24aa2c709b" prot="public">
+          <name>kLoggerOptionBinaryForm</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Whether to output instructions also in binary form. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a58967348c588bdb6aeb63c2e3ee79f4f" prot="public">
+          <name>kLoggerOptionHexImmediate</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Whether to output immediates as hexadecimal numbers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7c0355bd9502c5dc8d3dbe072c5d4bc1" prot="public">
+          <name>kLoggerOptionHexDisplacement</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Whether to output displacements as hexadecimal numbers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a8083ae574b4db3b1d6f5e631cb6dbf1f" prot="public">
+          <name>kLoggerOptionCount</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Count of logger options. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Logger options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__logging_1ga318c386f2a58cf91b615e326ea09b824" prot="public" static="no">
+        <name>kLoggerStyle</name>
+        <enumvalue id="group__asmjit__logging_1gga318c386f2a58cf91b615e326ea09b824a201aad10946a87e9dcaf51b9e5222639" prot="public">
+          <name>kLoggerStyleDefault</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga318c386f2a58cf91b615e326ea09b824ac1751d51fe65cd575db982af9d2816f4" prot="public">
+          <name>kLoggerStyleDirective</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga318c386f2a58cf91b615e326ea09b824aa4720e11ba4f101ca1efc8b7f9f48c3b" prot="public">
+          <name>kLoggerStyleLabel</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga318c386f2a58cf91b615e326ea09b824a6f97b15b43ce9e89737d333c096fe271" prot="public">
+          <name>kLoggerStyleData</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga318c386f2a58cf91b615e326ea09b824a22d4aef3083f916be2b4043c5bcf4a32" prot="public">
+          <name>kLoggerStyleComment</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__logging_1gga318c386f2a58cf91b615e326ea09b824a63790bbffc8d99ad4df78b3fc5d69abd" prot="public">
+          <name>kLoggerStyleCount</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="48" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceasmjit_1a17de02ab7ae2292e0c7cef7bba88ca05" prot="public" static="no">
+        <name>@55</name>
+        <enumvalue id="namespaceasmjit_1a17de02ab7ae2292e0c7cef7bba88ca05add7e61bd7bbdf0caad06dd18d9186e37" prot="public">
+          <name>kBitsPerEntity</name>
+          <initializer> (sizeof(size_t) * 8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="58" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__AsmJit__MemoryManagement_1ga28da4e2b9dd838b9b24f27e58be0c9fa" prot="public" static="no">
+        <name>kVirtualAlloc</name>
+        <enumvalue id="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faafe9d48b799d531f551009a277ecc88ba" prot="public">
+          <name>kVirtualAllocFreeable</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Normal memory allocation, allocated memory can be free by calling asmjit::MemoryManager::free() method. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faa720d8f60dc080ab027d72e3a8aa70e04" prot="public">
+          <name>kVirtualAllocPermanent</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Allocate permanent memory that will be never freed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of virtual memory allocation, see <computeroutput><ref refid="structasmjit_1_1MemoryManager_1aaec761f463f2956d2722c2da1695215d" kindref="member">asmjit::MemoryManager::alloc()</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" line="27" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.h" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1gadc7ca6dbc5c94fc4ab122e3f0a8c1206" prot="public" static="no">
+        <name>kStringOp</name>
+        <enumvalue id="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" prot="public">
+          <name>kStringOpSet</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Replace the current string by a given content. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" prot="public">
+          <name>kStringOpAppend</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Append a given content to the current string. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>String operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__asmjit__base_1gad75838fc8ed01730f1edc507ddecbbef" prot="public" static="no">
+        <name>kStringFormat</name>
+        <enumvalue id="group__asmjit__base_1ggad75838fc8ed01730f1edc507ddecbbefa0012893d9e1a60d19308afe0f92de842" prot="public">
+          <name>kStringFormatShowSign</name>
+          <initializer> 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggad75838fc8ed01730f1edc507ddecbbefaa1036929762fb5a3f63dd5a7194428f0" prot="public">
+          <name>kStringFormatShowSpace</name>
+          <initializer> 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggad75838fc8ed01730f1edc507ddecbbefaa75a4c7317292730bc47796967d8ae96" prot="public">
+          <name>kStringFormatAlternate</name>
+          <initializer> 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__asmjit__base_1ggad75838fc8ed01730f1edc507ddecbbefa4f480ed8a61209b1ce8b64fbbf332a85" prot="public">
+          <name>kStringFormatSigned</name>
+          <initializer> 0x80000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>String format flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="43" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__asmjit__base_1ga39730f3011134c2aa11a5692aea2a4ae" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t asmjit::SignedPtr</definition>
+        <argsstring></argsstring>
+        <name>SignedPtr</name>
+        <briefdescription>
+<para>64-bit signed pointer, compatible with JIT and non-JIT generators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="236" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t asmjit::Ptr</definition>
+        <argsstring></argsstring>
+        <name>Ptr</name>
+        <briefdescription>
+<para>64-bit unsigned pointer, compatible with JIT and non-JIT generators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="239" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__asmjit__base_1gade1d7d51bda1acb8e049f1e78fd4ec30" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t asmjit::Error</definition>
+        <argsstring></argsstring>
+        <name>Error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="97" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceasmjit_1a729605e5b75ad0d9e326bbaad867b927" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char asmjit::noName[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>noName</name>
+        <initializer> { &apos;\0&apos; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" line="30" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__asmjit__base_1ga14a277e675d899ed66c38b6d834ead84" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref></type>
+        <definition>ASMJIT_API const Operand asmjit::noOperand</definition>
+        <argsstring></argsstring>
+        <name>noOperand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.cpp" line="22" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceasmjit_1afe6fa55bc543440b13d729b27e66d233" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* asmjit::errorMessages[]</definition>
+        <argsstring>[]</argsstring>
+        <name>errorMessages</name>
+        <initializer> {
+  &quot;Ok&quot;,
+
+  &quot;No heap memory&quot;,
+  &quot;No virtual memory&quot;,
+
+  &quot;Invalid argument&quot;,
+  &quot;Invalid state&quot;,
+
+  &quot;Unknown instruction&quot;,
+  &quot;Illegal instruction&quot;,
+  &quot;Illegal addressing&quot;,
+  &quot;Illegal short jump&quot;,
+
+  &quot;No function defined&quot;,
+  &quot;Incomplete function&quot;,
+  &quot;Overlapped arguments&quot;,
+  &quot;No registers&quot;,
+  &quot;Overlapped registers&quot;,
+  &quot;Incompatible argument&quot;,
+  &quot;Incompatible return&quot;,
+
+  &quot;Unknown error&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.cpp" line="60" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__asmjit__base_1ga1563f10d16ccc9599b314a4fcbe78dd6" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t asmjit::kInvalidIndex</definition>
+        <argsstring></argsstring>
+        <name>kInvalidIndex</name>
+        <initializer> ~static_cast&lt;size_t&gt;(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="26" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__asmjit__base_1ga54d3e86ab080cb27df3294c895c0edd8" prot="public" static="yes" mutable="no">
+        <type>const _Init</type>
+        <definition>const _Init asmjit::Init</definition>
+        <argsstring></argsstring>
+        <name>Init</name>
+        <initializer> {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="95" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__asmjit__base_1gac53a0622c30b5a478baca749f7da822c" prot="public" static="yes" mutable="no">
+        <type>const _NoInit</type>
+        <definition>const _NoInit asmjit::NoInit</definition>
+        <argsstring></argsstring>
+        <name>NoInit</name>
+        <initializer> {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="98" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceasmjit_1a5037f76bea428e1f317a948eb66afcc6" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char asmjit::StringBuilder_empty[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>StringBuilder_empty</name>
+        <initializer> { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.cpp" line="21" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceasmjit_1a63a8ef1f0ba618f6ba6ebed4a4906bc4" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char asmjit::StringBuilder_numbers[]</definition>
+        <argsstring>[]</argsstring>
+        <name>StringBuilder_numbers</name>
+        <initializer>&quot;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.cpp" line="208" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceasmjit_1afdcabf695698fdec927131cf972f2cc1" prot="public" static="yes" mutable="no">
+        <type>const Zone::Chunk</type>
+        <definition>const Zone::Chunk asmjit::Zone_zeroChunk</definition>
+        <argsstring></argsstring>
+        <name>Zone_zeroChunk</name>
+        <initializer> {
+  NULL, 0, 0, { 0 }
+}</initializer>
+        <briefdescription>
+<para>Zero width chunk used when <ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref> doesn&apos;t have any memory allocated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.cpp" line="26" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceasmjit_1ae87a134d4f5846aef90d477b565c36d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void asmjit::BaseCompiler_nodeRemoved</definition>
+        <argsstring>(BaseCompiler *self, BaseNode *node_)</argsstring>
+        <name>BaseCompiler_nodeRemoved</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" line="179" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.cpp" bodystart="179" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1aa581d00d73847b66c45baf355a9d43ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::BaseContext_getDefaultAlignment</definition>
+        <argsstring>(uint32_t size)</argsstring>
+        <name>BaseContext_getDefaultAlignment</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context.cpp" line="74" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="74" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="group__asmjit__base_1ga65a8413c6d6ca49e69246bb684ac60eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref></type>
+        <definition>static Imm asmjit::imm</definition>
+        <argsstring>(int64_t val)</argsstring>
+        <name>imm</name>
+        <param>
+          <type>int64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Create signed immediate value operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1075" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1075" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="group__asmjit__base_1ga4594b4672222fbd0152080800fe73779" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref></type>
+        <definition>static Imm asmjit::imm_u</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>imm_u</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Create unsigned immediate value operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1077" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1077" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="group__asmjit__base_1ga765b5df64ba936f3026390664085d518" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref></type>
+        <definition>static Imm asmjit::imm_ptr</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>imm_ptr</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Create void* pointer immediate value operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1079" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1079" bodyend="1079"/>
+      </memberdef>
+      <memberdef kind="function" id="group__asmjit__base_1ga14c6796911b413c3fe1ad198e186901f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>ASMJIT_API void asmjit::assertionFailed</definition>
+        <argsstring>(const char *exp, const char *file, int line)</argsstring>
+        <name>assertionFailed</name>
+        <param>
+          <type>const char *</type>
+          <declname>exp</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Called in debug build on assertion failure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression that failed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source file name where it happened. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line in the source file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+If you have problems with assertions put a breakpoint at <ref refid="group__asmjit__base_1ga14c6796911b413c3fe1ad198e186901f" kindref="member">assertionFailed()</ref> function (asmjit/base/assert.cpp) to see what happened. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.cpp" line="22" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1a6982de3ac538aa02df0ebe15021dfc16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void asmjit::_SetBits</definition>
+        <argsstring>(size_t *buf, size_t index, size_t len)</argsstring>
+        <name>_SetBits</name>
+        <param>
+          <type>size_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="60" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="60" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1ad6ce03efce94efd23082fa74fd1a6bc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::rbIsRed</definition>
+        <argsstring>(RbNode *node)</argsstring>
+        <name>rbIsRed</name>
+        <param>
+          <type>RbNode *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="115" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1ab481c9cfa770a5d2ed92084624ad6ce9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int asmjit::rbAssert</definition>
+        <argsstring>(RbNode *root)</argsstring>
+        <name>rbAssert</name>
+        <param>
+          <type>RbNode *</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="709" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="709" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1a09459dc513f7bc54e0609e104ba81663" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RbNode *</type>
+        <definition>static RbNode* asmjit::rbRotateSingle</definition>
+        <argsstring>(RbNode *root, int dir)</argsstring>
+        <name>rbRotateSingle</name>
+        <param>
+          <type>RbNode *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="736" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="736" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1a1e735e1a8967a0e91e7e16703f37beb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RbNode *</type>
+        <definition>static RbNode* asmjit::rbRotateDouble</definition>
+        <argsstring>(RbNode *root, int dir)</argsstring>
+        <name>rbRotateDouble</name>
+        <param>
+          <type>RbNode *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="748" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="748" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmjit_1a04442c5b12495447888b0e761070ac8f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VMemLocal &amp;</type>
+        <definition>static VMemLocal&amp; asmjit::vm</definition>
+        <argsstring>()</argsstring>
+        <name>vm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" line="111" bodyfile="/home/ryan/asmjit/src/asmjit/base/vmem.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main AsmJit library namespace. </para>    </briefdescription>
+    <detaileddescription>
+<para>There are not other namespaces used in AsmJit library. </para>    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/asmjit.h" line="306"/>
+  </compounddef>
+</doxygen>

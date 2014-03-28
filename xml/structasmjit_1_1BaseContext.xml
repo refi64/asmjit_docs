@@ -1,0 +1,1136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseContext" kind="struct" prot="public">
+    <compoundname>asmjit::BaseContext</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1X86X64Context" prot="public" virt="non-virtual">asmjit::x86x64::X86X64Context</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a41ba15d3e3898e8f99bfab511b55761a" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+        <definition>BaseCompiler* asmjit::BaseContext::_compiler</definition>
+        <argsstring></argsstring>
+        <name>_compiler</name>
+        <briefdescription>
+<para>Compiler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="209" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1ace08b242a3f402fa76842e0404341078" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1FuncNode" kindref="compound">FuncNode</ref> *</type>
+        <definition>FuncNode* asmjit::BaseContext::_func</definition>
+        <argsstring></argsstring>
+        <name>_func</name>
+        <briefdescription>
+<para>Function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="211" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a12cf37243b9f84894f6b86c5e8a854db" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref></type>
+        <definition>Zone asmjit::BaseContext::_zoneAllocator</definition>
+        <argsstring></argsstring>
+        <name>_zoneAllocator</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref> allocator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="214" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a15739724efcc09b0846640a66546ece8" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::_start</definition>
+        <argsstring></argsstring>
+        <name>_start</name>
+        <briefdescription>
+<para>Start of the current active scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="217" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a7bab52c07b9e91143014c40e68aaf295" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::_end</definition>
+        <argsstring></argsstring>
+        <name>_end</name>
+        <briefdescription>
+<para>End of the current active scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="219" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1aa19e83103f4aff0c9f95846c9e1b9518" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::_extraBlock</definition>
+        <argsstring></argsstring>
+        <name>_extraBlock</name>
+        <briefdescription>
+<para>Node that is used to insert extra code after the function body. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="222" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1ad48c886085eb9fac8aed2fade6a1780c" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::_stop</definition>
+        <argsstring></argsstring>
+        <name>_stop</name>
+        <briefdescription>
+<para>Stop node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="224" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a0d7db74d4edbf0a90e3c2db67efdb22d" prot="public" static="no" mutable="no">
+        <type>PodList&lt; <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> * &gt;</type>
+        <definition>PodList&lt;BaseNode*&gt; asmjit::BaseContext::_unreachableList</definition>
+        <argsstring></argsstring>
+        <name>_unreachableList</name>
+        <briefdescription>
+<para>Unreachable nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="227" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a2d5ed15d254cd8f329258180935fa932" prot="public" static="no" mutable="no">
+        <type>PodList&lt; <ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> * &gt;</type>
+        <definition>PodList&lt;BaseNode*&gt; asmjit::BaseContext::_jccList</definition>
+        <argsstring></argsstring>
+        <name>_jccList</name>
+        <briefdescription>
+<para>Jump nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="229" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a298a006e03dee1e75b7f72af76143a42" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> * &gt;</type>
+        <definition>PodVector&lt;VarData*&gt; asmjit::BaseContext::_contextVd</definition>
+        <argsstring></argsstring>
+        <name>_contextVd</name>
+        <briefdescription>
+<para>All variables used by the current function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="232" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a6b2dcc4593f04bbf31baff09c634d5f2" prot="public" static="no" mutable="no">
+        <type>MemCell *</type>
+        <definition>MemCell* asmjit::BaseContext::_memVarCells</definition>
+        <argsstring></argsstring>
+        <name>_memVarCells</name>
+        <briefdescription>
+<para>Memory used to spill variables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="235" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a2c748437ec58b3e9e1ff74a20edc8377" prot="public" static="no" mutable="no">
+        <type>MemCell *</type>
+        <definition>MemCell* asmjit::BaseContext::_memStackCells</definition>
+        <argsstring></argsstring>
+        <name>_memStackCells</name>
+        <briefdescription>
+<para>Memory used to alloc memory on the stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="237" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1ad1aeb79e640736831572010f8cdef99e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem1ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem1ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 1-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="240" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a2524b06542434f798290b7c3eaeb1606" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem2ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem2ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 2-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="242" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a31049557f4e7cc848b348cc639b8649f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem4ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem4ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 4-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="244" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1ad8cce9c2afc8c00b602788c961ee8d79" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem8ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem8ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 8-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="246" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1ab07e44756339896cb55049bdfd5909e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem16ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem16ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 16-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="248" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a68802bb86596a7386f3389677b142f4c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem32ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem32ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 32-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="250" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a517dc2c4ffb121f9757be74c8ff316a5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_mem64ByteVarsUsed</definition>
+        <argsstring></argsstring>
+        <name>_mem64ByteVarsUsed</name>
+        <briefdescription>
+<para>Count of 64-byte cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="252" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a0798cec9f8a04d750a4f0f972c8d7e8f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_memStackCellsUsed</definition>
+        <argsstring></argsstring>
+        <name>_memStackCellsUsed</name>
+        <briefdescription>
+<para>Count of stack memory cells. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="254" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a2d2496929e169262e36ee872d160b799" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_memMaxAlign</definition>
+        <argsstring></argsstring>
+        <name>_memMaxAlign</name>
+        <briefdescription>
+<para>Maximum memory alignment used by the function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="257" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1adbd0f2883547274a08ee412532efc0e8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_memVarTotal</definition>
+        <argsstring></argsstring>
+        <name>_memVarTotal</name>
+        <briefdescription>
+<para>Count of bytes used by variables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="259" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a714572488603ed9c19bd727d4037bd92" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_memStackTotal</definition>
+        <argsstring></argsstring>
+        <name>_memStackTotal</name>
+        <briefdescription>
+<para>Count of bytes used by stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="261" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a504373a0270454cb78da4ee13a8479a5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_memAllTotal</definition>
+        <argsstring></argsstring>
+        <name>_memAllTotal</name>
+        <briefdescription>
+<para>Count of bytes used by variables and stack after alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="263" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a2657ef6c11a16bf32c8eacc3bd931c7f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseContext::_annotationLength</definition>
+        <argsstring></argsstring>
+        <name>_annotationLength</name>
+        <briefdescription>
+<para>Default lenght of annotated instruction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="266" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseContext_1a1d8008ee71ecf58d2d70c5adca8bd92f" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+        <definition>BaseVarState* asmjit::BaseContext::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+<para>Current state (used by register allocator). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="269" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ab0b71a410fcace7048786f42d0942b7d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseContext::BaseContext</definition>
+        <argsstring>(const BaseContext &amp;other)</argsstring>
+        <name>BaseContext</name>
+        <param>
+          <type>const BaseContext &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1abf45d8cf4460e8747708938eb89a6ef9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BaseContext &amp;</type>
+        <definition>BaseContext&amp; asmjit::BaseContext::operator=</definition>
+        <argsstring>(const BaseContext &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const BaseContext &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ad41b70bc7925ca41d4f27ad1753fb0e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseContext::BaseContext</definition>
+        <argsstring>(BaseCompiler *compiler)</argsstring>
+        <name>BaseContext</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>compiler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a28770fa6cf590180335fd6e284f1d3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>asmjit::BaseContext::~BaseContext</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="32" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a1b845d73475c3f277e8fe7303ef5ed8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseContext::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset the whole context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="39" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="36" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a99fcbcede76a978c7a66f5a2c4dde234" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+        <definition>BaseCompiler* asmjit::BaseContext::getCompiler</definition>
+        <argsstring>() const </argsstring>
+        <name>getCompiler</name>
+        <briefdescription>
+<para>Get compiler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="46" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1aa05c539b1315099ebaf2bfd38064cac7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1FuncNode" kindref="compound">FuncNode</ref> *</type>
+        <definition>FuncNode* asmjit::BaseContext::getFunc</definition>
+        <argsstring>() const </argsstring>
+        <name>getFunc</name>
+        <briefdescription>
+<para>Get function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="49" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a8ec31e560f79ef8a8dad3fc6bba536c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::getStop</definition>
+        <argsstring>() const </argsstring>
+        <name>getStop</name>
+        <briefdescription>
+<para>Get stop node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="51" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a99dd227452f5b23d4ba47b8bb6e33ef2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::getStart</definition>
+        <argsstring>() const </argsstring>
+        <name>getStart</name>
+        <briefdescription>
+<para>Get start of the current scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="54" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a810049f093138f14db05bd943e38d0c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::getEnd</definition>
+        <argsstring>() const </argsstring>
+        <name>getEnd</name>
+        <briefdescription>
+<para>Get end of the current scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="56" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a015f6265d3f70ad3d9a36166ca6b66d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+        <definition>BaseNode* asmjit::BaseContext::getExtraBlock</definition>
+        <argsstring>() const </argsstring>
+        <name>getExtraBlock</name>
+        <briefdescription>
+<para>Get extra block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="59" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1acbb7d9f8670248858414b2a42ee245f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseContext::setExtraBlock</definition>
+        <argsstring>(BaseNode *node)</argsstring>
+        <name>setExtraBlock</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Set extra block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="61" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a217e0e6ce2e9fe023c6dab8f5d807169" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseContext::getError</definition>
+        <argsstring>() const </argsstring>
+        <name>getError</name>
+        <briefdescription>
+<para>Get the last error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="68" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ac42a5f2e86d0f4414af7bb4fc412d58b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseContext::setError</definition>
+        <argsstring>(Error error, const char *message=NULL)</argsstring>
+        <name>setError</name>
+        <param>
+          <type>Error</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Set the last error code and propagate it through the error handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="73" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a336a05e19bba17d54a5a7d7004b993da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+        <definition>BaseVarState* asmjit::BaseContext::getState</definition>
+        <argsstring>() const </argsstring>
+        <name>getState</name>
+        <briefdescription>
+<para>Get current state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="82" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ac0aa6b43d6040018ca67540d9b5d54ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void asmjit::BaseContext::loadState</definition>
+        <argsstring>(BaseVarState *src)=0</argsstring>
+        <name>loadState</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Load current state from <emphasis>target</emphasis> state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a90cd92f2d9090f27035b6486dc47344d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+        <definition>virtual BaseVarState* asmjit::BaseContext::saveState</definition>
+        <argsstring>()=0</argsstring>
+        <name>saveState</name>
+        <briefdescription>
+<para>Save current state, returning new <ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a6ffbcd6e34d9a4e14981e04c19e240a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void asmjit::BaseContext::switchState</definition>
+        <argsstring>(BaseVarState *src)=0</argsstring>
+        <name>switchState</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Change the current state to <emphasis>target</emphasis> state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a8cf232ab76b03476a5384d1e63cdd7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void asmjit::BaseContext::intersectStates</definition>
+        <argsstring>(BaseVarState *a, BaseVarState *b)=0</argsstring>
+        <name>intersectStates</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseVarState" kindref="compound">BaseVarState</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Change the current state to the intersection of two states <emphasis>a</emphasis> and <emphasis>b</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a48ad6f3afe5664b62cfe4c61c88429c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseContext::_registerContextVar</definition>
+        <argsstring>(VarData *vd)</argsstring>
+        <name>_registerContextVar</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="100" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="100" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1af89db5992659f57583dbff7e17c7263a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemCell *</type>
+        <definition>MemCell * asmjit::BaseContext::_newVarCell</definition>
+        <argsstring>(VarData *vd)</argsstring>
+        <name>_newVarCell</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="115" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="91" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ad21353accd6aa68952fa9c77dab7e353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemCell *</type>
+        <definition>MemCell * asmjit::BaseContext::_newStackCell</definition>
+        <argsstring>(uint32_t size, uint32_t alignment)</argsstring>
+        <name>_newStackCell</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="116" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="138" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a9d5df914cd1068b4c22d0980baf53945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MemCell *</type>
+        <definition>MemCell* asmjit::BaseContext::getVarCell</definition>
+        <argsstring>(VarData *vd)</argsstring>
+        <name>getVarCell</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="118" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a120e0bd917f0c8b220fd48fad431e772" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseContext::resolveCellOffsets</definition>
+        <argsstring>()</argsstring>
+        <name>resolveCellOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="184" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1af8075bc8bd5dddf269695e5f8db58f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+        <definition>VarBits* asmjit::BaseContext::newBits</definition>
+        <argsstring>(uint32_t len)</argsstring>
+        <name>newBits</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="129" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a882f143456eb7be56bf6dad7fb30d1a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+        <definition>VarBits* asmjit::BaseContext::copyBits</definition>
+        <argsstring>(const VarBits *src, uint32_t len)</argsstring>
+        <name>copyBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="134" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a37f1ffb1e93b36e28fb26f6e587883ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseContext::fetch</definition>
+        <argsstring>()=0</argsstring>
+        <name>fetch</name>
+        <briefdescription>
+<para>Fetch. </para>        </briefdescription>
+        <detaileddescription>
+<para>Fetch iterates over all nodes and gathers information about all variables used. The process generates information required by register allocator, variable liveness analysis and translator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ae38278ff0114aeb6c15ac4f2f3cf4875" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseContext::removeUnreachableCode</definition>
+        <argsstring>()</argsstring>
+        <name>removeUnreachableCode</name>
+        <briefdescription>
+<para>Remove unreachable code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="155" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="267" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1ae80e89be8713c73263eb38753af8494d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseContext::analyze</definition>
+        <argsstring>()=0</argsstring>
+        <name>analyze</name>
+        <briefdescription>
+<para>Preform variable liveness analysis. </para>        </briefdescription>
+        <detaileddescription>
+<para>Analysis phase iterates over nodes in reverse order and generates a bit array describing variables that are alive at every node in the function. When the analysis start all variables are assumed dead. When a read or read/write operations of a variable is detected the variable becomes alive; when only write operation is detected the variable becomes dead.</para><para>When a label is found all jumps to that label are followed and analysis repeats until all variables are resolved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a6eea518c8492b7e1d78f33d3e347a079" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseContext::annotate</definition>
+        <argsstring>()=0</argsstring>
+        <name>annotate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a84535bf3a8d5d4be0b44213881e122da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseContext::translate</definition>
+        <argsstring>()=0</argsstring>
+        <name>translate</name>
+        <briefdescription>
+<para>Translate code by allocating registers and handling state changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a9ba17dbb2546e30c63459c2f11e18949" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseContext::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="190" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="302" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a73c4a0eb4a1dcd77b61c126112404dae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseContext::compile</definition>
+        <argsstring>(FuncNode *func)</argsstring>
+        <name>compile</name>
+        <param>
+          <type><ref refid="structasmjit_1_1FuncNode" kindref="compound">FuncNode</ref> *</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="196" bodyfile="/home/ryan/asmjit/src/asmjit/base/context.cpp" bodystart="320" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseContext_1a2c94462cf67ea8523f86520699e829df" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseContext::serialize</definition>
+        <argsstring>(BaseAssembler *assembler, BaseNode *start, BaseNode *stop)=0</argsstring>
+        <name>serialize</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> *</type>
+          <declname>assembler</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseNode" kindref="compound">BaseNode</ref> *</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="656">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="649">
+        <label>asmjit::Zone</label>
+        <link refid="structasmjit_1_1Zone"/>
+      </node>
+      <node id="657">
+        <label>asmjit::BaseRuntime</label>
+        <link refid="structasmjit_1_1BaseRuntime"/>
+      </node>
+      <node id="655">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+        <childnode refid="656" relation="usage">
+          <edgelabel>_logger</edgelabel>
+        </childnode>
+        <childnode refid="649" relation="usage">
+          <edgelabel>_zoneAllocator</edgelabel>
+        </childnode>
+        <childnode refid="657" relation="usage">
+          <edgelabel>_runtime</edgelabel>
+        </childnode>
+      </node>
+      <node id="650">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="651">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="650" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="652" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="651" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="653" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="654">
+        <label>asmjit::BaseCompiler</label>
+        <link refid="structasmjit_1_1BaseCompiler"/>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+        <childnode refid="648" relation="usage">
+          <edgelabel>_vars</edgelabel>
+        </childnode>
+        <childnode refid="658" relation="usage">
+          <edgelabel>_targets</edgelabel>
+        </childnode>
+        <childnode refid="649" relation="usage">
+          <edgelabel>_varAllocator</edgelabel>
+          <edgelabel>_stringAllocator</edgelabel>
+        </childnode>
+        <childnode refid="651" relation="usage">
+          <edgelabel>_lastNode</edgelabel>
+          <edgelabel>_cursor</edgelabel>
+          <edgelabel>_firstNode</edgelabel>
+        </childnode>
+        <childnode refid="659" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="661">
+        <label>asmjit::JumpNode</label>
+        <link refid="structasmjit_1_1JumpNode"/>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="661" relation="usage">
+          <edgelabel>_jumpNext</edgelabel>
+        </childnode>
+        <childnode refid="660" relation="usage">
+          <edgelabel>_target</edgelabel>
+        </childnode>
+      </node>
+      <node id="659">
+        <label>asmjit::FuncNode</label>
+        <link refid="structasmjit_1_1FuncNode"/>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="660" relation="usage">
+          <edgelabel>_exitNode</edgelabel>
+          <edgelabel>_entryNode</edgelabel>
+        </childnode>
+        <childnode refid="664" relation="usage">
+          <edgelabel>_end</edgelabel>
+        </childnode>
+        <childnode refid="665" relation="usage">
+          <edgelabel>_decl</edgelabel>
+        </childnode>
+        <childnode refid="667" relation="usage">
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="664">
+        <label>asmjit::EndNode</label>
+        <link refid="structasmjit_1_1EndNode"/>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="652">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="666">
+        <label>asmjit::FuncInOut</label>
+        <link refid="structasmjit_1_1FuncInOut"/>
+      </node>
+      <node id="663">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="667">
+        <label>asmjit::VarData</label>
+        <link refid="structasmjit_1_1VarData"/>
+      </node>
+      <node id="662">
+        <label>asmjit::InstNode</label>
+        <link refid="structasmjit_1_1InstNode"/>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="663" relation="usage">
+          <edgelabel>_opList</edgelabel>
+        </childnode>
+      </node>
+      <node id="658">
+        <label>asmjit::PodVector&lt; TargetNode * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="665">
+        <label>asmjit::FuncDecl</label>
+        <link refid="structasmjit_1_1FuncDecl"/>
+        <childnode refid="666" relation="usage">
+          <edgelabel>_retList</edgelabel>
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="648">
+        <label>asmjit::PodVector&lt; VarData * &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="653">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="660">
+        <label>asmjit::TargetNode</label>
+        <link refid="structasmjit_1_1TargetNode"/>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="661" relation="usage">
+          <edgelabel>_from</edgelabel>
+        </childnode>
+      </node>
+      <node id="647">
+        <label>asmjit::BaseContext</label>
+        <childnode refid="648" relation="usage">
+          <edgelabel>_contextVd</edgelabel>
+        </childnode>
+        <childnode refid="649" relation="usage">
+          <edgelabel>_zoneAllocator</edgelabel>
+        </childnode>
+        <childnode refid="650" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="651" relation="usage">
+          <edgelabel>_start</edgelabel>
+          <edgelabel>_extraBlock</edgelabel>
+          <edgelabel>_stop</edgelabel>
+          <edgelabel>_end</edgelabel>
+        </childnode>
+        <childnode refid="654" relation="usage">
+          <edgelabel>_compiler</edgelabel>
+        </childnode>
+        <childnode refid="659" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h" line="24" bodyfile="/home/ryan/asmjit/src/asmjit/base/context_p.h" bodystart="24" bodyend="270"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseContext_1a2657ef6c11a16bf32c8eacc3bd931c7f" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_annotationLength</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a41ba15d3e3898e8f99bfab511b55761a" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_compiler</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a298a006e03dee1e75b7f72af76143a42" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_contextVd</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a7bab52c07b9e91143014c40e68aaf295" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_end</name></member>
+      <member refid="structasmjit_1_1BaseContext_1aa19e83103f4aff0c9f95846c9e1b9518" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_extraBlock</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ace08b242a3f402fa76842e0404341078" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_func</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a2d5ed15d254cd8f329258180935fa932" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_jccList</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ab07e44756339896cb55049bdfd5909e6" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem16ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ad1aeb79e640736831572010f8cdef99e" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem1ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a2524b06542434f798290b7c3eaeb1606" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem2ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a68802bb86596a7386f3389677b142f4c" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem32ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a31049557f4e7cc848b348cc639b8649f" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem4ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a517dc2c4ffb121f9757be74c8ff316a5" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem64ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ad8cce9c2afc8c00b602788c961ee8d79" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_mem8ByteVarsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a504373a0270454cb78da4ee13a8479a5" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memAllTotal</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a2d2496929e169262e36ee872d160b799" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memMaxAlign</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a2c748437ec58b3e9e1ff74a20edc8377" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memStackCells</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a0798cec9f8a04d750a4f0f972c8d7e8f" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memStackCellsUsed</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a714572488603ed9c19bd727d4037bd92" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memStackTotal</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a6b2dcc4593f04bbf31baff09c634d5f2" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memVarCells</name></member>
+      <member refid="structasmjit_1_1BaseContext_1adbd0f2883547274a08ee412532efc0e8" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_memVarTotal</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ad21353accd6aa68952fa9c77dab7e353" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_newStackCell</name></member>
+      <member refid="structasmjit_1_1BaseContext_1af89db5992659f57583dbff7e17c7263a" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_newVarCell</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a48ad6f3afe5664b62cfe4c61c88429c4" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_registerContextVar</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a15739724efcc09b0846640a66546ece8" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_start</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a1d8008ee71ecf58d2d70c5adca8bd92f" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ad48c886085eb9fac8aed2fade6a1780c" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_stop</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a0d7db74d4edbf0a90e3c2db67efdb22d" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_unreachableList</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a12cf37243b9f84894f6b86c5e8a854db" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>_zoneAllocator</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ae80e89be8713c73263eb38753af8494d" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>analyze</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a6eea518c8492b7e1d78f33d3e347a079" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>annotate</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ab0b71a410fcace7048786f42d0942b7d" prot="private" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>BaseContext</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ad41b70bc7925ca41d4f27ad1753fb0e9" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>BaseContext</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a9ba17dbb2546e30c63459c2f11e18949" prot="public" virt="virtual"><scope>asmjit::BaseContext</scope><name>cleanup</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a73c4a0eb4a1dcd77b61c126112404dae" prot="public" virt="virtual"><scope>asmjit::BaseContext</scope><name>compile</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a882f143456eb7be56bf6dad7fb30d1a9" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>copyBits</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a37f1ffb1e93b36e28fb26f6e587883ad" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>fetch</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a99fcbcede76a978c7a66f5a2c4dde234" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getCompiler</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a810049f093138f14db05bd943e38d0c7" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getEnd</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a217e0e6ce2e9fe023c6dab8f5d807169" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getError</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a015f6265d3f70ad3d9a36166ca6b66d9" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getExtraBlock</name></member>
+      <member refid="structasmjit_1_1BaseContext_1aa05c539b1315099ebaf2bfd38064cac7" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getFunc</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a99dd227452f5b23d4ba47b8bb6e33ef2" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getStart</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a336a05e19bba17d54a5a7d7004b993da" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a8ec31e560f79ef8a8dad3fc6bba536c6" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getStop</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a9d5df914cd1068b4c22d0980baf53945" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>getVarCell</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a8cf232ab76b03476a5384d1e63cdd7a6" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>intersectStates</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ac0aa6b43d6040018ca67540d9b5d54ae" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>loadState</name></member>
+      <member refid="structasmjit_1_1BaseContext_1af8075bc8bd5dddf269695e5f8db58f62" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>newBits</name></member>
+      <member refid="structasmjit_1_1BaseContext_1abf45d8cf4460e8747708938eb89a6ef9" prot="private" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ae38278ff0114aeb6c15ac4f2f3cf4875" prot="public" virt="virtual"><scope>asmjit::BaseContext</scope><name>removeUnreachableCode</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a1b845d73475c3f277e8fe7303ef5ed8a" prot="public" virt="virtual"><scope>asmjit::BaseContext</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a120e0bd917f0c8b220fd48fad431e772" prot="public" virt="virtual"><scope>asmjit::BaseContext</scope><name>resolveCellOffsets</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a90cd92f2d9090f27035b6486dc47344d" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>saveState</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a2c94462cf67ea8523f86520699e829df" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>serialize</name></member>
+      <member refid="structasmjit_1_1BaseContext_1ac42a5f2e86d0f4414af7bb4fc412d58b" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>setError</name></member>
+      <member refid="structasmjit_1_1BaseContext_1acbb7d9f8670248858414b2a42ee245f1" prot="public" virt="non-virtual"><scope>asmjit::BaseContext</scope><name>setExtraBlock</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a6ffbcd6e34d9a4e14981e04c19e240a7" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>switchState</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a84535bf3a8d5d4be0b44213881e122da" prot="public" virt="pure-virtual"><scope>asmjit::BaseContext</scope><name>translate</name></member>
+      <member refid="structasmjit_1_1BaseContext_1a28770fa6cf590180335fd6e284f1d3b4" prot="public" virt="virtual"><scope>asmjit::BaseContext</scope><name>~BaseContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

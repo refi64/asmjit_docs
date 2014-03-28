@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structCpuFeature" kind="struct" prot="public">
+    <compoundname>CpuFeature</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCpuFeature_1a59f5dc3b800f9de372bb75fcc15b4f25" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CpuFeature::feature</definition>
+        <argsstring></argsstring>
+        <name>feature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testcpu.cpp" line="18" bodyfile="/home/ryan/asmjit/src/app/test/testcpu.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCpuFeature_1a27f2c23dc880c122f91969c7431af17a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* CpuFeature::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testcpu.cpp" line="19" bodyfile="/home/ryan/asmjit/src/app/test/testcpu.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testcpu.cpp" line="17" bodyfile="/home/ryan/asmjit/src/app/test/testcpu.cpp" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structCpuFeature_1a27f2c23dc880c122f91969c7431af17a" prot="public" virt="non-virtual"><scope>CpuFeature</scope><name>description</name></member>
+      <member refid="structCpuFeature_1a59f5dc3b800f9de372bb75fcc15b4f25" prot="public" virt="non-virtual"><scope>CpuFeature</scope><name>feature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

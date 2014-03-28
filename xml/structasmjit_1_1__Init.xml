@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1__Init" kind="struct" prot="public">
+    <compoundname>asmjit::_Init</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="94" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="94" bodyend="94"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

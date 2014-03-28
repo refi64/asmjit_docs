@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::FpVar &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::GpReg" href="x86x64__GpReg.html" />
+    <link rel="prev" title="x86x64::FpReg" href="x86x64__FpReg.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__GpReg.html" title="x86x64::GpReg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__FpReg.html" title="x86x64::FpReg"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-fpvar">
+<h1>x86x64::FpVar<a class="headerlink" href="#x86x64-fpvar" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1FpVar">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::FpVar</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Fpu variable. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1a922d7f9e00cf114c272b489f32851465"></span><div class="line-block">
+<div class="line"> <strong>FpVar</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new uninitialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em><span class="pre">FpVar</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1a44bb7088c06115f6a3429bfb909d7659"></span><div class="line-block">
+<div class="line"> <strong>FpVar</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1ae45c862e53974f791a86947bbd6bc490"></span><div class="line-block">
+<div class="line"> <strong>FpVar</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new uninitialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em><span class="pre">FpVar</span></em></a></tt> instance (internal). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1a605bd49d981bf4c1803879b523122364"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1a5ed997e3505070a201dd2942794b3305"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1af7b86545782554b39b154c01b9427ae6"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1a3c94ceef6e0292780a91995986e24787"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1FpVar_1afd244d6cd6df0ce003f591cc5a0a1bb6"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1FpVar"><em>FpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__FpReg.html"
+                        title="previous chapter">x86x64::FpReg</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__GpReg.html"
+                        title="next chapter">x86x64::GpReg</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__FpVar.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__GpReg.html" title="x86x64::GpReg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__FpReg.html" title="x86x64::FpReg"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

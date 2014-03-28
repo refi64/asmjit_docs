@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1FuncBuilderX" kind="struct" prot="public">
+    <compoundname>asmjit::FuncBuilderX</compoundname>
+    <basecompoundref refid="structasmjit_1_1FuncPrototype" prot="public" virt="non-virtual">asmjit::FuncPrototype</basecompoundref>
+    <includes local="no">func.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1FuncBuilderX_1af3c2f2b2bbf6196d1bfb004697e68d13" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::FuncBuilderX::_builderArgList[kFuncArgCount]</definition>
+        <argsstring>[kFuncArgCount]</argsstring>
+        <name>_builderArgList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="521" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1a2db683a368ab314b1e645e413406a859" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::FuncBuilderX::FuncBuilderX</definition>
+        <argsstring>()</argsstring>
+        <name>FuncBuilderX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="479" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="479" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1a056f141d82365c6631821685bbde6165" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::FuncBuilderX::setRet</definition>
+        <argsstring>(uint32_t retType)</argsstring>
+        <name>setRet</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>retType</declname>
+        </param>
+        <briefdescription>
+<para>Set return type to <emphasis>retType</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="488" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="488" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1aba758a03ad052985aa341e73bd8e0070" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::FuncBuilderX::setArg</definition>
+        <argsstring>(uint32_t id, uint32_t type)</argsstring>
+        <name>setArg</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="492" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="492" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1ad6b3f5381b8dcde92a11e2c2da06eb3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::FuncBuilderX::addArg</definition>
+        <argsstring>(uint32_t type)</argsstring>
+        <name>addArg</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="497" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="497" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1ab420a46de720628b7a1e1440ff3e5c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void asmjit::FuncBuilderX::setRetT</definition>
+        <argsstring>()</argsstring>
+        <name>setRetT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="503" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="503" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1a6aa986017b5a9d4a999ee8ce13d83671" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void asmjit::FuncBuilderX::setArgT</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>setArgT</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="508" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="508" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilderX_1a0bd30048ff4001b744efa919d8b6671f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void asmjit::FuncBuilderX::addArgT</definition>
+        <argsstring>()</argsstring>
+        <name>addArgT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="513" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="513" bodyend="515"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Custom function builder for up to 32 function arguments. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="845">
+        <label>asmjit::FuncBuilderX</label>
+        <link refid="structasmjit_1_1FuncBuilderX"/>
+        <childnode refid="846" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="846">
+        <label>asmjit::FuncPrototype</label>
+        <link refid="structasmjit_1_1FuncPrototype"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="847">
+        <label>asmjit::FuncBuilderX</label>
+        <link refid="structasmjit_1_1FuncBuilderX"/>
+        <childnode refid="848" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="848">
+        <label>asmjit::FuncPrototype</label>
+        <link refid="structasmjit_1_1FuncPrototype"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="474" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="474" bodyend="522"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1FuncPrototype_1a0b69ec8b062ba6f9b00ec9de0baa5bfe" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>_argCount</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a58cdf7ee3948a89b16bc54ff10552b9c" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>_argList</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1af3c2f2b2bbf6196d1bfb004697e68d13" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>_builderArgList</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a1fce032ceddb9d8d0c6b14a9a3659ba5" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>_ret</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a970c68dc2e9d9ec9894ac18b7bbad1a9" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>_setPrototype</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1ad6b3f5381b8dcde92a11e2c2da06eb3a" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>addArg</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1a0bd30048ff4001b744efa919d8b6671f" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>addArgT</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1a2db683a368ab314b1e645e413406a859" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>FuncBuilderX</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1ac880d4445b8e998a8dcdc0b73e89b92b" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a3328fdcb298d5621df63d2f57cf260b3" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>getArgCount</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a41324c51070165430611b06866da5874" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>getArgList</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a1cf309bc7e0b14e3d418a76053d72fbf" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>getRet</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1aba758a03ad052985aa341e73bd8e0070" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>setArg</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1a6aa986017b5a9d4a999ee8ce13d83671" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>setArgT</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1a056f141d82365c6631821685bbde6165" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>setRet</name></member>
+      <member refid="structasmjit_1_1FuncBuilderX_1ab420a46de720628b7a1e1440ff3e5c65" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilderX</scope><name>setRetT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

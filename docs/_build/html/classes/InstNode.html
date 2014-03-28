@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>InstNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="JumpNode" href="JumpNode.html" />
+    <link rel="prev" title="Imm" href="Imm.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="JumpNode.html" title="JumpNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Imm.html" title="Imm"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="instnode">
+<h1>InstNode<a class="headerlink" href="#instnode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1InstNode">
+<div class="line"><em>struct</em> <strong>asmjit::InstNode</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Instruction node. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a17c42845dfd3b3699b94206b3b372594"></span><div class="line-block">
+<div class="line"> <strong>InstNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler, uint32_t code, uint32_t options, <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  * opList, uint32_t opCount)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="#asmjitstructasmjit_1_1InstNode"><em>InstNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1ab943371d43280a2f04dcd0a9564ed06d"></span><div class="line-block">
+<div class="line"> <strong>~InstNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1InstNode"><em>InstNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a0c771b4d33c7b8bc7b603f8b7a154a49"></span><div class="line-block">
+<div class="line">uint32_t <strong>getCode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get instruction code, see <tt class="docutils literal"><span class="pre">kInstCode</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a81554a3081a0c787227f368d2d23c8d6"></span><div class="line-block">
+<div class="line">void <strong>setCode</strong>(uint32_t code)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set instruction code to <em>code</em>. </p>
+<p>Please do not modify instruction code if you are not know what you are doing. Incorrect instruction code or operands can raise assertion() at runtime. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a5569fbf893e35849bc8e2b2ac9893f30"></span><div class="line-block">
+<div class="line">bool <strong>isTaken</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Whether the instruction is an unconditional jump or whether the instruction is a conditional jump which is likely to be taken. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a1e9b1c55fe1ebcb58aba707fcde3284d"></span><div class="line-block">
+<div class="line">uint32_t <strong>getOptions</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get emit options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1abfb96d9d1842f1e5db2a27cc8530ab74"></span><div class="line-block">
+<div class="line">void <strong>setOptions</strong>(uint32_t options)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set emit options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a11393e7039b8da4ddfdac9c99086fc64"></span><div class="line-block">
+<div class="line">void <strong>addOptions</strong>(uint32_t options)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add emit options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a0006d10ddccf18de643e649ce935ab64"></span><div class="line-block">
+<div class="line">void <strong>andOptions</strong>(uint32_t options)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Mask emit options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1ae436d06f23cf022742d434f428e320ae"></span><div class="line-block">
+<div class="line">void <strong>delOptions</strong>(uint32_t options)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear emit options. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a34d18efd555ba7388d7fcf704de5e82f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  * <strong>getOpList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get operands list. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1aa690f44922280e922cdd8d6aebabcece"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  * <strong>getOpList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1ab6374ed907b0e2a9a5f5f48596d5a7a9"></span><div class="line-block">
+<div class="line">uint32_t <strong>getOpCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get operands count. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1aca05e95ecf9492620ab5bf18c667f5d9"></span><div class="line-block">
+<div class="line">bool <strong>hasMemOp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction contains a memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a1b1abb3ae90d7e53859c46789251c1f8"></span><div class="line-block">
+<div class="line">void <strong>setMemOpIndex</strong>(uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand index (in opList), 0xFF means that instruction doesn&#8217;t have a memory operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a19aebade792af45fcbc2457d568fa475"></span><div class="line-block">
+<div class="line">void <strong>resetMemOpIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset memory operand index, setting it to 0xFF. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a1582342f696c8b5d88fca7e94dc95ef2"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  * <strong>getMemOp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Can only be called if the instruction has such operand, see <a class="reference internal" href="#asmjitstructasmjit_1_1InstNode_1aca05e95ecf9492620ab5bf18c667f5d9"><em>hasMemOp()</em></a>. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1afa491360aa95939d5bcc64134f1c826d"></span><div class="line-block">
+<div class="line">template &lt; typename T &gt;</div>
+<div class="line">T * <strong>getMemOp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a3505b02271cab05ee95422e3bc56d250"></span><div class="line-block">
+<div class="line">void <strong>_updateMemOp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a7d37df684be006c503760e4a154af5f8"></span>uint16_t <strong>_code</strong></p>
+<blockquote>
+<div><p>Instruction code, see <tt class="docutils literal"><span class="pre">kInstCode</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a3ace70dff4b022dfacd57f0f59bc700d"></span>uint8_t <strong>_options</strong></p>
+<blockquote>
+<div><p>Instruction options, see <tt class="docutils literal"><span class="pre">kInstOptions</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a73b8823f6d7ca041246f7096fdd1ed2b"></span>uint8_t <strong>_memOpIndex</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a25278f5e52637cf59a983de4d22a1b60"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  * <strong>_opList</strong></p>
+<blockquote>
+<div><p>Operands list. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a33b74d5c44c2785a2c7e2e23c173c26c"></span><div class="line-block">
+<div class="line"> <strong>InstNode</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1InstNode"><em>InstNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1InstNode_1a36430041a8e47364c89d2f66216a6216"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1InstNode"><em>InstNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1InstNode"><em>InstNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Imm.html"
+                        title="previous chapter">Imm</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="JumpNode.html"
+                        title="next chapter">JumpNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/InstNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="JumpNode.html" title="JumpNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Imm.html" title="Imm"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

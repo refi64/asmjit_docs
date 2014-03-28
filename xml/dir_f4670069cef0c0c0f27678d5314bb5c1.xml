@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_f4670069cef0c0c0f27678d5314bb5c1" kind="dir">
+    <compoundname>/home/ryan/asmjit/src/asmjit/</compoundname>
+    <innerdir refid="dir_bd786f5ed991c3cbbc7359e3dd623755">/home/ryan/asmjit/src/asmjit/base/</innerdir>
+    <innerdir refid="dir_d62ef9468a33653a041e44802de9ba01">/home/ryan/asmjit/src/asmjit/contrib/</innerdir>
+    <innerdir refid="dir_fc5e0645c1bed61ce1880e0e3dad4fa9">/home/ryan/asmjit/src/asmjit/x86/</innerdir>
+    <innerfile refid="asmjit_8h">asmjit.h</innerfile>
+    <innerfile refid="base_8h">base.h</innerfile>
+    <innerfile refid="build_8h">build.h</innerfile>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="contrib_8h">contrib.h</innerfile>
+    <innerfile refid="host_8h">host.h</innerfile>
+    <innerfile refid="x86_8h">x86.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/"/>
+  </compounddef>
+</doxygen>

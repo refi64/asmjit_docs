@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseVar" kind="struct" prot="public">
+    <compoundname>asmjit::BaseVar</compoundname>
+    <basecompoundref refid="structasmjit_1_1Operand" prot="public" virt="non-virtual">asmjit::Operand</basecompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1X86Var" prot="public" virt="non-virtual">asmjit::x86x64::X86Var</derivedcompoundref>
+    <includes local="no">defs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1ad20756fa19f557ac9a748fe4aab590e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseVar::BaseVar</definition>
+        <argsstring>()</argsstring>
+        <name>BaseVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="787" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="787" bodyend="790"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1aa46a6afbbf3e80aa90577b8bfca2bd3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseVar::BaseVar</definition>
+        <argsstring>(const BaseVar &amp;other)</argsstring>
+        <name>BaseVar</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="792" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="792" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1a7d077df2bdb60f7d85c8b3d3a66dc1e6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseVar::BaseVar</definition>
+        <argsstring>(const _NoInit &amp;)</argsstring>
+        <name>BaseVar</name>
+        <param>
+          <type>const _NoInit &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="794" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="794" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1a9725d5f41503045af505964068c70e75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref></type>
+        <definition>BaseVar asmjit::BaseVar::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structasmjit_1_1Operand_1a985b4db41884dae41b27d2d880c7e86f">clone</reimplements>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86Var_1a5189d025ab5e430a5ce14a5fd83e5ea2">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1GpVar_1af1a9305bcc1a185714202b88d3aa9922">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1FpVar_1a605bd49d981bf4c1803879b523122364">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1MmVar_1a54dc259be066e672ed7a75d3b5228692">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1XmmVar_1acd72a1cf0dcd0d57ad535aa50fb642eb">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1YmmVar_1accb025eee94027b078a53900237d246c">clone</reimplementedby>
+        <briefdescription>
+<para>Clone <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="801" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="801" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1a5f468c0cd45f79a3aa1b5c924968b29e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseVar::getVarType</definition>
+        <argsstring>() const </argsstring>
+        <name>getVarType</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86Var_1a9629099839b985b95a87a81a55837d4c">getVarType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="805" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="805" bodyend="807"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1a4955e02a837f8dcddf173caaf983e5ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+        <definition>BaseVar&amp; asmjit::BaseVar::operator=</definition>
+        <argsstring>(const BaseVar &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="813" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="813" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1a55a3bbd1dd8ed211ac529716894f943a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseVar::operator==</definition>
+        <argsstring>(const BaseVar &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="815" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="815" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseVar_1a03123be2a880cc9fc19e1be8533e1878" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseVar::operator!=</definition>
+        <argsstring>(const BaseVar &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="816" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="816" bodyend="816"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all variables. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="717">
+        <label>asmjit::x86x64::XmmVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1XmmVar"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="712">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="711">
+        <label>asmjit::BaseVar</label>
+        <link refid="structasmjit_1_1BaseVar"/>
+        <childnode refid="712" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>asmjit::x86x64::X86Var</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86Var"/>
+        <childnode refid="711" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>asmjit::x86x64::GpVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1GpVar"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>asmjit::x86x64::FpVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1FpVar"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>asmjit::x86x64::MmVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1MmVar"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="718">
+        <label>asmjit::x86x64::YmmVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1YmmVar"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="720">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="719">
+        <label>asmjit::BaseVar</label>
+        <link refid="structasmjit_1_1BaseVar"/>
+        <childnode refid="720" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="782" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="782" bodyend="817"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1ab65e9aa7a15edd48cba687f03cb7347c" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_base</name></member>
+      <member refid="structasmjit_1_1Operand_1ac155d3e43ef0cf0ea24e98b1fe906d36" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_copy</name></member>
+      <member refid="structasmjit_1_1Operand_1a307e2e7b752000b12da59dad23e0ca90" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_imm</name></member>
+      <member refid="structasmjit_1_1Operand_1a52353c7164e54d235314b175a9b05a6c" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_init</name></member>
+      <member refid="structasmjit_1_1Operand_1a2d8b4647e75a71e854ad939e1cb4c2ed" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_init_packed_d0_d1</name></member>
+      <member refid="structasmjit_1_1Operand_1a8cee9df3008f5956e37f876cc9026f45" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_init_packed_d2_d3</name></member>
+      <member refid="structasmjit_1_1Operand_1a289c6ab4602acf459e248d3f3f724b8a" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_init_packed_op_sz_b0_b1_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a7b9c87fee92df184dea2c10fb30ea467" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_init_packed_op_sz_w0_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a706538f838a8416a7e8e7cc4fa6f1db8" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_label</name></member>
+      <member refid="structasmjit_1_1Operand_1a1e918a093397232131e706fd436c1085" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1Operand_1aae280895b95e1b083799a43306dd7e15" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_vmem</name></member>
+      <member refid="structasmjit_1_1Operand_1a24f921b98561dea1f19faad624b9a147" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>_vreg</name></member>
+      <member refid="structasmjit_1_1BaseVar_1ad20756fa19f557ac9a748fe4aab590e6" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>BaseVar</name></member>
+      <member refid="structasmjit_1_1BaseVar_1aa46a6afbbf3e80aa90577b8bfca2bd3b" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>BaseVar</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a7d077df2bdb60f7d85c8b3d3a66dc1e6" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>BaseVar</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a9725d5f41503045af505964068c70e75" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>clone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae043c994eaddfe587c1d248812b3d16c" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a9871ba5815361a896771418b9d443935" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a005389a2368b711612feda323d63766f" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>getId</name></member>
+      <member refid="structasmjit_1_1Operand_1a2ea181bfeeae6d5467f7343dfddcb57c" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>getOp</name></member>
+      <member refid="structasmjit_1_1Operand_1ae5bb07ef28e2c29ebf9b762ea8f36b7e" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a5f468c0cd45f79a3aa1b5c924968b29e" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>getVarType</name></member>
+      <member refid="structasmjit_1_1Operand_1ab85a3b5c7354a38ca52e78fea1739759" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isImm</name></member>
+      <member refid="structasmjit_1_1Operand_1a2a77f09fc4951c9e58fccd18a6eaf1b3" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isLabel</name></member>
+      <member refid="structasmjit_1_1Operand_1afb9863bc270de49d257dce8593e79cb4" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad09b5fd91f3d8c754980f98a2019be7b" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isNone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae0ce4d16beb59e0934942cba222054af" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isReg</name></member>
+      <member refid="structasmjit_1_1Operand_1a1cd13703d63d231c97cf76c020e2b605" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isRegCode</name></member>
+      <member refid="structasmjit_1_1Operand_1aea0d545eea3526cfb1ae0adb8871de78" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isRegOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1a5dd129c65aac0057afdd4f844785437a" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isRegType</name></member>
+      <member refid="structasmjit_1_1Operand_1a809703f677ab89fb8d619ad717c59a02" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isVar</name></member>
+      <member refid="structasmjit_1_1Operand_1ae65f6fcaacdf3a299256f909fcda5576" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>isVarOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad67efdbe93039d4ae3f77f84fcae6331" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a55218d0096d0f0352484ecd0b7e3ef53" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a50c0bde3edb955a4001a20a7d01bbf96" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a03123be2a880cc9fc19e1be8533e1878" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a4955e02a837f8dcddf173caaf983e5ae" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a55a3bbd1dd8ed211ac529716894f943a" prot="public" virt="non-virtual"><scope>asmjit::BaseVar</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

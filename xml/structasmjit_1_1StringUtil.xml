@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1StringUtil" kind="struct" prot="public">
+    <compoundname>asmjit::StringUtil</compoundname>
+    <includes local="no">string.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structasmjit_1_1StringUtil_1a127e52c12e18e22f396108b5680bf21c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t asmjit::StringUtil::nlen</definition>
+        <argsstring>(const char *s, size_t maxlen)</argsstring>
+        <name>nlen</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>maxlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="56" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="56" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>String utilities. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="55" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="55" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1StringUtil_1a127e52c12e18e22f396108b5680bf21c" prot="public" virt="non-virtual"><scope>asmjit::StringUtil</scope><name>nlen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

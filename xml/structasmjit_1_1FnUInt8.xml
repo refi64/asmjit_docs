@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1FnUInt8" kind="struct" prot="public">
+    <compoundname>asmjit::FnUInt8</compoundname>
+    <includes local="no">func.h</includes>
+    <briefdescription>
+<para>Function builder &apos;uint8_t&apos; type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="201" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="201" bodyend="201"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

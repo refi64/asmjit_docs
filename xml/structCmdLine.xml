@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structCmdLine" kind="struct" prot="public">
+    <compoundname>CmdLine</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCmdLine_1ae46b1669350a9df2a3b6bf6aaf68fe0a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CmdLine::_argc</definition>
+        <argsstring></argsstring>
+        <name>_argc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2484" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCmdLine_1a0cc289d79c2fdfb78a9acdc35bf9139d" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** CmdLine::_argv</definition>
+        <argsstring></argsstring>
+        <name>_argv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2485" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2485" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCmdLine_1ad7e3ae4d286f27b904957a20bcdb8279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ASMJIT_INLINE</type>
+        <definition>ASMJIT_INLINE CmdLine::CmdLine</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>CmdLine</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2470" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2468" bodyend="2470"/>
+      </memberdef>
+      <memberdef kind="function" id="structCmdLine_1a01e84673ecd89e2d79968231a3adf523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CmdLine::hasArg</definition>
+        <argsstring>(const char *arg)</argsstring>
+        <name>hasArg</name>
+        <param>
+          <type>const char *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2472" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2472" bodyend="2478"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="2467" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="2467" bodyend="2486"/>
+    <listofallmembers>
+      <member refid="structCmdLine_1ae46b1669350a9df2a3b6bf6aaf68fe0a" prot="public" virt="non-virtual"><scope>CmdLine</scope><name>_argc</name></member>
+      <member refid="structCmdLine_1a0cc289d79c2fdfb78a9acdc35bf9139d" prot="public" virt="non-virtual"><scope>CmdLine</scope><name>_argv</name></member>
+      <member refid="structCmdLine_1ad7e3ae4d286f27b904957a20bcdb8279" prot="public" virt="non-virtual"><scope>CmdLine</scope><name>CmdLine</name></member>
+      <member refid="structCmdLine_1a01e84673ecd89e2d79968231a3adf523" prot="public" virt="non-virtual"><scope>CmdLine</scope><name>hasArg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

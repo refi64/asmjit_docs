@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1RetNode" kind="struct" prot="public">
+    <compoundname>asmjit::RetNode</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseNode" prot="public" virt="non-virtual">asmjit::BaseNode</basecompoundref>
+    <includes local="no">compiler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1RetNode_1aa992d46847eca49d8c0c83c86ebabef2" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref></type>
+        <definition>Operand asmjit::RetNode::_ret[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_ret</name>
+        <briefdescription>
+<para>Ret operand(s). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1508" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1508" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a1ce3ea9ff8447a0709cbd8950b462b8b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::RetNode::RetNode</definition>
+        <argsstring>(const RetNode &amp;other)</argsstring>
+        <name>RetNode</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1473"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a8f0c046c9a78c7942b71a7f0f32168cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref> &amp;</type>
+        <definition>RetNode&amp; asmjit::RetNode::operator=</definition>
+        <argsstring>(const RetNode &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1473"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a7cc91c7def95bb01990274fb0d3500f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::RetNode::RetNode</definition>
+        <argsstring>(BaseCompiler *compiler, const Operand &amp;o0, const Operand &amp;o1)</argsstring>
+        <name>RetNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>compiler</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1480" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1480" bodyend="1484"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a7e6dfbdd4938415cefc757e1fcccc6ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::RetNode::~RetNode</definition>
+        <argsstring>()</argsstring>
+        <name>~RetNode</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1RetNode" kindref="compound">RetNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1487" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1487" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a4878e3e222bd0614159588b25a90e562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+        <definition>Operand&amp; asmjit::RetNode::getFirst</definition>
+        <argsstring>()</argsstring>
+        <name>getFirst</name>
+        <briefdescription>
+<para>Get the first return operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1494" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1494" bodyend="1494"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1ad5aa0e1365a98797d4dbed3716d79da9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+        <definition>const Operand&amp; asmjit::RetNode::getFirst</definition>
+        <argsstring>() const </argsstring>
+        <name>getFirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1496" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1496" bodyend="1496"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a6d8c558eeace6c7392a8613dd56abf1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+        <definition>Operand&amp; asmjit::RetNode::getSecond</definition>
+        <argsstring>()</argsstring>
+        <name>getSecond</name>
+        <briefdescription>
+<para>Get the second return operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1499" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1499" bodyend="1499"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1RetNode_1a4af0f5d57ba55c92a4f36a9e78712659" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+        <definition>const Operand&amp; asmjit::RetNode::getSecond</definition>
+        <argsstring>() const </argsstring>
+        <name>getSecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1501" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1501" bodyend="1501"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function return node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1007">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+      </node>
+      <node id="1006">
+        <label>asmjit::RetNode</label>
+        <link refid="structasmjit_1_1RetNode"/>
+        <childnode refid="1007" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1010">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="1009">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="1010" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="1011" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="1009" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="1012" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="1011">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="1013">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="1012">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="1008">
+        <label>asmjit::RetNode</label>
+        <link refid="structasmjit_1_1RetNode"/>
+        <childnode refid="1009" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1013" relation="usage">
+          <edgelabel>_ret</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="1472" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="1472" bodyend="1509"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseNode_1aa1270ef124c6809ca7fd3388fc7cb01e" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_comment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3990c435857ff94bbd74935638a84ac0" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aae00a71a49da71c80fce40654dfedf81" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_flowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0cefc47a244741a68c66ebd64217973c" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_liveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af79d69cd8ec0c96295bef01b73f6f3cd" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f640dcb57f9c977efcd066cfa34bbd4" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_opCount</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ae46a8e6aca8fe70226eeb6386d06ff60" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_prev</name></member>
+      <member refid="structasmjit_1_1RetNode_1aa992d46847eca49d8c0c83c86ebabef2" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_ret</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a6006b732dec81463a1508cfad8cb018b" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a41bc5e21cfb77d1a69f6eba49b944b8b" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_type</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7f38e1bbbd868cc74fce0a7d01d5cbf" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>_varInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba3954cf5ced25ede2fcc471b2fd6390" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>addFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a63c80a6e716812a701c6bec2e2be5007" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>BaseNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a7078ba8794a49cf97942d1bef1a043d6" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>delFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a52eb758170158aba2b06378313e5748d" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getComment</name></member>
+      <member refid="structasmjit_1_1RetNode_1a4878e3e222bd0614159588b25a90e562" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getFirst</name></member>
+      <member refid="structasmjit_1_1RetNode_1ad5aa0e1365a98797d4dbed3716d79da9" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getFirst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a8f41870fbc15450690d92a977e7dea83" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7e1afde9f9b4282247e4b8867d80895" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a601eb54343857a5be1d054876888acc8" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3db24572d64989296c96d4049d0545b8" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getNext</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa28ded7ba5b0741ae57e021c411399a2" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getPrev</name></member>
+      <member refid="structasmjit_1_1RetNode_1a6d8c558eeace6c7392a8613dd56abf1a" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getSecond</name></member>
+      <member refid="structasmjit_1_1RetNode_1a4af0f5d57ba55c92a4f36a9e78712659" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getSecond</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3381bd2fc97d49d392fe7a4ad92cb890" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4b059f3ff2598f406c654833aee1fcbc" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1adca7163f7abc9f6d6a5ac011254a48e4" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getType</name></member>
+      <member refid="structasmjit_1_1BaseNode_1acae8b89a5f312913e64c83caebdc52d2" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a324f00ff430ae18518368f9ef66398e0" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0a4159dd16b9c208acaaeea6daa164d8" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>hasFlag</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4efc44156485164602dc216614995fc5" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>hasLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a73cb9aaabf953b031116981688a8411f" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>hasVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a9e6bd7baceb3622c23ff751152bc44d3" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isFetched</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ac27332d4205dc1effe008e6a168a1435" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a88d7b4ef3d5f1c1ac7c1621678d1c063" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af1afe72717997793b3a7e2d987329e41" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isJmp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a27455b36f9a081b3d6b43ad3707fc180" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isJmpOrJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a511b4075627e8bb484d6e7ad20c1fae0" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba6d60c76d4dcb82b4521b0d0a0c33c2" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isSpecial</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aafb1c845517d89dd84a7140b9a4b9886" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>isTranslated</name></member>
+      <member refid="structasmjit_1_1RetNode_1a8f0c046c9a78c7942b71a7f0f32168cf" prot="private" virt="non-virtual"><scope>asmjit::RetNode</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1RetNode_1a1ce3ea9ff8447a0709cbd8950b462b8b" prot="private" virt="non-virtual"><scope>asmjit::RetNode</scope><name>RetNode</name></member>
+      <member refid="structasmjit_1_1RetNode_1a7cc91c7def95bb01990274fb0d3500f1" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>RetNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ad6f66454cabfc61f1d29fb6ecb6bf18f" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>setComment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a97cb2b2d64b539c1c4c4811344139e42" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>setFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a47ecc2ce0220e63fbc69aca57b4a728f" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>setFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3c55bbb4f84d3ee94123e65e3f212a46" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>setLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a841540382e62b6f80f699259ee59587b" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>setState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f1542bdcd6503fe2ee5a0e847f55215" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>setVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab8d1dfe217c72d01c253687b8c31f64c" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>~BaseNode</name></member>
+      <member refid="structasmjit_1_1RetNode_1a7e6dfbdd4938415cefc757e1fcccc6ea" prot="public" virt="non-virtual"><scope>asmjit::RetNode</scope><name>~RetNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

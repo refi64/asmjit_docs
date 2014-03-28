@@ -1,0 +1,1378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseAssembler" kind="struct" prot="public">
+    <compoundname>asmjit::BaseAssembler</compoundname>
+    <basecompoundref refid="structasmjit_1_1CodeGen" prot="public" virt="non-virtual">asmjit::CodeGen</basecompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1X86X64Assembler" prot="public" virt="non-virtual">asmjit::x86x64::X86X64Assembler</derivedcompoundref>
+    <includes local="no">assembler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::BaseAssembler::_buffer</definition>
+        <argsstring></argsstring>
+        <name>_buffer</name>
+        <briefdescription>
+<para>Buffer where the code is emitted (either live or temporary). </para>        </briefdescription>
+        <detaileddescription>
+<para>This is actually the base pointer of the buffer, to get the current position (cursor) look at the <computeroutput>_cursor</computeroutput> member. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="437" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1afa99ede2f1e862ef77cbe5e8e34fafd4" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::BaseAssembler::_end</definition>
+        <argsstring></argsstring>
+        <name>_end</name>
+        <briefdescription>
+<para>The end of the buffer (points to the first invalid byte). </para>        </briefdescription>
+        <detaileddescription>
+<para>The end of the buffer is calculated as <computeroutput>_buffer + size</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="441" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1ad9d44d8890ff85a6d2a8a4703c4294c5" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::BaseAssembler::_cursor</definition>
+        <argsstring></argsstring>
+        <name>_cursor</name>
+        <briefdescription>
+<para>The current position in code <computeroutput>_buffer</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="443" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1abf44fdf0fdc0436b8fc7aa2b5bbbff7a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseAssembler::_trampolineSize</definition>
+        <argsstring></argsstring>
+        <name>_trampolineSize</name>
+        <briefdescription>
+<para>Size of possible trampolines. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="446" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1a7e1d16799822fbe74887cbe830046af5" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* asmjit::BaseAssembler::_comment</definition>
+        <argsstring></argsstring>
+        <name>_comment</name>
+        <briefdescription>
+<para>Inline comment that will be logged by the next instruction and set to NULL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="450" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1acd0096db6e6bcef8bb582bbe716db1f3" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1LabelLink" kindref="compound">LabelLink</ref> *</type>
+        <definition>LabelLink* asmjit::BaseAssembler::_unusedLinks</definition>
+        <argsstring></argsstring>
+        <name>_unusedLinks</name>
+        <briefdescription>
+<para>Linked list of unused links (<computeroutput>LabelLink*</computeroutput> structures) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="452" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; <ref refid="structasmjit_1_1LabelData" kindref="compound">LabelData</ref> &gt;</type>
+        <definition>PodVector&lt;LabelData&gt; asmjit::BaseAssembler::_labels</definition>
+        <argsstring></argsstring>
+        <name>_labels</name>
+        <briefdescription>
+<para>Labels data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="455" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseAssembler_1affeabe44cabed328b9dcc6a0096e97d5" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; <ref refid="structasmjit_1_1RelocData" kindref="compound">RelocData</ref> &gt;</type>
+        <definition>PodVector&lt;RelocData&gt; asmjit::BaseAssembler::_relocData</definition>
+        <argsstring></argsstring>
+        <name>_relocData</name>
+        <briefdescription>
+<para>Relocations data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="457" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ab48bc207dd5dbdae299da48042e3e1ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseAssembler::BaseAssembler</definition>
+        <argsstring>(const BaseAssembler &amp;other)</argsstring>
+        <name>BaseAssembler</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a5110cc416b4bf86641d16c0d277f1118" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> &amp;</type>
+        <definition>BaseAssembler&amp; asmjit::BaseAssembler::operator=</definition>
+        <argsstring>(const BaseAssembler &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a17bd49b8739839e750bcafd840329471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseAssembler::BaseAssembler</definition>
+        <argsstring>(BaseRuntime *runtime)</argsstring>
+        <name>BaseAssembler</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> *</type>
+          <declname>runtime</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="102" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a04edcae62e921dd125c9c67d4d042d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseAssembler::~BaseAssembler</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseAssembler</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="104" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseAssembler::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear everything, but not deallocate buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="111" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseAssembler::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset everything (means also to free all buffers). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="113" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="49" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseAssembler::_purge</definition>
+        <argsstring>()</argsstring>
+        <name>_purge</name>
+        <reimplements refid="structasmjit_1_1CodeGen_1a9729e7a624ee41d357c69a0e1866483b">_purge</reimplements>
+        <briefdescription>
+<para>Called by <ref refid="structasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b" kindref="member">clear()</ref> and <ref refid="structasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99" kindref="member">reset()</ref> to clear all data related to derived class implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="116" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a014dad0a0895bc1180cc8dea1bdcbac9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::getCapacity</definition>
+        <argsstring>() const </argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+<para>Get capacity of the code buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1abdaca957b0afeb3188d4f67a4f4bab8c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::getRemainingSpace</definition>
+        <argsstring>() const </argsstring>
+        <name>getRemainingSpace</name>
+        <briefdescription>
+<para>Get the number of remaining bytes (space between cursor and the end of the buffer). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="129" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1afd7f176edcad814fa49cf1b8f73cff50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::BaseAssembler::getBuffer</definition>
+        <argsstring>() const </argsstring>
+        <name>getBuffer</name>
+        <briefdescription>
+<para>Get buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="134" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a70fc306a275e245593310256eda49e9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::BaseAssembler::getEnd</definition>
+        <argsstring>() const </argsstring>
+        <name>getEnd</name>
+        <briefdescription>
+<para>Get the end of the buffer (points to the first byte that is outside). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="139" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a68d96442996aead68a55393b6fa21703" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::BaseAssembler::getCursor</definition>
+        <argsstring>() const </argsstring>
+        <name>getCursor</name>
+        <briefdescription>
+<para>Get the current position in the buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="144" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1abad761abd9733070f7fc6085082ebdeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setCursor</definition>
+        <argsstring>(uint8_t *cursor)</argsstring>
+        <name>setCursor</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+<para>Set the current position in the buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="149" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::getOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>getOffset</name>
+        <briefdescription>
+<para>Get the current offset in the buffer (<computeroutput>_cursor - _buffer</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="155" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1accf0e32f66a2a9f6ad01c0a037c84950" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::setOffset</definition>
+        <argsstring>(size_t offset)</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Set the current offset in the buffer to <emphasis>offset</emphasis> and get the previous offset value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="161" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="161" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a927cad7e8b3831394b39c870a4c04ad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::_grow</definition>
+        <argsstring>(size_t n)</argsstring>
+        <name>_grow</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Grow the internal buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internal buffer will grow at least by <emphasis>n</emphasis> bytes so <emphasis>n</emphasis> bytes can be added to it. If <emphasis>n</emphasis> is zero or <computeroutput><ref refid="structasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3" kindref="member">getOffset()</ref> + n</computeroutput> is not greater than the current capacity of the buffer this function won&apos;t do anything. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="175" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="85" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a5c0f2e4a9e73a9738b8703ad5b0f67b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::_reserve</definition>
+        <argsstring>(size_t n)</argsstring>
+        <name>_reserve</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Reserve the internal buffer to at least <emphasis>n</emphasis> bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="178" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="120" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a7a36a0a0a374d2bd504d4f2b76eaac3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::BaseAssembler::getByteAt</definition>
+        <argsstring>(size_t pos) const </argsstring>
+        <name>getByteAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Set byte at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="181" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aa7d786dfbbf2e2ccc88b9185014d7101" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::BaseAssembler::getWordAt</definition>
+        <argsstring>(size_t pos) const </argsstring>
+        <name>getWordAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Set word at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="187" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ac424a1e029f09a6557914970cdebbad7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseAssembler::getDWordAt</definition>
+        <argsstring>(size_t pos) const </argsstring>
+        <name>getDWordAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Set dword at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="193" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a02181697b851e272e0d50f7171580614" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t asmjit::BaseAssembler::getQWordAt</definition>
+        <argsstring>(size_t pos) const </argsstring>
+        <name>getQWordAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Set qword at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="199" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a353f3e0228cb6c544ecd0a05e07cc077" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::BaseAssembler::getInt32At</definition>
+        <argsstring>(size_t pos) const </argsstring>
+        <name>getInt32At</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Set int32_t at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="205" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1adcd890caadc41802d19ef1e430136f94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseAssembler::getUInt32At</definition>
+        <argsstring>(size_t pos) const </argsstring>
+        <name>getUInt32At</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Set uint32_t at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="211" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a519af6a96788ff18e0f07739f8ff2f82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setByteAt</definition>
+        <argsstring>(size_t pos, uint8_t x)</argsstring>
+        <name>setByteAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set byte at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="217" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a87539f4f474e101ae2bbc7e7b814ef48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setWordAt</definition>
+        <argsstring>(size_t pos, uint16_t x)</argsstring>
+        <name>setWordAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set word at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="223" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ac582f476927910ba8f35d1a2a3be4d9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setDWordAt</definition>
+        <argsstring>(size_t pos, uint32_t x)</argsstring>
+        <name>setDWordAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set dword at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="229" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ac21727fcd69969a4995c05841c7a1375" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setQWordAt</definition>
+        <argsstring>(size_t pos, uint64_t x)</argsstring>
+        <name>setQWordAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set qword at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="235" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aa4f6f950c09dfe97306c4370279093cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setInt32At</definition>
+        <argsstring>(size_t pos, int32_t x)</argsstring>
+        <name>setInt32At</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set int32_t at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="241" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a07c171719b88c0e4a9afd7dd0b1bcad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::setUInt32At</definition>
+        <argsstring>(size_t pos, uint32_t x)</argsstring>
+        <name>setUInt32At</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set uint32_t at position <emphasis>pos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="247" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1acea24f6a20a4abb52af3d0cdfb2b3d9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::getCodeSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getCodeSize</name>
+        <briefdescription>
+<para>Get current offset in buffer (same as <computeroutput><ref refid="structasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3" kindref="member">getOffset()</ref> + getTramplineSize()</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="257" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="257" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aa3140d2eaa3c02f1bb2759b0ec85c2e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::getTrampolineSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getTrampolineSize</name>
+        <briefdescription>
+<para>Get size of all possible trampolines needed to successfuly generate relative jumps to absolute addresses. This value is only non-zero if jmp of call instructions were used with immediate operand (this means jumping or calling an absolute address directly). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="269" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a1f798b95035873c7395546c6f21e764f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::getLabelsCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getLabelsCount</name>
+        <briefdescription>
+<para>Get count of labels created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="278" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a2e915489f3e3d70912ec69aebc405479" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseAssembler::isLabelCreated</definition>
+        <argsstring>(const Label &amp;label) const </argsstring>
+        <name>isLabelCreated</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Get whether <emphasis>label</emphasis> is created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="283" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="283" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1abcf7f78c1326311f391f61250aebe0a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1LabelData" kindref="compound">LabelData</ref> *</type>
+        <definition>LabelData* asmjit::BaseAssembler::getLabelData</definition>
+        <argsstring>(const Label &amp;label) const </argsstring>
+        <name>getLabelData</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="290" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a865046fd5f6e6ec4fc587cef604210f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1LabelData" kindref="compound">LabelData</ref> *</type>
+        <definition>LabelData* asmjit::BaseAssembler::getLabelDataById</definition>
+        <argsstring>(uint32_t id) const </argsstring>
+        <name>getLabelDataById</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="297" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="297" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a0ef5f74f771ca1b86cf71f7b767cb095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::_registerIndexedLabels</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>_registerIndexedLabels</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="307" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="147" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a7cadbee55a9420a3a0e46244a2aabc0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::_newLabel</definition>
+        <argsstring>(Label *dst)</argsstring>
+        <name>_newLabel</name>
+        <param>
+          <type><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="312" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="166" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a8d3c75f208cdbf8e531cf42adb744ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API <ref refid="structasmjit_1_1LabelLink" kindref="compound">LabelLink</ref> *</type>
+        <definition>LabelLink * asmjit::BaseAssembler::_newLabelLink</definition>
+        <argsstring>()</argsstring>
+        <name>_newLabelLink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="317" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="184" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ac4ff0a9995f59f13d62c015acae7ac89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref></type>
+        <definition>Label asmjit::BaseAssembler::newLabel</definition>
+        <argsstring>()</argsstring>
+        <name>newLabel</name>
+        <briefdescription>
+<para>Create and return new label. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="320" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ad3a5c64efbaa7dca4166a45630f304f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void asmjit::BaseAssembler::_bind</definition>
+        <argsstring>(const Label &amp;label)=0</argsstring>
+        <name>_bind</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Assembler_1a03342dd0dfa785b87d02d150842ab240">_bind</reimplementedby>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Bind label to the current offset (virtual). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="327"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aa84ba41d616921d8ca7f3087023afce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseAssembler::bind</definition>
+        <argsstring>(const Label &amp;label)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Bind label to the current offset (virtual). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> can be bound only once! </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="332" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="332" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a2bfa219dec130116f562581fce67c05b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::embed</definition>
+        <argsstring>(const void *data, uint32_t size)</argsstring>
+        <name>embed</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Embed data into the code buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="341" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="208" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a7834000ab163eeb416824504c728655e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseAssembler::align</definition>
+        <argsstring>(uint32_t m)</argsstring>
+        <name>align</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Align target buffer to <emphasis>m</emphasis> bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Typical usage of this is to align labels at start of the inner loops.</para><para>Inserts <computeroutput>nop()</computeroutput> instructions or CPU optimized NOPs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="352" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="352" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aceb100955bcb01645a1975369cd8ab3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseAssembler::_align</definition>
+        <argsstring>(uint32_t m)=0</argsstring>
+        <name>_align</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Assembler_1aad93ad4c447740fac276ff4d44dc7b17">_align</reimplementedby>
+        <param>
+          <type>uint32_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Align target buffer to <emphasis>m</emphasis> bytes (virtual). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="357"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::relocCode</definition>
+        <argsstring>(void *dst) const </argsstring>
+        <name>relocCode</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Simplifed version of <computeroutput><ref refid="structasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95" kindref="member">relocCode()</ref></computeroutput> method designed for JIT. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="366" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a24f2b63ad71b926c53b267e56582c0fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::BaseAssembler::relocCode</definition>
+        <argsstring>(void *dst, Ptr base) const </argsstring>
+        <name>relocCode</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="group__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186" kindref="member">Ptr</ref></type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+<para>Relocate code to a given address <emphasis>dst</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the relocated code should me stored. The pointer can be address returned by virtual memory allocator or your own address if you want only to store the code for later reuse (or load, etc...). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addressBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base address used for relocation. When using JIT code generation, this will be the same as <emphasis>dst</emphasis>, only casted to system integer type. But when generating code for remote process then the value can be different.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bytes used. Code-generator can create trampolines which are used when calling other functions inside the JIT code. However, these trampolines can be unused so the <ref refid="structasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95" kindref="member">relocCode()</ref> returns the exact size needed for the function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+A given buffer will be overwritten, to get number of bytes required use <computeroutput><ref refid="structasmjit_1_1BaseAssembler_1acea24f6a20a4abb52af3d0cdfb2b3d9d" kindref="member">getCodeSize()</ref></computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="387" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="387" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aa05de560f2701e803832407978d63194" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t asmjit::BaseAssembler::_relocCode</definition>
+        <argsstring>(void *dst, Ptr base) const =0</argsstring>
+        <name>_relocCode</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="group__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186" kindref="member">Ptr</ref></type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+<para>Reloc code (virtual). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="392"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void *</type>
+        <definition>void * asmjit::BaseAssembler::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <reimplements refid="structasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22">make</reimplements>
+        <briefdescription>
+<para>Make is a convenience method to make and relocate the current code into the associated runtime. </para>        </briefdescription>
+        <detaileddescription>
+<para>What is needed is only to cast the returned pointer to your function type and then use it. If there was an error during <ref refid="structasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e" kindref="member">make()</ref> <computeroutput>NULL</computeroutput> is returned and the last error code can be obtained by calling <ref refid="structasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d" kindref="member">getError()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="398" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="229" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Emit an instruction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="405" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a80b671098d535dddfb870ad23e6566fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="407" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="253" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ac7d3486553f0d1095f56007847752e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, const Operand &amp;o1)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="409" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="257" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1ae3c9c97b17af0014a11c8ba964212515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, const Operand &amp;o1, const Operand &amp;o2)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="411" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1aba3894dfb3dc0297a897d0388a4c7fe9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, const Operand &amp;o1, const Operand &amp;o2, const Operand &amp;o3)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="413" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="413" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a62b2481ecc60d97da13d56c06c5092db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, int o0)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+<para>Emit an instruction with integer immediate operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="418" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="265" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1adb0cc4072ca42441b6fb9ebc9f7eae8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, int o1)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="420" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a13d0f4273ae6afeb8e6078a8609ba9f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, const Operand &amp;o1, int o2)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="422" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1a30b017c05a83ddc84467df318a443a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::BaseAssembler::emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, const Operand &amp;o1, const Operand &amp;o2, int o3)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="424" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="277" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseAssembler::_emit</definition>
+        <argsstring>(uint32_t code, const Operand &amp;o0, const Operand &amp;o1, const Operand &amp;o2, const Operand &amp;o3)=0</argsstring>
+        <name>_emit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>o3</declname>
+        </param>
+        <briefdescription>
+<para>Emit an instruction (virtual). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="427"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base assembler. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements core setialization API only. The platform specific methods and intrinsics is implemented by derived classes.</para><para><simplesect kind="see"><para><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="613">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+      </node>
+      <node id="614">
+        <label>asmjit::x86x64::X86X64Assembler</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64Assembler"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>asmjit::BaseAssembler</label>
+        <link refid="structasmjit_1_1BaseAssembler"/>
+        <childnode refid="613" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="617">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="618">
+        <label>asmjit::Zone</label>
+        <link refid="structasmjit_1_1Zone"/>
+      </node>
+      <node id="619">
+        <label>asmjit::BaseRuntime</label>
+        <link refid="structasmjit_1_1BaseRuntime"/>
+      </node>
+      <node id="616">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+        <childnode refid="617" relation="usage">
+          <edgelabel>_logger</edgelabel>
+        </childnode>
+        <childnode refid="618" relation="usage">
+          <edgelabel>_zoneAllocator</edgelabel>
+        </childnode>
+        <childnode refid="619" relation="usage">
+          <edgelabel>_runtime</edgelabel>
+        </childnode>
+      </node>
+      <node id="620">
+        <label>asmjit::PodVector&lt; LabelData &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="622">
+        <label>asmjit::LabelLink</label>
+        <link refid="structasmjit_1_1LabelLink"/>
+        <childnode refid="622" relation="usage">
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="621">
+        <label>asmjit::PodVector&lt; RelocData &gt;</label>
+        <link refid="structasmjit_1_1PodVector"/>
+      </node>
+      <node id="615">
+        <label>asmjit::BaseAssembler</label>
+        <link refid="structasmjit_1_1BaseAssembler"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+        <childnode refid="620" relation="usage">
+          <edgelabel>_labels</edgelabel>
+        </childnode>
+        <childnode refid="621" relation="usage">
+          <edgelabel>_relocData</edgelabel>
+        </childnode>
+        <childnode refid="622" relation="usage">
+          <edgelabel>_unusedLinks</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="94" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="94" bodyend="458"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseAssembler_1aceb100955bcb01645a1975369cd8ab3d" prot="public" virt="pure-virtual"><scope>asmjit::BaseAssembler</scope><name>_align</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a26c78e4494d88ab9805496e023d3baa0" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_arch</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ad3a5c64efbaa7dca4166a45630f304f7" prot="public" virt="pure-virtual"><scope>asmjit::BaseAssembler</scope><name>_bind</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_buffer</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a7e1d16799822fbe74887cbe830046af5" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_comment</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ad9d44d8890ff85a6d2a8a4703c4294c5" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_cursor</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" prot="public" virt="pure-virtual"><scope>asmjit::BaseAssembler</scope><name>_emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1afa99ede2f1e862ef77cbe5e8e34fafd4" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_end</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_error</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_errorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_features</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a927cad7e8b3831394b39c870a4c04ad0" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_grow</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_labels</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_logger</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a7cadbee55a9420a3a0e46244a2aabc0d" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_newLabel</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a8d3c75f208cdbf8e531cf42adb744ba8" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_newLabelLink</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a4fb02f71d3669ae2345645490a4b1539" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_options</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb" prot="public" virt="virtual"><scope>asmjit::BaseAssembler</scope><name>_purge</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a0ef5f74f771ca1b86cf71f7b767cb095" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_registerIndexedLabels</name></member>
+      <member refid="structasmjit_1_1CodeGen_1acbfa512e3ec91bff2364d868d2da3280" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_regSize</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aa05de560f2701e803832407978d63194" prot="public" virt="pure-virtual"><scope>asmjit::BaseAssembler</scope><name>_relocCode</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1affeabe44cabed328b9dcc6a0096e97d5" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_relocData</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a5c0f2e4a9e73a9738b8703ad5b0f67b1" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_reserve</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a64fd203c2592221acd076eb8800acfea" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_runtime</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1abf44fdf0fdc0436b8fc7aa2b5bbbff7a" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_trampolineSize</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1acd0096db6e6bcef8bb582bbe716db1f3" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_unusedLinks</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>_zoneAllocator</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a7834000ab163eeb416824504c728655e" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>align</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ab48bc207dd5dbdae299da48042e3e1ae" prot="private" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>BaseAssembler</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a17bd49b8739839e750bcafd840329471" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>BaseAssembler</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aa84ba41d616921d8ca7f3087023afce1" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>bind</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>clear</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a20674b359509b562f6079bfef6342692" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>clearError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a0f1f14151bf464a31a3bb1a7f69e9bfe" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>clearErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a3e5282956457ed71030395c96b753225" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>CodeGen</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a2bfa219dec130116f562581fce67c05b" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>embed</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a80b671098d535dddfb870ad23e6566fa" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ac7d3486553f0d1095f56007847752e8e" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ae3c9c97b17af0014a11c8ba964212515" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aba3894dfb3dc0297a897d0388a4c7fe9" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a62b2481ecc60d97da13d56c06c5092db" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1adb0cc4072ca42441b6fb9ebc9f7eae8d" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a13d0f4273ae6afeb8e6078a8609ba9f6" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a30b017c05a83ddc84467df318a443a03" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>emit</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af0de6375faa88373299618dc893c6e02" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getArch</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1afd7f176edcad814fa49cf1b8f73cff50" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getBuffer</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a7a36a0a0a374d2bd504d4f2b76eaac3b" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getByteAt</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a014dad0a0895bc1180cc8dea1bdcbac9" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getCapacity</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1acea24f6a20a4abb52af3d0cdfb2b3d9d" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getCodeSize</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a68d96442996aead68a55393b6fa21703" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getCursor</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ac424a1e029f09a6557914970cdebbad7" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getDWordAt</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a70fc306a275e245593310256eda49e9b" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getEnd</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1acefc96c0ac363fcf81625d232ed3d34b" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getErrorHandler</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a353f3e0228cb6c544ecd0a05e07cc077" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getInt32At</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1abcf7f78c1326311f391f61250aebe0a0" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getLabelData</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a865046fd5f6e6ec4fc587cef604210f2" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getLabelDataById</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a1f798b95035873c7395546c6f21e764f" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getLabelsCount</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a74d11332a9175e011875b1fc63599f8e" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getLogger</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getOffset</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af8f725cbd3aa4c226ea0fc7175d0a92c" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getOptions</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aab3bc0b503327c62bc7d952d41365705" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getOptionsAndClear</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a02181697b851e272e0d50f7171580614" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getQWordAt</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a25290524d42466e7f341f0c41790ab34" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getRegSize</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1abdaca957b0afeb3188d4f67a4f4bab8c" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getRemainingSpace</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a3d7daab958f99527363d5d97a0d32a0d" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getRuntime</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aa3140d2eaa3c02f1bb2759b0ec85c2e6" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getTrampolineSize</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1adcd890caadc41802d19ef1e430136f94" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getUInt32At</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aa7d786dfbbf2e2ccc88b9185014d7101" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>getWordAt</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>hasFeature</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ae747a5b9778251fd11943d0f8a00bedd" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>hasLogger</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a2e915489f3e3d70912ec69aebc405479" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>isLabelCreated</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e" prot="public" virt="virtual"><scope>asmjit::BaseAssembler</scope><name>make</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ac4ff0a9995f59f13d62c015acae7ac89" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>newLabel</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a5110cc416b4bf86641d16c0d277f1118" prot="private" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aca29847661b4757f3739cda1eff70e95" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>relocCode</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a24f2b63ad71b926c53b267e56582c0fb" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>relocCode</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a519af6a96788ff18e0f07739f8ff2f82" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setByteAt</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1abad761abd9733070f7fc6085082ebdeb" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setCursor</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ac582f476927910ba8f35d1a2a3be4d9d" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setDWordAt</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setFeature</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1aa4f6f950c09dfe97306c4370279093cb" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setInt32At</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setLogger</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1accf0e32f66a2a9f6ad01c0a037c84950" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setOffset</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a06a916b4813dc544d7991f06093bdfc0" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setOptions</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1ac21727fcd69969a4995c05841c7a1375" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setQWordAt</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a07c171719b88c0e4a9afd7dd0b1bcad4" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setUInt32At</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a87539f4f474e101ae2bbc7e7b814ef48" prot="public" virt="non-virtual"><scope>asmjit::BaseAssembler</scope><name>setWordAt</name></member>
+      <member refid="structasmjit_1_1BaseAssembler_1a04edcae62e921dd125c9c67d4d042d8e" prot="public" virt="virtual"><scope>asmjit::BaseAssembler</scope><name>~BaseAssembler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6" prot="public" virt="virtual"><scope>asmjit::BaseAssembler</scope><name>~CodeGen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

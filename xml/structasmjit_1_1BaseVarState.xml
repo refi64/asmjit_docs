@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseVarState" kind="struct" prot="public">
+    <compoundname>asmjit::BaseVarState</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1VarState" prot="public" virt="non-virtual">asmjit::x86x64::VarState</derivedcompoundref>
+    <includes local="no">compiler.h</includes>
+    <briefdescription>
+<para>Variable(s) state. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="723">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="724">
+        <label>asmjit::x86x64::VarState</label>
+        <link refid="structasmjit_1_1x86x64_1_1VarState"/>
+        <childnode refid="723" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="698" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="698" bodyend="698"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

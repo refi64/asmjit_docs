@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="runtime_8h" kind="file">
+    <compoundname>runtime.h</compoundname>
+    <includes refid="error_8h" local="yes">../base/error.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="codegen_8h" local="yes">codegen.h</includedby>
+    <includedby refid="assembler_8h" local="yes">assembler.h</includedby>
+    <includedby refid="compiler_8h" local="yes">compiler.h</includedby>
+    <includedby refid="runtime_8cpp" local="yes">runtime.cpp</includedby>
+    <incdepgraph>
+      <node id="1604">
+        <label>../base/globals.h</label>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1605">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1606">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1608">
+        <label>stdint.h</label>
+      </node>
+      <node id="1600">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1595">
+        <label>../base/error.h</label>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1597" relation="include">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>../base/defs.h</label>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1609">
+        <label>limits.h</label>
+      </node>
+      <node id="1607">
+        <label>new</label>
+      </node>
+      <node id="1598">
+        <label>config.h</label>
+      </node>
+      <node id="1603">
+        <label>../base/intutil.h</label>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>runtime.h</label>
+        <link refid="runtime.h"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>../build.h</label>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>stdio.h</label>
+      </node>
+      <node id="1601">
+        <label>string.h</label>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1620">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="1611">
+        <label>codegen.h</label>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1640" relation="include">
+        </childnode>
+      </node>
+      <node id="1633">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="1639">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="1615">
+        <label>asmjit.h</label>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1619" relation="include">
+        </childnode>
+        <childnode refid="1621" relation="include">
+        </childnode>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+      </node>
+      <node id="1622">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="1612">
+        <label>assembler.h</label>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+      </node>
+      <node id="1638">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="1628">
+        <label>x86.h</label>
+      </node>
+      <node id="1636">
+        <label>x86compiler.h</label>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1630">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="1614">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="1613">
+        <label>base.h</label>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+        <childnode refid="1625" relation="include">
+        </childnode>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1626">
+        <label>winremoteruntime.h</label>
+        <childnode refid="1627" relation="include">
+        </childnode>
+      </node>
+      <node id="1618">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="1637">
+        <label>x86func.h</label>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1619">
+        <label>genopcode.h</label>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+      </node>
+      <node id="1631">
+        <label>context_p.h</label>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1632" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>genblend.h</label>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+      </node>
+      <node id="1632">
+        <label>context.cpp</label>
+      </node>
+      <node id="1610">
+        <label>runtime.h</label>
+        <link refid="runtime.h"/>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1639" relation="include">
+        </childnode>
+      </node>
+      <node id="1635">
+        <label>x86assembler.h</label>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1640">
+        <label>codegen.cpp</label>
+      </node>
+      <node id="1625">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="1623">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="1624">
+        <label>host.h</label>
+        <childnode refid="1615" relation="include">
+        </childnode>
+      </node>
+      <node id="1627">
+        <label>contrib.h</label>
+      </node>
+      <node id="1616">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="1621">
+        <label>testcpu.cpp</label>
+      </node>
+      <node id="1629">
+        <label>compiler.h</label>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+      </node>
+      <node id="1634">
+        <label>x86defs.h</label>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1637" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1BaseRuntime" prot="public">asmjit::BaseRuntime</innerclass>
+    <innerclass refid="structasmjit_1_1JitRuntime" prot="public">asmjit::JitRuntime</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_RUNTIME_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_RUNTIME_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Forward<sp/>Declarations]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">BaseAssembler;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">BaseCpu;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MemoryManager;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseRuntime]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//!<sp/>@brief<sp/>Base<sp/>runtime.</highlight></codeline>
+<codeline lineno="32" refid="structasmjit_1_1BaseRuntime" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1BaseRuntime" kindref="compound" tooltip="Base runtime.">BaseRuntime</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1BaseRuntime" kindref="compound" tooltip="Base runtime.">BaseRuntime</ref>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//!<sp/>@brief<sp/>Create<sp/>a<sp/>@ref<sp/>BaseRuntime<sp/>instance.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1BaseRuntime_1afec48a986596a6b010b040a110b2d3bb" kindref="member" tooltip="Create a BaseRuntime instance.">BaseRuntime</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>BaseRuntime<sp/>instance.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseRuntime_1accf2b5708b8308b615bf4e36eee41881" kindref="member" tooltip="Destroy the BaseRuntime instance.">~BaseRuntime</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Interface]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>stack<sp/>alignment<sp/>of<sp/>target<sp/>runtime.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseRuntime_1a63d5b09d80dc8fd313043e42ebb876a0" kindref="member" tooltip="Get stack alignment of target runtime.">getStackAlignment</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>CPU<sp/>information.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>*<sp/><ref refid="structasmjit_1_1BaseRuntime_1a9ae1cf4d76caa0a7289aebeea4f299e4" kindref="member" tooltip="Get CPU information.">getCpu</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Allocate<sp/>memory<sp/>for<sp/>code<sp/>generated<sp/>in<sp/>@a<sp/>assembler<sp/>and<sp/>reloc<sp/>it</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/>//!<sp/>to<sp/>the<sp/>target<sp/>location.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/>//!<sp/>This<sp/>method<sp/>is<sp/>universal<sp/>allowing<sp/>any<sp/>preprocessing<sp/>/<sp/>postprocessing</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/>//!<sp/>with<sp/>code<sp/>generated<sp/>by<sp/>@ref<sp/>BaseAssembler<sp/>or<sp/>@ref<sp/>BaseCompiler.<sp/>Because</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/>//!<sp/>@ref<sp/>BaseCompiler<sp/>always<sp/>uses<sp/>@ref<sp/>BaseAssembler<sp/>it&apos;s<sp/>allowed<sp/>to<sp/>access</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>//!<sp/>only<sp/>the<sp/>@ref<sp/>BaseAssembler<sp/>instance.</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/>//!<sp/>This<sp/>method<sp/>is<sp/>always<sp/>last<sp/>step<sp/>when<sp/>using<sp/>code<sp/>generation.<sp/>You<sp/>can<sp/>use</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/>//!<sp/>it<sp/>to<sp/>allocate<sp/>memory<sp/>for<sp/>JIT<sp/>code,<sp/>saving<sp/>code<sp/>to<sp/>remote<sp/>process<sp/>or<sp/>a</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/>//!<sp/>file.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/>//!<sp/>@retrurn<sp/>Status<sp/>code,<sp/>see<sp/>@ref<sp/>kError.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/><ref refid="structasmjit_1_1BaseRuntime_1ae2c4db9a7bbdba8ec11b2815333aabfe" kindref="member" tooltip="Allocate memory for code generated in assembler and reloc it to the target location.">add</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>dst,<sp/><ref refid="structasmjit_1_1BaseAssembler" kindref="compound" tooltip="Base assembler.">BaseAssembler</ref>*<sp/>assembler)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Release<sp/>memory<sp/>allocated<sp/>by<sp/>add.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/><ref refid="structasmjit_1_1BaseRuntime_1a35ea4af08e571ad2410f5b1f3807a754" kindref="member" tooltip="Release memory allocated by add.">release</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::JitRuntime]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">JitRuntime<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseRuntime" kindref="compound" tooltip="Base runtime.">BaseRuntime</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(JitRuntime)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//!<sp/>@brief<sp/>Create<sp/>a<sp/>@c<sp/>JitRuntime<sp/>instance.</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/>JitRuntime(<ref refid="structasmjit_1_1MemoryManager" kindref="compound" tooltip="Virtual memory manager interface.">MemoryManager</ref>*<sp/>memmgr<sp/>=<sp/>NULL);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@c<sp/>JitRuntime<sp/>instance.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/>virtual<sp/>~JitRuntime();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Memory<sp/>Manager<sp/>and<sp/>Alloc<sp/>Type]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>These<sp/>members<sp/>can<sp/>be<sp/>ignored<sp/>by<sp/>all<sp/>derived<sp/>classes.<sp/>They<sp/>are<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>only<sp/>to<sp/>privide<sp/>default<sp/>implementation.<sp/>All<sp/>other<sp/>implementations<sp/>(remote</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>code<sp/>patching<sp/>or<sp/>making<sp/>dynamic<sp/>loadable<sp/>libraries/executables)<sp/>ignore</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>members<sp/>accessed<sp/>by<sp/>these<sp/>accessors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>the<sp/>@c<sp/>MemoryManager<sp/>instance.</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/><ref refid="structasmjit_1_1MemoryManager" kindref="compound" tooltip="Virtual memory manager interface.">MemoryManager</ref>*<sp/>getMemoryManager()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_memoryManager;<sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>the<sp/>type<sp/>of<sp/>allocation.</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/>getAllocType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_allocType;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>the<sp/>type<sp/>of<sp/>allocation.</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setAllocType(uint32_t<sp/>allocType)<sp/>{<sp/>_allocType<sp/>=<sp/>allocType;<sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Interface]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint32_t<sp/>getStackAlignment();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BaseCpu*<sp/>getCpu();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>add(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>dst,<sp/>BaseAssembler*<sp/>assembler);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>release(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Memory<sp/>manager.</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>MemoryManager*<sp/>_memoryManager;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Type<sp/>of<sp/>allocation.</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_allocType;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_RUNTIME_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h"/>
+  </compounddef>
+</doxygen>

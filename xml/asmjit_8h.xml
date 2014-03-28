@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="asmjit_8h" kind="file">
+    <compoundname>asmjit.h</compoundname>
+    <includes refid="base_8h" local="yes">base.h</includes>
+    <includes refid="host_8h" local="yes">host.h</includes>
+    <includedby refid="benchx86_8cpp" local="no">benchx86.cpp</includedby>
+    <includedby refid="genblend_8h" local="no">genblend.h</includedby>
+    <includedby refid="genopcode_8h" local="no">genopcode.h</includedby>
+    <includedby refid="testcpu_8cpp" local="no">testcpu.cpp</includedby>
+    <includedby refid="testdummy_8cpp" local="no">testdummy.cpp</includedby>
+    <includedby refid="testmem_8cpp" local="no">testmem.cpp</includedby>
+    <includedby refid="testopcode_8cpp" local="no">testopcode.cpp</includedby>
+    <includedby refid="testx86_8cpp" local="no">testx86.cpp</includedby>
+    <incdepgraph>
+      <node id="157">
+        <label>../base/globals.h</label>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="160">
+        <label>stdarg.h</label>
+      </node>
+      <node id="165">
+        <label>../base/codegen.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>base/lock.h</label>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>base/memorymanager.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>stdint.h</label>
+      </node>
+      <node id="153">
+        <label>stdlib.h</label>
+      </node>
+      <node id="166">
+        <label>../base/error.h</label>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>asmjit.h</label>
+        <link refid="asmjit.h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>../base/zone.h</label>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>../base/apibegin.h</label>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>../base/logger.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>base/assembler.h</label>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>../base/defs.h</label>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>limits.h</label>
+      </node>
+      <node id="170">
+        <label>../base/podlist.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>pthread.h</label>
+      </node>
+      <node id="171">
+        <label>../base/podvector.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>base.h</label>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>new</label>
+      </node>
+      <node id="179">
+        <label>base/vmem.h</label>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>base/cpu.h</label>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>config.h</label>
+      </node>
+      <node id="178">
+        <label>base/vectypes.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>../base/intutil.h</label>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>../base/runtime.h</label>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>host.h</label>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>build.h</label>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>stdio.h</label>
+      </node>
+      <node id="154">
+        <label>string.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>../base/func.h</label>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>base/compiler.h</label>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="186">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="181">
+        <label>asmjit.h</label>
+        <link refid="asmjit.h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="184">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="185">
+        <label>genopcode.h</label>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>genblend.h</label>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="182">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="187">
+        <label>testcpu.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_ASMJIT_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_ASMJIT_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">//!<sp/>@mainpage</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">//!<sp/>@brief<sp/>AsmJit<sp/>is<sp/>a<sp/>complete<sp/>x86/x64<sp/>JIT<sp/>Assembler<sp/>for<sp/>C++<sp/>language.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">//!<sp/>It<sp/>supports<sp/>FPU,<sp/>MMX,<sp/>3dNow,<sp/>SSE,<sp/>SSE2,<sp/>SSE3<sp/>and<sp/>SSE4<sp/>intrinsics,<sp/>powerful</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">//!<sp/>compiler<sp/>that<sp/>helps<sp/>to<sp/>write<sp/>portable<sp/>functions<sp/>for<sp/>32-bit<sp/>(x86)<sp/>and<sp/>64-bit</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">//!<sp/>(x64)<sp/>architectures.<sp/>AsmJit<sp/>can<sp/>be<sp/>used<sp/>to<sp/>create<sp/>functions<sp/>at<sp/>runtime<sp/>that</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">//!<sp/>can<sp/>be<sp/>called<sp/>from<sp/>existing<sp/>(but<sp/>also<sp/>generated)<sp/>C/C++<sp/>code.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">//!<sp/>AsmJit<sp/>is<sp/>a<sp/>cross-platform<sp/>library<sp/>that<sp/>supports<sp/>various<sp/>compilers<sp/>and</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">//!<sp/>operating<sp/>systems.<sp/>Currently<sp/>only<sp/>limitation<sp/>is<sp/>x86<sp/>(32-bit)<sp/>or<sp/>x64<sp/>(64-bit)</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">//!<sp/>processor.<sp/>Currently<sp/>tested<sp/>operating<sp/>systems<sp/>are<sp/>Windows<sp/>(32-bit<sp/>and<sp/>64-bit),</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">//!<sp/>Linux<sp/>(32-bit<sp/>and<sp/>64-bit)<sp/>and<sp/>MacOSX<sp/>(32-bit<sp/>and<sp/>64-bit).</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Main_Introduction<sp/>Introduction</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">//!<sp/>AsmJit<sp/>library<sp/>contains<sp/>two<sp/>main<sp/>classes<sp/>for<sp/>code<sp/>generation<sp/>with<sp/>different</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">//!<sp/>goals.<sp/>First<sp/>main<sp/>code<sp/>generation<sp/>class<sp/>is<sp/>called<sp/>@c<sp/>asmjit::Assembler<sp/>and</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">//!<sp/>contains<sp/>low<sp/>level<sp/>API<sp/>that<sp/>can<sp/>be<sp/>used<sp/>to<sp/>generate<sp/>JIT<sp/>binary<sp/>code.<sp/>It</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">//!<sp/>directly<sp/>emits<sp/>binary<sp/>stream<sp/>that<sp/>represents<sp/>encoded<sp/>x86/x64<sp/>assembler</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//!<sp/>opcodes.<sp/>Together<sp/>with<sp/>operands<sp/>and<sp/>labels<sp/>it<sp/>can<sp/>be<sp/>used<sp/>to<sp/>generate</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">//!<sp/>complete<sp/>code.<sp/>For<sp/>details<sp/>look<sp/>to<sp/>@ref<sp/>asmjit_base<sp/>and<sp/>@ref<sp/>asmjit_compiler</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">//!<sp/>sections.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">//!<sp/>There<sp/>is<sp/>also<sp/>class<sp/>named<sp/>@c<sp/>asmjit::BaseCompiler<sp/>that<sp/>allows<sp/>to<sp/>develop</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">//!<sp/>cross-platform<sp/>assembler<sp/>code<sp/>without<sp/>worring<sp/>about<sp/>function<sp/>calling</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">//!<sp/>conventions<sp/>and<sp/>registers<sp/>allocation.<sp/>It<sp/>can<sp/>be<sp/>also<sp/>used<sp/>to<sp/>write<sp/>32-bit</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">//!<sp/>and<sp/>64-bit<sp/>portable<sp/>code.<sp/>Compiler<sp/>is<sp/>a<sp/>recommended<sp/>concept<sp/>to<sp/>use<sp/>for<sp/>code</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">//!<sp/>generation.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">//!<sp/>Everything<sp/>in<sp/>AsmJit<sp/>library<sp/>is<sp/>in<sp/>@c<sp/>asmjit<sp/>namespace.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Main_CodeGeneration<sp/>Code<sp/>Generation</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">//!<sp/>-<sp/>@ref<sp/>asmjit_base<sp/>&quot;Assembler<sp/>core&quot;<sp/>-<sp/>Operands,<sp/>intrinsics<sp/>and<sp/>low-level<sp/>assembler.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">//!<sp/>-<sp/>@ref<sp/>asmjit_compiler<sp/>&quot;Compiler&quot;<sp/>-<sp/>High<sp/>level<sp/>code<sp/>generation.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">//!<sp/>-<sp/>@ref<sp/>asmjit_cpuinfo<sp/>&quot;Cpu<sp/>Information&quot;<sp/>-<sp/>Get<sp/>information<sp/>about<sp/>host<sp/>processor.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">//!<sp/>-<sp/>@ref<sp/>asmjit_logging<sp/>&quot;Logging&quot;<sp/>-<sp/>Logging<sp/>and<sp/>error<sp/>handling.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">//!<sp/>-<sp/>@ref<sp/>AsmJit_MemoryManagement<sp/>&quot;Memory<sp/>Management&quot;<sp/>-<sp/>Virtual<sp/>memory<sp/>management.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Main_Configuration<sp/>Configuration,<sp/>Definitions<sp/>and<sp/>Utilities</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">//!<sp/>-<sp/>@ref<sp/>asmjit_config<sp/>&quot;Configuration&quot;<sp/>-<sp/>Macros<sp/>used<sp/>to<sp/>configure<sp/>AsmJit.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Main_HomePage<sp/>AsmJit<sp/>Homepage</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">//!<sp/>-<sp/>http://code.google.com/p/asmjit/</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Main_ResourcesX86<sp/>External<sp/>X86/X64<sp/>Assembler<sp/>Resources</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">//!<sp/>-<sp/>http://www.agner.org/optimize/</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">//!<sp/>-<sp/>http://www.mark.masmcode.com/<sp/>(Assembler<sp/>Tips)</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">//!<sp/>-<sp/>http://avisynth.org/mediawiki/Filter_SDK/Assembler_optimizing<sp/>(Optimizing)</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">//!<sp/>-<sp/>http://www.ragestorm.net/distorm/<sp/>(Disassembling)</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Main_Terminology<sp/>Terminology</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">//!<sp/>-<sp/>&lt;b&gt;Non-volatile<sp/>(preserved)<sp/>register&lt;/b&gt;<sp/>-<sp/>Register<sp/>that<sp/>can&apos;t<sp/>be<sp/>changed</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">//!<sp/><sp/><sp/>by<sp/>callee<sp/>(callee<sp/>must<sp/>save<sp/>and<sp/>restore<sp/>it<sp/>if<sp/>it<sp/>want<sp/>to<sp/>use<sp/>it<sp/>inside).</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">//!<sp/>-<sp/>&lt;b&gt;Volatile<sp/>(non-preserved)<sp/>register&lt;/b&gt;<sp/>-<sp/>The<sp/>opossite.<sp/>Register<sp/>that<sp/>can</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">//!<sp/><sp/><sp/>be<sp/>freely<sp/>used<sp/>by<sp/>callee.<sp/>The<sp/>caller<sp/>must<sp/>free<sp/>all<sp/>registers<sp/>before<sp/>calling</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">//!<sp/><sp/><sp/>other<sp/>function.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment">//!<sp/>@defgroup<sp/>asmjit_base<sp/>Platform<sp/>neutral<sp/>API,<sp/>abstract<sp/>classes<sp/>and<sp/>operands.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">//!<sp/>Contains<sp/>all<sp/>AsmJit<sp/>classes<sp/>and<sp/>helper<sp/>functions<sp/>that<sp/>are<sp/>neutral<sp/>or</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">//!<sp/>abstract.<sp/>All<sp/>abstract<sp/>classes<sp/>are<sp/>reimplemented<sp/>for<sp/>every<sp/>supported</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">//!<sp/>architecture.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">//!<sp/>-<sp/>See<sp/>@c<sp/>asmjit::Assembler<sp/>class<sp/>for<sp/>low<sp/>level<sp/>code<sp/>generation</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">//!<sp/><sp/><sp/>documentation.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">//!<sp/>-<sp/>See<sp/>@c<sp/>asmjit::Operand<sp/>for<sp/>AsmJit<sp/>operand&apos;s<sp/>overview.</highlight></codeline>
+<codeline lineno="83"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Core_Registers<sp/>Registers</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">//!<sp/>There<sp/>are<sp/>static<sp/>objects<sp/>that<sp/>represents<sp/>X86<sp/>and<sp/>X64<sp/>registers.<sp/>They<sp/>can</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">//!<sp/>be<sp/>used<sp/>directly<sp/>(like<sp/>@c<sp/>eax,<sp/>@c<sp/>mm,<sp/>@c<sp/>xmm,<sp/>...)<sp/>or<sp/>created<sp/>through</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">//!<sp/>these<sp/>functions:</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::gpb_lo()<sp/>-<sp/>Get<sp/>Gpb-lo<sp/>register.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::gpb_hi()<sp/>-<sp/>Get<sp/>Gpb-hi<sp/>register.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::gpw()<sp/>-<sp/>Get<sp/>Gpw<sp/>register.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::gpd()<sp/>-<sp/>Get<sp/>Gpd<sp/>register.</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::gpq()<sp/>-<sp/>Get<sp/>Gpq<sp/>Gp<sp/>register.</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::gpz()<sp/>-<sp/>Get<sp/>Gpd/Gpq<sp/>register.</highlight></codeline>
+<codeline lineno="96"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::fp()<sp/><sp/>-<sp/>Get<sp/>Fp<sp/>register.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::mm()<sp/><sp/>-<sp/>Get<sp/>Mm<sp/>register.</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::xmm()<sp/>-<sp/>Get<sp/>Xmm<sp/>register.</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::ymm()<sp/>-<sp/>Get<sp/>Ymm<sp/>register.</highlight></codeline>
+<codeline lineno="100"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="101"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Core_Addressing<sp/>Addressing</highlight></codeline>
+<codeline lineno="102"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">//!<sp/>X86<sp/>and<sp/>x64<sp/>architectures<sp/>contains<sp/>several<sp/>addressing<sp/>modes<sp/>and<sp/>most<sp/>ones</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">//!<sp/>are<sp/>possible<sp/>with<sp/>AsmJit<sp/>library.<sp/>Memory<sp/>represents<sp/>are<sp/>represented<sp/>by</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">//!<sp/>@c<sp/>asmjit::BaseMem<sp/>class.<sp/>These<sp/>functions<sp/>are<sp/>used<sp/>to<sp/>make<sp/>operands<sp/>that</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">//!<sp/>represents<sp/>memory<sp/>addresses:</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::ptr()</highlight></codeline>
+<codeline lineno="109"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::byte_ptr()</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::word_ptr()</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::dword_ptr()</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::qword_ptr()</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::tword_ptr()</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::oword_ptr()</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::yword_ptr()</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">//!<sp/>-<sp/>@c<sp/>asmjit::intptr_ptr()</highlight></codeline>
+<codeline lineno="117"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="118"><highlight class="comment">//!<sp/>Most<sp/>useful<sp/>function<sp/>to<sp/>make<sp/>pointer<sp/>should<sp/>be<sp/>@c<sp/>asmjit::ptr().<sp/>It<sp/>creates</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">//!<sp/>pointer<sp/>to<sp/>the<sp/>target<sp/>with<sp/>unspecified<sp/>size.<sp/>Unspecified<sp/>size<sp/>works<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">//!<sp/>intrinsics<sp/>where<sp/>are<sp/>used<sp/>registers<sp/>(this<sp/>means<sp/>that<sp/>size<sp/>is<sp/>specified<sp/>by</highlight></codeline>
+<codeline lineno="121"><highlight class="comment">//!<sp/>register<sp/>operand<sp/>or<sp/>by<sp/>instruction<sp/>itself).<sp/>For<sp/>example<sp/>@c<sp/>asmjit::ptr()</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">//!<sp/>can&apos;t<sp/>be<sp/>used<sp/>with<sp/>@c<sp/>asmjit::Assembler::inc()<sp/>instruction.<sp/>In<sp/>this<sp/>case</highlight></codeline>
+<codeline lineno="123"><highlight class="comment">//!<sp/>size<sp/>must<sp/>be<sp/>specified<sp/>and<sp/>it&apos;s<sp/>also<sp/>reason<sp/>to<sp/>make<sp/>difference<sp/>between</highlight></codeline>
+<codeline lineno="124"><highlight class="comment">//!<sp/>pointer<sp/>sizes.</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">//!<sp/>Supported<sp/>are<sp/>simple<sp/>address<sp/>forms<sp/>(register<sp/>+<sp/>displacement)<sp/>and<sp/>complex</highlight></codeline>
+<codeline lineno="127"><highlight class="comment">//!<sp/>address<sp/>forms<sp/>(register<sp/>+<sp/>(register<sp/>&lt;&lt;<sp/>shift)<sp/>+<sp/>displacement).</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">//!<sp/>@section<sp/>AsmJit_Core_Immediates<sp/>Immediates</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="131"><highlight class="comment">//!<sp/>Immediate<sp/>values<sp/>are<sp/>constants<sp/>thats<sp/>passed<sp/>directly<sp/>after<sp/>instruction</highlight></codeline>
+<codeline lineno="132"><highlight class="comment">//!<sp/>opcode.<sp/>To<sp/>create<sp/>such<sp/>value<sp/>use<sp/>@c<sp/>asmjit::imm()<sp/>or<sp/>@c<sp/>asmjit::imm_u()</highlight></codeline>
+<codeline lineno="133"><highlight class="comment">//!<sp/>methods<sp/>to<sp/>create<sp/>signed<sp/>or<sp/>unsigned<sp/>immediate<sp/>value.</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">//!<sp/>@sa<sp/>@c<sp/>asmjit::BaseCompiler.</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="137"><highlight class="comment">//!<sp/>@defgroup<sp/>asmjit_compiler<sp/>Compiler<sp/>(high-level<sp/>code<sp/>generation).</highlight></codeline>
+<codeline lineno="138"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="139"><highlight class="comment">//!<sp/>Contains<sp/>classes<sp/>related<sp/>to<sp/>@c<sp/>asmjit::Compiler<sp/>that<sp/>can<sp/>be<sp/>used</highlight></codeline>
+<codeline lineno="140"><highlight class="comment">//!<sp/>to<sp/>generate<sp/>code<sp/>using<sp/>high-level<sp/>constructs.</highlight></codeline>
+<codeline lineno="141"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="142"><highlight class="comment">//!<sp/>-<sp/>See<sp/>@c<sp/>Compiler<sp/>class<sp/>for<sp/>high<sp/>level<sp/>code<sp/>generation</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">//!<sp/><sp/><sp/>documentation<sp/>-<sp/>calling<sp/>conventions,<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">//!<sp/><sp/><sp/>and<sp/>variables<sp/>management.</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="146"><highlight class="comment">//!<sp/>@defgroup<sp/>asmjit_config<sp/>Configuration.</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">//!<sp/>Contains<sp/>macros<sp/>that<sp/>can<sp/>be<sp/>redefined<sp/>to<sp/>fit<sp/>into<sp/>any<sp/>project.</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="150"><highlight class="comment">//!<sp/>@defgroup<sp/>asmjit_cpuinfo<sp/>CPU<sp/>information.</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">//!<sp/>X86<sp/>or<sp/>x64<sp/>cpuid<sp/>instruction<sp/>allows<sp/>to<sp/>get<sp/>information<sp/>about<sp/>processor</highlight></codeline>
+<codeline lineno="153"><highlight class="comment">//!<sp/>vendor<sp/>and<sp/>it&apos;s<sp/>features.<sp/>It&apos;s<sp/>always<sp/>used<sp/>to<sp/>detect<sp/>features<sp/>like<sp/>MMX,</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">//!<sp/>SSE<sp/>and<sp/>other<sp/>newer<sp/>ones.</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">//!<sp/>AsmJit<sp/>library<sp/>supports<sp/>low<sp/>level<sp/>cpuid<sp/>call<sp/>implemented<sp/>internally<sp/>as</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">//!<sp/>C++<sp/>function<sp/>using<sp/>inline<sp/>assembler<sp/>or<sp/>intrinsics<sp/>and<sp/>also<sp/>higher<sp/>level</highlight></codeline>
+<codeline lineno="158"><highlight class="comment">//!<sp/>CPU<sp/>features<sp/>detection.<sp/>The<sp/>low<sp/>level<sp/>function<sp/>(also<sp/>used<sp/>by<sp/>higher<sp/>level</highlight></codeline>
+<codeline lineno="159"><highlight class="comment">//!<sp/>one)<sp/>is<sp/>@c<sp/>asmjit::cpuid().</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="161"><highlight class="comment">//!<sp/>AsmJit<sp/>library<sp/>also<sp/>contains<sp/>higher<sp/>level<sp/>function<sp/>@c<sp/>asmjit::getCpu()</highlight></codeline>
+<codeline lineno="162"><highlight class="comment">//!<sp/>that<sp/>returns<sp/>features<sp/>detected<sp/>by<sp/>the<sp/>library.<sp/>The<sp/>detection<sp/>process<sp/>is</highlight></codeline>
+<codeline lineno="163"><highlight class="comment">//!<sp/>done<sp/>only<sp/>once<sp/>and<sp/>the<sp/>returned<sp/>object<sp/>is<sp/>always<sp/>the<sp/>same.<sp/>@c<sp/>asmjit::BaseCpu</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">//!<sp/>structure<sp/>not<sp/>contains<sp/>only<sp/>information<sp/>through<sp/>@c<sp/>asmjit::cpuid(),<sp/>but</highlight></codeline>
+<codeline lineno="165"><highlight class="comment">//!<sp/>there<sp/>is<sp/>also<sp/>small<sp/>multiplatform<sp/>code<sp/>to<sp/>detect<sp/>number<sp/>of<sp/>processors</highlight></codeline>
+<codeline lineno="166"><highlight class="comment">//!<sp/>(or<sp/>cores)<sp/>through<sp/>operating<sp/>system<sp/>API.</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">//!<sp/>It&apos;s<sp/>recommended<sp/>to<sp/>use<sp/>@c<sp/>asmjit::cpuInfo<sp/>to<sp/>detect<sp/>and<sp/>check<sp/>for</highlight></codeline>
+<codeline lineno="169"><highlight class="comment">//!<sp/>host<sp/>processor<sp/>features.</highlight></codeline>
+<codeline lineno="170"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="171"><highlight class="comment">//!<sp/>Example<sp/>how<sp/>to<sp/>use<sp/>asmjit::cpuid():</highlight></codeline>
+<codeline lineno="172"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="173"><highlight class="comment">//!<sp/>@code</highlight></codeline>
+<codeline lineno="174"><highlight class="comment">//!<sp/>//<sp/>All<sp/>functions<sp/>and<sp/>structures<sp/>are<sp/>in<sp/>asmjit<sp/>namesapce.</highlight></codeline>
+<codeline lineno="175"><highlight class="comment">//!<sp/>using<sp/>namespace<sp/>asmjit;</highlight></codeline>
+<codeline lineno="176"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="177"><highlight class="comment">//!<sp/>//<sp/>Here<sp/>will<sp/>be<sp/>retrieved<sp/>result<sp/>of<sp/>cpuid<sp/>call.</highlight></codeline>
+<codeline lineno="178"><highlight class="comment">//!<sp/>CpuId<sp/>out;</highlight></codeline>
+<codeline lineno="179"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="180"><highlight class="comment">//!<sp/>//<sp/>Use<sp/>cpuid<sp/>function<sp/>to<sp/>do<sp/>the<sp/>job.</highlight></codeline>
+<codeline lineno="181"><highlight class="comment">//!<sp/>cpuid(0<sp/>/*<sp/>eax<sp/>*/,<sp/>&amp;out<sp/>/*<sp/>eax,<sp/>ebx,<sp/>ecx,<sp/>edx<sp/>*/);</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">//!<sp/>//<sp/>If<sp/>eax<sp/>argument<sp/>to<sp/>cpuid<sp/>is<sp/>0,<sp/>ebx,<sp/>ecx<sp/>and<sp/>edx<sp/>registers</highlight></codeline>
+<codeline lineno="184"><highlight class="comment">//!<sp/>//<sp/>are<sp/>filled<sp/>with<sp/>cpu<sp/>vendor.</highlight></codeline>
+<codeline lineno="185"><highlight class="comment">//!<sp/>char<sp/>vendor[13];</highlight></codeline>
+<codeline lineno="186"><highlight class="comment">//!<sp/>memcpy(i-&gt;vendor,<sp/>&amp;out.ebx,<sp/>4);</highlight></codeline>
+<codeline lineno="187"><highlight class="comment">//!<sp/>memcpy(i-&gt;vendor<sp/>+<sp/>4,<sp/>&amp;out.edx,<sp/>4);</highlight></codeline>
+<codeline lineno="188"><highlight class="comment">//!<sp/>memcpy(i-&gt;vendor<sp/>+<sp/>8,<sp/>&amp;out.ecx,<sp/>4);</highlight></codeline>
+<codeline lineno="189"><highlight class="comment">//!<sp/>vendor[12]<sp/>=<sp/>&apos;\0&apos;;</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="191"><highlight class="comment">//!<sp/>//<sp/>Print<sp/>vendor</highlight></codeline>
+<codeline lineno="192"><highlight class="comment">//!<sp/>puts(vendor);</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">//!<sp/>@endcode</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">//!<sp/>If<sp/>the<sp/>high-level<sp/>interface<sp/>of<sp/>asmjit::BaseCpu<sp/>is<sp/>not<sp/>enough,<sp/>you<sp/>can<sp/>use</highlight></codeline>
+<codeline lineno="196"><highlight class="comment">//!<sp/>low-level<sp/>asmjit::cpuid()<sp/>when<sp/>running<sp/>on<sp/>x86/x64<sp/>host,<sp/>but<sp/>please<sp/>read</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">//!<sp/>processor<sp/>manuals<sp/>provided<sp/>by<sp/>Intel,<sp/>AMD<sp/>or<sp/>other<sp/>manufacturer<sp/>for<sp/>cpuid</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">//!<sp/>details.</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="200"><highlight class="comment">//!<sp/>Example<sp/>of<sp/>using<sp/>@c<sp/>asmjit::BaseCpu::getHost():</highlight></codeline>
+<codeline lineno="201"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">//!<sp/>@code</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">//!<sp/>//<sp/>All<sp/>functions<sp/>and<sp/>structures<sp/>are<sp/>in<sp/>asmjit<sp/>namesapce.</highlight></codeline>
+<codeline lineno="204"><highlight class="comment">//!<sp/>using<sp/>namespace<sp/>asmjit;</highlight></codeline>
+<codeline lineno="205"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="206"><highlight class="comment">//!<sp/>//<sp/>Call<sp/>to<sp/>cpuInfo<sp/>return<sp/>BaseCpu<sp/>structure<sp/>that<sp/>shouldn&apos;t<sp/>be<sp/>modified.</highlight></codeline>
+<codeline lineno="207"><highlight class="comment">//!<sp/>//<sp/>Make<sp/>it<sp/>const<sp/>by<sp/>default.</highlight></codeline>
+<codeline lineno="208"><highlight class="comment">//!<sp/>const<sp/>BaseCpu*<sp/>cpu<sp/>=<sp/>BaseCpu::getHost();</highlight></codeline>
+<codeline lineno="209"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="210"><highlight class="comment">//!<sp/>//<sp/>Now<sp/>you<sp/>are<sp/>able<sp/>to<sp/>get<sp/>specific<sp/>features.</highlight></codeline>
+<codeline lineno="211"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="212"><highlight class="comment">//!<sp/>//<sp/>Processor<sp/>has<sp/>SSE2</highlight></codeline>
+<codeline lineno="213"><highlight class="comment">//!<sp/>if<sp/>(cpu-&gt;features<sp/>&amp;<sp/>kCpuFeatureSse2)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="comment">//!<sp/><sp/><sp/>//<sp/>your<sp/>code...</highlight></codeline>
+<codeline lineno="215"><highlight class="comment">//!<sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="comment">//!<sp/>//<sp/>Processor<sp/>has<sp/>MMX</highlight></codeline>
+<codeline lineno="217"><highlight class="comment">//!<sp/>else<sp/>if<sp/>(cpu-&gt;features<sp/>&amp;<sp/>kCpuFeature_MMX)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="comment">//!<sp/><sp/><sp/>//<sp/>your<sp/>code...</highlight></codeline>
+<codeline lineno="219"><highlight class="comment">//!<sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="comment">//!<sp/>//<sp/>Processor<sp/>is<sp/>old,<sp/>no<sp/>SSE2<sp/>or<sp/>MMX<sp/>support.</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">//!<sp/>else<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">//!<sp/><sp/><sp/>//<sp/>your<sp/>code...</highlight></codeline>
+<codeline lineno="223"><highlight class="comment">//!<sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="comment">//!<sp/>@endcode</highlight></codeline>
+<codeline lineno="225"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="226"><highlight class="comment">//!<sp/>Better<sp/>example<sp/>is<sp/>in<sp/>app/test/testcpu.cpp<sp/>file.</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="229"><highlight class="comment">//!<sp/>@defgroup<sp/>asmjit_logging<sp/>Logging<sp/>and<sp/>error<sp/>handling.</highlight></codeline>
+<codeline lineno="230"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="231"><highlight class="comment">//!<sp/>Contains<sp/>classes<sp/>related<sp/>to<sp/>loging.<sp/>Currently<sp/>logging<sp/>is<sp/>implemented<sp/>in</highlight></codeline>
+<codeline lineno="232"><highlight class="comment">//!<sp/>@ref<sp/>asmjit::BaseLogger<sp/>class.<sp/>The<sp/>function<sp/>@ref<sp/>asmjit::BaseLogger::log()</highlight></codeline>
+<codeline lineno="233"><highlight class="comment">//!<sp/>can<sp/>be<sp/>overridden<sp/>to<sp/>redirect<sp/>logging<sp/>into<sp/>any<sp/>user-defined<sp/>stream.</highlight></codeline>
+<codeline lineno="234"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="235"><highlight class="comment">//!<sp/>To<sp/>log<sp/>your<sp/>assembler<sp/>output<sp/>to<sp/>FILE<sp/>stream<sp/>use<sp/>this<sp/>code:</highlight></codeline>
+<codeline lineno="236"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="237"><highlight class="comment">//!<sp/>@code</highlight></codeline>
+<codeline lineno="238"><highlight class="comment">//!<sp/>//<sp/>Create<sp/>assembler</highlight></codeline>
+<codeline lineno="239"><highlight class="comment">//!<sp/>Assembler<sp/>a;</highlight></codeline>
+<codeline lineno="240"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="241"><highlight class="comment">//!<sp/>//<sp/>Create<sp/>and<sp/>set<sp/>file<sp/>based<sp/>logger</highlight></codeline>
+<codeline lineno="242"><highlight class="comment">//!<sp/>FileLogger<sp/>logger(stderr);</highlight></codeline>
+<codeline lineno="243"><highlight class="comment">//!<sp/>a.setLogger(&amp;logger);</highlight></codeline>
+<codeline lineno="244"><highlight class="comment">//!<sp/>@endcode</highlight></codeline>
+<codeline lineno="245"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="246"><highlight class="comment">//!<sp/>You<sp/>can<sp/>see<sp/>that<sp/>logging<sp/>goes<sp/>through<sp/>@c<sp/>Assembler.<sp/>If<sp/>you<sp/>are<sp/>using</highlight></codeline>
+<codeline lineno="247"><highlight class="comment">//!<sp/>@c<sp/>Compiler<sp/>and<sp/>you<sp/>want<sp/>to<sp/>log<sp/>messages<sp/>in<sp/>correct<sp/>assembler<sp/>order,</highlight></codeline>
+<codeline lineno="248"><highlight class="comment">//!<sp/>you<sp/>should<sp/>look<sp/>at<sp/>@ref<sp/>Compiler::comment()<sp/>method.<sp/>It<sp/>allows<sp/><sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="249"><highlight class="comment">//!<sp/>insert<sp/>text<sp/>message<sp/>into<sp/>items<sp/>stream<sp/>so<sp/>the<sp/>@c<sp/>Compiler<sp/>is<sp/>able<sp/>to</highlight></codeline>
+<codeline lineno="250"><highlight class="comment">//!<sp/>send<sp/>messages<sp/>to<sp/>@ref<sp/>Assembler<sp/>in<sp/>correct<sp/>order.</highlight></codeline>
+<codeline lineno="251"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="252"><highlight class="comment">//!<sp/>@sa<sp/>@c<sp/>asmjit::BaseLogger,<sp/>@c<sp/>asmjit::FileLogger.</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="255"><highlight class="comment">//!<sp/>@defgroup<sp/>AsmJit_MemoryManagement<sp/>Virtual<sp/>memory<sp/>management.</highlight></codeline>
+<codeline lineno="256"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="257"><highlight class="comment">//!<sp/>Using<sp/>@c<sp/>asmjit::Assembler<sp/>or<sp/>@c<sp/>asmjit::Compiler<sp/>to<sp/>generate<sp/>machine</highlight></codeline>
+<codeline lineno="258"><highlight class="comment">//!<sp/>code<sp/>is<sp/>not<sp/>final<sp/>step.<sp/>Each<sp/>generated<sp/>code<sp/>needs<sp/>to<sp/>run<sp/>in<sp/>memory</highlight></codeline>
+<codeline lineno="259"><highlight class="comment">//!<sp/>that<sp/>is<sp/>not<sp/>protected<sp/>against<sp/>code<sp/>execution.<sp/>To<sp/>alloc<sp/>this<sp/>code<sp/>it&apos;s</highlight></codeline>
+<codeline lineno="260"><highlight class="comment">//!<sp/>needed<sp/>to<sp/>use<sp/>operating<sp/>system<sp/>functions<sp/>provided<sp/>to<sp/>enable<sp/>execution</highlight></codeline>
+<codeline lineno="261"><highlight class="comment">//!<sp/>code<sp/>in<sp/>specified<sp/>memory<sp/>block<sp/>or<sp/>to<sp/>allocate<sp/>memory<sp/>that<sp/>is<sp/>not</highlight></codeline>
+<codeline lineno="262"><highlight class="comment">//!<sp/>protected.<sp/>The<sp/>solution<sp/>is<sp/>always<sp/>to<sp/>use<sp/>@c<sp/>See<sp/>asmjit::Assembler::make()</highlight></codeline>
+<codeline lineno="263"><highlight class="comment">//!<sp/>and<sp/>@c<sp/>asmjit::Compiler::make()<sp/>functions<sp/>that<sp/>can<sp/>allocate<sp/>memory<sp/>and</highlight></codeline>
+<codeline lineno="264"><highlight class="comment">//!<sp/>relocate<sp/>code<sp/>for<sp/>you.<sp/>But<sp/>AsmJit<sp/>also<sp/>contains<sp/>classes<sp/>for<sp/>manual<sp/>memory</highlight></codeline>
+<codeline lineno="265"><highlight class="comment">//!<sp/>management<sp/>thats<sp/>internally<sp/>used<sp/>by<sp/>AsmJit<sp/>but<sp/>can<sp/>be<sp/>used<sp/>by<sp/>programmers</highlight></codeline>
+<codeline lineno="266"><highlight class="comment">//!<sp/>too.</highlight></codeline>
+<codeline lineno="267"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="268"><highlight class="comment">//!<sp/>Memory<sp/>management<sp/>contains<sp/>low<sp/>level<sp/>and<sp/>high<sp/>level<sp/>classes<sp/>related<sp/>to</highlight></codeline>
+<codeline lineno="269"><highlight class="comment">//!<sp/>allocating<sp/>and<sp/>freeing<sp/>virtual<sp/>memory.<sp/>Low<sp/>level<sp/>class<sp/>is</highlight></codeline>
+<codeline lineno="270"><highlight class="comment">//!<sp/>@c<sp/>asmjit::VMem<sp/>that<sp/>can<sp/>allocate<sp/>and<sp/>free<sp/>full<sp/>pages<sp/>of<sp/>virtual<sp/>memory</highlight></codeline>
+<codeline lineno="271"><highlight class="comment">//!<sp/>provided<sp/>by<sp/>operating<sp/>system.<sp/>Higher<sp/>level<sp/>class<sp/>is<sp/>@c<sp/>asmjit::MemoryManager</highlight></codeline>
+<codeline lineno="272"><highlight class="comment">//!<sp/>that<sp/>is<sp/>able<sp/>to<sp/>manage<sp/>complete<sp/>allocation<sp/>and<sp/>free<sp/>mechanism.<sp/>It</highlight></codeline>
+<codeline lineno="273"><highlight class="comment">//!<sp/>internally<sp/>uses<sp/>larger<sp/>chunks<sp/>of<sp/>memory<sp/>to<sp/>make<sp/>allocation<sp/>fast<sp/>and</highlight></codeline>
+<codeline lineno="274"><highlight class="comment">//!<sp/>effective.</highlight></codeline>
+<codeline lineno="275"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="276"><highlight class="comment">//!<sp/>Using<sp/>@c<sp/>asmjit::VMem::alloc()<sp/>is<sp/>cross-platform<sp/>way<sp/>how<sp/>to<sp/>allocate<sp/>this</highlight></codeline>
+<codeline lineno="277"><highlight class="comment">//!<sp/>kind<sp/>of<sp/>memory<sp/>without<sp/>worrying<sp/>about<sp/>operating<sp/>system<sp/>and<sp/>it&apos;s<sp/>API.<sp/>Each</highlight></codeline>
+<codeline lineno="278"><highlight class="comment">//!<sp/>memory<sp/>block<sp/>that<sp/>is<sp/>no<sp/>longer<sp/>needed<sp/>should<sp/>be<sp/>released<sp/>by<sp/>@ref</highlight></codeline>
+<codeline lineno="279"><highlight class="comment">//!<sp/>asmjit::VMem::release()<sp/>method.<sp/>Higher-level<sp/>interface<sp/>for<sp/>virtual<sp/>memory</highlight></codeline>
+<codeline lineno="280"><highlight class="comment">//!<sp/>allocation<sp/>can<sp/>be<sp/>found<sp/>at<sp/>asmjit::MemoryManager<sp/>class.</highlight></codeline>
+<codeline lineno="281"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="282"><highlight class="comment">//!<sp/>@sa<sp/>@c<sp/>asmjit::VMem,<sp/>@<sp/>asmjit::MemoryManager.</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="285"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_config</highlight></codeline>
+<codeline lineno="286"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="287"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="288"><highlight class="comment">//!<sp/>@def<sp/>ASMJIT_OS_WINDOWS</highlight></codeline>
+<codeline lineno="289"><highlight class="comment">//!<sp/>@brief<sp/>Macro<sp/>that<sp/>is<sp/>declared<sp/>if<sp/>AsmJit<sp/>is<sp/>compiled<sp/>for<sp/>Windows.</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="291"><highlight class="comment">//!<sp/>@def<sp/>ASMJIT_OS_POSIX</highlight></codeline>
+<codeline lineno="292"><highlight class="comment">//!<sp/>@brief<sp/>Macro<sp/>that<sp/>is<sp/>declared<sp/>if<sp/>AsmJit<sp/>is<sp/>compiled<sp/>for<sp/>unix<sp/>like</highlight></codeline>
+<codeline lineno="293"><highlight class="comment">//!<sp/>operating<sp/>system.</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="295"><highlight class="comment">//!<sp/>@def<sp/>ASMJIT_API</highlight></codeline>
+<codeline lineno="296"><highlight class="comment">//!<sp/>@brief<sp/>Attribute<sp/>that&apos;s<sp/>added<sp/>to<sp/>classes<sp/>that<sp/>can<sp/>be<sp/>exported<sp/>if<sp/>AsmJit</highlight></codeline>
+<codeline lineno="297"><highlight class="comment">//!<sp/>is<sp/>compiled<sp/>as<sp/>a<sp/>dll<sp/>library.</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="299"><highlight class="comment">//!<sp/>@def<sp/>ASMJIT_ASSERT</highlight></codeline>
+<codeline lineno="300"><highlight class="comment">//!<sp/>@brief<sp/>Assertion<sp/>macro.<sp/>Default<sp/>implementation<sp/>calls</highlight></codeline>
+<codeline lineno="301"><highlight class="comment">//!<sp/>@c<sp/>asmjit::assertionFailed()<sp/>function.</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="303"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="306"><highlight class="comment">//!<sp/>@namespace<sp/>asmjit</highlight></codeline>
+<codeline lineno="307"><highlight class="comment">//!<sp/>@brief<sp/>Main<sp/>AsmJit<sp/>library<sp/>namespace.</highlight></codeline>
+<codeline lineno="308"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="309"><highlight class="comment">//!<sp/>There<sp/>are<sp/>not<sp/>other<sp/>namespaces<sp/>used<sp/>in<sp/>AsmJit<sp/>library.</highlight></codeline>
+<codeline lineno="310"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>Core]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;base.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>X86/X64]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_BUILD_X86)<sp/>||<sp/>defined(ASMJIT_BUILD_X64)</highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;x86.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_BUILD_X86<sp/>||<sp/>ASMJIT_BUILD_X64</highlight></codeline>
+<codeline lineno="318"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>Host]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;host.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_ASMJIT_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/asmjit.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+Vec128Data
+==========
+
+.. doxygenunion:: asmjit::Vec128Data
+   :project: asmjit

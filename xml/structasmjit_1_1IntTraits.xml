@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1IntTraits" kind="struct" prot="public">
+    <compoundname>asmjit::IntTraits</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structasmjit_1_1IntTraits_1aac7ce1cc1a3e53a19af9e3ff8201a3bb" prot="public" static="no">
+        <name>@52</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="32" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="32" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="31" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="31" bodyend="43"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

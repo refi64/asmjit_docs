@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1OperandUtil" kind="struct" prot="public">
+    <compoundname>asmjit::OperandUtil</compoundname>
+    <includes local="no">defs.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structasmjit_1_1OperandUtil_1a05d51e50d26642b79acc2e8cdff2449c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::OperandUtil::makeVarId</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>makeVarId</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Make variable id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="567" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="567" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1OperandUtil_1ae37a451a0be7a004ea5c802073161601" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::OperandUtil::makeLabelId</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>makeLabelId</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Make label id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="572" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="572" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1OperandUtil_1a5961fd90a14757a7938185be30db8f02" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::OperandUtil::stripVarId</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>stripVarId</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Strip variable id bit so it becomes a pure index to <ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref>[] array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="577" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="577" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1OperandUtil_1ad7ffa13ea065b296ee99988e2827a95a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool asmjit::OperandUtil::isVarId</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>isVarId</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the id refers to <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The function will never return <computeroutput>true</computeroutput> if the id is <computeroutput>kInvalidValue</computeroutput>. The trick is to compare a given id to -1 (kInvalidValue) so we check both using only one comparison. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="586" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="586" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1OperandUtil_1abf6422cdd71e44672e769bd24e920a3a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool asmjit::OperandUtil::isLabelId</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>isLabelId</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the id refers to <ref refid="structasmjit_1_1Label" kindref="compound">Label</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The function will never return <computeroutput>true</computeroutput> if the id is <computeroutput>kInvalidValue</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="593" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="593" bodyend="595"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> utilities. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="565" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="565" bodyend="596"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1OperandUtil_1abf6422cdd71e44672e769bd24e920a3a" prot="public" virt="non-virtual"><scope>asmjit::OperandUtil</scope><name>isLabelId</name></member>
+      <member refid="structasmjit_1_1OperandUtil_1ad7ffa13ea065b296ee99988e2827a95a" prot="public" virt="non-virtual"><scope>asmjit::OperandUtil</scope><name>isVarId</name></member>
+      <member refid="structasmjit_1_1OperandUtil_1ae37a451a0be7a004ea5c802073161601" prot="public" virt="non-virtual"><scope>asmjit::OperandUtil</scope><name>makeLabelId</name></member>
+      <member refid="structasmjit_1_1OperandUtil_1a05d51e50d26642b79acc2e8cdff2449c" prot="public" virt="non-virtual"><scope>asmjit::OperandUtil</scope><name>makeVarId</name></member>
+      <member refid="structasmjit_1_1OperandUtil_1a5961fd90a14757a7938185be30db8f02" prot="public" virt="non-virtual"><scope>asmjit::OperandUtil</scope><name>stripVarId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

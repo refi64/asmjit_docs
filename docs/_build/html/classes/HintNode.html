@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HintNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="Imm" href="Imm.html" />
+    <link rel="prev" title="FuncPrototype" href="FuncPrototype.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Imm.html" title="Imm"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FuncPrototype.html" title="FuncPrototype"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="hintnode">
+<h1>HintNode<a class="headerlink" href="#hintnode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1HintNode">
+<div class="line"><em>struct</em> <strong>asmjit::HintNode</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Hint node. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a0c92890db18454d491dcff86af86d8db"></span><div class="line-block">
+<div class="line"> <strong>HintNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler, <a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * vd, uint32_t hint, uint32_t value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="#asmjitstructasmjit_1_1HintNode"><em>HintNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a5ea1be4cfdad997306718ceffa1e2039"></span><div class="line-block">
+<div class="line"> <strong>~HintNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1HintNode"><em>HintNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a9190501dc48972301c2f3bda30557974"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>getVd</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1ab1b2a2b2bd9e592f74920946e4dd6202"></span><div class="line-block">
+<div class="line">uint32_t <strong>getHint</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get hint it (see kVarHint). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a0608f9436a6cb5e673c51fc062f18eee"></span><div class="line-block">
+<div class="line">void <strong>setHint</strong>(uint32_t hint)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set hint it (see kVarHint). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a5c1a0d474efee27431613bfb53bcba25"></span><div class="line-block">
+<div class="line">uint32_t <strong>getValue</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get hint value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1ae1f4da8ea69cada8f4ad5e4e1038f6b1"></span><div class="line-block">
+<div class="line">void <strong>setValue</strong>(uint32_t value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set hint value. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a8c5cd789bca2d7c198d4276553fba3ca"></span><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>_vd</strong></p>
+<blockquote>
+<div><p>Variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a49c49a179ed4128a1745d9ec563ea869"></span>uint32_t <strong>_hint</strong></p>
+<blockquote>
+<div><p>Hint id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a6b97d883daec930f41447bdc1ae26b77"></span>uint32_t <strong>_value</strong></p>
+<blockquote>
+<div><p>Value. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1HintNode_1a1ebfa5352fed480d0a022f6c64dcf9a4"></span><div class="line-block">
+<div class="line"> <strong>HintNode</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1HintNode"><em>HintNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1HintNode_1ad2aa226e74cb6573a027d42a790a3b01"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1HintNode"><em>HintNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1HintNode"><em>HintNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="FuncPrototype.html"
+                        title="previous chapter">FuncPrototype</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Imm.html"
+                        title="next chapter">Imm</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/HintNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Imm.html" title="Imm"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FuncPrototype.html" title="FuncPrototype"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

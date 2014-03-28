@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1VarState" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::VarState</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseVarState" prot="public" virt="non-virtual">asmjit::BaseVarState</basecompoundref>
+    <includes local="no">x86compiler.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331" prot="public" static="no">
+        <name>@58</name>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a721e1d003394002ce51d177f2e5b753f" prot="public">
+          <name>kGpIndex</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Base index for Gp registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331acadbc43329e7558c6be00647c9021126" prot="public">
+          <name>kGpCount</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+<para>Count of Gp registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331ac2133aa375a58849420a577aa8fb34f4" prot="public">
+          <name>kMmIndex</name>
+          <initializer> kGpIndex + kGpCount</initializer>
+          <briefdescription>
+<para>Base index for Mm registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331ac0587e81e6bdedb698f86fe041c6b028" prot="public">
+          <name>kMmCount</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+<para>Count of Mm registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a60fa04cece6e3daa2d48048fea33797b" prot="public">
+          <name>kXmmIndex</name>
+          <initializer> kMmIndex + kMmCount</initializer>
+          <briefdescription>
+<para>Base index for Xmm registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a7095d256203d204e13838903aa2df89e" prot="public">
+          <name>kXmmCount</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+<para>Count of Xmm registers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a2e21256c6c1b021ed9005c46478f60a9" prot="public">
+          <name>kAllCount</name>
+          <initializer> kXmmIndex + kXmmCount</initializer>
+          <briefdescription>
+<para>Count of all registers in <ref refid="structasmjit_1_1x86x64_1_1VarState" kindref="compound">VarState</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="365" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="365" bodyend="383"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1aaec2eb8171a02087dafd4c13b3d4b3e3" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::x86x64::VarState::_list[kAllCount]</definition>
+        <argsstring>[kAllCount]</argsstring>
+        <name>_list</name>
+        <briefdescription>
+<para>List of all allocated variables in one array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="420" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1a6eebf6592104a7f3e5a3e656f656786c" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::x86x64::VarState::_listGp[kGpCount]</definition>
+        <argsstring>[kGpCount]</argsstring>
+        <name>_listGp</name>
+        <briefdescription>
+<para>Allocated Gp registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="424" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1a0ff4a04fbc4243bd30909b3f2883c72a" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::x86x64::VarState::_listMm[kMmCount]</definition>
+        <argsstring>[kMmCount]</argsstring>
+        <name>_listMm</name>
+        <briefdescription>
+<para>Allocated Mm registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="426" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1a548638ebf6f2f8c02100f4e297131e89" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::x86x64::VarState::_listXmm[kXmmCount]</definition>
+        <argsstring>[kXmmCount]</argsstring>
+        <name>_listXmm</name>
+        <briefdescription>
+<para>Allocated Xmm registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="428" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1a5919ae3832e08eead1c5da5e5ab09133" prot="public" static="no" mutable="no">
+        <type>union asmjit::x86x64::VarState::@59</type>
+        <definition>union asmjit::x86x64::VarState::@59 asmjit::x86x64::VarState::@60</definition>
+        <argsstring></argsstring>
+        <name>@60</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="430"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1aea05ab174ed599dc1f885a1c062e3631" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::VarState::_occupied</definition>
+        <argsstring></argsstring>
+        <name>_occupied</name>
+        <briefdescription>
+<para>Occupied registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="433" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1a8bc35997dd227198cf5ba50a7581f020" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::VarState::_modified</definition>
+        <argsstring></argsstring>
+        <name>_modified</name>
+        <briefdescription>
+<para>Modified registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="435" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarState_1a0d89d9d4c8b4d092b032d39d5e570365" prot="public" static="no" mutable="no">
+        <type><ref refid="unionasmjit_1_1x86x64_1_1StateCell" kindref="compound">StateCell</ref></type>
+        <definition>StateCell asmjit::x86x64::VarState::_cells[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>_cells</name>
+        <briefdescription>
+<para>Variables data (count of variables is stored in Context). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="438" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarState_1a700ef130ea5c00c3a78cdeddd61ac902" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> **</type>
+        <definition>VarData** asmjit::x86x64::VarState::getList</definition>
+        <argsstring>()</argsstring>
+        <name>getList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="389" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="389" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarState_1aa7505b91e7b749cc4fc7bdb0202a073c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> **</type>
+        <definition>VarData** asmjit::x86x64::VarState::getListByClass</definition>
+        <argsstring>(uint32_t c)</argsstring>
+        <name>getListByClass</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="393" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="393" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarState_1abe9cf92954c41dc12e3b8f1acd7cc520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::VarState::reset</definition>
+        <argsstring>(size_t numCells)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>size_t</type>
+          <declname>numCells</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="408" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="408" bodyend="412"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86/X64 state. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1205">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="1204">
+        <label>asmjit::x86x64::VarState</label>
+        <link refid="structasmjit_1_1x86x64_1_1VarState"/>
+        <childnode refid="1205" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1207">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="1210">
+        <label>asmjit::VarData</label>
+        <link refid="structasmjit_1_1VarData"/>
+      </node>
+      <node id="1208">
+        <label>asmjit::x86x64::RegMask</label>
+        <link refid="structasmjit_1_1x86x64_1_1RegMask"/>
+      </node>
+      <node id="1206">
+        <label>asmjit::x86x64::VarState</label>
+        <link refid="structasmjit_1_1x86x64_1_1VarState"/>
+        <childnode refid="1207" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1208" relation="usage">
+          <edgelabel>_occupied</edgelabel>
+          <edgelabel>_modified</edgelabel>
+        </childnode>
+        <childnode refid="1209" relation="usage">
+          <edgelabel>_cells</edgelabel>
+        </childnode>
+        <childnode refid="1210" relation="usage">
+          <edgelabel>_listXmm</edgelabel>
+          <edgelabel>_list</edgelabel>
+          <edgelabel>_listMm</edgelabel>
+          <edgelabel>_listGp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1209">
+        <label>asmjit::x86x64::StateCell</label>
+        <link refid="unionasmjit_1_1x86x64_1_1StateCell"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="364" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="364" bodyend="439"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a0d89d9d4c8b4d092b032d39d5e570365" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_cells</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1aaec2eb8171a02087dafd4c13b3d4b3e3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_list</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a6eebf6592104a7f3e5a3e656f656786c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_listGp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a0ff4a04fbc4243bd30909b3f2883c72a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_listMm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a548638ebf6f2f8c02100f4e297131e89" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_listXmm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8bc35997dd227198cf5ba50a7581f020" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_modified</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1aea05ab174ed599dc1f885a1c062e3631" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>_occupied</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a700ef130ea5c00c3a78cdeddd61ac902" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>getList</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1aa7505b91e7b749cc4fc7bdb0202a073c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>getListByClass</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a2e21256c6c1b021ed9005c46478f60a9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kAllCount</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331acadbc43329e7558c6be00647c9021126" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kGpCount</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a721e1d003394002ce51d177f2e5b753f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kGpIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331ac0587e81e6bdedb698f86fe041c6b028" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kMmCount</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331ac2133aa375a58849420a577aa8fb34f4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kMmIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a7095d256203d204e13838903aa2df89e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kXmmCount</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1a8310bbd50a763958e2bd2a76279be331a60fa04cece6e3daa2d48048fea33797b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>kXmmIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarState_1abe9cf92954c41dc12e3b8f1acd7cc520" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarState</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

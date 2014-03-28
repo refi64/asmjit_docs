@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Zone &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::FpReg" href="x86x64__FpReg.html" />
+    <link rel="prev" title="VirtualMemoryManager" href="VirtualMemoryManager.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__FpReg.html" title="x86x64::FpReg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="VirtualMemoryManager.html" title="VirtualMemoryManager"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="zone">
+<h1>Zone<a class="headerlink" href="#zone" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1Zone">
+<div class="line"><em>struct</em> <strong>asmjit::Zone</strong></div>
+<div class="line"><em>#include &lt;zone.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Fast incremental memory allocator. </p>
+<p>Memory allocator designed to allocate small objects that will be invalidated (free) all at once. </p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Zone_1aa149dca67383ad19e563e3cfd24120cc"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>Zone</strong>(size_t chunkSize)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new instance of <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em><span class="pre">Zone</span></em></a></tt> allocator. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">chunkSize</span></tt> - <p>Default size of the first chunk. </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1ae94a7270b072c927ee2e14d28a95c40d"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~Zone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em>Zone</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a96ea6f474546d09502ad270af0b82422"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>clear</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Free all allocated memory except first block that remains for reuse. </p>
+<p>Note that this method will invalidate all instances using this memory allocated by this zone instance. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a253ae00df345d8aa7d2c6989496ac986"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Free all allocated memory at once. </p>
+<p>Note that this method will invalidate all instances using this memory allocated by this zone instance. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a3cee4658b5b080c2285f157040e038ca"></span><div class="line-block">
+<div class="line">size_t <strong>getChunkSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get (default) chunk size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1abc452d9549c8a5934637cbcfe830ef04"></span><div class="line-block">
+<div class="line">void * <strong>alloc</strong>(size_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Allocate <tt class="docutils literal"><span class="pre">size</span></tt> bytes of memory. </p>
+<p><p>Pointer allocated by this way will be valid until <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em><span class="pre">Zone</span></em></a></tt> object is destroyed. To create class by this way use placement <tt class="docutils literal"><span class="pre">new</span></tt> and <tt class="docutils literal"><span class="pre">delete</span></tt> operators:</p>
+<p> <pre class="literal-block">
+ // Example of simple class allocation.
+ using namespace asmjit
+
+ // Your class.
+ class Object
+ {
+   // members...
+ };
+
+ // Your function
+ void f()
+ {
+   // Create zone object with chunk size of 65536 bytes.
+   <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em>Zone</em></a> zone(65536);
+
+   // Create your objects using zone object allocating, for example:
+   Object* obj = new(zone.alloc(sizeof(YourClass))) Object();
+
+   // ... lifetime of your objects ...
+
+   // Destroy your objects:
+   obj-&gt;~Object();
+
+   // Zone destructor will free all memory allocated through it, you can
+   // call &#64;c zone.reset() if you wan't to reuse current &#64;ref Zone.
+ }
+</pre>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1aff1f5ac43e4a8c42a7dbc5cf8e0b7a47"></span><div class="line-block">
+<div class="line">template &lt; typename T &gt;</div>
+<div class="line">T * <strong>allocT</strong>(size_t size = sizeof(T))</div>
+</div>
+</p>
+<blockquote>
+<div><p>Like <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone_1abc452d9549c8a5934637cbcfe830ef04"><em>alloc()</em></a>, but returns <tt class="docutils literal"><span class="pre">T*</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a2c49b1191e1be4755c6aeffbb4beb595"></span><div class="line-block">
+<div class="line">ASMJIT_API void * <strong>_alloc</strong>(size_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1ae557fd4914c39ce401ea23e855cb4583"></span><div class="line-block">
+<div class="line">void * <strong>calloc</strong>(size_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Allocate <tt class="docutils literal"><span class="pre">size</span></tt> bytes of zeroed memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a3bf233327f30c7235d11715f329129b7"></span><div class="line-block">
+<div class="line">ASMJIT_API void * <strong>_calloc</strong>(size_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a2d832389e5898c0fcc52c6d22728a826"></span><div class="line-block">
+<div class="line">ASMJIT_API void * <strong>dup</strong>(const void * data, size_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Helper to duplicate data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a6dde61ffae89af5a1ca189db8767eec5"></span><div class="line-block">
+<div class="line">ASMJIT_API char * <strong>sdup</strong>(const char * str)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Helper to duplicate string. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a7a89a9728df35f2486f724ad1754880e"></span><div class="line-block">
+<div class="line">ASMJIT_API char * <strong>sformat</strong>(const char * str, ...)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Helper to duplicate formatted string, maximum length is 256 bytes. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Zone_1a142af8ce75cf4b9c720fe18595ed934f"></span>Chunk * <strong>_chunks</strong></p>
+<blockquote>
+<div><p>Last allocated chunk of memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1a4a1de48b6327c6f264bb38498f507518"></span>size_t <strong>_chunkSize</strong></p>
+<blockquote>
+<div><p>Default chunk size. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<p><p id="asmjitstructasmjit_1_1Zone_1_1Chunk"><em>class</em> <strong>Chunk</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Zone_1_1Chunk_1a4eba08094933fc6d876c841cdd05e581"></span><div class="line-block">
+<div class="line">size_t <strong>getRemainingSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get count of remaining (unused) bytes in chunk. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Zone_1_1Chunk_1a249f52848668a9b9cc1ac9a325874adc"></span>Chunk * <strong>prev</strong></p>
+<blockquote>
+<div><p>Link to previous chunk. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1_1Chunk_1a2d70ada1d070dd9c4573228b7671e3c8"></span>size_t <strong>pos</strong></p>
+<blockquote>
+<div><p>Position in this chunk. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1_1Chunk_1acda6dd6f3e7f045bba671fac01eee4e6"></span>size_t <strong>size</strong></p>
+<blockquote>
+<div><p>Size of this chunk (in bytes). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Zone_1_1Chunk_1ace17c1955e40911720d6e2007b0ad7dd"></span>uint8_t <strong>data</strong>[sizeof(void *)]</p>
+<blockquote>
+<div><p>Data. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="VirtualMemoryManager.html"
+                        title="previous chapter">VirtualMemoryManager</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__FpReg.html"
+                        title="next chapter">x86x64::FpReg</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/Zone.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__FpReg.html" title="x86x64::FpReg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="VirtualMemoryManager.html" title="VirtualMemoryManager"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

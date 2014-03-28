@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionasmjit_1_1IntUtil_1_1Float" kind="union" prot="public">
+    <compoundname>asmjit::IntUtil::Float</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionasmjit_1_1IntUtil_1_1Float_1a91ea9d8856bcf9dcbc1cec1cc07108cb" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::IntUtil::Float::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="55" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1IntUtil_1_1Float_1a14ff8a75a8e6aaeb2719ed17043977a2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float asmjit::IntUtil::Float::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="56" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="54" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="54" bodyend="57"/>
+    <listofallmembers>
+      <member refid="unionasmjit_1_1IntUtil_1_1Float_1a14ff8a75a8e6aaeb2719ed17043977a2" prot="public" virt="non-virtual"><scope>asmjit::IntUtil::Float</scope><name>f</name></member>
+      <member refid="unionasmjit_1_1IntUtil_1_1Float_1a91ea9d8856bcf9dcbc1cec1cc07108cb" prot="public" virt="non-virtual"><scope>asmjit::IntUtil::Float</scope><name>i</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

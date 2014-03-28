@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Logging and error handling &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Modules" href="../modules.html" />
+    <link rel="next" title="Virtual memory management" href="memory.html" />
+    <link rel="prev" title="CPU information" href="cpu_info.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="memory.html" title="Virtual memory management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cpu_info.html" title="CPU information"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../modules.html" accesskey="U">Modules</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="logging-and-error-handling">
+<h1>Logging and error handling<a class="headerlink" href="#logging-and-error-handling" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitgroup__asmjit__logging">
+<div class="line"><em>group</em> <strong>asmjit_logging</strong></div>
+</div>
+<blockquote>
+<div><p></p>
+<p><p>Contains classes related to loging. Currently logging is implemented in <a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em>asmjit::BaseLogger</em></a> class. The function asmjit::BaseLogger::log() can be overridden to redirect logging into any user-defined stream.</p>
+<p>To log your assembler output to FILE stream use this code:</p>
+<p><pre class="literal-block">
+ // Create assembler
+ Assembler a;
+
+ // Create and set file based logger
+ FileLogger logger(stderr);
+ a.setLogger(&amp;logger);
+</pre>
+</p>
+<p>You can see that logging goes through <tt class="docutils literal"><span class="pre">Assembler</span></tt>. If you are using <tt class="docutils literal"><span class="pre">Compiler</span></tt> and you want to log messages in correct assembler order, you should look at Compiler::comment() method. It allows you to insert text message into items stream so the <tt class="docutils literal"><span class="pre">Compiler</span></tt> is able to send messages to Assembler in correct order.</p>
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><tt class="docutils literal"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em><span class="pre">asmjit::BaseLogger</span></em></a></tt>, <tt class="docutils literal"><a class="reference internal" href="#asmjitstructasmjit_1_1FileLogger"><em><span class="pre">asmjit::FileLogger</span></em></a></tt>. </dd>
+</dl>
+</p>
+</p>
+<em>Enums</em><blockquote>
+<div><p><span class="target" id="asmjitgroup__asmjit__logging_1ga007dd7cdb93192608722cc9df95c5fe9"></span><strong>kLoggerOption enum</strong></p>
+<blockquote>
+<div><p>Logger options. </p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">kLoggerOptionBinaryForm</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">0</span></tt> - <p>Whether to output instructions also in binary form. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerOptionHexImmediate</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">1</span></tt> - <p>Whether to output immediates as hexadecimal numbers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerOptionHexDisplacement</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">2</span></tt> - <p>Whether to output displacements as hexadecimal numbers. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerOptionCount</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">3</span></tt> - <p>Count of logger options. </p>
+</li>
+</ul>
+</div></blockquote>
+<p><span class="target" id="asmjitgroup__asmjit__logging_1ga318c386f2a58cf91b615e326ea09b824"></span><strong>kLoggerStyle enum</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">kLoggerStyleDefault</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">0</span></tt> - </li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerStyleDirective</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">1</span></tt> - </li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerStyleLabel</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">2</span></tt> - </li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerStyleData</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">3</span></tt> - </li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerStyleComment</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">4</span></tt> - </li>
+<li><tt class="first docutils literal"><span class="pre">kLoggerStyleCount</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">5</span></tt> - </li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p><p id="asmjitstructasmjit_1_1BaseLogger"><em>class</em> <strong>BaseLogger</strong></p>
+<blockquote>
+<div><p>Abstract logging class. </p>
+<p><p>This class can be inherited and reimplemented to fit into your logging subsystem. When reimplementing use <tt class="docutils literal"><span class="pre">asmjit::Logger::log()</span></tt> method to log into your stream.</p>
+<p>This class also contain <tt class="docutils literal"><span class="pre">_enabled</span></tt> member that can be used to enable or disable logging. </p>
+</p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1ad0197c4dbfef5a5856776f4e03111b46"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>BaseLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a <a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a5e5624b15d5db5cc789ffb85724f28d0"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~BaseLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5"></span><div class="line-block">
+<div class="line">void <strong>logString</strong>(uint32_t style, const char * buf, size_t len = kInvalidIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Abstract method to log output. </p>
+<p>Default implementation that is in <tt class="docutils literal"><span class="pre">asmjit::Logger</span></tt> is to do nothing. It&#8217;s virtual to fit to your logging system. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a5132eea60f42e361267fe9ae2a25f9d0"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>logFormat</strong>(uint32_t style, const char * fmt, ...)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Log formatter message (like sprintf) sending output to <tt class="docutils literal"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5"><em><span class="pre">logString()</span></em></a></tt> method. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a70ef8f6cead66ec49a1258041a43c3fc"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>logBinary</strong>(uint32_t style, const void * data, size_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Log binary data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a966c8b2c93b39f4f569e2ad1e03376f5"></span><div class="line-block">
+<div class="line">uint32_t <strong>getOptions</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get all logger options as a single integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a86a89974cb83bd303c2c7eefd75187d3"></span><div class="line-block">
+<div class="line">bool <strong>getOption</strong>(uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get the given logger option. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a7d7d17b96ec8d27f0b68359356b7c65b"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setOption</strong>(uint32_t id, bool value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set the given logger option. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1ae1e4d708168a631b5c60fe61f16c679d"></span><div class="line-block">
+<div class="line">const char * <strong>getIndentation</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get indentation. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1ae31355f9483b8f0228bc95b4aa37079d"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setIndentation</strong>(const char * indentation)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set indentation. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a54b26cf2ad37d3e945a9e69f80ad614b"></span><div class="line-block">
+<div class="line">void <strong>resetIndentation</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset indentation. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896"></span>uint32_t <strong>_options</strong></p>
+<blockquote>
+<div><p>Options, see kLoggerOption. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f"></span>char <strong>_indentation</strong>[12]</p>
+<blockquote>
+<div><p>Indentation. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1a9f0c3de277bacd8686fcc4a656ae08ee"></span><div class="line-block">
+<div class="line"> <strong>BaseLogger</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseLogger_1ae49724966b65ff1f372b10170bf8d508"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseLogger"><em>BaseLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+<p><p id="asmjitstructasmjit_1_1FileLogger"><em>class</em> <strong>FileLogger</strong></p>
+<blockquote>
+<div><p>Logger that can log to standard C <tt class="docutils literal"><span class="pre">FILE*</span></tt> stream. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1ad88d1d968914c5e7088c5c0505203e2b"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>FileLogger</strong>(FILE * stream = NULL)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <tt class="docutils literal"><a class="reference internal" href="#asmjitstructasmjit_1_1FileLogger"><em><span class="pre">FileLogger</span></em></a></tt>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">stream</span></tt> - <p>FILE stream where logging will be sent (can be <tt class="docutils literal"><span class="pre">NULL</span></tt> to disable logging). </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a1fa8c8d8e47a288b257869297a9f4086"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~FileLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a1bbe0dbee1b762b0bde98ebc542ccdaa"></span><div class="line-block">
+<div class="line">FILE * <strong>getStream</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get <tt class="docutils literal"><span class="pre">FILE*</span></tt> stream. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Return value can be <tt class="docutils literal"><span class="pre">NULL</span></tt>. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a207f2df573b418ce5534d18065b92bca"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setStream</strong>(FILE * stream)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set <tt class="docutils literal"><span class="pre">FILE*</span></tt> stream. </p>
+<p><p>Set file stream.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">stream</span></tt> - <p><tt class="docutils literal"><span class="pre">FILE</span></tt> stream where to log output (can be <tt class="docutils literal"><span class="pre">NULL</span></tt> to disable logging). </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a94ffc19d6a1d5f9ec3d8a04247e277b4"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>logString</strong>(uint32_t style, const char * buf, size_t len = kInvalidIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Abstract method to log output. </p>
+<p>Default implementation that is in <tt class="docutils literal"><span class="pre">asmjit::Logger</span></tt> is to do nothing. It&#8217;s virtual to fit to your logging system. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c"></span>FILE * <strong>_stream</strong></p>
+<blockquote>
+<div><p>C file stream. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1ad20c557a144faeba683857b71a7cbd0a"></span><div class="line-block">
+<div class="line"> <strong>FileLogger</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a8552e56056aab8d129e25cb83ba7a35c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+<p><p id="asmjitstructasmjit_1_1StringLogger"><em>class</em> <strong>StringLogger</strong></p>
+<blockquote>
+<div><p>String logger. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a5e533a7723ac19cc7f212d0cbfce0b5a"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>StringLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new <a class="reference internal" href="#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a70b362d6c381d2564e8f216aca386c71"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~StringLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1ad9d70ea71f1a3295e35a644404b752bf"></span><div class="line-block">
+<div class="line">const char * <strong>getString</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get <tt class="docutils literal"><span class="pre">char*</span></tt> pointer which represents the resulting string. </p>
+<p>The pointer is owned by <a class="reference internal" href="#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>, it can&#8217;t be modified or freed. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1afd50d9803a35f72aa2c0af5fb93ff6aa"></span><div class="line-block">
+<div class="line">void <strong>clearString</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear the resulting string. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1adcfddc5e2bb95b362f46adcd18ddb9ff"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>logString</strong>(uint32_t style, const char * buf, size_t len = kInvalidIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Abstract method to log output. </p>
+<p>Default implementation that is in <tt class="docutils literal"><span class="pre">asmjit::Logger</span></tt> is to do nothing. It&#8217;s virtual to fit to your logging system. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a3982da748e40ad5de1b3bc3348726ad3"></span><a class="reference internal" href="base.html#asmjitstructasmjit_1_1StringBuilder"><em>StringBuilder</em></a> <strong>_stringBuilder</strong></p>
+<blockquote>
+<div><p>Output. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a0924d8729e9e914003c576850d7d4dc1"></span><div class="line-block">
+<div class="line"> <strong>StringLogger</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a3dff3850ac102e2747c498a599e864cb"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cpu_info.html"
+                        title="previous chapter">CPU information</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="memory.html"
+                        title="next chapter">Virtual memory management</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/modules/logging.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="memory.html" title="Virtual memory management"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cpu_info.html" title="CPU information"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../modules.html" >Modules</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::RegMask &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::SegReg" href="x86x64__SegReg.html" />
+    <link rel="prev" title="x86x64::RegCount" href="x86x64__RegCount.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__SegReg.html" title="x86x64::SegReg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__RegCount.html" title="x86x64::RegCount"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-regmask">
+<h1>x86x64::RegMask<a class="headerlink" href="#x86x64-regmask" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1RegMask">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::RegMask</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86/X64 registers mask (Gp, Fp, Mm, Xmm/Ymm/Zmm). </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1aff501f7ba2e89762e22885c518055133"></span><div class="line-block">
+<div class="line">void <strong>zero</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1ae2b38f7234997eb195cc85196f9a8525"></span><div class="line-block">
+<div class="line">uint32_t <strong>get</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a2fb13a4d4513704a192d06fcfaaa9486"></span><div class="line-block">
+<div class="line">void <strong>set</strong>(uint32_t c, uint32_t mask)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a212c178527374cee0c4be103d5185e94"></span><div class="line-block">
+<div class="line">void <strong>set</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1ad5187e40d651462e766803310d90da65"></span><div class="line-block">
+<div class="line">void <strong>add</strong>(uint32_t c, uint32_t mask)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1abe10e294981838a79ce7e3b949e87ab6"></span><div class="line-block">
+<div class="line">void <strong>add</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a1af75ea26ac5b52303e2d52e44f0ec78"></span><div class="line-block">
+<div class="line">void <strong>del</strong>(uint32_t c, uint32_t mask)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a182c61bcfbd1f36f3e4aec41efd37488"></span><div class="line-block">
+<div class="line">void <strong>del</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1af34db3b457cc3e98f1fcc9e05379bd70"></span><div class="line-block">
+<div class="line">void <strong>and_</strong>(uint32_t c, uint32_t mask)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1ab3a41d1edf020c851749aee6a3d674d7"></span><div class="line-block">
+<div class="line">void <strong>and_</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a6a1ddeb4c0a7ebafffe5f40cebbc78f4"></span><div class="line-block">
+<div class="line">void <strong>xor_</strong>(uint32_t c, uint32_t mask)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a980714f4c192a66e0ea641ec097cc0ce"></span><div class="line-block">
+<div class="line">void <strong>xor_</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a7149f6967a79ca83757d49bf27421f43"></span><div class="line-block">
+<div class="line">bool <strong>isEmpty</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1add58afbcf3fe2a3cf69a075b086609df"></span><div class="line-block">
+<div class="line">bool <strong>has</strong>(uint32_t c, uint32_t mask = 0xFFFFFFFF)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a3fd9e56c4abe43299d69492a50653b05"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1ae42808d7d65f570024fba8828a1051ab"></span>uint16_t <strong>_gp</strong></p>
+<blockquote>
+<div><p>Gp registers mask. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a796df891de1f5a62afa3faf220244093"></span>uint16_t <strong>_fp</strong></p>
+<blockquote>
+<div><p>Fp registers mask. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a103d076aefe827176bb2fdfa89e991b5"></span>uint16_t <strong>_mm</strong></p>
+<blockquote>
+<div><p>Mm registers mask. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1acfc31c3b3758ff04f783e59c6f1fd85c"></span>uint16_t <strong>_xy</strong></p>
+<blockquote>
+<div><p>Xmm/Ymm registers mask. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a4aa9731bae164e1a0a0f1a4d1e257a19"></span>uint16_t <strong>_regs</strong>[4]</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a72abab8d4c4711cb9bbf8fd83f81d3df"></span>UInt64 <strong>_packed</strong></p>
+<blockquote>
+<div><p>All masks as 64-bit integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1RegMask_1a44c8601639db3ca956502f7ed70fde96"></span>union asmjit::x86x64::RegMask::&#64;69 <strong>&#64;70</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__RegCount.html"
+                        title="previous chapter">x86x64::RegCount</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__SegReg.html"
+                        title="next chapter">x86x64::SegReg</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__RegMask.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__SegReg.html" title="x86x64::SegReg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__RegCount.html" title="x86x64::RegCount"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

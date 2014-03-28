@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionasmjit_1_1x86x64_1_1CpuId" kind="union" prot="public">
+    <compoundname>asmjit::x86x64::CpuId</compoundname>
+    <includes local="no">x86cpu.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionasmjit_1_1x86x64_1_1CpuId_1abefc05b82d2fca12257b86571efa6ed0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::CpuId::i[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>i</name>
+        <briefdescription>
+<para>EAX/EBX/ECX/EDX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="128" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1x86x64_1_1CpuId_1a3caf493a26da29fe66c1d361e7993389" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::CpuId::eax</definition>
+        <argsstring></argsstring>
+        <name>eax</name>
+        <briefdescription>
+<para>EAX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="132" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1x86x64_1_1CpuId_1abdbc9b2516a78cf294a0b4491b750e63" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::CpuId::ebx</definition>
+        <argsstring></argsstring>
+        <name>ebx</name>
+        <briefdescription>
+<para>EBX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="134" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1x86x64_1_1CpuId_1a14bf3d4faaf9d9b41953ba9e52083c5f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::CpuId::ecx</definition>
+        <argsstring></argsstring>
+        <name>ecx</name>
+        <briefdescription>
+<para>ECX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="136" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1x86x64_1_1CpuId_1a5b3963e37bf6e69cfce63a10e8e5c321" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::CpuId::edx</definition>
+        <argsstring></argsstring>
+        <name>edx</name>
+        <briefdescription>
+<para>EDX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="138" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1x86x64_1_1CpuId_1a3f2aa0b3a076696bc1fb36fa7d68ffcb" prot="public" static="no" mutable="no">
+        <type>struct asmjit::x86x64::CpuId::@63</type>
+        <definition>struct asmjit::x86x64::CpuId::@63 asmjit::x86x64::CpuId::@64</definition>
+        <argsstring></argsstring>
+        <name>@64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86/X64 cpuid output. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="126" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="126" bodyend="140"/>
+    <listofallmembers>
+      <member refid="unionasmjit_1_1x86x64_1_1CpuId_1a3caf493a26da29fe66c1d361e7993389" prot="public" virt="non-virtual"><scope>asmjit::x86x64::CpuId</scope><name>eax</name></member>
+      <member refid="unionasmjit_1_1x86x64_1_1CpuId_1abdbc9b2516a78cf294a0b4491b750e63" prot="public" virt="non-virtual"><scope>asmjit::x86x64::CpuId</scope><name>ebx</name></member>
+      <member refid="unionasmjit_1_1x86x64_1_1CpuId_1a14bf3d4faaf9d9b41953ba9e52083c5f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::CpuId</scope><name>ecx</name></member>
+      <member refid="unionasmjit_1_1x86x64_1_1CpuId_1a5b3963e37bf6e69cfce63a10e8e5c321" prot="public" virt="non-virtual"><scope>asmjit::x86x64::CpuId</scope><name>edx</name></member>
+      <member refid="unionasmjit_1_1x86x64_1_1CpuId_1abefc05b82d2fca12257b86571efa6ed0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::CpuId</scope><name>i</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

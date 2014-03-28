@@ -1,0 +1,530 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>FuncNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="FuncPrototype" href="FuncPrototype.html" />
+    <link rel="prev" title="FuncInOut" href="FuncInOut.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="FuncPrototype.html" title="FuncPrototype"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FuncInOut.html" title="FuncInOut"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="funcnode">
+<h1>FuncNode<a class="headerlink" href="#funcnode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1FuncNode">
+<div class="line"><em>struct</em> <strong>asmjit::FuncNode</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Function declaration node. </p>
+<p><p>Functions are base blocks for generating assembler output. Each generated assembler stream needs standard entry and leave sequences which are compatible with the operating system ABI.</p>
+<p><a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em>FuncNode</em></a> can be used to generate function prolog and epilog which are compatible with a given function calling convention and to allocate and manage variables that can be allocated/spilled during compilation phase. </p>
+</p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a41c623e27e0c7f48a7449d5a2251c826"></span><div class="line-block">
+<div class="line"> <strong>FuncNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <tt class="docutils literal"><a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em><span class="pre">FuncNode</span></em></a></tt> instance. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Always use asmjit::BaseCompiler::addFunc() to create a <a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em>FuncNode</em></a> instance. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a96efa97101afa6de2470ab834012e2fd"></span><div class="line-block">
+<div class="line"> <strong>~FuncNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <tt class="docutils literal"><a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em><span class="pre">FuncNode</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aeed90f1f76526e1230f5ce8299b0cdad"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="TargetNode.html#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  * <strong>getEntryNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function entry <a class="reference internal" href="TargetNode.html#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a8205fefd8a9f370b03337480f49e484a"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="TargetNode.html#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  * <strong>getExitNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function exit <a class="reference internal" href="TargetNode.html#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aec53520f981f2e4b63425144e206ae0a"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> <strong>getEntryLabel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function entry label. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a6c71ad8d223598cec26d42bfaa430a99"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> <strong>getExitLabel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function exit label. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a90f96c6a5d681318e1ce80b7c9cfe84d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="EndNode.html#asmjitstructasmjit_1_1EndNode"><em>EndNode</em></a>  * <strong>getEnd</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function <a class="reference internal" href="EndNode.html#asmjitstructasmjit_1_1EndNode"><em>EndNode</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1ae4188639f1942c377c3167af2576405d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="FuncDecl.html#asmjitstructasmjit_1_1FuncDecl"><em>FuncDecl</em></a>  * <strong>getDecl</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function declaration. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1afe18b6be554afa222ea450fc058836a4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  ** <strong>getArgList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get arguments list. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a4a3749b6a12a0ecd3f8b1f5b0ac2a871"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArgCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get arguments count. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1af5e1caec8cf6f58ecd28aae073b0c86c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>getArg</strong>(uint32_t i)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get argument at <em>i</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a0d46bccbf501f9e4b994085c027438d6"></span><div class="line-block">
+<div class="line">void <strong>setArg</strong>(uint32_t i, <a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * vd)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set argument at <em>i</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a1baf79213af86c6e6631f66dd7e25476"></span><div class="line-block">
+<div class="line">void <strong>resetArg</strong>(uint32_t i)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset argument at <em>i</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aba8998803b5626e6012ffd1aa2c7b305"></span><div class="line-block">
+<div class="line">uint32_t <strong>getFuncHints</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function hints. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1ab288597be6fd35b3a97b6dab47730821"></span><div class="line-block">
+<div class="line">uint32_t <strong>getFuncFlags</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function flags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a8f1f92929534bea3a666d278d9446e9a"></span><div class="line-block">
+<div class="line">bool <strong>hasFuncFlag</strong>(uint32_t flag)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the _funcFlags has <em>flag</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a1332881057661c7f142307d91c9ba396"></span><div class="line-block">
+<div class="line">void <strong>addFuncFlags</strong>(uint32_t flags)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set function <em>flag</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1abb264e696714e3a7cf7cdf61dcde72d2"></span><div class="line-block">
+<div class="line">void <strong>clearFuncFlags</strong>(uint32_t flags)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear function <em>flag</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1ac6a78aab2302c1c39748b6c74a558da3"></span><div class="line-block">
+<div class="line">bool <strong>isNaked</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the function is naked. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a20a35cd49145e33de6d521690d9c6e35"></span><div class="line-block">
+<div class="line">bool <strong>isCaller</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the function is also a caller. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a184988eedf3ffcf73c0081990058b666"></span><div class="line-block">
+<div class="line">bool <strong>isStackMisaligned</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the required stack alignment is lower than expected one, thus it has to be aligned manually. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a58795b2bdab5f77a37e86396c8b4b958"></span><div class="line-block">
+<div class="line">bool <strong>isStackAdjusted</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the stack pointer is adjusted inside function prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1afac40439e129d1c03e1c288d249a1b87"></span><div class="line-block">
+<div class="line">bool <strong>isFinished</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the function is finished. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1af99752f31977d386ee395a560bc8bba1"></span><div class="line-block">
+<div class="line">uint32_t <strong>getExpectedStackAlignment</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get expected stack alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a641b509e0735f1ea7851eb0bcdae1857"></span><div class="line-block">
+<div class="line">void <strong>setExpectedStackAlignment</strong>(uint32_t alignment)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set expected stack alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1af41af4e65f7a90887a6807c15fe001b4"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRequiredStackAlignment</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get required stack alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a9cca2ed6dea5b04e2fa3d1399bd902ec"></span><div class="line-block">
+<div class="line">void <strong>setRequiredStackAlignment</strong>(uint32_t alignment)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set required stack alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aa64cca6fda38fa13985fd867fa1f27d4"></span><div class="line-block">
+<div class="line">void <strong>updateRequiredStackAlignment</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Update required stack alignment so it&#8217;s not lower than expected stack alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a7af5be9a83bb4fd14263ce8ca1699a43"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRedZoneSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set stack &#8220;Red Zone&#8221; size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a652ea7b880c3f2c904870c8d8d917cfe"></span><div class="line-block">
+<div class="line">void <strong>setRedZoneSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack &#8220;Red Zone&#8221; size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a5ebdca60a1bb6b7e9791f4be21d07325"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSpillZoneSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set stack &#8220;Spill Zone&#8221; size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a9ce69b1bcdb251f3599ee8adbccf64ab"></span><div class="line-block">
+<div class="line">void <strong>setSpillZoneSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack &#8220;Spill Zone&#8221; size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a029da97a3ffdaa9a6cf1157fac6b26ce"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArgStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size used by function arguments. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aa73121b1cf91e667fc73f1ec32d2c029"></span><div class="line-block">
+<div class="line">uint32_t <strong>getMemStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size used by variables and memory allocated on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a554dc7e9deeede7ac86c0631dc2ed318"></span><div class="line-block">
+<div class="line">uint32_t <strong>getCallStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size used by function calls. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a3d84b7541e7fd994a183bed62502126d"></span><div class="line-block">
+<div class="line">void <strong>mergeCallStackSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Merge stack size used by function call with <em>s</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1ab0e4e78e2d42e3635ed22de5dd9116ef"></span><div class="line-block">
+<div class="line">void <strong>setHint</strong>(uint32_t hint, uint32_t value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set function hint. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a430fadb94a43dc3aeb1ff58c6f6a8015"></span><div class="line-block">
+<div class="line">uint32_t <strong>getHint</strong>(uint32_t hint)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function hint. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1acaaa4dc2cfa9ba94903e54625c1ef6e2"></span><a class="reference internal" href="TargetNode.html#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  * <strong>_entryNode</strong></p>
+<blockquote>
+<div><p>Function entry. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a8d037bed787b238ae8f76f46257b129e"></span><a class="reference internal" href="TargetNode.html#asmjitstructasmjit_1_1TargetNode"><em>TargetNode</em></a>  * <strong>_exitNode</strong></p>
+<blockquote>
+<div><p>Function exit. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a8f054d6870355e7e43192fe857a0c7f5"></span><a class="reference internal" href="FuncDecl.html#asmjitstructasmjit_1_1FuncDecl"><em>FuncDecl</em></a>  * <strong>_decl</strong></p>
+<blockquote>
+<div><p>Function declaration. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a0e4f433063da83c574c012dbe4666037"></span><a class="reference internal" href="EndNode.html#asmjitstructasmjit_1_1EndNode"><em>EndNode</em></a>  * <strong>_end</strong></p>
+<blockquote>
+<div><p>Function end. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1af0787526f99e5db159be47cb0588bc68"></span><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  ** <strong>_argList</strong></p>
+<blockquote>
+<div><p>Arguments list as <a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a9717320ee3825c238a6135639e815720"></span>uint32_t <strong>_funcHints</strong></p>
+<blockquote>
+<div><p>Function hints;. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a5d29ee06e312c72d751b151c4a0d3f79"></span>uint32_t <strong>_funcFlags</strong></p>
+<blockquote>
+<div><p>Function flags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a91f3d5309edc28c1da14cb3907bdff32"></span>uint32_t <strong>_expectedStackAlignment</strong></p>
+<blockquote>
+<div><p>Expected stack alignment (we depend on this value). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>It can be global alignment given by the OS or described by an target platform ABI. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aded18efc8b9fba840692dd9aed792a8b"></span>uint32_t <strong>_requiredStackAlignment</strong></p>
+<blockquote>
+<div><p>Required stack alignment (usually for multimedia instructions). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1af410035b78e1c824e33c0c6ded47bcb4"></span>uint16_t <strong>_redZoneSize</strong></p>
+<blockquote>
+<div><p>The &#8220;Red Zone&#8221; suze - count of bytes which might be accessed without adjusting the stack pointer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1ae224f3318bddbbc5795e96f75c46a152"></span>uint16_t <strong>_spillZoneSize</strong></p>
+<blockquote>
+<div><p>Spill zone size (zone used by WIN64ABI). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a9669d78fe41fbcf09f7eb9069300a520"></span>uint32_t <strong>_argStackSize</strong></p>
+<blockquote>
+<div><p>Stack size needed for function arguments. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a73d3f50ace864ac626582280cacc3d21"></span>uint32_t <strong>_memStackSize</strong></p>
+<blockquote>
+<div><p>Stack size needed for all variables and memory allocated on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1aa26e0f5193d30287028dad57eb1c0c6e"></span>uint32_t <strong>_callStackSize</strong></p>
+<blockquote>
+<div><p>Stack size needed to call other functions. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1ab384c58ed67202b8618a399abffd4d3c"></span><div class="line-block">
+<div class="line"> <strong>FuncNode</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em>FuncNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncNode_1a59fb373946d9814bc20c024c5f00eb73"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em>FuncNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1FuncNode"><em>FuncNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="FuncInOut.html"
+                        title="previous chapter">FuncInOut</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="FuncPrototype.html"
+                        title="next chapter">FuncPrototype</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/FuncNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="FuncPrototype.html" title="FuncPrototype"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FuncInOut.html" title="FuncInOut"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

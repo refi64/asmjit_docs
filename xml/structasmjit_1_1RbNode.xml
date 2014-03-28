@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1RbNode" kind="struct" prot="public">
+    <compoundname>asmjit::RbNode</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1MemNode" prot="public" virt="non-virtual">asmjit::MemNode</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1RbNode_1ad07357e9eb8296ed677c1ab1d83ff19c" prot="public" static="no" mutable="no">
+        <type>RbNode *</type>
+        <definition>RbNode* asmjit::RbNode::node[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="102" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1RbNode_1a1cd027d131a4d9d5ebf58f9170d4aaa1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::RbNode::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="104" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1RbNode_1aabdfcd0498ffa5240f9f7ee5349acb80" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::RbNode::mem</definition>
+        <argsstring></argsstring>
+        <name>mem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="111" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="93" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="93" bodyend="112"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1RbNode_1aabdfcd0498ffa5240f9f7ee5349acb80" prot="public" virt="non-virtual"><scope>asmjit::RbNode</scope><name>mem</name></member>
+      <member refid="structasmjit_1_1RbNode_1ad07357e9eb8296ed677c1ab1d83ff19c" prot="public" virt="non-virtual"><scope>asmjit::RbNode</scope><name>node</name></member>
+      <member refid="structasmjit_1_1RbNode_1a1cd027d131a4d9d5ebf58f9170d4aaa1" prot="public" virt="non-virtual"><scope>asmjit::RbNode</scope><name>red</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

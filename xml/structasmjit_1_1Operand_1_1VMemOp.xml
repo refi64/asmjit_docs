@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Operand_1_1VMemOp" kind="struct" prot="public">
+    <compoundname>asmjit::Operand::VMemOp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1a4b50a57b43af02b65336c993640236a2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::VMemOp::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>Type of operand, <computeroutput>kOperandTypeMem</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="316" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1ac29ac4c4de55fc5aea4d4babe5d422c2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::VMemOp::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of the pointer in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="318" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1a46bf285ea391ab5fac71c629c2f05728" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::VMemOp::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of the memory operand, see kMemType. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="320" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1a9b9af497a0e73571324afe247dfade71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Operand::VMemOp::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>X86/X64 layout:<itemizedlist>
+<listitem><para>segment [3 bits], see kSeg.</para></listitem><listitem><para>shift [2 bits], index register shift (0 to 3). </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="324" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1a3938fe63db4db9ede413939421a74d41" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Operand::VMemOp::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+<para>Base register, variable or label id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="327" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1a778a1f707178527e66a839c6345871b3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Operand::VMemOp::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>Index register or variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="329" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Operand_1_1VMemOp_1aa208a52b80ac2e35f592ba23082fa32c" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::Operand::VMemOp::displacement</definition>
+        <argsstring></argsstring>
+        <name>displacement</name>
+        <briefdescription>
+<para>32-bit displacement or absolute address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="331" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="314" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="314" bodyend="332"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1a3938fe63db4db9ede413939421a74d41" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>base</name></member>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1aa208a52b80ac2e35f592ba23082fa32c" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>displacement</name></member>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1a9b9af497a0e73571324afe247dfade71" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>flags</name></member>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1a778a1f707178527e66a839c6345871b3" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>index</name></member>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1a4b50a57b43af02b65336c993640236a2" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>op</name></member>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1ac29ac4c4de55fc5aea4d4babe5d422c2" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>size</name></member>
+      <member refid="structasmjit_1_1Operand_1_1VMemOp_1a46bf285ea391ab5fac71c629c2f05728" prot="public" virt="non-virtual"><scope>asmjit::Operand::VMemOp</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

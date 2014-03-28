@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>FuncPrototype &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="HintNode" href="HintNode.html" />
+    <link rel="prev" title="FuncNode" href="FuncNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="HintNode.html" title="HintNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FuncNode.html" title="FuncNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="funcprototype">
+<h1>FuncPrototype<a class="headerlink" href="#funcprototype" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1FuncPrototype">
+<div class="line"><em>struct</em> <strong>asmjit::FuncPrototype</strong></div>
+<div class="line"><em>#include &lt;func.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Function prototype. </p>
+<p>Function prototype contains information about function return type, count of arguments and their types. Function prototype is a low level structure which doesn&#8217;t contain platform specific or calling convention specific information. Function prototype is used to create a <a class="reference internal" href="FuncDecl.html#asmjitstructasmjit_1_1FuncDecl"><em>FuncDecl</em></a>. </p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a1cf309bc7e0b14e3d418a76053d72fbf"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRet</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function return value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a41324c51070165430611b06866da5874"></span><div class="line-block">
+<div class="line">const uint32_t * <strong>getArgList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function arguments&#8217; IDs. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a3328fdcb298d5621df63d2f57cf260b3"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArgCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get count of function arguments. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1ac880d4445b8e998a8dcdc0b73e89b92b"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArg</strong>(uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get argument at index <em>id</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a970c68dc2e9d9ec9894ac18b7bbad1a9"></span><div class="line-block">
+<div class="line">void <strong>_setPrototype</strong>(uint32_t ret, const uint32_t * argList, uint32_t argCount)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set function definition - return type and arguments. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a1fce032ceddb9d8d0c6b14a9a3659ba5"></span>uint32_t <strong>_ret</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a0b69ec8b062ba6f9b00ec9de0baa5bfe"></span>uint32_t <strong>_argCount</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncPrototype_1a58cdf7ee3948a89b16bc54ff10552b9c"></span>const uint32_t * <strong>_argList</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="FuncNode.html"
+                        title="previous chapter">FuncNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="HintNode.html"
+                        title="next chapter">HintNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/FuncPrototype.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="HintNode.html" title="HintNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FuncNode.html" title="FuncNode"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

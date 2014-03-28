@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1VarBits" kind="struct" prot="public">
+    <compoundname>asmjit::VarBits</compoundname>
+    <includes local="no">compiler.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structasmjit_1_1VarBits_1ab9b1911f01613c0c27a78dc8d42b1778" prot="public" static="no">
+        <name>@6</name>
+        <enumvalue id="structasmjit_1_1VarBits_1ab9b1911f01613c0c27a78dc8d42b1778ae651fa0234b0d23abf86354ac2e92980" prot="public">
+          <name>kEntitySize</name>
+          <initializer> static_cast&lt;int&gt;(sizeof(uintptr_t))</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structasmjit_1_1VarBits_1ab9b1911f01613c0c27a78dc8d42b1778a191eae595448d4ceba87691d40b18b5b" prot="public">
+          <name>kEntityBits</name>
+          <initializer> kEntitySize * 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="255" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="255" bodyend="258"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1VarBits_1a66762417f0cd543a237a0eae8f2c2e65" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t asmjit::VarBits::data[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="355" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a16e687b877f8e4bf7c80c311e2a7794f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uintptr_t</type>
+        <definition>uintptr_t asmjit::VarBits::getBit</definition>
+        <argsstring>(uint32_t index) const </argsstring>
+        <name>getBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="264" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1ab8a92bd9d70d8759323414dd4e5cf180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarBits::setBit</definition>
+        <argsstring>(uint32_t index)</argsstring>
+        <name>setBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="268" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="268" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a92f107023ab7c8892d0234cf8583c60d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::VarBits::delBit</definition>
+        <argsstring>(uint32_t index)</argsstring>
+        <name>delBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="272" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="272" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a5fcfb1f6e3bca7f12a088e3736106862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::copyBits</definition>
+        <argsstring>(const VarBits *s0, uint32_t len)</argsstring>
+        <name>copyBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="280" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="280" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a9c4e8bb72bac913b5623f6bb60ccaca0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::addBits</definition>
+        <argsstring>(const VarBits *s0, uint32_t len)</argsstring>
+        <name>addBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="290" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a3fe1d27c01e753b3418f8c785e3a3456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::addBits</definition>
+        <argsstring>(const VarBits *s0, const VarBits *s1, uint32_t len)</argsstring>
+        <name>addBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="294" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="294" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a1470800bdf7cb714b8494bd845e4704d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::andBits</definition>
+        <argsstring>(const VarBits *s1, uint32_t len)</argsstring>
+        <name>andBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="304" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1aec03defe814feca9f55db5810fb7a530" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::andBits</definition>
+        <argsstring>(const VarBits *s0, const VarBits *s1, uint32_t len)</argsstring>
+        <name>andBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="308" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="308" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a1b750fe3658d6c74cac521a542a8f964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::delBits</definition>
+        <argsstring>(const VarBits *s1, uint32_t len)</argsstring>
+        <name>delBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="318" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="318" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a7e3c3c8f9e7a88b56fbebd746fb60f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::delBits</definition>
+        <argsstring>(const VarBits *s0, const VarBits *s1, uint32_t len)</argsstring>
+        <name>delBits</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="322" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="322" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a353d6a5b2a0d050fafd35573d22f52ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::_addBitsDelSource</definition>
+        <argsstring>(VarBits *s1, uint32_t len)</argsstring>
+        <name>_addBitsDelSource</name>
+        <param>
+          <type><ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="332" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="332" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1VarBits_1a4020fc510bb3a7f2cae26fed313a9070" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::VarBits::_addBitsDelSource</definition>
+        <argsstring>(const VarBits *s0, VarBits *s1, uint32_t len)</argsstring>
+        <name>_addBitsDelSource</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1VarBits" kindref="compound">VarBits</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="336" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="336" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bit-array used by variable-liveness analysis. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="250" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="250" bodyend="356"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1VarBits_1a353d6a5b2a0d050fafd35573d22f52ed" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>_addBitsDelSource</name></member>
+      <member refid="structasmjit_1_1VarBits_1a4020fc510bb3a7f2cae26fed313a9070" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>_addBitsDelSource</name></member>
+      <member refid="structasmjit_1_1VarBits_1a9c4e8bb72bac913b5623f6bb60ccaca0" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>addBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1a3fe1d27c01e753b3418f8c785e3a3456" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>addBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1a1470800bdf7cb714b8494bd845e4704d" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>andBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1aec03defe814feca9f55db5810fb7a530" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>andBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1a5fcfb1f6e3bca7f12a088e3736106862" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>copyBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1a66762417f0cd543a237a0eae8f2c2e65" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>data</name></member>
+      <member refid="structasmjit_1_1VarBits_1a92f107023ab7c8892d0234cf8583c60d" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>delBit</name></member>
+      <member refid="structasmjit_1_1VarBits_1a1b750fe3658d6c74cac521a542a8f964" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>delBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1a7e3c3c8f9e7a88b56fbebd746fb60f3f" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>delBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1a16e687b877f8e4bf7c80c311e2a7794f" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>getBit</name></member>
+      <member refid="structasmjit_1_1VarBits_1ab9b1911f01613c0c27a78dc8d42b1778a191eae595448d4ceba87691d40b18b5b" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>kEntityBits</name></member>
+      <member refid="structasmjit_1_1VarBits_1ab9b1911f01613c0c27a78dc8d42b1778ae651fa0234b0d23abf86354ac2e92980" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>kEntitySize</name></member>
+      <member refid="structasmjit_1_1VarBits_1ab8a92bd9d70d8759323414dd4e5cf180" prot="public" virt="non-virtual"><scope>asmjit::VarBits</scope><name>setBit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

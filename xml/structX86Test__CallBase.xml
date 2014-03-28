@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__CallBase" kind="struct" prot="public">
+    <compoundname>X86Test_CallBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__CallBase_1af807d4fb593ccb773f4e150f61a13863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_CallBase::X86Test_CallBase</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_CallBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1645" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1645" bodyend="1645"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallBase_1a7ee169fcb3d02ed4b316beaf805bef19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_CallBase::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1651" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1651" bodyend="1678"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallBase_1a16c405057bd96cba20d5ec115292c7fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_CallBase::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1680" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1680" bodyend="1691"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__CallBase_1a2b932b1a0d34b8a0c6b1aa8c08350c49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_CallBase::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1647" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1647" bodyend="1649"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__CallBase_1a50eb8889d224aa4d772f4a550af85be7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int X86Test_CallBase::calledFunc</definition>
+        <argsstring>(int a, int b, int c)</argsstring>
+        <name>calledFunc</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1693" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1693" bodyend="1693"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1644" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1644" bodyend="1694"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_CallBase</scope><name>_name</name></member>
+      <member refid="structX86Test__CallBase_1a2b932b1a0d34b8a0c6b1aa8c08350c49" prot="public" virt="non-virtual"><scope>X86Test_CallBase</scope><name>add</name></member>
+      <member refid="structX86Test__CallBase_1a50eb8889d224aa4d772f4a550af85be7" prot="public" virt="non-virtual"><scope>X86Test_CallBase</scope><name>calledFunc</name></member>
+      <member refid="structX86Test__CallBase_1a7ee169fcb3d02ed4b316beaf805bef19" prot="public" virt="virtual"><scope>X86Test_CallBase</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_CallBase</scope><name>getName</name></member>
+      <member refid="structX86Test__CallBase_1a16c405057bd96cba20d5ec115292c7fc" prot="public" virt="virtual"><scope>X86Test_CallBase</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_CallBase</scope><name>X86Test</name></member>
+      <member refid="structX86Test__CallBase_1af807d4fb593ccb773f4e150f61a13863" prot="public" virt="non-virtual"><scope>X86Test_CallBase</scope><name>X86Test_CallBase</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_CallBase</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

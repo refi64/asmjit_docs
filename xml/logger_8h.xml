@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="logger_8h" kind="file">
+    <compoundname>logger.h</compoundname>
+    <includes refid="defs_8h" local="yes">../base/defs.h</includes>
+    <includes refid="string_8h" local="yes">../base/string.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="codegen_8h" local="yes">codegen.h</includedby>
+    <includedby refid="assembler_8h" local="yes">assembler.h</includedby>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="compiler_8cpp" local="yes">compiler.cpp</includedby>
+    <includedby refid="logger_8cpp" local="yes">logger.cpp</includedby>
+    <incdepgraph>
+      <node id="1360">
+        <label>../base/globals.h</label>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1366">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1370">
+        <label>stdint.h</label>
+      </node>
+      <node id="1364">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1367">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1361" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>logger.h</label>
+        <link refid="logger.h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>../base/defs.h</label>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1371">
+        <label>limits.h</label>
+      </node>
+      <node id="1369">
+        <label>new</label>
+      </node>
+      <node id="1362">
+        <label>config.h</label>
+      </node>
+      <node id="1359">
+        <label>../base/intutil.h</label>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>../build.h</label>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>stdio.h</label>
+      </node>
+      <node id="1365">
+        <label>string.h</label>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1382">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="1373">
+        <label>codegen.h</label>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+      </node>
+      <node id="1395">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="1403">
+        <label>logger.cpp</label>
+      </node>
+      <node id="1401">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="1377">
+        <label>asmjit.h</label>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1384">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="1372">
+        <label>logger.h</label>
+        <link refid="logger.h"/>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>assembler.h</label>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="1390">
+        <label>x86.h</label>
+      </node>
+      <node id="1398">
+        <label>x86compiler.h</label>
+        <childnode refid="1395" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="1376">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="1375">
+        <label>base.h</label>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1388" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1388">
+        <label>winremoteruntime.h</label>
+        <childnode refid="1389" relation="include">
+        </childnode>
+      </node>
+      <node id="1380">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="1399">
+        <label>x86func.h</label>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1381">
+        <label>genopcode.h</label>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>context_p.h</label>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+      </node>
+      <node id="1379">
+        <label>genblend.h</label>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1394">
+        <label>context.cpp</label>
+      </node>
+      <node id="1397">
+        <label>x86assembler.h</label>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1402">
+        <label>codegen.cpp</label>
+      </node>
+      <node id="1387">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="1385">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="1386">
+        <label>host.h</label>
+        <childnode refid="1377" relation="include">
+        </childnode>
+      </node>
+      <node id="1389">
+        <label>contrib.h</label>
+      </node>
+      <node id="1378">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="1383">
+        <label>testcpu.cpp</label>
+      </node>
+      <node id="1391">
+        <label>compiler.h</label>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+      </node>
+      <node id="1396">
+        <label>x86defs.h</label>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1BaseLogger" prot="public">asmjit::BaseLogger</innerclass>
+    <innerclass refid="structasmjit_1_1FileLogger" prot="public">asmjit::FileLogger</innerclass>
+    <innerclass refid="structasmjit_1_1StringLogger" prot="public">asmjit::StringLogger</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_LOGGER_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_LOGGER_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/string.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>C]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_logging</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kLoggerOption]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">//!<sp/>@brief<sp/>Logger<sp/>options.</highlight></codeline>
+<codeline lineno="31" refid="group__asmjit__logging_1ga007dd7cdb93192608722cc9df95c5fe9" refkind="member"><highlight class="comment"></highlight><highlight class="normal">ASMJIT_ENUM(<ref refid="group__asmjit__logging_1ga007dd7cdb93192608722cc9df95c5fe9" kindref="member" tooltip="Logger options.">kLoggerOption</ref>)<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Whether<sp/>to<sp/>output<sp/>instructions<sp/>also<sp/>in<sp/>binary<sp/>form.</highlight></codeline>
+<codeline lineno="33" refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7ff6a6f61c2aef639a74af24aa2c709b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7ff6a6f61c2aef639a74af24aa2c709b" kindref="member" tooltip="Whether to output instructions also in binary form.">kLoggerOptionBinaryForm</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Whether<sp/>to<sp/>output<sp/>immediates<sp/>as<sp/>hexadecimal<sp/>numbers.</highlight></codeline>
+<codeline lineno="36" refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a58967348c588bdb6aeb63c2e3ee79f4f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a58967348c588bdb6aeb63c2e3ee79f4f" kindref="member" tooltip="Whether to output immediates as hexadecimal numbers.">kLoggerOptionHexImmediate</ref><sp/>=<sp/>1,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Whether<sp/>to<sp/>output<sp/>displacements<sp/>as<sp/>hexadecimal<sp/>numbers.</highlight></codeline>
+<codeline lineno="38" refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7c0355bd9502c5dc8d3dbe072c5d4bc1" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7c0355bd9502c5dc8d3dbe072c5d4bc1" kindref="member" tooltip="Whether to output displacements as hexadecimal numbers.">kLoggerOptionHexDisplacement</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>logger<sp/>options.</highlight></codeline>
+<codeline lineno="41" refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a8083ae574b4db3b1d6f5e631cb6dbf1f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a8083ae574b4db3b1d6f5e631cb6dbf1f" kindref="member" tooltip="Count of logger options.">kLoggerOptionCount</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kLoggerStyle]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">ASMJIT_ENUM(kLoggerStyle)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>kLoggerStyleDefault<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>kLoggerStyleDirective<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>kLoggerStyleLabel<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>kLoggerStyleData<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>kLoggerStyleComment<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>kLoggerStyleCount<sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::Logger]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment">//!<sp/>@brief<sp/>Abstract<sp/>logging<sp/>class.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">//!<sp/>This<sp/>class<sp/>can<sp/>be<sp/>inherited<sp/>and<sp/>reimplemented<sp/>to<sp/>fit<sp/>into<sp/>your<sp/>logging</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">//!<sp/>subsystem.<sp/>When<sp/>reimplementing<sp/>use<sp/>@c<sp/>asmjit::Logger::log()<sp/>method<sp/>to</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">//!<sp/>log<sp/>into<sp/>your<sp/>stream.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">//!<sp/>This<sp/>class<sp/>also<sp/>contain<sp/>@c<sp/>_enabled<sp/>member<sp/>that<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enable</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">//!<sp/>or<sp/>disable<sp/>logging.</highlight></codeline>
+<codeline lineno="70" refid="structasmjit_1_1BaseLogger" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1BaseLogger" kindref="compound" tooltip="Abstract logging class.">BaseLogger</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1BaseLogger" kindref="compound" tooltip="Abstract logging class.">BaseLogger</ref>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//!<sp/>@brief<sp/>Create<sp/>a<sp/>@ref<sp/>BaseLogger<sp/>instance.</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1BaseLogger_1ad0197c4dbfef5a5856776f4e03111b46" kindref="member" tooltip="Create a BaseLogger instance.">BaseLogger</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>BaseLogger<sp/>instance.</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a5e5624b15d5db5cc789ffb85724f28d0" kindref="member" tooltip="Destroy the BaseLogger instance.">~BaseLogger</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Logging]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Abstract<sp/>method<sp/>to<sp/>log<sp/>output.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/>//!<sp/>Default<sp/>implementation<sp/>that<sp/>is<sp/>in<sp/>@c<sp/>asmjit::Logger<sp/>is<sp/>to<sp/>do<sp/>nothing.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/>//!<sp/>It&apos;s<sp/>virtual<sp/>to<sp/>fit<sp/>to<sp/>your<sp/>logging<sp/>system.</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5" kindref="member" tooltip="Abstract method to log output.">logString</ref>(uint32_t<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Log<sp/>formatter<sp/>message<sp/>(like<sp/>sprintf)<sp/>sending<sp/>output<sp/>to<sp/>@c<sp/>logString()<sp/>method.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a5132eea60f42e361267fe9ae2a25f9d0" kindref="member" tooltip="Log formatter message (like sprintf) sending output to logString() method.">logFormat</ref>(uint32_t<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Log<sp/>binary<sp/>data.</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a70ef8f6cead66ec49a1258041a43c3fc" kindref="member" tooltip="Log binary data.">logBinary</ref>(uint32_t<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Options]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>all<sp/>logger<sp/>options<sp/>as<sp/>a<sp/>single<sp/>integer.</highlight></codeline>
+<codeline lineno="102" refid="structasmjit_1_1BaseLogger_1a966c8b2c93b39f4f569e2ad1e03376f5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseLogger_1a966c8b2c93b39f4f569e2ad1e03376f5" kindref="member" tooltip="Get all logger options as a single integer.">getOptions</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" kindref="member" tooltip="Options, see kLoggerOption.">_options</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>the<sp/>given<sp/>logger<sp/>option.</highlight></codeline>
+<codeline lineno="106" refid="structasmjit_1_1BaseLogger_1a86a89974cb83bd303c2c7eefd75187d3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a86a89974cb83bd303c2c7eefd75187d3" kindref="member" tooltip="Get the given logger option.">getOption</ref>(uint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/><ref refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a8083ae574b4db3b1d6f5e631cb6dbf1f" kindref="member" tooltip="Count of logger options.">kLoggerOptionCount</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">((<ref refid="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" kindref="member" tooltip="Options, see kLoggerOption.">_options</ref><sp/>&gt;&gt;<sp/>id)<sp/>&amp;<sp/>0x1);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>the<sp/>given<sp/>logger<sp/>option.</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a7d7d17b96ec8d27f0b68359356b7c65b" kindref="member" tooltip="Set the given logger option.">setOption</ref>(uint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Indentation]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>indentation.</highlight></codeline>
+<codeline lineno="119" refid="structasmjit_1_1BaseLogger_1ae1e4d708168a631b5c60fe61f16c679d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1BaseLogger_1ae1e4d708168a631b5c60fe61f16c679d" kindref="member" tooltip="Get indentation.">getIndentation</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f" kindref="member" tooltip="Indentation.">_indentation</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>indentation.</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1ae31355f9483b8f0228bc95b4aa37079d" kindref="member" tooltip="Set indentation.">setIndentation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>indentation);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Reset<sp/>indentation.</highlight></codeline>
+<codeline lineno="123" refid="structasmjit_1_1BaseLogger_1a54b26cf2ad37d3e945a9e69f80ad614b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a54b26cf2ad37d3e945a9e69f80ad614b" kindref="member" tooltip="Reset indentation.">resetIndentation</ref>()<sp/>{<sp/><ref refid="structasmjit_1_1BaseLogger_1ae31355f9483b8f0228bc95b4aa37079d" kindref="member" tooltip="Set indentation.">setIndentation</ref>(NULL);<sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Options,<sp/>see<sp/>@ref<sp/>kLoggerOption.</highlight></codeline>
+<codeline lineno="130" refid="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" kindref="member" tooltip="Options, see kLoggerOption.">_options</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Indentation.</highlight></codeline>
+<codeline lineno="133" refid="structasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f" kindref="member" tooltip="Indentation.">_indentation</ref>[12];</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::FileLogger]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment">//!<sp/>@brief<sp/>Logger<sp/>that<sp/>can<sp/>log<sp/>to<sp/>standard<sp/>C<sp/>@c<sp/>FILE*<sp/>stream.</highlight></codeline>
+<codeline lineno="141" refid="structasmjit_1_1FileLogger" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1FileLogger" kindref="compound" tooltip="Logger that can log to standard C FILE* stream.">FileLogger</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger" kindref="compound" tooltip="Abstract logging class.">BaseLogger</ref><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1FileLogger" kindref="compound" tooltip="Logger that can log to standard C FILE* stream.">FileLogger</ref>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//!<sp/>@brief<sp/>Create<sp/>a<sp/>new<sp/>@c<sp/>FileLogger.</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>@param<sp/>stream<sp/>FILE<sp/>stream<sp/>where<sp/>logging<sp/>will<sp/>be<sp/>sent<sp/>(can<sp/>be<sp/>@c<sp/>NULL</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>to<sp/>disable<sp/>logging).</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1FileLogger" kindref="compound" tooltip="Logger that can log to standard C FILE* stream.">FileLogger</ref>(FILE*<sp/>stream<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>FileLogger.</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1FileLogger_1a1fa8c8d8e47a288b257869297a9f4086" kindref="member" tooltip="Destroy the FileLogger.">~FileLogger</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Accessors]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>@c<sp/>FILE*<sp/>stream.</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>Return<sp/>value<sp/>can<sp/>be<sp/>@c<sp/>NULL.</highlight></codeline>
+<codeline lineno="163" refid="structasmjit_1_1FileLogger_1a1bbe0dbee1b762b0bde98ebc542ccdaa" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>FILE*<sp/><ref refid="structasmjit_1_1FileLogger_1a1bbe0dbee1b762b0bde98ebc542ccdaa" kindref="member" tooltip="Get FILE* stream.">getStream</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c" kindref="member" tooltip="C file stream.">_stream</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>@c<sp/>FILE*<sp/>stream.</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/><sp/>//!<sp/>@param<sp/>stream<sp/>@c<sp/>FILE<sp/>stream<sp/>where<sp/>to<sp/>log<sp/>output<sp/>(can<sp/>be<sp/>@c<sp/>NULL<sp/>to</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/>//!<sp/>disable<sp/>logging).</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1FileLogger_1a207f2df573b418ce5534d18065b92bca" kindref="member" tooltip="Set FILE* stream.">setStream</ref>(FILE*<sp/>stream);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Logging]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1FileLogger_1a94ffc19d6a1d5f9ec3d8a04247e277b4" kindref="member" tooltip="Abstract method to log output.">logString</ref>(uint32_t<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>C<sp/>file<sp/>stream.</highlight></codeline>
+<codeline lineno="182" refid="structasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>FILE*<sp/><ref refid="structasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c" kindref="member" tooltip="C file stream.">_stream</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::StringLogger]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="189"><highlight class="comment">//!<sp/>@brief<sp/>String<sp/>logger.</highlight></codeline>
+<codeline lineno="190" refid="structasmjit_1_1StringLogger" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1StringLogger" kindref="compound" tooltip="String logger.">StringLogger</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseLogger" kindref="compound" tooltip="Abstract logging class.">BaseLogger</ref><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1StringLogger" kindref="compound" tooltip="String logger.">StringLogger</ref>)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//!<sp/>@brief<sp/>Create<sp/>new<sp/>@ref<sp/>StringLogger.</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1StringLogger_1a5e533a7723ac19cc7f212d0cbfce0b5a" kindref="member" tooltip="Create new StringLogger.">StringLogger</ref>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>StringLogger.</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringLogger_1a70b362d6c381d2564e8f216aca386c71" kindref="member" tooltip="Destroy the StringLogger.">~StringLogger</ref>();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Accessors]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>&lt;code&gt;char*&lt;/code&gt;<sp/>pointer<sp/>which<sp/>represents<sp/>the<sp/>resulting</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/><sp/>//!<sp/>string.</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/><sp/>//!<sp/>The<sp/>pointer<sp/>is<sp/>owned<sp/>by<sp/>@ref<sp/>StringLogger,<sp/>it<sp/>can&apos;t<sp/>be<sp/>modified<sp/>or<sp/>freed.</highlight></codeline>
+<codeline lineno="211" refid="structasmjit_1_1StringLogger_1ad9d70ea71f1a3295e35a644404b752bf" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1StringLogger_1ad9d70ea71f1a3295e35a644404b752bf" kindref="member" tooltip="Get char* pointer which represents the resulting string.">getString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringLogger_1a3982da748e40ad5de1b3bc3348726ad3" kindref="member" tooltip="Output.">_stringBuilder</ref>.<ref refid="structasmjit_1_1StringBuilder_1a587fa3ea24629b7335f3dace53417387" kindref="member" tooltip="Get null-terminated string data.">getData</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Clear<sp/>the<sp/>resulting<sp/>string.</highlight></codeline>
+<codeline lineno="214" refid="structasmjit_1_1StringLogger_1afd50d9803a35f72aa2c0af5fb93ff6aa" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringLogger_1afd50d9803a35f72aa2c0af5fb93ff6aa" kindref="member" tooltip="Clear the resulting string.">clearString</ref>()<sp/>{<sp/><ref refid="structasmjit_1_1StringLogger_1a3982da748e40ad5de1b3bc3348726ad3" kindref="member" tooltip="Output.">_stringBuilder</ref>.<ref refid="structasmjit_1_1StringBuilder_1a34ccb1e62f925a7db8ee5f01f9d5d4ff" kindref="member" tooltip="Clear the content in String builder.">clear</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Logging]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringLogger_1adcfddc5e2bb95b362f46adcd18ddb9ff" kindref="member" tooltip="Abstract method to log output.">logString</ref>(uint32_t<sp/>style,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Output.</highlight></codeline>
+<codeline lineno="227" refid="structasmjit_1_1StringLogger_1a3982da748e40ad5de1b3bc3348726ad3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1StringBuilder" kindref="compound" tooltip="String builder.">StringBuilder</ref><sp/><ref refid="structasmjit_1_1StringLogger_1a3982da748e40ad5de1b3bc3348726ad3" kindref="member" tooltip="Output.">_stringBuilder</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="230"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_LOGGER_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/logger.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="genblend_8h" kind="file">
+    <compoundname>genblend.h</compoundname>
+    <includes refid="asmjit_8h" local="no">asmjit/asmjit.h</includes>
+    <includedby refid="benchx86_8cpp" local="yes">benchx86.cpp</includedby>
+    <includedby refid="testx86_8cpp" local="yes">testx86.cpp</includedby>
+    <incdepgraph>
+      <node id="1024">
+        <label>../base/globals.h</label>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1026">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1027">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1032">
+        <label>../base/codegen.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1042">
+        <label>base/lock.h</label>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>base/memorymanager.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>stdint.h</label>
+      </node>
+      <node id="1020">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1033">
+        <label>../base/error.h</label>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1015">
+        <label>asmjit/asmjit.h</label>
+        <childnode refid="1016" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>../base/zone.h</label>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1025">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1017" relation="include">
+        </childnode>
+      </node>
+      <node id="1034">
+        <label>../base/logger.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1031">
+        <label>base/assembler.h</label>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>../base/defs.h</label>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>limits.h</label>
+      </node>
+      <node id="1037">
+        <label>../base/podlist.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>pthread.h</label>
+      </node>
+      <node id="1038">
+        <label>../base/podvector.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>base.h</label>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+      </node>
+      <node id="1028">
+        <label>new</label>
+      </node>
+      <node id="1046">
+        <label>base/vmem.h</label>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>base/cpu.h</label>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>config.h</label>
+      </node>
+      <node id="1045">
+        <label>base/vectypes.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1014">
+        <label>genblend.h</label>
+        <link refid="genblend.h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>../base/intutil.h</label>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>../base/runtime.h</label>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>host.h</label>
+        <childnode refid="1016" relation="include">
+        </childnode>
+      </node>
+      <node id="1017">
+        <label>build.h</label>
+        <childnode refid="1018" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>stdio.h</label>
+      </node>
+      <node id="1021">
+        <label>string.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>../base/func.h</label>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>base/compiler.h</label>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1050">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="1048">
+        <label>genblend.h</label>
+        <link refid="genblend.h"/>
+        <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+      </node>
+      <node id="1049">
+        <label>benchx86.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceasmgen">asmgen</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_APP_TEST_GENBLEND_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_APP_TEST_GENBLEND_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;asmjit/asmjit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmgen<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Generate<sp/>a<sp/>typical<sp/>alpha<sp/>blend<sp/>function<sp/>using<sp/>SSE2<sp/>instruction<sp/>set.<sp/>Used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>benchmarking<sp/>and<sp/>also<sp/>in<sp/>test86.<sp/>The<sp/>generated<sp/>code<sp/>should<sp/>be<sp/>stable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>can<sp/>be<sp/>tested.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>blend(asmjit::host::Compiler&amp;<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit::host;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>GpVar<sp/>dst(c,<sp/><ref refid="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a773337143d44de47e460e5e280661e3e" kindref="member" tooltip="Variable is target intptr_t (not compatible with host intptr_t).">kVarTypeIntPtr</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dst&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>GpVar<sp/>src(c,<sp/><ref refid="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a773337143d44de47e460e5e280661e3e" kindref="member" tooltip="Variable is target intptr_t (not compatible with host intptr_t).">kVarTypeIntPtr</ref>,<sp/></highlight><highlight class="stringliteral">&quot;src&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>GpVar<sp/>i(c,<sp/><ref refid="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a773337143d44de47e460e5e280661e3e" kindref="member" tooltip="Variable is target intptr_t (not compatible with host intptr_t).">kVarTypeIntPtr</ref>,<sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>GpVar<sp/>j(c,<sp/><ref refid="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a773337143d44de47e460e5e280661e3e" kindref="member" tooltip="Variable is target intptr_t (not compatible with host intptr_t).">kVarTypeIntPtr</ref>,<sp/></highlight><highlight class="stringliteral">&quot;j&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>GpVar<sp/>t(c,<sp/><ref refid="group__asmjit__base_1gga9ca66fe5934ea03c67056886d4738059a773337143d44de47e460e5e280661e3e" kindref="member" tooltip="Variable is target intptr_t (not compatible with host intptr_t).">kVarTypeIntPtr</ref>,<sp/></highlight><highlight class="stringliteral">&quot;t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>XmmVar<sp/>cZero(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;cZero&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>XmmVar<sp/>cMul255A(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;cMul255A&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>XmmVar<sp/>cMul255M(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;cMul255M&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>XmmVar<sp/>x0(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;x0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>XmmVar<sp/>x1(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;x1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>XmmVar<sp/>y0(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;y0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>XmmVar<sp/>a0(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;a0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>XmmVar<sp/>a1(c,<sp/><ref refid="group__asmjit__x86x64_1ggac1cff950c5a6c4a09fa2807d40d6b74eaea998f3c5ad2219eee2276ac929cc28d" kindref="member" tooltip="Variable is Xmm (SSE/SSE2).">kVarTypeXmm</ref>,<sp/></highlight><highlight class="stringliteral">&quot;a1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_SmallLoop(c);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_SmallEnd(c);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_LargeLoop(c);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_LargeEnd(c);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_Data(c);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>c.addFunc(kFuncConvHost,<sp/><ref refid="structasmjit_1_1FuncBuilder3" kindref="compound" tooltip="Function builder (3 arguments).">FuncBuilder3&lt;FnVoid, void*, const void*, size_t&gt;</ref>());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>c.setArg(0,<sp/>dst);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>c.setArg(1,<sp/>src);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>c.setArg(2,<sp/>i);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>c.alloc(dst);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>c.alloc(src);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>c.alloc(i);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>How<sp/>many<sp/>pixels<sp/>we<sp/>have<sp/>to<sp/>process<sp/>to<sp/>align<sp/>the<sp/>loop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>c.lea(t,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(L_Data));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>c.xor_(j,<sp/>j);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>c.xorps(cZero,<sp/>cZero);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>c.sub(j,<sp/>dst);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>c.movaps(cMul255A,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(t,<sp/>0));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>c.and_(j,<sp/>15);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>c.movaps(cMul255M,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(t,<sp/>16));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>c.shr(j,<sp/>2);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>c.jz(L_SmallEnd);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>j<sp/>=<sp/>min(i,<sp/>j).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>c.cmp(j,<sp/>i);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>c.cmovg(j,<sp/>i);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>i<sp/>-=<sp/>j.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>c.sub(i,<sp/>j);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Small<sp/>loop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>c.bind(L_SmallLoop);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>c.pcmpeqb(a0,<sp/>a0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>c.movd(y0,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(src));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>c.pxor(a0,<sp/>y0);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>c.movd(x0,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(dst));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>c.psrlw(a0,<sp/>8);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>c.punpcklbw(x0,<sp/>cZero);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>c.pshuflw(a0,<sp/>a0,<sp/><ref refid="group__asmjit__x86x64_1gab0aa1dd0f7a9b54a4a5d6873a84e0410" kindref="member" tooltip="Create Shuffle Constant for MMX/SSE shuffle instrutions.">mm_shuffle</ref>(1,<sp/>1,<sp/>1,<sp/>1));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>c.punpcklbw(y0,<sp/>cZero);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>c.pmullw(x0,<sp/>a0);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>c.paddsw(x0,<sp/>cMul255A);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>c.pmulhuw(x0,<sp/>cMul255M);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>c.paddw(x0,<sp/>y0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>c.packuswb(x0,<sp/>x0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>c.movd(<ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(dst),<sp/>x0);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>c.add(dst,<sp/>4);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>c.add(src,<sp/>4);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>c.dec(j);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>c.jnz(L_SmallLoop);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Second<sp/>section,<sp/>prepare<sp/>for<sp/>an<sp/>aligned<sp/>loop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>c.bind(L_SmallEnd);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>c.test(i,<sp/>i);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>c.mov(j,<sp/>i);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>c.jz(c.getFunc()-&gt;getExitLabel());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>c.and_(j,<sp/>3);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>c.shr(i,<sp/>2);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>c.jz(L_LargeEnd);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Aligned<sp/>loop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>c.bind(L_LargeLoop);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>c.movups(y0,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(src));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>c.pcmpeqb(a0,<sp/>a0);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>c.movaps(x0,<sp/><ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(dst));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>c.xorps(a0,<sp/>y0);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>c.movaps(x1,<sp/>x0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>c.psrlw(a0,<sp/>8);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>c.punpcklbw(x0,<sp/>cZero);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>c.movaps(a1,<sp/>a0);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>c.punpcklwd(a0,<sp/>a0);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>c.punpckhbw(x1,<sp/>cZero);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>c.punpckhwd(a1,<sp/>a1);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>c.pshufd(a0,<sp/>a0,<sp/><ref refid="group__asmjit__x86x64_1gab0aa1dd0f7a9b54a4a5d6873a84e0410" kindref="member" tooltip="Create Shuffle Constant for MMX/SSE shuffle instrutions.">mm_shuffle</ref>(3,<sp/>3,<sp/>1,<sp/>1));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>c.pshufd(a1,<sp/>a1,<sp/><ref refid="group__asmjit__x86x64_1gab0aa1dd0f7a9b54a4a5d6873a84e0410" kindref="member" tooltip="Create Shuffle Constant for MMX/SSE shuffle instrutions.">mm_shuffle</ref>(3,<sp/>3,<sp/>1,<sp/>1));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>c.pmullw(x0,<sp/>a0);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>c.pmullw(x1,<sp/>a1);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>c.paddsw(x0,<sp/>cMul255A);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>c.paddsw(x1,<sp/>cMul255A);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>c.pmulhuw(x0,<sp/>cMul255M);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>c.pmulhuw(x1,<sp/>cMul255M);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>c.add(src,<sp/>16);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>c.packuswb(x0,<sp/>x1);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>c.paddw(x0,<sp/>y0);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>c.movaps(<ref refid="group__asmjit__x86x64_1gac030fe377fda8eac8f0dbcaac345f961" kindref="member" tooltip="Create a custom pointer operand.">ptr</ref>(dst),<sp/>x0);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>c.add(dst,<sp/>16);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>c.dec(i);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>c.jnz(L_LargeLoop);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>c.bind(L_LargeEnd);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>c.test(j,<sp/>j);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>c.jnz(L_SmallLoop);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>c.endFunc();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>c.align(16);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>c.bind(L_Data);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>c.dxmm(XmmData::fromSw(0x0080));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>c.dxmm(XmmData::fromSw(0x0101));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmgen<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_APP_TEST_GENBLEND_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/app/test/genblend.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1PodVectorData" kind="struct" prot="public">
+    <compoundname>asmjit::PodVectorData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1PodVectorData_1a8a49da0e02a4fa61bdfbb8ba121871f9" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::PodVectorData::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+<para>Capacity of the vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="33" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1PodVectorData_1a9d284ea70547d44bacb2d73d685340b2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::PodVectorData::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>Length of the vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="35" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1PodVectorData_1a7fa2b6a2ffe373c12201b36fc9381f8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* asmjit::PodVectorData::getData</definition>
+        <argsstring>() const </argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="30" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h" line="28" bodyfile="/home/ryan/asmjit/src/asmjit/base/podvector.h" bodystart="28" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1PodVectorData_1a8a49da0e02a4fa61bdfbb8ba121871f9" prot="public" virt="non-virtual"><scope>asmjit::PodVectorData</scope><name>capacity</name></member>
+      <member refid="structasmjit_1_1PodVectorData_1a7fa2b6a2ffe373c12201b36fc9381f8a" prot="public" virt="non-virtual"><scope>asmjit::PodVectorData</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1PodVectorData_1a9d284ea70547d44bacb2d73d685340b2" prot="public" virt="non-virtual"><scope>asmjit::PodVectorData</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

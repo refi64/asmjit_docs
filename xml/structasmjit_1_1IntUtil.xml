@@ -1,0 +1,1065 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1IntUtil" kind="struct" prot="public">
+    <compoundname>asmjit::IntUtil</compoundname>
+    <innerclass refid="unionasmjit_1_1IntUtil_1_1Double" prot="public">asmjit::IntUtil::Double</innerclass>
+    <innerclass refid="unionasmjit_1_1IntUtil_1_1Float" prot="public">asmjit::IntUtil::Float</innerclass>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a77937d0721e16d378fa5cb1a57c049df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t asmjit::IntUtil::floatAsInt</definition>
+        <argsstring>(float f)</argsstring>
+        <name>floatAsInt</name>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="64" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a5508442424ee87d350530d2640cecc06" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float asmjit::IntUtil::intAsFloat</definition>
+        <argsstring>(int32_t i)</argsstring>
+        <name>intAsFloat</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="65" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1aa1d32c0cdd052f82cf5f2f13d50c70c9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>static int64_t asmjit::IntUtil::doubleAsInt</definition>
+        <argsstring>(double d)</argsstring>
+        <name>doubleAsInt</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="67" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1aaa85e3254c3e076f004cf6dfbd0ef38f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double asmjit::IntUtil::intAsDouble</definition>
+        <argsstring>(int64_t i)</argsstring>
+        <name>intAsDouble</name>
+        <param>
+          <type>int64_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="68" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a2a7c74ae8a96babdbe9a3b744fa0eb76" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::pack32_2x8_1x16</definition>
+        <argsstring>(uint32_t u0, uint32_t u1, uint32_t w2)</argsstring>
+        <name>pack32_2x8_1x16</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>u0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>w2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="74" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a27e8c44026c93443ee9a728bd7665c59" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::pack32_4x8</definition>
+        <argsstring>(uint32_t u0, uint32_t u1, uint32_t u2, uint32_t u3)</argsstring>
+        <name>pack32_4x8</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>u0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>u2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>u3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="82" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a64b4022752e6d631ddf78868dc6ca2da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>static uint64_t asmjit::IntUtil::pack64_2x32</definition>
+        <argsstring>(uint32_t u0, uint32_t u1)</argsstring>
+        <name>pack64_2x32</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>u0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>u1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="90" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1af71ce580a47bcb3e7324f352257deba9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::iMin</definition>
+        <argsstring>(const T &amp;a, const T &amp;b)</argsstring>
+        <name>iMin</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="106" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a36df341c1056fdb079f072352f83703c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::iMax</definition>
+        <argsstring>(const T &amp;a, const T &amp;b)</argsstring>
+        <name>iMax</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="109" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ad2ad0568c66ceac08bfef39616aa3866" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::maxUInt</definition>
+        <argsstring>()</argsstring>
+        <name>maxUInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="116" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a9e83620865d3c46e96d01630f2908ab4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::inInterval</definition>
+        <argsstring>(const T &amp;x, const T &amp;start, const T &amp;end)</argsstring>
+        <name>inInterval</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1acdccc0d11c620c1febb562b14375b72c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isInt8</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isInt8</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the given integer <emphasis>x</emphasis> can be casted to a signed 8-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="134" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ac52ef55f61a44c89e57e48ce6d3ea1bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isUInt8</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isUInt8</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the given integer <emphasis>x</emphasis> can be casted to an unsigned 8-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="144" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="144" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a3232442e6dc69cda146c3788a719fc02" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isInt16</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isInt16</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the given integer <emphasis>x</emphasis> can be casted to a signed 16-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="154" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="154" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a72604a5cfb7d8705da9fa94f2fd6a865" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isUInt16</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isUInt16</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the given integer <emphasis>x</emphasis> can be casted to an unsigned 16-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="164" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a5e7b83360f2cf403f8064a0edf184db2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isInt32</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isInt32</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the given integer <emphasis>x</emphasis> can be casted to a signed 32-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="174" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ad6f08a17fa891e91d1f3e3316e6a7bf6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isUInt32</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isUInt32</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the given integer <emphasis>x</emphasis> can be casted to an unsigned 32-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="184" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="184" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a257fde5a443f1eda40eb41d09f908e85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isPowerOf2</definition>
+        <argsstring>(T n)</argsstring>
+        <name>isPowerOf2</name>
+        <param>
+          <type>T</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="196" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a9ff929af591950aa08b2159c74263540" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="204" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1aea451dc13c2f3d697a5acf9a7861ba34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="209" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a90e9550103f3ac667bcf3c7f14589b34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="213" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ab95e642dff183c3530097e3fae6965fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="217" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1aec8aaeb734755ba1b226e4228259917c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="221" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ac20c181d4a1fa677cf071c6b1cd6c2eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="226" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a05696b870a556ec70bf53beaf1fd5c47" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5, uint32_t x6)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x6</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="231" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a09ef642d9048dd662291629f9fbbe362" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5, uint32_t x6, uint32_t x7)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="236" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a07910c65408c5280ef4d4eff5e227a53" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5, uint32_t x6, uint32_t x7, uint32_t x8)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="241" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="241" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a5c6456ba51cb4c316e99a03f0e7e8c52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::mask</definition>
+        <argsstring>(uint32_t x0, uint32_t x1, uint32_t x2, uint32_t x3, uint32_t x4, uint32_t x5, uint32_t x6, uint32_t x7, uint32_t x8, uint32_t x9)</argsstring>
+        <name>mask</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x5</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x6</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x7</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x8</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>x9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="247" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="247" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a77bd6507a8f95d7bcff788c3aca5c0ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::bits</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>bits</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="257" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="257" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a4c1883ed423ec458cb152596f6fe58e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::hasBit</definition>
+        <argsstring>(uint32_t x, uint32_t n)</argsstring>
+        <name>hasBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="274" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="274" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a746952d0cc89b7df039bb504d14f88ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::bitCount</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>bitCount</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="283" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="283" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ada167af3df9fdb8acced98b9f7d97889" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::findFirstBitSlow</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>findFirstBitSlow</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="293" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="293" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1af818b74f290e0f6a78450ac733d5dcdd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::findFirstBit</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>findFirstBit</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="311" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="311" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a21c6efd4e7943c6f61828e53545068e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::keepNOnesFromRight</definition>
+        <argsstring>(uint32_t mask, uint32_t nBits)</argsstring>
+        <name>keepNOnesFromRight</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="328" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="328" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ad7e37cba198cd6ebe775bf268d1fdec5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t asmjit::IntUtil::indexNOnesFromRight</definition>
+        <argsstring>(uint8_t *dst, uint32_t mask, uint32_t nBits)</argsstring>
+        <name>indexNOnesFromRight</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="344" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="344" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a36aec94a8308751dd30b8ece41af6024" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool asmjit::IntUtil::isAligned</definition>
+        <argsstring>(T base, T alignment)</argsstring>
+        <name>isAligned</name>
+        <param>
+          <type>T</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="368" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="368" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a10e5df87bd7d61b1352fe8171f065bcf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::alignTo</definition>
+        <argsstring>(T base, T alignment)</argsstring>
+        <name>alignTo</name>
+        <param>
+          <type>T</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Align <emphasis>base</emphasis> to <emphasis>alignment</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="374" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="374" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a6b652039be5ab55b6e89fba620b9f8cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::deltaTo</definition>
+        <argsstring>(T base, T alignment)</argsstring>
+        <name>deltaTo</name>
+        <param>
+          <type>T</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Get delta required to align <emphasis>base</emphasis> to <emphasis>alignment</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="380" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="380" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1ae1bd83fe0a3dad2346136372c3824437" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::roundUp</definition>
+        <argsstring>(T base, T alignment)</argsstring>
+        <name>roundUp</name>
+        <param>
+          <type>T</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="389" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="389" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1IntUtil_1a9fb0e29ddcd04986d9d4d78b7cfb333d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T asmjit::IntUtil::roundUpToPowerOf2</definition>
+        <argsstring>(T base)</argsstring>
+        <name>roundUpToPowerOf2</name>
+        <param>
+          <type>T</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="395" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="395" bodyend="423"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="49" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="49" bodyend="424"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1IntUtil_1a10e5df87bd7d61b1352fe8171f065bcf" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>alignTo</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a746952d0cc89b7df039bb504d14f88ef" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>bitCount</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a77bd6507a8f95d7bcff788c3aca5c0ee" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>bits</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a6b652039be5ab55b6e89fba620b9f8cb" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>deltaTo</name></member>
+      <member refid="structasmjit_1_1IntUtil_1aa1d32c0cdd052f82cf5f2f13d50c70c9" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>doubleAsInt</name></member>
+      <member refid="structasmjit_1_1IntUtil_1af818b74f290e0f6a78450ac733d5dcdd" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>findFirstBit</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ada167af3df9fdb8acced98b9f7d97889" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>findFirstBitSlow</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a77937d0721e16d378fa5cb1a57c049df" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>floatAsInt</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a4c1883ed423ec458cb152596f6fe58e6" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>hasBit</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a36df341c1056fdb079f072352f83703c" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>iMax</name></member>
+      <member refid="structasmjit_1_1IntUtil_1af71ce580a47bcb3e7324f352257deba9" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>iMin</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ad7e37cba198cd6ebe775bf268d1fdec5" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>indexNOnesFromRight</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a9e83620865d3c46e96d01630f2908ab4" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>inInterval</name></member>
+      <member refid="structasmjit_1_1IntUtil_1aaa85e3254c3e076f004cf6dfbd0ef38f" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>intAsDouble</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a5508442424ee87d350530d2640cecc06" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>intAsFloat</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a36aec94a8308751dd30b8ece41af6024" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isAligned</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a3232442e6dc69cda146c3788a719fc02" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isInt16</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a5e7b83360f2cf403f8064a0edf184db2" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isInt32</name></member>
+      <member refid="structasmjit_1_1IntUtil_1acdccc0d11c620c1febb562b14375b72c" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isInt8</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a257fde5a443f1eda40eb41d09f908e85" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isPowerOf2</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a72604a5cfb7d8705da9fa94f2fd6a865" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isUInt16</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ad6f08a17fa891e91d1f3e3316e6a7bf6" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isUInt32</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ac52ef55f61a44c89e57e48ce6d3ea1bb" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>isUInt8</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a21c6efd4e7943c6f61828e53545068e5" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>keepNOnesFromRight</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a9ff929af591950aa08b2159c74263540" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1aea451dc13c2f3d697a5acf9a7861ba34" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a90e9550103f3ac667bcf3c7f14589b34" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ab95e642dff183c3530097e3fae6965fb" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1aec8aaeb734755ba1b226e4228259917c" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ac20c181d4a1fa677cf071c6b1cd6c2eb" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a05696b870a556ec70bf53beaf1fd5c47" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a09ef642d9048dd662291629f9fbbe362" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a07910c65408c5280ef4d4eff5e227a53" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a5c6456ba51cb4c316e99a03f0e7e8c52" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>mask</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ad2ad0568c66ceac08bfef39616aa3866" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>maxUInt</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a2a7c74ae8a96babdbe9a3b744fa0eb76" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>pack32_2x8_1x16</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a27e8c44026c93443ee9a728bd7665c59" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>pack32_4x8</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a64b4022752e6d631ddf78868dc6ca2da" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>pack64_2x32</name></member>
+      <member refid="structasmjit_1_1IntUtil_1ae1bd83fe0a3dad2346136372c3824437" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>roundUp</name></member>
+      <member refid="structasmjit_1_1IntUtil_1a9fb0e29ddcd04986d9d4d78b7cfb333d" prot="public" virt="non-virtual"><scope>asmjit::IntUtil</scope><name>roundUpToPowerOf2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

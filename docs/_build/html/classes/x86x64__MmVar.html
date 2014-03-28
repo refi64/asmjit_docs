@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::MmVar &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::RegCount" href="x86x64__RegCount.html" />
+    <link rel="prev" title="x86x64::MmReg" href="x86x64__MmReg.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__RegCount.html" title="x86x64::RegCount"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__MmReg.html" title="x86x64::MmReg"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-mmvar">
+<h1>x86x64::MmVar<a class="headerlink" href="#x86x64-mmvar" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1MmVar">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::MmVar</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Mm variable. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1a66187f001ee3986bc8788cfea2cb2530"></span><div class="line-block">
+<div class="line"> <strong>MmVar</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new uninitialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em><span class="pre">MmVar</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1aa2e40abba2d6305d8d3075734dfa0327"></span><div class="line-block">
+<div class="line"> <strong>MmVar</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  &amp; c, uint32_t type = kVarTypeMm, const char * name = NULL)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new initialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em><span class="pre">MmVar</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1a08a4c7ad93b6e2a59a166fdf355adee8"></span><div class="line-block">
+<div class="line"> <strong>MmVar</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em><span class="pre">MmVar</span></em></a></tt> instance using <em>other</em>. </p>
+<p>Note this will not create a different variable, use <tt class="docutils literal"><span class="pre">Compiler::newMmVar()</span></tt> if you want to do so. This is only copy-constructor that allows to store the same variable in different places. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1a6b00339343c01f3abb90ae28a0f21853"></span><div class="line-block">
+<div class="line"> <strong>MmVar</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new uninitialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em><span class="pre">MmVar</span></em></a></tt> instance (internal). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1a54dc259be066e672ed7a75d3b5228692"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1af49e2415c69e317271f1ee787e3ebee8"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1afca8a4422e5b52e1798d1a93369d124f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1a63347c4b437a5650ac02e085b0c45972"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1MmVar_1a970dff4c6043939e6d8314b494cf0e06"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1MmVar"><em>MmVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__MmReg.html"
+                        title="previous chapter">x86x64::MmReg</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__RegCount.html"
+                        title="next chapter">x86x64::RegCount</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__MmVar.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__RegCount.html" title="x86x64::RegCount"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__MmReg.html" title="x86x64::MmReg"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

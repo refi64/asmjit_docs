@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1PermanentNode" kind="struct" prot="public">
+    <compoundname>asmjit::PermanentNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1PermanentNode_1adbd18e743a580406c8fb6ab1c6cd85cf" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::PermanentNode::mem</definition>
+        <argsstring></argsstring>
+        <name>mem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="166" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1PermanentNode_1a57bcee03d93922af5795bd74782c3538" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::PermanentNode::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="167" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1PermanentNode_1aae0a0f23e598d76bdc2ed0bd78c8d886" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::PermanentNode::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="168" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1PermanentNode_1aa9096b0a75d6f6e77823f9bbd98ed7e9" prot="public" static="no" mutable="no">
+        <type>PermanentNode *</type>
+        <definition>PermanentNode* asmjit::PermanentNode::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="169" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1PermanentNode_1acadc7bb67ab1fb9875b5649eddee3fb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::PermanentNode::getAvailable</definition>
+        <argsstring>() const </argsstring>
+        <name>getAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="172" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="172" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Permanent node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="165" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="165" bodyend="173"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1PermanentNode_1acadc7bb67ab1fb9875b5649eddee3fb3" prot="public" virt="non-virtual"><scope>asmjit::PermanentNode</scope><name>getAvailable</name></member>
+      <member refid="structasmjit_1_1PermanentNode_1adbd18e743a580406c8fb6ab1c6cd85cf" prot="public" virt="non-virtual"><scope>asmjit::PermanentNode</scope><name>mem</name></member>
+      <member refid="structasmjit_1_1PermanentNode_1aa9096b0a75d6f6e77823f9bbd98ed7e9" prot="public" virt="non-virtual"><scope>asmjit::PermanentNode</scope><name>prev</name></member>
+      <member refid="structasmjit_1_1PermanentNode_1a57bcee03d93922af5795bd74782c3538" prot="public" virt="non-virtual"><scope>asmjit::PermanentNode</scope><name>size</name></member>
+      <member refid="structasmjit_1_1PermanentNode_1aae0a0f23e598d76bdc2ed0bd78c8d886" prot="public" virt="non-virtual"><scope>asmjit::PermanentNode</scope><name>used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="context__p_8h" kind="file">
+    <compoundname>context_p.h</compoundname>
+    <includes refid="compiler_8h" local="yes">../base/compiler.h</includes>
+    <includes refid="zone_8h" local="yes">../base/zone.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="compiler_8cpp" local="yes">compiler.cpp</includedby>
+    <includedby refid="context_8cpp" local="yes">context.cpp</includedby>
+    <includedby refid="x86context__p_8h" local="yes">x86context_p.h</includedby>
+    <incdepgraph>
+      <node id="677">
+        <label>../base/globals.h</label>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="683">
+        <label>stdarg.h</label>
+      </node>
+      <node id="674">
+        <label>../base/codegen.h</label>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="687">
+        <label>stdint.h</label>
+      </node>
+      <node id="681">
+        <label>stdlib.h</label>
+      </node>
+      <node id="689">
+        <label>../base/error.h</label>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>../base/zone.h</label>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>../base/apibegin.h</label>
+        <childnode refid="678" relation="include">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>../base/logger.h</label>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>../base/assembler.h</label>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>../base/defs.h</label>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>limits.h</label>
+      </node>
+      <node id="693">
+        <label>../base/podlist.h</label>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>../base/podvector.h</label>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>new</label>
+      </node>
+      <node id="671">
+        <label>context_p.h</label>
+        <link refid="context_p.h"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>config.h</label>
+      </node>
+      <node id="676">
+        <label>../base/intutil.h</label>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>../base/runtime.h</label>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>../build.h</label>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>stdio.h</label>
+      </node>
+      <node id="682">
+        <label>string.h</label>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>../base/func.h</label>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>../base/compiler.h</label>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="699">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="697">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="696">
+        <label>context_p.h</label>
+        <link refid="context_p.h"/>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+      <node id="698">
+        <label>context.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1BaseContext" prot="public">asmjit::BaseContext</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_CONTEXT_P_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_CONTEXT_P_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/compiler.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/zone.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseContext]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">BaseContext<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(BaseContext)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>BaseContext(BaseCompiler*<sp/>compiler);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>virtual<sp/>~BaseContext();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Reset]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Reset<sp/>the<sp/>whole<sp/>context.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Accessors]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>compiler.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseCompiler*<sp/>getCompiler()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_compiler;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>function.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>FuncNode*<sp/>getFunc()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_func;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>stop<sp/>node.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseNode*<sp/>getStop()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_stop;<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>start<sp/>of<sp/>the<sp/>current<sp/>scope.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseNode*<sp/>getStart()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_start;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>end<sp/>of<sp/>the<sp/>current<sp/>scope.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseNode*<sp/>getEnd()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_end;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>extra<sp/>block.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseNode*<sp/>getExtraBlock()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_extraBlock;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>extra<sp/>block.</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setExtraBlock(BaseNode*<sp/>node)<sp/>{<sp/>_extraBlock<sp/>=<sp/>node;<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Error]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>the<sp/>last<sp/>error<sp/>code.</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>Error<sp/>getError()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getCompiler()-&gt;getError();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>the<sp/>last<sp/>error<sp/>code<sp/>and<sp/>propagate<sp/>it<sp/>through<sp/>the<sp/>error<sp/>handler.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>Error<sp/>setError(Error<sp/>error,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message<sp/>=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getCompiler()-&gt;setError(error,<sp/>message);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[State]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>current<sp/>state.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>BaseVarState*<sp/>getState()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_state;<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Load<sp/>current<sp/>state<sp/>from<sp/>@a<sp/>target<sp/>state.</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadState(BaseVarState*<sp/>src)<sp/>=<sp/>0;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Save<sp/>current<sp/>state,<sp/>returning<sp/>new<sp/>@ref<sp/>BaseVarState<sp/>instance.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BaseVarState*<sp/>saveState()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Change<sp/>the<sp/>current<sp/>state<sp/>to<sp/>@a<sp/>target<sp/>state.</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>switchState(BaseVarState*<sp/>src)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Change<sp/>the<sp/>current<sp/>state<sp/>to<sp/>the<sp/>intersection<sp/>of<sp/>two<sp/>states<sp/>@a<sp/>a</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/>//!<sp/>and<sp/>@a<sp/>b.</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>intersectStates(BaseVarState*<sp/>a,<sp/>BaseVarState*<sp/>b)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Mem]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>Error<sp/>_registerContextVar(VarData*<sp/>vd)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vd-&gt;hasContextId())</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>cid<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_contextVd.getLength());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>ASMJIT_PROPAGATE_ERROR(_contextVd.append(vd));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>vd-&gt;setContextId(cid);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Mem]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>MemCell*<sp/>_newVarCell(VarData*<sp/>vd);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>MemCell*<sp/>_newStackCell(uint32_t<sp/>size,<sp/>uint32_t<sp/>alignment);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>MemCell*<sp/>getVarCell(VarData*<sp/>vd)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>MemCell*<sp/>cell<sp/>=<sp/>vd-&gt;getMemCell();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cell<sp/>?<sp/>cell<sp/>:<sp/>_newVarCell(vd);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>resolveCellOffsets();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Bits]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>VarBits*<sp/>newBits(uint32_t<sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">VarBits*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_zoneAllocator.calloc(static_cast&lt;size_t&gt;(len)<sp/>*<sp/>VarBits::kEntitySize));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>VarBits*<sp/>copyBits(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VarBits*<sp/>src,<sp/>uint32_t<sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">VarBits*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_zoneAllocator.dup(src,<sp/>static_cast&lt;size_t&gt;(len)<sp/>*<sp/>VarBits::kEntitySize));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Fetch]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Fetch.</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/>//!<sp/>Fetch<sp/>iterates<sp/>over<sp/>all<sp/>nodes<sp/>and<sp/>gathers<sp/>information<sp/>about<sp/>all<sp/>variables</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/>//!<sp/>used.<sp/>The<sp/>process<sp/>generates<sp/>information<sp/>required<sp/>by<sp/>register<sp/>allocator,</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/>//!<sp/>variable<sp/>liveness<sp/>analysis<sp/>and<sp/>translator.</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>fetch()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[RemoveUnreachableCode]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Remove<sp/>unreachable<sp/>code.</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>removeUnreachableCode();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Analyze]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Preform<sp/>variable<sp/>liveness<sp/>analysis.</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/>//!<sp/>Analysis<sp/>phase<sp/>iterates<sp/>over<sp/>nodes<sp/>in<sp/>reverse<sp/>order<sp/>and<sp/>generates<sp/>a<sp/>bit</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/>//!<sp/>array<sp/>describing<sp/>variables<sp/>that<sp/>are<sp/>alive<sp/>at<sp/>every<sp/>node<sp/>in<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/>//!<sp/>When<sp/>the<sp/>analysis<sp/>start<sp/>all<sp/>variables<sp/>are<sp/>assumed<sp/>dead.<sp/>When<sp/>a<sp/>read<sp/>or</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/>//!<sp/>read/write<sp/>operations<sp/>of<sp/>a<sp/>variable<sp/>is<sp/>detected<sp/>the<sp/>variable<sp/>becomes</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/><sp/>//!<sp/>alive;<sp/>when<sp/>only<sp/>write<sp/>operation<sp/>is<sp/>detected<sp/>the<sp/>variable<sp/>becomes<sp/>dead.</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/>//!<sp/>When<sp/>a<sp/>label<sp/>is<sp/>found<sp/>all<sp/>jumps<sp/>to<sp/>that<sp/>label<sp/>are<sp/>followed<sp/>and<sp/>analysis</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/><sp/>//!<sp/>repeats<sp/>until<sp/>all<sp/>variables<sp/>are<sp/>resolved.</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>analyze()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Annotate]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>annotate()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Translate]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Translate<sp/>code<sp/>by<sp/>allocating<sp/>registers<sp/>and<sp/>handling<sp/>state<sp/>changes.</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>translate()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Cleanup]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cleanup();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Compile]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>compile(FuncNode*<sp/>func);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Serialize]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/>serialize(BaseAssembler*<sp/>assembler,<sp/>BaseNode*<sp/>start,<sp/>BaseNode*<sp/>stop)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Compiler.</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>BaseCompiler*<sp/>_compiler;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Function.</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>FuncNode*<sp/>_func;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Zone<sp/>allocator.</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>Zone<sp/>_zoneAllocator;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Start<sp/>of<sp/>the<sp/>current<sp/>active<sp/>scope.</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>BaseNode*<sp/>_start;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>End<sp/>of<sp/>the<sp/>current<sp/>active<sp/>scope.</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>BaseNode*<sp/>_end;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Node<sp/>that<sp/>is<sp/>used<sp/>to<sp/>insert<sp/>extra<sp/>code<sp/>after<sp/>the<sp/>function<sp/>body.</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>BaseNode*<sp/>_extraBlock;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Stop<sp/>node.</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>BaseNode*<sp/>_stop;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Unreachable<sp/>nodes.</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>PodList&lt;BaseNode*&gt;<sp/>_unreachableList;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Jump<sp/>nodes.</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>PodList&lt;BaseNode*&gt;<sp/>_jccList;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>All<sp/>variables<sp/>used<sp/>by<sp/>the<sp/>current<sp/>function.</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>PodVector&lt;VarData*&gt;<sp/>_contextVd;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Memory<sp/>used<sp/>to<sp/>spill<sp/>variables.</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>MemCell*<sp/>_memVarCells;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Memory<sp/>used<sp/>to<sp/>alloc<sp/>memory<sp/>on<sp/>the<sp/>stack.</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>MemCell*<sp/>_memStackCells;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>1-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem1ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>2-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem2ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>4-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem4ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>8-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem8ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>16-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem16ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>32-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem32ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>64-byte<sp/>cells.</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_mem64ByteVarsUsed;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>stack<sp/>memory<sp/>cells.</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_memStackCellsUsed;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Maximum<sp/>memory<sp/>alignment<sp/>used<sp/>by<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_memMaxAlign;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>bytes<sp/>used<sp/>by<sp/>variables.</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_memVarTotal;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>bytes<sp/>used<sp/>by<sp/>stack.</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_memStackTotal;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>bytes<sp/>used<sp/>by<sp/>variables<sp/>and<sp/>stack<sp/>after<sp/>alignment.</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_memAllTotal;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Default<sp/>lenght<sp/>of<sp/>annotated<sp/>instruction.</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/>_annotationLength;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Current<sp/>state<sp/>(used<sp/>by<sp/>register<sp/>allocator).</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>BaseVarState*<sp/>_state;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_CONTEXT_P_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/context_p.h"/>
+  </compounddef>
+</doxygen>

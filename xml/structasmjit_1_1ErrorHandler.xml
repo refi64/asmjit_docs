@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1ErrorHandler" kind="struct" prot="public">
+    <compoundname>asmjit::ErrorHandler</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1ErrorHandler_1a20f19fc7067910df64cd5d024535fde7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::ErrorHandler::ErrorHandler</definition>
+        <argsstring>()</argsstring>
+        <name>ErrorHandler</name>
+        <briefdescription>
+<para>Create a new ErrorHandler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="109" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1ErrorHandler_1ac5da44ce2459ad93819bf51a1f1ee017" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::ErrorHandler::~ErrorHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~ErrorHandler</name>
+        <briefdescription>
+<para>Destroy the ErrorHandler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="111" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1ErrorHandler_1a489ba1413a360f42fe71be052caa190f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API ErrorHandler *</type>
+        <definition>ErrorHandler * asmjit::ErrorHandler::addRef</definition>
+        <argsstring>() const </argsstring>
+        <name>addRef</name>
+        <briefdescription>
+<para>Reference this error handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This member function is provided for convenience. The default implementation does nothing. If you are working in environment where multiple ErrorHandler instances are used in different Assembler and Compiler instances (or in multithreaded environment) you might want to provide your own functionality for reference counting. In that case override addRef() and release() functions to inc/dec your reference count value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="126" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1ErrorHandler_1a7290bc4779f4c36d8bd99b928a19604d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::ErrorHandler::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+<para>Release this error handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This member function is provided for convenience. See addRef() for more detailed information related to reference counting. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="132" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1ErrorHandler_1abcbd0e0c4bc9ea1405f7d044e5b3482c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool asmjit::ErrorHandler::handleError</definition>
+        <argsstring>(Error code, const char *message)=0</argsstring>
+        <name>handleError</name>
+        <param>
+          <type>Error</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Error handler (pure). </para>        </briefdescription>
+        <detaileddescription>
+<para>Error handler is called when an error happened. An error can happen in many places, but error handler is mostly used by Assembler and Compiler classes to report anything that may prevent correct code generation. There are multiple ways how the error handler can be used and each has it&apos;s pros/cons.</para><para>AsmJit library doesn&apos;t use exceptions and can be compiled with or without exception feature support. Even if the AsmJit library is compiled without exceptions it is exception-safe and handleError() can report an incoming error by throwing an exception of any type. It&apos;s guaranteed that the exception won&apos;t be catched by AsmJit and will be propagated to the code calling AsmJit Assembler or Compiler. Alternative to throwing exception is using setjmp() / longjmp() pair from the standard C library.</para><para>If the exception or setjmp() / longjmp() mechanism is used, the state of the Assember or Compiler is unchanged and if it&apos;s possible the execution (instruction serialization) can continue. However if the error happened during any phase that translates or modifies the stored code (for example relocation done by Assembler or analysis/translation done by Compiler) the execution can&apos;t continue and the error will be also stored in Assembler or Compiler.</para><para>Finally, if exceptions nor setjmp() / longjmp() mechanisms were used, you can still implement a compatible design by returning from your error handler. Returning <computeroutput>true</computeroutput> means that error was reported and AsmJit should continue execution. When <computeroutput>false</computeroutput> is returned, AsmJit sets the error immediately to the Assembler or Compiler and execution shouldn&apos;t continue (this is the default behavior in case no error handler is used). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="103" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.h" bodystart="103" bodyend="166"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1ErrorHandler_1a489ba1413a360f42fe71be052caa190f" prot="public" virt="virtual"><scope>asmjit::ErrorHandler</scope><name>addRef</name></member>
+      <member refid="structasmjit_1_1ErrorHandler_1a20f19fc7067910df64cd5d024535fde7" prot="public" virt="non-virtual"><scope>asmjit::ErrorHandler</scope><name>ErrorHandler</name></member>
+      <member refid="structasmjit_1_1ErrorHandler_1abcbd0e0c4bc9ea1405f7d044e5b3482c" prot="public" virt="pure-virtual"><scope>asmjit::ErrorHandler</scope><name>handleError</name></member>
+      <member refid="structasmjit_1_1ErrorHandler_1a7290bc4779f4c36d8bd99b928a19604d" prot="public" virt="virtual"><scope>asmjit::ErrorHandler</scope><name>release</name></member>
+      <member refid="structasmjit_1_1ErrorHandler_1ac5da44ce2459ad93819bf51a1f1ee017" prot="public" virt="virtual"><scope>asmjit::ErrorHandler</scope><name>~ErrorHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

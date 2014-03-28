@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1FuncInOut" kind="struct" prot="public">
+    <compoundname>asmjit::FuncInOut</compoundname>
+    <includes local="no">func.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1FuncInOut_1a818e1a1510be215fbf353ff34153d171" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::FuncInOut::_varType</definition>
+        <argsstring></argsstring>
+        <name>_varType</name>
+        <briefdescription>
+<para>Variable type, see <computeroutput>kVarType</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="303" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1FuncInOut_1a0be2f716335ddee7e12e97231999ef87" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::FuncInOut::_regIndex</definition>
+        <argsstring></argsstring>
+        <name>_regIndex</name>
+        <briefdescription>
+<para>Register index if argument / return value is a register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="305" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1FuncInOut_1a791709cefab7cbc04d641331dd8fe9f8" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t asmjit::FuncInOut::_stackOffset</definition>
+        <argsstring></argsstring>
+        <name>_stackOffset</name>
+        <briefdescription>
+<para>Stack offset if argument / return value is on the stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="307" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1FuncInOut_1a0727112973094c5b63a1afaf07f8e7c8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::FuncInOut::_packed</definition>
+        <argsstring></argsstring>
+        <name>_packed</name>
+        <briefdescription>
+<para>All members packed into single 32-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="311" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1FuncInOut_1a7e009348fd3fb19f02372250e51085e1" prot="public" static="no" mutable="no">
+        <type>union asmjit::FuncInOut::@48</type>
+        <definition>union asmjit::FuncInOut::@48 asmjit::FuncInOut::@49</definition>
+        <argsstring></argsstring>
+        <name>@49</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="312"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1a982ef6b4bbf83272c2922631124d0d6d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::FuncInOut::getVarType</definition>
+        <argsstring>() const </argsstring>
+        <name>getVarType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="276" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="276" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1a964b047803622e656bdddbf1883ef329" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::FuncInOut::hasRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>hasRegIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="278" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1aba3684801539454ca35fea8e74337f9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::FuncInOut::getRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="279" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1af883ef82e5dd661016fd0053f968c784" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::FuncInOut::hasStackOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>hasStackOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="281" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1a217b17a0baa5fed3f49b707124c25378" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::FuncInOut::getStackOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>getStackOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="282" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1ae28290801e2e0049131deeec38aaf279" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::FuncInOut::isSet</definition>
+        <argsstring>() const </argsstring>
+        <name>isSet</name>
+        <briefdescription>
+<para>Get whether the argument / return value is assigned. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="285" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="285" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FuncInOut_1ac532e27f8c6d9d911bbb5df2ca210989" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::FuncInOut::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset the function argument to &quot;unassigned state&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="294" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="294" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function in/out (argument or a return value). </para>    </briefdescription>
+    <detaileddescription>
+<para>This class contains function argument or return value translated from the <ref refid="structasmjit_1_1FuncPrototype" kindref="compound">FuncPrototype</ref>. </para>    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="271" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="271" bodyend="313"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1FuncInOut_1a0727112973094c5b63a1afaf07f8e7c8" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1a0be2f716335ddee7e12e97231999ef87" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>_regIndex</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1a791709cefab7cbc04d641331dd8fe9f8" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>_stackOffset</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1a818e1a1510be215fbf353ff34153d171" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>_varType</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1aba3684801539454ca35fea8e74337f9e" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>getRegIndex</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1a217b17a0baa5fed3f49b707124c25378" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>getStackOffset</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1a982ef6b4bbf83272c2922631124d0d6d" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>getVarType</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1a964b047803622e656bdddbf1883ef329" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>hasRegIndex</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1af883ef82e5dd661016fd0053f968c784" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>hasStackOffset</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1ae28290801e2e0049131deeec38aaf279" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>isSet</name></member>
+      <member refid="structasmjit_1_1FuncInOut_1ac532e27f8c6d9d911bbb5df2ca210989" prot="public" virt="non-virtual"><scope>asmjit::FuncInOut</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

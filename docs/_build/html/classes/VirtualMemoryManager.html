@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>VirtualMemoryManager &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="Zone" href="Zone.html" />
+    <link rel="prev" title="VarData" href="VarData.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Zone.html" title="Zone"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="VarData.html" title="VarData"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="virtualmemorymanager">
+<h1>VirtualMemoryManager<a class="headerlink" href="#virtualmemorymanager" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1VirtualMemoryManager">
+<div class="line"><em>struct</em> <strong>asmjit::VirtualMemoryManager</strong></div>
+<div class="line"><em>#include &lt;memorymanager.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Reference implementation of memory manager that uses <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1VMem"><em>asmjit::VMem</em></a> class to allocate chunks of virtual memory and bit arrays to manage it. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1ae497c2c983f209dad1bf491423459946"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>VirtualMemoryManager</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a <tt class="docutils literal"><a class="reference internal" href="../modules/memory.html#asmjitstructasmjit_1_1VirtualMemoryManager"><em><span class="pre">VirtualMemoryManager</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1accf4a76bf2c806bb325bcc3e18c2daa9"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~VirtualMemoryManager</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <tt class="docutils literal"><a class="reference internal" href="../modules/memory.html#asmjitstructasmjit_1_1VirtualMemoryManager"><em><span class="pre">VirtualMemoryManager</span></em></a></tt> instance, this means also to free all blocks. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a12d89cd2ac18a5ec8c088ccc04bb50f4"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Free all allocated memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a30bc5b73aad2dc18195bbbd8c7950f53"></span><div class="line-block">
+<div class="line">ASMJIT_API void * <strong>alloc</strong>(size_t size, uint32_t type = kVirtualAllocFreeable)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Allocate a <em>size</em> bytes of virtual memory. </p>
+<p>Note that if you are implementing your own virtual memory manager then you can quitly ignore type of allocation. This is mainly for AsmJit to memory manager that allocated memory will be never freed. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a171194cee9961813fd4fb511ce7004ff"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>release</strong>(void * address)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Free previously allocated memory at a given <em>address</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1aeeaa5a7943a95dee142b892bb52f7f37"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>shrink</strong>(void * address, size_t used)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Free some tail memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1ae9ffbec3e3dbcb0a81b15a359c92cc86"></span><div class="line-block">
+<div class="line">ASMJIT_API size_t <strong>getUsedBytes</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get how many bytes are currently used. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a54a456f8b24801ab1ba61af88f21ab5b"></span><div class="line-block">
+<div class="line">ASMJIT_API size_t <strong>getAllocatedBytes</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get how many bytes are currently allocated. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a0deea325428a8f964b7504dc4ce90d9f"></span><div class="line-block">
+<div class="line">ASMJIT_API bool <strong>getKeepVirtualMemory</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether to keep allocated memory after memory manager is destroyed. </p>
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><tt class="docutils literal"><a class="reference internal" href="../modules/memory.html#asmjitstructasmjit_1_1VirtualMemoryManager_1a9e893fc5acc518f4295e747f838319a4"><em><span class="pre">setKeepVirtualMemory()</span></em></a></tt>. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a9e893fc5acc518f4295e747f838319a4"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setKeepVirtualMemory</strong>(bool keepVirtualMemory)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set whether to keep allocated memory after memory manager is destroyed. </p>
+<p><p>This method is usable when patching code of remote process. You need to allocate process memory, store generated assembler into it and patch the method you want to redirect (into your code). This method affects only <a class="reference internal" href="../modules/memory.html#asmjitstructasmjit_1_1VirtualMemoryManager"><em>VirtualMemoryManager</em></a> destructor. After destruction all internal structures are freed, only the process virtual memory remains.</p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Memory allocated with kVirtualAllocPermanent is always kept.</dd>
+<dt><strong>See</strong></dt>
+<dd><tt class="docutils literal"><a class="reference internal" href="../modules/memory.html#asmjitstructasmjit_1_1VirtualMemoryManager_1a0deea325428a8f964b7504dc4ce90d9f"><em><span class="pre">getKeepVirtualMemory()</span></em></a></tt>. </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VirtualMemoryManager_1a4514732600c92bdf7fb587b6e10afc90"></span>void * <strong>_d</strong></p>
+<blockquote>
+<div><p>Pointer to private data hidden out of the public API. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="VarData.html"
+                        title="previous chapter">VarData</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Zone.html"
+                        title="next chapter">Zone</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/VirtualMemoryManager.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Zone.html" title="Zone"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="VarData.html" title="VarData"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

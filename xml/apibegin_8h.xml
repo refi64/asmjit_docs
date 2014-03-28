@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="apibegin_8h" kind="file">
+    <compoundname>apibegin.h</compoundname>
+    <includes refid="build_8h" local="yes">../build.h</includes>
+    <includedby refid="globals_8h" local="yes">globals.h</includedby>
+    <includedby refid="intutil_8h" local="yes">intutil.h</includedby>
+    <includedby refid="defs_8h" local="yes">defs.h</includedby>
+    <includedby refid="error_8h" local="yes">error.h</includedby>
+    <includedby refid="string_8h" local="yes">string.h</includedby>
+    <includedby refid="logger_8h" local="yes">logger.h</includedby>
+    <includedby refid="runtime_8h" local="yes">runtime.h</includedby>
+    <includedby refid="zone_8h" local="yes">zone.h</includedby>
+    <includedby refid="codegen_8h" local="yes">codegen.h</includedby>
+    <includedby refid="podlist_8h" local="yes">podlist.h</includedby>
+    <includedby refid="podvector_8h" local="yes">podvector.h</includedby>
+    <includedby refid="assembler_8h" local="yes">assembler.h</includedby>
+    <includedby refid="func_8h" local="yes">func.h</includedby>
+    <includedby refid="compiler_8h" local="yes">compiler.h</includedby>
+    <includedby refid="cpu_8h" local="yes">cpu.h</includedby>
+    <includedby refid="lock_8h" local="yes">lock.h</includedby>
+    <includedby refid="memorymanager_8h" local="yes">memorymanager.h</includedby>
+    <includedby refid="vectypes_8h" local="yes">vectypes.h</includedby>
+    <includedby refid="vmem_8h" local="yes">vmem.h</includedby>
+    <includedby refid="assembler_8cpp" local="yes">assembler.cpp</includedby>
+    <includedby refid="codegen_8cpp" local="yes">codegen.cpp</includedby>
+    <includedby refid="context__p_8h" local="yes">context_p.h</includedby>
+    <includedby refid="compiler_8cpp" local="yes">compiler.cpp</includedby>
+    <includedby refid="context_8cpp" local="yes">context.cpp</includedby>
+    <includedby refid="cpu_8cpp" local="yes">cpu.cpp</includedby>
+    <includedby refid="defs_8cpp" local="yes">defs.cpp</includedby>
+    <includedby refid="error_8cpp" local="yes">error.cpp</includedby>
+    <includedby refid="func_8cpp" local="yes">func.cpp</includedby>
+    <includedby refid="globals_8cpp" local="yes">globals.cpp</includedby>
+    <includedby refid="logger_8cpp" local="yes">logger.cpp</includedby>
+    <includedby refid="memorymanager_8cpp" local="yes">memorymanager.cpp</includedby>
+    <includedby refid="podvector_8cpp" local="yes">podvector.cpp</includedby>
+    <includedby refid="runtime_8cpp" local="yes">runtime.cpp</includedby>
+    <includedby refid="string_8cpp" local="yes">string.cpp</includedby>
+    <includedby refid="vmem_8cpp" local="yes">vmem.cpp</includedby>
+    <includedby refid="zone_8cpp" local="yes">zone.cpp</includedby>
+    <includedby refid="x86defs_8h" local="yes">x86defs.h</includedby>
+    <includedby refid="x86assembler_8h" local="yes">x86assembler.h</includedby>
+    <includedby refid="x86func_8h" local="yes">x86func.h</includedby>
+    <includedby refid="x86compiler_8h" local="yes">x86compiler.h</includedby>
+    <includedby refid="x86context__p_8h" local="yes">x86context_p.h</includedby>
+    <includedby refid="x86cpu_8h" local="yes">x86cpu.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>../base/globals.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="0" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="10">
+        <label>stdarg.h</label>
+      </node>
+      <node id="12">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="0">
+        <label>apibegin.h</label>
+        <link refid="apibegin.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../base/defs.h</label>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="0" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>limits.h</label>
+      </node>
+      <node id="11">
+        <label>new</label>
+      </node>
+      <node id="2">
+        <label>config.h</label>
+      </node>
+      <node id="7">
+        <label>../base/intutil.h</label>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="0" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>../build.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="0" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>globals.h</label>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="72">
+        <label>vmem.cpp</label>
+      </node>
+      <node id="71">
+        <label>error.cpp</label>
+      </node>
+      <node id="18">
+        <label>codegen.h</label>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>lock.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="66">
+        <label>memorymanager.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>error.h</label>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>defs.cpp</label>
+      </node>
+      <node id="75">
+        <label>globals.cpp</label>
+      </node>
+      <node id="49">
+        <label>logger.cpp</label>
+      </node>
+      <node id="46">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="22">
+        <label>asmjit.h</label>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>zone.h</label>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>apibegin.h</label>
+        <link refid="apibegin.h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="48">
+        <label>logger.h</label>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>func.cpp</label>
+      </node>
+      <node id="19">
+        <label>assembler.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>defs.h</label>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>memorymanager.cpp</label>
+      </node>
+      <node id="45">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="63">
+        <label>podvector.cpp</label>
+      </node>
+      <node id="61">
+        <label>podlist.h</label>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>x86.h</label>
+      </node>
+      <node id="43">
+        <label>x86compiler.h</label>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="21">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="62">
+        <label>podvector.h</label>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>base.h</label>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>winremoteruntime.h</label>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="44">
+        <label>x86func.h</label>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>vmem.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>cpu.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>x86cpu.h</label>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>x86cpu.cpp</label>
+      </node>
+      <node id="26">
+        <label>genopcode.h</label>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>context_p.h</label>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>x86compiler.cpp</label>
+      </node>
+      <node id="67">
+        <label>vectypes.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>genblend.h</label>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>intutil.h</label>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>x86func.cpp</label>
+      </node>
+      <node id="39">
+        <label>context.cpp</label>
+      </node>
+      <node id="69">
+        <label>zone.cpp</label>
+      </node>
+      <node id="77">
+        <label>runtime.h</label>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>x86assembler.h</label>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>codegen.cpp</label>
+      </node>
+      <node id="32">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="30">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="60">
+        <label>string.cpp</label>
+      </node>
+      <node id="31">
+        <label>host.h</label>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>x86defs.cpp</label>
+      </node>
+      <node id="74">
+        <label>cpu.cpp</label>
+      </node>
+      <node id="51">
+        <label>build.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>contrib.h</label>
+      </node>
+      <node id="54">
+        <label>x86assembler.cpp</label>
+      </node>
+      <node id="23">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="28">
+        <label>testcpu.cpp</label>
+      </node>
+      <node id="50">
+        <label>string.h</label>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>func.h</label>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>compiler.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>x86context.cpp</label>
+      </node>
+      <node id="41">
+        <label>x86defs.h</label>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(_ASMJIT_BUILD_H)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;../build.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!_ASMJIT_BUILD_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[MSVC]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>some<sp/>warnings<sp/>we<sp/>know<sp/>about</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4127)<sp/>//<sp/>conditional<sp/>expression<sp/>is<sp/>constant</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4201)<sp/>//<sp/>nameless<sp/>struct/union</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4244)<sp/>//<sp/>&apos;+=&apos;<sp/>:<sp/>conversion<sp/>from<sp/>&apos;int&apos;<sp/>to<sp/>&apos;x&apos;,<sp/>possible</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>loss<sp/>of<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4251)<sp/>//<sp/>struct<sp/>needs<sp/>to<sp/>have<sp/>dll-interface<sp/>to<sp/>be<sp/>used</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>clients<sp/>of<sp/>struct<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4275)<sp/>//<sp/>non<sp/>dll-interface<sp/>struct<sp/>...<sp/>used<sp/>as<sp/>base<sp/>for</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dll-interface<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4355)<sp/>//<sp/>this<sp/>used<sp/>in<sp/>base<sp/>member<sp/>initializer<sp/>list</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4480)<sp/>//<sp/>specifying<sp/>underlying<sp/>type<sp/>for<sp/>enum</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:<sp/>4800)<sp/>//<sp/>forcing<sp/>value<sp/>to<sp/>bool<sp/>&apos;true&apos;<sp/>or<sp/>&apos;false&apos;</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rename<sp/>symbols.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(vsnprintf)</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASMJIT_DEFINED_VSNPRINTF</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>vsnprintf<sp/>_vsnprintf</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!vsnprintf</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(snprintf)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASMJIT_DEFINED_SNPRINTF</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>snprintf<sp/>_snprintf</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!snprintf</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_MSC_VER</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[GNUC]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNUC__)</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>GCC<sp/>warnings<sp/>fix:<sp/>I<sp/>can&apos;t<sp/>understand<sp/>why<sp/>GCC<sp/>has<sp/>no<sp/>interface<sp/>to<sp/>push/pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>warnings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#<sp/>if<sp/>(__GNUC__<sp/>*<sp/>10000<sp/><sp/>+<sp/>__GNUC_MINOR__<sp/>*<sp/>100<sp/><sp/>+<sp/>__GNUC_PATCHLEVEL__)<sp/>&gt;=<sp/>402001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#<sp/><sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-w&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__GNUC__</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/apibegin.h"/>
+  </compounddef>
+</doxygen>

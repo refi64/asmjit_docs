@@ -1,0 +1,623 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Operand &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="OperandUtilPodVector" href="OperandUtilPodVector.html" />
+    <link rel="prev" title="MemoryManager" href="MemoryManager.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="OperandUtilPodVector.html" title="OperandUtilPodVector"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="MemoryManager.html" title="MemoryManager"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="operand">
+<h1>Operand<a class="headerlink" href="#operand" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1Operand">
+<div class="line"><em>struct</em> <strong>asmjit::Operand</strong></div>
+<div class="line"><em>#include &lt;defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> can contain register, memory location, immediate, or label. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1ad67efdbe93039d4ae3f77f84fcae6331"></span><div class="line-block">
+<div class="line"> <strong>Operand</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create an uninitialized operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a55218d0096d0f0352484ecd0b7e3ef53"></span><div class="line-block">
+<div class="line"> <strong>Operand</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a reference to <em>other</em> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a50c0bde3edb955a4001a20a7d01bbf96"></span><div class="line-block">
+<div class="line"> <strong>Operand</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a985b4db41884dae41b27d2d880c7e86f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a52353c7164e54d235314b175a9b05a6c"></span><div class="line-block">
+<div class="line">void <strong>_init</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a289c6ab4602acf459e248d3f3f724b8a"></span><div class="line-block">
+<div class="line">void <strong>_init_packed_op_sz_b0_b1_id</strong>(uint32_t op, uint32_t sz, uint32_t r0, uint32_t r1, uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a7b9c87fee92df184dea2c10fb30ea467"></span><div class="line-block">
+<div class="line">void <strong>_init_packed_op_sz_w0_id</strong>(uint32_t op, uint32_t sz, uint32_t w0, uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a2d8b4647e75a71e854ad939e1cb4c2ed"></span><div class="line-block">
+<div class="line">void <strong>_init_packed_d0_d1</strong>(uint32_t u0, uint32_t u1)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a8cee9df3008f5956e37f876cc9026f45"></span><div class="line-block">
+<div class="line">void <strong>_init_packed_d2_d3</strong>(uint32_t u2, uint32_t u3)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ac155d3e43ef0cf0ea24e98b1fe906d36"></span><div class="line-block">
+<div class="line">void <strong>_copy</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ae043c994eaddfe587c1d248812b3d16c"></span><div class="line-block">
+<div class="line">template &lt; typename T &gt;</div>
+<div class="line">T &amp; <strong>getData</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a9871ba5815361a896771418b9d443935"></span><div class="line-block">
+<div class="line">template &lt; typename T &gt;</div>
+<div class="line">const T &amp; <strong>getData</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a2ea181bfeeae6d5467f7343dfddcb57c"></span><div class="line-block">
+<div class="line">uint32_t <strong>getOp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get type of the operand, see kOperandType. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ad09b5fd91f3d8c754980f98a2019be7b"></span><div class="line-block">
+<div class="line">bool <strong>isNone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is none (kOperandTypeNone). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ae0ce4d16beb59e0934942cba222054af"></span><div class="line-block">
+<div class="line">bool <strong>isReg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is any register (kOperandTypeReg). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a809703f677ab89fb8d619ad717c59a02"></span><div class="line-block">
+<div class="line">bool <strong>isVar</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is variable (kOperandTypeVar). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1afb9863bc270de49d257dce8593e79cb4"></span><div class="line-block">
+<div class="line">bool <strong>isMem</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is memory address (kOperandTypeMem). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ab85a3b5c7354a38ca52e78fea1739759"></span><div class="line-block">
+<div class="line">bool <strong>isImm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is an immediate value (kOperandTypeImm). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a2a77f09fc4951c9e58fccd18a6eaf1b3"></span><div class="line-block">
+<div class="line">bool <strong>isLabel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is label (kOperandTypeLabel). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a5dd129c65aac0057afdd4f844785437a"></span><div class="line-block">
+<div class="line">bool <strong>isRegType</strong>(uint32_t type)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is register of <em>type</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a1cd13703d63d231c97cf76c020e2b605"></span><div class="line-block">
+<div class="line">bool <strong>isRegCode</strong>(uint32_t type, uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is register and of <em>type</em> and <em>index</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1aea0d545eea3526cfb1ae0adb8871de78"></span><div class="line-block">
+<div class="line">bool <strong>isRegOrMem</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is a register or memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ae65f6fcaacdf3a299256f909fcda5576"></span><div class="line-block">
+<div class="line">bool <strong>isVarOrMem</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the operand is variable or memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ae5bb07ef28e2c29ebf9b762ea8f36b7e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get size of the operand in bytes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a005389a2368b711612feda323d63766f"></span><div class="line-block">
+<div class="line">uint32_t <strong>getId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get operand id (<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> id&#8217;s are used internally by <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a> and <a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a> classes). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>There is no way how to change or remove operand id. If you don&#8217;t need the operand just assign different operand to this one. </dd>
+</dl>
+</p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1ab65e9aa7a15edd48cba687f03cb7347c"></span>BaseOp <strong>_base</strong></p>
+<blockquote>
+<div><p>Base data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a24f921b98561dea1f19faad624b9a147"></span>VRegOp <strong>_vreg</strong></p>
+<blockquote>
+<div><p>Register or variable data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1aae280895b95e1b083799a43306dd7e15"></span>VMemOp <strong>_vmem</strong></p>
+<blockquote>
+<div><p>Memory data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a307e2e7b752000b12da59dad23e0ca90"></span>ImmOp <strong>_imm</strong></p>
+<blockquote>
+<div><p>Immediate data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a706538f838a8416a7e8e7cc4fa6f1db8"></span>LabelOp <strong>_label</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1a1e918a093397232131e706fd436c1085"></span>UInt64 <strong>_packed</strong>[2]</p>
+<blockquote>
+<div><p>Packed operand as two 64-bit integers. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1ae444b9679e0b1655e77917de00c54a80"></span>union asmjit::Operand::&#64;16 <strong>&#64;17</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<p><p id="asmjitstructasmjit_1_1Operand_1_1BaseOp"><em>class</em> <strong>BaseOp</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1BaseOp_1ad86861fc7dfb1a5022ae763e5c91c7e7"></span>uint8_t <strong>op</strong></p>
+<blockquote>
+<div><p>Type of operand, see <tt class="docutils literal"><span class="pre">kOperandType</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1BaseOp_1a32123dc14ba854a72570fe3dff34a400"></span>uint8_t <strong>size</strong></p>
+<blockquote>
+<div><p>Size of operand (register, address, immediate, or variable). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1BaseOp_1afd7d42a4e4c591f6d412feb980720e95"></span>uint8_t <strong>reserved0</strong></p>
+<blockquote>
+<div><p>Flags, each operand uses this byte for something else. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1BaseOp_1a4360f895fb7c2b947fab2a9079938727"></span>uint8_t <strong>reserved1</strong></p>
+<blockquote>
+<div><p>Reserved (not used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1BaseOp_1ab3ca4a832b555952ee09515e025e622b"></span>uint32_t <strong>id</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> id (private variable for <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a> and <a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a> classes). </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Uninitialized operand has always set id to kInvalidValue. </dd>
+</dl>
+</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+<p><p id="asmjitstructasmjit_1_1Operand_1_1ImmOp"><em>class</em> <strong>ImmOp</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1ad2726f587dba478b71dad4947134282c"></span>uint8_t <strong>op</strong></p>
+<blockquote>
+<div><p>Type of operand, kOperandTypeImm. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a5bb2089e73d5f2da46fe35ef3acebf9c"></span>uint8_t <strong>size</strong></p>
+<blockquote>
+<div><p>Size of immediate (or 0 to autodetect). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a55263e2260e3bda0e89a6e79643461bd"></span>uint8_t <strong>reserved0</strong></p>
+<blockquote>
+<div><p>Reserved (not used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a92e58e76ed14b3a9063d98a5e967f664"></span>uint8_t <strong>reserved1</strong></p>
+<blockquote>
+<div><p>Reserved (not used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1aceb3c1ff1387265d836bef57a85c01d9"></span>uint32_t <strong>id</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> id (kInvalidValue). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a5368ef349d6828471ddb8a865343b7c0"></span>int8_t <strong>_i8</strong>[8]</p>
+<blockquote>
+<div><p>8x signed 8-bit immediate values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a0eade5b75578770962f80f6732c820bb"></span>uint8_t <strong>_u8</strong>[8]</p>
+<blockquote>
+<div><p>8x unsigned 8-bit immediate values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1ab0316e3313834f263b8e0eeb24cb28e1"></span>int16_t <strong>_i16</strong>[4]</p>
+<blockquote>
+<div><p>4x signed 16-bit immediate values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1afad95a334404c61bdca7f1b361f454f9"></span>uint16_t <strong>_u16</strong>[4]</p>
+<blockquote>
+<div><p>4x unsigned 16-bit immediate values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1af29da1e1391d8e6d0abc9d8dea5fff6d"></span>int32_t <strong>_i32</strong>[2]</p>
+<blockquote>
+<div><p>2x signed 32-bit immediate values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1aec2c6007d5c81182df9100d89006d82a"></span>uint32_t <strong>_u32</strong>[2]</p>
+<blockquote>
+<div><p>2x unsigned 32-bit immediate values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a999af7b9c2ab66bf91b466f40d09755e"></span>int64_t <strong>_i64</strong>[1]</p>
+<blockquote>
+<div><p>1x signed 64-bit immediate value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a35564334ea579eb3cc324509e87a3dac"></span>uint64_t <strong>_u64</strong>[1]</p>
+<blockquote>
+<div><p>1x unsigned 64-bit immediate value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a1cfd98bfa11839b3f4bd418779f313aa"></span>float <strong>_f32</strong>[2]</p>
+<blockquote>
+<div><p>2x SP-FP values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1ae7cfef5dd23ed61c3ca8714d39ff1a34"></span>double <strong>_f64</strong>[1]</p>
+<blockquote>
+<div><p>1x DP-FP value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1ImmOp_1a5ed8b5c27ebe7578c8e6d0f6cb384715"></span>union asmjit::Operand::ImmOp::&#64;22 <strong>value</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+<p><p id="asmjitstructasmjit_1_1Operand_1_1LabelOp"><em>class</em> <strong>LabelOp</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1LabelOp_1a747e545a7fb8ac6fcd0733ce52ae2921"></span>uint8_t <strong>op</strong></p>
+<blockquote>
+<div><p>Type of operand, <tt class="docutils literal"><span class="pre">kOperandTypeLabel</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1LabelOp_1ab61e85f469c88b3419e79a7a9a94b34b"></span>uint8_t <strong>size</strong></p>
+<blockquote>
+<div><p>Reserved (not used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1LabelOp_1a995b44c1c41a1c6ae01152a02df97021"></span>uint8_t <strong>reserved0</strong></p>
+<blockquote>
+<div><p>Reserved (not used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1LabelOp_1a6aa3fb3fdb4003e1bcf2248e9a38d673"></span>uint8_t <strong>reserved1</strong></p>
+<blockquote>
+<div><p>Reserved (not used). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1LabelOp_1a6e3e0a54c0c6759b9ebdd46a7f5faf87"></span>uint32_t <strong>id</strong></p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> id. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+<p><p id="asmjitstructasmjit_1_1Operand_1_1VMemOp"><em>class</em> <strong>VMemOp</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1a4b50a57b43af02b65336c993640236a2"></span>uint8_t <strong>op</strong></p>
+<blockquote>
+<div><p>Type of operand, <tt class="docutils literal"><span class="pre">kOperandTypeMem</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1ac29ac4c4de55fc5aea4d4babe5d422c2"></span>uint8_t <strong>size</strong></p>
+<blockquote>
+<div><p>Size of the pointer in bytes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1a46bf285ea391ab5fac71c629c2f05728"></span>uint8_t <strong>type</strong></p>
+<blockquote>
+<div><p>Type of the memory operand, see kMemType. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1a9b9af497a0e73571324afe247dfade71"></span>uint8_t <strong>flags</strong></p>
+<blockquote>
+<div><p></p>
+<p>X86/X64 layout:</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1a3938fe63db4db9ede413939421a74d41"></span>uint32_t <strong>base</strong></p>
+<blockquote>
+<div><p>Base register, variable or label id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1a778a1f707178527e66a839c6345871b3"></span>uint32_t <strong>index</strong></p>
+<blockquote>
+<div><p>Index register or variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VMemOp_1aa208a52b80ac2e35f592ba23082fa32c"></span>int32_t <strong>displacement</strong></p>
+<blockquote>
+<div><p>32-bit displacement or absolute address. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+<p><p id="asmjitstructasmjit_1_1Operand_1_1VRegOp"><em>class</em> <strong>VRegOp</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1af042b5a4ef66f5b0d51b9c1968b4a891"></span>uint8_t <strong>op</strong></p>
+<blockquote>
+<div><p>Type of operand, <tt class="docutils literal"><span class="pre">kOperandTypeReg</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1a63cda49e1555bc2597fc81803c304d4d"></span>uint8_t <strong>size</strong></p>
+<blockquote>
+<div><p>Size of register or variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1aaca96b74d659dd6006743551e2336894"></span>uint16_t <strong>code</strong></p>
+<blockquote>
+<div><p>Register code = (type &lt;&lt; 8) | index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1adbf8f7e5bb76bcd28dff1ef6a29d0543"></span>uint8_t <strong>type</strong></p>
+<blockquote>
+<div><p>Register type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1aba661932d2ddd56b2d571e3ad39280c6"></span>uint8_t <strong>index</strong></p>
+<blockquote>
+<div><p>Register index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1a272375c659fed58bec0773177d066613"></span>union asmjit::Operand::VRegOp::&#64;18 <strong>&#64;19</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1a5a0c34ba4c0fbcb7cb91d377b3f0cde8"></span>uint32_t <strong>id</strong></p>
+<blockquote>
+<div><p>Variable id (used by <a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a> to identify variables). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1acda192e564fc0294bd0acca6c3da45cb"></span>uint32_t <strong>vType</strong></p>
+<blockquote>
+<div><p>Variable type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Operand_1_1VRegOp_1a263092fef94557e709dd72a21504cd20"></span>uint32_t <strong>vUnused</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</p>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="MemoryManager.html"
+                        title="previous chapter">MemoryManager</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="OperandUtilPodVector.html"
+                        title="next chapter">OperandUtilPodVector</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/Operand.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="OperandUtilPodVector.html" title="OperandUtilPodVector"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="MemoryManager.html" title="MemoryManager"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+x86x64::CpuId
+=============
+
+.. doxygenunion:: asmjit::x86x64::CpuId
+   :project: asmjit

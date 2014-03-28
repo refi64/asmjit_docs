@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="memorymanager_8h" kind="file">
+    <compoundname>memorymanager.h</compoundname>
+    <includes refid="defs_8h" local="yes">../base/defs.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="assembler_8cpp" local="yes">assembler.cpp</includedby>
+    <includedby refid="memorymanager_8cpp" local="yes">memorymanager.cpp</includedby>
+    <includedby refid="runtime_8cpp" local="yes">runtime.cpp</includedby>
+    <incdepgraph>
+      <node id="1428">
+        <label>../base/globals.h</label>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1434">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1425">
+        <label>memorymanager.h</label>
+        <link refid="memorymanager.h"/>
+        <childnode refid="1426" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+      </node>
+      <node id="1438">
+        <label>stdint.h</label>
+      </node>
+      <node id="1432">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1435">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1429" relation="include">
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>../base/defs.h</label>
+        <childnode refid="1427" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+      </node>
+      <node id="1439">
+        <label>limits.h</label>
+      </node>
+      <node id="1437">
+        <label>new</label>
+      </node>
+      <node id="1430">
+        <label>config.h</label>
+      </node>
+      <node id="1427">
+        <label>../base/intutil.h</label>
+        <childnode refid="1428" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+      </node>
+      <node id="1429">
+        <label>../build.h</label>
+        <childnode refid="1430" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+        <childnode refid="1437" relation="include">
+        </childnode>
+        <childnode refid="1438" relation="include">
+        </childnode>
+        <childnode refid="1439" relation="include">
+        </childnode>
+      </node>
+      <node id="1431">
+        <label>stdio.h</label>
+      </node>
+      <node id="1433">
+        <label>string.h</label>
+        <childnode refid="1426" relation="include">
+        </childnode>
+        <childnode refid="1428" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1448">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="1440">
+        <label>memorymanager.h</label>
+        <link refid="memorymanager.h"/>
+        <childnode refid="1441" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1458" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+      </node>
+      <node id="1459">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="1443">
+        <label>asmjit.h</label>
+        <childnode refid="1444" relation="include">
+        </childnode>
+        <childnode refid="1445" relation="include">
+        </childnode>
+        <childnode refid="1447" relation="include">
+        </childnode>
+        <childnode refid="1449" relation="include">
+        </childnode>
+        <childnode refid="1450" relation="include">
+        </childnode>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1448" relation="include">
+        </childnode>
+        <childnode refid="1446" relation="include">
+        </childnode>
+      </node>
+      <node id="1450">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="1458">
+        <label>memorymanager.cpp</label>
+      </node>
+      <node id="1457">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="1456">
+        <label>x86.h</label>
+      </node>
+      <node id="1442">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="1441">
+        <label>base.h</label>
+        <childnode refid="1442" relation="include">
+        </childnode>
+        <childnode refid="1443" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1454">
+        <label>winremoteruntime.h</label>
+        <childnode refid="1455" relation="include">
+        </childnode>
+      </node>
+      <node id="1446">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="1447">
+        <label>genopcode.h</label>
+        <childnode refid="1444" relation="include">
+        </childnode>
+        <childnode refid="1448" relation="include">
+        </childnode>
+      </node>
+      <node id="1445">
+        <label>genblend.h</label>
+        <childnode refid="1444" relation="include">
+        </childnode>
+        <childnode refid="1446" relation="include">
+        </childnode>
+      </node>
+      <node id="1453">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="1451">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="1452">
+        <label>host.h</label>
+        <childnode refid="1443" relation="include">
+        </childnode>
+      </node>
+      <node id="1455">
+        <label>contrib.h</label>
+      </node>
+      <node id="1444">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="1449">
+        <label>testcpu.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1MemoryManager" prot="public">asmjit::MemoryManager</innerclass>
+    <innerclass refid="structasmjit_1_1VirtualMemoryManager" prot="public">asmjit::VirtualMemoryManager</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_MEMORYMANAGER_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_MEMORYMANAGER_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">//!<sp/>@addtogroup<sp/>AsmJit_MemoryManagement</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kVirtualAlloc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">//!<sp/>@brief<sp/>Type<sp/>of<sp/>virtual<sp/>memory<sp/>allocation,<sp/>see<sp/>@c<sp/>asmjit::MemoryManager::alloc().</highlight></codeline>
+<codeline lineno="27" refid="group__AsmJit__MemoryManagement_1ga28da4e2b9dd838b9b24f27e58be0c9fa" refkind="member"><highlight class="comment"></highlight><highlight class="normal">ASMJIT_ENUM(<ref refid="group__AsmJit__MemoryManagement_1ga28da4e2b9dd838b9b24f27e58be0c9fa" kindref="member" tooltip="Type of virtual memory allocation, see asmjit::MemoryManager::alloc().">kVirtualAlloc</ref>)<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Normal<sp/>memory<sp/>allocation,<sp/>allocated<sp/>memory<sp/>can<sp/>be<sp/>free<sp/>by<sp/>calling</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>//!<sp/>@ref<sp/>asmjit::MemoryManager::free()</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>//!<sp/>method.</highlight></codeline>
+<codeline lineno="31" refid="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faafe9d48b799d531f551009a277ecc88ba" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faafe9d48b799d531f551009a277ecc88ba" kindref="member" tooltip="Normal memory allocation, allocated memory can be free by calling asmjit::MemoryManager::free() metho...">kVirtualAllocFreeable</ref><sp/>=<sp/>0,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Allocate<sp/>permanent<sp/>memory<sp/>that<sp/>will<sp/>be<sp/>never<sp/>freed.</highlight></codeline>
+<codeline lineno="33" refid="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faa720d8f60dc080ab027d72e3a8aa70e04" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faa720d8f60dc080ab027d72e3a8aa70e04" kindref="member" tooltip="Allocate permanent memory that will be never freed.">kVirtualAllocPermanent</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::MemoryManager]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment">//!<sp/>@brief<sp/>Virtual<sp/>memory<sp/>manager<sp/>interface.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">//!<sp/>This<sp/>class<sp/>is<sp/>pure<sp/>virtual.<sp/>You<sp/>can<sp/>get<sp/>default<sp/>virtual<sp/>memory<sp/>manager<sp/>using</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">//!<sp/>@c<sp/>getGlobal()<sp/>method.<sp/>If<sp/>you<sp/>want<sp/>to<sp/>create<sp/>more<sp/>memory<sp/>managers<sp/>with<sp/>same</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">//!<sp/>functionality<sp/>as<sp/>global<sp/>memory<sp/>manager<sp/>use<sp/>@c<sp/>VirtualMemoryManager<sp/>class.</highlight></codeline>
+<codeline lineno="45" refid="structasmjit_1_1MemoryManager" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1MemoryManager" kindref="compound" tooltip="Virtual memory manager interface.">MemoryManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Create<sp/>memory<sp/>manager<sp/>instance.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1MemoryManager_1a1767b2460024d173c340ab7e23c524e9" kindref="member" tooltip="Create memory manager instance.">MemoryManager</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>memory<sp/>manager<sp/>instance,<sp/>this<sp/>means<sp/>also<sp/>to<sp/>free<sp/>all<sp/>memory</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/>//!<sp/>blocks.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1MemoryManager_1a5604eeddf4c051be946a30396ffc86dc" kindref="member" tooltip="Destroy memory manager instance, this means also to free all memory blocks.">~MemoryManager</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Interface]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Free<sp/>all<sp/>allocated<sp/>memory.</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1MemoryManager_1afa7f746c4b81f624cacd624299166f4d" kindref="member" tooltip="Free all allocated memory.">reset</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Allocate<sp/>a<sp/>@a<sp/>size<sp/>bytes<sp/>of<sp/>virtual<sp/>memory.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/>//!<sp/>Note<sp/>that<sp/>if<sp/>you<sp/>are<sp/>implementing<sp/>your<sp/>own<sp/>virtual<sp/>memory<sp/>manager<sp/>then<sp/>you</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/>//!<sp/>can<sp/>quitly<sp/>ignore<sp/>type<sp/>of<sp/>allocation.<sp/>This<sp/>is<sp/>mainly<sp/>for<sp/>AsmJit<sp/>to<sp/>memory</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/>//!<sp/>manager<sp/>that<sp/>allocated<sp/>memory<sp/>will<sp/>be<sp/>never<sp/>freed.</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1MemoryManager_1aaec761f463f2956d2722c2da1695215d" kindref="member" tooltip="Allocate a size bytes of virtual memory.">alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/>uint32_t<sp/>type<sp/>=<sp/><ref refid="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faafe9d48b799d531f551009a277ecc88ba" kindref="member" tooltip="Normal memory allocation, allocated memory can be free by calling asmjit::MemoryManager::free() metho...">kVirtualAllocFreeable</ref>)<sp/>=<sp/>0;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Free<sp/>previously<sp/>allocated<sp/>memory<sp/>at<sp/>a<sp/>given<sp/>@a<sp/>address.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/><ref refid="structasmjit_1_1MemoryManager_1a0b4ac246abb5c7ecfe20f258244d509b" kindref="member" tooltip="Free previously allocated memory at a given address.">release</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address)<sp/>=<sp/>0;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Free<sp/>some<sp/>tail<sp/>memory.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/><ref refid="structasmjit_1_1MemoryManager_1a37c77e1e0949b235d374d00c5c84e6e0" kindref="member" tooltip="Free some tail memory.">shrink</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>used)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>how<sp/>many<sp/>bytes<sp/>are<sp/>currently<sp/>used.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1MemoryManager_1a3c857e73f5851f36cfec68be2a87403f" kindref="member" tooltip="Get how many bytes are currently used.">getUsedBytes</ref>()<sp/>=<sp/>0;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>how<sp/>many<sp/>bytes<sp/>are<sp/>currently<sp/>allocated.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1MemoryManager_1a32d762ee420d3863e8931b14b9658a4f" kindref="member" tooltip="Get how many bytes are currently allocated.">getAllocatedBytes</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Statics]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>global<sp/>memory<sp/>manager<sp/>instance.</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/>//!<sp/>Global<sp/>instance<sp/>is<sp/>instance<sp/>of<sp/>@c<sp/>VirtualMemoryManager<sp/>class.<sp/>Global<sp/>memory</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/>//!<sp/>manager<sp/>is<sp/>used<sp/>by<sp/>default<sp/>by<sp/>@ref<sp/>Assembler::make()<sp/>and<sp/>@ref<sp/>Compiler::make()</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/>//!<sp/>methods.</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/>MemoryManager*<sp/><ref refid="structasmjit_1_1MemoryManager_1a9f49c72d7c2fac093dd76a5ff800f0fe" kindref="member" tooltip="Get global memory manager instance.">getGlobal</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::VirtualMemoryManager]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="95"><highlight class="comment">//!<sp/>@brief<sp/>Reference<sp/>implementation<sp/>of<sp/>memory<sp/>manager<sp/>that<sp/>uses<sp/>@ref<sp/>asmjit::VMem</highlight></codeline>
+<codeline lineno="96"><highlight class="comment">//!<sp/>class<sp/>to<sp/>allocate<sp/>chunks<sp/>of<sp/>virtual<sp/>memory<sp/>and<sp/>bit<sp/>arrays<sp/>to<sp/>manage<sp/>it.</highlight></codeline>
+<codeline lineno="97" refid="structasmjit_1_1VirtualMemoryManager" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1VirtualMemoryManager" kindref="compound" tooltip="Reference implementation of memory manager that uses asmjit::VMem class to allocate chunks of virtual...">VirtualMemoryManager</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1MemoryManager" kindref="compound" tooltip="Virtual memory manager interface.">MemoryManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Create<sp/>a<sp/>@c<sp/>VirtualMemoryManager<sp/>instance.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1ae497c2c983f209dad1bf491423459946" kindref="member" tooltip="Create a VirtualMemoryManager instance.">VirtualMemoryManager</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_OS_WINDOWS)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Create<sp/>a<sp/>@c<sp/>VirtualMemoryManager<sp/>instance<sp/>for<sp/>process<sp/>@a<sp/>hProcess.</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>This<sp/>is<sp/>specialized<sp/>version<sp/>of<sp/>constructor<sp/>available<sp/>only<sp/>for<sp/>windows<sp/>and</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>usable<sp/>to<sp/>alloc/free<sp/>memory<sp/>of<sp/>different<sp/>process.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1ae497c2c983f209dad1bf491423459946" kindref="member" tooltip="Create a VirtualMemoryManager instance.">VirtualMemoryManager</ref>(HANDLE<sp/>hProcess);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_OS_WINDOWS</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@c<sp/>VirtualMemoryManager<sp/>instance,<sp/>this<sp/>means<sp/>also<sp/>to</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/>//!<sp/>free<sp/>all<sp/>blocks.</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1accf4a76bf2c806bb325bcc3e18c2daa9" kindref="member" tooltip="Destroy the VirtualMemoryManager instance, this means also to free all blocks.">~VirtualMemoryManager</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Interface]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a12d89cd2ac18a5ec8c088ccc04bb50f4" kindref="member" tooltip="Free all allocated memory.">reset</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a30bc5b73aad2dc18195bbbd8c7950f53" kindref="member" tooltip="Allocate a size bytes of virtual memory.">alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/>uint32_t<sp/>type<sp/>=<sp/><ref refid="group__AsmJit__MemoryManagement_1gga28da4e2b9dd838b9b24f27e58be0c9faafe9d48b799d531f551009a277ecc88ba" kindref="member" tooltip="Normal memory allocation, allocated memory can be free by calling asmjit::MemoryManager::free() metho...">kVirtualAllocFreeable</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a171194cee9961813fd4fb511ce7004ff" kindref="member" tooltip="Free previously allocated memory at a given address.">release</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Error<sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1aeeaa5a7943a95dee142b892bb52f7f37" kindref="member" tooltip="Free some tail memory.">shrink</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>used);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1ae9ffbec3e3dbcb0a81b15a359c92cc86" kindref="member" tooltip="Get how many bytes are currently used.">getUsedBytes</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a54a456f8b24801ab1ba61af88f21ab5b" kindref="member" tooltip="Get how many bytes are currently allocated.">getAllocatedBytes</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Virtual<sp/>Memory<sp/>Manager<sp/>Specific]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>whether<sp/>to<sp/>keep<sp/>allocated<sp/>memory<sp/>after<sp/>memory<sp/>manager<sp/>is</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/>//!<sp/>destroyed.</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/>//!<sp/>@sa<sp/>@c<sp/>setKeepVirtualMemory().</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a0deea325428a8f964b7504dc4ce90d9f" kindref="member" tooltip="Get whether to keep allocated memory after memory manager is destroyed.">getKeepVirtualMemory</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Set<sp/>whether<sp/>to<sp/>keep<sp/>allocated<sp/>memory<sp/>after<sp/>memory<sp/>manager<sp/>is</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/>//!<sp/>destroyed.</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/>//!<sp/>This<sp/>method<sp/>is<sp/>usable<sp/>when<sp/>patching<sp/>code<sp/>of<sp/>remote<sp/>process.<sp/>You<sp/>need<sp/>to</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/>//!<sp/>allocate<sp/>process<sp/>memory,<sp/>store<sp/>generated<sp/>assembler<sp/>into<sp/>it<sp/>and<sp/>patch<sp/>the</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/>//!<sp/>method<sp/>you<sp/>want<sp/>to<sp/>redirect<sp/>(into<sp/>your<sp/>code).<sp/>This<sp/>method<sp/>affects<sp/>only</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/>//!<sp/>VirtualMemoryManager<sp/>destructor.<sp/>After<sp/>destruction<sp/>all<sp/>internal</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/>//!<sp/>structures<sp/>are<sp/>freed,<sp/>only<sp/>the<sp/>process<sp/>virtual<sp/>memory<sp/>remains.</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>Memory<sp/>allocated<sp/>with<sp/>kVirtualAllocPermanent<sp/>is<sp/>always<sp/>kept.</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/>//!<sp/>@sa<sp/>@c<sp/>getKeepVirtualMemory().</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a9e893fc5acc518f4295e747f838319a4" kindref="member" tooltip="Set whether to keep allocated memory after memory manager is destroyed.">setKeepVirtualMemory</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keepVirtualMemory);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Pointer<sp/>to<sp/>private<sp/>data<sp/>hidden<sp/>out<sp/>of<sp/>the<sp/>public<sp/>API.</highlight></codeline>
+<codeline lineno="159" refid="structasmjit_1_1VirtualMemoryManager_1a4514732600c92bdf7fb587b6e10afc90" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1VirtualMemoryManager_1a4514732600c92bdf7fb587b6e10afc90" kindref="member" tooltip="Pointer to private data hidden out of the public API.">_d</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="162"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_MEMORYMANAGER_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.h"/>
+  </compounddef>
+</doxygen>

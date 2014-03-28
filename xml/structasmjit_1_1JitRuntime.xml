@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1JitRuntime" kind="struct" prot="public">
+    <compoundname>asmjit::JitRuntime</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseRuntime" prot="public" virt="non-virtual">asmjit::BaseRuntime</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1JitRuntime_1a5dded8308c2b9382d3e0373b19f05354" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1MemoryManager" kindref="compound">MemoryManager</ref> *</type>
+        <definition>MemoryManager* asmjit::JitRuntime::_memoryManager</definition>
+        <argsstring></argsstring>
+        <name>_memoryManager</name>
+        <briefdescription>
+<para>Memory manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="121" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1JitRuntime_1ac190f78729e7214f9bc11243ac4a8bcf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::JitRuntime::_allocType</definition>
+        <argsstring></argsstring>
+        <name>_allocType</name>
+        <briefdescription>
+<para>Type of allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a42dc1d01574472cc1ee7889d9b26e180" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::JitRuntime::JitRuntime</definition>
+        <argsstring>(const JitRuntime &amp;other)</argsstring>
+        <name>JitRuntime</name>
+        <param>
+          <type>const JitRuntime &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a84d131474206dd7bade21afbfde09251" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JitRuntime &amp;</type>
+        <definition>JitRuntime&amp; asmjit::JitRuntime::operator=</definition>
+        <argsstring>(const JitRuntime &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const JitRuntime &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a4ca7121e9b89d3258a0af1023ffe2b7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::JitRuntime::JitRuntime</definition>
+        <argsstring>(MemoryManager *memmgr=NULL)</argsstring>
+        <name>JitRuntime</name>
+        <param>
+          <type><ref refid="structasmjit_1_1MemoryManager" kindref="compound">MemoryManager</ref> *</type>
+          <declname>memmgr</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Create a <computeroutput>JitRuntime</computeroutput> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="85" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a23780fb1caeb1fe8208793bed1e6a0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::JitRuntime::~JitRuntime</definition>
+        <argsstring>()</argsstring>
+        <name>~JitRuntime</name>
+        <briefdescription>
+<para>Destroy the <computeroutput>JitRuntime</computeroutput> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="87" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a0eac7b87e7e2e02ed4076bc2b08b8d8d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1MemoryManager" kindref="compound">MemoryManager</ref> *</type>
+        <definition>MemoryManager* asmjit::JitRuntime::getMemoryManager</definition>
+        <argsstring>() const </argsstring>
+        <name>getMemoryManager</name>
+        <briefdescription>
+<para>Get the <computeroutput><ref refid="structasmjit_1_1MemoryManager" kindref="compound">MemoryManager</ref></computeroutput> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="99" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a8fa2745835be00f6a17d018529dbd03b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::JitRuntime::getAllocType</definition>
+        <argsstring>() const </argsstring>
+        <name>getAllocType</name>
+        <briefdescription>
+<para>Get the type of allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="102" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a6804d5203da1a49c8c52ac02ba0a81a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::JitRuntime::setAllocType</definition>
+        <argsstring>(uint32_t allocType)</argsstring>
+        <name>setAllocType</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>allocType</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="104" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1aa3723eb4be413480f602fae72b1fd1cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API uint32_t</type>
+        <definition>uint32_t asmjit::JitRuntime::getStackAlignment</definition>
+        <argsstring>()</argsstring>
+        <name>getStackAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="110" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="44" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a5a7adfc0f56a5c23c6446a1be9f95a81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API const <ref refid="structasmjit_1_1BaseCpu" kindref="compound">BaseCpu</ref> *</type>
+        <definition>const BaseCpu * asmjit::JitRuntime::getCpu</definition>
+        <argsstring>()</argsstring>
+        <name>getCpu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="111" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a01c1b24c3b22201043a4ec64185cd601" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::JitRuntime::add</definition>
+        <argsstring>(void **dst, BaseAssembler *assembler)</argsstring>
+        <name>add</name>
+        <param>
+          <type>void **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> *</type>
+          <declname>assembler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="113" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="76" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1JitRuntime_1a1bf71eda7ec2a17fc118c79bab3fb3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::JitRuntime::release</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>release</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="114" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="915">
+        <label>asmjit::BaseRuntime</label>
+        <link refid="structasmjit_1_1BaseRuntime"/>
+      </node>
+      <node id="914">
+        <label>asmjit::JitRuntime</label>
+        <childnode refid="915" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="917">
+        <label>asmjit::BaseRuntime</label>
+        <link refid="structasmjit_1_1BaseRuntime"/>
+      </node>
+      <node id="918">
+        <label>asmjit::MemoryManager</label>
+        <link refid="structasmjit_1_1MemoryManager"/>
+      </node>
+      <node id="916">
+        <label>asmjit::JitRuntime</label>
+        <childnode refid="917" relation="public-inheritance">
+        </childnode>
+        <childnode refid="918" relation="usage">
+          <edgelabel>_memoryManager</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="77" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="77" bodyend="124"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1JitRuntime_1ac190f78729e7214f9bc11243ac4a8bcf" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>_allocType</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a5dded8308c2b9382d3e0373b19f05354" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>_memoryManager</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a01c1b24c3b22201043a4ec64185cd601" prot="public" virt="virtual"><scope>asmjit::JitRuntime</scope><name>add</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1afec48a986596a6b010b040a110b2d3bb" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>BaseRuntime</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a8fa2745835be00f6a17d018529dbd03b" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>getAllocType</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a5a7adfc0f56a5c23c6446a1be9f95a81" prot="public" virt="virtual"><scope>asmjit::JitRuntime</scope><name>getCpu</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a0eac7b87e7e2e02ed4076bc2b08b8d8d" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>getMemoryManager</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1aa3723eb4be413480f602fae72b1fd1cc" prot="public" virt="virtual"><scope>asmjit::JitRuntime</scope><name>getStackAlignment</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a42dc1d01574472cc1ee7889d9b26e180" prot="private" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>JitRuntime</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a4ca7121e9b89d3258a0af1023ffe2b7f" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>JitRuntime</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a84d131474206dd7bade21afbfde09251" prot="private" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a1bf71eda7ec2a17fc118c79bab3fb3e2" prot="public" virt="virtual"><scope>asmjit::JitRuntime</scope><name>release</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a6804d5203da1a49c8c52ac02ba0a81a5" prot="public" virt="non-virtual"><scope>asmjit::JitRuntime</scope><name>setAllocType</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1accf2b5708b8308b615bf4e36eee41881" prot="public" virt="virtual"><scope>asmjit::JitRuntime</scope><name>~BaseRuntime</name></member>
+      <member refid="structasmjit_1_1JitRuntime_1a23780fb1caeb1fe8208793bed1e6a0a5" prot="public" virt="virtual"><scope>asmjit::JitRuntime</scope><name>~JitRuntime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

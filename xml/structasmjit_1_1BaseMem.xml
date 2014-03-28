@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseMem" kind="struct" prot="public">
+    <compoundname>asmjit::BaseMem</compoundname>
+    <basecompoundref refid="structasmjit_1_1Operand" prot="public" virt="non-virtual">asmjit::Operand</basecompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1Mem" prot="public" virt="non-virtual">asmjit::x86x64::Mem</derivedcompoundref>
+    <includes local="no">defs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a14d55c223950092e22429ba144cf7252" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseMem::BaseMem</definition>
+        <argsstring>()</argsstring>
+        <name>BaseMem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="712" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="712" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a7ceb7a50aa3c2baa6e1a3436265cdcad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseMem::BaseMem</definition>
+        <argsstring>(const BaseMem &amp;other)</argsstring>
+        <name>BaseMem</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="716" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="716" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a68aaa5a8718be50ed3d464ee659d0b53" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseMem::BaseMem</definition>
+        <argsstring>(const _NoInit &amp;)</argsstring>
+        <name>BaseMem</name>
+        <param>
+          <type>const _NoInit &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="717" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="717" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1ae244676de26cc8dddf39ff186248a295" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref></type>
+        <definition>BaseMem asmjit::BaseMem::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structasmjit_1_1Operand_1a985b4db41884dae41b27d2d880c7e86f">clone</reimplements>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1a3f4a12b20dfa2198dc44a330a70ec522">clone</reimplementedby>
+        <briefdescription>
+<para>Clone <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="724" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="724" bodyend="726"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a1f4dc931e7b675d8191e73580934aefc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseMem::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1a619335ac552f50e506d4c3f5cec34ac1">reset</reimplementedby>
+        <briefdescription>
+<para>Reset <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="729" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="729" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a24acdeebe5c596826d880fc0530fd286" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseMem::getMemType</definition>
+        <argsstring>() const </argsstring>
+        <name>getMemType</name>
+        <briefdescription>
+<para>Get the type of the memory operand, see <computeroutput>kMemType</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="735" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="735" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a2416ca5946b07e39b5f34802b13cd51e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseMem::isBaseIndexType</definition>
+        <argsstring>() const </argsstring>
+        <name>isBaseIndexType</name>
+        <briefdescription>
+<para>Get whether the type of the memory operand is either kMemTypeBaseIndex or kMemTypeStackIndex. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="738" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="738" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a7cf1fa6c0ca9ad7afde684a059139b26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseMem::hasBase</definition>
+        <argsstring>() const </argsstring>
+        <name>hasBase</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1a42fbba8eac07debc8edc6af653400302">hasBase</reimplementedby>
+        <briefdescription>
+<para>Get whether the memory operand has base register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="741" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="741" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a584f151f9e502eef9412f03ed8fb0ecf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseMem::getBase</definition>
+        <argsstring>() const </argsstring>
+        <name>getBase</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1a253db69c609ef7497fe164c0e901209a">getBase</reimplementedby>
+        <briefdescription>
+<para>Get memory operand base id, or <computeroutput>kInvalidValue</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="743" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="743" bodyend="743"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a34a34cc4a1d02db16003ab447591c3ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+        <definition>BaseMem&amp; asmjit::BaseMem::setSize</definition>
+        <argsstring>(uint32_t size)</argsstring>
+        <name>setSize</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1abf9bd0eee930565098fbf9329a90d3a5">setSize</reimplementedby>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set memory operand size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="746" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="746" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1aa20691966aa820b34dcb858bd3ee6e8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::BaseMem::getDisplacement</definition>
+        <argsstring>() const </argsstring>
+        <name>getDisplacement</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1a8fb93c2c6f8d583fedee9f5ffe4b0af4">getDisplacement</reimplementedby>
+        <briefdescription>
+<para>Get memory operand relative displacement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="753" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="752" bodyend="753"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1acf608f1620d09639a9e33244adbfa51b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+        <definition>BaseMem&amp; asmjit::BaseMem::setDisplacement</definition>
+        <argsstring>(int32_t disp)</argsstring>
+        <name>setDisplacement</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1Mem_1a7e44ab3af4e0509ecfb42c84a09eb01c">setDisplacement</reimplementedby>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+        </param>
+        <briefdescription>
+<para>Set memory operand relative displacement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="756" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="756" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a28d82a079b40c06aa0e7ffab6872d50a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+        <definition>BaseMem&amp; asmjit::BaseMem::operator=</definition>
+        <argsstring>(const BaseMem &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="765" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="765" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1ab039ea0c6e1b0b8763d0c1b9c2a38428" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseMem::operator==</definition>
+        <argsstring>(const BaseMem &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="770" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="770" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseMem_1a51fe30b334c65828c57ba70e0e1e5f16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseMem::operator!=</definition>
+        <argsstring>(const BaseMem &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseMem" kindref="compound">BaseMem</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="774" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="774" bodyend="774"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all memory operands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="675">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="674">
+        <label>asmjit::BaseMem</label>
+        <link refid="structasmjit_1_1BaseMem"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>asmjit::x86x64::Mem</label>
+        <link refid="structasmjit_1_1x86x64_1_1Mem"/>
+        <childnode refid="674" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="678">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="677">
+        <label>asmjit::BaseMem</label>
+        <link refid="structasmjit_1_1BaseMem"/>
+        <childnode refid="678" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="707" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="707" bodyend="775"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1ab65e9aa7a15edd48cba687f03cb7347c" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_base</name></member>
+      <member refid="structasmjit_1_1Operand_1ac155d3e43ef0cf0ea24e98b1fe906d36" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_copy</name></member>
+      <member refid="structasmjit_1_1Operand_1a307e2e7b752000b12da59dad23e0ca90" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_imm</name></member>
+      <member refid="structasmjit_1_1Operand_1a52353c7164e54d235314b175a9b05a6c" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_init</name></member>
+      <member refid="structasmjit_1_1Operand_1a2d8b4647e75a71e854ad939e1cb4c2ed" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_init_packed_d0_d1</name></member>
+      <member refid="structasmjit_1_1Operand_1a8cee9df3008f5956e37f876cc9026f45" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_init_packed_d2_d3</name></member>
+      <member refid="structasmjit_1_1Operand_1a289c6ab4602acf459e248d3f3f724b8a" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_init_packed_op_sz_b0_b1_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a7b9c87fee92df184dea2c10fb30ea467" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_init_packed_op_sz_w0_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a706538f838a8416a7e8e7cc4fa6f1db8" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_label</name></member>
+      <member refid="structasmjit_1_1Operand_1a1e918a093397232131e706fd436c1085" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1Operand_1aae280895b95e1b083799a43306dd7e15" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_vmem</name></member>
+      <member refid="structasmjit_1_1Operand_1a24f921b98561dea1f19faad624b9a147" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>_vreg</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a14d55c223950092e22429ba144cf7252" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>BaseMem</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a7ceb7a50aa3c2baa6e1a3436265cdcad" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>BaseMem</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a68aaa5a8718be50ed3d464ee659d0b53" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>BaseMem</name></member>
+      <member refid="structasmjit_1_1BaseMem_1ae244676de26cc8dddf39ff186248a295" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>clone</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a584f151f9e502eef9412f03ed8fb0ecf" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getBase</name></member>
+      <member refid="structasmjit_1_1Operand_1ae043c994eaddfe587c1d248812b3d16c" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a9871ba5815361a896771418b9d443935" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1BaseMem_1aa20691966aa820b34dcb858bd3ee6e8e" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getDisplacement</name></member>
+      <member refid="structasmjit_1_1Operand_1a005389a2368b711612feda323d63766f" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getId</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a24acdeebe5c596826d880fc0530fd286" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getMemType</name></member>
+      <member refid="structasmjit_1_1Operand_1a2ea181bfeeae6d5467f7343dfddcb57c" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getOp</name></member>
+      <member refid="structasmjit_1_1Operand_1ae5bb07ef28e2c29ebf9b762ea8f36b7e" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a7cf1fa6c0ca9ad7afde684a059139b26" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>hasBase</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a2416ca5946b07e39b5f34802b13cd51e" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isBaseIndexType</name></member>
+      <member refid="structasmjit_1_1Operand_1ab85a3b5c7354a38ca52e78fea1739759" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isImm</name></member>
+      <member refid="structasmjit_1_1Operand_1a2a77f09fc4951c9e58fccd18a6eaf1b3" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isLabel</name></member>
+      <member refid="structasmjit_1_1Operand_1afb9863bc270de49d257dce8593e79cb4" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad09b5fd91f3d8c754980f98a2019be7b" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isNone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae0ce4d16beb59e0934942cba222054af" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isReg</name></member>
+      <member refid="structasmjit_1_1Operand_1a1cd13703d63d231c97cf76c020e2b605" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isRegCode</name></member>
+      <member refid="structasmjit_1_1Operand_1aea0d545eea3526cfb1ae0adb8871de78" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isRegOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1a5dd129c65aac0057afdd4f844785437a" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isRegType</name></member>
+      <member refid="structasmjit_1_1Operand_1a809703f677ab89fb8d619ad717c59a02" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isVar</name></member>
+      <member refid="structasmjit_1_1Operand_1ae65f6fcaacdf3a299256f909fcda5576" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>isVarOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad67efdbe93039d4ae3f77f84fcae6331" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a55218d0096d0f0352484ecd0b7e3ef53" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a50c0bde3edb955a4001a20a7d01bbf96" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a51fe30b334c65828c57ba70e0e1e5f16" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a28d82a079b40c06aa0e7ffab6872d50a" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseMem_1ab039ea0c6e1b0b8763d0c1b9c2a38428" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a1f4dc931e7b675d8191e73580934aefc" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1BaseMem_1acf608f1620d09639a9e33244adbfa51b" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>setDisplacement</name></member>
+      <member refid="structasmjit_1_1BaseMem_1a34a34cc4a1d02db16003ab447591c3ad" prot="public" virt="non-virtual"><scope>asmjit::BaseMem</scope><name>setSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

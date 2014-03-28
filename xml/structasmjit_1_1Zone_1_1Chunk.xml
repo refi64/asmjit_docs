@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Zone_1_1Chunk" kind="struct" prot="public">
+    <compoundname>asmjit::Zone::Chunk</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1Zone_1_1Chunk_1a249f52848668a9b9cc1ac9a325874adc" prot="public" static="no" mutable="no">
+        <type>Chunk *</type>
+        <definition>Chunk* asmjit::Zone::Chunk::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+<para>Link to previous chunk. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="40" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Zone_1_1Chunk_1a2d70ada1d070dd9c4573228b7671e3c8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::Zone::Chunk::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+<para>Position in this chunk. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="42" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Zone_1_1Chunk_1acda6dd6f3e7f045bba671fac01eee4e6" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::Zone::Chunk::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of this chunk (in bytes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="44" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Zone_1_1Chunk_1ace17c1955e40911720d6e2007b0ad7dd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Zone::Chunk::data[sizeof(void *)]</definition>
+        <argsstring>[sizeof(void *)]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="47" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1Zone_1_1Chunk_1a4eba08094933fc6d876c841cdd05e581" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::Zone::Chunk::getRemainingSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getRemainingSize</name>
+        <briefdescription>
+<para>Get count of remaining (unused) bytes in chunk. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="37" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="35" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="35" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Zone_1_1Chunk_1ace17c1955e40911720d6e2007b0ad7dd" prot="public" virt="non-virtual"><scope>asmjit::Zone::Chunk</scope><name>data</name></member>
+      <member refid="structasmjit_1_1Zone_1_1Chunk_1a4eba08094933fc6d876c841cdd05e581" prot="public" virt="non-virtual"><scope>asmjit::Zone::Chunk</scope><name>getRemainingSize</name></member>
+      <member refid="structasmjit_1_1Zone_1_1Chunk_1a2d70ada1d070dd9c4573228b7671e3c8" prot="public" virt="non-virtual"><scope>asmjit::Zone::Chunk</scope><name>pos</name></member>
+      <member refid="structasmjit_1_1Zone_1_1Chunk_1a249f52848668a9b9cc1ac9a325874adc" prot="public" virt="non-virtual"><scope>asmjit::Zone::Chunk</scope><name>prev</name></member>
+      <member refid="structasmjit_1_1Zone_1_1Chunk_1acda6dd6f3e7f045bba671fac01eee4e6" prot="public" virt="non-virtual"><scope>asmjit::Zone::Chunk</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

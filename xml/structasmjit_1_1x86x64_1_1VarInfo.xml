@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1VarInfo" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::VarInfo</compoundname>
+    <includes local="no">x86defs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInfo_1a14455772ddba7fc4289b13811467f204" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::VarInfo::_reg</definition>
+        <argsstring></argsstring>
+        <name>_reg</name>
+        <briefdescription>
+<para>Register type, see kRegType. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2030" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInfo_1a2329c2f3ee23064fd571582d15c12334" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::VarInfo::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+<para>Register size in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2032" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInfo_1ad7903158aa295f72ffe9e999c8af3d5b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::VarInfo::_class</definition>
+        <argsstring></argsstring>
+        <name>_class</name>
+        <briefdescription>
+<para>Register class, see kRegClass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2034" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInfo_1af3d9db58cbc6b7070e857c45cb759937" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::VarInfo::_desc</definition>
+        <argsstring></argsstring>
+        <name>_desc</name>
+        <briefdescription>
+<para>Variable flags, see kVarDesc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2036" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1VarInfo_1a70f1a141cf726966c994b5085759c62f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char asmjit::x86x64::VarInfo::_name[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Variable type name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2038" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2038" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInfo_1afec997af33bdf1f0cfe8f70c88ad658e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInfo::getReg</definition>
+        <argsstring>() const </argsstring>
+        <name>getReg</name>
+        <briefdescription>
+<para>Get register type, see kRegType. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2015" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2015" bodyend="2015"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInfo_1afcec061cf7244cc94749cf9c790c1542" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInfo::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get register size in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2017" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2017" bodyend="2017"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInfo_1a6dd256c61848d49c6a6c1f5c922c288b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInfo::getClass</definition>
+        <argsstring>() const </argsstring>
+        <name>getClass</name>
+        <briefdescription>
+<para>Get variable class, see kRegClass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2019" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2019" bodyend="2019"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInfo_1a0eef68d000250f2412625ea6870039a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::VarInfo::getDesc</definition>
+        <argsstring>() const </argsstring>
+        <name>getDesc</name>
+        <briefdescription>
+<para>Get variable description, see kVarDesc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2021" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2021" bodyend="2021"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1VarInfo_1a36c5cac0597cde862204e9a54cb79ac5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* asmjit::x86x64::VarInfo::getName</definition>
+        <argsstring>() const </argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get variable type name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2023" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2023" bodyend="2023"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86 variable information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2009" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2009" bodyend="2039"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1ad7903158aa295f72ffe9e999c8af3d5b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>_class</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1af3d9db58cbc6b7070e857c45cb759937" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>_desc</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1a70f1a141cf726966c994b5085759c62f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>_name</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1a14455772ddba7fc4289b13811467f204" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>_reg</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1a2329c2f3ee23064fd571582d15c12334" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>_size</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1a6dd256c61848d49c6a6c1f5c922c288b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>getClass</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1a0eef68d000250f2412625ea6870039a4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>getDesc</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1a36c5cac0597cde862204e9a54cb79ac5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>getName</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1afec997af33bdf1f0cfe8f70c88ad658e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>getReg</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1VarInfo_1afcec061cf7244cc94749cf9c790c1542" prot="public" virt="non-virtual"><scope>asmjit::x86x64::VarInfo</scope><name>getSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

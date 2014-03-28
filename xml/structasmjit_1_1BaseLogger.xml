@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseLogger" kind="struct" prot="public">
+    <compoundname>asmjit::BaseLogger</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1FileLogger" prot="public" virt="non-virtual">asmjit::FileLogger</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1StringLogger" prot="public" virt="non-virtual">asmjit::StringLogger</derivedcompoundref>
+    <includes local="no">logger.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseLogger::_options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <briefdescription>
+<para>Options, see kLoggerOption. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="130" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char asmjit::BaseLogger::_indentation[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>_indentation</name>
+        <briefdescription>
+<para>Indentation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="133" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a9f0c3de277bacd8686fcc4a656ae08ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseLogger::BaseLogger</definition>
+        <argsstring>(const BaseLogger &amp;other)</argsstring>
+        <name>BaseLogger</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1ae49724966b65ff1f372b10170bf8d508" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> &amp;</type>
+        <definition>BaseLogger&amp; asmjit::BaseLogger::operator=</definition>
+        <argsstring>(const BaseLogger &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1ad0197c4dbfef5a5856776f4e03111b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseLogger::BaseLogger</definition>
+        <argsstring>()</argsstring>
+        <name>BaseLogger</name>
+        <briefdescription>
+<para>Create a <ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="78" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a5e5624b15d5db5cc789ffb85724f28d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseLogger::~BaseLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseLogger</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="80" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void asmjit::BaseLogger::logString</definition>
+        <argsstring>(uint32_t style, const char *buf, size_t len=kInvalidIndex)=0</argsstring>
+        <name>logString</name>
+        <reimplementedby refid="structasmjit_1_1FileLogger_1a94ffc19d6a1d5f9ec3d8a04247e277b4">logString</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1StringLogger_1adcfddc5e2bb95b362f46adcd18ddb9ff">logString</reimplementedby>
+        <param>
+          <type>uint32_t</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+<para>Abstract method to log output. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default implementation that is in <computeroutput>asmjit::Logger</computeroutput> is to do nothing. It&apos;s virtual to fit to your logging system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a5132eea60f42e361267fe9ae2a25f9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseLogger::logFormat</definition>
+        <argsstring>(uint32_t style, const char *fmt,...)</argsstring>
+        <name>logFormat</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Log formatter message (like sprintf) sending output to <computeroutput><ref refid="structasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5" kindref="member">logString()</ref></computeroutput> method. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="93" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a70ef8f6cead66ec49a1258041a43c3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseLogger::logBinary</definition>
+        <argsstring>(uint32_t style, const void *data, size_t size)</argsstring>
+        <name>logBinary</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Log binary data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="95" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="50" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a966c8b2c93b39f4f569e2ad1e03376f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::BaseLogger::getOptions</definition>
+        <argsstring>() const </argsstring>
+        <name>getOptions</name>
+        <briefdescription>
+<para>Get all logger options as a single integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="103" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="102" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a86a89974cb83bd303c2c7eefd75187d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::BaseLogger::getOption</definition>
+        <argsstring>(uint32_t id) const </argsstring>
+        <name>getOption</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get the given logger option. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="106" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a7d7d17b96ec8d27f0b68359356b7c65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseLogger::setOption</definition>
+        <argsstring>(uint32_t id, bool value)</argsstring>
+        <name>setOption</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the given logger option. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="112" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="84" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1ae1e4d708168a631b5c60fe61f16c679d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* asmjit::BaseLogger::getIndentation</definition>
+        <argsstring>() const </argsstring>
+        <name>getIndentation</name>
+        <briefdescription>
+<para>Get indentation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="119" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1ae31355f9483b8f0228bc95b4aa37079d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::BaseLogger::setIndentation</definition>
+        <argsstring>(const char *indentation)</argsstring>
+        <name>setIndentation</name>
+        <param>
+          <type>const char *</type>
+          <declname>indentation</declname>
+        </param>
+        <briefdescription>
+<para>Set indentation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="121" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseLogger_1a54b26cf2ad37d3e945a9e69f80ad614b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::BaseLogger::resetIndentation</definition>
+        <argsstring>()</argsstring>
+        <name>resetIndentation</name>
+        <briefdescription>
+<para>Reset indentation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract logging class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class can be inherited and reimplemented to fit into your logging subsystem. When reimplementing use <computeroutput>asmjit::Logger::log()</computeroutput> method to log into your stream.</para><para>This class also contain <computeroutput>_enabled</computeroutput> member that can be used to enable or disable logging. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="670">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="672">
+        <label>asmjit::StringLogger</label>
+        <link refid="structasmjit_1_1StringLogger"/>
+        <childnode refid="670" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>asmjit::FileLogger</label>
+        <link refid="structasmjit_1_1FileLogger"/>
+        <childnode refid="670" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="70" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="70" bodyend="134"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>_indentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>_options</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a9f0c3de277bacd8686fcc4a656ae08ee" prot="private" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>BaseLogger</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ad0197c4dbfef5a5856776f4e03111b46" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>BaseLogger</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ae1e4d708168a631b5c60fe61f16c679d" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>getIndentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a86a89974cb83bd303c2c7eefd75187d3" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>getOption</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a966c8b2c93b39f4f569e2ad1e03376f5" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>getOptions</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a70ef8f6cead66ec49a1258041a43c3fc" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>logBinary</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a5132eea60f42e361267fe9ae2a25f9d0" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>logFormat</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5" prot="public" virt="pure-virtual"><scope>asmjit::BaseLogger</scope><name>logString</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ae49724966b65ff1f372b10170bf8d508" prot="private" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a54b26cf2ad37d3e945a9e69f80ad614b" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>resetIndentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ae31355f9483b8f0228bc95b4aa37079d" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>setIndentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a7d7d17b96ec8d27f0b68359356b7c65b" prot="public" virt="non-virtual"><scope>asmjit::BaseLogger</scope><name>setOption</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a5e5624b15d5db5cc789ffb85724f28d0" prot="public" virt="virtual"><scope>asmjit::BaseLogger</scope><name>~BaseLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

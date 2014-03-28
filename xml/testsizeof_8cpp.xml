@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="testsizeof_8cpp" kind="file">
+    <compoundname>testsizeof.cpp</compoundname>
+    <includes refid="base_8h" local="no">asmjit/base.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="string_8h" local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1887">
+        <label>../base/globals.h</label>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1889">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1890">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1895">
+        <label>../base/codegen.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1905">
+        <label>base/lock.h</label>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1907">
+        <label>base/memorymanager.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1892">
+        <label>stdint.h</label>
+      </node>
+      <node id="1883">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1896">
+        <label>../base/error.h</label>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1899">
+        <label>../base/zone.h</label>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1880" relation="include">
+        </childnode>
+      </node>
+      <node id="1897">
+        <label>../base/logger.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1894">
+        <label>base/assembler.h</label>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1885">
+        <label>../base/defs.h</label>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1893">
+        <label>limits.h</label>
+      </node>
+      <node id="1900">
+        <label>../base/podlist.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1906">
+        <label>pthread.h</label>
+      </node>
+      <node id="1878">
+        <label>testsizeof.cpp</label>
+        <link refid="testsizeof.cpp"/>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>../base/podvector.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>asmjit/base.h</label>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1902" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1907" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+        <childnode refid="1909" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>new</label>
+      </node>
+      <node id="1909">
+        <label>base/vmem.h</label>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1904">
+        <label>base/cpu.h</label>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1881">
+        <label>config.h</label>
+      </node>
+      <node id="1908">
+        <label>base/vectypes.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1886">
+        <label>../base/intutil.h</label>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1898">
+        <label>../base/runtime.h</label>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1880">
+        <label>build.h</label>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+      </node>
+      <node id="1882">
+        <label>stdio.h</label>
+      </node>
+      <node id="1884">
+        <label>string.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1903">
+        <label>../base/func.h</label>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1902">
+        <label>base/compiler.h</label>
+        <childnode refid="1894" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testsizeof_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testsizeof.cpp" line="21" bodyfile="/home/ryan/asmjit/src/app/test/testsizeof.cpp" bodystart="21" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;asmjit/base.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_BUILD_X86)<sp/>||<sp/>defined(ASMJIT_BUILD_X64)</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;asmjit/x86.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_BUILD_X86<sp/>||<sp/>ASMJIT_BUILD_X64</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>C]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Runtime]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Sizeof[Runtime]:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int8_t)));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>int16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int16_t)));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int32_t)));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>int64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int64_t)));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>long<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>size_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>intptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(intptr_t)));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>float<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>double<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>void*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Core]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Sizeof[Base]:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::CodeGen<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1CodeGen" kindref="compound" tooltip="Abstract class inherited by Assembler and Compiler.">CodeGen</ref>)));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseAssembler<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseAssembler" kindref="compound" tooltip="Base assembler.">BaseAssembler</ref>)));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseCompiler<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseCompiler" kindref="compound" tooltip="Base compiler.">BaseCompiler</ref>)));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseRuntime<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseRuntime" kindref="compound" tooltip="Base runtime.">BaseRuntime</ref>)));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::Operand<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>)));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseReg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseReg" kindref="compound" tooltip="Base class for all register operands.">BaseReg</ref>)));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseVar<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseVar" kindref="compound" tooltip="Base class for all variables.">BaseVar</ref>)));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseMem<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseMem" kindref="compound" tooltip="Base class for all memory operands.">BaseMem</ref>)));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::Imm<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1Imm" kindref="compound" tooltip="Immediate operand.">Imm</ref>)));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::Label<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref>)));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::Ptr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="group__asmjit__base_1ga45067c037ca46c0da9398ef3dd258186" kindref="member" tooltip="64-bit unsigned pointer, compatible with JIT and non-JIT generators.">Ptr</ref>)));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::SignedPtr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="group__asmjit__base_1ga39730f3011134c2aa11a5692aea2a4ae" kindref="member" tooltip="64-bit signed pointer, compatible with JIT and non-JIT generators.">SignedPtr</ref>)));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::LabelData<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1LabelData" kindref="compound" tooltip="Label data.">LabelData</ref>)));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::RelocData<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1RelocData" kindref="compound" tooltip="Code relocation data (relative vs absolute addresses).">RelocData</ref>)));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseNode" kindref="compound" tooltip="Base node.">BaseNode</ref>)));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::AlignNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1AlignNode" kindref="compound" tooltip="Align node.">AlignNode</ref>)));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::CallNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1CallNode" kindref="compound" tooltip="Function-call node.">CallNode</ref>)));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::CommentNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1CommentNode" kindref="compound" tooltip="Comment node.">CommentNode</ref>)));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::EmbedNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1EmbedNode" kindref="compound" tooltip="Embed node.">EmbedNode</ref>)));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::FuncNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1FuncNode" kindref="compound" tooltip="Function declaration node.">FuncNode</ref>)));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::EndNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1EndNode" kindref="compound" tooltip="End of function/block node.">EndNode</ref>)));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::InstNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1InstNode" kindref="compound" tooltip="Instruction node.">InstNode</ref>)));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::JumpNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1JumpNode" kindref="compound" tooltip="Jump node.">JumpNode</ref>)));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::TargetNode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1TargetNode" kindref="compound" tooltip="label node.">TargetNode</ref>)));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::FuncDecl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1FuncDecl" kindref="compound" tooltip="Function declaration.">FuncDecl</ref>)));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::FuncInOut<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1FuncInOut" kindref="compound" tooltip="Function in/out (argument or a return value).">FuncInOut</ref>)));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::FuncPrototype<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1FuncPrototype" kindref="compound" tooltip="Function prototype.">FuncPrototype</ref>)));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::VarAttr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(VarAttr)));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::VarData<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1VarData" kindref="compound" tooltip="Base variable data.">VarData</ref>)));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseVarInst<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseVarInst" kindref="compound" tooltip="Variable allocation instructions.">BaseVarInst</ref>)));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::BaseVarState<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1BaseVarState" kindref="compound" tooltip="Variable(s) state.">BaseVarState</ref>)));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[X86/X64]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_BUILD_X86)<sp/>||<sp/>defined(ASMJIT_BUILD_X64)</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Sizeof[X86/X64]:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::X86X64Assembler:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1X86X64Assembler" kindref="compound" tooltip="X86/X64 assembler.">x86x64::X86X64Assembler</ref>)));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::X86X64Compiler<sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1X86X64Compiler" kindref="compound" tooltip="X86/X64 compiler.">x86x64::X86X64Compiler</ref>)));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::X86X64CallNode<sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1X86X64CallNode" kindref="compound" tooltip="X86/X64 function-call node.">x86x64::X86X64CallNode</ref>)));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::X86X64FuncNode<sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1X86X64FuncNode" kindref="compound" tooltip="X86/X64 function node.">x86x64::X86X64FuncNode</ref>)));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::X86X64FuncDecl<sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound" tooltip="X86 function, including calling convention, arguments and their register indices or stack positions...">x86x64::X86X64FuncDecl</ref>)));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::VarInst<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(x86x64::VarInst)));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::VarState<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1VarState" kindref="compound" tooltip="X86/X64 state.">x86x64::VarState</ref>)));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::InstInfo<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1InstInfo" kindref="compound" tooltip="X86 instruction information.">x86x64::InstInfo</ref>)));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>asmjit::x86x64::VarInfo<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>static_cast&lt;uint32_t&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structasmjit_1_1x86x64_1_1VarInfo" kindref="compound" tooltip="X86 variable information.">x86x64::VarInfo</ref>)));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_BUILD_X86</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/app/test/testsizeof.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1015 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1StringBuilder" kind="struct" prot="public">
+    <compoundname>asmjit::StringBuilder</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1StringBuilderT" prot="public" virt="non-virtual">asmjit::StringBuilderT&lt; N &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1StringBuilderT" prot="public" virt="non-virtual">asmjit::StringBuilderT&lt; 256 &gt;</derivedcompoundref>
+    <includes local="no">string.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* asmjit::StringBuilder::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <briefdescription>
+<para>String data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="305" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::StringBuilder::_length</definition>
+        <argsstring></argsstring>
+        <name>_length</name>
+        <briefdescription>
+<para>Length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="307" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::StringBuilder::_capacity</definition>
+        <argsstring></argsstring>
+        <name>_capacity</name>
+        <briefdescription>
+<para>Capacity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="309" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1StringBuilder_1ab5873a6052a802258e5fc6f6a4756a6e" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::StringBuilder::_canFree</definition>
+        <argsstring></argsstring>
+        <name>_canFree</name>
+        <briefdescription>
+<para>Whether the string can be freed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="311" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a98c56004b248b53a05eac9abbbf32057" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::StringBuilder::StringBuilder</definition>
+        <argsstring>(const StringBuilder &amp;other)</argsstring>
+        <name>StringBuilder</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a697508efd00eaaa834f35706a22feffc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+        <definition>StringBuilder&amp; asmjit::StringBuilder::operator=</definition>
+        <argsstring>(const StringBuilder &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a6594bb921c7f0357f08499608d72548b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::StringBuilder::StringBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>StringBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="84" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a18fb7577a31635768cc730e970428ccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::StringBuilder::~StringBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>~StringBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="85" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a1fe61e7afb6f4de500c2b2b44848b1f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::StringBuilder::StringBuilder</definition>
+        <argsstring>(const _NoInit &amp;)</argsstring>
+        <name>StringBuilder</name>
+        <param>
+          <type>const _NoInit &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="87" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a06f3700123e226087920968b53b4f318" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::StringBuilder::getCapacity</definition>
+        <argsstring>() const </argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+<para>Get string builder capacity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="94" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1ad018d3216282b4b1d09db50964857ab4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::StringBuilder::getLength</definition>
+        <argsstring>() const </argsstring>
+        <name>getLength</name>
+        <briefdescription>
+<para>Get length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="96" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a587fa3ea24629b7335f3dace53417387" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* asmjit::StringBuilder::getData</definition>
+        <argsstring>()</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get null-terminated string data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="99" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1ae0217a979589b91048bad6bc9d31d25b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* asmjit::StringBuilder::getData</definition>
+        <argsstring>() const </argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get null-terminated string data (const). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="101" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a86a7ec36bbfb80a9da9371c4a2e6fee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API char *</type>
+        <definition>char * asmjit::StringBuilder::prepare</definition>
+        <argsstring>(uint32_t op, size_t len)</argsstring>
+        <name>prepare</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Prepare to set/append. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="108" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="42" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a5a8d4aa39b12be1074c8a7e7ec1b4354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::reserve</definition>
+        <argsstring>(size_t to)</argsstring>
+        <name>reserve</name>
+        <param>
+          <type>size_t</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Reserve <emphasis>to</emphasis> bytes in string builder. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="111" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="141" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a34ccb1e62f925a7db8ee5f01f9d5d4ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::StringBuilder::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear the content in String builder. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="118" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="168" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1aa2d70933577766b2922d826280b81376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::_opString</definition>
+        <argsstring>(uint32_t op, const char *str, size_t len=kInvalidIndex)</argsstring>
+        <name>_opString</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="124" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="178" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a8c91cf6e3395f5ba55dc2526c04f7189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::_opVFormat</definition>
+        <argsstring>(uint32_t op, const char *fmt, va_list ap)</argsstring>
+        <name>_opVFormat</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="125" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="317" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a9e1d595e6407cd4ebe4924f6492cc4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::_opChar</definition>
+        <argsstring>(uint32_t op, char c)</argsstring>
+        <name>_opChar</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="126" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="190" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a4e7db05203fb4d60cd0cc86f4451aaf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::_opChars</definition>
+        <argsstring>(uint32_t op, char c, size_t len)</argsstring>
+        <name>_opChars</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="127" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="199" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1acf4116c229b189790216f6855bdebf20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::_opNumber</definition>
+        <argsstring>(uint32_t op, uint64_t i, uint32_t base=0, size_t width=0, uint32_t flags=0)</argsstring>
+        <name>_opNumber</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="128" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="210" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1abc5a5b0140573f83c5debd6b68e87266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::_opHex</definition>
+        <argsstring>(uint32_t op, const void *data, size_t len)</argsstring>
+        <name>_opHex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="129" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="299" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a21c626aefd9d2ecfea90bba9fa0ff050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setString</definition>
+        <argsstring>(const char *str, size_t len=kInvalidIndex)</argsstring>
+        <name>setString</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+<para>Replace the current content by <emphasis>str</emphasis> of <emphasis>len</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="137" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="136" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a4543c62de899c58006664ebee289c472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setVFormat</definition>
+        <argsstring>(const char *fmt, va_list ap)</argsstring>
+        <name>setVFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Replace the current content by formatted string <emphasis>fmt</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="141" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="140" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a2fa63044872125a52bce359fbd5c6ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::setFormat</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>setFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Replace the current content by formatted string <emphasis>fmt</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="144" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="326" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a02d51c9ab37727998a1032f0f89d74a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setChar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>setChar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Replace the current content by <emphasis>c</emphasis> character. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="148" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="147" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1aa45e75a067da7341f416725ebc76ca45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setChars</definition>
+        <argsstring>(char c, size_t len)</argsstring>
+        <name>setChars</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Replace the current content by <emphasis>c</emphasis> of <emphasis>len</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="152" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="151" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1aa8834e6e8c019393ea5d34b6b2e804af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setInt</definition>
+        <argsstring>(uint64_t i, uint32_t base=0, size_t width=0, uint32_t flags=0)</argsstring>
+        <name>setInt</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Replace the current content by <emphasis>i</emphasis>.. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="156" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="155" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a475b7cc7efd5376dad3719ae4d0d48fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setUInt</definition>
+        <argsstring>(uint64_t i, uint32_t base=0, size_t width=0, uint32_t flags=0)</argsstring>
+        <name>setUInt</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Replace the current content by <emphasis>i</emphasis>.. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="160" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="159" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a6994ecccb1f03406391e559bed4bb976" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::setHex</definition>
+        <argsstring>(const void *data, size_t len)</argsstring>
+        <name>setHex</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Replace the current content by the given <emphasis>data</emphasis> converted to a HEX string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="164" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="163" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a58df9e95858b77a01f189efd15334739" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendString</definition>
+        <argsstring>(const char *str, size_t len=kInvalidIndex)</argsstring>
+        <name>appendString</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>str</emphasis> of <emphasis>len</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="172" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="171" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1ad9c74cbd121e0201215956ec7c65f72a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendVFormat</definition>
+        <argsstring>(const char *fmt, va_list ap)</argsstring>
+        <name>appendVFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Append a formatted string <emphasis>fmt</emphasis> to the current content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="176" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="175" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a1720590630efa6f5db1b6d80530a7473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::appendFormat</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>appendFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Append a formatted string <emphasis>fmt</emphasis> to the current content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="179" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="337" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a46f791ba953f93638c3242206096e810" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendChar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>appendChar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>c</emphasis> character. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="183" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="182" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a5c795b5473b6a1314303ccf1bec1bb28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendChars</definition>
+        <argsstring>(char c, size_t len)</argsstring>
+        <name>appendChars</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>c</emphasis> of <emphasis>len</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="187" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="186" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a46592ee4d175684adc93ce38188a95e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendInt</definition>
+        <argsstring>(int64_t i, uint32_t base=0, size_t width=0, uint32_t flags=0)</argsstring>
+        <name>appendInt</name>
+        <param>
+          <type>int64_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>i</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="191" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="190" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a57e53ef8e8d0f661a52616eb02129643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendUInt</definition>
+        <argsstring>(uint64_t i, uint32_t base=0, size_t width=0, uint32_t flags=0)</argsstring>
+        <name>appendUInt</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>i</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="195" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="194" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a9b3cbba26cb256d57d8fd65455011954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::appendHex</definition>
+        <argsstring>(const void *data, size_t len)</argsstring>
+        <name>appendHex</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Append the given <emphasis>data</emphasis> converted to a HEX string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="199" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="198" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1aa3d9301cbc884371ec37cc8f360dbae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::StringBuilder::_appendString</definition>
+        <argsstring>(const char *str, size_t len=kInvalidIndex)</argsstring>
+        <name>_appendString</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>str</emphasis> of <emphasis>len</emphasis> (inlined, without buffer overflow check). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="206" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="206" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1aadb7d86533983f9de684c94da2ffa736" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::StringBuilder::_appendChar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>_appendChar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>c</emphasis> character (inlined, without buffer overflow check). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="234" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="234" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a7a39318fca7df9ec5a020d6c1442427f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::StringBuilder::_appendChars</definition>
+        <argsstring>(char c, size_t len)</argsstring>
+        <name>_appendChars</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Append <emphasis>c</emphasis> of <emphasis>len</emphasis> (inlined, without buffer overflow check). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="243" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="243" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1ac125807dd3af29bcb18c0e01e49f55fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::StringBuilder::_appendUInt32</definition>
+        <argsstring>(uint32_t i)</argsstring>
+        <name>_appendUInt32</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="256" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="256" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::StringBuilder::eq</definition>
+        <argsstring>(const char *str, size_t len=kInvalidIndex) const </argsstring>
+        <name>eq</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+<para>Check for equality with other <emphasis>str</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="286" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.cpp" bodystart="348" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a5c64b416ac6b64c0153cc99311a8adae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::eq</definition>
+        <argsstring>(const StringBuilder &amp;other) const </argsstring>
+        <name>eq</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Check for equality with <ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> <emphasis>other</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="288" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a184c000337a234663e2a861f6a6fa41c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::operator==</definition>
+        <argsstring>(const StringBuilder &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="294" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a524cf42c27912be3a855c6159dff3d6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::operator!=</definition>
+        <argsstring>(const StringBuilder &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="295" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="295" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a692a1c3f8cdb0d5cb7f778d6d22bcd83" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::operator==</definition>
+        <argsstring>(const char *str) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="297" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="297" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1StringBuilder_1a70c11602752a9a8a9fab75d724134fe9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::StringBuilder::operator!=</definition>
+        <argsstring>(const char *str) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="298" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="298" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>String builder. </para>    </briefdescription>
+    <detaileddescription>
+<para>String builder was designed to be able to build a string using append like operation to append numbers, other strings, or signle characters. It can allocate it&apos;s own buffer or use a buffer created on the stack.</para><para>String builder contains method specific to AsmJit functionality, used for logging or HTML output. </para>    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/string.h" line="77" bodyfile="/home/ryan/asmjit/src/asmjit/base/string.h" bodystart="77" bodyend="312"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1StringBuilder_1aadb7d86533983f9de684c94da2ffa736" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_appendChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a7a39318fca7df9ec5a020d6c1442427f" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_appendChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa3d9301cbc884371ec37cc8f360dbae6" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_appendString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ac125807dd3af29bcb18c0e01e49f55fa" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_appendUInt32</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ab5873a6052a802258e5fc6f6a4756a6e" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_canFree</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_capacity</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_data</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_length</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a9e1d595e6407cd4ebe4924f6492cc4ef" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_opChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a4e7db05203fb4d60cd0cc86f4451aaf6" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_opChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1abc5a5b0140573f83c5debd6b68e87266" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_opHex</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1acf4116c229b189790216f6855bdebf20" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_opNumber</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa2d70933577766b2922d826280b81376" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_opString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a8c91cf6e3395f5ba55dc2526c04f7189" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>_opVFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a46f791ba953f93638c3242206096e810" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a5c795b5473b6a1314303ccf1bec1bb28" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a1720590630efa6f5db1b6d80530a7473" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a9b3cbba26cb256d57d8fd65455011954" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendHex</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a46592ee4d175684adc93ce38188a95e0" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a58df9e95858b77a01f189efd15334739" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a57e53ef8e8d0f661a52616eb02129643" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendUInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ad9c74cbd121e0201215956ec7c65f72a" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>appendVFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a34ccb1e62f925a7db8ee5f01f9d5d4ff" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>clear</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>eq</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a5c64b416ac6b64c0153cc99311a8adae" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>eq</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a06f3700123e226087920968b53b4f318" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>getCapacity</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a587fa3ea24629b7335f3dace53417387" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ae0217a979589b91048bad6bc9d31d25b" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1ad018d3216282b4b1d09db50964857ab4" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>getLength</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a524cf42c27912be3a855c6159dff3d6b" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a70c11602752a9a8a9fab75d724134fe9" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a697508efd00eaaa834f35706a22feffc" prot="private" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a184c000337a234663e2a861f6a6fa41c" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a692a1c3f8cdb0d5cb7f778d6d22bcd83" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a86a7ec36bbfb80a9da9371c4a2e6fee6" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>prepare</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a5a8d4aa39b12be1074c8a7e7ec1b4354" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>reserve</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a02d51c9ab37727998a1032f0f89d74a4" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setChar</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa45e75a067da7341f416725ebc76ca45" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setChars</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a2fa63044872125a52bce359fbd5c6ce1" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a6994ecccb1f03406391e559bed4bb976" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setHex</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1aa8834e6e8c019393ea5d34b6b2e804af" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a21c626aefd9d2ecfea90bba9fa0ff050" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setString</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a475b7cc7efd5376dad3719ae4d0d48fe" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setUInt</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a4543c62de899c58006664ebee289c472" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>setVFormat</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a98c56004b248b53a05eac9abbbf32057" prot="private" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>StringBuilder</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a6594bb921c7f0357f08499608d72548b" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>StringBuilder</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a1fe61e7afb6f4de500c2b2b44848b1f2" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>StringBuilder</name></member>
+      <member refid="structasmjit_1_1StringBuilder_1a18fb7577a31635768cc730e970428ccc" prot="public" virt="non-virtual"><scope>asmjit::StringBuilder</scope><name>~StringBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

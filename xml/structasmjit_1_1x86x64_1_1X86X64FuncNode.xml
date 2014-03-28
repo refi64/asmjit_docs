@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1X86X64FuncNode" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::X86X64FuncNode</compoundname>
+    <basecompoundref refid="structasmjit_1_1FuncNode" prot="public" virt="non-virtual">asmjit::FuncNode</basecompoundref>
+    <includes local="no">x86compiler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ab7b1e98c1ad850d01a07cfa735cc40a3" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound">X86X64FuncDecl</ref></type>
+        <definition>X86X64FuncDecl asmjit::x86x64::X86X64FuncNode::_x86Decl</definition>
+        <argsstring></argsstring>
+        <name>_x86Decl</name>
+        <briefdescription>
+<para>X86 function decl. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="539" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a0477f1f0d41e21f895ab853613ba8104" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::X86X64FuncNode::_saveRestoreRegs</definition>
+        <argsstring></argsstring>
+        <name>_saveRestoreRegs</name>
+        <briefdescription>
+<para>Registers which must be saved/restored in prolog/epilog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="541" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1aa183763933ff4c41f98cb8b4f6a3b405" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::_alignStackSize</definition>
+        <argsstring></argsstring>
+        <name>_alignStackSize</name>
+        <briefdescription>
+<para>Stack size needed to align function back to the nature alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="544" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1af4c6af5e71ca08a8cb955fd433d5f7da" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::_alignedMemStackSize</definition>
+        <argsstring></argsstring>
+        <name>_alignedMemStackSize</name>
+        <briefdescription>
+<para>Like <ref refid="structasmjit_1_1FuncNode_1a73d3f50ace864ac626582280cacc3d21" kindref="member">_memStackSize</ref>, but aligned. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="546" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a204254fc98c3cc76c611177b0a67e93a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::_pushPopStackSize</definition>
+        <argsstring></argsstring>
+        <name>_pushPopStackSize</name>
+        <briefdescription>
+<para>Stack required for push/pop in prolog/epilog (X86/X64 specific). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="549" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ad3a4e4a7f4111474ce984ac3bb249165" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::_moveStackSize</definition>
+        <argsstring></argsstring>
+        <name>_moveStackSize</name>
+        <briefdescription>
+<para>Stack required for movs in prolog/epilog (X86/X64 specific). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="551" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a45d9f6f2ba1dd317864418ab278d058f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::_extraStackSize</definition>
+        <argsstring></argsstring>
+        <name>_extraStackSize</name>
+        <briefdescription>
+<para>Stack required to put extra data (for example function arguments when manually aligning to requested alignment). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="555" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ae689a4bf5827463506735012d66cb798" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::X86X64FuncNode::_stackFrameRegIndex</definition>
+        <argsstring></argsstring>
+        <name>_stackFrameRegIndex</name>
+        <briefdescription>
+<para>Stack frame register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="558" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1afc2ca4f52a741090bb014df1f1cfe23a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::X86X64FuncNode::_isStackFrameRegPreserved</definition>
+        <argsstring></argsstring>
+        <name>_isStackFrameRegPreserved</name>
+        <briefdescription>
+<para>Whether the stack frame register is preserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="560" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1af421421f6a04ee7f044a57c041b7ccf2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::X86X64FuncNode::_stackFrameCopyGpIndex[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>_stackFrameCopyGpIndex</name>
+        <briefdescription>
+<para>Gp registers indexes that can be used to copy function arguments to a new location in case we are doing manual stack alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="563" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ac4b7ac768250c6c34c7d7f8a754203fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64FuncNode::X86X64FuncNode</definition>
+        <argsstring>(const X86X64FuncNode &amp;other)</argsstring>
+        <name>X86X64FuncNode</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86X64FuncNode" kindref="compound">X86X64FuncNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="447"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a63609ec7a418a2678738f370ab00790c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86X64FuncNode" kindref="compound">X86X64FuncNode</ref> &amp;</type>
+        <definition>X86X64FuncNode&amp; asmjit::x86x64::X86X64FuncNode::operator=</definition>
+        <argsstring>(const X86X64FuncNode &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86X64FuncNode" kindref="compound">X86X64FuncNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="447"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ab821939a8691f155afabb5e10f35550f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64FuncNode::X86X64FuncNode</definition>
+        <argsstring>(BaseCompiler *compiler)</argsstring>
+        <name>X86X64FuncNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>compiler</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1x86x64_1_1X86X64FuncNode" kindref="compound">X86X64FuncNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="454" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="454" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a43d3755fea5efcd9c856e726fdffd978" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64FuncNode::~X86X64FuncNode</definition>
+        <argsstring>()</argsstring>
+        <name>~X86X64FuncNode</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1x86x64_1_1X86X64FuncNode" kindref="compound">X86X64FuncNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="475" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="475" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a0303ecf0f0c00c5c6f0c94057bc6cce3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound">X86X64FuncDecl</ref> *</type>
+        <definition>X86X64FuncDecl* asmjit::x86x64::X86X64FuncNode::getDecl</definition>
+        <argsstring>() const </argsstring>
+        <name>getDecl</name>
+        <reimplements refid="structasmjit_1_1FuncNode_1ae4188639f1942c377c3167af2576405d">getDecl</reimplements>
+        <briefdescription>
+<para>Get function declaration as <ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound">X86X64FuncDecl</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="482" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="482" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1aad9bb401fde773a43deb547198b5ffd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1VarData" kindref="compound">VarData</ref> *</type>
+        <definition>VarData* asmjit::x86x64::X86X64FuncNode::getArg</definition>
+        <argsstring>(uint32_t i) const </argsstring>
+        <name>getArg</name>
+        <reimplements refid="structasmjit_1_1FuncNode_1af5e1caec8cf6f58ecd28aae073b0c86c">getArg</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get argument. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="487" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ad8b58a76528833ac3f6322b6be63893d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getSaveRestoreRegs</definition>
+        <argsstring>(uint32_t c)</argsstring>
+        <name>getSaveRestoreRegs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get registers which have to be saved in prolog/epilog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="493" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="493" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ae2c06ad617140b029cbcf06091d4975d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getAlignStackSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlignStackSize</name>
+        <briefdescription>
+<para>Get stack size needed to align stack back to the nature alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="496" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="496" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ae7fb8e3055635ea099ccb7b3eed1788f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::X86X64FuncNode::setAlignStackSize</definition>
+        <argsstring>(uint32_t s)</argsstring>
+        <name>setAlignStackSize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Set stack size needed to align stack back to the nature alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="498" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="498" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a09068d3d0e16fdce9cb391b69e7305b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getAlignedMemStackSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlignedMemStackSize</name>
+        <briefdescription>
+<para>Get aligned stack size used by variables and memory allocated on the stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="501" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="501" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1adb4613d7863443f565b836f0ac686e27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getPushPopStackSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getPushPopStackSize</name>
+        <briefdescription>
+<para>Get stack size used by push/pop sequences in prolog/epilog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="504" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="504" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ab315d64415c75e447f1872aa367ffbe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::X86X64FuncNode::setPushPopStackSize</definition>
+        <argsstring>(uint32_t s)</argsstring>
+        <name>setPushPopStackSize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Set stack size used by push/pop sequences in prolog/epilog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="506" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="506" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a5bd65355333872182278d15f6d9e634e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getMoveStackSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getMoveStackSize</name>
+        <briefdescription>
+<para>Get stack size used by mov sequences in prolog/epilog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="509" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="509" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a21a0d0e029fb874744c06048d9f140c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::X86X64FuncNode::setMoveStackSize</definition>
+        <argsstring>(uint32_t s)</argsstring>
+        <name>setMoveStackSize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Set stack size used by mov sequences in prolog/epilog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="511" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="511" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a25b991d3971586209082faa6831a9888" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getExtraStackSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getExtraStackSize</name>
+        <briefdescription>
+<para>Get extra stack size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="514" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="514" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1afdda8ef60b20251cd1d10cb037373c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::X86X64FuncNode::setExtraStackSize</definition>
+        <argsstring>(uint32_t s)</argsstring>
+        <name>setExtraStackSize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Set extra stack size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="516" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="516" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a677b24096c9ed3d5bf2265f87c6096be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86X64FuncNode::hasStackFrameReg</definition>
+        <argsstring>() const </argsstring>
+        <name>hasStackFrameReg</name>
+        <briefdescription>
+<para>Get whether the function has stack frame register. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Stack frame register can be used for both - aligning purposes or generating standard prolog/epilog sequence.</para><simplesectsep/><para>Used only when stack is misaligned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="524" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="524" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a2f8155b0202b35c24abc99e0fd7ed51f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncNode::getStackFrameRegIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getStackFrameRegIndex</name>
+        <briefdescription>
+<para>Get stack frame register index. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Used only when stack is misaligned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="528" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="528" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncNode_1aff37a33f8ab799abb51099cadc623f9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86X64FuncNode::isStackFrameRegPreserved</definition>
+        <argsstring>() const </argsstring>
+        <name>isStackFrameRegPreserved</name>
+        <briefdescription>
+<para>Get whether the stack frame register is preserved. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Used only when stack is misaligned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="532" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="532" bodyend="532"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86/X64 function node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1305">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+      </node>
+      <node id="1303">
+        <label>asmjit::x86x64::X86X64FuncNode</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64FuncNode"/>
+        <childnode refid="1304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>asmjit::FuncNode</label>
+        <link refid="structasmjit_1_1FuncNode"/>
+        <childnode refid="1305" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1309">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="1308">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="1309" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="1310" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="1308" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="1311" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>asmjit::x86x64::X86X64FuncNode</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64FuncNode"/>
+        <childnode refid="1307" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1320" relation="usage">
+          <edgelabel>_saveRestoreRegs</edgelabel>
+        </childnode>
+        <childnode refid="1321" relation="usage">
+          <edgelabel>_x86Decl</edgelabel>
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>asmjit::JumpNode</label>
+        <link refid="structasmjit_1_1JumpNode"/>
+        <childnode refid="1314" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1313" relation="usage">
+          <edgelabel>_jumpNext</edgelabel>
+        </childnode>
+        <childnode refid="1312" relation="usage">
+          <edgelabel>_target</edgelabel>
+        </childnode>
+      </node>
+      <node id="1307">
+        <label>asmjit::FuncNode</label>
+        <link refid="structasmjit_1_1FuncNode"/>
+        <childnode refid="1308" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1312" relation="usage">
+          <edgelabel>_exitNode</edgelabel>
+          <edgelabel>_entryNode</edgelabel>
+        </childnode>
+        <childnode refid="1316" relation="usage">
+          <edgelabel>_end</edgelabel>
+        </childnode>
+        <childnode refid="1317" relation="usage">
+          <edgelabel>_decl</edgelabel>
+        </childnode>
+        <childnode refid="1319" relation="usage">
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="1316">
+        <label>asmjit::EndNode</label>
+        <link refid="structasmjit_1_1EndNode"/>
+        <childnode refid="1308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1310">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="1318">
+        <label>asmjit::FuncInOut</label>
+        <link refid="structasmjit_1_1FuncInOut"/>
+      </node>
+      <node id="1315">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="1320">
+        <label>asmjit::x86x64::RegMask</label>
+        <link refid="structasmjit_1_1x86x64_1_1RegMask"/>
+      </node>
+      <node id="1319">
+        <label>asmjit::VarData</label>
+        <link refid="structasmjit_1_1VarData"/>
+      </node>
+      <node id="1314">
+        <label>asmjit::InstNode</label>
+        <link refid="structasmjit_1_1InstNode"/>
+        <childnode refid="1308" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1315" relation="usage">
+          <edgelabel>_opList</edgelabel>
+        </childnode>
+      </node>
+      <node id="1317">
+        <label>asmjit::FuncDecl</label>
+        <link refid="structasmjit_1_1FuncDecl"/>
+        <childnode refid="1318" relation="usage">
+          <edgelabel>_retList</edgelabel>
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="1311">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="1321">
+        <label>asmjit::x86x64::X86X64FuncDecl</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl"/>
+        <childnode refid="1317" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1320" relation="usage">
+          <edgelabel>_used</edgelabel>
+          <edgelabel>_preserved</edgelabel>
+          <edgelabel>_passed</edgelabel>
+        </childnode>
+      </node>
+      <node id="1312">
+        <label>asmjit::TargetNode</label>
+        <link refid="structasmjit_1_1TargetNode"/>
+        <childnode refid="1308" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1313" relation="usage">
+          <edgelabel>_from</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="446" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="446" bodyend="564"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1af4c6af5e71ca08a8cb955fd433d5f7da" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_alignedMemStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1aa183763933ff4c41f98cb8b4f6a3b405" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_alignStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1af0787526f99e5db159be47cb0588bc68" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_argList</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a9669d78fe41fbcf09f7eb9069300a520" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_argStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aa26e0f5193d30287028dad57eb1c0c6e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_callStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa1270ef124c6809ca7fd3388fc7cb01e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_comment</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a8f054d6870355e7e43192fe857a0c7f5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_decl</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a0e4f433063da83c574c012dbe4666037" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_end</name></member>
+      <member refid="structasmjit_1_1FuncNode_1acaaa4dc2cfa9ba94903e54625c1ef6e2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_entryNode</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a8d037bed787b238ae8f76f46257b129e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_exitNode</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a91f3d5309edc28c1da14cb3907bdff32" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_expectedStackAlignment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a45d9f6f2ba1dd317864418ab278d058f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_extraStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3990c435857ff94bbd74935638a84ac0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aae00a71a49da71c80fce40654dfedf81" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_flowId</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a5d29ee06e312c72d751b151c4a0d3f79" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_funcFlags</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a9717320ee3825c238a6135639e815720" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_funcHints</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1afc2ca4f52a741090bb014df1f1cfe23a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_isStackFrameRegPreserved</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0cefc47a244741a68c66ebd64217973c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_liveness</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a73d3f50ace864ac626582280cacc3d21" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_memStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ad3a4e4a7f4111474ce984ac3bb249165" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_moveStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af79d69cd8ec0c96295bef01b73f6f3cd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f640dcb57f9c977efcd066cfa34bbd4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_opCount</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ae46a8e6aca8fe70226eeb6386d06ff60" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_prev</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a204254fc98c3cc76c611177b0a67e93a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_pushPopStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1af410035b78e1c824e33c0c6ded47bcb4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_redZoneSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aded18efc8b9fba840692dd9aed792a8b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_requiredStackAlignment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a0477f1f0d41e21f895ab853613ba8104" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_saveRestoreRegs</name></member>
+      <member refid="structasmjit_1_1FuncNode_1ae224f3318bddbbc5795e96f75c46a152" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_spillZoneSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1af421421f6a04ee7f044a57c041b7ccf2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_stackFrameCopyGpIndex</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ae689a4bf5827463506735012d66cb798" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_stackFrameRegIndex</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a6006b732dec81463a1508cfad8cb018b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a41bc5e21cfb77d1a69f6eba49b944b8b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_type</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7f38e1bbbd868cc74fce0a7d01d5cbf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_varInst</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ab7b1e98c1ad850d01a07cfa735cc40a3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>_x86Decl</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba3954cf5ced25ede2fcc471b2fd6390" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>addFlags</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a1332881057661c7f142307d91c9ba396" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>addFuncFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a63c80a6e716812a701c6bec2e2be5007" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>BaseNode</name></member>
+      <member refid="structasmjit_1_1FuncNode_1abb264e696714e3a7cf7cdf61dcde72d2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>clearFuncFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a7078ba8794a49cf97942d1bef1a043d6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>delFlags</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a41c623e27e0c7f48a7449d5a2251c826" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>FuncNode</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a09068d3d0e16fdce9cb391b69e7305b8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getAlignedMemStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ae2c06ad617140b029cbcf06091d4975d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getAlignStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1aad9bb401fde773a43deb547198b5ffd7" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a4a3749b6a12a0ecd3f8b1f5b0ac2a871" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getArgCount</name></member>
+      <member refid="structasmjit_1_1FuncNode_1afe18b6be554afa222ea450fc058836a4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getArgList</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a029da97a3ffdaa9a6cf1157fac6b26ce" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getArgStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a554dc7e9deeede7ac86c0631dc2ed318" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getCallStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a52eb758170158aba2b06378313e5748d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getComment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a0303ecf0f0c00c5c6f0c94057bc6cce3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getDecl</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a90f96c6a5d681318e1ce80b7c9cfe84d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getEnd</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aec53520f981f2e4b63425144e206ae0a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getEntryLabel</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aeed90f1f76526e1230f5ce8299b0cdad" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getEntryNode</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a6c71ad8d223598cec26d42bfaa430a99" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getExitLabel</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a8205fefd8a9f370b03337480f49e484a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getExitNode</name></member>
+      <member refid="structasmjit_1_1FuncNode_1af99752f31977d386ee395a560bc8bba1" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getExpectedStackAlignment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a25b991d3971586209082faa6831a9888" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getExtraStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a8f41870fbc15450690d92a977e7dea83" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7e1afde9f9b4282247e4b8867d80895" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getFlowId</name></member>
+      <member refid="structasmjit_1_1FuncNode_1ab288597be6fd35b3a97b6dab47730821" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getFuncFlags</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aba8998803b5626e6012ffd1aa2c7b305" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getFuncHints</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a430fadb94a43dc3aeb1ff58c6f6a8015" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getHint</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a601eb54343857a5be1d054876888acc8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getLiveness</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aa73121b1cf91e667fc73f1ec32d2c029" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getMemStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a5bd65355333872182278d15f6d9e634e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getMoveStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3db24572d64989296c96d4049d0545b8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getNext</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa28ded7ba5b0741ae57e021c411399a2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getPrev</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1adb4613d7863443f565b836f0ac686e27" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getPushPopStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a7af5be9a83bb4fd14263ce8ca1699a43" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getRedZoneSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1af41af4e65f7a90887a6807c15fe001b4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getRequiredStackAlignment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ad8b58a76528833ac3f6322b6be63893d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getSaveRestoreRegs</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a5ebdca60a1bb6b7e9791f4be21d07325" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getSpillZoneSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a2f8155b0202b35c24abc99e0fd7ed51f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getStackFrameRegIndex</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3381bd2fc97d49d392fe7a4ad92cb890" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4b059f3ff2598f406c654833aee1fcbc" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1adca7163f7abc9f6d6a5ac011254a48e4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getType</name></member>
+      <member refid="structasmjit_1_1BaseNode_1acae8b89a5f312913e64c83caebdc52d2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a324f00ff430ae18518368f9ef66398e0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0a4159dd16b9c208acaaeea6daa164d8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>hasFlag</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a8f1f92929534bea3a666d278d9446e9a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>hasFuncFlag</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4efc44156485164602dc216614995fc5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>hasLiveness</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a677b24096c9ed3d5bf2265f87c6096be" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>hasStackFrameReg</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a73cb9aaabf953b031116981688a8411f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>hasVarInst</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a20a35cd49145e33de6d521690d9c6e35" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isCaller</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a9e6bd7baceb3622c23ff751152bc44d3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isFetched</name></member>
+      <member refid="structasmjit_1_1FuncNode_1afac40439e129d1c03e1c288d249a1b87" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isFinished</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ac27332d4205dc1effe008e6a168a1435" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a88d7b4ef3d5f1c1ac7c1621678d1c063" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af1afe72717997793b3a7e2d987329e41" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isJmp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a27455b36f9a081b3d6b43ad3707fc180" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isJmpOrJcc</name></member>
+      <member refid="structasmjit_1_1FuncNode_1ac6a78aab2302c1c39748b6c74a558da3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isNaked</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a511b4075627e8bb484d6e7ad20c1fae0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba6d60c76d4dcb82b4521b0d0a0c33c2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isSpecial</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a58795b2bdab5f77a37e86396c8b4b958" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isStackAdjusted</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1aff37a33f8ab799abb51099cadc623f9c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isStackFrameRegPreserved</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a184988eedf3ffcf73c0081990058b666" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isStackMisaligned</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aafb1c845517d89dd84a7140b9a4b9886" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>isTranslated</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a3d84b7541e7fd994a183bed62502126d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>mergeCallStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a63609ec7a418a2678738f370ab00790c" prot="private" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a1baf79213af86c6e6631f66dd7e25476" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>resetArg</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ae7fb8e3055635ea099ccb7b3eed1788f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setAlignStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a0d46bccbf501f9e4b994085c027438d6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setArg</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ad6f66454cabfc61f1d29fb6ecb6bf18f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setComment</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a641b509e0735f1ea7851eb0bcdae1857" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setExpectedStackAlignment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1afdda8ef60b20251cd1d10cb037373c35" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setExtraStackSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a97cb2b2d64b539c1c4c4811344139e42" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a47ecc2ce0220e63fbc69aca57b4a728f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setFlowId</name></member>
+      <member refid="structasmjit_1_1FuncNode_1ab0e4e78e2d42e3635ed22de5dd9116ef" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setHint</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3c55bbb4f84d3ee94123e65e3f212a46" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setLiveness</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a21a0d0e029fb874744c06048d9f140c4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setMoveStackSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ab315d64415c75e447f1872aa367ffbe0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setPushPopStackSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a652ea7b880c3f2c904870c8d8d917cfe" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setRedZoneSize</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a9cca2ed6dea5b04e2fa3d1399bd902ec" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setRequiredStackAlignment</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a9ce69b1bcdb251f3599ee8adbccf64ab" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setSpillZoneSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a841540382e62b6f80f699259ee59587b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f1542bdcd6503fe2ee5a0e847f55215" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>setVarInst</name></member>
+      <member refid="structasmjit_1_1FuncNode_1aa64cca6fda38fa13985fd867fa1f27d4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>updateRequiredStackAlignment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ac4b7ac768250c6c34c7d7f8a754203fb" prot="private" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>X86X64FuncNode</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1ab821939a8691f155afabb5e10f35550f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>X86X64FuncNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab8d1dfe217c72d01c253687b8c31f64c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>~BaseNode</name></member>
+      <member refid="structasmjit_1_1FuncNode_1a96efa97101afa6de2470ab834012e2fd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>~FuncNode</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncNode_1a43d3755fea5efcd9c856e726fdffd978" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncNode</scope><name>~X86X64FuncNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

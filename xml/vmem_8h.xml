@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="vmem_8h" kind="file">
+    <compoundname>vmem.h</compoundname>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="memorymanager_8cpp" local="yes">memorymanager.cpp</includedby>
+    <includedby refid="vmem_8cpp" local="yes">vmem.cpp</includedby>
+    <incdepgraph>
+      <node id="2013">
+        <label>../base/globals.h</label>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+      </node>
+      <node id="2014">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="2015">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2017">
+        <label>stdint.h</label>
+      </node>
+      <node id="2009">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2005">
+        <label>../base/apibegin.h</label>
+        <childnode refid="2006" relation="include">
+        </childnode>
+      </node>
+      <node id="2011">
+        <label>../base/defs.h</label>
+        <childnode refid="2012" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>limits.h</label>
+      </node>
+      <node id="2016">
+        <label>new</label>
+      </node>
+      <node id="2004">
+        <label>vmem.h</label>
+        <link refid="vmem.h"/>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+      </node>
+      <node id="2007">
+        <label>config.h</label>
+      </node>
+      <node id="2012">
+        <label>../base/intutil.h</label>
+        <childnode refid="2013" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+      </node>
+      <node id="2006">
+        <label>../build.h</label>
+        <childnode refid="2007" relation="include">
+        </childnode>
+        <childnode refid="2008" relation="include">
+        </childnode>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="2010" relation="include">
+        </childnode>
+        <childnode refid="2016" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+      </node>
+      <node id="2008">
+        <label>stdio.h</label>
+      </node>
+      <node id="2010">
+        <label>string.h</label>
+        <childnode refid="2011" relation="include">
+        </childnode>
+        <childnode refid="2013" relation="include">
+        </childnode>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2027">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="2037">
+        <label>vmem.cpp</label>
+      </node>
+      <node id="2022">
+        <label>asmjit.h</label>
+        <childnode refid="2023" relation="include">
+        </childnode>
+        <childnode refid="2024" relation="include">
+        </childnode>
+        <childnode refid="2026" relation="include">
+        </childnode>
+        <childnode refid="2028" relation="include">
+        </childnode>
+        <childnode refid="2029" relation="include">
+        </childnode>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2027" relation="include">
+        </childnode>
+        <childnode refid="2025" relation="include">
+        </childnode>
+      </node>
+      <node id="2029">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="2036">
+        <label>memorymanager.cpp</label>
+      </node>
+      <node id="2035">
+        <label>x86.h</label>
+      </node>
+      <node id="2021">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="2020">
+        <label>base.h</label>
+        <childnode refid="2021" relation="include">
+        </childnode>
+        <childnode refid="2022" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2034" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+      </node>
+      <node id="2033">
+        <label>winremoteruntime.h</label>
+        <childnode refid="2034" relation="include">
+        </childnode>
+      </node>
+      <node id="2025">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="2019">
+        <label>vmem.h</label>
+        <link refid="vmem.h"/>
+        <childnode refid="2020" relation="include">
+        </childnode>
+        <childnode refid="2036" relation="include">
+        </childnode>
+        <childnode refid="2037" relation="include">
+        </childnode>
+      </node>
+      <node id="2026">
+        <label>genopcode.h</label>
+        <childnode refid="2023" relation="include">
+        </childnode>
+        <childnode refid="2027" relation="include">
+        </childnode>
+      </node>
+      <node id="2024">
+        <label>genblend.h</label>
+        <childnode refid="2023" relation="include">
+        </childnode>
+        <childnode refid="2025" relation="include">
+        </childnode>
+      </node>
+      <node id="2032">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="2030">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="2031">
+        <label>host.h</label>
+        <childnode refid="2022" relation="include">
+        </childnode>
+      </node>
+      <node id="2034">
+        <label>contrib.h</label>
+      </node>
+      <node id="2023">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="2028">
+        <label>testcpu.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1VMem" prot="public">asmjit::VMem</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_VMEM_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_VMEM_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_base</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::VMem]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">//!<sp/>@brief<sp/>Class<sp/>that<sp/>helps<sp/>with<sp/>allocating<sp/>memory<sp/>for<sp/>executing<sp/>code</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//!<sp/>generated<sp/>by<sp/>JIT<sp/>compiler.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">//!<sp/>There<sp/>are<sp/>defined<sp/>functions<sp/>that<sp/>provides<sp/>facility<sp/>to<sp/>allocate<sp/>and<sp/>free</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">//!<sp/>memory<sp/>where<sp/>can<sp/>be<sp/>executed<sp/>code.<sp/>If<sp/>processor<sp/>and<sp/>operating<sp/>system</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">//!<sp/>supports<sp/>execution<sp/>protection<sp/>then<sp/>you<sp/>can&apos;t<sp/>run<sp/>code<sp/>from<sp/>normally</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">//!<sp/>malloc()&apos;ed<sp/>memory.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//!<sp/>Functions<sp/>are<sp/>internally<sp/>implemented<sp/>by<sp/>operating<sp/>system<sp/>dependent<sp/>way.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">//!<sp/>VirtualAlloc()<sp/>function<sp/>is<sp/>used<sp/>for<sp/>Windows<sp/>operating<sp/>system<sp/>and<sp/>mmap()</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">//!<sp/>for<sp/>posix<sp/>ones.<sp/>If<sp/>you<sp/>want<sp/>to<sp/>study<sp/>or<sp/>create<sp/>your<sp/>own<sp/>functions,<sp/>look</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">//!<sp/>at<sp/>VirtualAlloc()<sp/>or<sp/>mmap()<sp/>documentation<sp/>(depends<sp/>on<sp/>you<sp/>target<sp/>OS).</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">//!<sp/>Under<sp/>posix<sp/>operating<sp/>systems<sp/>is<sp/>also<sp/>useable<sp/>mprotect()<sp/>function,<sp/>that</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">//!<sp/>can<sp/>enable<sp/>execution<sp/>protection<sp/>to<sp/>malloc()&apos;ed<sp/>memory<sp/>block.</highlight></codeline>
+<codeline lineno="38" refid="structasmjit_1_1VMem" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1VMem" kindref="compound" tooltip="Class that helps with allocating memory for executing code generated by JIT compiler.">VMem</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Allocate<sp/>virtual<sp/>memory.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/>//!<sp/>Pages<sp/>are<sp/>readable/writeable,<sp/>but<sp/>they<sp/>are<sp/>not<sp/>guaranteed<sp/>to<sp/>be</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/>//!<sp/>executable<sp/>unless<sp/>&apos;canExecute&apos;<sp/>is<sp/>true.<sp/>Returns<sp/>the<sp/>address<sp/>of</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/>//!<sp/>allocated<sp/>memory,<sp/>or<sp/>NULL<sp/>on<sp/>failure.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1VMem_1aaf08965d4c0b29f1f79061273bda7f8b" kindref="member" tooltip="Allocate virtual memory.">alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/>allocated,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>canExecute);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Free<sp/>memory<sp/>allocated<sp/>by<sp/>@c<sp/>alloc()</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VMem_1a388c4ed369967910f5797dd9a2477de3" kindref="member" tooltip="Free memory allocated by alloc() ">release</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>addr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ASMJIT_OS_WINDOWS)</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Allocate<sp/>virtual<sp/>memory<sp/>of<sp/>@a<sp/>hProcess.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>This<sp/>function<sp/>is<sp/>Windows<sp/>specific.</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>allocProcessMemory(HANDLE<sp/>hProcess,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/>allocated,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>canExecute);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Free<sp/>virtual<sp/>memory<sp/>of<sp/>@a<sp/>hProcess.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>This<sp/>function<sp/>is<sp/>Windows<sp/>specific.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>releaseProcessMemory(HANDLE<sp/>hProcess,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>addr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ASMJIT_OS_WINDOWS</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>the<sp/>alignment<sp/>guaranteed<sp/>by<sp/>alloc().</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VMem_1ae5436cdbea13e3428ead9ff8e12d5a41" kindref="member" tooltip="Get the alignment guaranteed by alloc().">getAlignment</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>size<sp/>of<sp/>the<sp/>single<sp/>page.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1VMem_1abbc46fc937c7f352ba6c68e2c81b9620" kindref="member" tooltip="Get size of the single page.">getPageSize</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="68"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_VMEM_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/vmem.h"/>
+  </compounddef>
+</doxygen>

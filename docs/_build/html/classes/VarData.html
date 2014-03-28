@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>VarData &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="VirtualMemoryManager" href="VirtualMemoryManager.html" />
+    <link rel="prev" title="VarBits" href="VarBits.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="VirtualMemoryManager.html" title="VirtualMemoryManager"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="VarBits.html" title="VarBits"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="vardata">
+<h1>VarData<a class="headerlink" href="#vardata" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1VarData">
+<div class="line"><em>struct</em> <strong>asmjit::VarData</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base variable data. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VarData_1ae44efa412b13db7c5e4b70e0f31119e6"></span><div class="line-block">
+<div class="line">const char * <strong>getName</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable name. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a5d839f4a14e8e3fd2dc833f82ed1445b"></span><div class="line-block">
+<div class="line">uint32_t <strong>getId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1afd2432372510e253956cd49a3d2960e1"></span><div class="line-block">
+<div class="line">bool <strong>hasContextId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable has context id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a49aeaf843d92319bcfd68576b33110ba"></span><div class="line-block">
+<div class="line">uint32_t <strong>getContextId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get context variable id (used only by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a56b004d1322da9abb32009d8a8848c08"></span><div class="line-block">
+<div class="line">void <strong>setContextId</strong>(uint32_t contextId)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set context variable id (used only by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1ae7e16f8083219ca55974bfec66142633"></span><div class="line-block">
+<div class="line">void <strong>resetContextId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset context variable id (used only by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a4782b25d0670d39cd2fc8df836cb08d5"></span><div class="line-block">
+<div class="line">uint32_t <strong>getType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a386140fdd6c53c4f21e4aa60840902e1"></span><div class="line-block">
+<div class="line">uint32_t <strong>getClass</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable class. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1aa7d53f2bec2a84b692eb347e7ba56587"></span><div class="line-block">
+<div class="line">uint32_t <strong>getFlags</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable flags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a66dbd989b502a5dfe51bad41c1a02610"></span><div class="line-block">
+<div class="line">uint32_t <strong>getPriority</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable priority. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1af553c865ef80d7eb4bb32534f3625cd3"></span><div class="line-block">
+<div class="line">uint32_t <strong>getState</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable state (only used by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a0fc11e4290386322f1c26ebd83171169"></span><div class="line-block">
+<div class="line">void <strong>setState</strong>(uint32_t state)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set variable state (only used by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a3b956d9940c540d3fed5d51f9e932ecf"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get register index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a514d9b2d6ed1cbd89a0fa7c63bfc4561"></span><div class="line-block">
+<div class="line">void <strong>setRegIndex</strong>(uint32_t regIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set register index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1aefbe1c9839a9245072d00c143f12f7e0"></span><div class="line-block">
+<div class="line">void <strong>resetRegIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset register index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a0709ba5eac2d90824aa83b05ed5df211"></span><div class="line-block">
+<div class="line">bool <strong>isStack</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the <a class="reference internal" href="#asmjitstructasmjit_1_1VarData"><em>VarData</em></a> is only memory allocated on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1aefe159ce984521abfbf815d6c16c34d8"></span><div class="line-block">
+<div class="line">bool <strong>isMemArg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable is a function argument passed through memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a04fead919e4d4e4b1d512c62e426c719"></span><div class="line-block">
+<div class="line">bool <strong>isCalculated</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable content can be calculated by a simple instruction. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1aa7e9d4c5d6eaeea77b25d525467f3004"></span><div class="line-block">
+<div class="line">bool <strong>saveOnUnuse</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether to save variable when it&#8217;s unused (spill). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1abdde0badc8a797eedf92dffef9c01e8f"></span><div class="line-block">
+<div class="line">bool <strong>isModified</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the variable was changed. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1add924a968e2abd51fb5b5dea47b3d1c5"></span><div class="line-block">
+<div class="line">void <strong>setModified</strong>(bool modified)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set whether the variable was changed. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a2081674a98787c4395baa3758004ef30"></span><div class="line-block">
+<div class="line">uint32_t <strong>getAlignment</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1accd6f24965f4d7477834d6035713c5e3"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get variable size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a504c158befceb46a60b9e36c69078aa8"></span><div class="line-block">
+<div class="line">int32_t <strong>getMemOffset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get home memory offset. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a4d53249fb0edc4221b1fdb96e6800b8b"></span><div class="line-block">
+<div class="line">void <strong>setMemOffset</strong>(int32_t offset)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set home memory offset. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1afdfc419087cafd6948f67da5e5c4fa7c"></span><div class="line-block">
+<div class="line">MemCell * <strong>getMemCell</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get home memory cell. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a690bf400be2757a823e65dba5357aa93"></span><div class="line-block">
+<div class="line">void <strong>setMemCell</strong>(MemCell * cell)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set home memory cell. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1af6996e30d380fec6a505f230c50f6f76"></span><div class="line-block">
+<div class="line">VarAttr * <strong>getVa</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get temporary VarAttr. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a71f904f1074f9f0fdf64ce398c3e4940"></span><div class="line-block">
+<div class="line">void <strong>setVa</strong>(VarAttr * va)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set temporary VarAttr. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a0c78fcbbdefd343c947afa17948ccaa8"></span><div class="line-block">
+<div class="line">void <strong>resetVa</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset temporary VarAttr. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1VarData_1abd206220e39b7864268c977d35cfc26d"></span>const char * <strong>_name</strong></p>
+<blockquote>
+<div><p>Variable name. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1af1a8a994d16ae69eb389a009944f1b13"></span>uint32_t <strong>_id</strong></p>
+<blockquote>
+<div><p>Variable id. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a604d23a483c678cb9102a094665b14ed"></span>uint32_t <strong>_contextId</strong></p>
+<blockquote>
+<div><p>Context variable id (used by Context only, initially set to <tt class="docutils literal"><span class="pre">kInvalidValue</span></tt>). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a66408044910637b2977deb7408738efc"></span>uint8_t <strong>_type</strong></p>
+<blockquote>
+<div><p>Variable type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1ad11b9474002c5584729c81ac288a4b2e"></span>uint8_t <strong>_class</strong></p>
+<blockquote>
+<div><p>Variable class. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1afc4a03c6d63d731d75c5ee0d87b5d3f8"></span>uint8_t <strong>_flags</strong></p>
+<blockquote>
+<div><p>Variable flags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a0825dd09123aad0a55c213448089ab26"></span>uint8_t <strong>_priority</strong></p>
+<blockquote>
+<div><p>Variable priority. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a0d0c7c3e46740060a644baed771809da"></span>uint8_t <strong>_state</strong></p>
+<blockquote>
+<div><p>Variable state (connected with actual <a class="reference internal" href="BaseVarState.html#asmjitstructasmjit_1_1BaseVarState"><em>BaseVarState</em></a>). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a8e2dd1821323dce7c5fb0e6e1f3a311e"></span>uint8_t <strong>_regIndex</strong></p>
+<blockquote>
+<div><p>Actual register index (only used by Context), during translate. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a932ffa440b7237eb45d8fe2d8fc6c612"></span>uint8_t <strong>_isStack</strong></p>
+<blockquote>
+<div><p>Whether the variable is only used as memory allocated on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1aedd308a0934f4ff9c4374b3618516857"></span>uint8_t <strong>_isMemArg</strong></p>
+<blockquote>
+<div><p>Whether the variable is a function argument passed through memory. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a4d63061334343ea9a222a87e17a28eba"></span>uint8_t <strong>_isCalculated</strong></p>
+<blockquote>
+<div><p>Whether variable content can be calculated by a simple instruction. </p>
+<p>This is used mainly by MMX and SSE2 code. This flag indicates that register allocator should never reserve memory for this variable, because the content can be generated by a single instruction (for example PXOR). </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a479f07d8219049f22533163cffe7980b"></span>uint8_t <strong>_saveOnUnuse</strong></p>
+<blockquote>
+<div><p>Save on unuse (at end of the variable scope). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a7b992af1a2835eca8a56c1e6ebd0b1d5"></span>uint8_t <strong>_modified</strong></p>
+<blockquote>
+<div><p>Whether variable was changed (connected with actual <a class="reference internal" href="BaseVarState.html#asmjitstructasmjit_1_1BaseVarState"><em>BaseVarState</em></a>). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a496cde73a7d6855076c37746965e36d7"></span>uint8_t <strong>_reserved0</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a76922ee86badaeb0b869404432ccff34"></span>uint8_t <strong>_alignment</strong></p>
+<blockquote>
+<div><p>Varialbe natural alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1aa6bdac1f459bd79e0c0ff700c152f6be"></span>uint32_t <strong>_size</strong></p>
+<blockquote>
+<div><p>Variable size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a532c225c5dd3a47b412012e2e1bd19d0"></span>int32_t <strong>_memOffset</strong></p>
+<blockquote>
+<div><p>Home memory offset. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a088702cfdcc9556a61893d8d4e0241a2"></span>MemCell * <strong>_memCell</strong></p>
+<blockquote>
+<div><p>Home memory cell, used by <tt class="docutils literal"><span class="pre">Context</span></tt> (initially NULL). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a2115f81379b916b125c86533f63f287c"></span>uint32_t <strong>rReadCount</strong></p>
+<blockquote>
+<div><p>Register read access statistics. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1ab68c535f834061e11edc9866e534b6f3"></span>uint32_t <strong>rWriteCount</strong></p>
+<blockquote>
+<div><p>Register write access statistics. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a0bae731ad14f36323953933545c4e284"></span>uint32_t <strong>mReadCount</strong></p>
+<blockquote>
+<div><p>Memory read statistics. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a6ef42095624282230f061f4c5f14cf0c"></span>uint32_t <strong>mWriteCount</strong></p>
+<blockquote>
+<div><p>Memory write statistics. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a67d619cbc09377832ec49721b80ccc87"></span>VarAttr * <strong>_va</strong></p>
+<blockquote>
+<div><p>Temporary link to VarAttr* used by the Context used in various phases, but always set back to NULL when finished. </p>
+<p>This temporary data is designed to be used by algorithms that need to store some data into variables themselves during compilation. But it&#8217;s expected that after variable is compiled &amp; translated the data is set back to zero/null. Initial value is NULL. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a6ca795ad90711fbc2b03d59bac887063"></span>uintptr_t <strong>_vaUInt</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1VarData_1a7cfc042ede12c71f9b856448a8596dca"></span>union asmjit::VarData::&#64;7 <strong>&#64;8</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="VarBits.html"
+                        title="previous chapter">VarBits</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="VirtualMemoryManager.html"
+                        title="next chapter">VirtualMemoryManager</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/VarData.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="VirtualMemoryManager.html" title="VirtualMemoryManager"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="VarBits.html" title="VarBits"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

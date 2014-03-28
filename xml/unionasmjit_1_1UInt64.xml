@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionasmjit_1_1UInt64" kind="union" prot="public">
+    <compoundname>asmjit::UInt64</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1ae6e11089f3d764a8941f23b41199c56e" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t asmjit::UInt64::u64</definition>
+        <argsstring></argsstring>
+        <name>u64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="677" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1a801b76de50156bc9bc3b5ebf7189d5a6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::UInt64::u32[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>u32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="679" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1a80b7094bb70c9ed6f07bd019968ff437" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::UInt64::u16[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="680" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1a1066626d3df0127cbde06501a72a33f7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::UInt64::u8[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>u8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="681" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1a5a428886ebc51aab8114d32e942a949b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::UInt64::hi</definition>
+        <argsstring></argsstring>
+        <name>hi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="687" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1a85632888b0cf21a7e3b716b8dbfc7159" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::UInt64::lo</definition>
+        <argsstring></argsstring>
+        <name>lo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="687" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1UInt64_1a1471586fd68686b940bf9d97cc7d76dd" prot="public" static="no" mutable="no">
+        <type>struct asmjit::UInt64::@53</type>
+        <definition>struct asmjit::UInt64::@53 asmjit::UInt64::@54</definition>
+        <argsstring></argsstring>
+        <name>@54</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="689"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ad74c827d2076aacc9fed3bdc8466ab31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64</type>
+        <definition>UInt64 asmjit::UInt64::fromUInt64</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>fromUInt64</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="435" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="435" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a8f1806f1672a2fe7ff70d3133c487f10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64</type>
+        <definition>UInt64 asmjit::UInt64::fromUInt64</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>fromUInt64</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="441" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="441" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a7685d4e4cb51d7008d7099c68f651ee3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::UInt64::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="451" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="451" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a2d8c8701063eb46608ba707697d59904" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t asmjit::UInt64::getUInt64</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="465" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="465" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ae94aa026ab7114f737d88e025552d0ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::setUInt64</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>setUInt64</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="469" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="469" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a6707ade94a0e8e6082b283e5d750dfc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::setUInt64</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>setUInt64</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="474" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="474" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a9620cf84f8e3a136987fb735b7449daa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::setPacked_2x32</definition>
+        <argsstring>(uint32_t u0, uint32_t u1)</argsstring>
+        <name>setPacked_2x32</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>u0</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>u1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="485" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="485" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a3a883aeb515e244ff236478e8b03187c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::add</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>add</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="500" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="500" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ac8b13d1ddb26e96f00da1a640e9a17c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::add</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="505" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="505" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ac8cbabb3669090ad5319fdbd6d474ac7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::sub</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>sub</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="520" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="520" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ae6e6a37c7cbb15fac2dc40d135be45fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::sub</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>sub</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="525" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="525" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1afd050a8ea45831874f8c4595fd739da3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::and_</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>and_</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="540" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="540" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a9069f85ee958eba1335123d975347b37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::and_</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>and_</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="545" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="545" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1aa0368667e1f8d5a2841ae12e3fddd128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::or_</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>or_</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="560" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="560" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a6de5c1cdd912036230616138c8e9a7e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::or_</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>or_</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="565" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="565" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1aed2e70f7f6d8e01887073d10f64b57a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::xor_</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>xor_</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="580" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="580" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1aa7ce2ecf50da08ca31ebe736823807b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::xor_</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>xor_</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="585" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="585" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ab6774a1f1d321b5d4b4a441d20ac24f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::del</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>del</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="600" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="600" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a774bdd26035475133b5813b42ec7b96f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::del</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>del</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="605" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="605" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ae57950b4f165d6855ea28542fe34944c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::isZero</definition>
+        <argsstring>() const </argsstring>
+        <name>isZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="620" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="620" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a7777fdd16309ca53f0060b77e2d7c647" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::isNonZero</definition>
+        <argsstring>() const </argsstring>
+        <name>isNonZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="624" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="624" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a5812b4cda25568b9ffc956683a4af34f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::eq</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>eq</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="628" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="628" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a7398965702706a9b272e614282de4d41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::eq</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>eq</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="632" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="632" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a4850b1d4630dc2297b2a3cd9b422ccf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator+=</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="640" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="640" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a15b17eeca9c729cbc23e41789ca8c717" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator+=</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="641" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="641" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a00975669cd50cd4a8dc4af963ee973ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator-=</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="643" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="643" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1aa6521838f2272dcaca4f8832bfab913e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator-=</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="644" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="644" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a0d83c1286597b5e8b2f839530235310d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator&amp;=</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>operator&amp;=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="646" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="646" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ad381e34a84eebbbca885d2f2f1d02ec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator&amp;=</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>operator&amp;=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="647" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="647" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1af6500becc4c639f7aa406745ad3e8ad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator|=</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>operator|=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="649" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="649" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a5b120860bae85e91e8cd4c516e6996e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator|=</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>operator|=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="650" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="650" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a6569552ff1fbf2b5d4cb4bbe0df3ec4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator^=</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="652" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="652" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1acb0d22e14a653a58e9e7e3b6e8a4289a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt64 &amp;</type>
+        <definition>UInt64&amp; asmjit::UInt64::operator^=</definition>
+        <argsstring>(const UInt64 &amp;val)</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="653" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="653" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1afc224b98dd4363d81fea754ef76fa127" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator==</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="655" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="655" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a16d3a1b4733681e07e381bc933f94608" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator==</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="656" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="656" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a86f66fc83e92c6d8cd0033f988584071" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator!=</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="658" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="658" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ac64d1fa8c45c728d21fafff37b86fa39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator!=</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="659" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="659" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ab45f3c0ff2cad37bb0f459420897783b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&lt;</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="661" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="661" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a31f0f55ccfb4be94a383c95325b2ffaa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&lt;</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="662" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="662" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a0d9ef12cf6abec0760a643ecdd8a8a52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&lt;=</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="664" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="664" bodyend="664"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a1ee36669b543bd4186e64e4d0426a856" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&lt;=</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="665" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="665" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a832c689aa6633a2542f1b9c98222898e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&gt;</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="667" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="667" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a5990292a3036cc4e59dccb107fe9eabf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&gt;</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="668" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="668" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1ab984b8e5aa751a083534c4d445b79d5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&gt;=</definition>
+        <argsstring>(uint64_t val) const </argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="670" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="670" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="unionasmjit_1_1UInt64_1a56cb82b0e77d0ffbbd9bc8bac3c25cc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::UInt64::operator&gt;=</definition>
+        <argsstring>(const UInt64 &amp;val) const </argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const UInt64 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="671" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="671" bodyend="671"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="430" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="430" bodyend="690"/>
+    <listofallmembers>
+      <member refid="unionasmjit_1_1UInt64_1a3a883aeb515e244ff236478e8b03187c" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>add</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ac8b13d1ddb26e96f00da1a640e9a17c2" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>add</name></member>
+      <member refid="unionasmjit_1_1UInt64_1afd050a8ea45831874f8c4595fd739da3" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>and_</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a9069f85ee958eba1335123d975347b37" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>and_</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ab6774a1f1d321b5d4b4a441d20ac24f9" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>del</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a774bdd26035475133b5813b42ec7b96f" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>del</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a5812b4cda25568b9ffc956683a4af34f" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>eq</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a7398965702706a9b272e614282de4d41" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>eq</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ad74c827d2076aacc9fed3bdc8466ab31" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>fromUInt64</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a8f1806f1672a2fe7ff70d3133c487f10" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>fromUInt64</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a2d8c8701063eb46608ba707697d59904" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>getUInt64</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a5a428886ebc51aab8114d32e942a949b" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>hi</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a7777fdd16309ca53f0060b77e2d7c647" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>isNonZero</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ae57950b4f165d6855ea28542fe34944c" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>isZero</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a85632888b0cf21a7e3b716b8dbfc7159" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>lo</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a86f66fc83e92c6d8cd0033f988584071" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator!=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ac64d1fa8c45c728d21fafff37b86fa39" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator!=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a0d83c1286597b5e8b2f839530235310d" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&amp;=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ad381e34a84eebbbca885d2f2f1d02ec8" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&amp;=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a4850b1d4630dc2297b2a3cd9b422ccf7" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator+=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a15b17eeca9c729cbc23e41789ca8c717" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator+=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a00975669cd50cd4a8dc4af963ee973ae" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator-=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1aa6521838f2272dcaca4f8832bfab913e" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator-=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ab45f3c0ff2cad37bb0f459420897783b" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&lt;</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a31f0f55ccfb4be94a383c95325b2ffaa" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&lt;</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a0d9ef12cf6abec0760a643ecdd8a8a52" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&lt;=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a1ee36669b543bd4186e64e4d0426a856" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&lt;=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1afc224b98dd4363d81fea754ef76fa127" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator==</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a16d3a1b4733681e07e381bc933f94608" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator==</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a832c689aa6633a2542f1b9c98222898e" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&gt;</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a5990292a3036cc4e59dccb107fe9eabf" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&gt;</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ab984b8e5aa751a083534c4d445b79d5a" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&gt;=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a56cb82b0e77d0ffbbd9bc8bac3c25cc8" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator&gt;=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a6569552ff1fbf2b5d4cb4bbe0df3ec4b" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator^=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1acb0d22e14a653a58e9e7e3b6e8a4289a" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator^=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1af6500becc4c639f7aa406745ad3e8ad4" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator|=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a5b120860bae85e91e8cd4c516e6996e8" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>operator|=</name></member>
+      <member refid="unionasmjit_1_1UInt64_1aa0368667e1f8d5a2841ae12e3fddd128" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>or_</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a6de5c1cdd912036230616138c8e9a7e0" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>or_</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a7685d4e4cb51d7008d7099c68f651ee3" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>reset</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a9620cf84f8e3a136987fb735b7449daa" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>setPacked_2x32</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ae94aa026ab7114f737d88e025552d0ad" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>setUInt64</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a6707ade94a0e8e6082b283e5d750dfc4" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>setUInt64</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ac8cbabb3669090ad5319fdbd6d474ac7" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>sub</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ae6e6a37c7cbb15fac2dc40d135be45fc" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>sub</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a80b7094bb70c9ed6f07bd019968ff437" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>u16</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a801b76de50156bc9bc3b5ebf7189d5a6" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>u32</name></member>
+      <member refid="unionasmjit_1_1UInt64_1ae6e11089f3d764a8941f23b41199c56e" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>u64</name></member>
+      <member refid="unionasmjit_1_1UInt64_1a1066626d3df0127cbde06501a72a33f7" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>u8</name></member>
+      <member refid="unionasmjit_1_1UInt64_1aed2e70f7f6d8e01887073d10f64b57a0" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>xor_</name></member>
+      <member refid="unionasmjit_1_1UInt64_1aa7ce2ecf50da08ca31ebe736823807b5" prot="public" virt="non-virtual"><scope>asmjit::UInt64</scope><name>xor_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Imm &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="InstNode" href="InstNode.html" />
+    <link rel="prev" title="HintNode" href="HintNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="InstNode.html" title="InstNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="HintNode.html" title="HintNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="imm">
+<h1>Imm<a class="headerlink" href="#imm" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1Imm">
+<div class="line"><em>struct</em> <strong>asmjit::Imm</strong></div>
+<div class="line"><em>#include &lt;defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Immediate operand. </p>
+<p><p>Immediate operand is usually part of instruction itself (it&#8217;s inlined after or before instruction opcode). Immediates can be only signed or unsigned integers.</p>
+<p>To create immediate operand, use <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitgroup__asmjit__base_1ga65a8413c6d6ca49e69246bb684ac60eb"><em><span class="pre">imm()</span></em></a></tt> and <tt class="docutils literal"><a class="reference internal" href="../modules/base.html#asmjitgroup__asmjit__base_1ga4594b4672222fbd0152080800fe73779"><em><span class="pre">imm_u()</span></em></a></tt> constructors or constructors provided by <tt class="docutils literal"><span class="pre">Immediate</span></tt> class itself. </p>
+</p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Imm_1a6d6d8380a1d63120a960c5ca89e91913"></span><div class="line-block">
+<div class="line"> <strong>Imm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new immediate value (initial value is 0). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1aee5dea96bee16b8f2775cc7da80cac29"></span><div class="line-block">
+<div class="line"> <strong>Imm</strong>(int64_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new signed immediate value, assigning the value to <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1ac14a7cfdf45b81502247342e7c76e81a"></span><div class="line-block">
+<div class="line"> <strong>Imm</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new immediate value from <em>other</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a09ba132031dd87afd8bb11054f24329f"></span><div class="line-block">
+<div class="line"> <strong>Imm</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a87ec34eeb52d58dedd7e8759bec0de96"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a977e79228bf13cdbdb92379339602ce4"></span><div class="line-block">
+<div class="line">bool <strong>isInt8</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the immediate can be casted to 8-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1afbd46c7c32eb36c5dc0c77756ce5f18c"></span><div class="line-block">
+<div class="line">bool <strong>isUInt8</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the immediate can be casted to 8-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a423fb499db6933e25a8e4fb75d11c30f"></span><div class="line-block">
+<div class="line">bool <strong>isInt16</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the immediate can be casted to 16-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1ae4957b57c65d00a74de20f88dc7c8cc5"></span><div class="line-block">
+<div class="line">bool <strong>isUInt16</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the immediate can be casted to 16-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1ab5d032a848dbf3321773aff868d97d41"></span><div class="line-block">
+<div class="line">bool <strong>isInt32</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the immediate can be casted to 32-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a385c2bb2b657e908f91d0a755cc930b1"></span><div class="line-block">
+<div class="line">bool <strong>isUInt32</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the immediate can be casted to 32-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a1d21f39e2f03a26c97efb1a2cb69a1db"></span><div class="line-block">
+<div class="line">int8_t <strong>getInt8</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 8-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a99bc7e7dbd8ed3e0d66abd63d0bfe059"></span><div class="line-block">
+<div class="line">uint8_t <strong>getUInt8</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 8-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1af00dc4bb217fbfed84ab5c1360f34065"></span><div class="line-block">
+<div class="line">int16_t <strong>getInt16</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 16-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a76b16f3d673e3a72a875bd0d0d7dc365"></span><div class="line-block">
+<div class="line">uint16_t <strong>getUInt16</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 16-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1aa754afbd31eccd757e9dd34fe96fa28d"></span><div class="line-block">
+<div class="line">int32_t <strong>getInt32</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 32-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a491a62da780c14fe97712ae54c0c0ffc"></span><div class="line-block">
+<div class="line">uint32_t <strong>getUInt32</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 32-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1afc1791f2ac5ab3d5e5adbe04d41aa843"></span><div class="line-block">
+<div class="line">int64_t <strong>getInt64</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 64-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1af677753452a0a85ba9fa4217b3686130"></span><div class="line-block">
+<div class="line">uint64_t <strong>getUInt64</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as 64-bit unsigned integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a6581eba1b0647130f6eb7a0118d583ee"></span><div class="line-block">
+<div class="line">intptr_t <strong>getIntPtr</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as intptr_t. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a6dec459c1fafa1f0d5f5dc0344bb9c86"></span><div class="line-block">
+<div class="line">uintptr_t <strong>getUIntPtr</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get immediate value as uintptr_t. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1acf8da662f2d23fa45d27ad1b7dbb0e66"></span><div class="line-block">
+<div class="line">int32_t <strong>getInt32Lo</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get Lo 32-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1afae817e6918b48a4e620c48fdd0b808e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getUInt32Lo</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get Lo 32-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a816c84fdaa28fc6bc39c611da0d281f3"></span><div class="line-block">
+<div class="line">int32_t <strong>getInt32Hi</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get Hi 32-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1abc08fa629bbda8a7e4516db35282a160"></span><div class="line-block">
+<div class="line">uint32_t <strong>getUInt32Hi</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get Hi 32-bit signed integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a4b0cd5360d21f41ac2aca1df50bf5068"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setInt8</strong>(int8_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 8-bit signed integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a8a4080a2be56a7099cdd5ec1fbb8d319"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setUInt8</strong>(uint8_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 8-bit unsigned integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1aafa4873d3c572ca840707de03aca95aa"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setInt16</strong>(int16_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 16-bit signed integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1af8588ccf00866e081a9d16b1b9fe3297"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setUInt16</strong>(uint16_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 16-bit unsigned integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1ad2f922217226881bb93510cd00dc5813"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setInt32</strong>(int32_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 32-bit signed integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a2d0b63993f1f14a6ae20a5f8d3602330"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setUInt32</strong>(uint32_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 32-bit unsigned integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1ab7aa11a9b815b72b75aae142e1a646d2"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setInt64</strong>(int64_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 64-bit signed integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a406bfcbb240b4a2897c2c511a0c5aa4c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setUInt64</strong>(uint64_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to 64-bit unsigned integer <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a3c98dca08b5f1ce4d89c286802797b7e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setIntPtr</strong>(intptr_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to intptr_t <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a12ed1580a8665eabdf09f9b86efb2cac"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setUIntPtr</strong>(uintptr_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value to uintptr_t <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a03710cbc86bac2cb9a0a1f479776aff7"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setPtr</strong>(void * p)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set immediate value as unsigned type to <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a4d4346e24e6714a8c0582d544e403b45"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setFloat</strong>(float f)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a4eb6d52323f24c239ba1fca03be99c8e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>setDouble</strong>(double d)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a83fd0b20b4033d991a8ae168ea064dc5"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>truncateTo8Bits</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1acfbb04003cbd964c8a94d1425f5f8c31"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>truncateTo16Bits</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1af2b19f84db3dfd1a19dc98bbec11ec81"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>truncateTo32Bits</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Imm_1a4504699cb354b4ae4d1f0b5e4bfbde7d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Imm"><em>Imm</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Assign <em>other</em> to the immediate operand. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="HintNode.html"
+                        title="previous chapter">HintNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="InstNode.html"
+                        title="next chapter">InstNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/Imm.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="InstNode.html" title="InstNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="HintNode.html" title="HintNode"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

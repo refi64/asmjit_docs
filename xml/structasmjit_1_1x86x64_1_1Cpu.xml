@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1Cpu" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::Cpu</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseCpu" prot="public" virt="non-virtual">asmjit::BaseCpu</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1Cpu_1afd9922751e446bfb9917ffd327c658ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::_processorType</definition>
+        <argsstring></argsstring>
+        <name>_processorType</name>
+        <briefdescription>
+<para>Processor type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="193" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1Cpu_1a06d34190956925239d3e5ed1defbe1ef" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::_brandIndex</definition>
+        <argsstring></argsstring>
+        <name>_brandIndex</name>
+        <briefdescription>
+<para>Brand index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="195" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1Cpu_1ac9df9d680100fe3f0e37b897743ff3ce" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::_flushCacheLineSize</definition>
+        <argsstring></argsstring>
+        <name>_flushCacheLineSize</name>
+        <briefdescription>
+<para>Flush cache line size in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="197" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1Cpu_1aab7d48c3c3ea2b32911d5ad540fcceb1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::_maxLogicalProcessors</definition>
+        <argsstring></argsstring>
+        <name>_maxLogicalProcessors</name>
+        <briefdescription>
+<para>Maximum number of addressable IDs for logical processors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="199" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1a5b0cf8f4b9f37dc51ebe48cdd1587ae3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::Cpu::Cpu</definition>
+        <argsstring>(const Cpu &amp;other)</argsstring>
+        <name>Cpu</name>
+        <param>
+          <type>const Cpu &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1a7ec057055414719dd893ff36298c19f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Cpu &amp;</type>
+        <definition>Cpu&amp; asmjit::x86x64::Cpu::operator=</definition>
+        <argsstring>(const Cpu &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const Cpu &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="147"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1af76b1f237433192dec42f3945fdefd3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::Cpu::Cpu</definition>
+        <argsstring>(uint32_t size=sizeof(Cpu))</argsstring>
+        <name>Cpu</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+          <defval>sizeof(Cpu)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="153" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1a6e175f7af3b02fdb98a3156298893198" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::getProcessorType</definition>
+        <argsstring>() const </argsstring>
+        <name>getProcessorType</name>
+        <briefdescription>
+<para>Get processor type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="160" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1a8334991af7c585223d358048a6fa685b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::getBrandIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getBrandIndex</name>
+        <briefdescription>
+<para>Get brand index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="165" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1a284d554dd136d4534050b288b79f214a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::getFlushCacheLineSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getFlushCacheLineSize</name>
+        <briefdescription>
+<para>Get flush cache line size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="170" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1aca6dc7b25ffe35defb1ecceede411637" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::Cpu::getMaxLogicalProcessors</definition>
+        <argsstring>() const </argsstring>
+        <name>getMaxLogicalProcessors</name>
+        <briefdescription>
+<para>Get maximum logical processors count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="175" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1Cpu_1ad5325f3b03d6871a8703b3adfcdd867b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Cpu *</type>
+        <definition>static const Cpu* asmjit::x86x64::Cpu::getHost</definition>
+        <argsstring>()</argsstring>
+        <name>getHost</name>
+        <briefdescription>
+<para>Get global instance of X86CpuInfo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="184" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1120">
+        <label>asmjit::x86x64::Cpu</label>
+        <childnode refid="1121" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>asmjit::BaseCpu</label>
+        <link refid="structasmjit_1_1BaseCpu"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1122">
+        <label>asmjit::x86x64::Cpu</label>
+        <childnode refid="1123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>asmjit::BaseCpu</label>
+        <link refid="structasmjit_1_1BaseCpu"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" line="146" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86cpu.h" bodystart="146" bodyend="200"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1a06d34190956925239d3e5ed1defbe1ef" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_brandIndex</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a6a8a82c2fe9c901f9699d2d7763664b9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_brandString</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a7a6d6d546880dd57a75074c45c17d868" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_coresCount</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1aae7f103029b2104b1e41f7371ae9ff55" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_family</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_features</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1ac9df9d680100fe3f0e37b897743ff3ce" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_flushCacheLineSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1aab7d48c3c3ea2b32911d5ad540fcceb1" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_maxLogicalProcessors</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a6b765b4c329d863af47baad664c4d1e6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_model</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1afd9922751e446bfb9917ffd327c658ec" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_processorType</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a63b1391eaf5c68084b6fe16d7c0354f5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_size</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a6bd94261fb02212d1cffd0f5c1d88baf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_stepping</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a495231592fbc008595461fbb2045b3d3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_vendorId</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a2242090cf8293bd1993836c88f644b0e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>_vendorString</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a79624b1c6b519d788be7063ab9d60179" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>addFeature</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a10728bb6f621fa11cb142f434d63078d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>BaseCpu</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1a5b0cf8f4b9f37dc51ebe48cdd1587ae3" prot="private" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>Cpu</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1af76b1f237433192dec42f3945fdefd3c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>Cpu</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a3f3bf31b69395a2874364a63b75e9ca6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>detectNumberOfCores</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1a8334991af7c585223d358048a6fa685b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getBrandIndex</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a8eb2dec2c8374dd40c7f590d4e724677" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getBrandString</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a2aac6d6744a3cd6bf4a5ca9ea38ef0fd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getCoresCount</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a86ee66b3bf7e8c623f140fa614262272" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getFamily</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1a284d554dd136d4534050b288b79f214a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getFlushCacheLineSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1ad5325f3b03d6871a8703b3adfcdd867b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getHost</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1aca6dc7b25ffe35defb1ecceede411637" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getMaxLogicalProcessors</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1ad3ed12c12bce38a12d1b42dc410c372d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getModel</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1a6e175f7af3b02fdb98a3156298893198" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getProcessorType</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1ae711d5fa18f161c7d2bad598af180190" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getStepping</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a27f71127d565689bbb7c2c8677fe89b5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getVendorId</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a1596633d850aed49f001d4be35e20384" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>getVendorString</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a7d362d56d07ee7e70be5288445943f19" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>hasFeature</name></member>
+      <member refid="structasmjit_1_1BaseCpu_1a24012635c8274f5c4079ee4cc42994a6a7296792e89b5105b60a793ff0d8ece12" prot="public" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>kFeaturesPerUInt32</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1Cpu_1a7ec057055414719dd893ff36298c19f5" prot="private" virt="non-virtual"><scope>asmjit::x86x64::Cpu</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

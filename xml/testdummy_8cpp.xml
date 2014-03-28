@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="testdummy_8cpp" kind="file">
+    <compoundname>testdummy.cpp</compoundname>
+    <includes refid="asmjit_8h" local="no">asmjit/asmjit.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="string_8h" local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1782">
+        <label>../base/globals.h</label>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1784">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1785">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1790">
+        <label>../base/codegen.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1800">
+        <label>base/lock.h</label>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1802">
+        <label>base/memorymanager.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1787">
+        <label>stdint.h</label>
+      </node>
+      <node id="1778">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1791">
+        <label>../base/error.h</label>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1773">
+        <label>asmjit/asmjit.h</label>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+      </node>
+      <node id="1794">
+        <label>../base/zone.h</label>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1783">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1775" relation="include">
+        </childnode>
+      </node>
+      <node id="1772">
+        <label>testdummy.cpp</label>
+        <link refid="testdummy.cpp"/>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+      </node>
+      <node id="1792">
+        <label>../base/logger.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1789">
+        <label>base/assembler.h</label>
+        <childnode refid="1790" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1780">
+        <label>../base/defs.h</label>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1788">
+        <label>limits.h</label>
+      </node>
+      <node id="1795">
+        <label>../base/podlist.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1801">
+        <label>pthread.h</label>
+      </node>
+      <node id="1796">
+        <label>../base/podvector.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1774">
+        <label>base.h</label>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+      </node>
+      <node id="1786">
+        <label>new</label>
+      </node>
+      <node id="1804">
+        <label>base/vmem.h</label>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1799">
+        <label>base/cpu.h</label>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1776">
+        <label>config.h</label>
+      </node>
+      <node id="1803">
+        <label>base/vectypes.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>../base/intutil.h</label>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>../base/runtime.h</label>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>host.h</label>
+        <childnode refid="1774" relation="include">
+        </childnode>
+      </node>
+      <node id="1775">
+        <label>build.h</label>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1786" relation="include">
+        </childnode>
+        <childnode refid="1787" relation="include">
+        </childnode>
+        <childnode refid="1788" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>stdio.h</label>
+      </node>
+      <node id="1779">
+        <label>string.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1798">
+        <label>../base/func.h</label>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1797">
+        <label>base/compiler.h</label>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="testdummy_8cpp_1a4b2210bf28605670ecc678f0c6f6cc8c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MyFunc)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>MyFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testdummy.cpp" line="17" bodyfile="/home/ryan/asmjit/src/app/test/testdummy.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="testdummy_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testdummy.cpp" line="19" bodyfile="/home/ryan/asmjit/src/app/test/testdummy.cpp" bodystart="19" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>used<sp/>as<sp/>a<sp/>dummy<sp/>test.<sp/>It&apos;s<sp/>changed<sp/>during<sp/>development.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;asmjit/asmjit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>C]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*MyFunc)(void);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit::host;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>JitRuntime<sp/>runtime;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1FileLogger" kindref="compound" tooltip="Logger that can log to standard C FILE* stream.">FileLogger</ref><sp/>logger(stderr);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>logger.setOption(<ref refid="group__asmjit__logging_1gga007dd7cdb93192608722cc9df95c5fe9a7ff6a6f61c2aef639a74af24aa2c709b" kindref="member" tooltip="Whether to output instructions also in binary form.">kLoggerOptionBinaryForm</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>Compiler<sp/>c(&amp;runtime);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>c.setLogger(&amp;logger);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>c.addFunc(kFuncConvHost,<sp/><ref refid="structasmjit_1_1FuncBuilder0" kindref="compound" tooltip="Function builder (no args).">FuncBuilder0&lt;void&gt;</ref>());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_1(c);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_2(c);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_3(c);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_4(c);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_5(c);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_6(c);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1Label" kindref="compound" tooltip="Label (jump target or data location).">Label</ref><sp/>L_7(c);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>GpVar<sp/>v1(c);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>GpVar<sp/>v2(c);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>c.bind(L_2);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>c.bind(L_3);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>c.jmp(L_1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>c.bind(L_5);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>c.mov(v1,<sp/>0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>c.bind(L_6);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>c.jmp(L_3);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>c.mov(v2,<sp/>1);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>c.jmp(L_1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>c.bind(L_4);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>c.jmp(L_2);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>c.bind(L_7);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>c.add(v1,<sp/>v2);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>c.bind(L_1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>c.ret();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>c.endFunc();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>MyFunc<sp/>func<sp/>=<sp/>asmjit_cast&lt;MyFunc&gt;(c.make());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>runtime.release((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)func);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/app/test/testdummy.cpp"/>
+  </compounddef>
+</doxygen>

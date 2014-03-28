@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionasmjit_1_1IntUtil_1_1Double" kind="union" prot="public">
+    <compoundname>asmjit::IntUtil::Double</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionasmjit_1_1IntUtil_1_1Double_1a4db90298ea07f58153970e9306557f64" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t asmjit::IntUtil::Double::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="60" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionasmjit_1_1IntUtil_1_1Double_1a274daf497727d36d9757e07dc8a258b3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double asmjit::IntUtil::Double::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="61" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/intutil.h" line="59" bodyfile="/home/ryan/asmjit/src/asmjit/base/intutil.h" bodystart="59" bodyend="62"/>
+    <listofallmembers>
+      <member refid="unionasmjit_1_1IntUtil_1_1Double_1a274daf497727d36d9757e07dc8a258b3" prot="public" virt="non-virtual"><scope>asmjit::IntUtil::Double</scope><name>d</name></member>
+      <member refid="unionasmjit_1_1IntUtil_1_1Double_1a4db90298ea07f58153970e9306557f64" prot="public" virt="non-virtual"><scope>asmjit::IntUtil::Double</scope><name>i</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1BaseRuntime" kind="struct" prot="public">
+    <compoundname>asmjit::BaseRuntime</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1JitRuntime" prot="public" virt="non-virtual">asmjit::JitRuntime</derivedcompoundref>
+    <includes local="no">runtime.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1a78850af73991e10b80b0737fa195f1e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::BaseRuntime::BaseRuntime</definition>
+        <argsstring>(const BaseRuntime &amp;other)</argsstring>
+        <name>BaseRuntime</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1aaefb33a1a3e883f511a79e33d9492756" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> &amp;</type>
+        <definition>BaseRuntime&amp; asmjit::BaseRuntime::operator=</definition>
+        <argsstring>(const BaseRuntime &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1afec48a986596a6b010b040a110b2d3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseRuntime::BaseRuntime</definition>
+        <argsstring>()</argsstring>
+        <name>BaseRuntime</name>
+        <briefdescription>
+<para>Create a <ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="40" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1accf2b5708b8308b615bf4e36eee41881" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::BaseRuntime::~BaseRuntime</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseRuntime</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="42" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1a63d5b09d80dc8fd313043e42ebb876a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint32_t</type>
+        <definition>virtual uint32_t asmjit::BaseRuntime::getStackAlignment</definition>
+        <argsstring>()=0</argsstring>
+        <name>getStackAlignment</name>
+        <briefdescription>
+<para>Get stack alignment of target runtime. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1a9ae1cf4d76caa0a7289aebeea4f299e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="structasmjit_1_1BaseCpu" kindref="compound">BaseCpu</ref> *</type>
+        <definition>virtual const BaseCpu* asmjit::BaseRuntime::getCpu</definition>
+        <argsstring>()=0</argsstring>
+        <name>getCpu</name>
+        <briefdescription>
+<para>Get CPU information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1ae2c4db9a7bbdba8ec11b2815333aabfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseRuntime::add</definition>
+        <argsstring>(void **dst, BaseAssembler *assembler)=0</argsstring>
+        <name>add</name>
+        <param>
+          <type>void **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> *</type>
+          <declname>assembler</declname>
+        </param>
+        <briefdescription>
+<para>Allocate memory for code generated in <emphasis>assembler</emphasis> and reloc it to the target location. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is universal allowing any preprocessing / postprocessing with code generated by <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> or <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref>. Because <ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> always uses <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> it&apos;s allowed to access only the <ref refid="structasmjit_1_1BaseAssembler" kindref="compound">BaseAssembler</ref> instance.</para><para>This method is always last step when using code generation. You can use it to allocate memory for JIT code, saving code to remote process or a file.</para><para>Status code, see kError. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1BaseRuntime_1a35ea4af08e571ad2410f5b1f3807a754" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Error</type>
+        <definition>virtual Error asmjit::BaseRuntime::release</definition>
+        <argsstring>(void *p)=0</argsstring>
+        <name>release</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Release memory allocated by add. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base runtime. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/runtime.h" line="32" bodyfile="/home/ryan/asmjit/src/asmjit/base/runtime.h" bodystart="32" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseRuntime_1ae2c4db9a7bbdba8ec11b2815333aabfe" prot="public" virt="pure-virtual"><scope>asmjit::BaseRuntime</scope><name>add</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1a78850af73991e10b80b0737fa195f1e1" prot="private" virt="non-virtual"><scope>asmjit::BaseRuntime</scope><name>BaseRuntime</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1afec48a986596a6b010b040a110b2d3bb" prot="public" virt="non-virtual"><scope>asmjit::BaseRuntime</scope><name>BaseRuntime</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1a9ae1cf4d76caa0a7289aebeea4f299e4" prot="public" virt="pure-virtual"><scope>asmjit::BaseRuntime</scope><name>getCpu</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1a63d5b09d80dc8fd313043e42ebb876a0" prot="public" virt="pure-virtual"><scope>asmjit::BaseRuntime</scope><name>getStackAlignment</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1aaefb33a1a3e883f511a79e33d9492756" prot="private" virt="non-virtual"><scope>asmjit::BaseRuntime</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1a35ea4af08e571ad2410f5b1f3807a754" prot="public" virt="pure-virtual"><scope>asmjit::BaseRuntime</scope><name>release</name></member>
+      <member refid="structasmjit_1_1BaseRuntime_1accf2b5708b8308b615bf4e36eee41881" prot="public" virt="virtual"><scope>asmjit::BaseRuntime</scope><name>~BaseRuntime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

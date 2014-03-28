@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="assembler_8cpp" kind="file">
+    <compoundname>assembler.cpp</compoundname>
+    <includes refid="assembler_8h" local="yes">../base/assembler.h</includes>
+    <includes refid="intutil_8h" local="yes">../base/intutil.h</includes>
+    <includes refid="memorymanager_8h" local="yes">../base/memorymanager.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <incdepgraph>
+      <node id="195">
+        <label>../base/globals.h</label>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="201">
+        <label>stdarg.h</label>
+      </node>
+      <node id="192">
+        <label>../base/codegen.h</label>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>../base/memorymanager.h</label>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>stdint.h</label>
+      </node>
+      <node id="199">
+        <label>stdlib.h</label>
+      </node>
+      <node id="207">
+        <label>../base/error.h</label>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>../base/zone.h</label>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>../base/apibegin.h</label>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>../base/logger.h</label>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>../base/assembler.h</label>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>../base/defs.h</label>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>assembler.cpp</label>
+        <link refid="assembler.cpp"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>limits.h</label>
+      </node>
+      <node id="211">
+        <label>../base/podlist.h</label>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>../base/podvector.h</label>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>new</label>
+      </node>
+      <node id="197">
+        <label>config.h</label>
+      </node>
+      <node id="194">
+        <label>../base/intutil.h</label>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>../base/runtime.h</label>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>../build.h</label>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>stdio.h</label>
+      </node>
+      <node id="200">
+        <label>string.h</label>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="assembler_8cpp_1a4885b81a3643f489bcb59697d21cb21d" prot="public" static="no">
+        <name>ASMJIT_EXPORTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" line="8" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="assembler_8cpp_1a2f3b7fca220397a5c9ca7a2e4e336eaa" prot="public" static="no">
+        <name>no</name>
+        <initializer>noOperand</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" line="247" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.cpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Export]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASMJIT_EXPORTS</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/assembler.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/intutil.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/memorymanager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependenceis<sp/>-<sp/>C]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structasmjit_1_1BaseAssembler_1a17bd49b8739839e750bcafd840329471" refkind="member"><highlight class="normal">BaseAssembler::BaseAssembler(<ref refid="structasmjit_1_1BaseRuntime" kindref="compound" tooltip="Base runtime.">BaseRuntime</ref>*<sp/>runtime)<sp/>:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen" kindref="compound" tooltip="Abstract class inherited by Assembler and Compiler.">CodeGen</ref>(runtime),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>_buffer(NULL),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>_end(NULL),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>_cursor(NULL),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>_trampolineSize(0),</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>_comment(NULL),</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>_unusedLinks(NULL)<sp/>{}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structasmjit_1_1BaseAssembler_1a04edcae62e921dd125c9c67d4d042d8e" refkind="member"><highlight class="normal"><ref refid="structasmjit_1_1BaseAssembler_1a04edcae62e921dd125c9c67d4d042d8e" kindref="member" tooltip="Destroy the BaseAssembler instance.">BaseAssembler::~BaseAssembler</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>::free(<ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Clear<sp/>/<sp/>Reset]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1a9473ddc146797832aac3aa21e1948f8b" kindref="member" tooltip="Clear everything, but not deallocate buffers.">BaseAssembler::clear</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb" kindref="member" tooltip="Called by clear() and reset() to clear all data related to derived class implementation.">_purge</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1a44e1d6769b5e0110570bde93e6780b99" kindref="member" tooltip="Reset everything (means also to free all buffers).">BaseAssembler::reset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb" kindref="member" tooltip="Called by clear() and reset() to clear all data related to derived class implementation.">_purge</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" kindref="member" tooltip="Zone memory allocator.">_zoneAllocator</ref>.<ref refid="structasmjit_1_1Zone_1a253ae00df345d8aa7d2c6989496ac986" kindref="member" tooltip="Free all allocated memory at once.">reset</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>::free(<ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1afa99ede2f1e862ef77cbe5e8e34fafd4" kindref="member" tooltip="The end of the buffer (points to the first invalid byte).">_end</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1ad9d44d8890ff85a6d2a8a4703c4294c5" kindref="member" tooltip="The current position in code _buffer.">_cursor</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1a99668159a21d591f41ed803a17475756" kindref="member" tooltip="Clear vector data and free internal buffer.">reset</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1affeabe44cabed328b9dcc6a0096e97d5" kindref="member" tooltip="Relocations data.">_relocData</ref>.<ref refid="structasmjit_1_1PodVector_1a99668159a21d591f41ed803a17475756" kindref="member" tooltip="Clear vector data and free internal buffer.">reset</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb" kindref="member" tooltip="Called by clear() and reset() to clear all data related to derived class implementation.">BaseAssembler::_purge</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" kindref="member" tooltip="Zone memory allocator.">_zoneAllocator</ref>.<ref refid="structasmjit_1_1Zone_1a96ea6f474546d09502ad270af0b82422" kindref="member" tooltip="Free all allocated memory except first block that remains for reuse.">clear</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1ad9d44d8890ff85a6d2a8a4703c4294c5" kindref="member" tooltip="The current position in code _buffer.">_cursor</ref><sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a4fb02f71d3669ae2345645490a4b1539" kindref="member" tooltip="Options for the next generated instruction (only 8-bits used).">_options</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1abf44fdf0fdc0436b8fc7aa2b5bbbff7a" kindref="member" tooltip="Size of possible trampolines.">_trampolineSize</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a7e1d16799822fbe74887cbe830046af5" kindref="member" tooltip="Inline comment that will be logged by the next instruction and set to NULL.">_comment</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1acd0096db6e6bcef8bb582bbe716db1f3" kindref="member" tooltip="Linked list of unused links (LabelLink* structures)">_unusedLinks</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1abf9316ca4654bb99e739258a1c06d87c" kindref="member" tooltip="Clear vector data, but don&amp;#39;t free an internal buffer.">clear</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1affeabe44cabed328b9dcc6a0096e97d5" kindref="member" tooltip="Relocations data.">_relocData</ref>.<ref refid="structasmjit_1_1PodVector_1abf9316ca4654bb99e739258a1c06d87c" kindref="member" tooltip="Clear vector data, but don&amp;#39;t free an internal buffer.">clear</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1a20674b359509b562f6079bfef6342692" kindref="member" tooltip="Clear the last error code.">clearError</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Buffer]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="structasmjit_1_1BaseAssembler_1a927cad7e8b3831394b39c870a4c04ad0" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a927cad7e8b3831394b39c870a4c04ad0" kindref="member" tooltip="Grow the internal buffer.">BaseAssembler::_grow</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a014dad0a0895bc1180cc8dea1bdcbac9" kindref="member" tooltip="Get capacity of the code buffer.">getCapacity</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>after<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3" kindref="member" tooltip="Get the current offset in the buffer (_cursor - _buffer).">getOffset</ref>()<sp/>+<sp/>n;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Overflow.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&gt;<sp/>IntUtil::maxUInt&lt;uintptr_t&gt;()<sp/>-<sp/>capacity)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" kindref="member" tooltip="Heap memory allocation failed.">kErrorNoHeapMemory</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Grow<sp/>is<sp/>called<sp/>when<sp/>allocation<sp/>is<sp/>needed,<sp/>so<sp/>it<sp/>shouldn&apos;t<sp/>happen,<sp/>but<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>other<sp/>hand<sp/>it<sp/>is<sp/>simple<sp/>to<sp/>catch<sp/>and<sp/>it&apos;s<sp/>not<sp/>an<sp/>error.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(after<sp/>&lt;=<sp/>capacity)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(capacity<sp/>&lt;<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" kindref="member" tooltip="Host memory allocator overhead.">kMemAllocOverhead</ref>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>capacity<sp/>=<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" kindref="member" tooltip="Host memory allocator overhead.">kMemAllocOverhead</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>capacity<sp/>+=<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" kindref="member" tooltip="Host memory allocator overhead.">kMemAllocOverhead</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>oldCapacity<sp/>=<sp/>capacity;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(capacity<sp/>&lt;<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4deaf57f10b0f67dc1de5f70188fc8b35dd6" kindref="member" tooltip="Memory grow threshold.">kMemAllocGrowMax</ref>)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>capacity<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>capacity<sp/>+=<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4deaf57f10b0f67dc1de5f70188fc8b35dd6" kindref="member" tooltip="Memory grow threshold.">kMemAllocGrowMax</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Overflow.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(oldCapacity<sp/>&gt;<sp/>capacity)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" kindref="member" tooltip="Heap memory allocation failed.">kErrorNoHeapMemory</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(capacity<sp/>-<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" kindref="member" tooltip="Host memory allocator overhead.">kMemAllocOverhead</ref><sp/>&lt;<sp/>after);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>capacity<sp/>-=<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea296578ff073ac37c73f692864a529129" kindref="member" tooltip="Host memory allocator overhead.">kMemAllocOverhead</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1a5c0f2e4a9e73a9738b8703ad5b0f67b1" kindref="member" tooltip="Reserve the internal buffer to at least n bytes.">_reserve</ref>(capacity);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structasmjit_1_1BaseAssembler_1a5c0f2e4a9e73a9738b8703ad5b0f67b1" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a5c0f2e4a9e73a9738b8703ad5b0f67b1" kindref="member" tooltip="Reserve the internal buffer to at least n bytes.">BaseAssembler::_reserve</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a014dad0a0895bc1180cc8dea1bdcbac9" kindref="member" tooltip="Get capacity of the code buffer.">getCapacity</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&lt;=<sp/>capacity)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>uint8_t*<sp/>newBuffer;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>newBuffer<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(::malloc(n));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>newBuffer<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(::realloc(<ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref>,<sp/>n));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newBuffer<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" kindref="member" tooltip="Heap memory allocation failed.">kErrorNoHeapMemory</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a3f019fb35781fb3f45b791387828ada3" kindref="member" tooltip="Get the current offset in the buffer (_cursor - _buffer).">getOffset</ref>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref><sp/>=<sp/>newBuffer;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1afa99ede2f1e862ef77cbe5e8e34fafd4" kindref="member" tooltip="The end of the buffer (points to the first invalid byte).">_end</ref><sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a76e3f3c869dd14619eb27b5989b2bcf4" kindref="member" tooltip="Buffer where the code is emitted (either live or temporary).">_buffer</ref><sp/>+<sp/>n;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1ad9d44d8890ff85a6d2a8a4703c4294c5" kindref="member" tooltip="The current position in code _buffer.">_cursor</ref><sp/>=<sp/>newBuffer<sp/>+<sp/>offset;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Label]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">Error<sp/>BaseAssembler::_registerIndexedLabels(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1a11d6044c74254f4491ea6c55e17da9a4" kindref="member" tooltip="Get length.">getLength</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&lt;<sp/>i)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">_grow</ref>(index<sp/>-<sp/>i)<sp/>!=<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" kindref="member" tooltip="Heap memory allocation failed.">kErrorNoHeapMemory</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1LabelData" kindref="compound" tooltip="Label data.">LabelData</ref><sp/>data;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>data.<ref refid="structasmjit_1_1LabelData_1ab0829525938be864c64e750e1fd8536b" kindref="member" tooltip="Label offset.">offset</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>data.<ref refid="structasmjit_1_1LabelData_1a09d4b779d9d2d893004b9a0a401f172a" kindref="member" tooltip="Label links chain.">links</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1aad46d8f3462ff753b7405e9e0c028264" kindref="member" tooltip="Append item to vector.">append</ref>(data);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(++i<sp/>&lt;<sp/>index);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">Error<sp/>BaseAssembler::_newLabel(Label*<sp/>dst)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>dst-&gt;_label.op<sp/>=<sp/><ref refid="group__asmjit__base_1gga12e36dc942976d5794c1e88619b5e8cba2dcaa04fd5ea217510587264bb4ecac8" kindref="member" tooltip="Operand is a label.">kOperandTypeLabel</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>dst-&gt;_label.size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>dst-&gt;_label.id<sp/>=<sp/><ref refid="structasmjit_1_1OperandUtil_1ae37a451a0be7a004ea5c802073161601" kindref="member" tooltip="Make label id.">OperandUtil::makeLabelId</ref>(static_cast&lt;uint32_t&gt;(<ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1a11d6044c74254f4491ea6c55e17da9a4" kindref="member" tooltip="Get length.">getLength</ref>()));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>LabelData<sp/>data;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>data.<ref refid="structasmjit_1_1LabelData_1ab0829525938be864c64e750e1fd8536b" kindref="member" tooltip="Label offset.">offset</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>data.links<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1BaseAssembler_1a0d432a605983c347cf9c7aade8652918" kindref="member" tooltip="Labels data.">_labels</ref>.<ref refid="structasmjit_1_1PodVector_1aad46d8f3462ff753b7405e9e0c028264" kindref="member" tooltip="Append item to vector.">append</ref>(data)<sp/>!=<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>_NoMemory;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">_NoMemory:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>dst-&gt;_label.id<sp/>=<sp/><ref refid="group__asmjit__base_1gga0e7868a21bae2d1653ab275d6020e4dea4439703abd648103096349a5066d87fa" kindref="member" tooltip="Invalid value or operand id.">kInvalidValue</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(<ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" kindref="member" tooltip="Heap memory allocation failed.">kErrorNoHeapMemory</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">LabelLink*<sp/>BaseAssembler::_newLabelLink()<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>LabelLink*<sp/>link<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1acd0096db6e6bcef8bb582bbe716db1f3" kindref="member" tooltip="Linked list of unused links (LabelLink* structures)">_unusedLinks</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1acd0096db6e6bcef8bb582bbe716db1f3" kindref="member" tooltip="Linked list of unused links (LabelLink* structures)">_unusedLinks</ref><sp/>=<sp/>link-&gt;<ref refid="structasmjit_1_1LabelLink_1aa70a89483ab7974c8d6f38be988fe902" kindref="member" tooltip="Previous link.">prev</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>link<sp/>=<sp/><ref refid="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" kindref="member" tooltip="Zone memory allocator.">_zoneAllocator</ref>.<ref refid="structasmjit_1_1Zone_1aff1f5ac43e4a8c42a7dbc5cf8e0b7a47" kindref="member" tooltip="Like alloc(), but returns T*.">allocT</ref>&lt;LabelLink&gt;();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>link-&gt;prev<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>link-&gt;offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>link-&gt;displacement<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>link-&gt;relocId<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>link;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Embed]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="structasmjit_1_1BaseAssembler_1a2bfa219dec130116f562581fce67c05b" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a2bfa219dec130116f562581fce67c05b" kindref="member" tooltip="Embed data into the code buffer.">BaseAssembler::embed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/>uint32_t<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1BaseAssembler_1abdaca957b0afeb3188d4f67a4f4bab8c" kindref="member" tooltip="Get the number of remaining bytes (space between cursor and the end of the buffer).">getRemainingSpace</ref>()<sp/>&lt;<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>Error<sp/>error<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a927cad7e8b3831394b39c870a4c04ad0" kindref="member" tooltip="Grow the internal buffer.">_grow</ref>(size);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error<sp/>!=<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(error);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>uint8_t*<sp/>cursor<sp/>=<sp/><ref refid="structasmjit_1_1BaseAssembler_1a68d96442996aead68a55393b6fa21703" kindref="member" tooltip="Get the current position in the buffer.">getCursor</ref>();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>::memcpy(cursor,<sp/>data,<sp/>size);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1BaseAssembler_1abad761abd9733070f7fc6085082ebdeb" kindref="member" tooltip="Set the current position in the buffer.">setCursor</ref>(cursor<sp/>+<sp/>size);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" kindref="member" tooltip="Logger.">_logger</ref>)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" kindref="member" tooltip="Logger.">_logger</ref>-&gt;<ref refid="structasmjit_1_1BaseLogger_1a70ef8f6cead66ec49a1258041a43c3fc" kindref="member" tooltip="Log binary data.">logBinary</ref>(kLoggerStyleData,<sp/>data,<sp/>size);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Make]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="structasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e" kindref="member" tooltip="Make is a convenience method to make and relocate the current code into the associated runtime...">BaseAssembler::make</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>nothing<sp/>on<sp/>error<sp/>condition<sp/>or<sp/>if<sp/>no<sp/>instruction<sp/>has<sp/>been<sp/>emitted.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" kindref="member" tooltip="Last error code.">_error</ref><sp/>!=<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref><sp/>||<sp/><ref refid="structasmjit_1_1BaseAssembler_1acea24f6a20a4abb52af3d0cdfb2b3d9d" kindref="member" tooltip="Get current offset in buffer (same as getOffset() + getTramplineSize()).">getCodeSize</ref>()<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>Error<sp/>error<sp/>=<sp/><ref refid="structasmjit_1_1CodeGen_1a64fd203c2592221acd076eb8800acfea" kindref="member" tooltip="Runtime.">_runtime</ref>-&gt;<ref refid="structasmjit_1_1BaseRuntime_1ae2c4db9a7bbdba8ec11b2815333aabfe" kindref="member" tooltip="Allocate memory for code generated in assembler and reloc it to the target location.">add</ref>(&amp;p,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error<sp/>!=<sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member" tooltip="Set last error code and propagate it through the error handler.">setError</ref>(error);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::BaseAssembler<sp/>-<sp/>Emit<sp/>(Helpers)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>no<sp/>noOperand</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>no,<sp/>no,<sp/>no,<sp/>no);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="structasmjit_1_1BaseAssembler_1a80b671098d535dddfb870ad23e6566fa" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o0)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>o0,<sp/>no,<sp/>no,<sp/>no);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="structasmjit_1_1BaseAssembler_1ac7d3486553f0d1095f56007847752e8e" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o1)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>o0,<sp/>o1,<sp/>no,<sp/>no);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="structasmjit_1_1BaseAssembler_1ae3c9c97b17af0014a11c8ba964212515" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o2)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>o0,<sp/>o1,<sp/>o2,<sp/>no);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="structasmjit_1_1BaseAssembler_1a62b2481ecc60d97da13d56c06c5092db" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>o0_)<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/><ref refid="structasmjit_1_1Imm" kindref="compound" tooltip="Immediate operand.">Imm</ref>(o0_),<sp/>no,<sp/>no,<sp/>no);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="structasmjit_1_1BaseAssembler_1adb0cc4072ca42441b6fb9ebc9f7eae8d" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>o1_)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>o0,<sp/><ref refid="structasmjit_1_1Imm" kindref="compound" tooltip="Immediate operand.">Imm</ref>(o1_),<sp/>no,<sp/>no);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structasmjit_1_1BaseAssembler_1a13d0f4273ae6afeb8e6078a8609ba9f6" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>o2_)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>o0,<sp/>o1,<sp/><ref refid="structasmjit_1_1Imm" kindref="compound" tooltip="Immediate operand.">Imm</ref>(o2_),<sp/>no);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="structasmjit_1_1BaseAssembler_1a30b017c05a83ddc84467df318a443a03" refkind="member"><highlight class="normal">Error<sp/><ref refid="structasmjit_1_1BaseAssembler_1a60de9faf6ee0db06d416085299149969" kindref="member" tooltip="Emit an instruction.">BaseAssembler::emit</ref>(uint32_t<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1Operand" kindref="compound" tooltip="Operand can contain register, memory location, immediate, or label.">Operand</ref>&amp;<sp/>o2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>o3_)<sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseAssembler_1acfe8b34d536e58e0197bb9de6d0409f9" kindref="member" tooltip="Emit an instruction (virtual).">_emit</ref>(code,<sp/>o0,<sp/>o1,<sp/>o2,<sp/><ref refid="structasmjit_1_1Imm" kindref="compound" tooltip="Immediate operand.">Imm</ref>(o3_));</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>no</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/assembler.cpp"/>
+  </compounddef>
+</doxygen>

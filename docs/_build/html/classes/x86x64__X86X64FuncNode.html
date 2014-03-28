@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::X86X64FuncNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::XmmReg" href="x86x64__XmmReg.html" />
+    <link rel="prev" title="x86x64::X86X64FuncDecl" href="x86x64__X86X64FuncDecl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__XmmReg.html" title="x86x64::XmmReg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__X86X64FuncDecl.html" title="x86x64::X86X64FuncDecl"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-x86x64funcnode">
+<h1>x86x64::X86X64FuncNode<a class="headerlink" href="#x86x64-x86x64funcnode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::X86X64FuncNode</strong></div>
+<div class="line"><em>#include &lt;x86compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86/X64 function node. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ab821939a8691f155afabb5e10f35550f"></span><div class="line-block">
+<div class="line"> <strong>X86X64FuncNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode"><em>X86X64FuncNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a43d3755fea5efcd9c856e726fdffd978"></span><div class="line-block">
+<div class="line"> <strong>~X86X64FuncNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode"><em>X86X64FuncNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a0303ecf0f0c00c5c6f0c94057bc6cce3"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl"><em>X86X64FuncDecl</em></a>  * <strong>getDecl</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function declaration as <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl"><em>X86X64FuncDecl</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1aad9bb401fde773a43deb547198b5ffd7"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="VarData.html#asmjitstructasmjit_1_1VarData"><em>VarData</em></a>  * <strong>getArg</strong>(uint32_t i)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get argument. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ad8b58a76528833ac3f6322b6be63893d"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSaveRestoreRegs</strong>(uint32_t c)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get registers which have to be saved in prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ae2c06ad617140b029cbcf06091d4975d"></span><div class="line-block">
+<div class="line">uint32_t <strong>getAlignStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size needed to align stack back to the nature alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ae7fb8e3055635ea099ccb7b3eed1788f"></span><div class="line-block">
+<div class="line">void <strong>setAlignStackSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set stack size needed to align stack back to the nature alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a09068d3d0e16fdce9cb391b69e7305b8"></span><div class="line-block">
+<div class="line">uint32_t <strong>getAlignedMemStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get aligned stack size used by variables and memory allocated on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1adb4613d7863443f565b836f0ac686e27"></span><div class="line-block">
+<div class="line">uint32_t <strong>getPushPopStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size used by push/pop sequences in prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ab315d64415c75e447f1872aa367ffbe0"></span><div class="line-block">
+<div class="line">void <strong>setPushPopStackSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set stack size used by push/pop sequences in prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a5bd65355333872182278d15f6d9e634e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getMoveStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size used by mov sequences in prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a21a0d0e029fb874744c06048d9f140c4"></span><div class="line-block">
+<div class="line">void <strong>setMoveStackSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set stack size used by mov sequences in prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a25b991d3971586209082faa6831a9888"></span><div class="line-block">
+<div class="line">uint32_t <strong>getExtraStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get extra stack size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1afdda8ef60b20251cd1d10cb037373c35"></span><div class="line-block">
+<div class="line">void <strong>setExtraStackSize</strong>(uint32_t s)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set extra stack size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a677b24096c9ed3d5bf2265f87c6096be"></span><div class="line-block">
+<div class="line">bool <strong>hasStackFrameReg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the function has stack frame register. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd><p class="first">Stack frame register can be used for both - aligning purposes or generating standard prolog/epilog sequence.</p>
+<p class="last">Used only when stack is misaligned. </p>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a2f8155b0202b35c24abc99e0fd7ed51f"></span><div class="line-block">
+<div class="line">uint32_t <strong>getStackFrameRegIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack frame register index. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Used only when stack is misaligned. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1aff37a33f8ab799abb51099cadc623f9c"></span><div class="line-block">
+<div class="line">bool <strong>isStackFrameRegPreserved</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the stack frame register is preserved. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Used only when stack is misaligned. </dd>
+</dl>
+</p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ab7b1e98c1ad850d01a07cfa735cc40a3"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncDecl"><em>X86X64FuncDecl</em></a> <strong>_x86Decl</strong></p>
+<blockquote>
+<div><p>X86 function decl. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a0477f1f0d41e21f895ab853613ba8104"></span><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1RegMask"><em>RegMask</em></a> <strong>_saveRestoreRegs</strong></p>
+<blockquote>
+<div><p>Registers which must be saved/restored in prolog/epilog. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1aa183763933ff4c41f98cb8b4f6a3b405"></span>uint32_t <strong>_alignStackSize</strong></p>
+<blockquote>
+<div><p>Stack size needed to align function back to the nature alignment. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1af4c6af5e71ca08a8cb955fd433d5f7da"></span>uint32_t <strong>_alignedMemStackSize</strong></p>
+<blockquote>
+<div><p>Like <a class="reference internal" href="FuncNode.html#asmjitstructasmjit_1_1FuncNode_1a73d3f50ace864ac626582280cacc3d21"><em>_memStackSize</em></a>, but aligned. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a204254fc98c3cc76c611177b0a67e93a"></span>uint32_t <strong>_pushPopStackSize</strong></p>
+<blockquote>
+<div><p>Stack required for push/pop in prolog/epilog (X86/X64 specific). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ad3a4e4a7f4111474ce984ac3bb249165"></span>uint32_t <strong>_moveStackSize</strong></p>
+<blockquote>
+<div><p>Stack required for movs in prolog/epilog (X86/X64 specific). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a45d9f6f2ba1dd317864418ab278d058f"></span>uint32_t <strong>_extraStackSize</strong></p>
+<blockquote>
+<div><p>Stack required to put extra data (for example function arguments when manually aligning to requested alignment). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ae689a4bf5827463506735012d66cb798"></span>uint8_t <strong>_stackFrameRegIndex</strong></p>
+<blockquote>
+<div><p>Stack frame register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1afc2ca4f52a741090bb014df1f1cfe23a"></span>uint8_t <strong>_isStackFrameRegPreserved</strong></p>
+<blockquote>
+<div><p>Whether the stack frame register is preserved. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1af421421f6a04ee7f044a57c041b7ccf2"></span>uint8_t <strong>_stackFrameCopyGpIndex</strong>[6]</p>
+<blockquote>
+<div><p>Gp registers indexes that can be used to copy function arguments to a new location in case we are doing manual stack alignment. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1ac4b7ac768250c6c34c7d7f8a754203fb"></span><div class="line-block">
+<div class="line"> <strong>X86X64FuncNode</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode"><em>X86X64FuncNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode_1a63609ec7a418a2678738f370ab00790c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode"><em>X86X64FuncNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86X64FuncNode"><em>X86X64FuncNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__X86X64FuncDecl.html"
+                        title="previous chapter">x86x64::X86X64FuncDecl</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__XmmReg.html"
+                        title="next chapter">x86x64::XmmReg</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__X86X64FuncNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__XmmReg.html" title="x86x64::XmmReg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__X86X64FuncDecl.html" title="x86x64::X86X64FuncDecl"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

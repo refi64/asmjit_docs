@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::X86X64FuncDecl</compoundname>
+    <basecompoundref refid="structasmjit_1_1FuncDecl" prot="public" virt="non-virtual">asmjit::FuncDecl</basecompoundref>
+    <includes local="no">x86func.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a797876f9f4b25b5e77dae0655fbf6e3b" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::X86X64FuncDecl::_used</definition>
+        <argsstring></argsstring>
+        <name>_used</name>
+        <briefdescription>
+<para>Used registers . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="471" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1ab3db2e0b41b6102046d199a97aecf23a" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::X86X64FuncDecl::_passed</definition>
+        <argsstring></argsstring>
+        <name>_passed</name>
+        <briefdescription>
+<para>Passed registers (defined by the calling convention). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="474" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a365c29d4d4828f6bb6ac06ba30d46f4a" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::X86X64FuncDecl::_preserved</definition>
+        <argsstring></argsstring>
+        <name>_preserved</name>
+        <briefdescription>
+<para>Preserved registers (defined by the calling convention). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="476" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a1cdfbec4850670bf589fad5d3bf711b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::X86X64FuncDecl::_passedOrderGp[kFuncArgCount]</definition>
+        <argsstring>[kFuncArgCount]</argsstring>
+        <name>_passedOrderGp</name>
+        <briefdescription>
+<para>Order of registers defined to pass function arguments (Gp). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="479" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a98314f872dfed04924b16462e70645ca" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::x86x64::X86X64FuncDecl::_passedOrderXmm[kFuncArgCount]</definition>
+        <argsstring>[kFuncArgCount]</argsstring>
+        <name>_passedOrderXmm</name>
+        <briefdescription>
+<para>Order of registers defined to pass function arguments (Xmm). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="481" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a183658bcb279d5fb8e5d1114ce0932d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64FuncDecl::X86X64FuncDecl</definition>
+        <argsstring>()</argsstring>
+        <name>X86X64FuncDecl</name>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound">X86X64FuncDecl</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="412" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="412" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9146b67b0c55570b25ff4c820b4c6d19" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncDecl::getUsed</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>getUsed</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get used registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The result depends on the function calling convention AND the function prototype. Returned mask contains only registers actually used to pass function arguments. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="423" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="423" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1af3b4eb44920de03d579bbc99565e12a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncDecl::getPassed</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>getPassed</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get passed registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The result depends on the function calling convention used; the prototype of the function doesn&apos;t affect the mask returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="429" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="429" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a89c122c4b7aa0ae5c75fa8328384781c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86X64FuncDecl::getPreserved</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>getPreserved</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get preserved registers (mask). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The result depends on the function calling convention used; the prototype of the function doesn&apos;t affect the mask returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="435" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="435" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1af50fa5badee216b6d448ac658aa21b4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* asmjit::x86x64::X86X64FuncDecl::getPassedOrderGp</definition>
+        <argsstring>() const </argsstring>
+        <name>getPassedOrderGp</name>
+        <briefdescription>
+<para>Get ther order of passed registers (Gp). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The result depends on the function calling convention used; the prototype of the function doesn&apos;t affect the mask returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="441" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="441" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9826dd8f4585ba04971b0bf9fddf38e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* asmjit::x86x64::X86X64FuncDecl::getPassedOrderXmm</definition>
+        <argsstring>() const </argsstring>
+        <name>getPassedOrderXmm</name>
+        <briefdescription>
+<para>Get ther order of passed registers (Xmm). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The result depends on the function calling convention used; the prototype of the function doesn&apos;t affect the mask returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="447" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="447" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1acd36f14135ae05941744899d5f08b7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>ASMJIT_API Error asmjit::x86x64::X86X64FuncDecl::setPrototype</definition>
+        <argsstring>(uint32_t conv, const FuncPrototype &amp;p)</argsstring>
+        <name>setPrototype</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>conv</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1FuncPrototype" kindref="compound">FuncPrototype</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Set function prototype. </para>        </briefdescription>
+        <detaileddescription>
+<para>This will set function calling convention and setup arguments variables.</para><para><simplesect kind="note"><para>This function will allocate variables, it can be called only once. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="458"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9c5f59d8752db5fe7387fbbabc4a119b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>ASMJIT_API void asmjit::x86x64::X86X64FuncDecl::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="464"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86 function, including calling convention, arguments and their register indices or stack positions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1298">
+        <label>asmjit::FuncDecl</label>
+        <link refid="structasmjit_1_1FuncDecl"/>
+      </node>
+      <node id="1297">
+        <label>asmjit::x86x64::X86X64FuncDecl</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl"/>
+        <childnode refid="1298" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1301">
+        <label>asmjit::FuncInOut</label>
+        <link refid="structasmjit_1_1FuncInOut"/>
+      </node>
+      <node id="1302">
+        <label>asmjit::x86x64::RegMask</label>
+        <link refid="structasmjit_1_1x86x64_1_1RegMask"/>
+      </node>
+      <node id="1300">
+        <label>asmjit::FuncDecl</label>
+        <link refid="structasmjit_1_1FuncDecl"/>
+        <childnode refid="1301" relation="usage">
+          <edgelabel>_retList</edgelabel>
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="1299">
+        <label>asmjit::x86x64::X86X64FuncDecl</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl"/>
+        <childnode refid="1300" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1302" relation="usage">
+          <edgelabel>_used</edgelabel>
+          <edgelabel>_preserved</edgelabel>
+          <edgelabel>_passed</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86func.h" line="406" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86func.h" bodystart="406" bodyend="482"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1FuncDecl_1ad4eb51ba76eb1b55baeb4e5e26c5fb4c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_argCount</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1aff3fb03a650c4919f003f03d5f80332f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_argList</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1abef4b2387f8b5a671ce2398f45ad9a86" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_argStackSize</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1af2d18e0a1749d64553d1d8b22deed836" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_calleePopsStack</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a5782543f71c49198a0a066b74f61f194" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_convention</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a80bd04b9c80f76e8e1867b0759102a31" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_direction</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1ab3db2e0b41b6102046d199a97aecf23a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_passed</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a1cdfbec4850670bf589fad5d3bf711b9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_passedOrderGp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a98314f872dfed04924b16462e70645ca" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_passedOrderXmm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a365c29d4d4828f6bb6ac06ba30d46f4a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_preserved</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a0691b53275ed119a0b06e7def430f051" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_redZoneSize</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a7fc1348c47876dd81f4cadbf8eaf1e14" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_reserved0</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a8e068d552d8c03ee4d12ac8cec580725" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_retCount</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a511f2df7f8dd1b102ebec16d3dbc0397" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_retList</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a211c52c74f2da513a76dfe9e748fbd4d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_spillZoneSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a797876f9f4b25b5e77dae0655fbf6e3b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>_used</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a6fb100b2c26ef842ef3ca957416003ef" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a12cff01acb1e8d52f383d635969debcb" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a256dfc25b9980a7571c13c4dd6d31e8e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getArgCount</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a56befde525f1128d408cf19474c886ae" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getArgList</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a168c812ff405cf32eb11e48e067fbcdf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getArgList</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a09c52cc8a86a04056a87e7e83cc9934f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getArgStackSize</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1ac410370c89f4dbaa1b0be10fcf3d4b0b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getCalleePopsStack</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a42ec8dca10052988d6e0a6aec9abf8c9" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getConvention</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1ac80843c1a79f2594625c3732dd8913ae" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getDirection</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1af3b4eb44920de03d579bbc99565e12a2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getPassed</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1af50fa5badee216b6d448ac658aa21b4c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getPassedOrderGp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9826dd8f4585ba04971b0bf9fddf38e4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getPassedOrderXmm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a89c122c4b7aa0ae5c75fa8328384781c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getPreserved</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1af18d05e17d59952aaa42a277680994ea" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getRedZoneSize</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a053aa0d7eea2e19d62313529d038eb34" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getRet</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a715f71c74a2dae3aa4c86e5d078b1962" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getRet</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a845d93fd499fb8cad4afc79242a954ac" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getRetCount</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a76cb13176e0ee3e9e4281ffe4856342e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getSpillZoneSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9146b67b0c55570b25ff4c820b4c6d19" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>getUsed</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1a6ff6556e621a2c7d833fb239e40a260a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>hasRet</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a9c5f59d8752db5fe7387fbbabc4a119b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1FuncDecl_1ad824c3998ae211ead00657000228443e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>resetArg</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1acd36f14135ae05941744899d5f08b7d7" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>setPrototype</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl_1a183658bcb279d5fb8e5d1114ce0932d1" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64FuncDecl</scope><name>X86X64FuncDecl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

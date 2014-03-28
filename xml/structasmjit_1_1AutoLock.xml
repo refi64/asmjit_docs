@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1AutoLock" kind="struct" prot="public">
+    <compoundname>asmjit::AutoLock</compoundname>
+    <includes local="no">lock.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1AutoLock_1aab31b23c4f118a7a92f102a9480b3388" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Lock" kindref="compound">Lock</ref> &amp;</type>
+        <definition>Lock&amp; asmjit::AutoLock::_target</definition>
+        <argsstring></argsstring>
+        <name>_target</name>
+        <briefdescription>
+<para>Pointer to target (lock). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/lock.h" line="121" bodyfile="/home/ryan/asmjit/src/asmjit/base/lock.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1AutoLock_1aca7fcfc93654531277f962269ba36b0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::AutoLock::AutoLock</definition>
+        <argsstring>(const AutoLock &amp;other)</argsstring>
+        <name>AutoLock</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1AutoLock" kindref="compound">AutoLock</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/lock.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1AutoLock_1abf9bd01af9715048fa28a944b486de6d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1AutoLock" kindref="compound">AutoLock</ref> &amp;</type>
+        <definition>AutoLock&amp; asmjit::AutoLock::operator=</definition>
+        <argsstring>(const AutoLock &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1AutoLock" kindref="compound">AutoLock</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/lock.h" line="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1AutoLock_1a4fc6da5001ddd0f173847539e038c6a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::AutoLock::AutoLock</definition>
+        <argsstring>(Lock &amp;target)</argsstring>
+        <name>AutoLock</name>
+        <param>
+          <type><ref refid="structasmjit_1_1Lock" kindref="compound">Lock</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Locks <emphasis>target</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/lock.h" line="107" bodyfile="/home/ryan/asmjit/src/asmjit/base/lock.h" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1AutoLock_1a17daf9f66abf9a30a8d5b4a6b26fc744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::AutoLock::~AutoLock</definition>
+        <argsstring>()</argsstring>
+        <name>~AutoLock</name>
+        <briefdescription>
+<para>Unlocks target. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/lock.h" line="112" bodyfile="/home/ryan/asmjit/src/asmjit/base/lock.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scope auto locker. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="611">
+        <label>asmjit::Lock</label>
+        <link refid="structasmjit_1_1Lock"/>
+      </node>
+      <node id="610">
+        <label>asmjit::AutoLock</label>
+        <link refid="structasmjit_1_1AutoLock"/>
+        <childnode refid="611" relation="usage">
+          <edgelabel>_target</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/lock.h" line="99" bodyfile="/home/ryan/asmjit/src/asmjit/base/lock.h" bodystart="99" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1AutoLock_1aab31b23c4f118a7a92f102a9480b3388" prot="public" virt="non-virtual"><scope>asmjit::AutoLock</scope><name>_target</name></member>
+      <member refid="structasmjit_1_1AutoLock_1aca7fcfc93654531277f962269ba36b0c" prot="private" virt="non-virtual"><scope>asmjit::AutoLock</scope><name>AutoLock</name></member>
+      <member refid="structasmjit_1_1AutoLock_1a4fc6da5001ddd0f173847539e038c6a1" prot="public" virt="non-virtual"><scope>asmjit::AutoLock</scope><name>AutoLock</name></member>
+      <member refid="structasmjit_1_1AutoLock_1abf9bd01af9715048fa28a944b486de6d" prot="private" virt="non-virtual"><scope>asmjit::AutoLock</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1AutoLock_1a17daf9f66abf9a30a8d5b4a6b26fc744" prot="public" virt="non-virtual"><scope>asmjit::AutoLock</scope><name>~AutoLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

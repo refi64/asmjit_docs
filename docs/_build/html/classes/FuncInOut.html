@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>FuncInOut &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="FuncNode" href="FuncNode.html" />
+    <link rel="prev" title="FuncDecl" href="FuncDecl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="FuncNode.html" title="FuncNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FuncDecl.html" title="FuncDecl"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="funcinout">
+<h1>FuncInOut<a class="headerlink" href="#funcinout" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1FuncInOut">
+<div class="line"><em>struct</em> <strong>asmjit::FuncInOut</strong></div>
+<div class="line"><em>#include &lt;func.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Function in/out (argument or a return value). </p>
+<p>This class contains function argument or return value translated from the <a class="reference internal" href="FuncPrototype.html#asmjitstructasmjit_1_1FuncPrototype"><em>FuncPrototype</em></a>. </p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a982ef6b4bbf83272c2922631124d0d6d"></span><div class="line-block">
+<div class="line">uint32_t <strong>getVarType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a964b047803622e656bdddbf1883ef329"></span><div class="line-block">
+<div class="line">bool <strong>hasRegIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1aba3684801539454ca35fea8e74337f9e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1af883ef82e5dd661016fd0053f968c784"></span><div class="line-block">
+<div class="line">bool <strong>hasStackOffset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a217b17a0baa5fed3f49b707124c25378"></span><div class="line-block">
+<div class="line">int32_t <strong>getStackOffset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1ae28290801e2e0049131deeec38aaf279"></span><div class="line-block">
+<div class="line">bool <strong>isSet</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the argument / return value is assigned. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1ac532e27f8c6d9d911bbb5df2ca210989"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset the function argument to &#8220;unassigned state&#8221;. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a818e1a1510be215fbf353ff34153d171"></span>uint8_t <strong>_varType</strong></p>
+<blockquote>
+<div><p>Variable type, see <tt class="docutils literal"><span class="pre">kVarType</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a0be2f716335ddee7e12e97231999ef87"></span>uint8_t <strong>_regIndex</strong></p>
+<blockquote>
+<div><p>Register index if argument / return value is a register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a791709cefab7cbc04d641331dd8fe9f8"></span>int16_t <strong>_stackOffset</strong></p>
+<blockquote>
+<div><p>Stack offset if argument / return value is on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a0727112973094c5b63a1afaf07f8e7c8"></span>uint32_t <strong>_packed</strong></p>
+<blockquote>
+<div><p>All members packed into single 32-bit integer. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncInOut_1a7e009348fd3fb19f02372250e51085e1"></span>union asmjit::FuncInOut::&#64;48 <strong>&#64;49</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="FuncDecl.html"
+                        title="previous chapter">FuncDecl</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="FuncNode.html"
+                        title="next chapter">FuncNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/FuncInOut.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="FuncNode.html" title="FuncNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FuncDecl.html" title="FuncDecl"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

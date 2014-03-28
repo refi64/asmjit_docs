@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CallNode &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="CodeGen" href="CodeGen.html" />
+    <link rel="prev" title="BaseVarState" href="BaseVarState.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="CodeGen.html" title="CodeGen"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="BaseVarState.html" title="BaseVarState"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="callnode">
+<h1>CallNode<a class="headerlink" href="#callnode" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1CallNode">
+<div class="line"><em>struct</em> <strong>asmjit::CallNode</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Function-call node. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1CallNode_1a03f3b0f188d91332c719e90f147084f1"></span><div class="line-block">
+<div class="line"> <strong>CallNode</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  * compiler, const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; target)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="#asmjitstructasmjit_1_1CallNode"><em>CallNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1a6d671449fbf63f8157689de990eab670"></span><div class="line-block">
+<div class="line"> <strong>~CallNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1CallNode"><em>CallNode</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1a1fa523df8cac84ba0262b71dab7c5035"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="FuncDecl.html#asmjitstructasmjit_1_1FuncDecl"><em>FuncDecl</em></a>  * <strong>getDecl</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function declaration. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1a544ac9c68513b1dad41a4f547208dc17"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; <strong>getTarget</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get target operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1ab2add0e5a34e13ccf4d4883c63bf8385"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; <strong>getTarget</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1ae5f295b2a2aad38cb5db8b64135d5f14"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; <strong>getRet</strong>(uint32_t i = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get return at <em>i</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1ab19cd23198101c350689ae0e284838a3"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; <strong>getRet</strong>(uint32_t i = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1acdb77a4c703df4405627108200737f78"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; <strong>getArg</strong>(uint32_t i)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get argument at <em>i</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1acbf4a17daa25691c045489843da30ea2"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; <strong>getArg</strong>(uint32_t i)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1CallNode_1aa2c8a71ac9866e5d5272c5d543a948c5"></span><a class="reference internal" href="FuncDecl.html#asmjitstructasmjit_1_1FuncDecl"><em>FuncDecl</em></a>  * <strong>_decl</strong></p>
+<blockquote>
+<div><p>Function declaration. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1ab18b267ab4417390fddb7b75548c0abb"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> <strong>_target</strong></p>
+<blockquote>
+<div><p>Target (address of function, register, label, ...). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1ae448fd3373867a476abeae2ac8cea2d4"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a> <strong>_ret</strong>[2]</p>
+<blockquote>
+<div><p>Return. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1aaaee075a448df1205c0440fdf7ce6485"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  * <strong>_args</strong></p>
+<blockquote>
+<div><p>Arguments. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1CallNode_1a6c7c29abed9bb6e57626af651d5d577a"></span><div class="line-block">
+<div class="line"> <strong>CallNode</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1CallNode"><em>CallNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1CallNode_1ad2338cb4aa054dafc73a1df0d049cb55"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1CallNode"><em>CallNode</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1CallNode"><em>CallNode</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="BaseVarState.html"
+                        title="previous chapter">BaseVarState</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="CodeGen.html"
+                        title="next chapter">CodeGen</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/CallNode.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="CodeGen.html" title="CodeGen"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="BaseVarState.html" title="BaseVarState"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

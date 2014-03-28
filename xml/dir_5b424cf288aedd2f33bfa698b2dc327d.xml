@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_5b424cf288aedd2f33bfa698b2dc327d" kind="dir">
+    <compoundname>/home/ryan/asmjit/src/</compoundname>
+    <innerdir refid="dir_41691fae5ab37867b0ed5556c8e02bd0">/home/ryan/asmjit/src/app/</innerdir>
+    <innerdir refid="dir_f4670069cef0c0c0f27678d5314bb5c1">/home/ryan/asmjit/src/asmjit/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/"/>
+  </compounddef>
+</doxygen>

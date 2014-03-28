@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>BaseCpu &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="BaseLogger" href="base_logger.html" />
+    <link rel="prev" title="BaseCompiler" href="base_compiler.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="base_logger.html" title="BaseLogger"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="base_compiler.html" title="BaseCompiler"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="basecpu">
+<h1>BaseCpu<a class="headerlink" href="#basecpu" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1BaseCpu">
+<div class="line"><em>struct</em> <strong>asmjit::BaseCpu</strong></div>
+<div class="line"><em>#include &lt;cpu.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base cpu information. </p>
+<p></p>
+<em>Public Type</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a45f4cc0180420017d1604dd8fbf0e3e8"></span><strong>Anonymous enum</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">kFeaturesPerUInt32</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">static_cast&lt;int&gt;(sizeof(uint32_t))</span> <span class="pre">*</span> <span class="pre">8</span></tt> - </li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a10728bb6f621fa11cb142f434d63078d"></span><div class="line-block">
+<div class="line"> <strong>BaseCpu</strong>(uint32_t size = sizeof( <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a> ))</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a1596633d850aed49f001d4be35e20384"></span><div class="line-block">
+<div class="line">const char * <strong>getVendorString</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU vendor string. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a8eb2dec2c8374dd40c7f590d4e724677"></span><div class="line-block">
+<div class="line">const char * <strong>getBrandString</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU brand string. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a27f71127d565689bbb7c2c8677fe89b5"></span><div class="line-block">
+<div class="line">uint32_t <strong>getVendorId</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU vendor ID. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a86ee66b3bf7e8c623f140fa614262272"></span><div class="line-block">
+<div class="line">uint32_t <strong>getFamily</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU family ID. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1ad3ed12c12bce38a12d1b42dc410c372d"></span><div class="line-block">
+<div class="line">uint32_t <strong>getModel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU model ID. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1ae711d5fa18f161c7d2bad598af180190"></span><div class="line-block">
+<div class="line">uint32_t <strong>getStepping</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU stepping. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a2aac6d6744a3cd6bf4a5ca9ea38ef0fd"></span><div class="line-block">
+<div class="line">uint32_t <strong>getCoresCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get CPU cores count (or sum of all cores of all procesors). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a7d362d56d07ee7e70be5288445943f19"></span><div class="line-block">
+<div class="line">bool <strong>hasFeature</strong>(uint32_t feature)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether CPU has a <em>feature</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a79624b1c6b519d788be7063ab9d60179"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a>  &amp; <strong>addFeature</strong>(uint32_t feature)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add CPU <em>feature</em>. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a63b1391eaf5c68084b6fe16d7c0354f5"></span>uint32_t <strong>_size</strong></p>
+<blockquote>
+<div><p>Size of the structure in bytes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a2242090cf8293bd1993836c88f644b0e"></span>char <strong>_vendorString</strong>[16]</p>
+<blockquote>
+<div><p>Cpu short vendor string. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a6a8a82c2fe9c901f9699d2d7763664b9"></span>char <strong>_brandString</strong>[64]</p>
+<blockquote>
+<div><p>Cpu long vendor string (brand). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a495231592fbc008595461fbb2045b3d3"></span>uint32_t <strong>_vendorId</strong></p>
+<blockquote>
+<div><p>Cpu vendor id (see <tt class="docutils literal"><span class="pre">asmjit::kCpuVendor</span></tt> enum). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1aae7f103029b2104b1e41f7371ae9ff55"></span>uint32_t <strong>_family</strong></p>
+<blockquote>
+<div><p>Cpu family ID. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a6b765b4c329d863af47baad664c4d1e6"></span>uint32_t <strong>_model</strong></p>
+<blockquote>
+<div><p>Cpu model ID. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a6bd94261fb02212d1cffd0f5c1d88baf"></span>uint32_t <strong>_stepping</strong></p>
+<blockquote>
+<div><p>Cpu stepping. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a7a6d6d546880dd57a75074c45c17d868"></span>uint32_t <strong>_coresCount</strong></p>
+<blockquote>
+<div><p>Cpu cores count (or sum of all CPU cores of all processors). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a4eb46fc6902f48e76b182bfdd13d8797"></span>uint32_t <strong>_features</strong>[4]</p>
+<blockquote>
+<div><p>Cpu features bitfield. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Static Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a3f3bf31b69395a2874364a63b75e9ca6"></span><div class="line-block">
+<div class="line">ASMJIT_API uint32_t <strong>detectNumberOfCores</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Detect number of cores (or sum of all cores of all processors). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff"></span><div class="line-block">
+<div class="line">ASMJIT_API const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a>  * <strong>getHost</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get host cpu. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1acffd56dc2e689f2e716914e37ef722e1"></span><div class="line-block">
+<div class="line"> <strong>BaseCpu</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCpu_1a6bf3e9eab26d3aba3be4f47959fc9221"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCpu"><em>BaseCpu</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="base_compiler.html"
+                        title="previous chapter">BaseCompiler</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="base_logger.html"
+                        title="next chapter">BaseLogger</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/base_cpu.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="base_logger.html" title="BaseLogger"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="base_compiler.html" title="BaseCompiler"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

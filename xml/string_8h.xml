@@ -1,0 +1,1097 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="string_8h" kind="file">
+    <compoundname>string.h</compoundname>
+    <includes refid="defs_8h" local="yes">../base/defs.h</includes>
+    <includes refid="globals_8h" local="yes">../base/globals.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="benchx86_8cpp" local="no">benchx86.cpp</includedby>
+    <includedby refid="testcpu_8cpp" local="no">testcpu.cpp</includedby>
+    <includedby refid="testdummy_8cpp" local="no">testdummy.cpp</includedby>
+    <includedby refid="testmem_8cpp" local="no">testmem.cpp</includedby>
+    <includedby refid="testopcode_8cpp" local="no">testopcode.cpp</includedby>
+    <includedby refid="testsizeof_8cpp" local="no">testsizeof.cpp</includedby>
+    <includedby refid="testx86_8cpp" local="no">testx86.cpp</includedby>
+    <includedby refid="build_8h" local="no">build.h</includedby>
+    <includedby refid="logger_8h" local="yes">logger.h</includedby>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="logger_8cpp" local="yes">logger.cpp</includedby>
+    <includedby refid="string_8cpp" local="yes">string.cpp</includedby>
+    <incdepgraph>
+      <node id="1660">
+        <label>../base/globals.h</label>
+        <childnode refid="1661" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+      <node id="1669">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1670">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1666">
+        <label>stdint.h</label>
+      </node>
+      <node id="1664">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1668">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1661" relation="include">
+        </childnode>
+      </node>
+      <node id="1658">
+        <label>../base/defs.h</label>
+        <childnode refid="1659" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+      <node id="1667">
+        <label>limits.h</label>
+      </node>
+      <node id="1665">
+        <label>new</label>
+      </node>
+      <node id="1662">
+        <label>config.h</label>
+      </node>
+      <node id="1659">
+        <label>../base/intutil.h</label>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+      <node id="1661">
+        <label>../build.h</label>
+        <childnode refid="1662" relation="include">
+        </childnode>
+        <childnode refid="1663" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>stdio.h</label>
+      </node>
+      <node id="1657">
+        <label>string.h</label>
+        <link refid="string.h"/>
+        <childnode refid="1658" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1689">
+        <label>globals.h</label>
+        <childnode refid="1690" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+      </node>
+      <node id="1676">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="1721">
+        <label>vmem.cpp</label>
+      </node>
+      <node id="1720">
+        <label>error.cpp</label>
+      </node>
+      <node id="1692">
+        <label>codegen.h</label>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>lock.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+      </node>
+      <node id="1698">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="1713">
+        <label>memorymanager.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>error.h</label>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+      </node>
+      <node id="1716">
+        <label>defs.cpp</label>
+      </node>
+      <node id="1724">
+        <label>globals.cpp</label>
+      </node>
+      <node id="1707">
+        <label>logger.cpp</label>
+      </node>
+      <node id="1704">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="1681">
+        <label>asmjit.h</label>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>zone.h</label>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>apibegin.h</label>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1690" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="1706">
+        <label>logger.h</label>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+      </node>
+      <node id="1712">
+        <label>func.cpp</label>
+      </node>
+      <node id="1693">
+        <label>assembler.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+      </node>
+      <node id="1691">
+        <label>defs.h</label>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+      </node>
+      <node id="1714">
+        <label>memorymanager.cpp</label>
+      </node>
+      <node id="1703">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="1710">
+        <label>podvector.cpp</label>
+      </node>
+      <node id="1708">
+        <label>podlist.h</label>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+      </node>
+      <node id="1688">
+        <label>x86.h</label>
+      </node>
+      <node id="1701">
+        <label>x86compiler.h</label>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1695">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="1677">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="1709">
+        <label>podvector.h</label>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+      </node>
+      <node id="1680">
+        <label>base.h</label>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+        <childnode refid="1687" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1686">
+        <label>winremoteruntime.h</label>
+        <childnode refid="1687" relation="include">
+        </childnode>
+      </node>
+      <node id="1678">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="1702">
+        <label>x86func.h</label>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>vmem.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+      </node>
+      <node id="1722">
+        <label>cpu.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+      </node>
+      <node id="1719">
+        <label>x86cpu.h</label>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1734">
+        <label>x86cpu.cpp</label>
+      </node>
+      <node id="1683">
+        <label>genopcode.h</label>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>context_p.h</label>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>x86compiler.cpp</label>
+      </node>
+      <node id="1715">
+        <label>vectypes.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+      </node>
+      <node id="1682">
+        <label>genblend.h</label>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>intutil.h</label>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1736">
+        <label>x86func.cpp</label>
+      </node>
+      <node id="1697">
+        <label>context.cpp</label>
+      </node>
+      <node id="1718">
+        <label>zone.cpp</label>
+      </node>
+      <node id="1727">
+        <label>runtime.h</label>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+      </node>
+      <node id="1700">
+        <label>x86assembler.h</label>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>codegen.cpp</label>
+      </node>
+      <node id="1685">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="1675">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="1717">
+        <label>string.cpp</label>
+      </node>
+      <node id="1684">
+        <label>host.h</label>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1735">
+        <label>x86defs.cpp</label>
+      </node>
+      <node id="1723">
+        <label>cpu.cpp</label>
+      </node>
+      <node id="1679">
+        <label>build.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1731" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+        <childnode refid="1733" relation="include">
+        </childnode>
+        <childnode refid="1734" relation="include">
+        </childnode>
+        <childnode refid="1735" relation="include">
+        </childnode>
+        <childnode refid="1736" relation="include">
+        </childnode>
+      </node>
+      <node id="1687">
+        <label>contrib.h</label>
+      </node>
+      <node id="1731">
+        <label>x86assembler.cpp</label>
+      </node>
+      <node id="1672">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="1673">
+        <label>testcpu.cpp</label>
+      </node>
+      <node id="1671">
+        <label>string.h</label>
+        <link refid="string.h"/>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+      </node>
+      <node id="1711">
+        <label>func.h</label>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>compiler.h</label>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>x86context.cpp</label>
+      </node>
+      <node id="1699">
+        <label>x86defs.h</label>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1StringUtil" prot="public">asmjit::StringUtil</innerclass>
+    <innerclass refid="structasmjit_1_1StringBuilder" prot="public">asmjit::StringBuilder</innerclass>
+    <innerclass refid="structasmjit_1_1StringBuilderT" prot="public">asmjit::StringBuilderT</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_STRING_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_STRING_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/globals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>C]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_base</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kStringOp]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">//!<sp/>@brief<sp/>String<sp/>operation.</highlight></codeline>
+<codeline lineno="31" refid="group__asmjit__base_1gadc7ca6dbc5c94fc4ab122e3f0a8c1206" refkind="member"><highlight class="comment"></highlight><highlight class="normal">ASMJIT_ENUM(<ref refid="group__asmjit__base_1gadc7ca6dbc5c94fc4ab122e3f0a8c1206" kindref="member" tooltip="String operation.">kStringOp</ref>)<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>string<sp/>by<sp/>a<sp/>given<sp/>content.</highlight></codeline>
+<codeline lineno="33" refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref><sp/>=<sp/>0,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>a<sp/>given<sp/>content<sp/>to<sp/>the<sp/>current<sp/>string.</highlight></codeline>
+<codeline lineno="35" refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kStringFormat]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">//!<sp/>@brief<sp/>String<sp/>format<sp/>flags.</highlight></codeline>
+<codeline lineno="43" refid="group__asmjit__base_1gad75838fc8ed01730f1edc507ddecbbef" refkind="member"><highlight class="comment"></highlight><highlight class="normal">ASMJIT_ENUM(<ref refid="group__asmjit__base_1gad75838fc8ed01730f1edc507ddecbbef" kindref="member" tooltip="String format flags.">kStringFormat</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>kStringFormatShowSign<sp/><sp/>=<sp/>0x00000001,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>kStringFormatShowSpace<sp/>=<sp/>0x00000002,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>kStringFormatAlternate<sp/>=<sp/>0x00000004,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>kStringFormatSigned<sp/><sp/><sp/><sp/>=<sp/>0x80000000</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::StringUtil]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment">//!<sp/>@brief<sp/>String<sp/>utilities.</highlight></codeline>
+<codeline lineno="55" refid="structasmjit_1_1StringUtil" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1StringUtil" kindref="compound" tooltip="String utilities.">StringUtil</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nlen(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>maxlen)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>maxlen;<sp/>i++)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!s[i])</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::StringBuilder]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment">//!<sp/>@brief<sp/>String<sp/>builder.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">//!<sp/>String<sp/>builder<sp/>was<sp/>designed<sp/>to<sp/>be<sp/>able<sp/>to<sp/>build<sp/>a<sp/>string<sp/>using<sp/>append<sp/>like</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">//!<sp/>operation<sp/>to<sp/>append<sp/>numbers,<sp/>other<sp/>strings,<sp/>or<sp/>signle<sp/>characters.<sp/>It<sp/>can</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">//!<sp/>allocate<sp/>it&apos;s<sp/>own<sp/>buffer<sp/>or<sp/>use<sp/>a<sp/>buffer<sp/>created<sp/>on<sp/>the<sp/>stack.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">//!<sp/>String<sp/>builder<sp/>contains<sp/>method<sp/>specific<sp/>to<sp/>AsmJit<sp/>functionality,<sp/>used<sp/>for</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">//!<sp/>logging<sp/>or<sp/>HTML<sp/>output.</highlight></codeline>
+<codeline lineno="77" refid="structasmjit_1_1StringBuilder" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1StringBuilder" kindref="compound" tooltip="String builder.">StringBuilder</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1StringBuilder" kindref="compound" tooltip="String builder.">StringBuilder</ref>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/><ref refid="structasmjit_1_1StringBuilder" kindref="compound" tooltip="String builder.">StringBuilder</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/>~StringBuilder();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>StringBuilder(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>_NoInit&amp;)<sp/>{}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Accessors]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>string<sp/>builder<sp/>capacity.</highlight></codeline>
+<codeline lineno="94" refid="structasmjit_1_1StringBuilder_1a06f3700123e226087920968b53b4f318" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a06f3700123e226087920968b53b4f318" kindref="member" tooltip="Get string builder capacity.">getCapacity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>length.</highlight></codeline>
+<codeline lineno="96" refid="structasmjit_1_1StringBuilder_1ad018d3216282b4b1d09db50964857ab4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1ad018d3216282b4b1d09db50964857ab4" kindref="member" tooltip="Get length.">getLength</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>null-terminated<sp/>string<sp/>data.</highlight></codeline>
+<codeline lineno="99" refid="structasmjit_1_1StringBuilder_1a587fa3ea24629b7335f3dace53417387" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1StringBuilder_1a587fa3ea24629b7335f3dace53417387" kindref="member" tooltip="Get null-terminated string data.">getData</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>null-terminated<sp/>string<sp/>data<sp/>(const).</highlight></codeline>
+<codeline lineno="101" refid="structasmjit_1_1StringBuilder_1ae0217a979589b91048bad6bc9d31d25b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1StringBuilder_1ae0217a979589b91048bad6bc9d31d25b" kindref="member" tooltip="Get null-terminated string data (const).">getData</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Prepare<sp/>/<sp/>Reserve]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Prepare<sp/>to<sp/>set/append.</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1StringBuilder_1a86a7ec36bbfb80a9da9371c4a2e6fee6" kindref="member" tooltip="Prepare to set/append.">prepare</ref>(uint32_t<sp/>op,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Reserve<sp/>@a<sp/>to<sp/>bytes<sp/>in<sp/>string<sp/>builder.</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a5a8d4aa39b12be1074c8a7e7ec1b4354" kindref="member" tooltip="Reserve to bytes in string builder.">reserve</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>to);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Clear]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Clear<sp/>the<sp/>content<sp/>in<sp/>String<sp/>builder.</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a34ccb1e62f925a7db8ee5f01f9d5d4ff" kindref="member" tooltip="Clear the content in String builder.">clear</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Op]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_opString(uint32_t<sp/>op,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_opVFormat(uint32_t<sp/>op,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>va_list<sp/>ap);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_opChar(uint32_t<sp/>op,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_opChars(uint32_t<sp/>op,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_opNumber(uint32_t<sp/>op,<sp/>uint64_t<sp/>i,<sp/>uint32_t<sp/>base<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/>uint32_t<sp/>flags<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_opHex(uint32_t<sp/>op,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Set]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>@a<sp/>str<sp/>of<sp/>@a<sp/>len.</highlight></codeline>
+<codeline lineno="136" refid="structasmjit_1_1StringBuilder_1a21c626aefd9d2ecfea90bba9fa0ff050" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a21c626aefd9d2ecfea90bba9fa0ff050" kindref="member" tooltip="Replace the current content by str of len.">setString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opString(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>str,<sp/>len);<sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>formatted<sp/>string<sp/>@a<sp/>fmt.</highlight></codeline>
+<codeline lineno="140" refid="structasmjit_1_1StringBuilder_1a4543c62de899c58006664ebee289c472" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a4543c62de899c58006664ebee289c472" kindref="member" tooltip="Replace the current content by formatted string fmt.">setVFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opVFormat(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>fmt,<sp/>ap);<sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>formatted<sp/>string<sp/>@a<sp/>fmt.</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a2fa63044872125a52bce359fbd5c6ce1" kindref="member" tooltip="Replace the current content by formatted string fmt.">setFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>@a<sp/>c<sp/>character.</highlight></codeline>
+<codeline lineno="147" refid="structasmjit_1_1StringBuilder_1a02d51c9ab37727998a1032f0f89d74a4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a02d51c9ab37727998a1032f0f89d74a4" kindref="member" tooltip="Replace the current content by c character.">setChar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opChar(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>c);<sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>@a<sp/>c<sp/>of<sp/>@a<sp/>len.</highlight></codeline>
+<codeline lineno="151" refid="structasmjit_1_1StringBuilder_1aa45e75a067da7341f416725ebc76ca45" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1aa45e75a067da7341f416725ebc76ca45" kindref="member" tooltip="Replace the current content by c of len.">setChars</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opChars(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>c,<sp/>len);<sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>@a<sp/>i..</highlight></codeline>
+<codeline lineno="155" refid="structasmjit_1_1StringBuilder_1aa8834e6e8c019393ea5d34b6b2e804af" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1aa8834e6e8c019393ea5d34b6b2e804af" kindref="member" tooltip="Replace the current content by i..">setInt</ref>(uint64_t<sp/>i,<sp/>uint32_t<sp/>base<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/>uint32_t<sp/>flags<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opNumber(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>i,<sp/>base,<sp/>width,<sp/>flags<sp/>|<sp/>kStringFormatSigned);<sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>@a<sp/>i..</highlight></codeline>
+<codeline lineno="159" refid="structasmjit_1_1StringBuilder_1a475b7cc7efd5376dad3719ae4d0d48fe" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a475b7cc7efd5376dad3719ae4d0d48fe" kindref="member" tooltip="Replace the current content by i..">setUInt</ref>(uint64_t<sp/>i,<sp/>uint32_t<sp/>base<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/>uint32_t<sp/>flags<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opNumber(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>i,<sp/>base,<sp/>width,<sp/>flags);<sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Replace<sp/>the<sp/>current<sp/>content<sp/>by<sp/>the<sp/>given<sp/>@a<sp/>data<sp/>converted<sp/>to<sp/>a<sp/>HEX<sp/>string.</highlight></codeline>
+<codeline lineno="163" refid="structasmjit_1_1StringBuilder_1a6994ecccb1f03406391e559bed4bb976" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a6994ecccb1f03406391e559bed4bb976" kindref="member" tooltip="Replace the current content by the given data converted to a HEX string.">setHex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opHex(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206a6cfd8fc6b944c40e8d37bc425c493cac" kindref="member" tooltip="Replace the current string by a given content.">kStringOpSet</ref>,<sp/>data,<sp/>len);<sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Append]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>str<sp/>of<sp/>@a<sp/>len.</highlight></codeline>
+<codeline lineno="171" refid="structasmjit_1_1StringBuilder_1a58df9e95858b77a01f189efd15334739" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a58df9e95858b77a01f189efd15334739" kindref="member" tooltip="Append str of len.">appendString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opString(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>str,<sp/>len);<sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>a<sp/>formatted<sp/>string<sp/>@a<sp/>fmt<sp/>to<sp/>the<sp/>current<sp/>content.</highlight></codeline>
+<codeline lineno="175" refid="structasmjit_1_1StringBuilder_1ad9c74cbd121e0201215956ec7c65f72a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1ad9c74cbd121e0201215956ec7c65f72a" kindref="member" tooltip="Append a formatted string fmt to the current content.">appendVFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opVFormat(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>fmt,<sp/>ap);<sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>a<sp/>formatted<sp/>string<sp/>@a<sp/>fmt<sp/>to<sp/>the<sp/>current<sp/>content.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a1720590630efa6f5db1b6d80530a7473" kindref="member" tooltip="Append a formatted string fmt to the current content.">appendFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>c<sp/>character.</highlight></codeline>
+<codeline lineno="182" refid="structasmjit_1_1StringBuilder_1a46f791ba953f93638c3242206096e810" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a46f791ba953f93638c3242206096e810" kindref="member" tooltip="Append c character.">appendChar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opChar(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>c);<sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>c<sp/>of<sp/>@a<sp/>len.</highlight></codeline>
+<codeline lineno="186" refid="structasmjit_1_1StringBuilder_1a5c795b5473b6a1314303ccf1bec1bb28" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a5c795b5473b6a1314303ccf1bec1bb28" kindref="member" tooltip="Append c of len.">appendChars</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opChars(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>c,<sp/>len);<sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>i.</highlight></codeline>
+<codeline lineno="190" refid="structasmjit_1_1StringBuilder_1a46592ee4d175684adc93ce38188a95e0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a46592ee4d175684adc93ce38188a95e0" kindref="member" tooltip="Append i.">appendInt</ref>(int64_t<sp/>i,<sp/>uint32_t<sp/>base<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/>uint32_t<sp/>flags<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opNumber(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>static_cast&lt;uint64_t&gt;(i),<sp/>base,<sp/>width,<sp/>flags<sp/>|<sp/>kStringFormatSigned);<sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>i.</highlight></codeline>
+<codeline lineno="194" refid="structasmjit_1_1StringBuilder_1a57e53ef8e8d0f661a52616eb02129643" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a57e53ef8e8d0f661a52616eb02129643" kindref="member" tooltip="Append i.">appendUInt</ref>(uint64_t<sp/>i,<sp/>uint32_t<sp/>base<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/>uint32_t<sp/>flags<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opNumber(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>i,<sp/>base,<sp/>width,<sp/>flags);<sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>the<sp/>given<sp/>@a<sp/>data<sp/>converted<sp/>to<sp/>a<sp/>HEX<sp/>string.</highlight></codeline>
+<codeline lineno="198" refid="structasmjit_1_1StringBuilder_1a9b3cbba26cb256d57d8fd65455011954" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a9b3cbba26cb256d57d8fd65455011954" kindref="member" tooltip="Append the given data converted to a HEX string.">appendHex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_opHex(<ref refid="group__asmjit__base_1ggadc7ca6dbc5c94fc4ab122e3f0a8c1206ad3f1db597c0ffb9ee7fa7159173af48a" kindref="member" tooltip="Append a given content to the current string.">kStringOpAppend</ref>,<sp/>data,<sp/>len);<sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[_Append]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>str<sp/>of<sp/>@a<sp/>len<sp/>(inlined,<sp/>without<sp/>buffer<sp/>overflow<sp/>check).</highlight></codeline>
+<codeline lineno="206" refid="structasmjit_1_1StringBuilder_1aa3d9301cbc884371ec37cc8f360dbae6" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1aa3d9301cbc884371ec37cc8f360dbae6" kindref="member" tooltip="Append str of len (inlined, without buffer overflow check).">_appendString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>len<sp/>should<sp/>be<sp/>a<sp/>constant<sp/>if<sp/>we<sp/>are<sp/>inlining.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>==<sp/>kInvalidIndex)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>&amp;<ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>[<ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>];</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*str)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(p<sp/>&lt;<sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref><sp/>+<sp/><ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p++<sp/>=<sp/>*str++;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>=<sp/>(size_t)(p<sp/>-<sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(<ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref><sp/>-<sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>&gt;=<sp/>len);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>&amp;<ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>[<ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>];</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pEnd<sp/>=<sp/>p<sp/>+<sp/>len;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p<sp/>&lt;<sp/>pEnd)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p++<sp/>=<sp/>*str++;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>c<sp/>character<sp/>(inlined,<sp/>without<sp/>buffer<sp/>overflow<sp/>check).</highlight></codeline>
+<codeline lineno="234" refid="structasmjit_1_1StringBuilder_1aadb7d86533983f9de684c94da2ffa736" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1aadb7d86533983f9de684c94da2ffa736" kindref="member" tooltip="Append c character (inlined, without buffer overflow check).">_appendChar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(<ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref><sp/>-<sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>&gt;=<sp/>1);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>[<ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>]<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>++;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>[<ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>c<sp/>of<sp/>@a<sp/>len<sp/>(inlined,<sp/>without<sp/>buffer<sp/>overflow<sp/>check).</highlight></codeline>
+<codeline lineno="243" refid="structasmjit_1_1StringBuilder_1a7a39318fca7df9ec5a020d6c1442427f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a7a39318fca7df9ec5a020d6c1442427f" kindref="member" tooltip="Append c of len (inlined, without buffer overflow check).">_appendChars</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(<ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref><sp/>-<sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>&gt;=<sp/>len);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>&amp;<ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>[<ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>];</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pEnd<sp/>=<sp/>p<sp/>+<sp/>len;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p<sp/>&lt;<sp/>pEnd)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p++<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>*p<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_appendUInt32(uint32_t<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf_[32];</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pEnd<sp/>=<sp/>buf_<sp/>+<sp/>ASMJIT_ARRAY_SIZE(buf_);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pBuf<sp/>=<sp/>pEnd;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>d<sp/>=<sp/>i<sp/>/<sp/>10;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>r<sp/>=<sp/>i<sp/>%<sp/>10;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*--pBuf<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(r<sp/>+<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(<ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref><sp/>-<sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>&gt;=<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)(pEnd<sp/>-<sp/>pBuf));</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>&amp;<ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>[<ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>];</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p++<sp/>=<sp/>*pBuf;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(++pBuf<sp/>!=<sp/>pEnd);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>*p<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref><sp/>=<sp/>(size_t)(p<sp/>-<sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Eq]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Check<sp/>for<sp/>equality<sp/>with<sp/>other<sp/>@a<sp/>str.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" kindref="member" tooltip="Check for equality with other str.">eq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>kInvalidIndex)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Check<sp/>for<sp/>equality<sp/>with<sp/>StringBuilder<sp/>@a<sp/>other.</highlight></codeline>
+<codeline lineno="288" refid="structasmjit_1_1StringBuilder_1a5c64b416ac6b64c0153cc99311a8adae" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a5c64b416ac6b64c0153cc99311a8adae" kindref="member" tooltip="Check for equality with StringBuilder other.">eq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>StringBuilder&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a5c64b416ac6b64c0153cc99311a8adae" kindref="member" tooltip="Check for equality with StringBuilder other.">eq</ref>(other.<ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Operator<sp/>Overload]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>StringBuilder&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" kindref="member" tooltip="Check for equality with other str.">eq</ref>(other);<sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>StringBuilder&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" kindref="member" tooltip="Check for equality with other str.">eq</ref>(other);<sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" kindref="member" tooltip="Check for equality with other str.">eq</ref>(str);<sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="structasmjit_1_1StringBuilder_1a2fe4eec7e430155dce7db8118dfdc4de" kindref="member" tooltip="Check for equality with other str.">eq</ref>(str);<sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>String<sp/>data.</highlight></codeline>
+<codeline lineno="305" refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structasmjit_1_1StringBuilder_1a3d2b0c1b476c1f79799da7da7cae52c5" kindref="member" tooltip="String data.">_data</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="306"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Length.</highlight></codeline>
+<codeline lineno="307" refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a2a9c195c56c93d14acc641c4118b5094" kindref="member" tooltip="Length.">_length</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="308"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Capacity.</highlight></codeline>
+<codeline lineno="309" refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1a9e8980e8d0269cd7f04310258cd3f639" kindref="member" tooltip="Capacity.">_capacity</ref>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="310"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Whether<sp/>the<sp/>string<sp/>can<sp/>be<sp/>freed.</highlight></codeline>
+<codeline lineno="311" refid="structasmjit_1_1StringBuilder_1ab5873a6052a802258e5fc6f6a4756a6e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1StringBuilder_1ab5873a6052a802258e5fc6f6a4756a6e" kindref="member" tooltip="Whether the string can be freed.">_canFree</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::StringBuilderT]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">StringBuilderT<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>StringBuilder<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(StringBuilderT&lt;N&gt;)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>StringBuilderT()<sp/>:<sp/>StringBuilder(NoInit)<sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>_data<sp/>=<sp/>_embeddedData;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>_data[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>_length<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>_capacity<sp/>=<sp/>N;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>_canFree<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Embedded<sp/>data.</highlight></codeline>
+<codeline lineno="340"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_embeddedData[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(N<sp/>+<sp/>1<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(intptr_t))<sp/>&amp;<sp/>~static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&gt;(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(intptr_t)<sp/>-<sp/>1)];</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="343"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="344"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_STRING_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/string.h"/>
+  </compounddef>
+</doxygen>

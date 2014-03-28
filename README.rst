@@ -1,0 +1,17 @@
+AsmJit Docs
+===========
+
+This is a repository containing a rendering of the AsmJit documentation using Sphinx+Breathe.
+
+Directory structure
+*******************
+
+- xml: The generated Doxygen XML documentation
+- docs: The reStructuredText and Sphinx doc stuff
+
+To build
+********
+
+cd into the docs directory and run::
+   
+   make html

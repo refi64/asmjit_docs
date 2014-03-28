@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1EmbedNode" kind="struct" prot="public">
+    <compoundname>asmjit::EmbedNode</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseNode" prot="public" virt="non-virtual">asmjit::BaseNode</basecompoundref>
+    <includes local="no">compiler.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structasmjit_1_1EmbedNode_1ad97368c0e7f7a1ed2beddda1506bf5c1" prot="public" static="no">
+        <name>@13</name>
+        <enumvalue id="structasmjit_1_1EmbedNode_1ad97368c0e7f7a1ed2beddda1506bf5c1a921ea1becf74940bce4335115e17dc42" prot="public">
+          <name>kInlineBufferSize</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="890" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="890" bodyend="890"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1EmbedNode_1ae51d5b0568672c64c99e5764c9f205cf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::EmbedNode::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+<para>Size of the embedded data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="922" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="922" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1EmbedNode_1a2d9a35a0bcfd4fd7a334762a51c51ff9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::EmbedNode::buf[kInlineBufferSize]</definition>
+        <argsstring>[kInlineBufferSize]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>data buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="926" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="926" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1EmbedNode_1ae07dc3ac638bef55e619265851b6bcd4" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::EmbedNode::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+<para>Data buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="928" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="928" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1EmbedNode_1ab6d90daef658ed0b8524ddf42ea2fc37" prot="public" static="no" mutable="no">
+        <type>union asmjit::EmbedNode::@14</type>
+        <definition>union asmjit::EmbedNode::@14  asmjit::EmbedNode::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="929"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1EmbedNode_1a267ec9b7fcf5e9837bc05242e225235f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::EmbedNode::EmbedNode</definition>
+        <argsstring>(const EmbedNode &amp;other)</argsstring>
+        <name>EmbedNode</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="884"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1EmbedNode_1a49e7ba67e7f5d2a6ba9f4a97b381f2ed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> &amp;</type>
+        <definition>EmbedNode&amp; asmjit::EmbedNode::operator=</definition>
+        <argsstring>(const EmbedNode &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="884"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1EmbedNode_1ac2266db226d9b28ff7631e9fbe45764f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::EmbedNode::EmbedNode</definition>
+        <argsstring>(BaseCompiler *compiler, void *data, uint32_t size)</argsstring>
+        <name>EmbedNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>compiler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="897" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="897" bodyend="903"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1EmbedNode_1afe1403eb7175f3e6ed05ad1d7dd5e5fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::EmbedNode::~EmbedNode</definition>
+        <argsstring>()</argsstring>
+        <name>~EmbedNode</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1EmbedNode" kindref="compound">EmbedNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="906" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="906" bodyend="906"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1EmbedNode_1a0f47d924b52f25e56818f3eb7467e139" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* asmjit::EmbedNode::getData</definition>
+        <argsstring>()</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get pointer to data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="913" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="913" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1EmbedNode_1adfdab6b1fb4b3bc6dd667bd996c35525" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::EmbedNode::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get size of data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="915" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="915" bodyend="915"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Embed node. </para>    </briefdescription>
+    <detaileddescription>
+<para>Embed node is used to embed data into final assembler stream. The data is considered to be RAW; No analysis is performed on RAW data. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="754">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+      </node>
+      <node id="753">
+        <label>asmjit::EmbedNode</label>
+        <link refid="structasmjit_1_1EmbedNode"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="757">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="756">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="757" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="758" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="756" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="759" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="758">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="755">
+        <label>asmjit::EmbedNode</label>
+        <link refid="structasmjit_1_1EmbedNode"/>
+        <childnode refid="756" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="883" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="883" bodyend="930"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseNode_1aa1270ef124c6809ca7fd3388fc7cb01e" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_comment</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1ab6d90daef658ed0b8524ddf42ea2fc37" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_data</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3990c435857ff94bbd74935638a84ac0" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aae00a71a49da71c80fce40654dfedf81" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_flowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0cefc47a244741a68c66ebd64217973c" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_liveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af79d69cd8ec0c96295bef01b73f6f3cd" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f640dcb57f9c977efcd066cfa34bbd4" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_opCount</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ae46a8e6aca8fe70226eeb6386d06ff60" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_prev</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1ae51d5b0568672c64c99e5764c9f205cf" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_size</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a6006b732dec81463a1508cfad8cb018b" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a41bc5e21cfb77d1a69f6eba49b944b8b" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_type</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7f38e1bbbd868cc74fce0a7d01d5cbf" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>_varInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba3954cf5ced25ede2fcc471b2fd6390" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>addFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a63c80a6e716812a701c6bec2e2be5007" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>BaseNode</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1a2d9a35a0bcfd4fd7a334762a51c51ff9" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>buf</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a7078ba8794a49cf97942d1bef1a043d6" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>delFlags</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1a267ec9b7fcf5e9837bc05242e225235f" prot="private" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>EmbedNode</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1ac2266db226d9b28ff7631e9fbe45764f" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>EmbedNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a52eb758170158aba2b06378313e5748d" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getComment</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1a0f47d924b52f25e56818f3eb7467e139" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a8f41870fbc15450690d92a977e7dea83" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7e1afde9f9b4282247e4b8867d80895" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a601eb54343857a5be1d054876888acc8" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3db24572d64989296c96d4049d0545b8" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getNext</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa28ded7ba5b0741ae57e021c411399a2" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getPrev</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1adfdab6b1fb4b3bc6dd667bd996c35525" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3381bd2fc97d49d392fe7a4ad92cb890" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4b059f3ff2598f406c654833aee1fcbc" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1adca7163f7abc9f6d6a5ac011254a48e4" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getType</name></member>
+      <member refid="structasmjit_1_1BaseNode_1acae8b89a5f312913e64c83caebdc52d2" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a324f00ff430ae18518368f9ef66398e0" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0a4159dd16b9c208acaaeea6daa164d8" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>hasFlag</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4efc44156485164602dc216614995fc5" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>hasLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a73cb9aaabf953b031116981688a8411f" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>hasVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a9e6bd7baceb3622c23ff751152bc44d3" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isFetched</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ac27332d4205dc1effe008e6a168a1435" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a88d7b4ef3d5f1c1ac7c1621678d1c063" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af1afe72717997793b3a7e2d987329e41" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isJmp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a27455b36f9a081b3d6b43ad3707fc180" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isJmpOrJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a511b4075627e8bb484d6e7ad20c1fae0" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba6d60c76d4dcb82b4521b0d0a0c33c2" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isSpecial</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aafb1c845517d89dd84a7140b9a4b9886" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>isTranslated</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1ad97368c0e7f7a1ed2beddda1506bf5c1a921ea1becf74940bce4335115e17dc42" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>kInlineBufferSize</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1a49e7ba67e7f5d2a6ba9f4a97b381f2ed" prot="private" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1ae07dc3ac638bef55e619265851b6bcd4" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>ptr</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ad6f66454cabfc61f1d29fb6ecb6bf18f" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>setComment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a97cb2b2d64b539c1c4c4811344139e42" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>setFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a47ecc2ce0220e63fbc69aca57b4a728f" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>setFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3c55bbb4f84d3ee94123e65e3f212a46" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>setLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a841540382e62b6f80f699259ee59587b" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>setState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f1542bdcd6503fe2ee5a0e847f55215" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>setVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab8d1dfe217c72d01c253687b8c31f64c" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>~BaseNode</name></member>
+      <member refid="structasmjit_1_1EmbedNode_1afe1403eb7175f3e6ed05ad1d7dd5e5fe" prot="public" virt="non-virtual"><scope>asmjit::EmbedNode</scope><name>~EmbedNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

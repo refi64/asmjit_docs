@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1PodList_1_1Link" kind="struct" prot="public">
+    <compoundname>asmjit::PodList::Link</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1PodList_1_1Link_1a12f20338d2a7d5dd51b9f797202bc9f3" prot="public" static="no" mutable="no">
+        <type>Link *</type>
+        <definition>Link* asmjit::PodList&lt; T &gt;::Link::_next</definition>
+        <argsstring></argsstring>
+        <name>_next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podlist.h" line="52" bodyfile="/home/ryan/asmjit/src/asmjit/base/podlist.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1PodList_1_1Link_1a7745acd33521731e2f36f6a52f0b1766" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T asmjit::PodList&lt; T &gt;::Link::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podlist.h" line="53" bodyfile="/home/ryan/asmjit/src/asmjit/base/podlist.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1PodList_1_1Link_1a04ccfc5226058d9d50a127cc5875c7eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Link *</type>
+        <definition>Link* asmjit::PodList&lt; T &gt;::Link::getNext</definition>
+        <argsstring>() const </argsstring>
+        <name>getNext</name>
+        <briefdescription>
+<para>Get next node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podlist.h" line="41" bodyfile="/home/ryan/asmjit/src/asmjit/base/podlist.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1PodList_1_1Link_1ac662c623194ffd0169ce291e1e8c82e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T asmjit::PodList&lt; T &gt;::Link::getValue</definition>
+        <argsstring>() const </argsstring>
+        <name>getValue</name>
+        <briefdescription>
+<para>Get value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podlist.h" line="44" bodyfile="/home/ryan/asmjit/src/asmjit/base/podlist.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1PodList_1_1Link_1a796bb66d59893d1abdc3f2c137d32570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::PodList&lt; T &gt;::Link::setValue</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set value to <emphasis>value</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/podlist.h" line="46" bodyfile="/home/ryan/asmjit/src/asmjit/base/podlist.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/podlist.h" line="35" bodyfile="/home/ryan/asmjit/src/asmjit/base/podlist.h" bodystart="35" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1PodList_1_1Link_1a12f20338d2a7d5dd51b9f797202bc9f3" prot="public" virt="non-virtual"><scope>asmjit::PodList::Link</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1PodList_1_1Link_1a7745acd33521731e2f36f6a52f0b1766" prot="public" virt="non-virtual"><scope>asmjit::PodList::Link</scope><name>_value</name></member>
+      <member refid="structasmjit_1_1PodList_1_1Link_1a04ccfc5226058d9d50a127cc5875c7eb" prot="public" virt="non-virtual"><scope>asmjit::PodList::Link</scope><name>getNext</name></member>
+      <member refid="structasmjit_1_1PodList_1_1Link_1ac662c623194ffd0169ce291e1e8c82e1" prot="public" virt="non-virtual"><scope>asmjit::PodList::Link</scope><name>getValue</name></member>
+      <member refid="structasmjit_1_1PodList_1_1Link_1a796bb66d59893d1abdc3f2c137d32570" prot="public" virt="non-virtual"><scope>asmjit::PodList::Link</scope><name>setValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

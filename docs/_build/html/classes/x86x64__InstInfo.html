@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::InstInfo &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::JitRuntime" href="x86x64__JitRuntime.html" />
+    <link rel="prev" title="x86x64::GpVar" href="x86x64__GpVar.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__JitRuntime.html" title="x86x64::JitRuntime"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__GpVar.html" title="x86x64::GpVar"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-instinfo">
+<h1>x86x64::InstInfo<a class="headerlink" href="#x86x64-instinfo" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::InstInfo</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86 instruction information. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a0cc62ede78ecae0e7b34c4d2c33906f9"></span><div class="line-block">
+<div class="line">const char * <strong>getName</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get instruction name string (null terminated string). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1ad6077b73f67625d56b3b6e1c5ecca58b"></span><div class="line-block">
+<div class="line">uint32_t <strong>_getNameIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get instruction name index (index to _instName array). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1aab95b7afa47fa1e634a72a10a64b3aab"></span><div class="line-block">
+<div class="line">uint32_t <strong>getGroup</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get instruction group, see kInstGroup. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1ae204acb0871cb7346b88d5e5debf68d0"></span><div class="line-block">
+<div class="line">uint32_t <strong>getFlags</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get instruction flags, see kInstFlags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a1f72e7c30fca39b57c3e83c8d1c64af9"></span><div class="line-block">
+<div class="line">bool <strong>isFlow</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction is a control-flow intruction. </p>
+<p>Control flow instruction is instruction that modifies instruction pointer, typically jmp, jcc, call, or ret. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a776abb27d18ab6d6674e6dbc001231da"></span><div class="line-block">
+<div class="line">bool <strong>isTest</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction is a compare/test like intruction. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1af52d13b8612aa6fb858548b213877fd9"></span><div class="line-block">
+<div class="line">bool <strong>isMove</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction is a typical Move instruction. </p>
+<p>Move instructions typically overwrite the first operand, so it&#8217;s an useful hint for Compiler. Applies also to multimedia instruction - MMX, SSE, SSE2 and AVX moves). </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1ac257f3fe1fdf9a4e3d4194163bcfc716"></span><div class="line-block">
+<div class="line">bool <strong>isXchg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction is a typical Exchange instruction. </p>
+<p>Exchange instructios are &#8216;xchg&#8217; and &#8216;xadd&#8217;. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1aaab680aba65c2820993368c2ab84c0d3"></span><div class="line-block">
+<div class="line">bool <strong>isFp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction accesses Fp register(s). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a6a04eaca12afe25152fc1b0809e9ccdd"></span><div class="line-block">
+<div class="line">bool <strong>isLockable</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction can be prefixed by LOCK prefix. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a872ece974575f350e3eb41fff9a0008f"></span><div class="line-block">
+<div class="line">bool <strong>isSpecial</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction is special type (this is used by <tt class="docutils literal"><span class="pre">Compiler</span></tt> to manage additional variables or functionality). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a8647a17ea50c3a5909da41cc1b9168c2"></span><div class="line-block">
+<div class="line">bool <strong>isSpecialMem</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the instruction is special type and it performs memory access. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a7b1f83af3648e84916ad807345c18e5e"></span>uint16_t <strong>_nameIndex</strong></p>
+<blockquote>
+<div><p>Instruction name index in _instName[] array. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a7434e17d8bbe8d87d662ac07563d0740"></span>uint16_t <strong>_flags</strong></p>
+<blockquote>
+<div><p>Instruction flags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1ad2f06d22689c26bbde9ba22fe4273007"></span>uint8_t <strong>_group</strong></p>
+<blockquote>
+<div><p>Instruction group, used also by <tt class="docutils literal"><span class="pre">Compiler</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1ae9c6067766d4164e8a576a036e1261e6"></span>uint8_t <strong>_reserved</strong>[3]</p>
+<blockquote>
+<div><p>Reserved for future use. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a3097ac16cd2c97d8e903959cf9088eec"></span>uint16_t <strong>_opFlags</strong>[4]</p>
+<blockquote>
+<div><p>Operands&#8217; flags. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1InstInfo_1a4c7addf2df6b9673d5f489b29bdd41e7"></span>uint32_t <strong>_opCode</strong>[2]</p>
+<blockquote>
+<div><p>Primary and secondary opcodes. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__GpVar.html"
+                        title="previous chapter">x86x64::GpVar</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__JitRuntime.html"
+                        title="next chapter">x86x64::JitRuntime</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__InstInfo.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__JitRuntime.html" title="x86x64::JitRuntime"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__GpVar.html" title="x86x64::GpVar"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

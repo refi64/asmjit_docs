@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1TypeId_3_01FnDouble_01_4" kind="struct" prot="public">
+    <compoundname>asmjit::TypeId&lt; FnDouble &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structasmjit_1_1TypeId_3_01FnDouble_01_4_1aaaac7606649c169d4fe75b5acd5a13b5" prot="public" static="no">
+        <name>@47</name>
+        <enumvalue id="structasmjit_1_1TypeId_3_01FnDouble_01_4_1aaaac7606649c169d4fe75b5acd5a13b5a2886faf2bc1d7dec0f3dec0775c4310e" prot="public">
+          <name>kId</name>
+          <initializer>  kVarTypeFp64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="261" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="261" bodyend="261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="261" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="261" bodyend="261"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1TypeId_3_01FnDouble_01_4_1aaaac7606649c169d4fe75b5acd5a13b5a2886faf2bc1d7dec0f3dec0775c4310e" prot="public" virt="non-virtual"><scope>asmjit::TypeId&lt; FnDouble &gt;</scope><name>kId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

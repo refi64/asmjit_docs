@@ -1,0 +1,5 @@
+BaseLogger
+==========
+
+.. doxygenstruct:: asmjit::BaseLogger
+   :project: asmjit

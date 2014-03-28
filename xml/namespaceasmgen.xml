@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceasmgen" kind="namespace">
+    <compoundname>asmgen</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceasmgen_1a6ede5daa1330b68f0e0cd9cd624c95b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void asmgen::blend</definition>
+        <argsstring>(asmjit::host::Compiler &amp;c)</argsstring>
+        <name>blend</name>
+        <param>
+          <type>asmjit::host::Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/genblend.h" line="19" bodyfile="/home/ryan/asmjit/src/app/test/genblend.h" bodystart="19" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceasmgen_1a39adbd4d3eb7ebcf6372a4d15bf05e06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void asmgen::opcode</definition>
+        <argsstring>(asmjit::host::Assembler &amp;a)</argsstring>
+        <name>opcode</name>
+        <param>
+          <type>asmjit::host::Assembler &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/genopcode.h" line="17" bodyfile="/home/ryan/asmjit/src/app/test/genopcode.h" bodystart="17" bodyend="2305"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/genblend.h" line="14"/>
+  </compounddef>
+</doxygen>

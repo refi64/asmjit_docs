@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::GpVar &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::InstInfo" href="x86x64__InstInfo.html" />
+    <link rel="prev" title="x86x64::GpReg" href="x86x64__GpReg.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__InstInfo.html" title="x86x64::InstInfo"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__GpReg.html" title="x86x64::GpReg"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-gpvar">
+<h1>x86x64::GpVar<a class="headerlink" href="#x86x64-gpvar" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1GpVar">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::GpVar</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Gp variable. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a4d1ec0862460ef50aaa0d440b38fc77d"></span><div class="line-block">
+<div class="line"> <strong>GpVar</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new uninitialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em><span class="pre">GpVar</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a6f187f0c479d3157f018e0e4dbe4abc6"></span><div class="line-block">
+<div class="line"> <strong>GpVar</strong>(<a class="reference internal" href="BaseCompiler.html#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  &amp; c, uint32_t type = kVarTypeIntPtr, const char * name = NULL)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new initialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em><span class="pre">GpVar</span></em></a></tt> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a37163d41012f2d339dfa1d1f320e9e0f"></span><div class="line-block">
+<div class="line"> <strong>GpVar</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em><span class="pre">GpVar</span></em></a></tt> instance using <em>other</em>. </p>
+<p>Note this will not create a different variable, use <tt class="docutils literal"><span class="pre">Compiler::newGpVar()</span></tt> if you want to do so. This is only copy-constructor that allows to store the same variable in different places. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1abe07ffc2deace047ece1660ed6a5ee39"></span><div class="line-block">
+<div class="line"> <strong>GpVar</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new uninitialized <tt class="docutils literal"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em><span class="pre">GpVar</span></em></a></tt> instance (internal). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1af1a9305bcc1a185714202b88d3aa9922"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a124572848f59e895c188a2bec2a0939f"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1ae3ad17926de68fd1d148bdc1a09dcdde"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>r8</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 8-bit (LO) part of variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a12aa33b8dcca19284915f316e7ceacb4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>r8Lo</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 8-bit (LO) part of variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1ab27d5503a6e3019a2998328665e112d7"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>r8Hi</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 8-bit (HI) part of variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a29bacafcebf9fc15cc02934414d10dbd"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>r16</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 16-bit part of variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a6628b9eace92d29d98c03ec519327731"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>r32</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 32-bit part of variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1adef769c2bd64fa31d2bbb72f028ef96f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a> <strong>r64</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Cast this variable to 64-bit part of variable. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a0cd082958742ef882b6af99e60ad41f9"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a43defb3bc97f1dd072eb2504d7f6ed50"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1a0e7e53524f405e7216ff80ea6269dc2b"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Protected Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1GpVar_1af8da8337b4eb5aa40c598e47b4e4e8a8"></span><div class="line-block">
+<div class="line"> <strong>GpVar</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; other, uint32_t reg, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__GpReg.html"
+                        title="previous chapter">x86x64::GpReg</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__InstInfo.html"
+                        title="next chapter">x86x64::InstInfo</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__GpVar.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__InstInfo.html" title="x86x64::InstInfo"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__GpReg.html" title="x86x64::GpReg"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

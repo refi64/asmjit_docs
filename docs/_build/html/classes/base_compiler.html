@@ -1,0 +1,724 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>BaseCompiler &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="BaseCpu" href="base_cpu.html" />
+    <link rel="prev" title="BaseAssembler" href="base_assembler.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="base_cpu.html" title="BaseCpu"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="base_assembler.html" title="BaseAssembler"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="basecompiler">
+<h1>BaseCompiler<a class="headerlink" href="#basecompiler" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1BaseCompiler">
+<div class="line"><em>struct</em> <strong>asmjit::BaseCompiler</strong></div>
+<div class="line"><em>#include &lt;compiler.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base compiler. </p>
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><a class="reference internal" href="base_assembler.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a>. </dd>
+</dl>
+</p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a7405f38e199666f295043fa1197e8c60"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>BaseCompiler</strong>(<a class="reference internal" href="base_runtime.html#asmjitstructasmjit_1_1BaseRuntime"><em>BaseRuntime</em></a>  * runtime)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ad4e9cfa5d09e28246268e82d3b34eebe"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~BaseCompiler</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a4be1b2c2b911122b2f50967c820340a1"></span><div class="line-block">
+<div class="line">uint32_t <strong>getMaxLookAhead</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get maximum look ahead. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1abf82cd552edd42804ab616b89a2bee93"></span><div class="line-block">
+<div class="line">void <strong>setMaxLookAhead</strong>(uint32_t val)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set maximum look ahead to <em>val</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1afff080faca3b4a0ef878392ef8406efe"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>clear</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear everything, but keep buffers allocated. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>This method will destroy your code. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a66ebed2ec94250d109a0cea4d9cb7cbc"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear everything and reset all buffers. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>This method will destroy your code. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9bb0e088212274bee8c2fe7fa5279d6d"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>_purge</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Called by <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler_1afff080faca3b4a0ef878392ef8406efe"><em>clear()</em></a> and <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler_1a66ebed2ec94250d109a0cea4d9cb7cbc"><em>reset()</em></a> to clear all data related to derived class implementation. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a62471319c38f63bc7efc349ba01e336f"></span><div class="line-block">
+<div class="line">template &lt; typename T &gt;</div>
+<div class="line">T * <strong>newNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1afc83e461ed18d27c9c8236c86fe52a7c"></span><div class="line-block">
+<div class="line">template &lt; typename T, typename P0 &gt;</div>
+<div class="line">T * <strong>newNode</strong>(P0 p0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a15669375b4db699aeed1a0b2724efe94"></span><div class="line-block">
+<div class="line">template &lt; typename T, typename P0, typename P1 &gt;</div>
+<div class="line">T * <strong>newNode</strong>(P0 p0, P1 p1)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1aec9219a5131baaa97366bd89b0d26fc9"></span><div class="line-block">
+<div class="line">template &lt; typename T, typename P0, typename P1, typename P2 &gt;</div>
+<div class="line">T * <strong>newNode</strong>(P0 p0, P1 p1, P2 p2)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a691ca99350207a8a9ed20b2851c8e010"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>getFirstNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get first node. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9461d4f3a68f11e07a22d5d0181ae0d1"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>getLastNode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get last node. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ac895c34efb7f107ef1cc34fb277aa77a"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>getCursor</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get current node. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>If this method returns <tt class="docutils literal"><span class="pre">NULL</span></tt> it means that nothing has been emitted yet. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9424cec63c505e47aae9e376d9f8a752"></span><div class="line-block">
+<div class="line">void <strong>_setCursor</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * node)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set the current node without returning the previous node (private). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ab258d8bb815f7c9e3368bdbab6fd6256"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>setCursor</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * node)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set the current node to <em>node</em> and return the previous one. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a3e3feac0cab656ceb360cdb6498393ff"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>addNode</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * node)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add node <em>node</em> after current and set current to <em>node</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a0cb4ee83c430e485d57f6c18b6857b9f"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>addNodeBefore</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * node, <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * ref)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add node before <em>ref</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1aa4d5d57d89518fd8d3224bebb8e9ae4f"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>addNodeAfter</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * node, <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * ref)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add node after <em>ref</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1aeca9652a56df1842c3342bfcd774a3b9"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>removeNode</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * node)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Remove node <em>node</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ae87563494bc6261b12d22fdfd094500f"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>removeNodes</strong>(<a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * first, <a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * last)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Remove multiple nodes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9869bf24be59d50354a36c2d1a04877a"></span><div class="line-block">
+<div class="line">FuncNode  * <strong>getFunc</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get current function. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a463c4a6d099d52ea479a9650e696544a"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="align_node.html#asmjitstructasmjit_1_1AlignNode"><em>AlignNode</em></a>  * <strong>newAlign</strong>(uint32_t m)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="align_node.html#asmjitstructasmjit_1_1AlignNode"><em>AlignNode</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1af69209313ac46fdbac3de52a613f44ca"></span><div class="line-block">
+<div class="line">ASMJIT_API  <a class="reference internal" href="align_node.html#asmjitstructasmjit_1_1AlignNode"><em>AlignNode</em></a>  * <strong>addAlign</strong>(uint32_t m)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add a new <a class="reference internal" href="align_node.html#asmjitstructasmjit_1_1AlignNode"><em>AlignNode</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1aee491d0c270a38b9e3154e74be9ddd4c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="align_node.html#asmjitstructasmjit_1_1AlignNode"><em>AlignNode</em></a>  * <strong>align</strong>(uint32_t m)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Align target buffer to <em>m</em> bytes. </p>
+<p><p>Typical usage of this is to align labels at start of the inner loops.</p>
+<p>Inserts <tt class="docutils literal"><span class="pre">nop()</span></tt> instructions or CPU optimized NOPs. </p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a90c68e8beae42497baf524842a472154"></span><div class="line-block">
+<div class="line">ASMJIT_API  TargetNode  * <strong>newTarget</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new TargetNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a8e765ab9c84303bbc7cd50cd48978f74"></span><div class="line-block">
+<div class="line">ASMJIT_API  TargetNode  * <strong>addTarget</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add a new TargetNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1afda181597fca17f0b3ea3864820431e7"></span><div class="line-block">
+<div class="line">TargetNode  * <strong>getTargetById</strong>(uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get TargetNode by <em>id</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9b6ebe8c5a3a53f755186ca84fa8a975"></span><div class="line-block">
+<div class="line">TargetNode  * <strong>getTarget</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get TargetNode by <em>label</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a864ab9b2610cb527070455f3e5e893f8"></span><div class="line-block">
+<div class="line">size_t <strong>getLabelsCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get count of created labels. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a731cc8cf46fa9456d9da537338975308"></span><div class="line-block">
+<div class="line">bool <strong>isLabelCreated</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether <em>label</em> is created. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1acd732ff3666fedb2a09d2cd127a9d942"></span><div class="line-block">
+<div class="line">ASMJIT_API Error <strong>_newLabel</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  * dst)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a5eef24a0d411d3eb54677ef5a53957b3"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> <strong>newLabel</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create and return new label. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a79453ba71cbe71378808768bd51a4326"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>bind</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Bind label to the current offset. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a> can be bound only once! </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a869d5617c72c2728059a49a14bbe0362"></span><div class="line-block">
+<div class="line">ASMJIT_API  EmbedNode  * <strong>newEmbed</strong>(const void * data, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new EmbedNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ad99bcb737fa3489e3d3d120f979b1793"></span><div class="line-block">
+<div class="line">ASMJIT_API  EmbedNode  * <strong>addEmbed</strong>(const void * data, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add a new EmbedNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a505588623f233dbf5c227fcbed17155a"></span><div class="line-block">
+<div class="line">EmbedNode  * <strong>embed</strong>(const void * data, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Embed data. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9a246926cd01ea668fbba41741dff72d"></span><div class="line-block">
+<div class="line">ASMJIT_API  CommentNode  * <strong>newComment</strong>(const char * str)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new CommentNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a722b06b738b08acdfeb3559796fd4f7c"></span><div class="line-block">
+<div class="line">ASMJIT_API  CommentNode  * <strong>addComment</strong>(const char * str)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add a new CommentNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1af501c8ac8635d94c0fa28dbfa2c9701f"></span><div class="line-block">
+<div class="line">ASMJIT_API  CommentNode  * <strong>comment</strong>(const char * fmt, ...)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Emit a single comment line. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a0d67198e55d11240e7b71a9d9e5e252e"></span><div class="line-block">
+<div class="line">ASMJIT_API  HintNode  * <strong>newHint</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, uint32_t hint, uint32_t value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new HintNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1abbd6d4c4b95647520ba3c798e67f67f4"></span><div class="line-block">
+<div class="line">ASMJIT_API  HintNode  * <strong>addHint</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, uint32_t hint, uint32_t value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Add a new HintNode. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a47d45c3cb329b30627222ecbbb033490"></span><div class="line-block">
+<div class="line">bool <strong>isVarCreated</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether variable <em>var</em> is created. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a3468dca5f11839752d82a0fe2cbe25a6"></span><div class="line-block">
+<div class="line">VarData  * <strong>getVd</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a31224d17544cd4932d003e310473ae01"></span><div class="line-block">
+<div class="line">VarData  * <strong>getVdById</strong>(uint32_t id)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a19910ee3377191fbe806433bd057215c"></span><div class="line-block">
+<div class="line">VarData  ** <strong>_getVdArray</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1acdb52f3841097c7f335c15ac6c221402"></span><div class="line-block">
+<div class="line">ASMJIT_API  VarData  * <strong>_newVd</strong>(uint32_t type, uint32_t size, uint32_t c, const char * name)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a0a0d78ffb95c9b74d4c6fd0205519b62"></span><div class="line-block">
+<div class="line">Error <strong>_newVar</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  * var, uint32_t type, const char * name)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9887abcaf860aff3620f790071659a47"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>alloc</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Alloc variable <em>var</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a798bd50e7faac48769efd933fa7746d2"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>alloc</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, uint32_t regIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Alloc variable <em>var</em> using <em>regIndex</em> as a register index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a3c08591c6376c4d9f042183cd5c3fb61"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>alloc</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, const  <a class="reference internal" href="base_reg.html#asmjitstructasmjit_1_1BaseReg"><em>BaseReg</em></a>  &amp; reg)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Alloc variable <em>var</em> using <em>reg</em> as a demanded register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ab816e5a2afbf8fd59c119b820f4c5954"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>spill</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Spill variable <em>var</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1aa387c6a473cd28b3a7271d964d4864ba"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>save</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Save variable <em>var</em> if modified. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a5d9021937d9570df4d89abe454bfcee6"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>unuse</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Unuse variable <em>var</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a5a9364098d19d82b88c1a60e964369e5"></span><div class="line-block">
+<div class="line">ASMJIT_API uint32_t <strong>getPriority</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get priority of variable <em>var</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1af4d8526178948d9b59c533f5a07e599e"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setPriority</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, uint32_t priority)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set priority of variable <em>var</em> to <em>priority</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a36d1e8d735fb1e7151ee5ccf6ef2bbe4"></span><div class="line-block">
+<div class="line">ASMJIT_API bool <strong>getSaveOnUnuse</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get save-on-unuse <em>var</em> property. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a317bae3f4011066c5efc7781cb4bc30e"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setSaveOnUnuse</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, bool value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set save-on-unuse <em>var</em> property to <em>value</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a81286497909c2862d4ad440b47be7990"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>rename</strong>(<a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseVar"><em>BaseVar</em></a>  &amp; var, const char * name)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Rename variable <em>var</em> to <em>name</em>. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Only new name will appear in the logger. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a93a3e24196bf66d1268338da451548e7"></span><div class="line-block">
+<div class="line">Error <strong>_newStack</strong>(<a class="reference internal" href="base_mem.html#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  * mem, uint32_t size, uint32_t alignment, const char * name)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="base_mem.html#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a32fb90970a7d2603987e062daf6d0dae"></span><div class="line-block">
+<div class="line">Error <strong>serialize</strong>(<a class="reference internal" href="base_assembler.html#asmjitstructasmjit_1_1BaseAssembler"><em>BaseAssembler</em></a>  &amp; assembler)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Send assembled code to <em>assembler</em>. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a9928c755a7d0cfe65fbb928efef40977"></span>uint32_t <strong>_nodeFlowId</strong></p>
+<blockquote>
+<div><p>Flow id added to each node created (used only by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ae7811102fca26efd20d13628125ca9db"></span>uint32_t <strong>_nodeFlags</strong></p>
+<blockquote>
+<div><p>Flags added to each node created (used only by Context). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1af1693974a88dc5f515a77efbfa3576db"></span>uint32_t <strong>_maxLookAhead</strong></p>
+<blockquote>
+<div><p>Maximum count of nodes to look ahead when allocating/spilling registers. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a628212c11a148a6d4e63f2828f78a1cc"></span>const uint8_t * <strong>_targetVarMapping</strong></p>
+<blockquote>
+<div><p>Variable mapping (translates incoming kVarType into target). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a277d26b04a7c77b681b2aa4bb3153259"></span><a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>_firstNode</strong></p>
+<blockquote>
+<div><p>First node. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a4fdfaf23e3ebb405a6fce1fa80c1c4c6"></span><a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>_lastNode</strong></p>
+<blockquote>
+<div><p>Last node. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a6cb1a30025c1ba27490c5a9af56d9db4"></span><a class="reference internal" href="base_node.html#asmjitstructasmjit_1_1BaseNode"><em>BaseNode</em></a>  * <strong>_cursor</strong></p>
+<blockquote>
+<div><p>Current node. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1afa054f0e028aa072a6b54a38e182812a"></span>FuncNode  * <strong>_func</strong></p>
+<blockquote>
+<div><p>Current function. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a4d491c8178d555cded21ef092455122c"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em>Zone</em></a> <strong>_varAllocator</strong></p>
+<blockquote>
+<div><p>Variable allocator. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a72e0dd87a5728952e65969dca03bb7a6"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Zone"><em>Zone</em></a> <strong>_stringAllocator</strong></p>
+<blockquote>
+<div><p>String/data allocator. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1ab1e68c5e9b3194a92f874f6f702b4128"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1PodVector"><em>PodVector</em></a> &lt;  TargetNode  * &gt; <strong>_targets</strong></p>
+<blockquote>
+<div><p>Targets. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a88ee18bc8626c78793233d684ba8eaef"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1PodVector"><em>PodVector</em></a> &lt;  VarData  * &gt; <strong>_vars</strong></p>
+<blockquote>
+<div><p>Variables. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1a18a979e158be32fe3bcd121fb0a0db47"></span><div class="line-block">
+<div class="line"> <strong>BaseCompiler</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseCompiler_1aef629012b8e93af00a809b9067224720"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseCompiler"><em>BaseCompiler</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="base_assembler.html"
+                        title="previous chapter">BaseAssembler</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="base_cpu.html"
+                        title="next chapter">BaseCpu</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/base_compiler.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="base_cpu.html" title="BaseCpu"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="base_assembler.html" title="BaseAssembler"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

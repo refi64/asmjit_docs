@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__asmjit__config" kind="group">
+    <compoundname>asmjit_config</compoundname>
+    <title>Configuration.</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__asmjit__config_1ga95a8ec65a557eab9ff6dfaf72ae2b5a5" prot="public" static="no">
+        <name>ASMJIT_OS_POSIX</name>
+        <briefdescription>
+<para>Macro that is declared if AsmJit is compiled for unix like operating system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/build.h" line="51" bodyfile="/home/ryan/asmjit/src/asmjit/build.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" prot="public" static="no">
+        <name>ASMJIT_ASSERT</name>
+        <param><defname>_Exp_</defname></param>
+        <initializer>ASMJIT_NOP()</initializer>
+        <briefdescription>
+<para>Assertion macro. Default implementation calls <computeroutput><ref refid="group__asmjit__base_1ga14c6796911b413c3fe1ad198e186901f" kindref="member">asmjit::assertionFailed()</ref></computeroutput> function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/globals.h" line="120" bodyfile="/home/ryan/asmjit/src/asmjit/base/globals.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains macros that can be redefined to fit into any project. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

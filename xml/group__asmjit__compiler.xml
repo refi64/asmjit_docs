@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__asmjit__compiler" kind="group">
+    <compoundname>asmjit_compiler</compoundname>
+    <title>Compiler (high-level code generation).</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains classes related to <computeroutput>asmjit::Compiler</computeroutput> that can be used to generate code using high-level constructs.</para><para><itemizedlist>
+<listitem><para>See <computeroutput>Compiler</computeroutput> class for high level code generation documentation - calling conventions, function declaration and variables management. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>StringLogger &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="StringUtil" href="StringUtil.html" />
+    <link rel="prev" title="StringBuilder" href="StringBuilder.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="StringUtil.html" title="StringUtil"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="StringBuilder.html" title="StringBuilder"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="stringlogger">
+<h1>StringLogger<a class="headerlink" href="#stringlogger" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1StringLogger">
+<div class="line"><em>struct</em> <strong>asmjit::StringLogger</strong></div>
+<div class="line"><em>#include &lt;logger.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>String logger. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a5e533a7723ac19cc7f212d0cbfce0b5a"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>StringLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create new <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a70b362d6c381d2564e8f216aca386c71"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~StringLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1ad9d70ea71f1a3295e35a644404b752bf"></span><div class="line-block">
+<div class="line">const char * <strong>getString</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get <tt class="docutils literal"><span class="pre">char*</span></tt> pointer which represents the resulting string. </p>
+<p>The pointer is owned by <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>, it can&#8217;t be modified or freed. </p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1afd50d9803a35f72aa2c0af5fb93ff6aa"></span><div class="line-block">
+<div class="line">void <strong>clearString</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clear the resulting string. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1adcfddc5e2bb95b362f46adcd18ddb9ff"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>logString</strong>(uint32_t style, const char * buf, size_t len = kInvalidIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Abstract method to log output. </p>
+<p>Default implementation that is in <tt class="docutils literal"><span class="pre">asmjit::Logger</span></tt> is to do nothing. It&#8217;s virtual to fit to your logging system. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a3982da748e40ad5de1b3bc3348726ad3"></span><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1StringBuilder"><em>StringBuilder</em></a> <strong>_stringBuilder</strong></p>
+<blockquote>
+<div><p>Output. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a0924d8729e9e914003c576850d7d4dc1"></span><div class="line-block">
+<div class="line"> <strong>StringLogger</strong>(const  <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1StringLogger_1a3dff3850ac102e2747c498a599e864cb"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1StringLogger"><em>StringLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="StringBuilder.html"
+                        title="previous chapter">StringBuilder</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="StringUtil.html"
+                        title="next chapter">StringUtil</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/StringLogger.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="StringUtil.html" title="StringUtil"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="StringBuilder.html" title="StringBuilder"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

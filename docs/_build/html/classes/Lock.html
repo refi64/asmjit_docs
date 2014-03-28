@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Lock &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="MemoryManager" href="MemoryManager.html" />
+    <link rel="prev" title="LabelLink" href="LabelLink.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="MemoryManager.html" title="MemoryManager"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="LabelLink.html" title="LabelLink"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="lock">
+<h1>Lock<a class="headerlink" href="#lock" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1Lock">
+<div class="line"><em>struct</em> <strong>asmjit::Lock</strong></div>
+<div class="line"><em>#include &lt;lock.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a> - used in thread-safe code for locking. </p>
+<p></p>
+<em>Public Type</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Lock_1a7a00078b528146d10c3a021838361218"></span>typedef pthread_mutex_t <strong>Handle</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Lock_1a5caaefd37e8e54f0dd2c95d572c149db"></span><div class="line-block">
+<div class="line"> <strong>Lock</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Lock_1a072efef351daecbb3529f2c441a4ff1b"></span><div class="line-block">
+<div class="line"> <strong>~Lock</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a> instance. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Lock_1a9778a97877e3ef59b26ebd6a578c9751"></span><div class="line-block">
+<div class="line">void <strong>lock</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Lock_1a390352fa1a235ee0bf9651a7e67fee9a"></span><div class="line-block">
+<div class="line">void <strong>unlock</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Unlock. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Lock_1a2a4e9905e5dc4aa88b2799d16609c012"></span><div class="line-block">
+<div class="line">Handle &amp; <strong>getHandle</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get handle. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Lock_1a06b8323275f644fd38c4ddf41502cc03"></span><div class="line-block">
+<div class="line">const Handle &amp; <strong>getHandle</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Lock_1a8baaca0a1f6acc36ad515fa59b494617"></span>Handle <strong>_handle</strong></p>
+<blockquote>
+<div><p>Handle. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1Lock_1a51e4cecfeabb0f10c181298159b14918"></span><div class="line-block">
+<div class="line"> <strong>Lock</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1Lock_1a89887a8a6cb028ae11f8ad9789c279b0"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Lock"><em>Lock</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="LabelLink.html"
+                        title="previous chapter">LabelLink</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="MemoryManager.html"
+                        title="next chapter">MemoryManager</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/Lock.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="MemoryManager.html" title="MemoryManager"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="LabelLink.html" title="LabelLink"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

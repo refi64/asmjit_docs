@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>FileLogger &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="FnDouble" href="FnDouble.html" />
+    <link rel="prev" title="EndNode" href="EndNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="FnDouble.html" title="FnDouble"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="EndNode.html" title="EndNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="filelogger">
+<h1>FileLogger<a class="headerlink" href="#filelogger" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1FileLogger">
+<div class="line"><em>struct</em> <strong>asmjit::FileLogger</strong></div>
+<div class="line"><em>#include &lt;logger.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Logger that can log to standard C <tt class="docutils literal"><span class="pre">FILE*</span></tt> stream. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1ad88d1d968914c5e7088c5c0505203e2b"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>FileLogger</strong>(FILE * stream = NULL)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new <tt class="docutils literal"><a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1FileLogger"><em><span class="pre">FileLogger</span></em></a></tt>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">stream</span></tt> - <p>FILE stream where logging will be sent (can be <tt class="docutils literal"><span class="pre">NULL</span></tt> to disable logging). </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a1fa8c8d8e47a288b257869297a9f4086"></span><div class="line-block">
+<div class="line">ASMJIT_API <strong>~FileLogger</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Destroy the <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a1bbe0dbee1b762b0bde98ebc542ccdaa"></span><div class="line-block">
+<div class="line">FILE * <strong>getStream</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get <tt class="docutils literal"><span class="pre">FILE*</span></tt> stream. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Return value can be <tt class="docutils literal"><span class="pre">NULL</span></tt>. </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a207f2df573b418ce5534d18065b92bca"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>setStream</strong>(FILE * stream)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set <tt class="docutils literal"><span class="pre">FILE*</span></tt> stream. </p>
+<p><p>Set file stream.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">stream</span></tt> - <p><tt class="docutils literal"><span class="pre">FILE</span></tt> stream where to log output (can be <tt class="docutils literal"><span class="pre">NULL</span></tt> to disable logging). </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a94ffc19d6a1d5f9ec3d8a04247e277b4"></span><div class="line-block">
+<div class="line">ASMJIT_API void <strong>logString</strong>(uint32_t style, const char * buf, size_t len = kInvalidIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Abstract method to log output. </p>
+<p>Default implementation that is in <tt class="docutils literal"><span class="pre">asmjit::Logger</span></tt> is to do nothing. It&#8217;s virtual to fit to your logging system. </p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c"></span>FILE * <strong>_stream</strong></p>
+<blockquote>
+<div><p>C file stream. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Private Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1ad20c557a144faeba683857b71a7cbd0a"></span><div class="line-block">
+<div class="line"> <strong>FileLogger</strong>(const  <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FileLogger_1a8552e56056aab8d129e25cb83ba7a35c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/logging.html#asmjitstructasmjit_1_1FileLogger"><em>FileLogger</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="EndNode.html"
+                        title="previous chapter">EndNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="FnDouble.html"
+                        title="next chapter">FnDouble</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/FileLogger.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="FnDouble.html" title="FnDouble"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="EndNode.html" title="EndNode"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

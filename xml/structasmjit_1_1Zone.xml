@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Zone" kind="struct" prot="public">
+    <compoundname>asmjit::Zone</compoundname>
+    <includes local="no">zone.h</includes>
+    <innerclass refid="structasmjit_1_1Zone_1_1Chunk" prot="public">asmjit::Zone::Chunk</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1Zone_1a142af8ce75cf4b9c720fe18595ed934f" prot="public" static="no" mutable="no">
+        <type>Chunk *</type>
+        <definition>Chunk* asmjit::Zone::_chunks</definition>
+        <argsstring></argsstring>
+        <name>_chunks</name>
+        <briefdescription>
+<para>Last allocated chunk of memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="177" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1Zone_1a4a1de48b6327c6f264bb38498f507518" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::Zone::_chunkSize</definition>
+        <argsstring></argsstring>
+        <name>_chunkSize</name>
+        <briefdescription>
+<para>Default chunk size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="179" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1Zone_1aa149dca67383ad19e563e3cfd24120cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::Zone::Zone</definition>
+        <argsstring>(size_t chunkSize)</argsstring>
+        <name>Zone</name>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <computeroutput><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref></computeroutput> allocator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chunkSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default size of the first chunk. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="57" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1ae94a7270b072c927ee2e14d28a95c40d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::Zone::~Zone</definition>
+        <argsstring>()</argsstring>
+        <name>~Zone</name>
+        <briefdescription>
+<para>Destroy <ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="60" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a96ea6f474546d09502ad270af0b82422" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::Zone::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Free all allocated memory except first block that remains for reuse. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this method will invalidate all instances using this memory allocated by this zone instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="70" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="45" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a253ae00df345d8aa7d2c6989496ac986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::Zone::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Free all allocated memory at once. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this method will invalidate all instances using this memory allocated by this zone instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="76" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="62" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a3cee4658b5b080c2285f157040e038ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::Zone::getChunkSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getChunkSize</name>
+        <briefdescription>
+<para>Get (default) chunk size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="83" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1abc452d9549c8a5934637cbcfe830ef04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* asmjit::Zone::alloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Allocate <computeroutput>size</computeroutput> bytes of memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pointer allocated by this way will be valid until <computeroutput><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref></computeroutput> object is destroyed. To create class by this way use placement <computeroutput>new</computeroutput> and <computeroutput>delete</computeroutput> operators:</para><para><programlisting><codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Example<sp/>of<sp/>simple<sp/>class<sp/>allocation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Your<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>members...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Your<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>f()</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>zone<sp/>object<sp/>with<sp/>chunk<sp/>size<sp/>of<sp/>65536<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="structasmjit_1_1Zone" kindref="compound" tooltip="Fast incremental memory allocator.">Zone</ref><sp/>zone(65536);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>your<sp/>objects<sp/>using<sp/>zone<sp/>object<sp/>allocating,<sp/>for<sp/>example:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Object*<sp/>obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(zone.alloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(YourClass)))<sp/>Object();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>lifetime<sp/>of<sp/>your<sp/>objects<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destroy<sp/>your<sp/>objects:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>obj-&gt;~Object();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Zone<sp/>destructor<sp/>will<sp/>free<sp/>all<sp/>memory<sp/>allocated<sp/>through<sp/>it,<sp/>you<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>@c<sp/>zone.reset()<sp/>if<sp/>you<sp/>wan&apos;t<sp/>to<sp/>reuse<sp/>current<sp/>@ref<sp/>Zone.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="123" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1aff1f5ac43e4a8c42a7dbc5cf8e0b7a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* asmjit::Zone::allocT</definition>
+        <argsstring>(size_t size=sizeof(T))</argsstring>
+        <name>allocT</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>sizeof(T)</defval>
+        </param>
+        <briefdescription>
+<para>Like <ref refid="structasmjit_1_1Zone_1abc452d9549c8a5934637cbcfe830ef04" kindref="member">alloc()</ref>, but returns <computeroutput>T*</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="138" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a2c49b1191e1be4755c6aeffbb4beb595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void *</type>
+        <definition>void * asmjit::Zone::_alloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>_alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="143" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="81" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1ae557fd4914c39ce401ea23e855cb4583" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* asmjit::Zone::calloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>calloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Allocate <computeroutput>size</computeroutput> bytes of zeroed memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="146" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="146" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a3bf233327f30c7235d11715f329129b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void *</type>
+        <definition>void * asmjit::Zone::_calloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>_calloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="161" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="108" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a2d832389e5898c0fcc52c6d22728a826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void *</type>
+        <definition>void * asmjit::Zone::dup</definition>
+        <argsstring>(const void *data, size_t size)</argsstring>
+        <name>dup</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Helper to duplicate data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="164" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="117" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a6dde61ffae89af5a1ca189db8767eec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API char *</type>
+        <definition>char * asmjit::Zone::sdup</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>sdup</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Helper to duplicate string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="167" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="132" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Zone_1a7a89a9728df35f2486f724ad1754880e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API char *</type>
+        <definition>char * asmjit::Zone::sformat</definition>
+        <argsstring>(const char *str,...)</argsstring>
+        <name>sformat</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Helper to duplicate formatted string, maximum length is 256 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="170" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.cpp" bodystart="153" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fast incremental memory allocator. </para>    </briefdescription>
+    <detaileddescription>
+<para>Memory allocator designed to allocate small objects that will be invalidated (free) all at once. </para>    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/zone.h" line="27" bodyfile="/home/ryan/asmjit/src/asmjit/base/zone.h" bodystart="27" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Zone_1a2c49b1191e1be4755c6aeffbb4beb595" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>_alloc</name></member>
+      <member refid="structasmjit_1_1Zone_1a3bf233327f30c7235d11715f329129b7" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>_calloc</name></member>
+      <member refid="structasmjit_1_1Zone_1a142af8ce75cf4b9c720fe18595ed934f" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>_chunks</name></member>
+      <member refid="structasmjit_1_1Zone_1a4a1de48b6327c6f264bb38498f507518" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>_chunkSize</name></member>
+      <member refid="structasmjit_1_1Zone_1abc452d9549c8a5934637cbcfe830ef04" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>alloc</name></member>
+      <member refid="structasmjit_1_1Zone_1aff1f5ac43e4a8c42a7dbc5cf8e0b7a47" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>allocT</name></member>
+      <member refid="structasmjit_1_1Zone_1ae557fd4914c39ce401ea23e855cb4583" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>calloc</name></member>
+      <member refid="structasmjit_1_1Zone_1a96ea6f474546d09502ad270af0b82422" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>clear</name></member>
+      <member refid="structasmjit_1_1Zone_1a2d832389e5898c0fcc52c6d22728a826" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>dup</name></member>
+      <member refid="structasmjit_1_1Zone_1a3cee4658b5b080c2285f157040e038ca" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>getChunkSize</name></member>
+      <member refid="structasmjit_1_1Zone_1a253ae00df345d8aa7d2c6989496ac986" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1Zone_1a6dde61ffae89af5a1ca189db8767eec5" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>sdup</name></member>
+      <member refid="structasmjit_1_1Zone_1a7a89a9728df35f2486f724ad1754880e" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>sformat</name></member>
+      <member refid="structasmjit_1_1Zone_1aa149dca67383ad19e563e3cfd24120cc" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>Zone</name></member>
+      <member refid="structasmjit_1_1Zone_1ae94a7270b072c927ee2e14d28a95c40d" prot="public" virt="non-virtual"><scope>asmjit::Zone</scope><name>~Zone</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

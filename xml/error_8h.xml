@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="error_8h" kind="file">
+    <compoundname>error.h</compoundname>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="codegen_8h" local="yes">codegen.h</includedby>
+    <includedby refid="runtime_8h" local="yes">runtime.h</includedby>
+    <includedby refid="assembler_8h" local="yes">assembler.h</includedby>
+    <includedby refid="podvector_8h" local="yes">podvector.h</includedby>
+    <includedby refid="compiler_8h" local="yes">compiler.h</includedby>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="error_8cpp" local="yes">error.cpp</includedby>
+    <includedby refid="memorymanager_8cpp" local="yes">memorymanager.cpp</includedby>
+    <includedby refid="runtime_8cpp" local="yes">runtime.cpp</includedby>
+    <incdepgraph>
+      <node id="913">
+        <label>../base/globals.h</label>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="914">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="915">
+        <label>stdarg.h</label>
+      </node>
+      <node id="917">
+        <label>stdint.h</label>
+      </node>
+      <node id="909">
+        <label>stdlib.h</label>
+      </node>
+      <node id="904">
+        <label>error.h</label>
+        <link refid="error.h"/>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="905">
+        <label>../base/apibegin.h</label>
+        <childnode refid="906" relation="include">
+        </childnode>
+      </node>
+      <node id="911">
+        <label>../base/defs.h</label>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="918">
+        <label>limits.h</label>
+      </node>
+      <node id="916">
+        <label>new</label>
+      </node>
+      <node id="907">
+        <label>config.h</label>
+      </node>
+      <node id="912">
+        <label>../base/intutil.h</label>
+        <childnode refid="913" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>../build.h</label>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="916" relation="include">
+        </childnode>
+        <childnode refid="917" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+      </node>
+      <node id="908">
+        <label>stdio.h</label>
+      </node>
+      <node id="910">
+        <label>string.h</label>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="929">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="953">
+        <label>error.cpp</label>
+      </node>
+      <node id="920">
+        <label>codegen.h</label>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="919">
+        <label>error.h</label>
+        <link refid="error.h"/>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="924">
+        <label>asmjit.h</label>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+      </node>
+      <node id="931">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="921">
+        <label>assembler.h</label>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+      </node>
+      <node id="954">
+        <label>memorymanager.cpp</label>
+      </node>
+      <node id="947">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="952">
+        <label>podvector.cpp</label>
+      </node>
+      <node id="937">
+        <label>x86.h</label>
+      </node>
+      <node id="945">
+        <label>x86compiler.h</label>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="939">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="923">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="951">
+        <label>podvector.h</label>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+      <node id="922">
+        <label>base.h</label>
+        <childnode refid="923" relation="include">
+        </childnode>
+        <childnode refid="924" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="935">
+        <label>winremoteruntime.h</label>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+      <node id="927">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="946">
+        <label>x86func.h</label>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="928">
+        <label>genopcode.h</label>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+      </node>
+      <node id="940">
+        <label>context_p.h</label>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>genblend.h</label>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+      </node>
+      <node id="941">
+        <label>context.cpp</label>
+      </node>
+      <node id="950">
+        <label>runtime.h</label>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>x86assembler.h</label>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="949">
+        <label>codegen.cpp</label>
+      </node>
+      <node id="934">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="932">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="933">
+        <label>host.h</label>
+        <childnode refid="924" relation="include">
+        </childnode>
+      </node>
+      <node id="936">
+        <label>contrib.h</label>
+      </node>
+      <node id="925">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="930">
+        <label>testcpu.cpp</label>
+      </node>
+      <node id="938">
+        <label>compiler.h</label>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="943">
+        <label>x86defs.h</label>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1ErrorHandler" prot="public">asmjit::ErrorHandler</innerclass>
+    <innerclass refid="structasmjit_1_1ErrorUtil" prot="public">asmjit::ErrorUtil</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__asmjit__base_1gac3afe7431f1f99e17034e65dbc045c14" prot="public" static="no">
+        <name>ASMJIT_PROPAGATE_ERROR</name>
+        <param><defname>_Exp_</defname></param>
+        <initializer>do { \
+    ::asmjit::Error errval_ = (_Exp_); \
+    if (errval_ != ::asmjit::kErrorOk) \
+      return errval_; \
+  } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="186" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_ERROR_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_ERROR_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_base</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::kError]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">//!<sp/>@brief<sp/>AsmJit<sp/>error<sp/>codes.</highlight></codeline>
+<codeline lineno="24" refid="group__asmjit__base_1ga4d80121b99d57fc3e7269801bc1e98af" refkind="member"><highlight class="comment"></highlight><highlight class="normal">ASMJIT_ENUM(<ref refid="group__asmjit__base_1ga4d80121b99d57fc3e7269801bc1e98af" kindref="member" tooltip="AsmJit error codes.">kError</ref>)<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>No<sp/>error<sp/>(success).</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>//!<sp/>This<sp/>is<sp/>default<sp/>state<sp/>and<sp/>state<sp/>you<sp/>want.</highlight></codeline>
+<codeline lineno="28" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Heap<sp/>memory<sp/>allocation<sp/>failed.</highlight></codeline>
+<codeline lineno="31" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afad67d4600b430546fd73a6a83b950818e" kindref="member" tooltip="Heap memory allocation failed.">kErrorNoHeapMemory</ref><sp/>=<sp/>1,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Virtual<sp/>memory<sp/>allocation<sp/>failed.</highlight></codeline>
+<codeline lineno="33" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa1f04b9953660ab89255e8be134f5d621" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa1f04b9953660ab89255e8be134f5d621" kindref="member" tooltip="Virtual memory allocation failed.">kErrorNoVirtualMemory</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Invalid<sp/>argument.</highlight></codeline>
+<codeline lineno="36" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf36f8ebff7fdd3f8cff8688b86d399e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf36f8ebff7fdd3f8cff8688b86d399e" kindref="member" tooltip="Invalid argument.">kErrorInvalidArgument</ref><sp/>=<sp/>3,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Invalid<sp/>state.</highlight></codeline>
+<codeline lineno="38" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa78799e101ad4020abb524d7ebef96902" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa78799e101ad4020abb524d7ebef96902" kindref="member" tooltip="Invalid state.">kErrorInvalidState</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Unknown<sp/>instruction.<sp/>This<sp/>happens<sp/>only<sp/>if<sp/>instruction<sp/>code<sp/>is</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/>//!<sp/>out<sp/>of<sp/>bounds.<sp/>Shouldn&apos;t<sp/>happen.</highlight></codeline>
+<codeline lineno="42" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf3902dc2b1981434c3d586c38f939aa" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afacf3902dc2b1981434c3d586c38f939aa" kindref="member" tooltip="Unknown instruction. This happens only if instruction code is out of bounds. Shouldn&amp;#39;t happen...">kErrorAssemblerUnknownInst</ref><sp/>=<sp/>5,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Illegal<sp/>instruction,<sp/>usually<sp/>generated<sp/>by<sp/>asmjit::Assembler</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/>//!<sp/>class<sp/>when<sp/>emitting<sp/>instruction<sp/>opcode.<sp/>If<sp/>this<sp/>error<sp/>is<sp/>generated<sp/>the</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/>//!<sp/>target<sp/>buffer<sp/>is<sp/>not<sp/>affected<sp/>by<sp/>this<sp/>invalid<sp/>instruction.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/>//!<sp/>You<sp/>can<sp/>also<sp/>get<sp/>this<sp/>status<sp/>code<sp/>if<sp/>you<sp/>are<sp/>under<sp/>x64<sp/>(64-bit<sp/>x86)<sp/>and</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/>//!<sp/>you<sp/>tried<sp/>to<sp/>decode<sp/>instruction<sp/>using<sp/>AH,<sp/>BH,<sp/>CH<sp/>or<sp/>DH<sp/>register<sp/>with<sp/>REX</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/>//!<sp/>prefix.<sp/>These<sp/>registers<sp/>can&apos;t<sp/>be<sp/>accessed<sp/>if<sp/>REX<sp/>prefix<sp/>is<sp/>used<sp/>and<sp/>AsmJit</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/>//!<sp/>didn&apos;t<sp/>check<sp/>for<sp/>this<sp/>situation<sp/>in<sp/>intrinsics<sp/>(@c<sp/>Compiler<sp/>takes<sp/>care<sp/>of</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/>//!<sp/>this<sp/>and<sp/>rearrange<sp/>registers<sp/>if<sp/>needed).</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/>//!<sp/>Examples<sp/>that<sp/>will<sp/>raise<sp/>@c<sp/>kErrorAssemblerIllegalInst<sp/>error<sp/>(a<sp/>is</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/>//!<sp/>@c<sp/>Assembler<sp/>instance):</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/>//!<sp/>@code</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/>//!<sp/>a.mov(dword_ptr(eax),<sp/>al);<sp/>//<sp/>Invalid<sp/>address<sp/>size.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/>//!<sp/>a.mov(byte_ptr(r10),<sp/>ah);<sp/><sp/>//<sp/>Undecodable<sp/>instruction<sp/>(AH<sp/>used<sp/>with<sp/>r10</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/>//!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>that<sp/>can<sp/>be<sp/>encoded<sp/>by<sp/>using<sp/>REX<sp/>prefix<sp/>only)</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>//!<sp/>@endcode</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>In<sp/>debug<sp/>mode<sp/>you<sp/>get<sp/>assertion<sp/>failure<sp/>instead<sp/>of<sp/>setting<sp/>error</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/>//!<sp/>code.</highlight></codeline>
+<codeline lineno="64" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa346fdaab81454d309e04e9e42ec45191" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa346fdaab81454d309e04e9e42ec45191" kindref="member" tooltip="Illegal instruction, usually generated by asmjit::Assembler class when emitting instruction opcode...">kErrorAssemblerIllegalInst</ref><sp/>=<sp/>6,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Illegal<sp/>addressing<sp/>used<sp/>(unencodable).</highlight></codeline>
+<codeline lineno="66" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa708a3224cc77d587a93504eec23b1971" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa708a3224cc77d587a93504eec23b1971" kindref="member" tooltip="Illegal addressing used (unencodable).">kErrorAssemblerIllegalAddr</ref><sp/>=<sp/>7,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Short<sp/>jump<sp/>instruction<sp/>used,<sp/>but<sp/>displacement<sp/>is<sp/>out<sp/>of<sp/>bounds.</highlight></codeline>
+<codeline lineno="68" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa735bf5ee691bb952bd2fd59247751e45" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa735bf5ee691bb952bd2fd59247751e45" kindref="member" tooltip="Short jump instruction used, but displacement is out of bounds.">kErrorAssemblerIllegalShortJump</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>No<sp/>function<sp/>defined.</highlight></codeline>
+<codeline lineno="71" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa1dcaa20750234e63b2bd9e96ac3b42ed" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa1dcaa20750234e63b2bd9e96ac3b42ed" kindref="member" tooltip="No function defined.">kErrorCompilerNoFunc</ref><sp/>=<sp/>9,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Function<sp/>generation<sp/>is<sp/>not<sp/>finished<sp/>by<sp/>using<sp/>@c<sp/>Compiler::endFunc()</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/>//!<sp/>or<sp/>something<sp/>bad<sp/>happened<sp/>during<sp/>generation<sp/>related<sp/>to<sp/>function.<sp/>This<sp/>can</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/>//!<sp/>be<sp/>missing<sp/>compiler<sp/>node,<sp/>etc...</highlight></codeline>
+<codeline lineno="75" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa2c8eab5f276914a2333a0623ae75fc92" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa2c8eab5f276914a2333a0623ae75fc92" kindref="member" tooltip="Function generation is not finished by using Compiler::endFunc() or something bad happened during gen...">kErrorCompilerIncompleteFunc</ref><sp/>=<sp/>10,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Tried<sp/>to<sp/>generate<sp/>a<sp/>function<sp/>with<sp/>overlapped<sp/>arguments.</highlight></codeline>
+<codeline lineno="77" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afae9cd29c4aecbbf8c96e5800dc01b7f37" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afae9cd29c4aecbbf8c96e5800dc01b7f37" kindref="member" tooltip="Tried to generate a function with overlapped arguments.">kErrorCompilerOverlappedArgs</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Compiler<sp/>can&apos;t<sp/>allocate<sp/>registers.</highlight></codeline>
+<codeline lineno="80" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa0f3a9d1e584ee324e5f5769a941c996f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa0f3a9d1e584ee324e5f5769a941c996f" kindref="member" tooltip="Compiler can&amp;#39;t allocate registers.">kErrorCompilerNoRegs</ref><sp/>=<sp/>12,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Compiler<sp/>can&apos;t<sp/>allocate<sp/>registers,<sp/>because<sp/>they<sp/>overlap.</highlight></codeline>
+<codeline lineno="82" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa456d136cd9336cb9f516a2f8d5458ac2" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa456d136cd9336cb9f516a2f8d5458ac2" kindref="member" tooltip="Compiler can&amp;#39;t allocate registers, because they overlap.">kErrorCompilerOverlappedRegs</ref><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Tried<sp/>to<sp/>call<sp/>function<sp/>with<sp/>an<sp/>incompatible<sp/>argument.</highlight></codeline>
+<codeline lineno="85" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa582fa84c94ce8e85375183eb1f82aae7" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa582fa84c94ce8e85375183eb1f82aae7" kindref="member" tooltip="Tried to call function with an incompatible argument.">kErrorCompilerIncompatibleArg</ref><sp/>=<sp/>14,</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Incompatible<sp/>return<sp/>value.</highlight></codeline>
+<codeline lineno="87" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa6c59c4c25cc85605baf7e981c49994ac" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afa6c59c4c25cc85605baf7e981c49994ac" kindref="member" tooltip="Incompatible return value.">kErrorCompilerIncompatibleRet</ref><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Count<sp/>of<sp/>AsmJit<sp/>status<sp/>codes.<sp/>Can<sp/>grow<sp/>in<sp/>future.</highlight></codeline>
+<codeline lineno="90" refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afaef398e9d771bed55744ed34798650fe8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afaef398e9d771bed55744ed34798650fe8" kindref="member" tooltip="Count of AsmJit status codes. Can grow in future.">kErrorCount</ref><sp/>=<sp/>16</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::Error]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>Error;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::ErrorHandler]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ErrorHandler<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Create<sp/>a<sp/>new<sp/>@ref<sp/>ErrorHandler.</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/>ErrorHandler();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>ErrorHandler.</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~ErrorHandler();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Interface]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Reference<sp/>this<sp/>error<sp/>handler.</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>This<sp/>member<sp/>function<sp/>is<sp/>provided<sp/>for<sp/>convenience.<sp/>The<sp/>default</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/>//!<sp/>implementation<sp/>does<sp/>nothing.<sp/>If<sp/>you<sp/>are<sp/>working<sp/>in<sp/>environment<sp/>where</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/>//!<sp/>multiple<sp/>@ref<sp/>ErrorHandler<sp/>instances<sp/>are<sp/>used<sp/>in<sp/>different<sp/>@ref<sp/>Assembler</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/>//!<sp/>and<sp/>@ref<sp/>Compiler<sp/>instances<sp/>(or<sp/>in<sp/>multithreaded<sp/>environment)<sp/>you<sp/>might</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/>//!<sp/>want<sp/>to<sp/>provide<sp/>your<sp/>own<sp/>functionality<sp/>for<sp/>reference<sp/>counting.<sp/>In<sp/>that</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/>//!<sp/>case<sp/>override<sp/>@ref<sp/>addRef()<sp/>and<sp/>@ref<sp/>release()<sp/>functions<sp/>to<sp/>inc/dec<sp/>your</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/>//!<sp/>reference<sp/>count<sp/>value.</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ErrorHandler*<sp/>addRef()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Release<sp/>this<sp/>error<sp/>handler.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/>//!<sp/>@note<sp/>This<sp/>member<sp/>function<sp/>is<sp/>provided<sp/>for<sp/>convenience.<sp/>See<sp/>@ref<sp/>addRef()</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/>//!<sp/>for<sp/>more<sp/>detailed<sp/>information<sp/>related<sp/>to<sp/>reference<sp/>counting.</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>release();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Error<sp/>handler<sp/>(pure).</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/>//!<sp/>Error<sp/>handler<sp/>is<sp/>called<sp/>when<sp/>an<sp/>error<sp/>happened.<sp/>An<sp/>error<sp/>can<sp/>happen<sp/>in</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/>//!<sp/>many<sp/>places,<sp/>but<sp/>error<sp/>handler<sp/>is<sp/>mostly<sp/>used<sp/>by<sp/>@ref<sp/>Assembler<sp/>and</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/>//!<sp/>@ref<sp/>Compiler<sp/>classes<sp/>to<sp/>report<sp/>anything<sp/>that<sp/>may<sp/>prevent<sp/>correct<sp/>code</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/>//!<sp/>generation.<sp/>There<sp/>are<sp/>multiple<sp/>ways<sp/>how<sp/>the<sp/>error<sp/>handler<sp/>can<sp/>be<sp/>used</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/>//!<sp/>and<sp/>each<sp/>has<sp/>it&apos;s<sp/>pros/cons.</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/>//!<sp/>AsmJit<sp/>library<sp/>doesn&apos;t<sp/>use<sp/>exceptions<sp/>and<sp/>can<sp/>be<sp/>compiled<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/>//!<sp/>exception<sp/>feature<sp/>support.<sp/>Even<sp/>if<sp/>the<sp/>AsmJit<sp/>library<sp/>is<sp/>compiled<sp/>without</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/>//!<sp/>exceptions<sp/>it<sp/>is<sp/>exception-safe<sp/>and<sp/>handleError()<sp/>can<sp/>report<sp/>an<sp/>incoming</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/>//!<sp/>error<sp/>by<sp/>throwing<sp/>an<sp/>exception<sp/>of<sp/>any<sp/>type.<sp/>It&apos;s<sp/>guaranteed<sp/>that<sp/>the</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/>//!<sp/>exception<sp/>won&apos;t<sp/>be<sp/>catched<sp/>by<sp/>AsmJit<sp/>and<sp/>will<sp/>be<sp/>propagated<sp/>to<sp/>the<sp/>code</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/>//!<sp/>calling<sp/>AsmJit<sp/>@ref<sp/>Assembler<sp/>or<sp/>@ref<sp/>Compiler.<sp/>Alternative<sp/>to<sp/>throwing</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/>//!<sp/>exception<sp/>is<sp/>using<sp/>setjmp()<sp/>/<sp/>longjmp()<sp/>pair<sp/>from<sp/>the<sp/>standard<sp/>C<sp/>library.</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/><sp/>//!<sp/>If<sp/>the<sp/>exception<sp/>or<sp/>setjmp()<sp/>/<sp/>longjmp()<sp/>mechanism<sp/>is<sp/>used,<sp/>the<sp/>state<sp/>of</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/>//!<sp/>the<sp/>@ref<sp/>Assember<sp/>or<sp/>@ref<sp/>Compiler<sp/>is<sp/>unchanged<sp/>and<sp/>if<sp/>it&apos;s<sp/>possible<sp/>the</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/><sp/>//!<sp/>execution<sp/>(instruction<sp/>serialization)<sp/>can<sp/>continue.<sp/>However<sp/>if<sp/>the<sp/>error</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/><sp/>//!<sp/>happened<sp/>during<sp/>any<sp/>phase<sp/>that<sp/>translates<sp/>or<sp/>modifies<sp/>the<sp/>stored<sp/>code</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/>//!<sp/>(for<sp/>example<sp/>relocation<sp/>done<sp/>by<sp/>@ref<sp/>Assembler<sp/>or<sp/>analysis/translation</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/><sp/>//!<sp/>done<sp/>by<sp/>@ref<sp/>Compiler)<sp/>the<sp/>execution<sp/>can&apos;t<sp/>continue<sp/>and<sp/>the<sp/>error<sp/>will</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/><sp/>//!<sp/>be<sp/>also<sp/>stored<sp/>in<sp/>@ref<sp/>Assembler<sp/>or<sp/>@ref<sp/>Compiler.</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/>//!</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/>//!<sp/>Finally,<sp/>if<sp/>exceptions<sp/>nor<sp/>setjmp()<sp/>/<sp/>longjmp()<sp/>mechanisms<sp/>were<sp/>used,</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/>//!<sp/>you<sp/>can<sp/>still<sp/>implement<sp/>a<sp/>compatible<sp/>design<sp/>by<sp/>returning<sp/>from<sp/>your<sp/>error</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/>//!<sp/>handler.<sp/>Returning<sp/>@c<sp/>true<sp/>means<sp/>that<sp/>error<sp/>was<sp/>reported<sp/>and<sp/>AsmJit</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/>//!<sp/>should<sp/>continue<sp/>execution.<sp/>When<sp/>@c<sp/>false<sp/>is<sp/>returned,<sp/>AsmJit<sp/>sets<sp/>the</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/>//!<sp/>error<sp/>immediately<sp/>to<sp/>the<sp/>@ref<sp/>Assembler<sp/>or<sp/>@ref<sp/>Compiler<sp/>and<sp/>execution</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/>//!<sp/>shouldn&apos;t<sp/>continue<sp/>(this<sp/>is<sp/>the<sp/>default<sp/>behavior<sp/>in<sp/>case<sp/>no<sp/>error<sp/>handler</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/>//!<sp/>is<sp/>used).</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>handleError(Error<sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::ErrorUtil]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ErrorUtil<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>printable<sp/>version<sp/>of<sp/>AsmJit<sp/>@ref<sp/>kError<sp/>code.</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>asString(Error<sp/>code);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[ASMJIT_PROPAGATE_ERROR]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASMJIT_PROPAGATE_ERROR(_Exp_)<sp/>\</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>::asmjit::Error<sp/>errval_<sp/>=<sp/>(_Exp_);<sp/>\</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(errval_<sp/>!=<sp/>::asmjit::kErrorOk)<sp/>\</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>errval_;<sp/>\</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"><sp/><sp/>}<sp/>while<sp/>(0)</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="188"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_ERROR_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/error.h"/>
+  </compounddef>
+</doxygen>

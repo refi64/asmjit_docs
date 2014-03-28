@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__asmjit__cpuinfo" kind="group">
+    <compoundname>asmjit_cpuinfo</compoundname>
+    <title>CPU information.</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>X86 or x64 cpuid instruction allows to get information about processor vendor and it&apos;s features. It&apos;s always used to detect features like MMX, SSE and other newer ones.</para><para>AsmJit library supports low level cpuid call implemented internally as C++ function using inline assembler or intrinsics and also higher level CPU features detection. The low level function (also used by higher level one) is <computeroutput>asmjit::cpuid()</computeroutput>.</para><para>AsmJit library also contains higher level function <computeroutput>asmjit::getCpu()</computeroutput> that returns features detected by the library. The detection process is done only once and the returned object is always the same. <computeroutput><ref refid="structasmjit_1_1BaseCpu" kindref="compound">asmjit::BaseCpu</ref></computeroutput> structure not contains only information through <computeroutput>asmjit::cpuid()</computeroutput>, but there is also small multiplatform code to detect number of processors (or cores) through operating system API.</para><para>It&apos;s recommended to use <computeroutput>asmjit::cpuInfo</computeroutput> to detect and check for host processor features.</para><para>Example how to use asmjit::cpuid():</para><para><programlisting><codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>All<sp/>functions<sp/>and<sp/>structures<sp/>are<sp/>in<sp/>asmjit<sp/>namesapce.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Here<sp/>will<sp/>be<sp/>retrieved<sp/>result<sp/>of<sp/>cpuid<sp/>call.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>CpuId<sp/>out;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>cpuid<sp/>function<sp/>to<sp/>do<sp/>the<sp/>job.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>cpuid(0<sp/></highlight><highlight class="comment">/*<sp/>eax<sp/>*/</highlight><highlight class="normal">,<sp/>&amp;out<sp/></highlight><highlight class="comment">/*<sp/>eax,<sp/>ebx,<sp/>ecx,<sp/>edx<sp/>*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>If<sp/>eax<sp/>argument<sp/>to<sp/>cpuid<sp/>is<sp/>0,<sp/>ebx,<sp/>ecx<sp/>and<sp/>edx<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>are<sp/>filled<sp/>with<sp/>cpu<sp/>vendor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>vendor[13];</highlight></codeline>
+<codeline><highlight class="normal"><sp/>memcpy(i-&gt;vendor,<sp/>&amp;out.ebx,<sp/>4);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>memcpy(i-&gt;vendor<sp/>+<sp/>4,<sp/>&amp;out.edx,<sp/>4);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>memcpy(i-&gt;vendor<sp/>+<sp/>8,<sp/>&amp;out.ecx,<sp/>4);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>vendor[12]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>vendor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>puts(vendor);</highlight></codeline>
+</programlisting></para><para>If the high-level interface of <ref refid="structasmjit_1_1BaseCpu" kindref="compound">asmjit::BaseCpu</ref> is not enough, you can use low-level asmjit::cpuid() when running on x86/x64 host, but please read processor manuals provided by Intel, AMD or other manufacturer for cpuid details.</para><para>Example of using <computeroutput><ref refid="structasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff" kindref="member">asmjit::BaseCpu::getHost()</ref></computeroutput>:</para><para><programlisting><codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>All<sp/>functions<sp/>and<sp/>structures<sp/>are<sp/>in<sp/>asmjit<sp/>namesapce.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">asmjit;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>cpuInfo<sp/>return<sp/>BaseCpu<sp/>structure<sp/>that<sp/>shouldn&apos;t<sp/>be<sp/>modified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>const<sp/>by<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1BaseCpu" kindref="compound" tooltip="Base cpu information.">BaseCpu</ref>*<sp/>cpu<sp/>=<sp/><ref refid="structasmjit_1_1BaseCpu_1a401b722e8a48d77c4031a28cd46f1fff" kindref="member" tooltip="Get host cpu.">BaseCpu::getHost</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>you<sp/>are<sp/>able<sp/>to<sp/>get<sp/>specific<sp/>features.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Processor<sp/>has<sp/>SSE2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cpu-&gt;features<sp/>&amp;<sp/><ref refid="group__asmjit__x86x64_1gga2e2003ff81acf82b29172c8c8dc68b12a9d090d4fc00bb41bed251a57033c81b8" kindref="member" tooltip="Cpu has SSE2.">kCpuFeatureSse2</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>your<sp/>code...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Processor<sp/>has<sp/>MMX</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cpu-&gt;features<sp/>&amp;<sp/>kCpuFeature_MMX)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>your<sp/>code...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Processor<sp/>is<sp/>old,<sp/>no<sp/>SSE2<sp/>or<sp/>MMX<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>your<sp/>code...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting></para><para>Better example is in app/test/testcpu.cpp file. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

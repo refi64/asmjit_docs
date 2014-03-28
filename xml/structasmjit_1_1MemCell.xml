@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1MemCell" kind="struct" prot="public">
+    <compoundname>asmjit::MemCell</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1MemCell_1a2d97f636186e420e6722e5043a9e7a85" prot="public" static="no" mutable="no">
+        <type>MemCell *</type>
+        <definition>MemCell* asmjit::MemCell::_next</definition>
+        <argsstring></argsstring>
+        <name>_next</name>
+        <briefdescription>
+<para>Next active cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="235" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemCell_1a56701d3316c9b5003dc354ab88101791" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::MemCell::_offset</definition>
+        <argsstring></argsstring>
+        <name>_offset</name>
+        <briefdescription>
+<para>Offset, relative to base-offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="238" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemCell_1aa93c0735a87ac3bc8ea43b17419a917e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::MemCell::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+<para>Size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="240" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemCell_1a192cd162a80a427a839d23836d1ba9d2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::MemCell::_alignment</definition>
+        <argsstring></argsstring>
+        <name>_alignment</name>
+        <briefdescription>
+<para>Alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="242" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1a4ddd7ca74a91987294bdd0b0ca6f1449" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::MemCell::MemCell</definition>
+        <argsstring>(const MemCell &amp;other)</argsstring>
+        <name>MemCell</name>
+        <param>
+          <type>const MemCell &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="209"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1a249885095008e2824d20127373b5b5e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MemCell &amp;</type>
+        <definition>MemCell&amp; asmjit::MemCell::operator=</definition>
+        <argsstring>(const MemCell &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const MemCell &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1ada37845d3579213ba76d309d90a933f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::MemCell::getOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>getOffset</name>
+        <briefdescription>
+<para>Get cell offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="216" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="216" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1ab855dd6d3639469f8dbe3e771574a5a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemCell::setOffset</definition>
+        <argsstring>(int32_t offset)</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>int32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Set cell offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="218" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="218" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1a1fda2d36c3b298f509b04fb5836a92b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::MemCell::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get cell size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="221" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1a9a642aeb4ab9df35e733a51fbd2e5276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemCell::setSize</definition>
+        <argsstring>(uint32_t size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set cell size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="223" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1af6d4d7520b61fdb095b90befcc87a24f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::MemCell::getAlignment</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlignment</name>
+        <briefdescription>
+<para>Get cell alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="226" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemCell_1a8f567cd48045c60d8fb275713722bb54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemCell::setAlignment</definition>
+        <argsstring>(uint32_t alignment)</argsstring>
+        <name>setAlignment</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Set cell alignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="228" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/compiler.h" line="208" bodyfile="/home/ryan/asmjit/src/asmjit/base/compiler.h" bodystart="208" bodyend="243"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1MemCell_1a192cd162a80a427a839d23836d1ba9d2" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>_alignment</name></member>
+      <member refid="structasmjit_1_1MemCell_1a2d97f636186e420e6722e5043a9e7a85" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1MemCell_1a56701d3316c9b5003dc354ab88101791" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>_offset</name></member>
+      <member refid="structasmjit_1_1MemCell_1aa93c0735a87ac3bc8ea43b17419a917e" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>_size</name></member>
+      <member refid="structasmjit_1_1MemCell_1af6d4d7520b61fdb095b90befcc87a24f" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>getAlignment</name></member>
+      <member refid="structasmjit_1_1MemCell_1ada37845d3579213ba76d309d90a933f9" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>getOffset</name></member>
+      <member refid="structasmjit_1_1MemCell_1a1fda2d36c3b298f509b04fb5836a92b6" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1MemCell_1a4ddd7ca74a91987294bdd0b0ca6f1449" prot="private" virt="non-virtual"><scope>asmjit::MemCell</scope><name>MemCell</name></member>
+      <member refid="structasmjit_1_1MemCell_1a249885095008e2824d20127373b5b5e8" prot="private" virt="non-virtual"><scope>asmjit::MemCell</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1MemCell_1a8f567cd48045c60d8fb275713722bb54" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>setAlignment</name></member>
+      <member refid="structasmjit_1_1MemCell_1ab855dd6d3639469f8dbe3e771574a5a3" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>setOffset</name></member>
+      <member refid="structasmjit_1_1MemCell_1a9a642aeb4ab9df35e733a51fbd2e5276" prot="public" virt="non-virtual"><scope>asmjit::MemCell</scope><name>setSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>BaseReg &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="BaseRuntime" href="BaseRuntime.html" />
+    <link rel="prev" title="BaseNode" href="BaseNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="BaseRuntime.html" title="BaseRuntime"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="BaseNode.html" title="BaseNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="basereg">
+<h1>BaseReg<a class="headerlink" href="#basereg" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1BaseReg">
+<div class="line"><em>struct</em> <strong>asmjit::BaseReg</strong></div>
+<div class="line"><em>#include &lt;defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base class for all register operands. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1aeb3b2a856b508640dc374d6b96361dc4"></span><div class="line-block">
+<div class="line"> <strong>BaseReg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a dummy base register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1ac61d7924a3f74a39c30915b363978d18"></span><div class="line-block">
+<div class="line"> <strong>BaseReg</strong>(uint32_t type, uint32_t index, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new base register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a9871744c4d5a9d69aa6b488d42f451d0"></span><div class="line-block">
+<div class="line"> <strong>BaseReg</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseReg"><em>BaseReg</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a new reference to <em>other</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a59510261b1c7675318cb844df25f2b93"></span><div class="line-block">
+<div class="line"> <strong>BaseReg</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a94eaba0f0c5e61e39601f9146d0e3ae4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseReg"><em>BaseReg</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseReg"><em>BaseReg</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1ae7e080222bc00435ab847fbd85b97477"></span><div class="line-block">
+<div class="line">bool <strong>isRegType</strong>(uint32_t type)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether register code is equal to <em>type</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a455492c42efd02a1623d8618b4a70bf1"></span><div class="line-block">
+<div class="line">bool <strong>isRegCode</strong>(uint32_t code)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether register code is equal to <em>type</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a347038655e77ca9cb894c824a295dd36"></span><div class="line-block">
+<div class="line">bool <strong>isRegCode</strong>(uint32_t type, uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether register code is equal to <em>type</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a929fbbb73d8b17add8adb01189a73801"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegCode</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get register code that equals to &#8216;(type &lt;&lt; 8) + index&#8217;. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a11479e7cffd15ed8f7f997f5f537ac93"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get register type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseReg_1a8d7aff5d8ba0646939e86a43afec750e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRegIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get register index. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="BaseNode.html"
+                        title="previous chapter">BaseNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="BaseRuntime.html"
+                        title="next chapter">BaseRuntime</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/BaseReg.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="BaseRuntime.html" title="BaseRuntime"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="BaseNode.html" title="BaseNode"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

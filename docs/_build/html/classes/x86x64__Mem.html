@@ -1,0 +1,608 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::Mem &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::MmReg" href="x86x64__MmReg.html" />
+    <link rel="prev" title="x86x64::JitRuntime" href="x86x64__JitRuntime.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__MmReg.html" title="x86x64::MmReg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__JitRuntime.html" title="x86x64::JitRuntime"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-mem">
+<h1>x86x64::Mem<a class="headerlink" href="#x86x64-mem" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1Mem">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::Mem</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86 memory operand. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1aa6af6f378012b0d91b0aaaf42283ad47"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a0a41c7cbb22e62951db68881a0db5a20"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a2b134af844c2e4a07a6af9b214de8e3d"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a17d3dff5e663be9db0ba9570fcbe3e42"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Label"><em>Label</em></a>  &amp; label, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a811c35543a9ec2c652f2dc56248eb5bb"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; base, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a6f41464cefed631c449429fa047375a0"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1aae9cb7232caf746a61e0f95a55fbab65"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1XmmReg"><em>XmmReg</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a8f5797492b42387f2e847e5cb8577c2d"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1YmmReg"><em>YmmReg</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a810833d844dc79096848b7dee3d23e6d"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; base, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1af826a617da5cb8433abcab29070f2106"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1af8c1da1247d700c3ee04a0176e9d1e12"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1XmmVar"><em>XmmVar</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a51d2a086bba35a5f935b32299a8185c2"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1YmmVar"><em>YmmVar</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size = 0)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a6b14e5f797030747a9d1a489ba6f4612"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const _Init &amp;, uint32_t memType, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; base, int32_t disp, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a3219021513a6d2ba290c5cd23a19efda"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const _Init &amp;, uint32_t memType, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Var"><em>X86Var</em></a>  &amp; base, const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift, int32_t disp, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1ac17b386de5b3bd10c820e5134d221a84"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a6f3516e3ebfe88b7a6c1f3c6562274ba"></span><div class="line-block">
+<div class="line"> <strong>Mem</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a3f4a12b20dfa2198dc44a330a70ec522"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a619335ac552f50e506d4c3f5cec34ac1"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a13e1ac56dee90c898070fdd12c98fdc3"></span><div class="line-block">
+<div class="line">void <strong>_init</strong>(uint32_t memType, uint32_t base, int32_t disp, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a56c1fd5f447aa30d49230f0c2d0d1a39"></span><div class="line-block">
+<div class="line">bool <strong>hasSegment</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the memory operand has segment override prefix. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a80d691dfc02c2c2087f3f808dd6b2ea3"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSegment</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand segment, see <tt class="docutils literal"><span class="pre">kSeg</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a2177b2dfe09f478b2e26af4ace7a029f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setSegment</strong>(uint32_t segIndex)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand segment, see <tt class="docutils literal"><span class="pre">kSeg</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a7d373b61f3648f54e8508a13eeb18c9d"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setSegment</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1SegReg"><em>SegReg</em></a>  &amp; seg)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand segment, see <tt class="docutils literal"><span class="pre">kSeg</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a124adc912f868de33fb8025a66ed2eb4"></span><div class="line-block">
+<div class="line">bool <strong>hasGpdBase</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the memory operand has 32-bit GP base. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a27e33d9f2ba06db952f6534a1aa2f870"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setGpdBase</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set whether the memory operand has 32-bit GP base. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a234b1f44c97b28dee1d24ec74fa2319e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setGpdBase</strong>(uint32_t b)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set whether the memory operand has 32-bit GP base to <em>b</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a1858a42fe9f24d39a0faddcd674637b8"></span><div class="line-block">
+<div class="line">uint32_t <strong>getVSib</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get SIB type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1adf8bdb68d160bede6b926ac891dd9892"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>_setVSib</strong>(uint32_t vsib)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set SIB type. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1abf9bd0eee930565098fbf9329a90d3a5"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setSize</strong>(uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a42fbba8eac07debc8edc6af653400302"></span><div class="line-block">
+<div class="line">bool <strong>hasBase</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the memory operand has base register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a253db69c609ef7497fe164c0e901209a"></span><div class="line-block">
+<div class="line">uint32_t <strong>getBase</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand base register code, variable id, or kInvalidValue. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a15912db61738b16cfb4e8e21fd8beb8e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setBase</strong>(uint32_t base)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand base register code, variable id, or kInvalidValue. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a4ecf772861fcf98bfd6cdbb17b919b47"></span><div class="line-block">
+<div class="line">bool <strong>hasIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the memory operand has index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a9e66de67f388a7c028694dc215d6c386"></span><div class="line-block">
+<div class="line">uint32_t <strong>getIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand index register code, variable id, or kInvalidValue. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a4d0a35e5747c6be9ede462aa4d8ef79f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand index register code, variable id, or kInvalidValue. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a1b312d06ddf26819f9702dfa41403a99"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a2fc35bfac4052949e833021f8e90df7a"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpReg"><em>GpReg</em></a>  &amp; index, uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1ad7249ca609700bd859f0c01c587cd817"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1af745903196fec660b8fe25e8010e2de4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1GpVar"><em>GpVar</em></a>  &amp; index, uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a2a5a14448e5d921a53ef12c462b68856"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1XmmReg"><em>XmmReg</em></a>  &amp; index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a0dffdea445c733b0dc7e50fc1aacf1c5"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1XmmReg"><em>XmmReg</em></a>  &amp; index, uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a60995de5aeeee2bf1ea3b7c295191c18"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1XmmVar"><em>XmmVar</em></a>  &amp; index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1aa143b37db31dc1e396e28dbf0818e025"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1XmmVar"><em>XmmVar</em></a>  &amp; index, uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a8c4cbb09e45b408688126df594ba747b"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1YmmReg"><em>YmmReg</em></a>  &amp; index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a16d66a00729b22075017c3d104a91dd6"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1YmmReg"><em>YmmReg</em></a>  &amp; index, uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a075ff655cfa87a2b15e603ac90e05b7b"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1YmmVar"><em>YmmVar</em></a>  &amp; index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a35ea5b4fa85ddadebd3a8a88eccd2d9e"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setIndex</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1YmmVar"><em>YmmVar</em></a>  &amp; index, uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1adac8886b0330e2977a0671e415d45002"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>resetIndex</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset memory index. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a67b62b2b45059561dd545f7a92e3c2ef"></span><div class="line-block">
+<div class="line">bool <strong>hasShift</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the memory operand has shift used. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a31f8cb43b254a59011be810e6e04d0a6"></span><div class="line-block">
+<div class="line">uint32_t <strong>getShift</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand index scale (0, 1, 2 or 3). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a0128815a7d4fc2be06b979685babe1c4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setShift</strong>(uint32_t shift)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand index scale (0, 1, 2 or 3). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a8fb93c2c6f8d583fedee9f5ffe4b0af4"></span><div class="line-block">
+<div class="line">int32_t <strong>getDisplacement</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand relative displacement. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a7e44ab3af4e0509ecfb42c84a09eb01c"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>setDisplacement</strong>(int32_t disp)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand relative displacement. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a43a96c4fb25466c740f771cc2530c4ed"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>resetDisplacement</strong>(int32_t disp)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset memory operand relative displacement. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a766a2f4cdf56048983843e443ae54164"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>adjust</strong>(int32_t disp)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Adjust memory operand relative displacement by <em>displacement</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1af851a9f9d15cc8c93704bc3e436581d1"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a> <strong>adjusted</strong>(int32_t disp)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get new memory operand adjusted by <em>displacement</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a39afcf924b09d8649653ab42de00e09f"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a5767998c1afe857310bb2fdfd92cd9a8"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a51d0f2b0623a13c30187ab949af42307"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1Mem"><em>Mem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Static Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1Mem_1a898dd7df0666528842321d8317942ca9"></span><div class="line-block">
+<div class="line">uint32_t <strong>_getGpdFlags</strong>(const  <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1Operand"><em>Operand</em></a>  &amp; base)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__JitRuntime.html"
+                        title="previous chapter">x86x64::JitRuntime</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__MmReg.html"
+                        title="next chapter">x86x64::MmReg</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__Mem.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__MmReg.html" title="x86x64::MmReg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__JitRuntime.html" title="x86x64::JitRuntime"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1ErrorUtil" kind="struct" prot="public">
+    <compoundname>asmjit::ErrorUtil</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structasmjit_1_1ErrorUtil_1a196327c45790ae8c5189c6023c766e95" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API const char *</type>
+        <definition>const char * asmjit::ErrorUtil::asString</definition>
+        <argsstring>(Error code)</argsstring>
+        <name>asString</name>
+        <param>
+          <type>Error</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Get printable version of AsmJit kError code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="174" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/error.h" line="172" bodyfile="/home/ryan/asmjit/src/asmjit/base/error.h" bodystart="172" bodyend="175"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1ErrorUtil_1a196327c45790ae8c5189c6023c766e95" prot="public" virt="non-virtual"><scope>asmjit::ErrorUtil</scope><name>asString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

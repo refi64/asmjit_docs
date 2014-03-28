@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>x86x64::X86Reg &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="x86x64::X86Var" href="x86x64__X86Var.html" />
+    <link rel="prev" title="x86x64::VarState" href="x86x64__VarState.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86Var.html" title="x86x64::X86Var"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__VarState.html" title="x86x64::VarState"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x86x64-x86reg">
+<h1>x86x64::X86Reg<a class="headerlink" href="#x86x64-x86reg" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg">
+<div class="line"><em>struct</em> <strong>asmjit::x86x64::X86Reg</strong></div>
+<div class="line"><em>#include &lt;x86defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>X86/X64 register. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a4f7f6de0e5b0f66a5ec9dc6caac9831d"></span><div class="line-block">
+<div class="line"> <strong>X86Reg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a dummy X86 register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a5f2bde0ddd221579a8e366a79fbd965e"></span><div class="line-block">
+<div class="line"> <strong>X86Reg</strong>(uint32_t type, uint32_t index, uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a custom X86 register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1af1a7e6f07dc514c7dca73b3a2c56ad4c"></span><div class="line-block">
+<div class="line"> <strong>X86Reg</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create a reference to <em>other</em> X86 register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1acc1b7082c7e362694ad8417e178ebc37"></span><div class="line-block">
+<div class="line"> <strong>X86Reg</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Create non-initialized X86 register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a3720aa6d0b7b1d4228c2e106a4560325"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="../modules/base.html#asmjitstructasmjit_1_1BaseReg"><em>BaseReg</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a621513aaf287c642978d14685d38b7c0"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; <strong>setSize</strong>(uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set register <em>size</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a330b1f91c32220f471dd332dbaf29d57"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; <strong>setCode</strong>(uint32_t code)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set register <em>code</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1af0fb744b2191fb057576e1b07aeeba13"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; <strong>setCode</strong>(uint32_t type, uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set register <em>type</em> and <em>index</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1af5d31f3e427f029ca2c0d4a1bcc66d20"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; <strong>setType</strong>(uint32_t type)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set register <em>type</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a16543d65eef9bffa06d896add56136d6"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; <strong>setIndex</strong>(uint32_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set register <em>index</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a422bef7d1a90020fcf0f4359f91140d4"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a35d543e532c208a355881aeeb297b774"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a5b81b09ce99e2ae1c5e480b241419678"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="../modules/x86x64.html#asmjitstructasmjit_1_1x86x64_1_1X86Reg"><em>X86Reg</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1af69aa96e91bd55e12429809b73bf403e"></span><div class="line-block">
+<div class="line">bool <strong>isGp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1aa9836fe8c258fdec6873a417f87d851b"></span><div class="line-block">
+<div class="line">bool <strong>isGpb</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp byte (8-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1aca41b6aa2ed2077c6ac4f5b37b71f4b9"></span><div class="line-block">
+<div class="line">bool <strong>isGpbLo</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp lo-byte (8-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a7fe3282f69bb5cdcca2f5034f43daa85"></span><div class="line-block">
+<div class="line">bool <strong>isGpbHi</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp hi-byte (8-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a9a6929318d96ce3cd48d95872cba93e7"></span><div class="line-block">
+<div class="line">bool <strong>isGpw</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp word (16-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a46af8e191b37e139c3142fcb20d79b2b"></span><div class="line-block">
+<div class="line">bool <strong>isGpd</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp dword (32-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1aecb5751b7449f979d36cf758988b9ef9"></span><div class="line-block">
+<div class="line">bool <strong>isGpq</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Gp qword (64-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a22c10609c14f0489d555d222bde9423a"></span><div class="line-block">
+<div class="line">bool <strong>isFp</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Fp register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1ac268e91fa0acfc5de86184bbd82aea86"></span><div class="line-block">
+<div class="line">bool <strong>isMm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Mm (64-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a7933e03def4e3c23dc93181c1a67869c"></span><div class="line-block">
+<div class="line">bool <strong>isXmm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Xmm (128-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a6b6c9a78b996edbc65eafc32e9b91381"></span><div class="line-block">
+<div class="line">bool <strong>isYmm</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is Ymm (256-bit) register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1x86x64_1_1X86Reg_1a4967002883418cc5f91641941b4c13e2"></span><div class="line-block">
+<div class="line">bool <strong>isSeg</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the register is a segment. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="x86x64__VarState.html"
+                        title="previous chapter">x86x64::VarState</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="x86x64__X86Var.html"
+                        title="next chapter">x86x64::X86Var</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/x86x64__X86Reg.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="x86x64__X86Var.html" title="x86x64::X86Var"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="x86x64__VarState.html" title="x86x64::VarState"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

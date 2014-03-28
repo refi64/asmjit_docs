@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1X86X64CallNode" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::X86X64CallNode</compoundname>
+    <basecompoundref refid="structasmjit_1_1CallNode" prot="public" virt="non-virtual">asmjit::CallNode</basecompoundref>
+    <includes local="no">x86compiler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1aa686f5f373cfd59ba4c8854f700475f2" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound">X86X64FuncDecl</ref></type>
+        <definition>X86X64FuncDecl asmjit::x86x64::X86X64CallNode::_x86Decl</definition>
+        <argsstring></argsstring>
+        <name>_x86Decl</name>
+        <briefdescription>
+<para>X86 declaration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="624" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a39029a28f6a871d1b5bca09a6f77b1e2" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref></type>
+        <definition>RegMask asmjit::x86x64::X86X64CallNode::_usedArgs</definition>
+        <argsstring></argsstring>
+        <name>_usedArgs</name>
+        <briefdescription>
+<para>Mask of all registers actually used to pass function arguments. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This bit-mask is not the same as <computeroutput>X86X64Func::_passed</computeroutput>. It contains only registers actually used to do the call while X86X64Func::_passed mask contains all registers for all function prototype combinations. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="630" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a0cd430d2a7f01662a243b8955717fae9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64CallNode::X86X64CallNode</definition>
+        <argsstring>(const X86X64CallNode &amp;other)</argsstring>
+        <name>X86X64CallNode</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86X64CallNode" kindref="compound">X86X64CallNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="572"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1ae0501614a46f7a980043b1a7d21fd0c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86X64CallNode" kindref="compound">X86X64CallNode</ref> &amp;</type>
+        <definition>X86X64CallNode&amp; asmjit::x86x64::X86X64CallNode::operator=</definition>
+        <argsstring>(const X86X64CallNode &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86X64CallNode" kindref="compound">X86X64CallNode</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="572"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1ad0a4e6429646df3c1544af8cdcf363e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64CallNode::X86X64CallNode</definition>
+        <argsstring>(BaseCompiler *compiler, const Operand &amp;target)</argsstring>
+        <name>X86X64CallNode</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseCompiler" kindref="compound">BaseCompiler</ref> *</type>
+          <declname>compiler</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1x86x64_1_1X86X64CallNode" kindref="compound">X86X64CallNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="579" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="579" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a8769922b53c9c6af14581ae8c242086d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86X64CallNode::~X86X64CallNode</definition>
+        <argsstring>()</argsstring>
+        <name>~X86X64CallNode</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1x86x64_1_1X86X64CallNode" kindref="compound">X86X64CallNode</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="585" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="585" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a7485ef36096e880225a64b2c25a3b634" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl" kindref="compound">X86X64FuncDecl</ref> *</type>
+        <definition>X86X64FuncDecl* asmjit::x86x64::X86X64CallNode::getDecl</definition>
+        <argsstring>() const </argsstring>
+        <name>getDecl</name>
+        <reimplements refid="structasmjit_1_1CallNode_1a1fa523df8cac84ba0262b71dab7c5035">getDecl</reimplements>
+        <briefdescription>
+<para>Get function prototype. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="592" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="592" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1ae173bd09522689cd98a3dfd8b07c5e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>ASMJIT_API Error asmjit::x86x64::X86X64CallNode::setPrototype</definition>
+        <argsstring>(uint32_t conv, const FuncPrototype &amp;p)</argsstring>
+        <name>setPrototype</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>conv</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1FuncPrototype" kindref="compound">FuncPrototype</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Set function prototype. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="601"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a5857c00821fd51bf5df7761ac7dcb281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>ASMJIT_API bool asmjit::x86x64::X86X64CallNode::_setArg</definition>
+        <argsstring>(uint32_t i, const Operand &amp;op)</argsstring>
+        <name>_setArg</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Set argument at <emphasis>i</emphasis> to <emphasis>op</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="608"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a4648cf2ff956eed15037f8848075e819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>ASMJIT_API bool asmjit::x86x64::X86X64CallNode::_setRet</definition>
+        <argsstring>(uint32_t i, const Operand &amp;op)</argsstring>
+        <name>_setRet</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Operand" kindref="compound">Operand</ref> &amp;</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Set return at <emphasis>i</emphasis> to <emphasis>op</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="610"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a907a1c46c79e613048cd83fea15f8f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86X64CallNode::setArg</definition>
+        <argsstring>(uint32_t i, const BaseVar &amp;var)</argsstring>
+        <name>setArg</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Set argument at <emphasis>i</emphasis> to <emphasis>var</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="613" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="613" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a0ba53ef2cd63d3e6356243edf944e362" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86X64CallNode::setArg</definition>
+        <argsstring>(uint32_t i, const Imm &amp;imm)</argsstring>
+        <name>setArg</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+          <declname>imm</declname>
+        </param>
+        <briefdescription>
+<para>Set argument at <emphasis>i</emphasis> to <emphasis>imm</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="615" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="615" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86X64CallNode_1a5b5450e31b49f38fd9e6d1e1d36aa5c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86X64CallNode::setRet</definition>
+        <argsstring>(uint32_t i, const BaseVar &amp;var)</argsstring>
+        <name>setRet</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structasmjit_1_1BaseVar" kindref="compound">BaseVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Set return at <emphasis>i</emphasis> to <emphasis>var</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="617" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="617" bodyend="617"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86/X64 function-call node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1247">
+        <label>asmjit::CallNode</label>
+        <link refid="structasmjit_1_1CallNode"/>
+        <childnode refid="1248" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1248">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+      </node>
+      <node id="1246">
+        <label>asmjit::x86x64::X86X64CallNode</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64CallNode"/>
+        <childnode refid="1247" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1250">
+        <label>asmjit::CallNode</label>
+        <link refid="structasmjit_1_1CallNode"/>
+        <childnode refid="1251" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1255" relation="usage">
+          <edgelabel>_ret</edgelabel>
+          <edgelabel>_target</edgelabel>
+          <edgelabel>_args</edgelabel>
+        </childnode>
+        <childnode refid="1256" relation="usage">
+          <edgelabel>_decl</edgelabel>
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>asmjit::BaseVarState</label>
+        <link refid="structasmjit_1_1BaseVarState"/>
+      </node>
+      <node id="1251">
+        <label>asmjit::BaseNode</label>
+        <link refid="structasmjit_1_1BaseNode"/>
+        <childnode refid="1252" relation="usage">
+          <edgelabel>_state</edgelabel>
+        </childnode>
+        <childnode refid="1253" relation="usage">
+          <edgelabel>_liveness</edgelabel>
+        </childnode>
+        <childnode refid="1251" relation="usage">
+          <edgelabel>_prev</edgelabel>
+          <edgelabel>_next</edgelabel>
+        </childnode>
+        <childnode refid="1254" relation="usage">
+          <edgelabel>_varInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="1249">
+        <label>asmjit::x86x64::X86X64CallNode</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64CallNode"/>
+        <childnode refid="1250" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1258" relation="usage">
+          <edgelabel>_usedArgs</edgelabel>
+        </childnode>
+        <childnode refid="1259" relation="usage">
+          <edgelabel>_x86Decl</edgelabel>
+        </childnode>
+      </node>
+      <node id="1253">
+        <label>asmjit::VarBits</label>
+        <link refid="structasmjit_1_1VarBits"/>
+      </node>
+      <node id="1257">
+        <label>asmjit::FuncInOut</label>
+        <link refid="structasmjit_1_1FuncInOut"/>
+      </node>
+      <node id="1255">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="1258">
+        <label>asmjit::x86x64::RegMask</label>
+        <link refid="structasmjit_1_1x86x64_1_1RegMask"/>
+      </node>
+      <node id="1256">
+        <label>asmjit::FuncDecl</label>
+        <link refid="structasmjit_1_1FuncDecl"/>
+        <childnode refid="1257" relation="usage">
+          <edgelabel>_retList</edgelabel>
+          <edgelabel>_argList</edgelabel>
+        </childnode>
+      </node>
+      <node id="1254">
+        <label>asmjit::BaseVarInst</label>
+        <link refid="structasmjit_1_1BaseVarInst"/>
+      </node>
+      <node id="1259">
+        <label>asmjit::x86x64::X86X64FuncDecl</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64FuncDecl"/>
+        <childnode refid="1256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1258" relation="usage">
+          <edgelabel>_used</edgelabel>
+          <edgelabel>_preserved</edgelabel>
+          <edgelabel>_passed</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" line="571" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86compiler.h" bodystart="571" bodyend="631"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1CallNode_1aaaee075a448df1205c0440fdf7ce6485" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_args</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa1270ef124c6809ca7fd3388fc7cb01e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_comment</name></member>
+      <member refid="structasmjit_1_1CallNode_1aa2c8a71ac9866e5d5272c5d543a948c5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_decl</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3990c435857ff94bbd74935638a84ac0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_flags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aae00a71a49da71c80fce40654dfedf81" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_flowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0cefc47a244741a68c66ebd64217973c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_liveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af79d69cd8ec0c96295bef01b73f6f3cd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_next</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f640dcb57f9c977efcd066cfa34bbd4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_opCount</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ae46a8e6aca8fe70226eeb6386d06ff60" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_prev</name></member>
+      <member refid="structasmjit_1_1CallNode_1ae448fd3373867a476abeae2ac8cea2d4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_ret</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a5857c00821fd51bf5df7761ac7dcb281" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_setArg</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a4648cf2ff956eed15037f8848075e819" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_setRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a6006b732dec81463a1508cfad8cb018b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_state</name></member>
+      <member refid="structasmjit_1_1CallNode_1ab18b267ab4417390fddb7b75548c0abb" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_target</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a41bc5e21cfb77d1a69f6eba49b944b8b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_type</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a39029a28f6a871d1b5bca09a6f77b1e2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_usedArgs</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7f38e1bbbd868cc74fce0a7d01d5cbf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_varInst</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1aa686f5f373cfd59ba4c8854f700475f2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>_x86Decl</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba3954cf5ced25ede2fcc471b2fd6390" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>addFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a63c80a6e716812a701c6bec2e2be5007" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>BaseNode</name></member>
+      <member refid="structasmjit_1_1CallNode_1a03f3b0f188d91332c719e90f147084f1" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>CallNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a7078ba8794a49cf97942d1bef1a043d6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>delFlags</name></member>
+      <member refid="structasmjit_1_1CallNode_1acdb77a4c703df4405627108200737f78" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1CallNode_1acbf4a17daa25691c045489843da30ea2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a52eb758170158aba2b06378313e5748d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getComment</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a7485ef36096e880225a64b2c25a3b634" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getDecl</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a8f41870fbc15450690d92a977e7dea83" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab7e1afde9f9b4282247e4b8867d80895" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a601eb54343857a5be1d054876888acc8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3db24572d64989296c96d4049d0545b8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getNext</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aa28ded7ba5b0741ae57e021c411399a2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getPrev</name></member>
+      <member refid="structasmjit_1_1CallNode_1ae5f295b2a2aad38cb5db8b64135d5f14" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getRet</name></member>
+      <member refid="structasmjit_1_1CallNode_1ab19cd23198101c350689ae0e284838a3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3381bd2fc97d49d392fe7a4ad92cb890" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4b059f3ff2598f406c654833aee1fcbc" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getState</name></member>
+      <member refid="structasmjit_1_1CallNode_1a544ac9c68513b1dad41a4f547208dc17" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getTarget</name></member>
+      <member refid="structasmjit_1_1CallNode_1ab2add0e5a34e13ccf4d4883c63bf8385" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getTarget</name></member>
+      <member refid="structasmjit_1_1BaseNode_1adca7163f7abc9f6d6a5ac011254a48e4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getType</name></member>
+      <member refid="structasmjit_1_1BaseNode_1acae8b89a5f312913e64c83caebdc52d2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a324f00ff430ae18518368f9ef66398e0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>getVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0a4159dd16b9c208acaaeea6daa164d8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>hasFlag</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a4efc44156485164602dc216614995fc5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>hasLiveness</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a73cb9aaabf953b031116981688a8411f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>hasVarInst</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a9e6bd7baceb3622c23ff751152bc44d3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isFetched</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ac27332d4205dc1effe008e6a168a1435" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a88d7b4ef3d5f1c1ac7c1621678d1c063" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1af1afe72717997793b3a7e2d987329e41" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isJmp</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a27455b36f9a081b3d6b43ad3707fc180" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isJmpOrJcc</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a511b4075627e8bb484d6e7ad20c1fae0" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aba6d60c76d4dcb82b4521b0d0a0c33c2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isSpecial</name></member>
+      <member refid="structasmjit_1_1BaseNode_1aafb1c845517d89dd84a7140b9a4b9886" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>isTranslated</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1ae0501614a46f7a980043b1a7d21fd0c5" prot="private" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a907a1c46c79e613048cd83fea15f8f68" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setArg</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a0ba53ef2cd63d3e6356243edf944e362" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setArg</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ad6f66454cabfc61f1d29fb6ecb6bf18f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setComment</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a97cb2b2d64b539c1c4c4811344139e42" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setFlags</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a47ecc2ce0220e63fbc69aca57b4a728f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setFlowId</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a3c55bbb4f84d3ee94123e65e3f212a46" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setLiveness</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1ae173bd09522689cd98a3dfd8b07c5e31" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setPrototype</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a5b5450e31b49f38fd9e6d1e1d36aa5c2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setRet</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a841540382e62b6f80f699259ee59587b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setState</name></member>
+      <member refid="structasmjit_1_1BaseNode_1a0f1542bdcd6503fe2ee5a0e847f55215" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>setVarInst</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a0cd430d2a7f01662a243b8955717fae9" prot="private" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>X86X64CallNode</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1ad0a4e6429646df3c1544af8cdcf363e3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>X86X64CallNode</name></member>
+      <member refid="structasmjit_1_1BaseNode_1ab8d1dfe217c72d01c253687b8c31f64c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>~BaseNode</name></member>
+      <member refid="structasmjit_1_1CallNode_1a6d671449fbf63f8157689de990eab670" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>~CallNode</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86X64CallNode_1a8769922b53c9c6af14581ae8c242086d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86X64CallNode</scope><name>~X86X64CallNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

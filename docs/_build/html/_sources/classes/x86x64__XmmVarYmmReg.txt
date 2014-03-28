@@ -1,0 +1,5 @@
+x86x64::XmmVarYmmReg
+====================
+
+.. doxygenstruct:: asmjit::x86x64::XmmVarYmmReg
+   :project: asmjit

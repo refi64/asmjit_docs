@@ -1,0 +1,5 @@
+BaseRuntime
+===========
+
+.. doxygenstruct:: asmjit::BaseRuntime
+   :project: asmjit

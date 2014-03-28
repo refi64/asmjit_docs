@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1FileLogger" kind="struct" prot="public">
+    <compoundname>asmjit::FileLogger</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseLogger" prot="public" virt="non-virtual">asmjit::BaseLogger</basecompoundref>
+    <includes local="no">logger.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* asmjit::FileLogger::_stream</definition>
+        <argsstring></argsstring>
+        <name>_stream</name>
+        <briefdescription>
+<para>C file stream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="182" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1ad20c557a144faeba683857b71a7cbd0a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::FileLogger::FileLogger</definition>
+        <argsstring>(const FileLogger &amp;other)</argsstring>
+        <name>FileLogger</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1FileLogger" kindref="compound">FileLogger</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1a8552e56056aab8d129e25cb83ba7a35c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1FileLogger" kindref="compound">FileLogger</ref> &amp;</type>
+        <definition>FileLogger&amp; asmjit::FileLogger::operator=</definition>
+        <argsstring>(const FileLogger &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1FileLogger" kindref="compound">FileLogger</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1ad88d1d968914c5e7088c5c0505203e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::FileLogger::FileLogger</definition>
+        <argsstring>(FILE *stream=NULL)</argsstring>
+        <name>FileLogger</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Create a new <computeroutput><ref refid="structasmjit_1_1FileLogger" kindref="compound">FileLogger</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FILE stream where logging will be sent (can be <computeroutput>NULL</computeroutput> to disable logging). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="151" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1a1fa8c8d8e47a288b257869297a9f4086" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::FileLogger::~FileLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~FileLogger</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1FileLogger" kindref="compound">FileLogger</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="154" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1a1bbe0dbee1b762b0bde98ebc542ccdaa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* asmjit::FileLogger::getStream</definition>
+        <argsstring>() const </argsstring>
+        <name>getStream</name>
+        <briefdescription>
+<para>Get <computeroutput>FILE*</computeroutput> stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Return value can be <computeroutput>NULL</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="163" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1a207f2df573b418ce5534d18065b92bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::FileLogger::setStream</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>setStream</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Set <computeroutput>FILE*</computeroutput> stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>Set file stream.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>FILE</computeroutput> stream where to log output (can be <computeroutput>NULL</computeroutput> to disable logging). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="169" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1FileLogger_1a94ffc19d6a1d5f9ec3d8a04247e277b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API void</type>
+        <definition>void asmjit::FileLogger::logString</definition>
+        <argsstring>(uint32_t style, const char *buf, size_t len=kInvalidIndex)</argsstring>
+        <name>logString</name>
+        <reimplements refid="structasmjit_1_1BaseLogger_1a44d2291529fcfdf9e809fe9e6ea65db5">logString</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+          <defval>kInvalidIndex</defval>
+        </param>
+        <briefdescription>
+<para>Abstract method to log output. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default implementation that is in <computeroutput>asmjit::Logger</computeroutput> is to do nothing. It&apos;s virtual to fit to your logging system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="175" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.cpp" bodystart="132" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logger that can log to standard C <computeroutput>FILE*</computeroutput> stream. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="772">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="771">
+        <label>asmjit::FileLogger</label>
+        <link refid="structasmjit_1_1FileLogger"/>
+        <childnode refid="772" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="774">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="773">
+        <label>asmjit::FileLogger</label>
+        <link refid="structasmjit_1_1FileLogger"/>
+        <childnode refid="774" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/logger.h" line="141" bodyfile="/home/ryan/asmjit/src/asmjit/base/logger.h" bodystart="141" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1BaseLogger_1a39ea70c807da13a3c13cec7cef48f12f" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>_indentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1aaa9cdd18fe4896db6b78441668d94896" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>_options</name></member>
+      <member refid="structasmjit_1_1FileLogger_1ae65313428abd9bc1f836a851e61eff1c" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>_stream</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ad0197c4dbfef5a5856776f4e03111b46" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>BaseLogger</name></member>
+      <member refid="structasmjit_1_1FileLogger_1ad20c557a144faeba683857b71a7cbd0a" prot="private" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>FileLogger</name></member>
+      <member refid="structasmjit_1_1FileLogger_1ad88d1d968914c5e7088c5c0505203e2b" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>FileLogger</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ae1e4d708168a631b5c60fe61f16c679d" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>getIndentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a86a89974cb83bd303c2c7eefd75187d3" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>getOption</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a966c8b2c93b39f4f569e2ad1e03376f5" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>getOptions</name></member>
+      <member refid="structasmjit_1_1FileLogger_1a1bbe0dbee1b762b0bde98ebc542ccdaa" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>getStream</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a70ef8f6cead66ec49a1258041a43c3fc" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>logBinary</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a5132eea60f42e361267fe9ae2a25f9d0" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>logFormat</name></member>
+      <member refid="structasmjit_1_1FileLogger_1a94ffc19d6a1d5f9ec3d8a04247e277b4" prot="public" virt="virtual"><scope>asmjit::FileLogger</scope><name>logString</name></member>
+      <member refid="structasmjit_1_1FileLogger_1a8552e56056aab8d129e25cb83ba7a35c" prot="private" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a54b26cf2ad37d3e945a9e69f80ad614b" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>resetIndentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1ae31355f9483b8f0228bc95b4aa37079d" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>setIndentation</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a7d7d17b96ec8d27f0b68359356b7c65b" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>setOption</name></member>
+      <member refid="structasmjit_1_1FileLogger_1a207f2df573b418ce5534d18065b92bca" prot="public" virt="non-virtual"><scope>asmjit::FileLogger</scope><name>setStream</name></member>
+      <member refid="structasmjit_1_1BaseLogger_1a5e5624b15d5db5cc789ffb85724f28d0" prot="public" virt="virtual"><scope>asmjit::FileLogger</scope><name>~BaseLogger</name></member>
+      <member refid="structasmjit_1_1FileLogger_1a1fa8c8d8e47a288b257869297a9f4086" prot="public" virt="virtual"><scope>asmjit::FileLogger</scope><name>~FileLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

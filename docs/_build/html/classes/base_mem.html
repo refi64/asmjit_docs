@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>BaseMem &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="BaseNode" href="base_node.html" />
+    <link rel="prev" title="BaseLogger" href="base_logger.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="base_node.html" title="BaseNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="base_logger.html" title="BaseLogger"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="basemem">
+<h1>BaseMem<a class="headerlink" href="#basemem" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1BaseMem">
+<div class="line"><em>struct</em> <strong>asmjit::BaseMem</strong></div>
+<div class="line"><em>#include &lt;defs.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Base class for all memory operands. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a14d55c223950092e22429ba144cf7252"></span><div class="line-block">
+<div class="line"> <strong>BaseMem</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a7ceb7a50aa3c2baa6e1a3436265cdcad"></span><div class="line-block">
+<div class="line"> <strong>BaseMem</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a68aaa5a8718be50ed3d464ee659d0b53"></span><div class="line-block">
+<div class="line"> <strong>BaseMem</strong>(const _NoInit &amp;)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1ae244676de26cc8dddf39ff186248a295"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a> <strong>clone</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Clone <a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a1f4dc931e7b675d8191e73580934aefc"></span><div class="line-block">
+<div class="line">void <strong>reset</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Reset <a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a> operand. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a24acdeebe5c596826d880fc0530fd286"></span><div class="line-block">
+<div class="line">uint32_t <strong>getMemType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get the type of the memory operand, see <tt class="docutils literal"><span class="pre">kMemType</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a2416ca5946b07e39b5f34802b13cd51e"></span><div class="line-block">
+<div class="line">bool <strong>isBaseIndexType</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the type of the memory operand is either kMemTypeBaseIndex or kMemTypeStackIndex. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a7cf1fa6c0ca9ad7afde684a059139b26"></span><div class="line-block">
+<div class="line">bool <strong>hasBase</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the memory operand has base register. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a584f151f9e502eef9412f03ed8fb0ecf"></span><div class="line-block">
+<div class="line">uint32_t <strong>getBase</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand base id, or <tt class="docutils literal"><span class="pre">kInvalidValue</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a34a34cc4a1d02db16003ab447591c3ad"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; <strong>setSize</strong>(uint32_t size)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand size. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1aa20691966aa820b34dcb858bd3ee6e8e"></span><div class="line-block">
+<div class="line">int32_t <strong>getDisplacement</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get memory operand relative displacement. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1acf608f1620d09639a9e33244adbfa51b"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; <strong>setDisplacement</strong>(int32_t disp)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Set memory operand relative displacement. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a28d82a079b40c06aa0e7ffab6872d50a"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; <strong>operator=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1ab039ea0c6e1b0b8763d0c1b9c2a38428"></span><div class="line-block">
+<div class="line">bool <strong>operator==</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1BaseMem_1a51fe30b334c65828c57ba70e0e1e5f16"></span><div class="line-block">
+<div class="line">bool <strong>operator!=</strong>(const  <a class="reference internal" href="#asmjitstructasmjit_1_1BaseMem"><em>BaseMem</em></a>  &amp; other)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="base_logger.html"
+                        title="previous chapter">BaseLogger</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="base_node.html"
+                        title="next chapter">BaseNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/base_mem.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="base_node.html" title="BaseNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="base_logger.html" title="BaseLogger"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

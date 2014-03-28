@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1RegMask" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::RegMask</compoundname>
+    <includes local="no">x86defs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1ae42808d7d65f570024fba8828a1051ab" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::RegMask::_gp</definition>
+        <argsstring></argsstring>
+        <name>_gp</name>
+        <briefdescription>
+<para>Gp registers mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2212" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1a796df891de1f5a62afa3faf220244093" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::RegMask::_fp</definition>
+        <argsstring></argsstring>
+        <name>_fp</name>
+        <briefdescription>
+<para>Fp registers mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2214" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1a103d076aefe827176bb2fdfa89e991b5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::RegMask::_mm</definition>
+        <argsstring></argsstring>
+        <name>_mm</name>
+        <briefdescription>
+<para>Mm registers mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2216" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1acfc31c3b3758ff04f783e59c6f1fd85c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::RegMask::_xy</definition>
+        <argsstring></argsstring>
+        <name>_xy</name>
+        <briefdescription>
+<para>Xmm/Ymm registers mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2218" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1a4aa9731bae164e1a0a0f1a4d1e257a19" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::x86x64::RegMask::_regs[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>_regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2221" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1a72abab8d4c4711cb9bbf8fd83f81d3df" prot="public" static="no" mutable="no">
+        <type>UInt64</type>
+        <definition>UInt64 asmjit::x86x64::RegMask::_packed</definition>
+        <argsstring></argsstring>
+        <name>_packed</name>
+        <briefdescription>
+<para>All masks as 64-bit integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2224" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1x86x64_1_1RegMask_1a44c8601639db3ca956502f7ed70fde96" prot="public" static="no" mutable="no">
+        <type>union asmjit::x86x64::RegMask::@69</type>
+        <definition>union asmjit::x86x64::RegMask::@69 asmjit::x86x64::RegMask::@70</definition>
+        <argsstring></argsstring>
+        <name>@70</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2225"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1aff501f7ba2e89762e22885c518055133" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::zero</definition>
+        <argsstring>(uint32_t c)</argsstring>
+        <name>zero</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2129" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2128" bodyend="2129"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1ae2b38f7234997eb195cc85196f9a8525" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::RegMask::get</definition>
+        <argsstring>(uint32_t c) const </argsstring>
+        <name>get</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2136" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2135" bodyend="2136"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a2fb13a4d4513704a192d06fcfaaa9486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::set</definition>
+        <argsstring>(uint32_t c, uint32_t mask)</argsstring>
+        <name>set</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2143" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2142" bodyend="2143"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a212c178527374cee0c4be103d5185e94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::set</definition>
+        <argsstring>(const RegMask &amp;other)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2146" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2145" bodyend="2146"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1ad5187e40d651462e766803310d90da65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::add</definition>
+        <argsstring>(uint32_t c, uint32_t mask)</argsstring>
+        <name>add</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2153" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2152" bodyend="2153"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1abe10e294981838a79ce7e3b949e87ab6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::add</definition>
+        <argsstring>(const RegMask &amp;other)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2156" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2155" bodyend="2156"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a1af75ea26ac5b52303e2d52e44f0ec78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::del</definition>
+        <argsstring>(uint32_t c, uint32_t mask)</argsstring>
+        <name>del</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2163" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2162" bodyend="2163"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a182c61bcfbd1f36f3e4aec41efd37488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::del</definition>
+        <argsstring>(const RegMask &amp;other)</argsstring>
+        <name>del</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2166" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2165" bodyend="2166"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1af34db3b457cc3e98f1fcc9e05379bd70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::and_</definition>
+        <argsstring>(uint32_t c, uint32_t mask)</argsstring>
+        <name>and_</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2173" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2172" bodyend="2173"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1ab3a41d1edf020c851749aee6a3d674d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::and_</definition>
+        <argsstring>(const RegMask &amp;other)</argsstring>
+        <name>and_</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2176" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2175" bodyend="2176"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a6a1ddeb4c0a7ebafffe5f40cebbc78f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::xor_</definition>
+        <argsstring>(uint32_t c, uint32_t mask)</argsstring>
+        <name>xor_</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2183" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2182" bodyend="2183"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a980714f4c192a66e0ea641ec097cc0ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::xor_</definition>
+        <argsstring>(const RegMask &amp;other)</argsstring>
+        <name>xor_</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1RegMask" kindref="compound">RegMask</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2186" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2185" bodyend="2186"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a7149f6967a79ca83757d49bf27421f43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::RegMask::isEmpty</definition>
+        <argsstring>() const </argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2193" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2192" bodyend="2193"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1add58afbcf3fe2a3cf69a075b086609df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::RegMask::has</definition>
+        <argsstring>(uint32_t c, uint32_t mask=0xFFFFFFFF) const </argsstring>
+        <name>has</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+          <defval>0xFFFFFFFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2196" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2195" bodyend="2196"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1RegMask_1a3fd9e56c4abe43299d69492a50653b05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::RegMask::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2203" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2202" bodyend="2203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>X86/X64 registers mask (Gp, Fp, Mm, Xmm/Ymm/Zmm). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2123" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2123" bodyend="2226"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a796df891de1f5a62afa3faf220244093" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>_fp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1ae42808d7d65f570024fba8828a1051ab" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>_gp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a103d076aefe827176bb2fdfa89e991b5" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>_mm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a72abab8d4c4711cb9bbf8fd83f81d3df" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a4aa9731bae164e1a0a0f1a4d1e257a19" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>_regs</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1acfc31c3b3758ff04f783e59c6f1fd85c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>_xy</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1ad5187e40d651462e766803310d90da65" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>add</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1abe10e294981838a79ce7e3b949e87ab6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>add</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1af34db3b457cc3e98f1fcc9e05379bd70" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>and_</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1ab3a41d1edf020c851749aee6a3d674d7" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>and_</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a1af75ea26ac5b52303e2d52e44f0ec78" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>del</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a182c61bcfbd1f36f3e4aec41efd37488" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>del</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1ae2b38f7234997eb195cc85196f9a8525" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>get</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1add58afbcf3fe2a3cf69a075b086609df" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>has</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a7149f6967a79ca83757d49bf27421f43" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>isEmpty</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a3fd9e56c4abe43299d69492a50653b05" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a2fb13a4d4513704a192d06fcfaaa9486" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>set</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a212c178527374cee0c4be103d5185e94" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>set</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a6a1ddeb4c0a7ebafffe5f40cebbc78f4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>xor_</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1a980714f4c192a66e0ea641ec097cc0ce" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>xor_</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1RegMask_1aff501f7ba2e89762e22885c518055133" prot="public" virt="non-virtual"><scope>asmjit::x86x64::RegMask</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

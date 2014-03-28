@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>FuncDecl &mdash; AsmJit 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/breathe.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="AsmJit 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Classes" href="../classes.html" />
+    <link rel="next" title="FuncInOut" href="FuncInOut.html" />
+    <link rel="prev" title="FuncBuilderX" href="FuncBuilderX.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="FuncInOut.html" title="FuncInOut"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FuncBuilderX.html" title="FuncBuilderX"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" accesskey="U">Classes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="funcdecl">
+<h1>FuncDecl<a class="headerlink" href="#funcdecl" title="Permalink to this headline">¶</a></h1>
+<div class="line-block" id="asmjitstructasmjit_1_1FuncDecl">
+<div class="line"><em>struct</em> <strong>asmjit::FuncDecl</strong></div>
+<div class="line"><em>#include &lt;func.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Function declaration. </p>
+<p></p>
+<em>Public Functions</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a42ec8dca10052988d6e0a6aec9abf8c9"></span><div class="line-block">
+<div class="line">uint32_t <strong>getConvention</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function calling convention, see <tt class="docutils literal"><span class="pre">kFuncConv</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1ac410370c89f4dbaa1b0be10fcf3d4b0b"></span><div class="line-block">
+<div class="line">uint32_t <strong>getCalleePopsStack</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the callee pops the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1ac80843c1a79f2594625c3732dd8913ae"></span><div class="line-block">
+<div class="line">uint32_t <strong>getDirection</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get direction of arguments passed on the stack. </p>
+<p><p>Direction should be always <tt class="docutils literal"><span class="pre">kFuncDirRtl</span></tt>.</p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>This is related to used calling convention, it&#8217;s not affected by number of function arguments or their types. </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a09c52cc8a86a04056a87e7e83cc9934f"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArgStackSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get stack size needed for function arguments passed on the stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1af18d05e17d59952aaa42a277680994ea"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRedZoneSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get size of &#8220;Red Zone&#8221;. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a76cb13176e0ee3e9e4281ffe4856342e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getSpillZoneSize</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get size of &#8220;Spill Zone&#8221;. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a6ff6556e621a2c7d833fb239e40a260a"></span><div class="line-block">
+<div class="line">bool <strong>hasRet</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get whether the function has a return value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a845d93fd499fb8cad4afc79242a954ac"></span><div class="line-block">
+<div class="line">uint32_t <strong>getRetCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get count of function return values. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a053aa0d7eea2e19d62313529d038eb34"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a>  &amp; <strong>getRet</strong>(uint32_t index = kFuncRetLo)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function return value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a715f71c74a2dae3aa4c86e5d078b1962"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a>  &amp; <strong>getRet</strong>(uint32_t index = kFuncRetLo)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function return value. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a256dfc25b9980a7571c13c4dd6d31e8e"></span><div class="line-block">
+<div class="line">uint32_t <strong>getArgCount</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get count of function arguments. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a56befde525f1128d408cf19474c886ae"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a>  * <strong>getArgList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function arguments array. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a168c812ff405cf32eb11e48e067fbcdf"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a>  * <strong>getArgList</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function arguments array (const). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a6fb100b2c26ef842ef3ca957416003ef"></span><div class="line-block">
+<div class="line"><a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a>  &amp; <strong>getArg</strong>(size_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function argument at index <em>index</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a12cff01acb1e8d52f383d635969debcb"></span><div class="line-block">
+<div class="line">const  <a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a>  &amp; <strong>getArg</strong>(size_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Get function argument at index <em>index</em>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1ad824c3998ae211ead00657000228443e"></span><div class="line-block">
+<div class="line">void <strong>resetArg</strong>(size_t index)</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a5782543f71c49198a0a066b74f61f194"></span>uint8_t <strong>_convention</strong></p>
+<blockquote>
+<div><p>Calling convention. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1af2d18e0a1749d64553d1d8b22deed836"></span>uint8_t <strong>_calleePopsStack</strong></p>
+<blockquote>
+<div><p>Whether a callee pops stack. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a80bd04b9c80f76e8e1867b0759102a31"></span>uint8_t <strong>_direction</strong></p>
+<blockquote>
+<div><p>Direction for arguments passed on the stack, see <tt class="docutils literal"><span class="pre">kFuncDir</span></tt>. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a7fc1348c47876dd81f4cadbf8eaf1e14"></span>uint8_t <strong>_reserved0</strong></p>
+<blockquote>
+<div><p>Reserved #0 (alignment). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1ad4eb51ba76eb1b55baeb4e5e26c5fb4c"></span>uint8_t <strong>_argCount</strong></p>
+<blockquote>
+<div><p>Count of arguments (in <tt class="docutils literal"><span class="pre">_argList</span></tt>). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a8e068d552d8c03ee4d12ac8cec580725"></span>uint8_t <strong>_retCount</strong></p>
+<blockquote>
+<div><p>Count of return value(s). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1abef4b2387f8b5a671ce2398f45ad9a86"></span>uint32_t <strong>_argStackSize</strong></p>
+<blockquote>
+<div><p>Count of bytes consumed by arguments on the stack (aligned). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a0691b53275ed119a0b06e7def430f051"></span>uint16_t <strong>_redZoneSize</strong></p>
+<blockquote>
+<div><p>Size of &#8220;Red Zone&#8221;. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Used by AMD64-ABI (128 bytes). </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a211c52c74f2da513a76dfe9e748fbd4d"></span>uint16_t <strong>_spillZoneSize</strong></p>
+<blockquote>
+<div><p>Size of &#8220;Spill Zone&#8221;. </p>
+<p><dl class="docutils">
+<dt><strong>Note</strong></dt>
+<dd>Used by WIN64-ABI (32 bytes). </dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1aff3fb03a650c4919f003f03d5f80332f"></span><a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a> <strong>_argList</strong>[kFuncArgCountLoHi]</p>
+<blockquote>
+<div><p>Function arguments (including HI arguments) mapped to physical registers and stack offset. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="asmjitstructasmjit_1_1FuncDecl_1a511f2df7f8dd1b102ebec16d3dbc0397"></span><a class="reference internal" href="FuncInOut.html#asmjitstructasmjit_1_1FuncInOut"><em>FuncInOut</em></a> <strong>_retList</strong>[2]</p>
+<blockquote>
+<div><p>Function return value(s). </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="FuncBuilderX.html"
+                        title="previous chapter">FuncBuilderX</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="FuncInOut.html"
+                        title="next chapter">FuncInOut</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/classes/FuncDecl.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="FuncInOut.html" title="FuncInOut"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FuncBuilderX.html" title="FuncBuilderX"
+             >previous</a> |</li>
+        <li><a href="../index.html">AsmJit 1.0 documentation</a> &raquo;</li>
+          <li><a href="../classes.html" >Classes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Petr Kobalicek.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

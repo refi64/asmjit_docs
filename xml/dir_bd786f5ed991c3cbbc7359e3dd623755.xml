@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_bd786f5ed991c3cbbc7359e3dd623755" kind="dir">
+    <compoundname>/home/ryan/asmjit/src/asmjit/base/</compoundname>
+    <innerfile refid="apibegin_8h">apibegin.h</innerfile>
+    <innerfile refid="apiend_8h">apiend.h</innerfile>
+    <innerfile refid="assembler_8cpp">assembler.cpp</innerfile>
+    <innerfile refid="assembler_8h">assembler.h</innerfile>
+    <innerfile refid="codegen_8cpp">codegen.cpp</innerfile>
+    <innerfile refid="codegen_8h">codegen.h</innerfile>
+    <innerfile refid="compiler_8cpp">compiler.cpp</innerfile>
+    <innerfile refid="compiler_8h">compiler.h</innerfile>
+    <innerfile refid="context_8cpp">context.cpp</innerfile>
+    <innerfile refid="context__p_8h">context_p.h</innerfile>
+    <innerfile refid="cpu_8cpp">cpu.cpp</innerfile>
+    <innerfile refid="cpu_8h">cpu.h</innerfile>
+    <innerfile refid="defs_8cpp">defs.cpp</innerfile>
+    <innerfile refid="defs_8h">defs.h</innerfile>
+    <innerfile refid="error_8cpp">error.cpp</innerfile>
+    <innerfile refid="error_8h">error.h</innerfile>
+    <innerfile refid="func_8cpp">func.cpp</innerfile>
+    <innerfile refid="func_8h">func.h</innerfile>
+    <innerfile refid="globals_8cpp">globals.cpp</innerfile>
+    <innerfile refid="globals_8h">globals.h</innerfile>
+    <innerfile refid="intutil_8h">intutil.h</innerfile>
+    <innerfile refid="lock_8h">lock.h</innerfile>
+    <innerfile refid="logger_8cpp">logger.cpp</innerfile>
+    <innerfile refid="logger_8h">logger.h</innerfile>
+    <innerfile refid="memorymanager_8cpp">memorymanager.cpp</innerfile>
+    <innerfile refid="memorymanager_8h">memorymanager.h</innerfile>
+    <innerfile refid="podlist_8h">podlist.h</innerfile>
+    <innerfile refid="podvector_8cpp">podvector.cpp</innerfile>
+    <innerfile refid="podvector_8h">podvector.h</innerfile>
+    <innerfile refid="runtime_8cpp">runtime.cpp</innerfile>
+    <innerfile refid="runtime_8h">runtime.h</innerfile>
+    <innerfile refid="string_8cpp">string.cpp</innerfile>
+    <innerfile refid="string_8h">string.h</innerfile>
+    <innerfile refid="vectypes_8h">vectypes.h</innerfile>
+    <innerfile refid="vmem_8cpp">vmem.cpp</innerfile>
+    <innerfile refid="vmem_8h">vmem.h</innerfile>
+    <innerfile refid="zone_8cpp">zone.cpp</innerfile>
+    <innerfile refid="zone_8h">zone.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1MemNode" kind="struct" prot="public">
+    <compoundname>asmjit::MemNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">asmjit::RbNode</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1ac80d3cbe484579fc23f88376328bdd61" prot="public" static="no" mutable="no">
+        <type>MemNode *</type>
+        <definition>MemNode* asmjit::MemNode::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="124" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1ada37cb74fc77c205740110cd3643424a" prot="public" static="no" mutable="no">
+        <type>MemNode *</type>
+        <definition>MemNode* asmjit::MemNode::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="125" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1a01718a29f7711901ad70e8751bfd5273" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemNode::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="131" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1af1809badaa6558ad9508a1de29a19295" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemNode::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="132" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1a01221eeb5a8d7aae102971180c88e978" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemNode::density</definition>
+        <argsstring></argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="133" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1ae90c58807f1d9f501b91629f0daefebe" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemNode::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="134" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1aa33853b96845e21b5228099ac37f0ba3" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemNode::largestBlock</definition>
+        <argsstring></argsstring>
+        <name>largestBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="135" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1acaff0a1a6ad25d1526d3cc2440027777" prot="public" static="no" mutable="no">
+        <type>size_t *</type>
+        <definition>size_t* asmjit::MemNode::baUsed</definition>
+        <argsstring></argsstring>
+        <name>baUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="137" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1MemNode_1af79656016205c17a73bc69a2ff66d7c2" prot="public" static="no" mutable="no">
+        <type>size_t *</type>
+        <definition>size_t* asmjit::MemNode::baCont</definition>
+        <argsstring></argsstring>
+        <name>baCont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="138" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1MemNode_1a1c7a065006a17238307deaed74cc9391" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t asmjit::MemNode::getAvailable</definition>
+        <argsstring>() const </argsstring>
+        <name>getAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="145" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1MemNode_1a4f5730d0b8fc350e0e2abed6987e39ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::MemNode::fillData</definition>
+        <argsstring>(MemNode *other)</argsstring>
+        <name>fillData</name>
+        <param>
+          <type>MemNode *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="147" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="147" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" line="119" bodyfile="/home/ryan/asmjit/src/asmjit/base/memorymanager.cpp" bodystart="119" bodyend="158"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1MemNode_1af79656016205c17a73bc69a2ff66d7c2" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>baCont</name></member>
+      <member refid="structasmjit_1_1MemNode_1acaff0a1a6ad25d1526d3cc2440027777" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>baUsed</name></member>
+      <member refid="structasmjit_1_1MemNode_1af1809badaa6558ad9508a1de29a19295" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>blocks</name></member>
+      <member refid="structasmjit_1_1MemNode_1a01221eeb5a8d7aae102971180c88e978" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>density</name></member>
+      <member refid="structasmjit_1_1MemNode_1a4f5730d0b8fc350e0e2abed6987e39ca" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>fillData</name></member>
+      <member refid="structasmjit_1_1MemNode_1a1c7a065006a17238307deaed74cc9391" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>getAvailable</name></member>
+      <member refid="structasmjit_1_1MemNode_1aa33853b96845e21b5228099ac37f0ba3" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>largestBlock</name></member>
+      <member refid="structasmjit_1_1RbNode_1aabdfcd0498ffa5240f9f7ee5349acb80" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>mem</name></member>
+      <member refid="structasmjit_1_1MemNode_1ada37cb74fc77c205740110cd3643424a" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>next</name></member>
+      <member refid="structasmjit_1_1RbNode_1ad07357e9eb8296ed677c1ab1d83ff19c" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>node</name></member>
+      <member refid="structasmjit_1_1MemNode_1ac80d3cbe484579fc23f88376328bdd61" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>prev</name></member>
+      <member refid="structasmjit_1_1RbNode_1a1cd027d131a4d9d5ebf58f9170d4aaa1" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>red</name></member>
+      <member refid="structasmjit_1_1MemNode_1a01718a29f7711901ad70e8751bfd5273" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>size</name></member>
+      <member refid="structasmjit_1_1MemNode_1ae90c58807f1d9f501b91629f0daefebe" prot="public" virt="non-virtual"><scope>asmjit::MemNode</scope><name>used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

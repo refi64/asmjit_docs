@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1LabelLink" kind="struct" prot="public">
+    <compoundname>asmjit::LabelLink</compoundname>
+    <includes local="no">assembler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1LabelLink_1aa70a89483ab7974c8d6f38be988fe902" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1LabelLink" kindref="compound">LabelLink</ref> *</type>
+        <definition>LabelLink* asmjit::LabelLink::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+<para>Previous link. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="36" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1LabelLink_1a940ddce5fddbe2b004e2f1b537637565" prot="public" static="no" mutable="no">
+        <type>intptr_t</type>
+        <definition>intptr_t asmjit::LabelLink::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>Offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="38" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1LabelLink_1a915938949a8bfafa490b84dd7f10e7c0" prot="public" static="no" mutable="no">
+        <type>intptr_t</type>
+        <definition>intptr_t asmjit::LabelLink::displacement</definition>
+        <argsstring></argsstring>
+        <name>displacement</name>
+        <briefdescription>
+<para>Inlined displacement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="40" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1LabelLink_1aea5469d1188995df1db42cddbe6fbbac" prot="public" static="no" mutable="no">
+        <type>intptr_t</type>
+        <definition>intptr_t asmjit::LabelLink::relocId</definition>
+        <argsstring></argsstring>
+        <name>relocId</name>
+        <briefdescription>
+<para>RelocId if link must be absolute when relocated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="42" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure used to link linked-labels. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="938">
+        <label>asmjit::LabelLink</label>
+        <link refid="structasmjit_1_1LabelLink"/>
+        <childnode refid="938" relation="usage">
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="34" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="34" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1LabelLink_1a915938949a8bfafa490b84dd7f10e7c0" prot="public" virt="non-virtual"><scope>asmjit::LabelLink</scope><name>displacement</name></member>
+      <member refid="structasmjit_1_1LabelLink_1a940ddce5fddbe2b004e2f1b537637565" prot="public" virt="non-virtual"><scope>asmjit::LabelLink</scope><name>offset</name></member>
+      <member refid="structasmjit_1_1LabelLink_1aa70a89483ab7974c8d6f38be988fe902" prot="public" virt="non-virtual"><scope>asmjit::LabelLink</scope><name>prev</name></member>
+      <member refid="structasmjit_1_1LabelLink_1aea5469d1188995df1db42cddbe6fbbac" prot="public" virt="non-virtual"><scope>asmjit::LabelLink</scope><name>relocId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1LabelData" kind="struct" prot="public">
+    <compoundname>asmjit::LabelData</compoundname>
+    <includes local="no">assembler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1LabelData_1ab0829525938be864c64e750e1fd8536b" prot="public" static="no" mutable="no">
+        <type>intptr_t</type>
+        <definition>intptr_t asmjit::LabelData::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="52" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1LabelData_1a09d4b779d9d2d893004b9a0a401f172a" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1LabelLink" kindref="compound">LabelLink</ref> *</type>
+        <definition>LabelLink* asmjit::LabelData::links</definition>
+        <argsstring></argsstring>
+        <name>links</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> links chain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="54" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structasmjit_1_1Label" kindref="compound">Label</ref> data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="935">
+        <label>asmjit::LabelData</label>
+        <link refid="structasmjit_1_1LabelData"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>links</edgelabel>
+        </childnode>
+      </node>
+      <node id="936">
+        <label>asmjit::LabelLink</label>
+        <link refid="structasmjit_1_1LabelLink"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/assembler.h" line="50" bodyfile="/home/ryan/asmjit/src/asmjit/base/assembler.h" bodystart="50" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1LabelData_1a09d4b779d9d2d893004b9a0a401f172a" prot="public" virt="non-virtual"><scope>asmjit::LabelData</scope><name>links</name></member>
+      <member refid="structasmjit_1_1LabelData_1ab0829525938be864c64e750e1fd8536b" prot="public" virt="non-virtual"><scope>asmjit::LabelData</scope><name>offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

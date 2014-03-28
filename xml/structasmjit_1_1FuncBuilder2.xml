@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1FuncBuilder2" kind="struct" prot="public">
+    <compoundname>asmjit::FuncBuilder2</compoundname>
+    <basecompoundref refid="structasmjit_1_1FuncPrototype" prot="public" virt="non-virtual">asmjit::FuncPrototype</basecompoundref>
+    <includes local="no">func.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename RET</type>
+      </param>
+      <param>
+        <type>typename P0</type>
+      </param>
+      <param>
+        <type>typename P1</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1FuncBuilder2_1a613b6378d5aaac427871d2fd40f03a7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::FuncBuilder2&lt; RET, P0, P1 &gt;::FuncBuilder2</definition>
+        <argsstring>()</argsstring>
+        <name>FuncBuilder2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="546" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="546" bodyend="549"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function builder (2 arguments). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="814">
+        <label>asmjit::FuncPrototype</label>
+        <link refid="structasmjit_1_1FuncPrototype"/>
+      </node>
+      <node id="813">
+        <label>asmjit::FuncBuilder2&lt; RET, P0, P1 &gt;</label>
+        <link refid="structasmjit_1_1FuncBuilder2"/>
+        <childnode refid="814" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="816">
+        <label>asmjit::FuncPrototype</label>
+        <link refid="structasmjit_1_1FuncPrototype"/>
+      </node>
+      <node id="815">
+        <label>asmjit::FuncBuilder2&lt; RET, P0, P1 &gt;</label>
+        <link refid="structasmjit_1_1FuncBuilder2"/>
+        <childnode refid="816" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/func.h" line="545" bodyfile="/home/ryan/asmjit/src/asmjit/base/func.h" bodystart="545" bodyend="550"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1FuncPrototype_1a0b69ec8b062ba6f9b00ec9de0baa5bfe" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>_argCount</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a58cdf7ee3948a89b16bc54ff10552b9c" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>_argList</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a1fce032ceddb9d8d0c6b14a9a3659ba5" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>_ret</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a970c68dc2e9d9ec9894ac18b7bbad1a9" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>_setPrototype</name></member>
+      <member refid="structasmjit_1_1FuncBuilder2_1a613b6378d5aaac427871d2fd40f03a7f" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>FuncBuilder2</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1ac880d4445b8e998a8dcdc0b73e89b92b" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>getArg</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a3328fdcb298d5621df63d2f57cf260b3" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>getArgCount</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a41324c51070165430611b06866da5874" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>getArgList</name></member>
+      <member refid="structasmjit_1_1FuncPrototype_1a1cf309bc7e0b14e3d418a76053d72fbf" prot="public" virt="non-virtual"><scope>asmjit::FuncBuilder2</scope><name>getRet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

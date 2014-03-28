@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1Imm" kind="struct" prot="public">
+    <compoundname>asmjit::Imm</compoundname>
+    <basecompoundref refid="structasmjit_1_1Operand" prot="public" virt="non-virtual">asmjit::Operand</basecompoundref>
+    <includes local="no">defs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a6d6d8380a1d63120a960c5ca89e91913" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::Imm::Imm</definition>
+        <argsstring>()</argsstring>
+        <name>Imm</name>
+        <briefdescription>
+<para>Create a new immediate value (initial value is 0). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="837" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="837" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1aee5dea96bee16b8f2775cc7da80cac29" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::Imm::Imm</definition>
+        <argsstring>(int64_t val)</argsstring>
+        <name>Imm</name>
+        <param>
+          <type>int64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Create a new signed immediate value, assigning the value to <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="843" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="843" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1ac14a7cfdf45b81502247342e7c76e81a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::Imm::Imm</definition>
+        <argsstring>(const Imm &amp;other)</argsstring>
+        <name>Imm</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Create a new immediate value from <emphasis>other</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="849" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="849" bodyend="849"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a09ba132031dd87afd8bb11054f24329f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::Imm::Imm</definition>
+        <argsstring>(const _NoInit &amp;)</argsstring>
+        <name>Imm</name>
+        <param>
+          <type>const _NoInit &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="851" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="851" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a87ec34eeb52d58dedd7e8759bec0de96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref></type>
+        <definition>Imm asmjit::Imm::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structasmjit_1_1Operand_1a985b4db41884dae41b27d2d880c7e86f">clone</reimplements>
+        <briefdescription>
+<para>Clone <ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="858" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="858" bodyend="860"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a977e79228bf13cdbdb92379339602ce4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::Imm::isInt8</definition>
+        <argsstring>() const </argsstring>
+        <name>isInt8</name>
+        <briefdescription>
+<para>Get whether the immediate can be casted to 8-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="863" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="863" bodyend="863"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1afbd46c7c32eb36c5dc0c77756ce5f18c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::Imm::isUInt8</definition>
+        <argsstring>() const </argsstring>
+        <name>isUInt8</name>
+        <briefdescription>
+<para>Get whether the immediate can be casted to 8-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="865" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="865" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a423fb499db6933e25a8e4fb75d11c30f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::Imm::isInt16</definition>
+        <argsstring>() const </argsstring>
+        <name>isInt16</name>
+        <briefdescription>
+<para>Get whether the immediate can be casted to 16-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="868" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="868" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1ae4957b57c65d00a74de20f88dc7c8cc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::Imm::isUInt16</definition>
+        <argsstring>() const </argsstring>
+        <name>isUInt16</name>
+        <briefdescription>
+<para>Get whether the immediate can be casted to 16-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="870" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="870" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1ab5d032a848dbf3321773aff868d97d41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::Imm::isInt32</definition>
+        <argsstring>() const </argsstring>
+        <name>isInt32</name>
+        <briefdescription>
+<para>Get whether the immediate can be casted to 32-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="873" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="873" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a385c2bb2b657e908f91d0a755cc930b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::Imm::isUInt32</definition>
+        <argsstring>() const </argsstring>
+        <name>isUInt32</name>
+        <briefdescription>
+<para>Get whether the immediate can be casted to 32-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="875" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="875" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a1d21f39e2f03a26c97efb1a2cb69a1db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t asmjit::Imm::getInt8</definition>
+        <argsstring>() const </argsstring>
+        <name>getInt8</name>
+        <briefdescription>
+<para>Get immediate value as 8-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="878" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="878" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a99bc7e7dbd8ed3e0d66abd63d0bfe059" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::Imm::getUInt8</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt8</name>
+        <briefdescription>
+<para>Get immediate value as 8-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="880" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="880" bodyend="880"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1af00dc4bb217fbfed84ab5c1360f34065" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t asmjit::Imm::getInt16</definition>
+        <argsstring>() const </argsstring>
+        <name>getInt16</name>
+        <briefdescription>
+<para>Get immediate value as 16-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="882" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="882" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a76b16f3d673e3a72a875bd0d0d7dc365" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t asmjit::Imm::getUInt16</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt16</name>
+        <briefdescription>
+<para>Get immediate value as 16-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="884" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="884" bodyend="884"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1aa754afbd31eccd757e9dd34fe96fa28d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::Imm::getInt32</definition>
+        <argsstring>() const </argsstring>
+        <name>getInt32</name>
+        <briefdescription>
+<para>Get immediate value as 32-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="886" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="886" bodyend="886"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a491a62da780c14fe97712ae54c0c0ffc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Imm::getUInt32</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt32</name>
+        <briefdescription>
+<para>Get immediate value as 32-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="888" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="888" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1afc1791f2ac5ab3d5e5adbe04d41aa843" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t asmjit::Imm::getInt64</definition>
+        <argsstring>() const </argsstring>
+        <name>getInt64</name>
+        <briefdescription>
+<para>Get immediate value as 64-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="890" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="890" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1af677753452a0a85ba9fa4217b3686130" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t asmjit::Imm::getUInt64</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt64</name>
+        <briefdescription>
+<para>Get immediate value as 64-bit unsigned integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="892" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="892" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a6581eba1b0647130f6eb7a0118d583ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>intptr_t</type>
+        <definition>intptr_t asmjit::Imm::getIntPtr</definition>
+        <argsstring>() const </argsstring>
+        <name>getIntPtr</name>
+        <briefdescription>
+<para>Get immediate value as intptr_t. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="895" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="895" bodyend="900"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a6dec459c1fafa1f0d5f5dc0344bb9c86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uintptr_t</type>
+        <definition>uintptr_t asmjit::Imm::getUIntPtr</definition>
+        <argsstring>() const </argsstring>
+        <name>getUIntPtr</name>
+        <briefdescription>
+<para>Get immediate value as uintptr_t. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="903" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="903" bodyend="908"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1acf8da662f2d23fa45d27ad1b7dbb0e66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::Imm::getInt32Lo</definition>
+        <argsstring>() const </argsstring>
+        <name>getInt32Lo</name>
+        <briefdescription>
+<para>Get Lo 32-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="911" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="911" bodyend="911"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1afae817e6918b48a4e620c48fdd0b808e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Imm::getUInt32Lo</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt32Lo</name>
+        <briefdescription>
+<para>Get Lo 32-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="913" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="913" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a816c84fdaa28fc6bc39c611da0d281f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t asmjit::Imm::getInt32Hi</definition>
+        <argsstring>() const </argsstring>
+        <name>getInt32Hi</name>
+        <briefdescription>
+<para>Get Hi 32-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="915" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="915" bodyend="915"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1abc08fa629bbda8a7e4516db35282a160" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::Imm::getUInt32Hi</definition>
+        <argsstring>() const </argsstring>
+        <name>getUInt32Hi</name>
+        <briefdescription>
+<para>Get Hi 32-bit signed integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="917" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="917" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a4b0cd5360d21f41ac2aca1df50bf5068" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setInt8</definition>
+        <argsstring>(int8_t val)</argsstring>
+        <name>setInt8</name>
+        <param>
+          <type>int8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 8-bit signed integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="920" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="920" bodyend="930"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a8a4080a2be56a7099cdd5ec1fbb8d319" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setUInt8</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>setUInt8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 8-bit unsigned integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="933" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="933" bodyend="942"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1aafa4873d3c572ca840707de03aca95aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setInt16</definition>
+        <argsstring>(int16_t val)</argsstring>
+        <name>setInt16</name>
+        <param>
+          <type>int16_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 16-bit signed integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="945" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="945" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1af8588ccf00866e081a9d16b1b9fe3297" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setUInt16</definition>
+        <argsstring>(uint16_t val)</argsstring>
+        <name>setUInt16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 16-bit unsigned integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="958" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="958" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1ad2f922217226881bb93510cd00dc5813" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setInt32</definition>
+        <argsstring>(int32_t val)</argsstring>
+        <name>setInt32</name>
+        <param>
+          <type>int32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 32-bit signed integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="970" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="970" bodyend="979"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a2d0b63993f1f14a6ae20a5f8d3602330" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setUInt32</definition>
+        <argsstring>(uint32_t val)</argsstring>
+        <name>setUInt32</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 32-bit unsigned integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="982" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="982" bodyend="991"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1ab7aa11a9b815b72b75aae142e1a646d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setInt64</definition>
+        <argsstring>(int64_t val)</argsstring>
+        <name>setInt64</name>
+        <param>
+          <type>int64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 64-bit signed integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="994" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="994" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a406bfcbb240b4a2897c2c511a0c5aa4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setUInt64</definition>
+        <argsstring>(uint64_t val)</argsstring>
+        <name>setUInt64</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to 64-bit unsigned integer <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1000" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1000" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a3c98dca08b5f1ce4d89c286802797b7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setIntPtr</definition>
+        <argsstring>(intptr_t val)</argsstring>
+        <name>setIntPtr</name>
+        <param>
+          <type>intptr_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to intptr_t <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1006" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1006" bodyend="1009"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a12ed1580a8665eabdf09f9b86efb2cac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setUIntPtr</definition>
+        <argsstring>(uintptr_t val)</argsstring>
+        <name>setUIntPtr</name>
+        <param>
+          <type>uintptr_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value to uintptr_t <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1012" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1012" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a03710cbc86bac2cb9a0a1f479776aff7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setPtr</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>setPtr</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Set immediate value as unsigned type to <emphasis>val</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1018" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1018" bodyend="1018"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a4d4346e24e6714a8c0582d544e403b45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setFloat</definition>
+        <argsstring>(float f)</argsstring>
+        <name>setFloat</name>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1024" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1024" bodyend="1028"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a4eb6d52323f24c239ba1fca03be99c8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::setDouble</definition>
+        <argsstring>(double d)</argsstring>
+        <name>setDouble</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1030" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1030" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a83fd0b20b4033d991a8ae168ea064dc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::truncateTo8Bits</definition>
+        <argsstring>()</argsstring>
+        <name>truncateTo8Bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1039" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1039" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1acfbb04003cbd964c8a94d1425f5f8c31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::truncateTo16Bits</definition>
+        <argsstring>()</argsstring>
+        <name>truncateTo16Bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1050" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1050" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1af2b19f84db3dfd1a19dc98bbec11ec81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::truncateTo32Bits</definition>
+        <argsstring>()</argsstring>
+        <name>truncateTo32Bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1061" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1061" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1Imm_1a4504699cb354b4ae4d1f0b5e4bfbde7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+        <definition>Imm&amp; asmjit::Imm::operator=</definition>
+        <argsstring>(const Imm &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1Imm" kindref="compound">Imm</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assign <emphasis>other</emphasis> to the immediate operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="1071" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="1071" bodyend="1071"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Immediate operand. </para>    </briefdescription>
+    <detaileddescription>
+<para>Immediate operand is usually part of instruction itself (it&apos;s inlined after or before instruction opcode). Immediates can be only signed or unsigned integers.</para><para>To create immediate operand, use <computeroutput><ref refid="group__asmjit__base_1ga65a8413c6d6ca49e69246bb684ac60eb" kindref="member">imm()</ref></computeroutput> and <computeroutput><ref refid="group__asmjit__base_1ga4594b4672222fbd0152080800fe73779" kindref="member">imm_u()</ref></computeroutput> constructors or constructors provided by <computeroutput>Immediate</computeroutput> class itself. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="893">
+        <label>asmjit::Imm</label>
+        <link refid="structasmjit_1_1Imm"/>
+        <childnode refid="894" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="895">
+        <label>asmjit::Imm</label>
+        <link refid="structasmjit_1_1Imm"/>
+        <childnode refid="896" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="896">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/defs.h" line="831" bodyfile="/home/ryan/asmjit/src/asmjit/base/defs.h" bodystart="831" bodyend="1072"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1ab65e9aa7a15edd48cba687f03cb7347c" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_base</name></member>
+      <member refid="structasmjit_1_1Operand_1ac155d3e43ef0cf0ea24e98b1fe906d36" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_copy</name></member>
+      <member refid="structasmjit_1_1Operand_1a307e2e7b752000b12da59dad23e0ca90" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_imm</name></member>
+      <member refid="structasmjit_1_1Operand_1a52353c7164e54d235314b175a9b05a6c" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_init</name></member>
+      <member refid="structasmjit_1_1Operand_1a2d8b4647e75a71e854ad939e1cb4c2ed" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_init_packed_d0_d1</name></member>
+      <member refid="structasmjit_1_1Operand_1a8cee9df3008f5956e37f876cc9026f45" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_init_packed_d2_d3</name></member>
+      <member refid="structasmjit_1_1Operand_1a289c6ab4602acf459e248d3f3f724b8a" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_init_packed_op_sz_b0_b1_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a7b9c87fee92df184dea2c10fb30ea467" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_init_packed_op_sz_w0_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a706538f838a8416a7e8e7cc4fa6f1db8" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_label</name></member>
+      <member refid="structasmjit_1_1Operand_1a1e918a093397232131e706fd436c1085" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1Operand_1aae280895b95e1b083799a43306dd7e15" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_vmem</name></member>
+      <member refid="structasmjit_1_1Operand_1a24f921b98561dea1f19faad624b9a147" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>_vreg</name></member>
+      <member refid="structasmjit_1_1Imm_1a87ec34eeb52d58dedd7e8759bec0de96" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>clone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae043c994eaddfe587c1d248812b3d16c" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a9871ba5815361a896771418b9d443935" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a005389a2368b711612feda323d63766f" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getId</name></member>
+      <member refid="structasmjit_1_1Imm_1af00dc4bb217fbfed84ab5c1360f34065" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getInt16</name></member>
+      <member refid="structasmjit_1_1Imm_1aa754afbd31eccd757e9dd34fe96fa28d" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getInt32</name></member>
+      <member refid="structasmjit_1_1Imm_1a816c84fdaa28fc6bc39c611da0d281f3" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getInt32Hi</name></member>
+      <member refid="structasmjit_1_1Imm_1acf8da662f2d23fa45d27ad1b7dbb0e66" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getInt32Lo</name></member>
+      <member refid="structasmjit_1_1Imm_1afc1791f2ac5ab3d5e5adbe04d41aa843" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getInt64</name></member>
+      <member refid="structasmjit_1_1Imm_1a1d21f39e2f03a26c97efb1a2cb69a1db" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getInt8</name></member>
+      <member refid="structasmjit_1_1Imm_1a6581eba1b0647130f6eb7a0118d583ee" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getIntPtr</name></member>
+      <member refid="structasmjit_1_1Operand_1a2ea181bfeeae6d5467f7343dfddcb57c" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getOp</name></member>
+      <member refid="structasmjit_1_1Operand_1ae5bb07ef28e2c29ebf9b762ea8f36b7e" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1Imm_1a76b16f3d673e3a72a875bd0d0d7dc365" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUInt16</name></member>
+      <member refid="structasmjit_1_1Imm_1a491a62da780c14fe97712ae54c0c0ffc" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUInt32</name></member>
+      <member refid="structasmjit_1_1Imm_1abc08fa629bbda8a7e4516db35282a160" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUInt32Hi</name></member>
+      <member refid="structasmjit_1_1Imm_1afae817e6918b48a4e620c48fdd0b808e" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUInt32Lo</name></member>
+      <member refid="structasmjit_1_1Imm_1af677753452a0a85ba9fa4217b3686130" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUInt64</name></member>
+      <member refid="structasmjit_1_1Imm_1a99bc7e7dbd8ed3e0d66abd63d0bfe059" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUInt8</name></member>
+      <member refid="structasmjit_1_1Imm_1a6dec459c1fafa1f0d5f5dc0344bb9c86" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>getUIntPtr</name></member>
+      <member refid="structasmjit_1_1Imm_1a6d6d8380a1d63120a960c5ca89e91913" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Imm</name></member>
+      <member refid="structasmjit_1_1Imm_1aee5dea96bee16b8f2775cc7da80cac29" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Imm</name></member>
+      <member refid="structasmjit_1_1Imm_1ac14a7cfdf45b81502247342e7c76e81a" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Imm</name></member>
+      <member refid="structasmjit_1_1Imm_1a09ba132031dd87afd8bb11054f24329f" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Imm</name></member>
+      <member refid="structasmjit_1_1Operand_1ab85a3b5c7354a38ca52e78fea1739759" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isImm</name></member>
+      <member refid="structasmjit_1_1Imm_1a423fb499db6933e25a8e4fb75d11c30f" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isInt16</name></member>
+      <member refid="structasmjit_1_1Imm_1ab5d032a848dbf3321773aff868d97d41" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isInt32</name></member>
+      <member refid="structasmjit_1_1Imm_1a977e79228bf13cdbdb92379339602ce4" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isInt8</name></member>
+      <member refid="structasmjit_1_1Operand_1a2a77f09fc4951c9e58fccd18a6eaf1b3" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isLabel</name></member>
+      <member refid="structasmjit_1_1Operand_1afb9863bc270de49d257dce8593e79cb4" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad09b5fd91f3d8c754980f98a2019be7b" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isNone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae0ce4d16beb59e0934942cba222054af" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isReg</name></member>
+      <member refid="structasmjit_1_1Operand_1a1cd13703d63d231c97cf76c020e2b605" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isRegCode</name></member>
+      <member refid="structasmjit_1_1Operand_1aea0d545eea3526cfb1ae0adb8871de78" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isRegOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1a5dd129c65aac0057afdd4f844785437a" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isRegType</name></member>
+      <member refid="structasmjit_1_1Imm_1ae4957b57c65d00a74de20f88dc7c8cc5" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isUInt16</name></member>
+      <member refid="structasmjit_1_1Imm_1a385c2bb2b657e908f91d0a755cc930b1" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isUInt32</name></member>
+      <member refid="structasmjit_1_1Imm_1afbd46c7c32eb36c5dc0c77756ce5f18c" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isUInt8</name></member>
+      <member refid="structasmjit_1_1Operand_1a809703f677ab89fb8d619ad717c59a02" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isVar</name></member>
+      <member refid="structasmjit_1_1Operand_1ae65f6fcaacdf3a299256f909fcda5576" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>isVarOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1ad67efdbe93039d4ae3f77f84fcae6331" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a55218d0096d0f0352484ecd0b7e3ef53" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a50c0bde3edb955a4001a20a7d01bbf96" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Imm_1a4504699cb354b4ae4d1f0b5e4bfbde7d" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1Imm_1a4eb6d52323f24c239ba1fca03be99c8e" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setDouble</name></member>
+      <member refid="structasmjit_1_1Imm_1a4d4346e24e6714a8c0582d544e403b45" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setFloat</name></member>
+      <member refid="structasmjit_1_1Imm_1aafa4873d3c572ca840707de03aca95aa" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setInt16</name></member>
+      <member refid="structasmjit_1_1Imm_1ad2f922217226881bb93510cd00dc5813" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setInt32</name></member>
+      <member refid="structasmjit_1_1Imm_1ab7aa11a9b815b72b75aae142e1a646d2" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setInt64</name></member>
+      <member refid="structasmjit_1_1Imm_1a4b0cd5360d21f41ac2aca1df50bf5068" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setInt8</name></member>
+      <member refid="structasmjit_1_1Imm_1a3c98dca08b5f1ce4d89c286802797b7e" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setIntPtr</name></member>
+      <member refid="structasmjit_1_1Imm_1a03710cbc86bac2cb9a0a1f479776aff7" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setPtr</name></member>
+      <member refid="structasmjit_1_1Imm_1af8588ccf00866e081a9d16b1b9fe3297" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setUInt16</name></member>
+      <member refid="structasmjit_1_1Imm_1a2d0b63993f1f14a6ae20a5f8d3602330" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setUInt32</name></member>
+      <member refid="structasmjit_1_1Imm_1a406bfcbb240b4a2897c2c511a0c5aa4c" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setUInt64</name></member>
+      <member refid="structasmjit_1_1Imm_1a8a4080a2be56a7099cdd5ec1fbb8d319" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setUInt8</name></member>
+      <member refid="structasmjit_1_1Imm_1a12ed1580a8665eabdf09f9b86efb2cac" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>setUIntPtr</name></member>
+      <member refid="structasmjit_1_1Imm_1acfbb04003cbd964c8a94d1425f5f8c31" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>truncateTo16Bits</name></member>
+      <member refid="structasmjit_1_1Imm_1af2b19f84db3dfd1a19dc98bbec11ec81" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>truncateTo32Bits</name></member>
+      <member refid="structasmjit_1_1Imm_1a83fd0b20b4033d991a8ae168ea064dc5" prot="public" virt="non-virtual"><scope>asmjit::Imm</scope><name>truncateTo8Bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

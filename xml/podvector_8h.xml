@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="podvector_8h" kind="file">
+    <compoundname>podvector.h</compoundname>
+    <includes refid="defs_8h" local="yes">../base/defs.h</includes>
+    <includes refid="error_8h" local="yes">../base/error.h</includes>
+    <includes refid="globals_8h" local="yes">../base/globals.h</includes>
+    <includes refid="apibegin_8h" local="yes">../base/apibegin.h</includes>
+    <includes refid="apiend_8h" local="yes">../base/apiend.h</includes>
+    <includedby refid="assembler_8h" local="yes">assembler.h</includedby>
+    <includedby refid="compiler_8h" local="yes">compiler.h</includedby>
+    <includedby refid="base_8h" local="yes">base.h</includedby>
+    <includedby refid="podvector_8cpp" local="yes">podvector.cpp</includedby>
+    <incdepgraph>
+      <node id="1525">
+        <label>../base/globals.h</label>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>../base/apiend.h</label>
+      </node>
+      <node id="1531">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1535">
+        <label>stdint.h</label>
+      </node>
+      <node id="1529">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1537">
+        <label>../base/error.h</label>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1532">
+        <label>../base/apibegin.h</label>
+        <childnode refid="1526" relation="include">
+        </childnode>
+      </node>
+      <node id="1523">
+        <label>../base/defs.h</label>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>limits.h</label>
+      </node>
+      <node id="1522">
+        <label>podvector.h</label>
+        <link refid="podvector.h"/>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1534">
+        <label>new</label>
+      </node>
+      <node id="1527">
+        <label>config.h</label>
+      </node>
+      <node id="1524">
+        <label>../base/intutil.h</label>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>../build.h</label>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>stdio.h</label>
+      </node>
+      <node id="1530">
+        <label>string.h</label>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1547">
+        <label>testopcode.cpp</label>
+      </node>
+      <node id="1560">
+        <label>x86context_p.h</label>
+      </node>
+      <node id="1566">
+        <label>runtime.cpp</label>
+      </node>
+      <node id="1542">
+        <label>asmjit.h</label>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+      </node>
+      <node id="1549">
+        <label>testdummy.cpp</label>
+      </node>
+      <node id="1539">
+        <label>assembler.h</label>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1565" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+      </node>
+      <node id="1565">
+        <label>assembler.cpp</label>
+      </node>
+      <node id="1567">
+        <label>podvector.cpp</label>
+      </node>
+      <node id="1555">
+        <label>x86.h</label>
+      </node>
+      <node id="1563">
+        <label>x86compiler.h</label>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1557">
+        <label>compiler.cpp</label>
+      </node>
+      <node id="1541">
+        <label>testsizeof.cpp</label>
+      </node>
+      <node id="1540">
+        <label>base.h</label>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1538">
+        <label>podvector.h</label>
+        <link refid="podvector.h"/>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>winremoteruntime.h</label>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1545">
+        <label>testx86.cpp</label>
+      </node>
+      <node id="1564">
+        <label>x86func.h</label>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1546">
+        <label>genopcode.h</label>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>context_p.h</label>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+      </node>
+      <node id="1544">
+        <label>genblend.h</label>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>context.cpp</label>
+      </node>
+      <node id="1562">
+        <label>x86assembler.h</label>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>winremoteruntime.cpp</label>
+      </node>
+      <node id="1550">
+        <label>testmem.cpp</label>
+      </node>
+      <node id="1551">
+        <label>host.h</label>
+        <childnode refid="1542" relation="include">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>contrib.h</label>
+      </node>
+      <node id="1543">
+        <label>benchx86.cpp</label>
+      </node>
+      <node id="1548">
+        <label>testcpu.cpp</label>
+      </node>
+      <node id="1556">
+        <label>compiler.h</label>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+      </node>
+      <node id="1561">
+        <label>x86defs.h</label>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structasmjit_1_1PodVectorData" prot="public">asmjit::PodVectorData</innerclass>
+    <innerclass refid="structasmjit_1_1PodVectorBase" prot="public">asmjit::PodVectorBase</innerclass>
+    <innerclass refid="structasmjit_1_1PodVector" prot="public">asmjit::PodVector</innerclass>
+    <innernamespace refid="namespaceasmjit">asmjit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>[AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>x86/x64<sp/>JIT<sp/>and<sp/>Remote<sp/>Assembler<sp/>for<sp/>C++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[License]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zlib<sp/>-<sp/>See<sp/>LICENSE.md<sp/>file<sp/>in<sp/>the<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASMJIT_BASE_PODVECTOR_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ASMJIT_BASE_PODVECTOR_H</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Dependencies<sp/>-<sp/>AsmJit]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/globals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-Begin]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apibegin.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">asmjit<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">//!<sp/>@addtogroup<sp/>asmjit_base</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">//!<sp/>@{</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::PodVectorData]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PodVectorData<sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>data.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>getData()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>+<sp/>1);<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Capacity<sp/>of<sp/>the<sp/>vector.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Length<sp/>of<sp/>the<sp/>vector.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::PodVectorBase]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PodVectorBase<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ASMJIT_API<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PodVectorData<sp/>_nullData;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Create<sp/>a<sp/>new<sp/>instance<sp/>of<sp/>@ref<sp/>PodVectorBase.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>PodVectorBase()<sp/>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>_d(const_cast&lt;PodVectorData*&gt;(&amp;_nullData))<sp/>{}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>PodVectorBase<sp/>and<sp/>data.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>~PodVectorBase()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_d<sp/>!=<sp/>&amp;_nullData)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>::free(_d);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Grow<sp/>/<sp/>Reserve]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/>Error<sp/>_grow(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeOfT);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>ASMJIT_API<sp/>Error<sp/>_reserve(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeOfT);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Members]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>PodVectorData*<sp/>_d;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[asmjit::PodVector&lt;T&gt;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment">//!<sp/>@brief<sp/>Template<sp/>used<sp/>to<sp/>store<sp/>and<sp/>manage<sp/>array<sp/>of<sp/>POD<sp/>data.</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">//!</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">//!<sp/>This<sp/>template<sp/>has<sp/>these<sp/>adventages<sp/>over<sp/>other<sp/>vector&lt;&gt;<sp/>templates:</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">//!<sp/>-<sp/>Non-copyable<sp/>(designed<sp/>to<sp/>be<sp/>non-copyable,<sp/>we<sp/>want<sp/>it)</highlight></codeline>
+<codeline lineno="83"><highlight class="comment">//!<sp/>-<sp/>No<sp/>copy-on-write<sp/>(some<sp/>implementations<sp/>of<sp/>stl<sp/>can<sp/>use<sp/>it)</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">//!<sp/>-<sp/>Optimized<sp/>for<sp/>working<sp/>only<sp/>with<sp/>POD<sp/>types</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">//!<sp/>-<sp/>Uses<sp/>ASMJIT_...<sp/>memory<sp/>management<sp/>macros</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="87" refid="structasmjit_1_1PodVector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structasmjit_1_1PodVector" kindref="compound" tooltip="Template used to store and manage array of POD data.">PodVector</ref><sp/>:<sp/>PodVectorBase<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>ASMJIT_NO_COPY(<ref refid="structasmjit_1_1PodVector" kindref="compound" tooltip="Template used to store and manage array of POD data.">PodVector&lt;T&gt;</ref>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Construction<sp/>/<sp/>Destruction]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//!<sp/>@brief<sp/>Create<sp/>new<sp/>instance<sp/>of<sp/>@ref<sp/>PodVector&lt;&gt;.</highlight></codeline>
+<codeline lineno="95" refid="structasmjit_1_1PodVector_1a9e374507ccd808cd6d778e56402ab86b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/><ref refid="structasmjit_1_1PodVector" kindref="compound" tooltip="Template used to store and manage array of POD data.">PodVector</ref>()<sp/>{}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Destroy<sp/>the<sp/>@ref<sp/>PodVector&lt;&gt;<sp/>and<sp/>data.</highlight></codeline>
+<codeline lineno="97" refid="structasmjit_1_1PodVector_1a7af566581424c4e736818c57a3ff31dd" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/><ref refid="structasmjit_1_1PodVector_1a7af566581424c4e736818c57a3ff31dd" kindref="member" tooltip="Destroy the PodVector&amp;lt;&amp;gt; and data.">~PodVector</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Data]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>whether<sp/>the<sp/>vector<sp/>is<sp/>empty.</highlight></codeline>
+<codeline lineno="104" refid="structasmjit_1_1PodVector_1afb0ba224704acd2b3f388215d28f90f9" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1afb0ba224704acd2b3f388215d28f90f9" kindref="member" tooltip="Get whether the vector is empty.">isEmpty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_d-&gt;length<sp/>==<sp/>0;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>length.</highlight></codeline>
+<codeline lineno="106" refid="structasmjit_1_1PodVector_1a11d6044c74254f4491ea6c55e17da9a4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a11d6044c74254f4491ea6c55e17da9a4" kindref="member" tooltip="Get length.">getLength</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_d-&gt;length;<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>capacity.</highlight></codeline>
+<codeline lineno="108" refid="structasmjit_1_1PodVector_1a46669ac3282eb6dfa09505638a29b3fc" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a46669ac3282eb6dfa09505638a29b3fc" kindref="member" tooltip="Get capacity.">getCapacity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_d-&gt;capacity;<sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>data.</highlight></codeline>
+<codeline lineno="111" refid="structasmjit_1_1PodVector_1a99290e3577f0296a4d21346992b1de05" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>T*<sp/><ref refid="structasmjit_1_1PodVector_1a99290e3577f0296a4d21346992b1de05" kindref="member" tooltip="Get data.">getData</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_d-&gt;getData());<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/>//!<sp/>@overload</highlight></codeline>
+<codeline lineno="113" refid="structasmjit_1_1PodVector_1a3f9cd384b3f6870190425b1791b58080" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/><ref refid="structasmjit_1_1PodVector_1a3f9cd384b3f6870190425b1791b58080" kindref="member">getData</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_d-&gt;getData());<sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Clear<sp/>/<sp/>Reset]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Clear<sp/>vector<sp/>data,<sp/>but<sp/>don&apos;t<sp/>free<sp/>an<sp/>internal<sp/>buffer.</highlight></codeline>
+<codeline lineno="120" refid="structasmjit_1_1PodVector_1abf9316ca4654bb99e739258a1c06d87c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1abf9316ca4654bb99e739258a1c06d87c" kindref="member" tooltip="Clear vector data, but don&amp;#39;t free an internal buffer.">clear</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_d<sp/>!=<sp/>&amp;_nullData)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_d-&gt;length<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Clear<sp/>vector<sp/>data<sp/>and<sp/>free<sp/>internal<sp/>buffer.</highlight></codeline>
+<codeline lineno="126" refid="structasmjit_1_1PodVector_1a99668159a21d591f41ed803a17475756" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a99668159a21d591f41ed803a17475756" kindref="member" tooltip="Clear vector data and free internal buffer.">reset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_d<sp/>!=<sp/>&amp;_nullData)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>::free(_d);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_d<sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal">PodVectorData*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;_nullData);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Grow<sp/>/<sp/>Reserve]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Called<sp/>to<sp/>grow<sp/>the<sp/>buffer<sp/>to<sp/>fit<sp/>at<sp/>least<sp/>@a<sp/>n<sp/>elements<sp/>more.</highlight></codeline>
+<codeline lineno="138" refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>Error<sp/><ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">_grow</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">PodVectorBase::_grow</ref>(n,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));<sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Realloc<sp/>internal<sp/>array<sp/>to<sp/>fit<sp/>at<sp/>least<sp/>@a<sp/>to<sp/>items.</highlight></codeline>
+<codeline lineno="142" refid="structasmjit_1_1PodVector_1aacec2a3d3fdc018449fad418c5edaad3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>Error<sp/><ref refid="structasmjit_1_1PodVector_1aacec2a3d3fdc018449fad418c5edaad3" kindref="member" tooltip="Realloc internal array to fit at least to items.">_reserve</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1aacec2a3d3fdc018449fad418c5edaad3" kindref="member" tooltip="Realloc internal array to fit at least to items.">PodVectorBase::_reserve</ref>(n,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));<sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>[Ops]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Prepend<sp/>@a<sp/>item<sp/>to<sp/>vector.</highlight></codeline>
+<codeline lineno="150" refid="structasmjit_1_1PodVector_1a79b0b62392910dd514d7a76080c1ad1a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>Error<sp/><ref refid="structasmjit_1_1PodVector_1a79b0b62392910dd514d7a76080c1ad1a" kindref="member" tooltip="Prepend item to vector.">prepend</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>item)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>PodVectorData*<sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d-&gt;length<sp/>==<sp/>d-&gt;capacity)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ASMJIT_PROPAGATE_ERROR(<ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">_grow</ref>(1));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_d<sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>::memmove(static_cast&lt;T*&gt;(d-&gt;getData())<sp/>+<sp/>1,<sp/>d-&gt;getData(),<sp/>d-&gt;length<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>::memcpy(d-&gt;getData(),<sp/>&amp;item,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>d-&gt;length++;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Insert<sp/>an<sp/>@a<sp/>item<sp/>at<sp/>the<sp/>@a<sp/>index.</highlight></codeline>
+<codeline lineno="166" refid="structasmjit_1_1PodVector_1ab28324846c511881fc1e80f245ce2ae2" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>Error<sp/><ref refid="structasmjit_1_1PodVector_1ab28324846c511881fc1e80f245ce2ae2" kindref="member" tooltip="Insert an item at the index.">insert</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>item)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>PodVectorData*<sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(index<sp/>&lt;=<sp/>d-&gt;length);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d-&gt;length<sp/>==<sp/>d-&gt;capacity)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ASMJIT_PROPAGATE_ERROR(<ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">_grow</ref>(1));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>dst<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(d-&gt;getData())<sp/>+<sp/>index;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>::memmove(dst<sp/>+<sp/>1,<sp/>dst,<sp/>d-&gt;length<sp/>-<sp/>index);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>::memcpy(dst,<sp/>&amp;item,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>d-&gt;length++;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Append<sp/>@a<sp/>item<sp/>to<sp/>vector.</highlight></codeline>
+<codeline lineno="184" refid="structasmjit_1_1PodVector_1aad46d8f3462ff753b7405e9e0c028264" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>Error<sp/><ref refid="structasmjit_1_1PodVector_1aad46d8f3462ff753b7405e9e0c028264" kindref="member" tooltip="Append item to vector.">append</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>item)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>PodVectorData*<sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d-&gt;length<sp/>==<sp/>d-&gt;capacity)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ASMJIT_PROPAGATE_ERROR(<ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">_grow</ref>(1));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>::memcpy(static_cast&lt;T*&gt;(d-&gt;getData())<sp/>+<sp/>d-&gt;length,<sp/>&amp;item,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>d-&gt;length++;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__asmjit__base_1gga4d80121b99d57fc3e7269801bc1e98afac9e7c035a2435683482518bae368d997" kindref="member" tooltip="No error (success).">kErrorOk</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>index<sp/>of<sp/>@a<sp/>val<sp/>or<sp/>kInvalidIndex<sp/>if<sp/>not<sp/>found.</highlight></codeline>
+<codeline lineno="199" refid="structasmjit_1_1PodVector_1a4e7812ddb4b95f3ced0aef29ee99356d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a4e7812ddb4b95f3ced0aef29ee99356d" kindref="member" tooltip="Get index of val or kInvalidIndex if not found.">indexOf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>PodVectorData*<sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(d-&gt;getData());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>d-&gt;length;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data[i]<sp/>==<sp/>val)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kInvalidIndex;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Remove<sp/>item<sp/>at<sp/>index<sp/>@a<sp/>i.</highlight></codeline>
+<codeline lineno="213" refid="structasmjit_1_1PodVector_1ae08c43cd3248fa01bf099a4ea95dadde" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1ae08c43cd3248fa01bf099a4ea95dadde" kindref="member" tooltip="Remove item at index i.">removeAt</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>PodVectorData*<sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(i<sp/>&lt;<sp/>d-&gt;length);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(d-&gt;getData())<sp/>+<sp/>i;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>d-&gt;length--;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>::memmove(data,<sp/>data<sp/>+<sp/>1,<sp/>d-&gt;length<sp/>-<sp/>i);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Swap<sp/>this<sp/>pod-vector<sp/>with<sp/>@a<sp/>other.</highlight></codeline>
+<codeline lineno="223" refid="structasmjit_1_1PodVector_1a5f659ffe6f55ed37463fa80c03f9f96c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a5f659ffe6f55ed37463fa80c03f9f96c" kindref="member" tooltip="Swap this pod-vector with other.">swap</ref>(<ref refid="structasmjit_1_1PodVector" kindref="compound" tooltip="Template used to store and manage array of POD data.">PodVector&lt;T&gt;</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>otherData<sp/>=<sp/>other._d;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>other._d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>_d<sp/>=<sp/>otherData;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>item<sp/>at<sp/>index<sp/>@a<sp/>i.</highlight></codeline>
+<codeline lineno="230" refid="structasmjit_1_1PodVector_1a295379e7ee5c667fb34effc03aeb3579" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/>T&amp;<sp/><ref refid="structasmjit_1_1PodVector_1a295379e7ee5c667fb34effc03aeb3579" kindref="member" tooltip="Get item at index i.">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(i<sp/>&lt;<sp/><ref refid="structasmjit_1_1PodVector_1a11d6044c74254f4491ea6c55e17da9a4" kindref="member" tooltip="Get length.">getLength</ref>());</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a99290e3577f0296a4d21346992b1de05" kindref="member" tooltip="Get data.">getData</ref>()[i];</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Get<sp/>item<sp/>at<sp/>index<sp/>@a<sp/>i.</highlight></codeline>
+<codeline lineno="236" refid="structasmjit_1_1PodVector_1ae6f61add409bbba130e8040f76861a2f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>ASMJIT_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="structasmjit_1_1PodVector_1ae6f61add409bbba130e8040f76861a2f" kindref="member" tooltip="Get item at index i.">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__asmjit__config_1ga9db1c56e8381f1728245475745b6213e" kindref="member" tooltip="Assertion macro. Default implementation calls asmjit::assertionFailed() function.">ASMJIT_ASSERT</ref>(i<sp/>&lt;<sp/><ref refid="structasmjit_1_1PodVector_1a11d6044c74254f4491ea6c55e17da9a4" kindref="member" tooltip="Get length.">getLength</ref>());</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structasmjit_1_1PodVector_1a99290e3577f0296a4d21346992b1de05" kindref="member" tooltip="Get data.">getData</ref>()[i];</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/>//!<sp/>@brief<sp/>Allocate<sp/>and<sp/>append<sp/>a<sp/>new<sp/>item<sp/>and<sp/>return<sp/>its<sp/>address.</highlight></codeline>
+<codeline lineno="242" refid="structasmjit_1_1PodVector_1ab364a6db35aa7c04e7bc378b237db173" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>T*<sp/><ref refid="structasmjit_1_1PodVector_1ab364a6db35aa7c04e7bc378b237db173" kindref="member" tooltip="Allocate and append a new item and return its address.">newElement</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>PodVectorData*<sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d-&gt;length<sp/>==<sp/>d-&gt;capacity)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="structasmjit_1_1PodVector_1a6c44a7b97495a32396075b76bacdc6de" kindref="member" tooltip="Called to grow the buffer to fit at least n elements more.">_grow</ref>(1))</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/>_d;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(d-&gt;getData())<sp/>+<sp/>(d-&gt;length++);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="255"><highlight class="comment">//!<sp/>@}</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>asmjit<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Api-End]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/apiend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[Guard]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASMJIT_BASE_PODVECTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryan/asmjit/src/asmjit/base/podvector.h"/>
+  </compounddef>
+</doxygen>

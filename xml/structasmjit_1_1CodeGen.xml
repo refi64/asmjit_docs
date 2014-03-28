@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1CodeGen" kind="struct" prot="public">
+    <compoundname>asmjit::CodeGen</compoundname>
+    <derivedcompoundref refid="structasmjit_1_1BaseAssembler" prot="public" virt="non-virtual">asmjit::BaseAssembler</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1BaseCompiler" prot="public" virt="non-virtual">asmjit::BaseCompiler</derivedcompoundref>
+    <includes local="no">codegen.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1a64fd203c2592221acd076eb8800acfea" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> *</type>
+        <definition>BaseRuntime* asmjit::CodeGen::_runtime</definition>
+        <argsstring></argsstring>
+        <name>_runtime</name>
+        <briefdescription>
+<para>Runtime. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="175" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> *</type>
+        <definition>BaseLogger* asmjit::CodeGen::_logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <briefdescription>
+<para>Logger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="177" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" prot="public" static="no" mutable="no">
+        <type>ErrorHandler *</type>
+        <definition>ErrorHandler* asmjit::CodeGen::_errorHandler</definition>
+        <argsstring></argsstring>
+        <name>_errorHandler</name>
+        <briefdescription>
+<para>Error handler, called by <ref refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" kindref="member">setError()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="179" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1a26c78e4494d88ab9805496e023d3baa0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::CodeGen::_arch</definition>
+        <argsstring></argsstring>
+        <name>_arch</name>
+        <briefdescription>
+<para>Target architecture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="182" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1acbfa512e3ec91bff2364d868d2da3280" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::CodeGen::_regSize</definition>
+        <argsstring></argsstring>
+        <name>_regSize</name>
+        <briefdescription>
+<para>Get the default register size of the architecture (4 or 8 bytes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="184" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::CodeGen::_error</definition>
+        <argsstring></argsstring>
+        <name>_error</name>
+        <briefdescription>
+<para>Last error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="186" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t asmjit::CodeGen::_features</definition>
+        <argsstring></argsstring>
+        <name>_features</name>
+        <briefdescription>
+<para>Target features. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="188" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1a4fb02f71d3669ae2345645490a4b1539" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::CodeGen::_options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <briefdescription>
+<para>Options for the next generated instruction (only 8-bits used). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="190" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" prot="public" static="no" mutable="no">
+        <type><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref></type>
+        <definition>Zone asmjit::CodeGen::_zoneAllocator</definition>
+        <argsstring></argsstring>
+        <name>_zoneAllocator</name>
+        <briefdescription>
+<para><ref refid="structasmjit_1_1Zone" kindref="compound">Zone</ref> memory allocator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="193" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a6c88588cf06aadc9c2215cc62ee77161" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::CodeGen::CodeGen</definition>
+        <argsstring>(const CodeGen &amp;other)</argsstring>
+        <name>CodeGen</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1CodeGen" kindref="compound">CodeGen</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1aa242ec8a9f743d54e59115f7c8e92dd5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1CodeGen" kindref="compound">CodeGen</ref> &amp;</type>
+        <definition>CodeGen&amp; asmjit::CodeGen::operator=</definition>
+        <argsstring>(const CodeGen &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1CodeGen" kindref="compound">CodeGen</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a3e5282956457ed71030395c96b753225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::CodeGen::CodeGen</definition>
+        <argsstring>(BaseRuntime *runtime)</argsstring>
+        <name>CodeGen</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> *</type>
+          <declname>runtime</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="structasmjit_1_1CodeGen" kindref="compound">CodeGen</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="75" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ASMJIT_API</type>
+        <definition>asmjit::CodeGen::~CodeGen</definition>
+        <argsstring>()</argsstring>
+        <name>~CodeGen</name>
+        <briefdescription>
+<para>Destroy the <ref refid="structasmjit_1_1CodeGen" kindref="compound">CodeGen</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="77" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a3d7daab958f99527363d5d97a0d32a0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseRuntime" kindref="compound">BaseRuntime</ref> *</type>
+        <definition>BaseRuntime* asmjit::CodeGen::getRuntime</definition>
+        <argsstring>() const </argsstring>
+        <name>getRuntime</name>
+        <briefdescription>
+<para>Get runtime. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="84" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1ae747a5b9778251fd11943d0f8a00bedd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::CodeGen::hasLogger</definition>
+        <argsstring>() const </argsstring>
+        <name>hasLogger</name>
+        <briefdescription>
+<para>Get whether the code generator has a logger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="91" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a74d11332a9175e011875b1fc63599f8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> *</type>
+        <definition>BaseLogger* asmjit::CodeGen::getLogger</definition>
+        <argsstring>() const </argsstring>
+        <name>getLogger</name>
+        <briefdescription>
+<para>Get logger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="93" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::CodeGen::setLogger</definition>
+        <argsstring>(BaseLogger *logger)</argsstring>
+        <name>setLogger</name>
+        <param>
+          <type><ref refid="structasmjit_1_1BaseLogger" kindref="compound">BaseLogger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+<para>Set logger to <emphasis>logger</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="95" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1af0de6375faa88373299618dc893c6e02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::CodeGen::getArch</definition>
+        <argsstring>() const </argsstring>
+        <name>getArch</name>
+        <briefdescription>
+<para>Get target architecture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="102" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a25290524d42466e7f341f0c41790ab34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::CodeGen::getRegSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegSize</name>
+        <briefdescription>
+<para>Get default register size (4 or 8 bytes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="105" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::CodeGen::getError</definition>
+        <argsstring>() const </argsstring>
+        <name>getError</name>
+        <briefdescription>
+<para>Get last error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="112" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::CodeGen::setError</definition>
+        <argsstring>(Error error, const char *message=NULL)</argsstring>
+        <name>setError</name>
+        <param>
+          <type>Error</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Set last error code and propagate it through the error handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="114" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="52" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a20674b359509b562f6079bfef6342692" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::CodeGen::clearError</definition>
+        <argsstring>()</argsstring>
+        <name>clearError</name>
+        <briefdescription>
+<para>Clear the last error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="116" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1acefc96c0ac363fcf81625d232ed3d34b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ErrorHandler *</type>
+        <definition>ErrorHandler* asmjit::CodeGen::getErrorHandler</definition>
+        <argsstring>() const </argsstring>
+        <name>getErrorHandler</name>
+        <briefdescription>
+<para>Get error handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="119" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::CodeGen::setErrorHandler</definition>
+        <argsstring>(ErrorHandler *handler)</argsstring>
+        <name>setErrorHandler</name>
+        <param>
+          <type>ErrorHandler *</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Set error handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="121" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a0f1f14151bf464a31a3bb1a7f69e9bfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Error</type>
+        <definition>Error asmjit::CodeGen::clearErrorHandler</definition>
+        <argsstring>()</argsstring>
+        <name>clearErrorHandler</name>
+        <briefdescription>
+<para>Clear error handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="123" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API bool</type>
+        <definition>bool asmjit::CodeGen::hasFeature</definition>
+        <argsstring>(uint32_t feature) const </argsstring>
+        <name>hasFeature</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>feature</declname>
+        </param>
+        <briefdescription>
+<para>Get code-generator <emphasis>feature</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="130" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ASMJIT_API Error</type>
+        <definition>Error asmjit::CodeGen::setFeature</definition>
+        <argsstring>(uint32_t feature, bool value)</argsstring>
+        <name>setFeature</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>feature</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set code-generator <emphasis>feature</emphasis> to <emphasis>value</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="132" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.cpp" bodystart="105" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1af8f725cbd3aa4c226ea0fc7175d0a92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::CodeGen::getOptions</definition>
+        <argsstring>() const </argsstring>
+        <name>getOptions</name>
+        <briefdescription>
+<para>Get options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="139" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a06a916b4813dc544d7991f06093bdfc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::CodeGen::setOptions</definition>
+        <argsstring>(uint32_t options)</argsstring>
+        <name>setOptions</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Set options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="141" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1aab3bc0b503327c62bc7d952d41365705" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::CodeGen::getOptionsAndClear</definition>
+        <argsstring>()</argsstring>
+        <name>getOptionsAndClear</name>
+        <briefdescription>
+<para>Get options and clear them. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="144" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a9729e7a624ee41d357c69a0e1866483b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void asmjit::CodeGen::_purge</definition>
+        <argsstring>()=0</argsstring>
+        <name>_purge</name>
+        <reimplementedby refid="structasmjit_1_1BaseAssembler_1a88b0276f3f05f55665f2d919bb1660bb">_purge</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1BaseCompiler_1a9bb0e088212274bee8c2fe7fa5279d6d">_purge</reimplementedby>
+        <briefdescription>
+<para>Called by clear() and reset() to clear all data used by the code generator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* asmjit::CodeGen::make</definition>
+        <argsstring>()=0</argsstring>
+        <name>make</name>
+        <reimplementedby refid="structasmjit_1_1BaseAssembler_1ace12d41f06c429a957dc4bd4dd14df3e">make</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1X86X64Compiler_1aff8fecf22ca3f324379e2c06c16941cd">make</reimplementedby>
+        <briefdescription>
+<para>Make is a convenience method to make and relocate the current code into the associated runtime. </para>        </briefdescription>
+        <detaileddescription>
+<para>What is needed is only to cast the returned pointer to your function type and then use it. If there was an error during <ref refid="structasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22" kindref="member">make()</ref> <computeroutput>NULL</computeroutput> is returned and the last error code can be obtained by calling <ref refid="structasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d" kindref="member">getError()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract class inherited by Assembler and Compiler. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="737">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+      </node>
+      <node id="740">
+        <label>asmjit::BaseCompiler</label>
+        <link refid="structasmjit_1_1BaseCompiler"/>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>asmjit::x86x64::X86X64Compiler</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64Compiler"/>
+        <childnode refid="740" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>asmjit::x86x64::X86X64Assembler</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86X64Assembler"/>
+        <childnode refid="738" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="738">
+        <label>asmjit::BaseAssembler</label>
+        <link refid="structasmjit_1_1BaseAssembler"/>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="743">
+        <label>asmjit::BaseLogger</label>
+        <link refid="structasmjit_1_1BaseLogger"/>
+      </node>
+      <node id="744">
+        <label>asmjit::Zone</label>
+        <link refid="structasmjit_1_1Zone"/>
+      </node>
+      <node id="745">
+        <label>asmjit::BaseRuntime</label>
+        <link refid="structasmjit_1_1BaseRuntime"/>
+      </node>
+      <node id="742">
+        <label>asmjit::CodeGen</label>
+        <link refid="structasmjit_1_1CodeGen"/>
+        <childnode refid="743" relation="usage">
+          <edgelabel>_logger</edgelabel>
+        </childnode>
+        <childnode refid="744" relation="usage">
+          <edgelabel>_zoneAllocator</edgelabel>
+        </childnode>
+        <childnode refid="745" relation="usage">
+          <edgelabel>_runtime</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/base/codegen.h" line="67" bodyfile="/home/ryan/asmjit/src/asmjit/base/codegen.h" bodystart="67" bodyend="194"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1CodeGen_1a26c78e4494d88ab9805496e023d3baa0" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_arch</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a80674754a2e660567710113a61823594" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_error</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ae1a02cc46e87087c0c1b79c35849158f" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_errorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a835716d06498d34b53a56a8565907d28" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_features</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aa548a9a7f87d7cbf4d34755c3cffa17b" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_logger</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a4fb02f71d3669ae2345645490a4b1539" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_options</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a9729e7a624ee41d357c69a0e1866483b" prot="public" virt="pure-virtual"><scope>asmjit::CodeGen</scope><name>_purge</name></member>
+      <member refid="structasmjit_1_1CodeGen_1acbfa512e3ec91bff2364d868d2da3280" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_regSize</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a64fd203c2592221acd076eb8800acfea" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_runtime</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a48c754a0ff7c8b76c0b0f1c9c4652a29" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>_zoneAllocator</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a20674b359509b562f6079bfef6342692" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>clearError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a0f1f14151bf464a31a3bb1a7f69e9bfe" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>clearErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a6c88588cf06aadc9c2215cc62ee77161" prot="private" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>CodeGen</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a3e5282956457ed71030395c96b753225" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>CodeGen</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af0de6375faa88373299618dc893c6e02" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getArch</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a44e04ba3f82ffa90550d7227603e643d" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1acefc96c0ac363fcf81625d232ed3d34b" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a74d11332a9175e011875b1fc63599f8e" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getLogger</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af8f725cbd3aa4c226ea0fc7175d0a92c" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getOptions</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aab3bc0b503327c62bc7d952d41365705" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getOptionsAndClear</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a25290524d42466e7f341f0c41790ab34" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getRegSize</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a3d7daab958f99527363d5d97a0d32a0d" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>getRuntime</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a87c1df0563f369232f67d7d869710c65" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>hasFeature</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ae747a5b9778251fd11943d0f8a00bedd" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>hasLogger</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a7cf3bed43532764d3958bce6d498ff22" prot="public" virt="pure-virtual"><scope>asmjit::CodeGen</scope><name>make</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aa242ec8a9f743d54e59115f7c8e92dd5" prot="private" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aee542611426601efd4f9acb2ac89f346" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>setError</name></member>
+      <member refid="structasmjit_1_1CodeGen_1ac96640528ff277229ba55c51d013820c" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>setErrorHandler</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aca656dd1075adc8eb87dff52775f29c6" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>setFeature</name></member>
+      <member refid="structasmjit_1_1CodeGen_1af166f166ed4223a8ba11d1966bdbe63a" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>setLogger</name></member>
+      <member refid="structasmjit_1_1CodeGen_1a06a916b4813dc544d7991f06093bdfc0" prot="public" virt="non-virtual"><scope>asmjit::CodeGen</scope><name>setOptions</name></member>
+      <member refid="structasmjit_1_1CodeGen_1aaa96fd1cef6c0d59ba9f570b1d5d35c6" prot="public" virt="virtual"><scope>asmjit::CodeGen</scope><name>~CodeGen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

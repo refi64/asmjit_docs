@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structX86Test__AllocStack" kind="struct" prot="public">
+    <compoundname>X86Test_AllocStack</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">X86Test</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structX86Test__AllocStack_1a459efc75528661fe004046280bccd28d" prot="public" static="no">
+        <name>@2</name>
+        <enumvalue id="structX86Test__AllocStack_1a459efc75528661fe004046280bccd28daa72d903f52940e75c7ff6571a05f41d9" prot="public">
+          <name>kSize</name>
+          <initializer> 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1432" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1432" bodyend="1432"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structX86Test__AllocStack_1ae66d16f1534cfb55fcd59be2891c5bbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>X86Test_AllocStack::X86Test_AllocStack</definition>
+        <argsstring>()</argsstring>
+        <name>X86Test_AllocStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1430" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1430" bodyend="1430"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocStack_1a142b905ac1264dd7c53a810ca0bf9bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void X86Test_AllocStack::compile</definition>
+        <argsstring>(Compiler &amp;c)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>Compiler &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1438" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1438" bodyend="1471"/>
+      </memberdef>
+      <memberdef kind="function" id="structX86Test__AllocStack_1ac7972fa9e54f22179aa70fbf26af1844" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool X86Test_AllocStack::run</definition>
+        <argsstring>(void *_func, StringBuilder &amp;result, StringBuilder &amp;expect)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void *</type>
+          <declname>_func</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structasmjit_1_1StringBuilder" kindref="compound">StringBuilder</ref> &amp;</type>
+          <declname>expect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1473" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1473" bodyend="1484"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structX86Test__AllocStack_1a4798f749760786ff5406f8d0fd18880a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void X86Test_AllocStack::add</definition>
+        <argsstring>(PodVector&lt; X86Test * &gt; &amp;tests)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structasmjit_1_1PodVector" kindref="compound">PodVector</ref>&lt; X86Test * &gt; &amp;</type>
+          <declname>tests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1434" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1434" bodyend="1436"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryan/asmjit/src/app/test/testx86.cpp" line="1429" bodyfile="/home/ryan/asmjit/src/app/test/testx86.cpp" bodystart="1429" bodyend="1485"/>
+    <listofallmembers>
+      <member refid="structX86Test_1ad0ff0e52a5eee3292982b9456c7cb76e" prot="public" virt="non-virtual"><scope>X86Test_AllocStack</scope><name>_name</name></member>
+      <member refid="structX86Test__AllocStack_1a4798f749760786ff5406f8d0fd18880a" prot="public" virt="non-virtual"><scope>X86Test_AllocStack</scope><name>add</name></member>
+      <member refid="structX86Test__AllocStack_1a142b905ac1264dd7c53a810ca0bf9bb3" prot="public" virt="virtual"><scope>X86Test_AllocStack</scope><name>compile</name></member>
+      <member refid="structX86Test_1a89f06af1dca4b972b062757d49c87b7e" prot="public" virt="non-virtual"><scope>X86Test_AllocStack</scope><name>getName</name></member>
+      <member refid="structX86Test__AllocStack_1a459efc75528661fe004046280bccd28daa72d903f52940e75c7ff6571a05f41d9" prot="public" virt="non-virtual"><scope>X86Test_AllocStack</scope><name>kSize</name></member>
+      <member refid="structX86Test__AllocStack_1ac7972fa9e54f22179aa70fbf26af1844" prot="public" virt="virtual"><scope>X86Test_AllocStack</scope><name>run</name></member>
+      <member refid="structX86Test_1afe6e04f46e99989b9ca923cb56cf4615" prot="public" virt="non-virtual"><scope>X86Test_AllocStack</scope><name>X86Test</name></member>
+      <member refid="structX86Test__AllocStack_1ae66d16f1534cfb55fcd59be2891c5bbe" prot="public" virt="non-virtual"><scope>X86Test_AllocStack</scope><name>X86Test_AllocStack</name></member>
+      <member refid="structX86Test_1a8a094564d1826777794e991cae0fec3c" prot="public" virt="virtual"><scope>X86Test_AllocStack</scope><name>~X86Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

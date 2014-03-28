@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasmjit_1_1x86x64_1_1X86Var" kind="struct" prot="public">
+    <compoundname>asmjit::x86x64::X86Var</compoundname>
+    <basecompoundref refid="structasmjit_1_1BaseVar" prot="public" virt="non-virtual">asmjit::BaseVar</basecompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1FpVar" prot="public" virt="non-virtual">asmjit::x86x64::FpVar</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1GpVar" prot="public" virt="non-virtual">asmjit::x86x64::GpVar</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1MmVar" prot="public" virt="non-virtual">asmjit::x86x64::MmVar</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1XmmVar" prot="public" virt="non-virtual">asmjit::x86x64::XmmVar</derivedcompoundref>
+    <derivedcompoundref refid="structasmjit_1_1x86x64_1_1YmmVar" prot="public" virt="non-virtual">asmjit::x86x64::YmmVar</derivedcompoundref>
+    <includes local="no">x86defs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a1235dc7ad9abb01cbe36339117ca8148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86Var::X86Var</definition>
+        <argsstring>()</argsstring>
+        <name>X86Var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2888" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2888" bodyend="2890"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a4d0c9d492673e9641a2c75725bdea48e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86Var::X86Var</definition>
+        <argsstring>(const X86Var &amp;other)</argsstring>
+        <name>X86Var</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2892" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2892" bodyend="2892"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a18faac2e1ba9654d7764d67e62d7cb42" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86Var::X86Var</definition>
+        <argsstring>(const _NoInit &amp;)</argsstring>
+        <name>X86Var</name>
+        <param>
+          <type>const _NoInit &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2894" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2894" bodyend="2894"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a5189d025ab5e430a5ce14a5fd83e5ea2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref></type>
+        <definition>X86Var asmjit::x86x64::X86Var::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="structasmjit_1_1BaseVar_1a9725d5f41503045af505964068c70e75">clone</reimplements>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1GpVar_1af1a9305bcc1a185714202b88d3aa9922">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1FpVar_1a605bd49d981bf4c1803879b523122364">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1MmVar_1a54dc259be066e672ed7a75d3b5228692">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1XmmVar_1acd72a1cf0dcd0d57ad535aa50fb642eb">clone</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1YmmVar_1accb025eee94027b078a53900237d246c">clone</reimplementedby>
+        <briefdescription>
+<para>Clone <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2901" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2901" bodyend="2903"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a320895f2833c51d30db23c784df9c4bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void asmjit::x86x64::X86Var::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1GpVar_1a124572848f59e895c188a2bec2a0939f">reset</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1FpVar_1a5ed997e3505070a201dd2942794b3305">reset</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1MmVar_1af49e2415c69e317271f1ee787e3ebee8">reset</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1XmmVar_1a248beb5177b9868d3378fa07ac71f012">reset</reimplementedby>
+        <reimplementedby refid="structasmjit_1_1x86x64_1_1YmmVar_1aa290e2eed36029766a41dbccde044ccf">reset</reimplementedby>
+        <briefdescription>
+<para>Reset <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2906" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2906" bodyend="2909"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a564ee183fb502fb9746044c80875353f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86Var::getRegType</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2915" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2915" bodyend="2915"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a9629099839b985b95a87a81a55837d4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t asmjit::x86x64::X86Var::getVarType</definition>
+        <argsstring>() const </argsstring>
+        <name>getVarType</name>
+        <reimplements refid="structasmjit_1_1BaseVar_1a5f468c0cd45f79a3aa1b5c924968b29e">getVarType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2916" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2916" bodyend="2916"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a065a74b4694f5f69f54ef0efd74e070d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGp</definition>
+        <argsstring>() const </argsstring>
+        <name>isGp</name>
+        <briefdescription>
+<para>Get whether the variable is Gpb register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2919" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2919" bodyend="2919"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1aa72147fe07f80a419d5462bfc66b7f0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGpb</definition>
+        <argsstring>() const </argsstring>
+        <name>isGpb</name>
+        <briefdescription>
+<para>Get whether the variable is Gpb register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2921" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2921" bodyend="2921"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1aff460abf8c73aa9b4a61af4c31abe858" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGpbLo</definition>
+        <argsstring>() const </argsstring>
+        <name>isGpbLo</name>
+        <briefdescription>
+<para>Get whether the variable is Gpb-lo register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2923" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2923" bodyend="2923"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a30335b7293d8e81b9919449270730f95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGpbHi</definition>
+        <argsstring>() const </argsstring>
+        <name>isGpbHi</name>
+        <briefdescription>
+<para>Get whether the variable is Gpb-hi register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2925" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2925" bodyend="2925"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a61c3806ce11605d7a39a4aa76c8b0695" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGpw</definition>
+        <argsstring>() const </argsstring>
+        <name>isGpw</name>
+        <briefdescription>
+<para>Get whether the variable is Gpw register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2927" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2927" bodyend="2927"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a20dd90c3152e0bee3c85850b19b34851" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGpd</definition>
+        <argsstring>() const </argsstring>
+        <name>isGpd</name>
+        <briefdescription>
+<para>Get whether the variable is Gpd register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2929" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2929" bodyend="2929"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a61137a857dd7f088fc8fa0d9997bf898" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isGpq</definition>
+        <argsstring>() const </argsstring>
+        <name>isGpq</name>
+        <briefdescription>
+<para>Get whether the variable is Gpq register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2931" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2931" bodyend="2931"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1aa481d56af8c9358ef1ddf2640ee02a95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isFp</definition>
+        <argsstring>() const </argsstring>
+        <name>isFp</name>
+        <briefdescription>
+<para>Get whether the variable is Fp register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2934" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2934" bodyend="2934"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a7967f865b83fb758f35e406abc58cd3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isMm</definition>
+        <argsstring>() const </argsstring>
+        <name>isMm</name>
+        <briefdescription>
+<para>Get whether the variable is Mm type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2936" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2936" bodyend="2936"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a40558c213b9676d52fdcfcb99346c2f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isXmm</definition>
+        <argsstring>() const </argsstring>
+        <name>isXmm</name>
+        <briefdescription>
+<para>Get whether the variable is Xmm type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2938" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2938" bodyend="2938"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a9baf6d51294ba04d06eb8cc3c692f3b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::isYmm</definition>
+        <argsstring>() const </argsstring>
+        <name>isYmm</name>
+        <briefdescription>
+<para>Get whether the variable is Ymm type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2940" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2940" bodyend="2940"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a6d69361f562704d45752d5405d91cbbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to memory operand. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Size of operand depends on native variable type, you can use other variants if you want specific one. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2951" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2950" bodyend="2951"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a536f7424deb550b0da44ac00b3e6b567" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2955" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2954" bodyend="2955"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a6be5cf52a69b05c1752cd1dd4b29bfbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m8</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m8</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 8-bit memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2959" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2958" bodyend="2959"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1aa54c204b47ebe1040834a0e4a6b5298e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m8</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m8</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2963" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2962" bodyend="2963"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a815466a18a45464e7cef63ac3e57bd71" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m16</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m16</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 16-bit memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2967" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2966" bodyend="2967"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a06abd400cfc173f9fd556008a2bd7682" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m16</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m16</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2971" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2970" bodyend="2971"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a4c84d867803e2b28dfbdd3c5166c889d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m32</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m32</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 32-bit memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2975" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2974" bodyend="2975"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1ad941a21008425f4d127aa1568cab01d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m32</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m32</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2979" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2978" bodyend="2979"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a83527cece402b22c2d8ebaed47b5fb37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m64</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m64</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 64-bit memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2983" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2982" bodyend="2983"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1ad137572ad9f3a3e9e30a8a3f714b3e60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m64</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m64</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2987" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2986" bodyend="2987"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1afe71570f0ab49573df81ed33d8802638" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m80</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m80</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 80-bit memory operand (long double). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2991" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2990" bodyend="2991"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1ab59acb1c2324fbd020d2bda92aedd5df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m80</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m80</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2995" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2994" bodyend="2995"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a59bb1eac4ce572017fbba924461180fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m128</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m128</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 128-bit memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2999" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2998" bodyend="2999"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a8d252edf6b13d756830ab7505012593d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m128</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m128</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3003" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3002" bodyend="3003"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1ad089710406b1e7451adf5a9194f19fe3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m256</definition>
+        <argsstring>(int32_t disp=0) const </argsstring>
+        <name>m256</name>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Cast this variable to 256-bit memory operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3007" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3006" bodyend="3007"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a7464d60078f4b820a60c0ba4e2ec7d70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1Mem" kindref="compound">Mem</ref></type>
+        <definition>Mem asmjit::x86x64::X86Var::m256</definition>
+        <argsstring>(const GpVar &amp;index, uint32_t shift=0, int32_t disp=0) const </argsstring>
+        <name>m256</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1GpVar" kindref="compound">GpVar</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>disp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3011" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3010" bodyend="3011"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a01d40d4e50b243ceaacd9b8b4ed086cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> &amp;</type>
+        <definition>X86Var&amp; asmjit::x86x64::X86Var::operator=</definition>
+        <argsstring>(const X86Var &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3017" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3017" bodyend="3017"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a0cc27cba4831b497b72d5fd49348ace4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::operator==</definition>
+        <argsstring>(const X86Var &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3019" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3019" bodyend="3019"/>
+      </memberdef>
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a6f294d66300809125e51035e70831ccf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool asmjit::x86x64::X86Var::operator!=</definition>
+        <argsstring>(const X86Var &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3020" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3020" bodyend="3020"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structasmjit_1_1x86x64_1_1X86Var_1a838e01340b480fb03041ddc47f85dc09" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>asmjit::x86x64::X86Var::X86Var</definition>
+        <argsstring>(const X86Var &amp;other, uint32_t reg, uint32_t size)</argsstring>
+        <name>X86Var</name>
+        <param>
+          <type>const <ref refid="structasmjit_1_1x86x64_1_1X86Var" kindref="compound">X86Var</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="3028" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="3027" bodyend="3031"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all variables. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1229">
+        <label>asmjit::x86x64::XmmVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1XmmVar"/>
+        <childnode refid="1223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1225">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="1224">
+        <label>asmjit::BaseVar</label>
+        <link refid="structasmjit_1_1BaseVar"/>
+        <childnode refid="1225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1223">
+        <label>asmjit::x86x64::X86Var</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86Var"/>
+        <childnode refid="1224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>asmjit::x86x64::GpVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1GpVar"/>
+        <childnode refid="1223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1226">
+        <label>asmjit::x86x64::FpVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1FpVar"/>
+        <childnode refid="1223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1228">
+        <label>asmjit::x86x64::MmVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1MmVar"/>
+        <childnode refid="1223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1230">
+        <label>asmjit::x86x64::YmmVar</label>
+        <link refid="structasmjit_1_1x86x64_1_1YmmVar"/>
+        <childnode refid="1223" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1233">
+        <label>asmjit::Operand</label>
+        <link refid="structasmjit_1_1Operand"/>
+      </node>
+      <node id="1232">
+        <label>asmjit::BaseVar</label>
+        <link refid="structasmjit_1_1BaseVar"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>asmjit::x86x64::X86Var</label>
+        <link refid="structasmjit_1_1x86x64_1_1X86Var"/>
+        <childnode refid="1232" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" line="2883" bodyfile="/home/ryan/asmjit/src/asmjit/x86/x86defs.h" bodystart="2883" bodyend="3032"/>
+    <listofallmembers>
+      <member refid="structasmjit_1_1Operand_1ab65e9aa7a15edd48cba687f03cb7347c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_base</name></member>
+      <member refid="structasmjit_1_1Operand_1ac155d3e43ef0cf0ea24e98b1fe906d36" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_copy</name></member>
+      <member refid="structasmjit_1_1Operand_1a307e2e7b752000b12da59dad23e0ca90" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_imm</name></member>
+      <member refid="structasmjit_1_1Operand_1a52353c7164e54d235314b175a9b05a6c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_init</name></member>
+      <member refid="structasmjit_1_1Operand_1a2d8b4647e75a71e854ad939e1cb4c2ed" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_init_packed_d0_d1</name></member>
+      <member refid="structasmjit_1_1Operand_1a8cee9df3008f5956e37f876cc9026f45" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_init_packed_d2_d3</name></member>
+      <member refid="structasmjit_1_1Operand_1a289c6ab4602acf459e248d3f3f724b8a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_init_packed_op_sz_b0_b1_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a7b9c87fee92df184dea2c10fb30ea467" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_init_packed_op_sz_w0_id</name></member>
+      <member refid="structasmjit_1_1Operand_1a706538f838a8416a7e8e7cc4fa6f1db8" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_label</name></member>
+      <member refid="structasmjit_1_1Operand_1a1e918a093397232131e706fd436c1085" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_packed</name></member>
+      <member refid="structasmjit_1_1Operand_1aae280895b95e1b083799a43306dd7e15" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_vmem</name></member>
+      <member refid="structasmjit_1_1Operand_1a24f921b98561dea1f19faad624b9a147" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>_vreg</name></member>
+      <member refid="structasmjit_1_1BaseVar_1ad20756fa19f557ac9a748fe4aab590e6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>BaseVar</name></member>
+      <member refid="structasmjit_1_1BaseVar_1aa46a6afbbf3e80aa90577b8bfca2bd3b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>BaseVar</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a7d077df2bdb60f7d85c8b3d3a66dc1e6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>BaseVar</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a5189d025ab5e430a5ce14a5fd83e5ea2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>clone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae043c994eaddfe587c1d248812b3d16c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a9871ba5815361a896771418b9d443935" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getData</name></member>
+      <member refid="structasmjit_1_1Operand_1a005389a2368b711612feda323d63766f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getId</name></member>
+      <member refid="structasmjit_1_1Operand_1a2ea181bfeeae6d5467f7343dfddcb57c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getOp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a564ee183fb502fb9746044c80875353f" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getRegType</name></member>
+      <member refid="structasmjit_1_1Operand_1ae5bb07ef28e2c29ebf9b762ea8f36b7e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getSize</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a9629099839b985b95a87a81a55837d4c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>getVarType</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1aa481d56af8c9358ef1ddf2640ee02a95" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isFp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a065a74b4694f5f69f54ef0efd74e070d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGp</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1aa72147fe07f80a419d5462bfc66b7f0c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGpb</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a30335b7293d8e81b9919449270730f95" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGpbHi</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1aff460abf8c73aa9b4a61af4c31abe858" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGpbLo</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a20dd90c3152e0bee3c85850b19b34851" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGpd</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a61137a857dd7f088fc8fa0d9997bf898" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGpq</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a61c3806ce11605d7a39a4aa76c8b0695" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isGpw</name></member>
+      <member refid="structasmjit_1_1Operand_1ab85a3b5c7354a38ca52e78fea1739759" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isImm</name></member>
+      <member refid="structasmjit_1_1Operand_1a2a77f09fc4951c9e58fccd18a6eaf1b3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isLabel</name></member>
+      <member refid="structasmjit_1_1Operand_1afb9863bc270de49d257dce8593e79cb4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isMem</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a7967f865b83fb758f35e406abc58cd3c" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isMm</name></member>
+      <member refid="structasmjit_1_1Operand_1ad09b5fd91f3d8c754980f98a2019be7b" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isNone</name></member>
+      <member refid="structasmjit_1_1Operand_1ae0ce4d16beb59e0934942cba222054af" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isReg</name></member>
+      <member refid="structasmjit_1_1Operand_1a1cd13703d63d231c97cf76c020e2b605" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isRegCode</name></member>
+      <member refid="structasmjit_1_1Operand_1aea0d545eea3526cfb1ae0adb8871de78" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isRegOrMem</name></member>
+      <member refid="structasmjit_1_1Operand_1a5dd129c65aac0057afdd4f844785437a" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isRegType</name></member>
+      <member refid="structasmjit_1_1Operand_1a809703f677ab89fb8d619ad717c59a02" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isVar</name></member>
+      <member refid="structasmjit_1_1Operand_1ae65f6fcaacdf3a299256f909fcda5576" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isVarOrMem</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a40558c213b9676d52fdcfcb99346c2f6" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isXmm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a9baf6d51294ba04d06eb8cc3c692f3b2" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>isYmm</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a6d69361f562704d45752d5405d91cbbf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a536f7424deb550b0da44ac00b3e6b567" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a59bb1eac4ce572017fbba924461180fe" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m128</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a8d252edf6b13d756830ab7505012593d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m128</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a815466a18a45464e7cef63ac3e57bd71" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m16</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a06abd400cfc173f9fd556008a2bd7682" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m16</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1ad089710406b1e7451adf5a9194f19fe3" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m256</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a7464d60078f4b820a60c0ba4e2ec7d70" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m256</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a4c84d867803e2b28dfbdd3c5166c889d" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m32</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1ad941a21008425f4d127aa1568cab01d4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m32</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a83527cece402b22c2d8ebaed47b5fb37" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m64</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1ad137572ad9f3a3e9e30a8a3f714b3e60" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m64</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a6be5cf52a69b05c1752cd1dd4b29bfbf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m8</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1aa54c204b47ebe1040834a0e4a6b5298e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m8</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1afe71570f0ab49573df81ed33d8802638" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m80</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1ab59acb1c2324fbd020d2bda92aedd5df" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>m80</name></member>
+      <member refid="structasmjit_1_1Operand_1ad67efdbe93039d4ae3f77f84fcae6331" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a55218d0096d0f0352484ecd0b7e3ef53" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1Operand_1a50c0bde3edb955a4001a20a7d01bbf96" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>Operand</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a6f294d66300809125e51035e70831ccf" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a03123be2a880cc9fc19e1be8533e1878" prot="public" virt="non-virtual" ambiguityscope="asmjit::BaseVar::"><scope>asmjit::x86x64::X86Var</scope><name>operator!=</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a01d40d4e50b243ceaacd9b8b4ed086cd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a4955e02a837f8dcddf173caaf983e5ae" prot="public" virt="non-virtual" ambiguityscope="asmjit::BaseVar::"><scope>asmjit::x86x64::X86Var</scope><name>operator=</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a0cc27cba4831b497b72d5fd49348ace4" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1BaseVar_1a55a3bbd1dd8ed211ac529716894f943a" prot="public" virt="non-virtual" ambiguityscope="asmjit::BaseVar::"><scope>asmjit::x86x64::X86Var</scope><name>operator==</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a320895f2833c51d30db23c784df9c4bd" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>reset</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a1235dc7ad9abb01cbe36339117ca8148" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>X86Var</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a4d0c9d492673e9641a2c75725bdea48e" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>X86Var</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a18faac2e1ba9654d7764d67e62d7cb42" prot="public" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>X86Var</name></member>
+      <member refid="structasmjit_1_1x86x64_1_1X86Var_1a838e01340b480fb03041ddc47f85dc09" prot="protected" virt="non-virtual"><scope>asmjit::x86x64::X86Var</scope><name>X86Var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
