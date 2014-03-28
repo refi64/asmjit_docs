@@ -1,7 +1,7 @@
 AsmJit Docs
 ===========
 
-This is a repository containing a rendering of the AsmJit documentation using Sphinx+Breathe.
+This is a repository containing a rendering of the AsmJit documentation using Sphinx+Breathe. They are online at http://asmjit-docs.readthedocs.org/en/latest/.
 
 Directory structure
 *******************
